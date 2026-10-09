@@ -212,6 +212,15 @@ is conservatively ambiguous, so the primary unit is pair-level novelty. A change
 structure, a changed signal genotype, a detached organism, a heritable variant,
 and a beneficial variant are separate outcomes.
 
+A reporting audit added during acquisition, before inheritance analysis,
+clarifies that the code field `genotype` is a composite signal-word/core-shape
+identity. The frozen primary endpoint retains this definition and is reported
+as **composite organism-identity novelty**. A separately labeled sensitivity
+endpoint requires the channel word alone to differ from both inputs. Shape-only
+differences are morphological candidates, not genetic changes. No raw outcomes
+or search budgets change; protocol 002 records the timing and reason for this
+audit. The signal-word result must not be described as prospectively frozen.
+
 ### 3.5 Isolation and transient-to-stable inheritance
 
 Isolation is an explicitly imposed intervention. We extract the full occupied
@@ -280,6 +289,10 @@ isolation it produces a stable 12×12-core descendant; two subsequent isolated
 generations reproduce that stable genotype. Detachment is first observed at
 380, 390, and 390 updates in the three assays, sampled every ten updates.
 N01 denotes the stable descendant, not the transient source configuration.
+The transient and stable structures share the changed signal word: their
+11×13-to-12×12 difference is morphological stabilization, while their shared
+signal word differs from S13's. This separates phenotype change from signal
+genotype change in the exploratory path.
 
 ### 4.2 Encounter atlas
 
