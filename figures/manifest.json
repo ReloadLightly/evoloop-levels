@@ -521,6 +521,396 @@
         194,
         314
       ]
+    },
+    {
+      "file": "fate-calibration-matrix-light.svg",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "9a6d2970fe330e79c1e2059c6a9a24c2c0c602bf5c3058880f3ab6567c32485e",
+      "source": "data/fate-calibration/outcomes.json",
+      "source_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "P-S13",
+        "P-N01"
+      ],
+      "delays": [
+        0,
+        60,
+        120,
+        240
+      ]
+    },
+    {
+      "file": "fate-calibration-matrix-light.pdf",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "31b821cda8141da5949b08f3e5012cd204f042b955dad5b19cdddd45cbcef8e5",
+      "source": "data/fate-calibration/outcomes.json",
+      "source_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "P-S13",
+        "P-N01"
+      ],
+      "delays": [
+        0,
+        60,
+        120,
+        240
+      ]
+    },
+    {
+      "file": "fate-calibration-matrix-light.png",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "9b10623972836d66a53bd1cf8037d67f33375ab3ffe9ba9219cd5166137b603b",
+      "source": "data/fate-calibration/outcomes.json",
+      "source_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "P-S13",
+        "P-N01"
+      ],
+      "delays": [
+        0,
+        60,
+        120,
+        240
+      ]
+    },
+    {
+      "file": "fate-calibration-matrix-dark.svg",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "b96d75e0aacdca1546cd4d8ae4273f1d7781d8470f2e70064a1895195b6edd62",
+      "source": "data/fate-calibration/outcomes.json",
+      "source_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "P-S13",
+        "P-N01"
+      ],
+      "delays": [
+        0,
+        60,
+        120,
+        240
+      ]
+    },
+    {
+      "file": "fate-calibration-matrix-dark.pdf",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "543fc8f69e1d7a900abbe64481859ba18efd543e2fb9249e217d6dfd5123b2ba",
+      "source": "data/fate-calibration/outcomes.json",
+      "source_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "P-S13",
+        "P-N01"
+      ],
+      "delays": [
+        0,
+        60,
+        120,
+        240
+      ]
+    },
+    {
+      "file": "fate-calibration-matrix-dark.png",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "ea8e5f52bb9ba43ead57ece3d122fec59d427b759c159a38cb58e8ad02f7023e",
+      "source": "data/fate-calibration/outcomes.json",
+      "source_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "P-S13",
+        "P-N01"
+      ],
+      "delays": [
+        0,
+        60,
+        120,
+        240
+      ]
+    },
+    {
+      "file": "fate-native-trajectories-light.svg",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "ac38f8368b4e53de3feb18366811185865974d0af0fab3e57957fa3080e0eb68",
+      "source": "data/fate-calibration/outcomes.json",
+      "sources": "data/fate-calibration/runs/*/result.json",
+      "sampling_interval": 10,
+      "boundary_first_times_since_source": {
+        "C01": 880,
+        "C02": 170,
+        "C03": 920,
+        "C07": 1120,
+        "P-N01": 1720
+      }
+    },
+    {
+      "file": "fate-native-trajectories-light.pdf",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "25137b3ca0af289169f8232ee59dfdae0a7818f095de79f62b99a84de403ce5a",
+      "source": "data/fate-calibration/outcomes.json",
+      "sources": "data/fate-calibration/runs/*/result.json",
+      "sampling_interval": 10,
+      "boundary_first_times_since_source": {
+        "C01": 880,
+        "C02": 170,
+        "C03": 920,
+        "C07": 1120,
+        "P-N01": 1720
+      }
+    },
+    {
+      "file": "fate-native-trajectories-light.png",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "61ec64eb5b83fb746967f1f155ee57a45382ec7618dcb2eb1ecec1a1e689dfef",
+      "source": "data/fate-calibration/outcomes.json",
+      "sources": "data/fate-calibration/runs/*/result.json",
+      "sampling_interval": 10,
+      "boundary_first_times_since_source": {
+        "C01": 880,
+        "C02": 170,
+        "C03": 920,
+        "C07": 1120,
+        "P-N01": 1720
+      }
+    },
+    {
+      "file": "fate-native-trajectories-dark.svg",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "b619a0a63424454560238c9f7b874f2853bd91f93ada83cc735cafc63e5292c3",
+      "source": "data/fate-calibration/outcomes.json",
+      "sources": "data/fate-calibration/runs/*/result.json",
+      "sampling_interval": 10,
+      "boundary_first_times_since_source": {
+        "C01": 880,
+        "C02": 170,
+        "C03": 920,
+        "C07": 1120,
+        "P-N01": 1720
+      }
+    },
+    {
+      "file": "fate-native-trajectories-dark.pdf",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "3155e7df11fdc76d9a6487701ec52f3724b357422ba771959bd156375d21c05d",
+      "source": "data/fate-calibration/outcomes.json",
+      "sources": "data/fate-calibration/runs/*/result.json",
+      "sampling_interval": 10,
+      "boundary_first_times_since_source": {
+        "C01": 880,
+        "C02": 170,
+        "C03": 920,
+        "C07": 1120,
+        "P-N01": 1720
+      }
+    },
+    {
+      "file": "fate-native-trajectories-dark.png",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "ce3e24179084febe08844ba80377408c2c3bfd870f6cba8ae889fe163f34f3d6",
+      "source": "data/fate-calibration/outcomes.json",
+      "sources": "data/fate-calibration/runs/*/result.json",
+      "sampling_interval": 10,
+      "boundary_first_times_since_source": {
+        "C01": 880,
+        "C02": 170,
+        "C03": 920,
+        "C07": 1120,
+        "P-N01": 1720
+      }
+    },
+    {
+      "file": "fate-raw-comparison-light.svg",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "8c93ee535566d323f12f2348134ecf645ec4bb358e3a881d735492266875e9ce",
+      "source": "data/fate-calibration/outcomes.json",
+      "case_id": "C02-d000",
+      "grid_files": [
+        "data/fate-calibration/runs/C02-d000/native.npz",
+        "data/fate-calibration/runs/C02-d000/node-00.npz"
+      ],
+      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
+      "panel_times": [
+        0,
+        1600,
+        0,
+        510
+      ]
+    },
+    {
+      "file": "fate-raw-comparison-light.pdf",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "e652e555de6560b3221a1d7d41ce8ff1533b013910eeb618400cf32c89589cf8",
+      "source": "data/fate-calibration/outcomes.json",
+      "case_id": "C02-d000",
+      "grid_files": [
+        "data/fate-calibration/runs/C02-d000/native.npz",
+        "data/fate-calibration/runs/C02-d000/node-00.npz"
+      ],
+      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
+      "panel_times": [
+        0,
+        1600,
+        0,
+        510
+      ]
+    },
+    {
+      "file": "fate-raw-comparison-light.png",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "3bf411023b256ac5d30826b2b6803679d475141aa571dff0bedf788dd8d130e4",
+      "source": "data/fate-calibration/outcomes.json",
+      "case_id": "C02-d000",
+      "grid_files": [
+        "data/fate-calibration/runs/C02-d000/native.npz",
+        "data/fate-calibration/runs/C02-d000/node-00.npz"
+      ],
+      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
+      "panel_times": [
+        0,
+        1600,
+        0,
+        510
+      ]
+    },
+    {
+      "file": "fate-raw-comparison-dark.svg",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "57d71e1c44788372dc3bcfaaeeaf172e735728e4541f8a06f4ef5e450f6d938a",
+      "source": "data/fate-calibration/outcomes.json",
+      "case_id": "C02-d000",
+      "grid_files": [
+        "data/fate-calibration/runs/C02-d000/native.npz",
+        "data/fate-calibration/runs/C02-d000/node-00.npz"
+      ],
+      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
+      "panel_times": [
+        0,
+        1600,
+        0,
+        510
+      ]
+    },
+    {
+      "file": "fate-raw-comparison-dark.pdf",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "7cbfd1be63b6d4a939fe11433441ef42ad70f1969ad8dcf1beee00272cd9ce0d",
+      "source": "data/fate-calibration/outcomes.json",
+      "case_id": "C02-d000",
+      "grid_files": [
+        "data/fate-calibration/runs/C02-d000/native.npz",
+        "data/fate-calibration/runs/C02-d000/node-00.npz"
+      ],
+      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
+      "panel_times": [
+        0,
+        1600,
+        0,
+        510
+      ]
+    },
+    {
+      "file": "fate-raw-comparison-dark.png",
+      "experiments": [
+        "EXP-fate-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
+      "sha256": "3e472788d2484069a449e8f221fb7f85b0e0730f17fe4f639b8267f562f17531",
+      "source": "data/fate-calibration/outcomes.json",
+      "case_id": "C02-d000",
+      "grid_files": [
+        "data/fate-calibration/runs/C02-d000/native.npz",
+        "data/fate-calibration/runs/C02-d000/node-00.npz"
+      ],
+      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
+      "panel_times": [
+        0,
+        1600,
+        0,
+        510
+      ]
     }
   ]
 }

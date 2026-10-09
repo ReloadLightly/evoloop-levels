@@ -14,6 +14,13 @@ So far, six of 40 close-placement configurations produced candidate changes, com
 
 These observations make the next question concrete: which differences between encounters that produce temporary changes and encounters that produce heritable variants explain their outcomes?
 
+The completed candidate-fate calibration tested four maturation delays and
+broader offspring search. Both searches recovered **8/8 verified-parent
+controls**, with **0/15 eligible candidate-delay states** confirming stable
+novelty. Ten additional states lost their target and three remained shared.
+These results support the tested assay behavior; unsearched candidate fates
+remain unresolved. Native recurrence does not establish ancestry. Benefit remains pending; H1/H3 are untested and RSI remains unestablished.
+
 [Completed analysis](data/atlas/analysis.md) ·
 [Outcome matrix](figures/outcome-matrix-light.svg) ·
 [Evidence stages](figures/evidence-stages-light.svg) ·
@@ -49,14 +56,19 @@ near encounters, 40 separated controls, and 24 alone controls. All runs and init
 
 ```sh
 # Existing complete grids are committed; freeze is needed only in a fresh data tree.
+sha256sum -c data/SHA256SUMS
 OPENBLAS_NUM_THREADS=1 python -m scripts.atlas run
 OPENBLAS_NUM_THREADS=1 python -m scripts.atlas inherit
 OPENBLAS_NUM_THREADS=1 python -m scripts.analyze
 OPENBLAS_NUM_THREADS=1 python -m scripts.figures
 OPENBLAS_NUM_THREADS=1 python -m scripts.render_manuscript
 OPENBLAS_NUM_THREADS=1 python -m scripts.check_evidence
-sha256sum -c data/SHA256SUMS
 ```
+
+Checksums validate downloaded committed evidence before executing commands.
+Fresh execution times and PDF/export metadata can differ; compare physical
+grid hashes and endpoint tables for scientific reproduction. After integrity
+verification, `python -m scripts.checksums write` refreshes the artifact manifest.
 
 The runner resumes by skipping completed run files. For a genuinely fresh rerun,
 use a separate checkout and remove its `data/atlas/runs/` directory before running.
@@ -88,3 +100,38 @@ with no detected core at the horizon, and a reproducing encounter without novelt
 The compiled reference uses the original evoloop rules, not self-protecting or
 asynchronous variants. Dependencies are pinned to tested versions in
 requirements-lock.txt. Third-party notices: evoloop/vendor/NOTICE.md.
+
+## Candidate-fate calibration
+
+Protocol [004](protocols/004-candidate-fate-calibration.md) fixes seven candidate
+identities from six atlas configurations and verified S13/N01 controls, at
+maturation delays 0/60/120/240. It pairs native continuation with legacy and
+bounded expanded isolation searches on identical eligible snapshots. Native
+word presence is a structural diagnostic; ancestry remains unresolved.
+
+[Calibration analysis](data/fate-calibration/analysis.md) ·
+[Frozen source index](data/fate-calibration/source-index.md) ·
+[Paired outcome matrix](figures/fate-calibration-matrix-light.svg) ·
+[Native diagnostics](figures/fate-native-trajectories-light.svg) ·
+[Raw-state comparison](figures/fate-raw-comparison-light.svg)
+
+All 36 cases completed in 8.5 minutes, peak runner RSS 63.6 MiB. Integrity checks
+replay all 36 native continuations, 85 expanded and 41 legacy generations.
+Native boundary flags affect 16/28 candidate and 2/8 control windows; plotted
+counts after the first flag can miss seam-crossing structures. Delays and
+overlapping windows are not independent replicates. Benefit remains unassayed.
+
+```sh
+sha256sum -c data/SHA256SUMS
+OPENBLAS_NUM_THREADS=1 python -m scripts.fate_calibration run
+OPENBLAS_NUM_THREADS=1 python -m scripts.fate_calibration verify
+OPENBLAS_NUM_THREADS=1 python -m scripts.analyze_fate
+OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate
+OPENBLAS_NUM_THREADS=1 python -m scripts.render_manuscript
+```
+
+The runner skips completed cases. For a fresh rerun, remove only the separate
+checkout's `data/fate-calibration/runs/` directory. To reconstruct source states,
+remove that copy's calibration manifest and run
+`python -m scripts.fate_calibration freeze`, then compare source hashes.
+Frozen code/configuration hashes must match. The original atlas stays unchanged.

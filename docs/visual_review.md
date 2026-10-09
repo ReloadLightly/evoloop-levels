@@ -193,3 +193,97 @@ wrapping; nested BibTeX capitalization braces now retain software reference
 titles. The final title and bibliography pages were inspected again after
 regeneration. The 16-page PDF is a readable working export with seven appended
 recorded-data figures; Markdown and BibTeX remain the authoritative sources.
+
+## Candidate-fate calibration review
+
+Reviewed the completed `EXP-fate-calibration-001` batch on 2026-10-10 against
+protocol 004, `scripts/figures_fate.py`, completed analysis and per-case
+outcomes, all six dark/light calibration PNG renders, compact saved grids,
+and the 64-artifact figure manifest. No scientific code or data was edited.
+
+The calibration matrix accurately distinguishes three observed extraction
+states: eligible, fixed target lost, and shared occupied component. Fifteen of
+28 candidate delay observations are eligible; ten are lost and three shared.
+All 15 eligible candidate observations have zero endpoint confirmation in both
+legacy and expanded searches. The eight parent-control delay observations are
+eligible and confirmed in both searches. Ineligible observations have a neutral
+hatched fill and em dash, so they cannot be read as tested zeroes. The caption
+states the different candidate and control endpoints, the seven identities
+nested in six originating configurations, and the finite deterministic panel.
+The matched searches use identical extracted snapshots; the four delays are
+not falsely labeled independent replicates. All text and row boundaries are
+legible in both themes.
+
+The native trajectory panels keep original-word structural counts separate
+from fixed-target presence. Count ticks are integers. The added per-sample
+terracotta ticks ensure that even isolated observed target absences are shown;
+the filled strip provides context without silently dropping those samples.
+Extraction-delay lines and boundary-flag shading are visibly distinct. The
+caption gives the actual boundary-flag denominators, 16/28 candidate and 2/8
+control windows, and states that seam-crossing cores may be missed. The source
+trajectories merge overlapping deterministic windows rather than counting them
+as new replication. Their 0–1840 update extent therefore describes the union of
+observation windows, not one common native horizon after every extraction.
+
+The native curves support structural presence and disappearance only. The
+explicit ancestry/inheritance caveat is necessary: controls increase their
+matching core counts, whereas candidate traces become absent or recur briefly,
+without the figure treating either pattern as adaptive benefit or autonomous
+confirmed inheritance. H1, H3, and RSI remain unsupported by this calibration.
+
+### Independent C05 recurrence check
+
+The reviewer loaded only the frozen C05 source grid, verified its recorded hash,
+and advanced it to a bounded set of times without retaining exhaustive history.
+Matching-word detection reproduced these observations:
+
+| Updates since source | Original-word core count | Core location | Fixed source core present |
+| ---: | ---: | --- | --- |
+| 0 | 1 | (183, 188, 9, 9) | yes |
+| 370 | 0 | none | no |
+| 380 | 1 | (206, 165, 9, 9) | no |
+| 390 | 1 | (206, 165, 9, 9) | no |
+| 400 | 0 | none | no |
+
+Raw close-ups at source, 380, and 390 were inspected. The recurrent core is at
+a different location and carries the same operational signal word in two
+sampled phases. This validates the plotted brief structural recurrence. It
+does not establish its parentage or heritability, and the continued absence of
+the fixed source core is correctly retained in the terracotta trace.
+
+### Raw comparison and acceptance
+
+The illustrated case is C02-d000, selected after analysis by the declared
+maximum expanded search count and lexicographic tie-break. Native panels show
+384-by-384 worlds at extraction and 1600 subsequent updates; isolated panels
+show 192-by-192 worlds at extraction and the actual first-generation stopping
+time, 510 updates. Axes and caption explicitly preserve the differing domains
+and clocks rather than implying equal cell scale or horizon. Square pixels,
+literal nine-state fills, and separate magenta source-location outline preserve
+geometry and distinguish annotation from lineage.
+
+The reviewer checked both displayed final-state hashes against per-case results
+and verified that cropping the isolated initial grid recovers the exact complete
+component extracted from the native initial grid. Isolation removes surrounding
+native structures and translates the component; the image correctly depicts
+this declared external intervention. The isolated panel's new cores are not
+labeled confirmed novel inheritable descendants merely because they appear.
+
+All current figure-manifest checksums match all 64 artifact files, including
+the 18 calibration exports. The new exports include experiment IDs,
+regeneration command, data sources, illustrated case, exact panel times, and
+selection rule. No critical scientific or layout issue remains in these
+renders. For later publication refinement, the light-paper cyan trajectories
+could have stronger contrast, and the tiny fixed-source outline in the full
+raw-world view could be accompanied by a zoom or callout. Neither changes the
+underlying observations or the present conservative interpretation.
+
+### Final calibration publication refinements
+
+The project lead added a darker teal quantitative curve for light paper output
+in the shared style configuration, leaving the literal cell-state palette
+unchanged. Magenta callouts now locate the fixed target in both native raw
+panels. The rerendered curves and raw panels were inspected and all 64 figure
+checksums pass. The working PDF's calibration results and limitations pages
+were rasterized and inspected with Ghostscript; Markdown tables are aligned
+in their monospaced export. These refinements change presentation, not data.

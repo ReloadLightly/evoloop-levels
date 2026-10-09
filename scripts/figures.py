@@ -188,6 +188,9 @@ def main():
     if (ROOT/'data/atlas/analysis.json').exists():
         analysis=json.loads((ROOT/'data/atlas/analysis.json').read_text());rows=json.loads((ROOT/'data/atlas/outcomes.json').read_text())
         matrix_and_funnel(analysis,manifest);replays(rows,manifest)
+    if (ROOT/'data/fate-calibration/analysis.json').exists():
+        from scripts.figures_fate import render
+        render(manifest)
     (FIG/'manifest.json').write_text(json.dumps({'style':'configs/style.json',
                                                'font_sha256':hashlib.sha256(Path(FONT_PATH).read_bytes()).hexdigest(),
                                                'font_license':'docs/font-license.txt','artifacts':manifest},indent=2)+'\n')

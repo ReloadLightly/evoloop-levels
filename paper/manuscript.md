@@ -1,6 +1,6 @@
 # Where Does Evolvability Reside? Organisms, Encounters, and Ecological History in Self-Reproducing Cellular Automata
 
-**Working manuscript — first scientific checkpoint, 10 October 2026.**
+**Working manuscript — encounter atlas and fate calibration, 10 October 2026.**
 Target venues: ALIFE 2027 or GECCO 2027. This document reports a small prospective
 deterministic encounter atlas, not a completed test of all three hypotheses.
 Author list and affiliations remain to be supplied by the project owner.
@@ -22,7 +22,13 @@ conservative pair-level ancestry. All 104 atlas states completed. Candidate sign
 configurations and 0/64 separated/alone controls. Eleven isolation paths supplied
 no confirmed stable novel transmission under the frozen criterion. A candidate
 interaction contrast of +0.375 in the main panel changed to −0.500 in held-out
-configurations; neither panel showed an inherited-novelty interaction. A paired ecological
+configurations; neither panel showed an inherited-novelty interaction. A subsequent
+prospectively frozen fate calibration examined four maturation delays for all
+seven candidate identities and two known-parent controls. Fifteen of 28 candidate
+delay states were eligible; neither the legacy nor expanded inheritance search
+confirmed stable novelty. Both searches recovered all eight parent-control delay
+states. This supports recovery of the tested known identities, while candidate
+fates outside the bounded search remain unresolved. A paired ecological
 benefit assay is frozen but remains pending viability calibration. The
 organism-transfer and ecological-history hypotheses remain untested.
 
@@ -279,6 +285,39 @@ Held-out geometries test configuration transfer, not transfer across independent
 organisms or ecological histories. Conditional beneficial-heritable yield is
 unknown until benefit confirmation is completed; it must not be plotted as zero.
 
+### 3.7 Prospective candidate-fate calibration
+
+Protocol 004 (EXP-fate-calibration-001) follows the completed atlas rather than
+expanding its encounter panel. All seven observed candidate identities, nested
+in six original configurations, are replayed to their first observation.
+The lexicographically first matching core tuple is fixed as the target.
+Verified S13 and N01 snapshots placed in empty 384×384 worlds are positive
+controls. Source states, code, protocol, configuration, and analysis hashes
+are frozen before observing delays 0, 60, 120, and 240 updates: 28 candidate
+and eight control observations.
+
+Ten-update tracking records target loss before extraction. Same-tuple recurrence
+after observed loss is ineligible, as are lost, unknown, shared, boundary, and
+oversized components. No successful later structure substitutes for a target.
+Each complete delayed world continues another 1,600 updates, recording target
+and original-word core counts. Original-word appearance elsewhere is a
+structural diagnostic; it establishes neither offspring ancestry nor inheritance.
+Overlapping continuation windows are deterministic paired observations.
+
+Every eligible complete component is assessed by the unchanged legacy assay
+and a bounded expanded search on the identical snapshot. Each expanded
+generation admits the first three detached newly positioned valid cores,
+once per core tuple, ordered by time, core, and snapshot hash. Depth-first
+traversal permits six transmissions and at most 24 generation simulations per
+root, each with a 1,600-update ceiling. Identity changes reset the transmission
+streak; two consecutive identical composite transmissions confirm a stable
+path. Candidate recovery additionally requires a stable word different from
+both original inputs; positive-control recovery requires the original composite
+identity. Ineligible phases and unexamined paths remain explicit. Same-snapshot
+comparisons isolate search sensitivity, whereas delay comparisons combine
+maturation with continued ecology. Serial isolated paths may be assay-derived.
+There are no inferential intervals or independent-history claims.
+
 ## 4. Results
 
 ### 4.1 Verified foundations and exploratory inheritance
@@ -363,6 +402,54 @@ produces a 4×4-core descendant; that descendant dissolves in the third stage.
 No stable path is confirmed. This exploratory diagnostic leaves the frozen
 atlas outcomes unchanged and provides no independent confirmation sample.
 
+### 4.4 Completed candidate-fate calibration
+
+All 36 cases in EXP-fate-calibration-001 completed. Among 28 candidate-delay
+observations, 15 had eligible components, ten had lost the fixed source core,
+and three remained shared components. No target recurrence, unknown-identity,
+boundary-component, or oversize exclusion was observed at extraction. All eight
+S13/N01 positive-control states were eligible. On identical extracted snapshots,
+both legacy and expanded searches recovered the original identity for 8/8
+controls and confirmed novel stable inheritance for 0/15 eligible candidate
+states. At the six originating configuration units, none yielded a confirmed
+novel path. The 13 ineligible delay observations remain in the 28-state denominator;
+their assay outcome is missing rather than a tested failure.
+
+| Delay | Candidate eligible | Novel: legacy; expanded | Parents: legacy; expanded |
+|---|---:|---:|---:|
+| 0 | 4/7 | 0/7; 0/7 | 2/2; 2/2 |
+| 60 | 4/7 | 0/7; 0/7 | 2/2; 2/2 |
+| 120 | 4/7 | 0/7; 0/7 | 2/2; 2/2 |
+| 240 | 3/7 | 0/7; 0/7 | 2/2; 2/2 |
+
+The expanded search executed 69 candidate and 16 control generation simulations.
+No root reached the 24-simulation or six-transmission limit. Eighteen candidate
+generation states did reach the three-offspring collection limit, so later
+offspring and phases remain unexamined. Each of the four 3×12-source delay states
+examined ten generation states without stable novel recovery, extending the
+earlier single-path diagnostic. Other eligible roots either supplied descendants
+that dissolved under further isolation or remained unresolved at the horizon.
+These results do not rescue the tested candidates by either the declared delays
+or broader search, while demonstrating recovery of the tested verified parents.
+They do not establish universal assay sensitivity or ecological nonviability.
+
+The native 9×9 candidate word reappeared at a different core at original encounter
+times 1,150 and 1,160 (C05-relative times 380 and 390). The same event occurs in
+all four overlapping continuation windows; it is one structural recurrence,
+not four independent reproductions or confirmed native ancestry. None of the
+candidate original words was recognized at the end of its 28 native windows.
+Boundary flags occurred in 16/28 candidate and 2/8 control windows, so native
+core counts can miss seam-crossing structures. Their endpoint absence cannot
+be equated with ecological extinction. Positive-control words appeared at new
+core locations and persisted at all eight native horizons.
+
+All 36 native terminal-grid replays, 85 expanded-generation replays, 41 legacy
+generation replays, and saved component extractions agree. Acquisition took
+511.2 seconds (8.5 minutes), peak runner RSS 65,112 KiB (63.6 MiB), one worker.
+The new paired matrix, native diagnostic curves, and raw-state comparison are
+traceable through figures/manifest.json. Protocol 001's atlas endpoint remains
+unchanged. Benefit was not assayed; H1/H3 and RSI remain unestablished.
+
 ## 5. Limitations and alternative explanations
 
 The panel contains one documented organism and one selected descendant from
@@ -380,6 +467,14 @@ Its limited first-descendant and phase search can miss viable paths. Boundary
 and nonrectangular structures can be missed. Surviving closed cores are therefore
 distinct from independently verified viable individuals.
 
+The calibration broadens isolated search and recovers known parents across four
+tested delays, but this does not validate extraction for every phenotype.
+Its fixed-core rule intentionally excludes lost or reshaped targets and their
+possible later descendants. Thirteen candidate-delay states remain ineligible;
+the three-offspring cap leaves additional paths unsearched. Native continuation
+changes ecological exposure as delay increases, and its boundary flags limit
+structural counts. A recurrent word need not descend from the original candidate.
+
 Separated controls change grid extent as well as displacement, so they support
 contact-window diagnostics rather than an unrestricted causal estimate of
 contact alone. Relative geometry, orientation, and phase are interventions, not
@@ -389,16 +484,17 @@ evolvability, H1, H3, and recursive self-improvement remain unestablished.
 
 ## 6. Subsequent experiment plan
 
-The immediate next experiment is paired candidate-fate calibration, before
-expanding the atlas or interpreting failed isolation as intrinsic nonviability.
-Replay the six candidate-producing states, compare native continuation with
-isolation at fixed maturation delays, and follow a predeclared bounded set of
-transient offspring paths. Include S13/N01 positive controls under the same
-extraction schedule. This holds the recorded source trajectory fixed while
-changing surroundings and extraction time, testing ecological dependence and
-assay sensitivity. It cannot recover unambiguous native parentage merely from
-pair-level provenance. Budgets and criteria must be frozen before execution;
-see docs/next-experiment.md.
+The completed fate calibration supplies known-parent recovery but no rescued
+candidate. The next experiment should broaden the viable input panel to three
+or four naturally generated, separately isolation-verified identities, using
+a predeclared discovery/selection rule. Freeze fresh crossed encounters and
+held-out configurations after panel verification, retaining paired controls
+and the bounded inheritance search. This tests whether the original negative
+result is conditional on its narrow two-organism panel. Avoid reusing successful
+exploratory configurations as confirmation, and make native observation boundary
+safe or explicitly implement periodic recognition before quantitative native
+population claims. Benefit confirmation still requires a stable novel organism
+and calibrated ecological metric; see docs/next-experiment.md.
 
 For H1, evolve independent population histories, retain matched ancestors, and
 sample transferable complete organisms using a fixed sampling rule. Cross each
@@ -425,6 +521,9 @@ Repository: https://github.com/ReloadLightly/evoloop-levels. Reproduction comman
 `python -m scripts.atlas inherit`, `python -m scripts.analyze`,
 `python -m scripts.figures`, `python -m scripts.render_manuscript`, and
 `python -m scripts.check_evidence`. README explains fresh versus resumed runs.
+Calibration commands are `python -m scripts.fate_calibration run`,
+`python -m scripts.fate_calibration verify`, `python -m scripts.analyze_fate`,
+and `python -m scripts.figures_fate`.
 Protocols,
 configurations, source, compact raw grids, analysis, and figures are versioned.
 Each figure must reference experiment IDs and a regeneration command.

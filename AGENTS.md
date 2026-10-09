@@ -26,6 +26,13 @@ Operational phase-normalized channel genotypes preserve spacing and chirality;
 they are not automatically published species identifiers or full organism state.
 Ancestry labels are causal overapproximations, not genetic parent assignments.
 
+For candidate-fate calibration, preserve protocol 004's exact source core and
+sampled loss/recurrence labels. Compare legacy and expanded searches on identical
+components. Respect offspring, depth, and simulation caps; unsearched paths
+remain unresolved. Native matching-word appearance is structural evidence,
+not inherited offspring. Keep positive-control recovery and candidate novelty
+as separate endpoints, and retain ineligible delays in the denominator.
+
 Update README, RESEARCH_STATE, manuscript, and figures after scientific batches.
 Prior art includes crossed competition, interaction-mediated variation,
 inherited mutation bias, and disturbances. State the narrower addition precisely.

@@ -26,8 +26,12 @@ def main():
         lines.append((text,style,y));y+=height
     for paragraph in source.split('\n\n'):
         if paragraph.strip().startswith('|'):
-            for line in paragraph.splitlines():
-                if not re.match(r'^\|[-| :]+\|$',line):add(line,'table')
+            rows=[line.strip().strip('|').split('|') for line in paragraph.splitlines()
+                  if not re.match(r'^\|[-| :]+\|$',line)]
+            rows=[[cell.strip() for cell in row] for row in rows]
+            widths=[max(len(row[i]) for row in rows) for i in range(len(rows[0]))]
+            for row in rows:
+                add('| '+' | '.join(cell.ljust(width) for cell,width in zip(row,widths))+' |','table')
             add('','space');continue
         paragraph=' '.join(paragraph.splitlines()).strip()
         if not paragraph:continue
@@ -69,7 +73,8 @@ def main():
             for line in wrapped:ax.text(.085,yp,line,fontsize=8.5,va='top');yp-=.017
             yp-=.018
         pdf.savefig(fig);plt.close(fig)
-        for name in ['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3']:
+        for name in ['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3',
+                     'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison']:
             p=ROOT/f'figures/{name}-light.png'
             if not p.exists():continue
             fig=plt.figure(figsize=(11.69,8.27),facecolor='#EDE9DF');ax=fig.add_axes([.035,.07,.93,.86]);ax.imshow(Image.open(p));ax.axis('off')

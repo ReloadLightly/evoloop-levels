@@ -244,3 +244,40 @@ controls. This addresses the immediate uncertainty about candidate fate and
 assay sensitivity before expanding the causal comparisons. The review does not
 certify every raw array or figure; those are covered by the repository's
 separate integrity and visualization checks.
+
+## Completed candidate-fate calibration assessment
+
+Reviewed `data/fate-calibration/analysis.json`, its rendered analysis, and all
+36 case summaries after acquisition. Of 28 candidate identity/delay observations,
+15 were eligible for paired isolation, ten had lost their fixed target, and
+three remained shared components. Neither the unchanged legacy search nor the
+expanded bounded search recovered a novel stable word. Both searches recovered
+the original identities in all eight eligible S13/N01 control observations.
+This establishes recovery of these known controls under the tested delays and
+shows that the tested timing/search extensions did not rescue the eligible
+candidates. It does not establish universal assay sensitivity or intrinsic
+nonviability of all candidate structures.
+
+No expanded candidate search reached the simulation or depth ceiling. The
+first-three-detached-offspring limit, horizon, exact fixed-core matching, and
+ineligible phases still limit what was searched. Candidate searches simulated
+69 generation nodes. Delay observations remain nested in seven identities and
+six originating configurations, rather than independent histories.
+
+Native boundary flags occurred in 16 of 28 candidate windows and two of eight
+control windows, so native seam-crossing populations can be underdetected.
+The four positive native original-word observations all refer to the same C05
+event viewed through overlapping windows. Its word appeared at one other
+9-by-9 core at two consecutive ten-update samples. This is transient
+structural recurrence, not four independent events, proved ancestry, stable
+native inheritance, or evidence of ecological assistance rescuing reproduction.
+
+The most informative next scientific experiment is a small fresh crossed atlas
+with an expanded panel of three or four naturally generated, isolation-verified
+viable identities, selected by a predeclared discovery rule before assessing
+encounters. Use fresh held-out configurations and the bounded inheritance
+search. This broadens viable variation sources after the measured negative
+calibration; there is presently no recovered novel candidate available for a
+benefit assay. Quantitative native counts require boundary-safe observation or
+periodic detection. This recommendation does not authorize execution and does
+not establish H2, H1/H3, beneficial evolvability, or RSI.

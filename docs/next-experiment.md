@@ -1,30 +1,36 @@
-# Next scientific action: paired candidate-fate calibration
+# Next scientific action: broaden the verified viable encounter panel
 
-The frozen atlas found candidate signal changes but no confirmed stable path.
-Before enlarging the H2 panel or running benefit comparisons, calibrate whether
-this reflects doomed candidates, phase-sensitive extraction, or bounded search.
+EXP-fate-calibration-001 is complete. Both the legacy and expanded searches
+recover 8/8 known S13/N01 parent-control delay states. Neither confirms stable
+novelty in 15 eligible candidate-delay states; ten other states lost the target
+and three remain shared. This supports the tested controls and search behavior,
+not universal sensitivity or ecological nonviability. No candidate is yet
+available for a confirmed-benefit comparison. The native C05 word recurrence
+is fleeting, ancestry-ambiguous, and repeated across overlapping windows.
 
-Prospectively freeze a paired replay of the six candidate-producing states:
-retain native-world continuation and compare complete-component isolation at
-fixed maturation delays (proposed 0/60/120/240 updates after the candidate's
-first observation). Record lost cores, inseparable components, and missing
-genotypes at each delay; never replace them with a successful later structure.
-Follow a fixed bounded set of first-generation offspring through a declared
-multi-transient search and two stable transmissions. Include S13 and N01
-positive controls subjected to the same delay and extraction procedure.
+The most informative next experiment is a small fresh crossed atlas with
+three or four naturally generated, separately isolation-verified viable
+identities. First freeze a discovery/selection rule, observation budget, and
+maximum verification attempts; retain all rejected and unresolved candidates.
+Select on viability and provenance before seeing encounter outcomes or benefit.
+Do not invent genomes, select encounter winners into the input panel, or claim
+independent histories from repeated deterministic runs or translations.
 
-Each pair holds the recorded source trajectory and candidate time fixed and
-changes the retained surroundings and extraction time. Native continuation
-preserves ecological assistance; isolation removes it. This estimates assay
-sensitivity and conditional ecological dependence, not a residual history
-effect. Native genetic ancestry remains ambiguous unless independently resolved.
-Budgets, offspring selection, horizon, and positive-control success criterion
-must be frozen before execution. Keep each originating configuration as the
-paired unit; delay states and deterministic reruns are not independent histories.
+After verification, freeze fresh relative geometries/phases, paired controls,
+contact and exposure horizons, the bounded inheritance search, and held-out
+configurations. Keep all lethal/nonproductive states in the denominator. This
+asks whether the original lack of recovered variants depends on its narrow
+S13/N01 input panel. It is a fresh H2 comparison, not independent confirmation
+of the previously observed candidate-only rank reversal. Benefit comparison
+still requires confirmed stable novelty and a calibrated ecological assay.
 
-Only after this calibration should an expanded, held-out crossed atlas estimate
-heritable variation more comprehensively. Benefit calibration and paired assays
-then test ecological advantage; H1 and H3 require independently evolved histories.
+Use boundary-safe observation or validated periodic structure recognition
+before quantitative native population claims; the calibration had native edge
+flags in 16/28 candidate and 2/8 control windows. Native matching words remain
+structural evidence unless ancestry is separately demonstrated. Maintain
+matched legacy/expanded snapshots where search sensitivity is compared.
+
+This is a subsequent plan, not an executed or fully frozen experiment.
 
 H1 transplant: independent evolved organisms versus matched ancestors into a
 common held-out encounter distribution; change organism state, fix assessment
@@ -32,4 +38,4 @@ encounters. H3 transplants: history-derived organisms into a shared encounter
 panel, and shared organisms into history-specific encounter distributions;
 respectively fix encounters and fix organisms. Compare undisturbed, structured
 disturbance, and matched shuffled-disturbance histories, with independent
-population histories as replication units. These hypotheses remain untested.
+population histories as replication units. H1/H3 remain untested.
