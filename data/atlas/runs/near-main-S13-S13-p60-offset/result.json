@@ -1,0 +1,638 @@
+{
+  "run_id": "near-main-S13-S13-p60-offset",
+  "focal": "S13",
+  "partner": "S13",
+  "phase": 60,
+  "geometry": {
+    "id": "offset",
+    "partner_rotation": 3,
+    "gap": 20,
+    "dy": -24
+  },
+  "split": "main",
+  "treatment": "near",
+  "shape": [
+    384,
+    384
+  ],
+  "initial_hash": "8bdebc27b18008be26142f6a0fdefabc9bcda55ff83acbe2a2e627064005e00b",
+  "initial_labels_hash": "712575b270ecd36794aeb8c3a476181c6f8fcdd7cd71dd4a72c7978f00e3862f",
+  "initial_cores": [
+    {
+      "core": [
+        171,
+        210,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "provenance": 2
+    },
+    {
+      "core": [
+        195,
+        147,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "provenance": 1
+    }
+  ],
+  "input_boxes": [
+    [
+      192,
+      144,
+      17,
+      43
+    ],
+    [
+      168,
+      207,
+      43,
+      17
+    ]
+  ],
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "config_sha256": "d587706fb76ed041c1b62c64a72d5a51a3bd04f9b3451e5b2aed7b5655df66a7",
+  "contact_t": 335,
+  "no_contact_control_valid": null,
+  "boundary_first_t": null,
+  "horizon": 1600,
+  "final_hash": "755fdfb2bcbb13ffcfab1fb2c9100aecd2c9fabfff478d4b07db3cb08d946291",
+  "final_labels_hash": "5c71af85c6c3139510d47a4509c26e98d0e67255d69e91f7bb0ebe37259a3f29",
+  "input_structural_survival": [
+    {
+      "core": [
+        171,
+        210,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "provenance": 2,
+      "closed_core_present_at_horizon": false,
+      "same_genotype_at_horizon": false,
+      "interpretation": "structural survival only; lineage survival/viability unresolved"
+    },
+    {
+      "core": [
+        195,
+        147,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "provenance": 1,
+      "closed_core_present_at_horizon": false,
+      "same_genotype_at_horizon": false,
+      "interpretation": "structural survival only; lineage survival/viability unresolved"
+    }
+  ],
+  "new_core_count": 19,
+  "events": [
+    {
+      "type": "closed_core_first_observed",
+      "t": 0,
+      "core": [
+        171,
+        210,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "input"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 0,
+      "core": [
+        195,
+        147,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "input"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 210,
+      "core": [
+        195,
+        174,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 210,
+      "core": [
+        198,
+        210,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 350,
+      "core": [
+        198,
+        210,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 620,
+      "core": [
+        168,
+        147,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 620,
+      "core": [
+        171,
+        237,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 630,
+      "core": [
+        195,
+        201,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 980,
+      "core": [
+        141,
+        147,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 980,
+      "core": [
+        171,
+        264,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 990,
+      "core": [
+        195,
+        228,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1020,
+      "core": [
+        144,
+        210,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1020,
+      "core": [
+        195,
+        120,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1040,
+      "core": [
+        168,
+        174,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1110,
+      "core": [
+        171,
+        210,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1160,
+      "core": [
+        195,
+        147,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1240,
+      "core": [
+        195,
+        174,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1340,
+      "core": [
+        114,
+        147,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1340,
+      "core": [
+        171,
+        291,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1350,
+      "core": [
+        195,
+        201,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1360,
+      "core": [
+        195,
+        255,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1390,
+      "core": [
+        117,
+        210,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1390,
+      "core": [
+        144,
+        237,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1390,
+      "core": [
+        168,
+        120,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1390,
+      "core": [
+        195,
+        93,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_first_observed",
+      "t": 1400,
+      "core": [
+        141,
+        174,
+        11,
+        11
+      ],
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "interval": 10,
+      "ancestry_status": "unassigned_structure"
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1470,
+      "core": [
+        171,
+        237,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1520,
+      "core": [
+        168,
+        147,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1560,
+      "core": [
+        141,
+        174,
+        11,
+        11
+      ],
+      "interval": 10
+    },
+    {
+      "type": "closed_core_lost",
+      "t": 1600,
+      "core": [
+        144,
+        210,
+        11,
+        11
+      ],
+      "interval": 10
+    }
+  ],
+  "metrics": [
+    {
+      "t": 0,
+      "occupied_cells": 444,
+      "closed_cores": 2,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 100,
+      "occupied_cells": 530,
+      "closed_cores": 2,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 200,
+      "occupied_cells": 644,
+      "closed_cores": 2,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 300,
+      "occupied_cells": 688,
+      "closed_cores": 4,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 400,
+      "occupied_cells": 634,
+      "closed_cores": 3,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 500,
+      "occupied_cells": 778,
+      "closed_cores": 3,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 600,
+      "occupied_cells": 949,
+      "closed_cores": 3,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 700,
+      "occupied_cells": 999,
+      "closed_cores": 6,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 800,
+      "occupied_cells": 1299,
+      "closed_cores": 6,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 900,
+      "occupied_cells": 1630,
+      "closed_cores": 6,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1000,
+      "occupied_cells": 1832,
+      "closed_cores": 9,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1100,
+      "occupied_cells": 2079,
+      "closed_cores": 12,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:00701401401111111111117017017017017017017017017017017017",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1200,
+      "occupied_cells": 2244,
+      "closed_cores": 10,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1300,
+      "occupied_cells": 2513,
+      "closed_cores": 9,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1400,
+      "occupied_cells": 2463,
+      "closed_cores": 16,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1500,
+      "occupied_cells": 2952,
+      "closed_cores": 15,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "t": 1600,
+      "occupied_cells": 3114,
+      "closed_cores": 12,
+      "unknown_genotype_cores": 0,
+      "genotypes": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "genotype": "11x11:00701401401111111111117017017017017017017017017017017017",
+      "first_observed_t": 1100,
+      "observations": 1,
+      "snapshots": [],
+      "seen_hashes": [],
+      "unextractable_observations": 1
+    }
+  ],
+  "inheritance_status": "pending",
+  "benefit_status": "pending_viability_calibration",
+  "ancestry": "conservative pair-level novelty; no genetic parent assignment",
+  "observation_status": "completed; nonrectangular/boundary structures may remain unresolved",
+  "seconds": 8.954259380996518
+}

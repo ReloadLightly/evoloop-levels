@@ -38,7 +38,8 @@ def verify():
         g=rng.integers(0,9,(17,19),dtype=np.uint8);lab=rng.integers(0,4,g.shape,dtype=np.uint8)
         assert numpy_contact(g,lab)==compiled_contact(g,lab);cases+=1
     m=atlas.load_manifest();selected=[r for r in m['runs'] if r['treatment']=='near'][:3]
-    selected += [r for r in m['runs'] if r['treatment']=='separated'][:1]
+    selected += [r for r in m['runs'] if r['treatment']=='separated' and
+                 (atlas.OUT/'runs'/r['run_id']/'result.json').exists()][:1]
     trajectories=[]
     for r in selected:
         a=np.load(atlas.OUT/'initial'/f'{r["run_id"]}.npz');g=a['grid'].copy();lab=a['labels'].copy();first=None

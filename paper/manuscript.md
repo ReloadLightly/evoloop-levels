@@ -18,8 +18,7 @@ replay and checkpoint/resume agree. Natural exploratory variation supplies a
 second verified input organism through a transient-to-stable inheritance path.
 We prospectively freeze 32 main crossed encounters, eight held-out encounters,
 40 separated controls, and 24 alone controls, with complete starting grids and
-conservative pair-level ancestry. Results of the atlas and isolation checks
-will populate the Results section only after completion. A paired ecological
+conservative pair-level ancestry. The 40 near encounters are complete; their initial isolation checks found no stable novel transmission path. Separated and alone controls remain in acquisition in this intermediate draft. A paired ecological
 benefit assay is frozen but remains pending viability calibration. The
 organism-transfer and ecological-history hypotheses remain untested.
 
@@ -152,7 +151,7 @@ Measurement development found that body-only crops can destroy active arms;
 we rejected that extraction method before freezing the main atlas. The final
 assay preserves complete detached components. The runtime benchmark and peak
 resident memory are recorded in `data/verification.json`; one worker is used
-because available system memory, rather than CPU count, limits concurrency.
+because available system memory, rather than CPU count, limits concurrency. During acquisition, a read-only compiled contact diagnostic passed 6,760 equivalence cases, including four complete raw trajectories, before accelerating the remaining controls. The frozen physics and outcome definitions were unchanged; execution.json records the switch. Near isolation assays ran separately once near acquisition was complete, within measured memory headroom.
 
 ### 3.3 Exploratory panel and prospective encounter configurations
 
@@ -296,10 +295,35 @@ genotype change in the exploratory path.
 
 ### 4.2 Encounter atlas
 
-Main atlas simulations and their inheritance checks have not yet completed in
-this draft. No outcome rates, interaction findings, benefit results, or H2
-support are asserted here. This paragraph will be replaced from completed
-machine-readable results.
+All 40 near configurations completed the 1,600-update window with recorded
+contact and no boundary-touch flags. Candidate composite identity changes
+occurred in five of 32 main states and one of eight held-out states. All seven
+run/identity candidates also differed in signal word from both inputs, so the
+strict reporting audit currently agrees with candidate classification. Five
+candidate-producing configurations supplied 11 complete-component snapshots;
+one candidate could not be separated within the window. None of the 11
+isolation paths met the frozen stable-transmission criterion. Six produced a
+changed detached descendant in the first isolation stage. Four of those next
+isolated descendants dissolved; two did not reproduce the same identity by
+the next horizon. Two initial snapshots dissolved, and three remained without
+a qualifying detached descendant. These are completed assay observations, not
+proof that all possible ecological inheritance paths are absent.
+
+The remaining controls are still being acquired in this intermediate draft.
+Final crossed tables and interaction contrasts will be inserted from the
+complete machine-readable analysis. Benefit remains pending; no H2 claim of
+beneficial-heritable variation is made.
+
+### 4.3 Exploratory extension of a multi-transient path
+
+A follow-up selected after observing the failed first-descendant inheritance
+search is reported separately as EXP-lineage-followup-001 (protocol 003).
+Starting from the earliest N01×N01 offset candidate at encounter t=1,550, it
+allows up to six serial isolation stages and requires two consecutive stable
+transmissions. The 3×12-core source produces a 6×6-core descendant, which
+produces a 4×4-core descendant; that descendant dissolves in the third stage.
+No stable path is confirmed. This exploratory diagnostic leaves the frozen
+atlas outcomes unchanged and provides no independent confirmation sample.
 
 ## 5. Limitations and alternative explanations
 
