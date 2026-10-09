@@ -1,0 +1,40 @@
+{
+  "experiment_id": "EXP-atlas-001",
+  "status": "frozen-before-main",
+  "organisms": ["S13", "N01"],
+  "near_shape": [384, 384], "far_shape": [640, 640],
+  "horizon": 1600, "detection_interval": 10, "metrics_interval": 100,
+  "main_phases": [0, 60], "heldout_phase": 30,
+  "main_geometries": [
+    {"id":"parallel", "partner_rotation":0, "gap":8, "dy":0},
+    {"id":"opposed", "partner_rotation":2, "gap":8, "dy":0},
+    {"id":"crossed", "partner_rotation":1, "gap":8, "dy":24},
+    {"id":"offset", "partner_rotation":3, "gap":20, "dy":-24}
+  ],
+  "heldout_geometries": [
+    {"id":"held-parallel", "partner_rotation":0, "gap":14, "dy":12},
+    {"id":"held-opposed", "partner_rotation":2, "gap":14, "dy":12}
+  ],
+  "far_dx": 320,
+  "candidate_phase_budget_per_run_genotype": 2,
+  "inheritance_horizon_per_generation": 1600,
+  "inheritance_shape": [192,192],
+  "benefit": {
+    "status":"prospective-assay; viability-calibration-pending",
+    "shape":[192,192], "horizon":1600, "sample_interval":20,
+    "metric":"mean intact closed-core count of isolation-confirmed genotypes",
+    "disturbance_times":[600,1000], "block_size":24,
+    "development":[{"rotation":0,"block":[40,40]},{"rotation":1,"block":[128,128]}],
+    "confirmation":[{"rotation":2,"block":[40,128]},{"rotation":3,"block":[128,40]}],
+    "criterion":"candidate mean exceeds each input mean in both development and independent confirmation panels",
+    "limitation":"structural count is a population proxy; individual viability calibration required before confirmed-benefit claim"
+  },
+  "analysis": {
+    "unit":"distinct complete deterministic configuration",
+    "primary":"pair-level confirmed inherited novelty per all near configurations",
+    "interaction":"(S13,S13 - N01,S13) - (S13,N01 - N01,N01), separately for main and heldout",
+    "rank_reversal":"sign of S13-minus-N01 focal contrast differs between partner columns",
+    "uncertainty":"finite-panel descriptive contrasts; no inferential confidence intervals",
+    "beneficial_yield":"report pending until paired benefit and viability calibration complete"
+  }
+}

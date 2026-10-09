@@ -1,0 +1,5804 @@
+{
+  "experiment_id": "EXP-atlas-001",
+  "config_sha256": "d587706fb76ed041c1b62c64a72d5a51a3bd04f9b3451e5b2aed7b5655df66a7",
+  "protocol_sha256": "a43552cc25a14a028421b1faed156fa810aebc0acc9b99f22ba818a4eb6bd276",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "code_hashes": {
+    "evoloop/kernel.c": "6de57b310164c91617feb3ca191751db64e63028b850a8983eca10631accf969",
+    "evoloop/engine.py": "8a151597c529794a7406af334a32df74363a0bb7f8245fe1d6c525bf9e9a6c10",
+    "evoloop/tracking.py": "870e35a08f824fb92a67330dca8a823587c582b1387c7d63c1bc46e571026358",
+    "evoloop/assays.py": "7b7d0ffaa45905e589657d58adee560e4952fe9dfa638ad81180a4c69ddd613d",
+    "scripts/atlas.py": "702caf5077b29938ad569c8e8961fca693e68ed696e1c44e074ac2abfa0207ae"
+  },
+  "config": {
+    "experiment_id": "EXP-atlas-001",
+    "status": "frozen-before-main",
+    "organisms": [
+      "S13",
+      "N01"
+    ],
+    "near_shape": [
+      384,
+      384
+    ],
+    "far_shape": [
+      640,
+      640
+    ],
+    "horizon": 1600,
+    "detection_interval": 10,
+    "metrics_interval": 100,
+    "main_phases": [
+      0,
+      60
+    ],
+    "heldout_phase": 30,
+    "main_geometries": [
+      {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      }
+    ],
+    "heldout_geometries": [
+      {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      }
+    ],
+    "far_dx": 320,
+    "candidate_phase_budget_per_run_genotype": 2,
+    "inheritance_horizon_per_generation": 1600,
+    "inheritance_shape": [
+      192,
+      192
+    ],
+    "benefit": {
+      "status": "prospective-assay; viability-calibration-pending",
+      "shape": [
+        192,
+        192
+      ],
+      "horizon": 1600,
+      "sample_interval": 20,
+      "metric": "mean intact closed-core count of isolation-confirmed genotypes",
+      "disturbance_times": [
+        600,
+        1000
+      ],
+      "block_size": 24,
+      "development": [
+        {
+          "rotation": 0,
+          "block": [
+            40,
+            40
+          ]
+        },
+        {
+          "rotation": 1,
+          "block": [
+            128,
+            128
+          ]
+        }
+      ],
+      "confirmation": [
+        {
+          "rotation": 2,
+          "block": [
+            40,
+            128
+          ]
+        },
+        {
+          "rotation": 3,
+          "block": [
+            128,
+            40
+          ]
+        }
+      ],
+      "criterion": "candidate mean exceeds each input mean in both development and independent confirmation panels",
+      "limitation": "structural count is a population proxy; individual viability calibration required before confirmed-benefit claim"
+    },
+    "analysis": {
+      "unit": "distinct complete deterministic configuration",
+      "primary": "pair-level confirmed inherited novelty per all near configurations",
+      "interaction": "(S13,S13 - N01,S13) - (S13,N01 - N01,N01), separately for main and heldout",
+      "rank_reversal": "sign of S13-minus-N01 focal contrast differs between partner columns",
+      "uncertainty": "finite-panel descriptive contrasts; no inferential confidence intervals",
+      "beneficial_yield": "report pending until paired benefit and viability calibration complete"
+    }
+  },
+  "panel": {
+    "S13": {
+      "id": "S13",
+      "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "source": "CellPyLib documented species13 seed",
+      "t": 0
+    },
+    "N01": {
+      "id": "N01",
+      "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+      "source": "natural descendant in EXP-discovery-001",
+      "t": 2910,
+      "core": [
+        14,
+        48,
+        11,
+        13
+      ],
+      "isolation": {
+        "status": "confirmed",
+        "input_genotype": "11x13:011111111111170170170170170170170170170170170170170117014014",
+        "stable_genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "transient_path": true,
+        "generation1": {
+          "status": "reproduced",
+          "closure_first_seen_t": 380,
+          "detached_first_seen_t": 380,
+          "sampling_interval": 10,
+          "core": [
+            91,
+            61,
+            12,
+            12
+          ],
+          "offspring_genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "extraction_bbox": [
+            88,
+            58,
+            18,
+            18
+          ],
+          "final_hash": "c442d74c09264aa859cdb8928fbb3c5490e9936676c5aada057abb790e768eb2",
+          "samples": [
+            {
+              "t": 0,
+              "closed_cores": 1
+            },
+            {
+              "t": 100,
+              "closed_cores": 1
+            },
+            {
+              "t": 200,
+              "closed_cores": 1
+            },
+            {
+              "t": 300,
+              "closed_cores": 1
+            }
+          ]
+        },
+        "generation2": {
+          "status": "reproduced",
+          "closure_first_seen_t": 390,
+          "detached_first_seen_t": 390,
+          "sampling_interval": 10,
+          "core": [
+            90,
+            61,
+            12,
+            12
+          ],
+          "offspring_genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "extraction_bbox": [
+            87,
+            58,
+            18,
+            18
+          ],
+          "final_hash": "5acce4e50718a6f4215a3f9b091ff800c5f8800e8a27c76a97fd55eb394075be",
+          "samples": [
+            {
+              "t": 0,
+              "closed_cores": 1
+            },
+            {
+              "t": 100,
+              "closed_cores": 1
+            },
+            {
+              "t": 200,
+              "closed_cores": 1
+            },
+            {
+              "t": 300,
+              "closed_cores": 1
+            }
+          ]
+        },
+        "generation3": {
+          "status": "reproduced",
+          "closure_first_seen_t": 390,
+          "detached_first_seen_t": 390,
+          "sampling_interval": 10,
+          "core": [
+            90,
+            61,
+            12,
+            12
+          ],
+          "offspring_genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "extraction_bbox": [
+            87,
+            58,
+            18,
+            18
+          ],
+          "final_hash": "cc9c5c69f7e55752e2552ac3347674db0a7312bba0bd7eabdb9aa1609613e1fb",
+          "samples": [
+            {
+              "t": 0,
+              "closed_cores": 1
+            },
+            {
+              "t": 100,
+              "closed_cores": 1
+            },
+            {
+              "t": 200,
+              "closed_cores": 1
+            },
+            {
+              "t": 300,
+              "closed_cores": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "phase_states": [
+    {
+      "organism": "S13",
+      "phase": 0,
+      "hash": "10f28eeac1e6dfa515c5678f482e1a332b03a45b90957bfc88226bdb69234078",
+      "shape": [
+        17,
+        31
+      ]
+    },
+    {
+      "organism": "S13",
+      "phase": 30,
+      "hash": "cb965985db359cecb789179faade048761f12f08b78dc231dc5c379554ae76a7",
+      "shape": [
+        17,
+        35
+      ]
+    },
+    {
+      "organism": "S13",
+      "phase": 60,
+      "hash": "8f118e625beec278f2a49f8d518b4a9fa4d1debfb66f99b2ff487e396602deb6",
+      "shape": [
+        17,
+        43
+      ]
+    },
+    {
+      "organism": "N01",
+      "phase": 0,
+      "hash": "1a27e547b0262f62a43036d112ce52cd36ff54f5b2df8d3be304983408a0cfa5",
+      "shape": [
+        18,
+        18
+      ]
+    },
+    {
+      "organism": "N01",
+      "phase": 30,
+      "hash": "dab2f1dbe0a7745e2a0ff7ba34d6c0963e0adda4e270149d23022f2729c8f6d2",
+      "shape": [
+        18,
+        19
+      ]
+    },
+    {
+      "organism": "N01",
+      "phase": 60,
+      "hash": "92ea279259947d839199be22ab6978e23f05e80bf534ee60411f324c901d6d50",
+      "shape": [
+        18,
+        25
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "near-main-S13-S13-p0-parallel",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "fb868c0002c8eb81bf1ed9e16461658f75ea978441f136d9a0bbca1cdd6b97e4",
+      "initial_labels_hash": "cf81491e283f47ff72741e45643735a6da440b62459c3b528df46d0ed4d2528b",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            186,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          192,
+          183,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p0-parallel",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "11fbb3933d3de474a7782874e93c43f1d230f3ec0076559ef3b3e9a35643d822",
+      "initial_labels_hash": "4edf4be171543de8fc7c774e63a21a58ac3e24426032f654782892492aebfa56",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          320,
+          460,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p0-opposed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "7d854a48144b153c746d447878c77f5efa67a5c2f62f674e701363e08934d333",
+      "initial_labels_hash": "b84ddee78d5b529940d6d648d4e0e47006d3d4b42474960ba36276133d9f6678",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            200,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          192,
+          183,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p0-opposed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "2b73f630adfc9dc889e444b51c5008aa2d41c767232deef98218f6fed25ad3b3",
+      "initial_labels_hash": "9714c69b5a798d75ca4cdb41ed9ecc480fc4d38e75780cba76d5ba4f3829c848",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            477,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          320,
+          460,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p0-crossed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b30b1b7359a643b6da8f5c453afddc9162d3abcfcafda60b690186620ddca32e",
+      "initial_labels_hash": "5cb7746ad0287e76d7c9afce7dfd6583fdb34874e6e7655689a93d9c34ab9856",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            233,
+            186,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          216,
+          183,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p0-crossed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "1779fffaf17b920c4be8eda205216354eb0999d5dee945c5202dd1c50a052f35",
+      "initial_labels_hash": "e11a5117c3722810fe1d6466eb9884d69d23b7c479684b3464e61d1676bee517",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            361,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          344,
+          460,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p0-offset",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "0f64fef81e0e027a17a57517f57b38e1a070cb65e4a490f80f03bef760ca2e69",
+      "initial_labels_hash": "30af139e6cd335011441a00195786e8a4c33f970b39bded165ad60b7f41a074e",
+      "initial_cores": [
+        {
+          "core": [
+            171,
+            198,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          168,
+          195,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p0-offset",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "ce3b9e818c3c9799af84aee3f57372794397e7bda6f359a6fcfb014f3d55cfd0",
+      "initial_labels_hash": "c0d642a86aeefd6ac74cce254ae3eff6726e6d0cb4933ecd8541ce3f5e2f415d",
+      "initial_cores": [
+        {
+          "core": [
+            299,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          296,
+          460,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p60-parallel",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "4405202a52c9ece82ab534d47454869ff2c4251302d6edc0c754148bebef8fb2",
+      "initial_labels_hash": "5fcc2de8cbf40d3ccb6a21a03394cc0df94cfc734fc10f714b7d48cef76560b3",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            198,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          192,
+          195,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p60-parallel",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "cba8bd3d2a7e2fd935072b891db3bab1d366f959dee04ea7c317ce588b8062f8",
+      "initial_labels_hash": "08794965825e041ffceb3a3fc60d1482a370d0df3bf597e6487f421cb49b30e9",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          320,
+          460,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p60-opposed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "cd4b227b35f1b4d7309d5a199af6cdb420eb98e1669b5abaaa955cfbd9672c95",
+      "initial_labels_hash": "1dcc3f10b59b95df6ecb2413bbc14f405655e8e58f5e0f35d7d9fd132dbf087c",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            224,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          192,
+          195,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p60-opposed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "4f144301e9558b68280487a473689021f78f35df9daf93e042b0fd3b4c233757",
+      "initial_labels_hash": "22fc4de806cdabba8c11cc8f5a0c6ca2966aad119c01d8dfd698b9014f361da1",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            489,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          320,
+          460,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p60-crossed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "58a17a6510d5648012ec66c7639ca436110078967de1112ca7fd4ab0d7cee034",
+      "initial_labels_hash": "4de3ef8b448fa6b0ec4042dae7e8f7892b3d10b107bc3ce7b391c271db68c0de",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            245,
+            198,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          216,
+          195,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p60-crossed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "573a8f38145a5fbd19b519ad51403fcb1e02fbbd4d6d75ab4bd7cf86561d8c64",
+      "initial_labels_hash": "d2fb1e18827531b70cfd6b4110bdcc82e8d8a34ac51291bb7c9376cc5593fe70",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            373,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          344,
+          460,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-S13-p60-offset",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "8bdebc27b18008be26142f6a0fdefabc9bcda55ff83acbe2a2e627064005e00b",
+      "initial_labels_hash": "712575b270ecd36794aeb8c3a476181c6f8fcdd7cd71dd4a72c7978f00e3862f",
+      "initial_cores": [
+        {
+          "core": [
+            171,
+            210,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          168,
+          207,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-S13-p60-offset",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "1ae5615726888c453a5e8785bd05d6b825cb3f9ec427999de2bf2408b9902cff",
+      "initial_labels_hash": "7c200d9cb222d71aff0ede4abd08597fd11da65773e5e682ebf6057275e98211",
+      "initial_cores": [
+        {
+          "core": [
+            299,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          296,
+          460,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p0-parallel",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "cfaae9d296ac518958901386de2239ee22b49f8c86b8f880148b20d33b1193dc",
+      "initial_labels_hash": "63e6f366d64e49d9694d3f29ab70e72795bea16cd070fd31f40461b333854e6a",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            186,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          192,
+          183,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p0-parallel",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "e40de2b938efb7d358b09f0b19a863b6133ca3e86d28e5cc5e3de8d4010a04c7",
+      "initial_labels_hash": "b96c18ed2289cb62b773e3fac9a71563f54d442834f65962fc202ae68d771148",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          320,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p0-opposed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "c48df66987bbf7926d1091f219e4bf8b3abcb93dda7e85f7b306d57ca220b391",
+      "initial_labels_hash": "0eeac0a6f3d81a048d838b38efe4a2bd7029c4d417f04e29e344715914be088c",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            186,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          192,
+          183,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p0-opposed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "9f052b243f5f187caf614ff978e80ab24969c0ef045635d1cffed6be580495fe",
+      "initial_labels_hash": "0cdf0f294c7fe8e33f2e42bdd434aa0050c14d7fa1b8f20e14622eae5d743345",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          320,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p0-crossed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b0b27d6e191dae815ebc5f744f24956927ca6d63c8e2c24ae0a052004ed4f916",
+      "initial_labels_hash": "6bf6a826a0326d72cbace58e6662bb2aa8d33af963a7c0fb6bd9d75e7c77ad08",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            219,
+            186,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          216,
+          183,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p0-crossed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "93e01f358cedc8176b3bbd7fd8419e8b2f884cb85e1c284e8ddbcb54adbf988f",
+      "initial_labels_hash": "145c199e25ef1a567d2c7de3b646a5a50920dbee43fc09683af094d391f308e7",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            347,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          344,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p0-offset",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "269fd78ab219dae555354b153574b49893327c255fde21793246707c795008ab",
+      "initial_labels_hash": "e9c2e3247bf73e31a2cb9cbe554882a2a018d424ca4ba7e577047d0ce490c745",
+      "initial_cores": [
+        {
+          "core": [
+            171,
+            198,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        [
+          168,
+          195,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p0-offset",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "e0a989a9d91b3bd8e14d2b17e14a70be4367bad51a5a9e33f73ef227a4a04cf0",
+      "initial_labels_hash": "87dd749e6a5e8879ce9d397dd0c8155aa619e732fc4085dbb0108cbe52e09c83",
+      "initial_cores": [
+        {
+          "core": [
+            299,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          31
+        ],
+        [
+          296,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p60-parallel",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "346ea3a1afc3467ad5575d9bd3e6cf539d54e7c2085b9f44052ba32cb95513e4",
+      "initial_labels_hash": "f466bb388d4e16a1679e8db21db7f86d08b691c989d62877d1689812d06a82bf",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            205,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          192,
+          195,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p60-parallel",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "4f4eae6e1828cf62056c8ac08753c8f6cd70555b3d10de173e93c2aa9b754069",
+      "initial_labels_hash": "687364d5ebd1773a8149543442b20199e3163051d5b41a94c5256008a5b100c3",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            470,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          320,
+          460,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p60-opposed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "dc7728f5bbfa82dcca555dd370f685db4fc995240be52935194c19def6238291",
+      "initial_labels_hash": "b05d5014c01d94c1d7220a7894826c4d78750e4d86b059f2f4da4247414cbd0c",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            198,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          192,
+          195,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p60-opposed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "9658d2a653cd70b29dcdd10b1766cebbdf42740382794fdc384a85602c5e5132",
+      "initial_labels_hash": "7a4ee691976b9450a067b4cfb1367fb3de28e50b6dffcdfa7e710a4ea8f71963",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          320,
+          460,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p60-crossed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "4407d4f0285a67356adee270bc4c22c7016d4dc493952b5f278d3ee919af7f23",
+      "initial_labels_hash": "2ea5d4544b624c5450aff6b023298b553411d683f58d560a9f682f8a5a0c441e",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            219,
+            198,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          216,
+          195,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p60-crossed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "8b2fa92ea6310189f2885058d49d1074a45a0409ad7514c3125b5ec951b8ceef",
+      "initial_labels_hash": "1fa63ca1f63fd117dbfff5a014c01028a49041929d52a83d1c78af708ce0e404",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            347,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          344,
+          460,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-S13-N01-p60-offset",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "ccfa37c7b298ddcdef96eda0e940951e562631b2f4d1c6bba7ff243e85fb8d67",
+      "initial_labels_hash": "abf8212dc9a3f2285696932f64f8a196b5db0464d6bd4f54342261f47cf523a8",
+      "initial_cores": [
+        {
+          "core": [
+            178,
+            210,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        [
+          168,
+          207,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-S13-N01-p60-offset",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "ead9cc162e5a5832f41bd1268437a4d03b4864240e5af6ca21f3e2360c0942a3",
+      "initial_labels_hash": "8401eda36d36764b79367df0a845bb4d9dc7a1480a64bf611f0b9167145fe1b5",
+      "initial_cores": [
+        {
+          "core": [
+            306,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          43
+        ],
+        [
+          296,
+          460,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p0-parallel",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "ed65ba5d5a23701919fc58c81ede61c81b7a155d7bfcbf9490704f9b8be0b5c8",
+      "initial_labels_hash": "87eed684f666011adb6921b941374be7d586410ba3f10039da741073868e30de",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            173,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          192,
+          170,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p0-parallel",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "66963c9711b23603f458f749eef7e0ae7a414cd12d4d186104d882c6bdcb4004",
+      "initial_labels_hash": "66c8df8945ac99bf5d76a62d16950f928933e66827e6c71c506f7a919716fc9c",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          320,
+          460,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p0-opposed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "0683436662fc2997334eb6dcdaa7d064aa0bfa8b24b14d05abe2c7fb2661e20c",
+      "initial_labels_hash": "f4d188f4467a4c6f05d70f257298d7929e47a00b1b29484945176f3452694988",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            187,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          192,
+          170,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p0-opposed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "143ed4bb787594b025ece5544be5072e203b1c02801b0f0566d3028497010d51",
+      "initial_labels_hash": "13e41f90e5f7b8af2be4a536111fb4d312fc8aa88d853e88c87a49527eae9275",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            477,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          320,
+          460,
+          17,
+          31
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p0-crossed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "da95da2626032994d79d40900616f956102e0caea835dff876455adf251a07ca",
+      "initial_labels_hash": "61ed0dcc46ab549ff79e68cfc54fb7b75f41f311247a3f86c04bc4c468cee636",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            233,
+            173,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          216,
+          170,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p0-crossed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "c56488f646a1f010eaf158417314acb122e91394cf65db4f282629af5864455c",
+      "initial_labels_hash": "915140b4875d189da21d94ca3aaa69506a3199c85b34b28de78a1e63bf407637",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            361,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          344,
+          460,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p0-offset",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "15d350382dc4cbea1b90570358fcf469fc37e8dbf90b977a7680e6641cb3da09",
+      "initial_labels_hash": "09414e0c20e904baa05fde7daced5165125c865eaea1fcd9f9cf5d90aa3c31a9",
+      "initial_cores": [
+        {
+          "core": [
+            171,
+            185,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          168,
+          182,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p0-offset",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "8e1b0bf785640de2c7f3dd7aee77217f140363827bb85895893b2412117666c3",
+      "initial_labels_hash": "8c0fbe704ea6e68132eb7101740dddc942129177d3a5103f467e833579371884",
+      "initial_cores": [
+        {
+          "core": [
+            299,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          296,
+          460,
+          31,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p60-parallel",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "87b707790d475314c974690d004815e2888725c3c00a7709c9c9aa46dc658507",
+      "initial_labels_hash": "894aa58bbbcd819b26390ce6a115ecf0bf3b04ef9e2f0d934ffacae04d585ec8",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            180,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          192,
+          177,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p60-parallel",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "9796c286211c9c376f3c2869de18a13d564552b19c817d030ecc831b6eba0f81",
+      "initial_labels_hash": "f704e11b5bd1d8d8376eae7704ecdf990c97938bae1924bf6b71e001bdde8180",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          320,
+          460,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p60-opposed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "d9c11bfcc066864e052a5ce7f32e19ea24d937d5c7ce14c74d2aa46e52189f45",
+      "initial_labels_hash": "2ebf03e5cc6d688ead042236b9ff68c9a3fbdb3abfc611f10d26715edddcba27",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            206,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          192,
+          177,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p60-opposed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "788c31e6caaaca29eecc3f85c42e2266017a778a8579852a0ac3b26d9925f254",
+      "initial_labels_hash": "6ca2addd55d9d7c5954e4bee4b3a04998373866b3158775731ce7856a5720396",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            489,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          320,
+          460,
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p60-crossed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "623455d4e2a661aa73a7a1a3e8d2b7c1ee76952c1cb89c06b43f7eaa225a6577",
+      "initial_labels_hash": "12f8211b85c8ce926aba174c646ab17bd416821ee3a6cbf817c96065b950cede",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            245,
+            180,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          216,
+          177,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p60-crossed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "b0a8746462e89df6bf365e3e4d79e872fba45cdd38ff7566d21f67c4704efaa3",
+      "initial_labels_hash": "5b58154b80e88c66d770b369858c6953a421f47d112e9015d5299c19fb024e12",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            373,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          344,
+          460,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-S13-p60-offset",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b919eb84a4501b68c2a74afb2f50fafe8d9770b3ad222fc4c8b7ec15523fe1ab",
+      "initial_labels_hash": "a18cd5e6d3a49311716394b164134948e64ee2c53126df5e779fcad6c97ba305",
+      "initial_cores": [
+        {
+          "core": [
+            171,
+            192,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          168,
+          189,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-S13-p60-offset",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "cab7c94a30ec60eeaf3e53c56a957be338d47f63e48fa2d77ee81b2d57f9fd2e",
+      "initial_labels_hash": "a0b64b6520ce2b171305afc6772c4264fdb28df295154aa42a0fbdf579d7d153",
+      "initial_cores": [
+        {
+          "core": [
+            299,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          296,
+          460,
+          43,
+          17
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p0-parallel",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "1bdf9e989aa980c55b690425f0515b3e989de42d33923d10cc61d7fdc04baf96",
+      "initial_labels_hash": "ec2c0cfd1d9b72f3dd5ed7c10659ece8f958b02d44290ce8b9196592fc7814f3",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            173,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          192,
+          170,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p0-parallel",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "f90bb1c6d3b1ff2ce37e54c774e7f5315748faac49f260357a18270f96193c30",
+      "initial_labels_hash": "d4bed330f568f4714bbdd64f3117a71b306345c3edb68c9f48b9b3459296ed0f",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          320,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p0-opposed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "538d519057e7a15be67946d62603db149ceadb9d241e705367cef9ba98c1f0cb",
+      "initial_labels_hash": "f5c5b647eeca9bcce901487adb4f7c62ee52a0d5d6a3320b7ab41126d0cbc29e",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            173,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          192,
+          170,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p0-opposed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "1d963e45460a310981d7f4d568c5b1d77bc7ce524c6f8c868b3855712e8658e1",
+      "initial_labels_hash": "7faaf87822f88bb81a3f6ee6123ec7ab9087e3f36eca80ab22bd369f8fd3d89b",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          320,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p0-crossed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "75c2656ebb7b9036d02c94f362d11d4f5cf5f822181639598fa40a667a14b8ac",
+      "initial_labels_hash": "86a77c24d2f76c8d9e93a689e33c2e3ba106ebfe2b02db70816a13295642d8c4",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            219,
+            173,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          216,
+          170,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p0-crossed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "564c2090c50a73f3747cf97017f2c3624e82d84ec3ddf9c608a39a1ff2298e19",
+      "initial_labels_hash": "74c236925337ebd29f172442292a5fa98ee500ff383a89eb0127f20bca7d6d94",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            347,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          344,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p0-offset",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "35320cc751de3819a7f3cd355e2f6cdb1a4d1da57f3940ca08c49a5d94231ae8",
+      "initial_labels_hash": "d8d3529e2c36acdb5533c32f1e6eea01a49abb24a5931b78908819ef8b9a9c27",
+      "initial_cores": [
+        {
+          "core": [
+            171,
+            185,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        [
+          168,
+          182,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p0-offset",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 0,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "b5fb3592fd583ba58eb9bc361880b03763e347db6f5cbb0fc4b937caeeaf7247",
+      "initial_labels_hash": "a129e87777948076dc714f73f270159174f3a4ed843aa4a4291879441d479965",
+      "initial_cores": [
+        {
+          "core": [
+            299,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            143,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          18
+        ],
+        [
+          296,
+          460,
+          18,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p60-parallel",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b498cdde99326b4e97655ca3009274e3c52221578068fbec628eb94615c01460",
+      "initial_labels_hash": "4025e2f44d9a8826adf8521002734a2d635cd16e5346ebbde09642f88ac5a286",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            187,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          192,
+          177,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p60-parallel",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "parallel",
+        "partner_rotation": 0,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "69f727805ee0b4be96b31410f821f0ed7663f24b21058ffc4e1126b71666ba61",
+      "initial_labels_hash": "e1722ceefc7ab555606b37c1e7339b51e5301baae27314acb4ecd0337e7f61b7",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            470,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          320,
+          460,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p60-opposed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "3cea0b92b4f8e9fee5cc15b35e57fd4093d6de6d062beeaff72b6cf8c4523b2d",
+      "initial_labels_hash": "b9a2895b57a7a7728dab145e62aa46955a4fd49fd5c9f14a983e1d11f7d6e684",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            195,
+            180,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          192,
+          177,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p60-opposed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "opposed",
+        "partner_rotation": 2,
+        "gap": 8,
+        "dy": 0
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "e65b2a2445eee4fbcf6e93846c27aab9bd7c2d97bc2e38a6ce0b5bdbc88e4d60",
+      "initial_labels_hash": "f85b63f8245c22a6337a98efd560da6ccaa67a8ad0f8fe39560582a76ad89949",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            323,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          320,
+          460,
+          18,
+          25
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p60-crossed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "1c1b53ed655a3107dcc0780e52782b4fea4db218687849d04af44e755865967e",
+      "initial_labels_hash": "46609b6ac0162bdcf077b27bd1163cc77fd6fb8e51e1d3dcdb6c81bfe2a6f930",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            219,
+            180,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          216,
+          177,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p60-crossed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "crossed",
+        "partner_rotation": 1,
+        "gap": 8,
+        "dy": 24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "8b517479f73af99f005c6f4b61896bbf600846e600a6f4b6aa4edc338bff4d51",
+      "initial_labels_hash": "d1945d1ca36678f054963ad4c90b72a6090ff6df43a0842b43f2615c2086243b",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            347,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          344,
+          460,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-main-N01-N01-p60-offset",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "3ac83fe97cfc65c40a4afceac0ede6d9281b02b205fa27804c10cf0c1d29bea8",
+      "initial_labels_hash": "057fbe18d5fd2d007cc0ac272db0ab2038801bc2948f6d9da06da3d58c4a7d31",
+      "initial_cores": [
+        {
+          "core": [
+            178,
+            192,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        [
+          168,
+          189,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-main-N01-N01-p60-offset",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 60,
+      "geometry": {
+        "id": "offset",
+        "partner_rotation": 3,
+        "gap": 20,
+        "dy": -24
+      },
+      "split": "main",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "23b19cf46c7579f2d543eee0dff5335da5412fc7b2a3b8a6dba4e4f66a040062",
+      "initial_labels_hash": "165473441ca59f0b152264550287e10d8f782d7d92e48308d6c87178a579f266",
+      "initial_cores": [
+        {
+          "core": [
+            306,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        },
+        {
+          "core": [
+            323,
+            150,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          25
+        ],
+        [
+          296,
+          460,
+          25,
+          18
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-S13-S13-p30-held-parallel",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "0b1923e3640ed59d52fcd8f05390c35395c852698c4832592040630f1a4a2e5b",
+      "initial_labels_hash": "bd6b5d6a037b12cd659dc43cd885f190b5bd00fd56551add50d0ad4b314e2bca",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            196,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          35
+        ],
+        [
+          204,
+          193,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-S13-S13-p30-held-parallel",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "2ff272e7bf98766cdae5fa842f26d4583e50a7130a7937e3b5764e72d19983cb",
+      "initial_labels_hash": "2d909424b56680ae23fe41d73e1de227085f05c61efa0b56bd8a7eadf48da3a2",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          35
+        ],
+        [
+          332,
+          460,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-S13-S13-p30-held-opposed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "a93bc7ad66184257fe73e59df33116ac98fd9a06dc5aead3a92757b0ebbd27a7",
+      "initial_labels_hash": "c5d12f703fd3a56855e4d8283ccb821653a0a5843050ea1d754cc3c6b96e928e",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            214,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          35
+        ],
+        [
+          204,
+          193,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-S13-S13-p30-held-opposed",
+      "focal": "S13",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "798a5754e828783048e3f0e48bffcd60af0ae883adb1adb7829a9e438de115f3",
+      "initial_labels_hash": "c952a6fff496c58c9a205664fe63228a177d8473788b959d2b3ff2c5db41e05f",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            481,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          35
+        ],
+        [
+          332,
+          460,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-S13-N01-p30-held-parallel",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "d224569bbb2933bad2f7776b4c21c899f80e9ce0d32b5683288f65239ee9578b",
+      "initial_labels_hash": "9a627df56813a0d306934d0034b91c216750d65126a332ad8ec59508138fe8e7",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            197,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          35
+        ],
+        [
+          204,
+          193,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-S13-N01-p30-held-parallel",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "fed0b0e00aca21527edd99f824dab932eba66586a90c255b3a12d097f3862cdf",
+      "initial_labels_hash": "276a969350b6de09e0983fb6c18c6e4879ea6cec89460489a02680517dfedbae",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            464,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          35
+        ],
+        [
+          332,
+          460,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-S13-N01-p30-held-opposed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "e02942a106d262b316320d44a3a1f796e310082b6bb250b71d373c1798637496",
+      "initial_labels_hash": "0793056c0224d008cea11d8330bdec64c9f252be2b8fd852a0109339cc34f977",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            196,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          35
+        ],
+        [
+          204,
+          193,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-S13-N01-p30-held-opposed",
+      "focal": "S13",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "aa086566298e9a83d01ae4d22544d60b025abbd8a881fc885b249167bd9f0da1",
+      "initial_labels_hash": "fbd113598d47b2a6f611d575c62e7e2c5436e170ef0eb8975e04d048902a6534",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            143,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          17,
+          35
+        ],
+        [
+          332,
+          460,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-N01-S13-p30-held-parallel",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "1750c9bf3c72c77d3c62efb79de7b505dffc51cb653da763cbcb302af2e9f704",
+      "initial_labels_hash": "727cd1cacd980e5bf701b2973bb68b17da76e76a26630f66112613f2c9fe03e5",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            148,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            180,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          19
+        ],
+        [
+          204,
+          177,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-N01-S13-p30-held-parallel",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "0d744bb36c5c1b4e66cf9744f7fef59a2868a3cb8035cb548dad4ffff6d5a982",
+      "initial_labels_hash": "fd68f2e7793776096cd90407260a6067e26a4c90536ba9981bbd28c1cd5df761",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            144,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            463,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          19
+        ],
+        [
+          332,
+          460,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-N01-S13-p30-held-opposed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "35c1011640c58ce386b0406d991460bf148e7aa9ca051571f19f7057c954904c",
+      "initial_labels_hash": "129f08f3070064b078102ef98afebb3b36c921c1f4cfda8e4ad5417ee0808227",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            148,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            198,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          19
+        ],
+        [
+          204,
+          177,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-N01-S13-p30-held-opposed",
+      "focal": "N01",
+      "partner": "S13",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "493be63a50e7ac78a5d94b169bec0d8828d2e84080052322c059504e3b68f228",
+      "initial_labels_hash": "3cafa057c8803f1f47436f31aa3e58aeb8ce32a1f59d574b98a4afbd35a44e2e",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            144,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            481,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          19
+        ],
+        [
+          332,
+          460,
+          17,
+          35
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "aafbc3a2d2ef258a8bcb526527c35a9bce9b8b6cbd7db5e5525b02591f4b6733",
+      "initial_labels_hash": "57fcdccf352d2b4af80f32561584bc800e00d82557f402b36c9b75b86170e64a",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            148,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            181,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          19
+        ],
+        [
+          204,
+          177,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-N01-N01-p30-held-parallel",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-parallel",
+        "partner_rotation": 0,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "ae7513a413de6de22975e566a84dbe705f1b908e742d95bdad4ebad4e0a19c26",
+      "initial_labels_hash": "26df0694c7ec0379100b42476378b1aa1d836b8ceaed6fa3d1fdc013ee72496d",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            144,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            464,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          19
+        ],
+        [
+          332,
+          460,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "near",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "776e631a8ad7546cb7d8ae229bc1454989cfb58da5586d4e7d69df914402914d",
+      "initial_labels_hash": "53a75f1d174c225942bbafa34017fbb4533f08a0ec011810a32d9426acfe52c9",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            148,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            207,
+            180,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          19
+        ],
+        [
+          204,
+          177,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "separated-heldout-N01-N01-p30-held-opposed",
+      "focal": "N01",
+      "partner": "N01",
+      "phase": 30,
+      "geometry": {
+        "id": "held-opposed",
+        "partner_rotation": 2,
+        "gap": 14,
+        "dy": 12
+      },
+      "split": "heldout",
+      "treatment": "separated",
+      "shape": [
+        640,
+        640
+      ],
+      "initial_hash": "484e71de63cf45c1f4757ce252d6fcb7d97e75e842d536c79f82868bd9a5d264",
+      "initial_labels_hash": "55d9b944021d9952973848a22b454d4f9d7ea8546724d8000ee0d6a680822f0c",
+      "initial_cores": [
+        {
+          "core": [
+            323,
+            144,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        },
+        {
+          "core": [
+            335,
+            463,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 2
+        }
+      ],
+      "input_boxes": [
+        [
+          320,
+          140,
+          18,
+          19
+        ],
+        [
+          332,
+          460,
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p0-r0",
+      "focal": "S13",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r0",
+        "partner_rotation": 0,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "d0f41a3115a493c6294983cb818203d820581ab52b86188a75660cba9a89911e",
+      "initial_labels_hash": "c6b8a97cbe213de96646a41e5922249189190e2221892ae01ae52bf54f989888",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p0-r1",
+      "focal": "S13",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r1",
+        "partner_rotation": 1,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "d63f2be3ec809a875f839b434ee055f0f742d3bf15ca4f03c556a1f26900122a",
+      "initial_labels_hash": "454c606f0ee57c7f02eac2c32d15803a3a1d0141e20211399a6d40edd118c526",
+      "initial_cores": [
+        {
+          "core": [
+            209,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          31,
+          17
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p0-r2",
+      "focal": "S13",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r2",
+        "partner_rotation": 2,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "ac2b08c2bbeae49db5677747297d6f1dc24791ebd0eede3f02ed840827fe6408",
+      "initial_labels_hash": "aba5dc759a08dff7261360319028dad1e705148a2418e2b42a52b0f74e1e80ed",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            161,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          31
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p0-r3",
+      "focal": "S13",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r3",
+        "partner_rotation": 3,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "fbfc47a9ce2e183041a665c3ba2aa79694a82adcc66509c2d5c81c321b8c258b",
+      "initial_labels_hash": "e24ec0a80517469485ea0cd1aca80dc29d4ba0b1fb9d364c8227aba16c117b27",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          31,
+          17
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p30-r0",
+      "focal": "S13",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r0",
+        "partner_rotation": 0,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b38945515ddd4b378d0ea535ab455a6cbf11781855f2b466b3ec93bc26c781b4",
+      "initial_labels_hash": "ba0ab69c7329422426e5d5e7047d8f5fb1eca015f577095e8dd3102f69d2b8a2",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          35
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p30-r1",
+      "focal": "S13",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r1",
+        "partner_rotation": 1,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "e7aa82745834c9ed3acda9cc05107226d060a8f7c4e03380b96fcb3185790c4f",
+      "initial_labels_hash": "edc226c06e3cbca25647089be103d78155fe0d68e77b7b8578e090fdbaa4d228",
+      "initial_cores": [
+        {
+          "core": [
+            213,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          35,
+          17
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p30-r2",
+      "focal": "S13",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r2",
+        "partner_rotation": 2,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "44e125d58bde9ee41deb588cbb7b217d8babcefa564ba3bcfea252eb2a980c78",
+      "initial_labels_hash": "da770dd5d5ddfc37a07b2545ef04b327aa650c3662ddd4a473f7ec4f9d6e6aba",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            165,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          35
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p30-r3",
+      "focal": "S13",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r3",
+        "partner_rotation": 3,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "89ebc179791c7c4180f6727360dab7bfc5bf5375d33f9c1bd7e3a5fef30e4e2b",
+      "initial_labels_hash": "a6e975774afd9f25f87ce4401b457f46b2ed6f5e9e4a0de41a2a72c4e0d0d186",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          35,
+          17
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p60-r0",
+      "focal": "S13",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r0",
+        "partner_rotation": 0,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "e9252e5617fc8614f64d2f4fd4e79f785bcbd47623903c6ca64c946aac1baae9",
+      "initial_labels_hash": "a9b6619c353157d236561d1c614877f8e67c94f831796a751e2edd98e2f981df",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p60-r1",
+      "focal": "S13",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r1",
+        "partner_rotation": 1,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "99d46b0b200316f5909113b1f511382187a3666477b09fec78e8ff5d400c425e",
+      "initial_labels_hash": "6de4e617baa2c7a53053dfa8c3c239c8b86d5b37622ec74fc1f00308b6955913",
+      "initial_cores": [
+        {
+          "core": [
+            221,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          43,
+          17
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p60-r2",
+      "focal": "S13",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r2",
+        "partner_rotation": 2,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "4a1474f755769bb3fda4e846ab17e901d4e3067078f4a647a70dff7da63e3b59",
+      "initial_labels_hash": "18f969d729e82505c13b5b7693c1dffe1fe475b9d94f006cbc115929949f6021",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            173,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          17,
+          43
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-S13-none-p60-r3",
+      "focal": "S13",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r3",
+        "partner_rotation": 3,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b23db05db5ac51f3037536544ba2a8815d4e3b236398b32680894e025cf79df5",
+      "initial_labels_hash": "d67199d0aa4da8b9723aee693a7266124b359e1d3a79d6e7fc77dd9aee0fb687",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            11,
+            11
+          ],
+          "genotype": "11x11:01111111111117017017017017017017017017017017017017014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          43,
+          17
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p0-r0",
+      "focal": "N01",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r0",
+        "partner_rotation": 0,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "fcd77561e28b6ffe776261fc58ea5d6fed8ccc5309b350deeeb7382f68474e11",
+      "initial_labels_hash": "7532b1a697e8c80cc172387588a35d4ba73e8107da215c98ea02da48c8143198",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p0-r1",
+      "focal": "N01",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r1",
+        "partner_rotation": 1,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "9f3138e48e9f8c89e07d63aa3d9635667b06aa0fea26c62815e3f39aceedbbe1",
+      "initial_labels_hash": "2e3f313c0addd2f6627a34ee404187a98b4180ffc836d7dc4cae1819e9f62c94",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p0-r2",
+      "focal": "N01",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r2",
+        "partner_rotation": 2,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "64eb83be5437a2fa0c33e9b8c283b05a7a32e7b57eb472629551d974b601f5f8",
+      "initial_labels_hash": "02081cd5856a0460424586a82e192319fee9c7760a0f255b0e5cabcfacebff63",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p0-r3",
+      "focal": "N01",
+      "partner": null,
+      "phase": 0,
+      "geometry": {
+        "id": "r3",
+        "partner_rotation": 3,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "5c326392abb082bb45efa694d5fbcd9d5ae9ca0a73d881110dc11c27934ac081",
+      "initial_labels_hash": "6746554d1ecb7b636567fe3b1fd074cf44e97577fb0808a4b225e42269cb14ab",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p30-r0",
+      "focal": "N01",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r0",
+        "partner_rotation": 0,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "b06210d7270c76e77a33549f5c8ffef341b4dbfb717b64163067fc10a30d3137",
+      "initial_labels_hash": "776bedf8ff9003adcdf6509d7ea49dab8b47120c24ca3538293244cd033ebbc4",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            148,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          19
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p30-r1",
+      "focal": "N01",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r1",
+        "partner_rotation": 1,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "d7ed887e93c0dad129bba8f1a5b5eeb60fb0fabd6a88d1ebeb7b008472a3b733",
+      "initial_labels_hash": "0dceca8f1cfb45a732394fdb8614f331cf9bb534918b55a4d3b55b6c854ec754",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          19,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p30-r2",
+      "focal": "N01",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r2",
+        "partner_rotation": 2,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "4eb945a285db96ad62f2a27de69e7b84453e3f2c9865afa2e79a39f43d0ec369",
+      "initial_labels_hash": "8ad73b9dde33a55d14a1126d6b1a7a1e231dfe7713ae8ed10e5e26a2b05751b9",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          19
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p30-r3",
+      "focal": "N01",
+      "partner": null,
+      "phase": 30,
+      "geometry": {
+        "id": "r3",
+        "partner_rotation": 3,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "9b4ce73b75a3fa0b8e599098b6ae4980e87b914c0dbc06c36c6f121efbdccc9c",
+      "initial_labels_hash": "2ab8280f8d95de62be5d9541368dae970a1d931944946d12a00ea5c7436b3986",
+      "initial_cores": [
+        {
+          "core": [
+            196,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          19,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p60-r0",
+      "focal": "N01",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r0",
+        "partner_rotation": 0,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "3472e05a84556d0fa0e2dbbd74f300417521cbf0d4d2d738ce94174003f3296a",
+      "initial_labels_hash": "172e584fc2bd9e066c6f7dfdeba3988334d8aa198b37c60ab4a84c9c180f394a",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            154,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p60-r1",
+      "focal": "N01",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r1",
+        "partner_rotation": 1,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "4a374a6799b129f4d5472c9c81a32748f0de28db6dd50ea627d9cd257f635e4e",
+      "initial_labels_hash": "6d2bbc1f04af053b7e91f9b5009371aa74edf55d1b99119ccc8f084fb76f2818",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          25,
+          18
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p60-r2",
+      "focal": "N01",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r2",
+        "partner_rotation": 2,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "3051b8cca289e06095f53840a1f06d944c695b7708f562523089d033e9b833fa",
+      "initial_labels_hash": "1c98904fbf60a38d4c826faa34356587b2077ff12c15da37f7b6a7280f17cd93",
+      "initial_cores": [
+        {
+          "core": [
+            195,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          18,
+          25
+        ],
+        null
+      ]
+    },
+    {
+      "run_id": "alone-control-N01-none-p60-r3",
+      "focal": "N01",
+      "partner": null,
+      "phase": 60,
+      "geometry": {
+        "id": "r3",
+        "partner_rotation": 3,
+        "dy": 0,
+        "gap": 0
+      },
+      "split": "control",
+      "treatment": "alone",
+      "shape": [
+        384,
+        384
+      ],
+      "initial_hash": "bca75c0ba83e89f27a431fff279baeef332e38925cac59dae25adabcdd867ff3",
+      "initial_labels_hash": "a0dd58b8e38393f68029894564d185b61eb2542456a99478d3f8df374b2c2127",
+      "initial_cores": [
+        {
+          "core": [
+            202,
+            147,
+            12,
+            12
+          ],
+          "genotype": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "provenance": 1
+        }
+      ],
+      "input_boxes": [
+        [
+          192,
+          144,
+          25,
+          18
+        ],
+        null
+      ]
+    }
+  ],
+  "expected_runs": 104
+}

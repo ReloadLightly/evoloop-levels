@@ -34,10 +34,11 @@ def main():
                 pid=f'N{len(panel):02d}';checked[gt]=pid
                 snap=o['isolation_snapshot'] if test['stable_genotype']==gt else evidence[0]
                 np.savez_compressed(out/f'{pid}.npz',snapshot=snap,child=evidence[0],grandchild=evidence[1],
-                                    source_grid=g,first_generation=evidence[2],second_generation=evidence[3])
+                                    source_grid=g,first_generation=evidence[2],second_generation=evidence[3],
+                                    third_generation=evidence[4] if evidence[4] is not None else np.zeros((1,1),dtype=np.uint8))
                 panel.append(dict(id=pid,genotype=test['stable_genotype'],source='natural descendant in EXP-discovery-001',t=t,core=o['core'],isolation=test))
-                print('verified natural variant',pid,gt,'at',t,flush=True)
-        if len(panel)>=3:break
+                print('verified natural variant',pid,test['stable_genotype'],'at',t,flush=True)
+        if len(panel)>=2:break
     np.savez_compressed(out/'world.npz',frames=np.array(frames),times=np.arange(len(frames))*100)
     report={'experiment_id':'EXP-discovery-001','rule_hash':RULE_HASH,'shape':[160,160],
             'horizon_actual':t,'sampling_interval':10,'initial_hash':digest(np.load(out/'initial.npz')['grid']),
