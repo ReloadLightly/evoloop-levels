@@ -1,23 +1,18 @@
 # Evoloop Levels
 
-**Where does evolvability reside: organisms, encounters, or ecological history?**
-Levels refers to levels of evolutionary causation. We are building reproducible
-artificial-life evidence toward ALIFE 2027 or GECCO 2027.
+**How do encounters between self-reproducing digital organisms create variation that can be passed to their descendants?**
 
-The first checkpoint is a controlled crossed encounter atlas under the original
-nine-state evoloop rules. H1 (transferable organism contribution) and H3
-(historical pathways) remain untested. Interaction-generated mutation is already
-known; this project measures conditional inherited-variant yield, with explicit
-unsuccessful encounters, isolation checks, and a prospective benefit assay.
+Evoloops are patterns of cells that construct copies of themselves. When growing loops encounter one another, their interaction can alter the structures they produce. This gives us an experimental setting for studying how reproduction, interaction, and evolution are connected.
 
-The completed atlas observed candidate signal changes in **6/40 near
-configurations**, with **0/64 controls** showing candidate novelty. Eleven
-isolation paths yielded **no confirmed stable novel inheritance** under the
-frozen assay. Main candidate rankings reversed by partner, but the pattern
-did not transfer to held-out configurations. This does not establish H2 for
-useful heritable variation. Benefit remains pending; its yield is unknown.
-A separate exploratory natural path did establish inherited novelty and supplied
-the N01 input organism. H1, H3, and RSI remain unestablished.
+Our research asks where the capacity to generate heritable variation comes from. Do some organisms carry this capacity across different environments? Does it arise from particular combinations of organisms? How do earlier ecological conditions shape the organisms and encounters that produce variation later?
+
+We investigate these questions through three connected experiments: comparing organisms under common conditions, systematically exchanging their interaction partners, and transplanting organisms between populations with different ecological histories.
+
+The first experiment maps controlled encounters. We place organisms in specified arrangements, record what happens when they interact, and isolate possible variants to test whether they can reproduce their changed form.
+
+So far, six of 40 close-placement configurations produced candidate changes, compared with zero of 64 controls. Follow-up tests examined 11 candidate isolation paths; none met the experiment’s criterion for stable inheritance. A separate exploratory run produced a heritable variant, N01, providing an additional organism for subsequent comparisons.
+
+These observations make the next question concrete: which differences between encounters that produce temporary changes and encounters that produce heritable variants explain their outcomes?
 
 [Completed analysis](data/atlas/analysis.md) ·
 [Outcome matrix](figures/outcome-matrix-light.svg) ·
