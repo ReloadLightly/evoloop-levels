@@ -210,3 +210,37 @@ The stable genotype may arise for the first time after isolation; describe it as
 an inherited stabilized descendant of encounter novelty under the standardized
 isolation intervention, not automatically as a stable variant observed in the
 unintervened encounter world.
+
+## Final first-checkpoint reporting assessment
+
+Reviewed final README, research state, manuscript, and machine-generated atlas
+analysis after all 104 configurations and 11 frozen isolation paths completed.
+No material scientific inconsistency or unsupported H2 claim was found in these
+reports. The reported counts distinguish six candidate-producing near states,
+seven run/identity candidates, five states with extractable snapshots, and
+eleven attempted paths. All seven candidate identities are unresolved with
+respect to stable novel inheritance under the declared search. Zero confirmed
+paths is a measured endpoint, not proof that ecological inheritance is absent.
+
+The reporting audit correctly retains the frozen composite identity endpoint
+while separately reporting signal-word novelty and identifying the latter as
+added after freeze. All observed candidates pass both definitions. The natural
+discovery path provides an actual inherited signal change, whereas its
+11-by-13 to 12-by-12 stabilization is explicitly morphological. That exploratory
+success is separate from the atlas's zero confirmed novel paths.
+
+Candidate-only difference of differences is +0.375 in the main panel and -0.500
+held-out; the main partner-dependent ranking does not transfer. Confirmed
+inheritance contrasts are zero in both panels. These finite-panel descriptive
+results support neither useful-heritable H2 nor a general rejection of encounter
+dependence. Pending benefit remains unknown, and H1/H3/RSI remain unestablished.
+The separate multi-transient follow-up is appropriately exploratory and does
+not revise the frozen endpoint.
+
+The recommended next experiment is the declared paired candidate-fate
+calibration: native continuation versus isolation at fixed maturation delays,
+a prospectively bounded transient-offspring search, and known S13/N01 positive
+controls. This addresses the immediate uncertainty about candidate fate and
+assay sensitivity before expanding the causal comparisons. The review does not
+certify every raw array or figure; those are covered by the repository's
+separate integrity and visualization checks.

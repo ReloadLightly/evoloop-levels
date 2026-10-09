@@ -1,5 +1,7 @@
 {
   "style": "configs/style.json",
+  "font_sha256": "690243adfefe0ce154b547db6205794bd30ac4277275179517a90994f4980648",
+  "font_license": "docs/font-license.txt",
   "artifacts": [
     {
       "file": "world-overview.webp",
@@ -8,7 +10,7 @@
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
       "source": "data/exploration/world.npz",
-      "sha256": "da91b1cb56f002b8688952165181dbc89cc75d45c2eafd9e01b163eac5bd1712"
+      "sha256": "d16dae08a9e3be5d39167e3c3e86d312e86d77f575ff27de299ceabb534525b5"
     },
     {
       "file": "world-overview-light.svg",
@@ -16,7 +18,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "987d04692cce66219e4246464eb193283f6b685a45163d5cd55c6fe4aa74f699"
+      "sha256": "fd854d1f9e83a906b5a230b0a34663f7c395f35fbdc0cae897c54b0dd3647ab2"
     },
     {
       "file": "world-overview-light.pdf",
@@ -24,7 +26,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "faf447609a749f09dc9e493f36d69663604c7bd84e528ef1ba214c3359c7b644"
+      "sha256": "1758dfdb383dda587963e497016fcf2fa3c1c0149bfd576690e1644865822d25"
     },
     {
       "file": "world-overview-light.png",
@@ -32,7 +34,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "58c2a80d2cf5db2b43e774c5954e9882f095a9e7784a87f4148e75885073d77f"
+      "sha256": "acd1f3159c8620c754e15ceaa58a153e110a663c9ab4bd77c6aabaa99c2ad3dd"
     },
     {
       "file": "world-overview-dark.svg",
@@ -40,7 +42,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "a0f880de185485594a74c602581fe0c9d4a98d520ee708d035047742832b43f2"
+      "sha256": "992fe45076b02c52c7b3f75d2eb3a0010b1f6f7cd382de4d5ca54d014e62d2ec"
     },
     {
       "file": "world-overview-dark.pdf",
@@ -48,7 +50,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "701dfb56fa943dbe7bcf3741e98e99e4ac5927077412ca199f7d789a2516447e"
+      "sha256": "82cadd29ebc88b864c32438b4bcad832c7e976a2ac0d66e38de4cd502ae1c0b6"
     },
     {
       "file": "world-overview-dark.png",
@@ -56,7 +58,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "a57a4c0d57d980cde3efcaa9193dcb0889c675f8ffe844cf0822ff006f02b31d"
+      "sha256": "ead822153015b06e025804309291ff4860aabc5fe565568909efff8eecea4a8b"
     },
     {
       "file": "inheritance-path-light.svg",
@@ -64,7 +66,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "456253db7c750beaca3ead1d91d7627ca5adf2cd416851bfea8fdba757697d15"
+      "sha256": "a38f4dc45695e75e60b6de5fb494cdf8ad0bdd46cb6aed85fa97e7c663497bb1"
     },
     {
       "file": "inheritance-path-light.pdf",
@@ -72,7 +74,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "9671c6a6da30f693a2dbd90917c81786f621fc8b12f29fd69a444409cc85383f"
+      "sha256": "a59f626dbc6eb643ab6d6c0110d64e72b9d26f2dc1a457d818c11ef1496b4e07"
     },
     {
       "file": "inheritance-path-light.png",
@@ -80,7 +82,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "d0c096c4b1c5bcac409d8032bdd12b104d70e4aea7d68a0cdc55b38209cf1113"
+      "sha256": "2de5b32a0cb8727fc019bc903759cc10dbbb006ce800a3d79df966c967ca38ba"
     },
     {
       "file": "inheritance-path-dark.svg",
@@ -88,7 +90,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "e8cd3b88ae23d168784ccef085e9d52e91f672250c8228a9e9646fa4f9063161"
+      "sha256": "a96a019c6bf82896f0777a368ee90ab4ea44982b1d83d96133e9a659a7d2b0bf"
     },
     {
       "file": "inheritance-path-dark.pdf",
@@ -96,7 +98,7 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "7f41fef58754abdd2d44bb766177051f2efa6a2a1941f9efa9f1bc94b67ad577"
+      "sha256": "165f283452f9d758026fcc33839100cce2deb813fae9748afb9103440baa0ed2"
     },
     {
       "file": "inheritance-path-dark.png",
@@ -104,7 +106,421 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "3506dc1d505b4891d6e588f5aeddb408c7b63b96e8d87fac9f759e874ad09592"
+      "sha256": "dd6503e134d71fdfbd5d79efe390b67311201ea2f7fa8f3117a05a21e17718e3"
+    },
+    {
+      "file": "outcome-matrix-light.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "bd805057845333ae6022542f355ae33eed6935e70910462064ae36cb1eb253d3"
+    },
+    {
+      "file": "outcome-matrix-light.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "6aa66dc11444dc9565055ab59eb91b4a7f45e404a9d41dfac4173b711c01e36e"
+    },
+    {
+      "file": "outcome-matrix-light.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "7345cfdbd766e0efe2a954046ec40a561999c61a93bcb30125c48341aa85f101"
+    },
+    {
+      "file": "evidence-stages-light.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "11d90d6057addcacec2b210ef6ae557fe446ce65086ba7978c5c3adf682597b8"
+    },
+    {
+      "file": "evidence-stages-light.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "53fdf344fb880f1ad8b1984a376bde08fe0bcf22fb2c8e890158f515af12fcbd"
+    },
+    {
+      "file": "evidence-stages-light.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "0ef7f86f4e34156c16483cf8e0ca6d56b1711661528404f182cad9e618a7da14"
+    },
+    {
+      "file": "outcome-matrix-dark.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "9970bcbf586b64439c7ef2a9f6f3791d50adec7b74c98743cf5c4a766a22452a"
+    },
+    {
+      "file": "outcome-matrix-dark.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "62e162445cb15c6acd71441ba075d7fae98a99eb373b522787ec6aa80176d385"
+    },
+    {
+      "file": "outcome-matrix-dark.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "7ec15a608c97465b85505c301861595c5a88c5d333c3d2bbea6f6f0b5ffee57b"
+    },
+    {
+      "file": "evidence-stages-dark.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "8a46811d421d08d9f34dbc0090182a272d4ef3356403d759627162012164c014"
+    },
+    {
+      "file": "evidence-stages-dark.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "bc03733cd034e5262fa4d05c4fd69574a4cfc9a9990d550ee76497e6994b89c4"
+    },
+    {
+      "file": "evidence-stages-dark.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "cd2dbd9644999b4f2e5ceb06fdb151b41b3c2ea7f414640570d3e95f7a5a1e10"
+    },
+    {
+      "file": "encounter-1.webp",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "selection": "post-analysis illustrative selection",
+      "sha256": "c5b6de50ec78740a204292de88d8587520ad3e511d6e3c08c7a8f6a5d121a954"
+    },
+    {
+      "file": "encounter-1-light.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "3b7cfaae9a445531811df1becb7015fbb7ee8a907da50a8e2da6e445b58295eb",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ]
+    },
+    {
+      "file": "encounter-1-light.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "6b890879097ee6f2b367249e9445536ea9c0251862f12df3a0f46981b0ed569a",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ]
+    },
+    {
+      "file": "encounter-1-light.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "e58015c57494901a4df9a5150e57c36bad0f64c0f5e0eb92f672b0db877e5b8e",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ]
+    },
+    {
+      "file": "encounter-1-dark.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "7f8ecedb28d2d6f46ddc82303cd7634c0e51c85e9387b9dcb355c1bb4524b326",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ]
+    },
+    {
+      "file": "encounter-1-dark.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "7a0fa3aee33b8116d9adaeab7eebdafb36afd8e0f53bbfd93b8eae75369e374c",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ]
+    },
+    {
+      "file": "encounter-1-dark.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "5ed169c0b94a5b7f107d1f75b98d21d5c75ff84e5143957083ddc56b8acb1772",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "crop": [
+        43,
+        19,
+        260,
+        198
+      ]
+    },
+    {
+      "file": "encounter-2.webp",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "selection": "post-analysis illustrative selection",
+      "sha256": "b4022376f512a2182b741319047695ffd44e0504d430e619202df71e2926d647"
+    },
+    {
+      "file": "encounter-2-light.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "7075b3339f7c4c274888419561139ceb73602f7bb6b88a97511f1689b3de216b",
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ]
+    },
+    {
+      "file": "encounter-2-light.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "d54c5698fe727145b7a7876b370bc76231bd7b60302b19439aafa4af710d112d",
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ]
+    },
+    {
+      "file": "encounter-2-light.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "ee2303e81d075e6619f6dc7792437e404c6c1088ba7bca0797a2dfbee97e7ec1",
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ]
+    },
+    {
+      "file": "encounter-2-dark.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "917721210014f6cf63c1b33087c69cdcce4c30e357dd45f34b8fbd05224a4b5d",
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ]
+    },
+    {
+      "file": "encounter-2-dark.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "9c5e1e64d9cecd44c6d061550dba3a6ad34193b9a050c00a8ba9f92b066b03a4",
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ]
+    },
+    {
+      "file": "encounter-2-dark.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "3fa731436bb78ad2f01de3f0f794d54f20642dde8d6d6525bf9b543830f750d0",
+      "run_id": "near-heldout-N01-N01-p30-held-parallel",
+      "crop": [
+        186,
+        114,
+        42,
+        88
+      ]
+    },
+    {
+      "file": "encounter-3.webp",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "selection": "post-analysis illustrative selection",
+      "sha256": "7f59c032f72de022aee013107c4d1794dc4a44848541125de158e27794622b82"
+    },
+    {
+      "file": "encounter-3-light.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "19e2b2e1206495789af35830bab8c74b233a57e55c6689c8f566fafd101aaa2c",
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ]
+    },
+    {
+      "file": "encounter-3-light.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "710d4a56434d83652fd0300a0f87094c22a88cf5a5b4dccfd3809b7132dc70e6",
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ]
+    },
+    {
+      "file": "encounter-3-light.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "a089eb4299c4d53a1a95a252074ac5143fa14bced3208effcdcac3d7628b366d",
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ]
+    },
+    {
+      "file": "encounter-3-dark.svg",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "fc245d5f819c079bdaf207b80d9d752465ac7922f79af401e30cca4d51920951",
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ]
+    },
+    {
+      "file": "encounter-3-dark.pdf",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "63531f62b7f8154d2589bfa1f90c0d8dbeda864eb1e29c8255f9623af62e2bad",
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ]
+    },
+    {
+      "file": "encounter-3-dark.png",
+      "experiments": [
+        "EXP-atlas-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
+      "sha256": "05e10c0dc32cdab88a83c9b512a03926b35fb58ba25538918bbd26fb0d1fbd9b",
+      "run_id": "near-heldout-N01-N01-p30-held-opposed",
+      "crop": [
+        110,
+        13,
+        194,
+        314
+      ]
     }
   ]
 }

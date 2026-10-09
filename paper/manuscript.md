@@ -18,7 +18,11 @@ replay and checkpoint/resume agree. Natural exploratory variation supplies a
 second verified input organism through a transient-to-stable inheritance path.
 We prospectively freeze 32 main crossed encounters, eight held-out encounters,
 40 separated controls, and 24 alone controls, with complete starting grids and
-conservative pair-level ancestry. The 40 near encounters are complete; their initial isolation checks found no stable novel transmission path. Separated and alone controls remain in acquisition in this intermediate draft. A paired ecological
+conservative pair-level ancestry. All 104 atlas states completed. Candidate signal novelty occurred in 6/40 near
+configurations and 0/64 separated/alone controls. Eleven isolation paths supplied
+no confirmed stable novel transmission under the frozen criterion. A candidate
+interaction contrast of +0.375 in the main panel changed to −0.500 in held-out
+configurations; neither panel showed an inherited-novelty interaction. A paired ecological
 benefit assay is frozen but remains pending viability calibration. The
 organism-transfer and ecological-history hypotheses remain untested.
 
@@ -226,8 +230,8 @@ Isolation is an explicitly imposed intervention. We extract the full occupied
 connected component, including arms, only when it contains exactly one recognized
 core and avoids the grid edge. We remove other components and center the snapshot
 in an empty 192×192 torus. Oversized, shared, or boundary-spanning components are
-ineligible. The earliest two distinct eligible phases per run/genotype constitute
-the frozen search budget; later phases and siblings may be missed.
+ineligible. The earliest two distinct extractable snapshots per run/genotype constitute
+the frozen search budget; size eligibility is checked after capture, so oversized attempts consume that budget and remain unresolved. Later phases and siblings may be missed.
 
 Each isolation generation runs for up to 1,600 updates. We seek the first
 newly positioned closed core with a valid genotype and a complete detached
@@ -309,10 +313,44 @@ the next horizon. Two initial snapshots dissolved, and three remained without
 a qualifying detached descendant. These are completed assay observations, not
 proof that all possible ecological inheritance paths are absent.
 
-The remaining controls are still being acquired in this intermediate draft.
-Final crossed tables and interaction contrasts will be inserted from the
-complete machine-readable analysis. Benefit remains pending; no H2 claim of
-beneficial-heritable variation is made.
+The 40 matched separated states had no contact and no candidate novelty. All
+24 alone controls likewise had no candidate novelty. No atlas run touched a
+boundary during observation. The matched near-minus-separated candidate rate
+was 6/40 = 0.150; this is a descriptive finite-panel contrast. Full initial/final
+hashes and candidate extraction checks pass for all 104 states. Four chunked
+encounter replays reproduce final grids and provenance, and 17 isolated-generation
+replays match recorded terminal hashes.
+
+| Focal × partner | Main candidate / n | Held-out candidate / n | Stable inheritance |
+|---|---:|---:|---:|
+| S13 × S13 | 3/8 | 0/2 | 0/8; 0/2 |
+| S13 × N01 | 0/8 | 0/2 | 0/8; 0/2 |
+| N01 × S13 | 1/8 | 1/2 | 0/8; 0/2 |
+| N01 × N01 | 1/8 | 0/2 | 0/8; 0/2 |
+
+In the main panel, the candidate-only focal contrast was +0.250 with S13 as
+partner and −0.125 with N01 as partner, a rank reversal and difference of
+differences +0.375. In held-out configurations the corresponding contrasts
+were −0.500 and 0.000, giving −0.500 and no strict rank reversal. The candidate
+pattern therefore did not transfer. Confirmed isolated-inheritance contrasts
+were zero in both panels because no path satisfied that criterion. Candidate
+interactions do not establish H2 for useful heritable variation.
+
+Thirty of 40 near states lost both recognized initial cores by the horizon,
+but this is not equivalent to lineage extinction: many retained numerous
+input-type descendants. Five near states had no recognized closed core at
+the horizon; one was completely empty, while four retained debris. Original
+cores also disappeared in all separated and alone controls while colonies
+continued. These observations reinforce the distinction between individual
+structure persistence, reproduction proxies, and lineage viability.
+
+Summed recorded run time was 1,177.1 seconds (19.6 minutes), with peak reported
+runner RSS 63,400 KiB (61.9 MiB), excluding separate rendering processes. Raw
+results, unresolved outcomes, and controls are in data/atlas/outcomes.json and
+analysis.json. Figures show the observed-versus-confirmed funnel, crossed
+matrices, and three raw-grid replays. Benefit assays and viability calibration
+remain pending; beneficial-heritable yield is unknown, not zero. H1 and H3
+remain untested, and no increased-evolvability or RSI claim is supported.
 
 ### 4.3 Exploratory extension of a multi-transient path
 
@@ -332,7 +370,7 @@ one exploratory history. Selection for isolation eligibility can favor certain
 structures or phases; genotype is less than the complete transferred organism
 state. Phase, arm state, phenotype, and genotype effects are entangled in this
 first atlas. A measured pair interaction need not be a gene-sequence interaction.
-The operational genotype may miss junction-state distinctions or identify
+Equal global observation horizons also give unequal postcontact exposure when contact latency differs. The operational genotype may miss junction-state distinctions or identify
 states with different future behavior as the same circulating signal word.
 
 Contact provenance overapproximates causality. Structure detection does not
@@ -350,6 +388,17 @@ cannot establish population-general effects. Beneficial variation, increased
 evolvability, H1, H3, and recursive self-improvement remain unestablished.
 
 ## 6. Subsequent experiment plan
+
+The immediate next experiment is paired candidate-fate calibration, before
+expanding the atlas or interpreting failed isolation as intrinsic nonviability.
+Replay the six candidate-producing states, compare native continuation with
+isolation at fixed maturation delays, and follow a predeclared bounded set of
+transient offspring paths. Include S13/N01 positive controls under the same
+extraction schedule. This holds the recorded source trajectory fixed while
+changing surroundings and extraction time, testing ecological dependence and
+assay sensitivity. It cannot recover unambiguous native parentage merely from
+pair-level provenance. Budgets and criteria must be frozen before execution;
+see docs/next-experiment.md.
 
 For H1, evolve independent population histories, retain matched ancestors, and
 sample transferable complete organisms using a fixed sampling rule. Cross each
@@ -371,7 +420,12 @@ no residual history effect is expected for identical complete states.
 
 ## Reproducibility and data availability
 
-Repository: https://github.com/ReloadLightly/evoloop-levels. Protocols,
+Repository: https://github.com/ReloadLightly/evoloop-levels. Reproduction commands:
+`python -m scripts.verify`, `python -m scripts.atlas run`,
+`python -m scripts.atlas inherit`, `python -m scripts.analyze`,
+`python -m scripts.figures`, `python -m scripts.render_manuscript`, and
+`python -m scripts.check_evidence`. README explains fresh versus resumed runs.
+Protocols,
 configurations, source, compact raw grids, analysis, and figures are versioned.
 Each figure must reference experiment IDs and a regeneration command.
 The manuscript and bibliography are working artifacts, not a submitted paper.
