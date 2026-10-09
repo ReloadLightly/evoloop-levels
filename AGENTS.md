@@ -34,6 +34,21 @@ not inherited offspring. Keep positive-control recovery and candidate novelty
 as separate endpoints, and retain ineligible delays in the denominator.
 
 Update README, RESEARCH_STATE, manuscript, and figures after scientific batches.
+Write README and manuscript for a researcher encountering the work for the
+first time. Develop the scientific argument: explain the phenomenon and prior
+work, the unresolved question, why each comparison addresses it, the observed
+results, and their implications. Define technical terms before using them.
+Keep the three hypotheses connected to their experimental comparisons; describe
+future comparisons as a research programme rather than repeating status labels.
+The project's purpose is understanding the causes of evolvability. Conference
+targets belong in submission planning, not the scientific opening or abstract.
+Use results tables and recorded-data figures with explanatory captions. Preserve
+negative results, denominator distinctions, assay qualifications, and uncertainty
+where they affect interpretation. Never improve the narrative by changing facts.
+Put installation, runtime, dependency, checkpoint, and execution details in
+docs/reproducing-results.md or RESEARCH_STATE.md. Include such details in the
+scientific account only when they affect the method or inference. Update the
+interpretation of findings after a batch instead of appending an activity log.
 Prior art includes crossed competition, interaction-mediated variation,
 inherited mutation bias, and disturbances. State the narrower addition precisely.
 Read docs/source_review.md; check licenses before adding code or artwork.

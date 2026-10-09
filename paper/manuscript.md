@@ -1,537 +1,160 @@
 # Where Does Evolvability Reside? Organisms, Encounters, and Ecological History in Self-Reproducing Cellular Automata
 
-**Working manuscript — encounter atlas and fate calibration, 10 October 2026.**
-Target venues: ALIFE 2027 or GECCO 2027. This document reports a small prospective
-deterministic encounter atlas, not a completed test of all three hypotheses.
-Author list and affiliations remain to be supplied by the project owner.
+**An encounter experiment separating the production of candidate variants from their stable transmission**
 
 ## Abstract
 
-Evolvability concerns the capacity to generate useful heritable variation.
-In spatial artificial life, that capacity can depend on an organism's inherited
-state, the organisms it encounters, and ecological histories that change both.
-We frame these as compatible causal contributions and implement a reproducible
-encounter intervention in the original nine-state evoloop cellular automaton.
-An exhaustive comparison of all 59,049 local neighborhoods establishes agreement
-with two reference routes. A documented seed reproduces, and deterministic
-replay and checkpoint/resume agree. Natural exploratory variation supplies a
-second verified input organism through a transient-to-stable inheritance path.
-We prospectively freeze 32 main crossed encounters, eight held-out encounters,
-40 separated controls, and 24 alone controls, with complete starting grids and
-conservative pair-level ancestry. All 104 atlas states completed. Candidate signal novelty occurred in 6/40 near
-configurations and 0/64 separated/alone controls. Eleven isolation paths supplied
-no confirmed stable novel transmission under the frozen criterion. A candidate
-interaction contrast of +0.375 in the main panel changed to −0.500 in held-out
-configurations; neither panel showed an inherited-novelty interaction. A subsequent
-prospectively frozen fate calibration examined four maturation delays for all
-seven candidate identities and two known-parent controls. Fifteen of 28 candidate
-delay states were eligible; neither the legacy nor expanded inheritance search
-confirmed stable novelty. Both searches recovered all eight parent-control delay
-states. This supports recovery of the tested known identities, while candidate
-fates outside the bounded search remain unresolved. A paired ecological
-benefit assay is frozen but remains pending viability calibration. The
-organism-transfer and ecological-history hypotheses remain untested.
+Encounters between self-reproducing structures can generate new forms; establishing heritable variation requires demonstrating transmission of their differences. We investigate this distinction in evoloops, a deterministic cellular automaton in which interacting reproductive arms can alter descendants. A crossed experiment pairs a documented organism with a naturally generated, inheritance-verified variant across controlled spatial configurations. Candidate signal changes occurred in six of 40 encounter configurations, compared with zero of 40 separated and 24 solitary controls. None of 11 initial isolation paths confirmed stable novel transmission. Partner-dependent candidate rankings in the main panel failed to transfer to held-out configurations. To examine whether early extraction or restricted descendant search explained the inheritance result, a subsequent calibration followed all seven candidate identities at four delays and compared two isolation searches on identical components. Fifteen of 28 candidate-delay observations were eligible for extraction; neither search recovered stable novelty. Both recovered the known input identities in all eight positive-control observations. Thus, in this panel, encounter-dependent candidate production was not accompanied by recovered stable inheritance, even after the specified extensions of maturation time and descendant search. The remaining unexamined paths and ecological dependence limit this conclusion. The study identifies a measurement problem central to locating evolvability: organism and encounter effects on producing variation must be distinguished from their effects on transmitting it.
 
 ## 1. Introduction
 
-Self-reproducing cellular automata make evolutionary events inspectable at the
-level of individual cells. Rules can remain fixed while interacting structures
-produce inherited changes. Sayama's evoloop demonstrates this possibility in a
-deterministic, synchronous, nine-state lattice: reproductive arms interact,
-offspring differ, and competition for space changes population composition
-[@sayama1999evoloop]. The relevant evolutionary unit is nevertheless not
-obvious. A circulating signal sequence controls a loop's construction behavior,
-but the sequence it passes to a descendant can depend on structures encountered
-during reproduction.
+A system's capacity for evolutionary change depends on more than producing new forms. For adaptive evolution, differences must pass to descendants and improve performance in a relevant environment. Separating these steps is particularly important when reproduction itself depends on interactions: an encounter may create a novel structure, help it reproduce, or destroy it before its differences can persist.
 
-Our question is where the capacity for further adaptive change resides.
-Three compatible hypotheses organize the problem. H1 concerns transferable
-organism properties: organisms sampled from evolved populations should retain
-higher beneficial-heritable-variant yield than matched ancestors under the same
-held-out partners, geometries, and phases. H2 concerns encounters: crossing
-focal and partner identities should reveal organism-by-partner interactions,
-possibly including partner-dependent rankings. H3 concerns ecological history:
-history can change inherited organisms and the distribution of encounters they
-subsequently experience. The hypotheses need not compete for an exclusive
-explanation; an organism can carry a variation bias that is expressed differently
-against different partners, with both shaped by its prior ecology.
+Evoloops make these possibilities observable. They are self-reproducing structures embedded in a two-dimensional cellular automaton. A circulating signal sequence participates in constructing offspring, while contact between reproductive structures can change the sequence and shape of the resulting loops. All events follow fixed local rules (Sayama, 1999). The model therefore lets us intervene on encounters without inserting a separate mutation operator.
 
-History is upstream of the present state. Under deterministic CA dynamics,
-identical complete starting states and intervention schedules imply identical
-futures. A history transplant can identify paths mediated by organism state or
-encounter distribution; it cannot establish an additional historical force after
-holding the entire state fixed. This constraint is useful because it specifies
-which comparisons can distinguish levels of causation.
+Where, then, does the capacity to generate heritable variation reside? An organism may carry a transferable bias in the variants it produces. That bias may be expressed differently against different partners. Previous ecological conditions may shape both the organisms present and the encounters they experience. These are compatible contributions, whose identification requires different comparisons. We organize them as three hypotheses: **H1**, a contribution transferable with the organism under common encounter conditions; **H2**, a contribution specific to organism–partner combinations; and **H3**, historical effects mediated by changes in organisms and encounter distributions.
 
-The project has a limited potential connection to recursive self-improvement:
-an evolving system might acquire greater capacity to generate further adaptive
-change. Neither ordinary adaptation nor greater population size demonstrates
-that claim. We first measure the production and inheritance of variation under
-a declared encounter panel. Ecological benefit requires a separate comparison;
-increased evolvability would then require a comparison of such beneficial
-variation yields between transferred organism states or histories.
+The present experiment addresses the encounter comparison. We cross two input organisms across a defined spatial panel, then follow candidate variants through isolation and repeated reproduction. Crossing partners asks whether the outcome associated with changing one organism depends on the other. Following descendants asks whether any such pattern concerns temporary structural changes or transmitted variation. A second experiment examines a concrete alternative explanation for failed transmission: the initial assay may extract candidates too early or follow too few descendants.
 
-This checkpoint therefore targets the smallest reliable intervention addressing
-H2. It establishes verified dynamics, freezes a small crossed atlas, and follows
-candidate novelty through explicit isolation assays. It retains lethal and
-nonproductive encounters and marks unresolved cases. It does not infer
-organism-level mutation rates from ambiguous pedigrees, or generalize from one
-selected descendant to independently evolved populations.
+The resulting distinction provides the current contribution. Encounters produced candidate signal changes, but the tested candidates did not yield confirmed stable novel inheritance under either isolation search. Known input organisms remained recoverable under the same calibration. This localizes the unresolved question to candidate fate and assay coverage, rather than treating every observed change as an equivalent evolutionary event. It also establishes what subsequent organism and history comparisons must measure: variation production, transmission, and ecological benefit as separate stages.
 
-## 2. Related work and contribution
+## 2. Prior work and the experimental question
 
-The original evoloop study introduces structural dissolution, interaction-
-mediated genotype change, and spatial selection within a deterministic rule
-system [@sayama1999evoloop]. Its configurations include arm takeover, smaller
-descendants, and transient or rectangular structures. The recent review situates
-these models among self-reproducing CA and distinguishes reproduction supporting
-inherited variation from exact replication [@sayama2025review;
-@sayama2024reviewpreprint]. Our study uses the original synchronous rules; it
-does not combine self-protecting, asynchronous, pathogen, or sexually reproducing
-variants with that baseline.
+Sayama's original evoloop establishes interaction-mediated genotype change and spatial selection in deterministic, synchronous nine-state dynamics (Sayama, 1999). Later work shows that loops of the same size can differ in gene arrangement, colony morphology, persistence, and mutational bias. Salzberg and Sayama report round-robin competition among 15 size-4 genotypes and descendants inheriting variation biases (Salzberg and Sayama, 2004). These findings already connect inherited organization with evolutionary outcomes.
 
-Subsequent work established a much richer genotype space than size alone
-captures. Salzberg and Sayama report genotype-dependent colony morphology,
-mutation bias, persistence, and population density, including a round-robin
-competition among all 15 size-4 genotypes [@salzberg2004complex]. They also
-describe inherited mutational biases. Thus neither crossed competitors nor
-inheritance of a variation bias is by itself our proposed novelty. Their
-population competition endpoint addresses which types persist; our immediate
-endpoint is whether specified encounters produce new genotypes that reproduce
-after separation from the encounter.
+Salzberg, Antony, and Sayama examine genealogy, biased accessibility of larger species, pathogens, and localized or distributed disturbances (Salzberg, Antony, and Sayama, 2004). They also retain transient species that produce stable replicators in a later cycle. A failure to copy the first observed candidate immediately is therefore insufficient grounds for discarding its evolutionary potential. The recent review places these mechanisms within the broader problem of reproduction supporting inherited variation and discusses persistent questions of individuality and long-term evolution (Sayama and Nehaniv, 2025; preprint 2024).
 
-Salzberg, Antony, and Sayama analyze genealogy, biased accessibility of larger
-species, pathogens, and periodic localized or distributed block removal
-[@salzberg2004hostile]. Their treatment of transient species is particularly
-important: structures that do not directly reproduce their own genotype may
-produce stable descendants. Discarding them at first observation would exclude
-an established route to inherited variation. The present isolation search
-therefore allows a candidate to produce a different stable descendant before
-checking repeated transmission. Ecological disturbance and limited complexity
-growth are prior results, not outcomes to be rediscovered here under a new name.
-
-The intended addition is a controlled, prospectively specified comparison of
-variation-generating outcomes: candidate production, isolated inheritance,
-and ultimately paired ecological advantage over both encounter inputs. Exact
-starting states, negative encounters, horizon censoring, and ambiguous ancestry
-make the denominator reviewable. Held-out configurations test whether an
-interaction contrast transfers across geometry and phase, while future organism
-and encounter-distribution transplants address its causal location. At this
-checkpoint, novelty is an intervention-and-measurement comparison rather than
-a claim of a new physical mechanism.
+Our experiment builds on these results by comparing the fate of variation under specified encounters. Population competition measures which types persist; here the immediate outcome is whether a particular encounter produces a new identity with a recoverable transmission path. Retaining nonproductive encounters supplies the denominator, while isolation tests and delayed extraction distinguish candidate appearance from later reproduction. The contribution is this intervention-and-measurement comparison, rather than the discovery of interaction-generated mutation or inherited mutational bias.
 
 ## 3. Methods
 
-### 3.1 Rule system, reference agreement, and licensing
+### 3.1 Dynamics and organisms
 
-Each cell has one of nine states. The local neighborhood is ordered center,
-top, right, bottom, left (CTRBL); updates are synchronous and boundaries are
-periodic. Explicit rules are completed under rotations of the four neighbors,
-then dissolution and undefined-neighborhood defaults supply a full lookup table.
-We select the original evoloop transition system implemented by CellPyLib at
-commit `743e936d48f8520f6f4ac652570ac7bb46414189` [@antunesCellPyLib].
-The expanded uint8 lookup-table SHA-256 is
-`9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3`.
+We use the original nine-state evoloop transition system, synchronous updates, and periodic boundaries. The neighborhood is center, top, right, bottom, left; rotations of explicit rules and the dissolution/default rules produce all 59,049 local transitions. The lookup table agrees exhaustively with the pinned CellPyLib reference and an independent expansion of the author's EvoLoopS rules (Antunes, CellPyLib; Sayama, EvoLoopS). Seed reproduction, deterministic replay, and checkpoint/resume are verified. Exact versions, hashes, licensing, and execution details are documented in [source review](../docs/source_review.md) and [reproduction instructions](../docs/reproducing-results.md).
 
-An independent expansion of the author's EvoLoopS 1.0 rule file agrees on all
-59,049 neighborhoods. The documented CellPyLib species13 seed matches the
-author's `13.img`; it differs from the author's default `13-2.img` seed. Seed
-variants do not imply different transition rules. We do not claim to reproduce
-the original default evolutionary demonstration. The reference modules are
-redistributed under Apache License 2.0 with their license and attribution;
-the author software, seed catalogue, artwork, and PDFs are not redistributed.
-Source hashes, publication-year caveats, and reuse decisions appear in
-`docs/source_review.md` [@cellpylibEvoloopDocumentation; @sayamaEvoLoopS].
+S13 is CellPyLib's documented species13 seed, matching the author's `13.img`, rather than the alternative default `13-2.img` (Antunes, CellPyLib documentation). N01 is a stable descendant obtained from a 160×160 exploratory torus initiated with S13 at (65,45). Discovery samples every ten updates, considers up to four detached phases per candidate, and ends after two verified identities. This selected exploratory history supplies an experimental input; it is not replication across independently evolved populations.
 
-### 3.2 Engine and focused verification
+### 3.2 Crossed encounters and controls
 
-A headless C kernel accessed from Python uses compact uint8 arrays and a
-59,049-entry lookup table. Two arrays implement synchronous updates. No mutation
-injection occurs in the atlas. A separate occupied-cell provenance layer records
-potential input contribution without modifying the CA state. Complete initial
-grids, rule/configuration hashes, event times, snapshots, and final hashes are
-saved. Normal runs stream structural metrics and retain selective candidate
-evidence rather than exhaustive frame histories.
+Before acquisition, protocol 001 specifies 32 main encounters, eight held-out encounters, and controls. Complete input snapshots advance alone by 0, 30, or 60 updates. Each resulting state must retain one recognized core, unchanged identity, and no boundary contact. These offsets refer to different snapshot origins; they are not necessarily homologous reproductive phases.
 
-Verification exhaustively compares local transitions with the callable reference,
-checks a random periodic grid against a cellwise oracle, observes documented
-seed reproduction, and compares exact deterministic replay and checkpoint/resume.
-Rotation tests cover square and naturally generated rectangular genotypes.
-Measurement development found that body-only crops can destroy active arms;
-we rejected that extraction method before freezing the main atlas. The final
-assay preserves complete detached components. The runtime benchmark and peak
-resident memory are recorded in `data/verification.json`; one worker is used
-because available system memory, rather than CPU count, limits concurrency. During acquisition, a read-only compiled contact diagnostic passed 6,760 equivalence cases, including four complete raw trajectories, before accelerating the remaining controls. The frozen physics and outcome definitions were unchanged; execution.json records the switch. Near isolation assays ran separately once near acquisition was complete, within measured memory headroom.
+All four ordered S13/N01 pairings are tested against four main geometries at offsets 0 and 60, giving eight configurations per pair. Two held-out geometries at offset 30 give two further configurations per pair. Near configurations occupy 384×384 tori, with specified positions, rotations in 90-degree increments, and nonoverlapping input rectangles. Forty separated controls retain identities, offsets, orientations, and row displacement in 640×640 tori, with horizontal displacement of 320 cells. Twenty-four solitary controls cover organism, offset, and orientation. Every configuration runs for 1,600 completed updates; separated controls are checked for contact throughout.
 
-### 3.3 Exploratory panel and prospective encounter configurations
+### 3.3 What counts as a variant?
 
-The panel has two organisms: S13, the documented seed, and N01, the first new
-stable genotype confirmed in a 160×160 exploratory torus (EXP-discovery-001).
-Exploration starts with one S13 seed at (65,45), samples every ten updates,
-and stops after two verified genotypes. Up to four naturally observed detached
-phases per candidate are available for discovery testing. N01 is obtained through
-a transient-to-stable path; the catalogue stores its confirmed descendant state.
-This is one selected exploratory history, not independent evolutionary replication.
+A structural detector samples rectangular zero-valued cores with intact inner sheaths in states 2/3 every ten updates. For channels containing only states 0/1/4/7, we read a clockwise signal word, preserving carrier spacing and normalizing by cyclic shift without reflection. Pairing this word with sorted core dimensions defines the operational composite identity. It preserves chirality but differs from the published counterclockwise, birth-anchored species identifier (Salzberg, Antony, and Sayama, 2004). Contaminated channels have unknown identity; recognized cores alone do not establish viability.
 
-Protocol 001 and `configs/atlas-v1.json` are frozen before the main batch.
-Each input snapshot is advanced alone by 0, 30, or 60 updates, retaining its
-entire occupied configuration. The resulting phase states must each contain one
-recognized core with unchanged genotype and no boundary contact. The offsets
-are elapsed updates relative to different snapshot origins, not homologous
-reproduction phases. Complete grids make this distinction reproducible.
+A candidate composite identity must differ from both encounter inputs. A reporting audit introduced during acquisition, before inheritance analysis, additionally distinguishes signal-word novelty from shape-only differences. The composite endpoint remains the frozen primary definition. Word-only novelty is a separately labeled, post-hoc sensitivity endpoint; it was not prospectively specified. Protocol 002 records this distinction without changing raw outcomes or search budgets.
 
-All four ordered pairs are crossed against four main relative geometries at
-phases 0 and 60 (eight states per pair), and two held-out geometries at phase 30
-(two per pair). The main torus is 384×384. Rotations are exact multiples of
-90 degrees, bounding rectangles do not overlap, and the protocol records
-coordinates. Forty matched separated controls retain identities, phases,
-orientations, and row offsets in a 640×640 torus with horizontal displacement
-320 cells. Their lack of contact is verified throughout the window. Twenty-four
-alone controls cover each organism, phase, and orientation. Every state is
-observed for 1,600 completed updates.
+Occupied input cells receive provenance masks 1 and 2; newly occupied cells inherit the union of occupied contributors in their neighborhood. Contact is the first update containing exclusive-provenance adjacency or mixed occupied provenance. These masks overapproximate causal contribution and do not identify genetic parents. After contact, novelty is consequently a pair-level outcome.
 
-### 3.4 Contact, structures, genotypes, and ancestry
+Core coordinates track structures. Appearances and losses are interval-censored within ten updates. Boundary contact is flagged because the detector does not join structures across the torus seam. Nonrectangular structures can also escape recognition. Structure persistence, lineage survival, candidate novelty, inheritance, and benefit remain distinct measurements.
 
-Input occupied cells receive provenance masks 1 and 2. A newly occupied cell
-inherits the union of occupied contributors in its CTRBL neighborhood. This is
-a causal overapproximation, not a genetic pedigree. Operational contact is the
-first update with occupied exclusive-provenance von Neumann adjacency or mixed
-occupied provenance. Contact is checked every update and records grid time.
-It does not by itself prove a mutational mechanism.
+### 3.4 Testing transmission after isolation
 
-The detector samples enclosed rectangular zero cores with intact inner sheaths
-in states 2/3 every ten updates. This is a structural observation, not a viability
-claim. For channels containing only 0/1/4/7, the operational genotype is the
-clockwise signal-ring word, including carrier spacing, normalized by cyclic
-shift without reflection and paired with sorted core dimensions. It preserves
-chirality and distinguishes gene spacing. It is not the published counterclockwise,
-birth-anchored species identifier [@salzberg2004hostile]. Contaminated channels
-have unknown genotype.
+The initial assay extracts the entire occupied connected component, including reproductive arms, if it contains exactly one recognized core and avoids the boundary. It places the component in an empty 192×192 torus. Shared, boundary-spanning, and oversized components are ineligible. The earliest two distinct extractable snapshots per run/identity define the search budget; size checks occur after capture, so oversized attempts consume that budget and remain unresolved.
 
-Structures are tracked by core coordinates. First appearance and loss times are
-sampled proxies, interval-censored within ten updates. Input-core persistence
-is reported as structural survival; it does not establish continued viability
-or lineage survival. Boundary touch is flagged because the rectangular detector
-does not join structures crossing the torus seam. Nonrectangular and inseparable
-structures remain possible sources of missed candidates.
+Each generation runs for up to 1,600 updates. The first newly positioned, valid closed core with a detached component supplies the next isolated generation. A candidate may first produce a different stable descendant. That descendant must transmit the same identity twice consecutively, requiring an additional generation when the original candidate was transient. Closure and detachment are recorded separately. Stable identities first arising after extraction are labeled assay-derived and checked again against both inputs.
 
-Novelty requires a genotype different from both encounter inputs. Snapshots retain
-the source grid, extraction box, and provenance. After contact, genetic parentage
-is conservatively ambiguous, so the primary unit is pair-level novelty. A changed
-structure, a changed signal genotype, a detached organism, a heritable variant,
-and a beneficial variant are separate outcomes.
+A path without qualifying reproduction by the horizon is unresolved; an empty grid is extinction under isolation. Either outcome can coexist with an unexamined successful path or ecological dependence. Complete-component extraction preserves active arms, avoiding the disruption caused by cropping only the central body.
 
-A reporting audit added during acquisition, before inheritance analysis,
-clarifies that the code field `genotype` is a composite signal-word/core-shape
-identity. The frozen primary endpoint retains this definition and is reported
-as **composite organism-identity novelty**. A separately labeled sensitivity
-endpoint requires the channel word alone to differ from both inputs. Shape-only
-differences are morphological candidates, not genetic changes. No raw outcomes
-or search budgets change; protocol 002 records the timing and reason for this
-audit. The signal-word result must not be described as prospectively frozen.
+### 3.5 Delayed extraction and expanded descendant search
 
-### 3.5 Isolation and transient-to-stable inheritance
+Protocol 004 tests whether maturation or a broader search recovers inheritance missed by the initial assay. It follows all seven candidate identities, nested within six originating configurations. At first observation, the lexicographically first matching core tuple fixes the target. No later successful structure may replace a lost target. Verified S13 and N01 snapshots in empty 384×384 worlds provide positive controls.
 
-Isolation is an explicitly imposed intervention. We extract the full occupied
-connected component, including arms, only when it contains exactly one recognized
-core and avoids the grid edge. We remove other components and center the snapshot
-in an empty 192×192 torus. Oversized, shared, or boundary-spanning components are
-ineligible. The earliest two distinct extractable snapshots per run/genotype constitute
-the frozen search budget; size eligibility is checked after capture, so oversized attempts consume that budget and remain unresolved. Later phases and siblings may be missed.
+Extraction occurs after 0, 60, 120, or 240 updates: 28 candidate-delay and eight control observations. Ten-update tracking distinguishes target loss and subsequent same-tuple recurrence. Lost, recurrent, unknown, shared, boundary, and oversized targets are ineligible. Each delayed world also continues natively for 1,600 updates. Matching words elsewhere are structural observations; they do not establish offspring ancestry. These continuation windows overlap and are not independent observations.
 
-Each isolation generation runs for up to 1,600 updates. We seek the first
-newly positioned closed core with a valid genotype and a complete detached
-component. The first descendant may differ from the encounter candidate. It
-is then isolated and must reproduce its own genotype. If the initial candidate
-was transient, a further generation must transmit the stable genotype, providing
-two stable transmissions. Closure-first-observed and detachment-first-observed
-times are separate. Stable genotypes arising only after isolation are explicitly
-assay-derived, and novelty is checked again against both encounter inputs.
+Every eligible component enters both the unchanged legacy assay and an expanded search. The expanded search collects the first three detached, newly positioned valid cores per generation, once per core tuple, ordered by time, coordinates, and snapshot hash. Depth-first traversal permits six transmissions and at most 24 generation simulations per root, each lasting at most 1,600 updates. Identity changes reset the transmission streak. Two identical consecutive transmissions confirm stability. Candidate recovery requires a stable signal word different from both inputs; control recovery requires the original composite identity.
 
-A path that fails to reproduce by the horizon is unresolved. An empty isolation
-grid is assay extinction, not proof of ecological nonviability of the original
-structure. The first-descendant search is conservative: later offspring might
-reproduce successfully. Stable isolated inheritance establishes a reproducible
-transmission path through the stated intervention, not ecological independence
-of every structure with the same observed genotype.
+Comparing searches on the same snapshot isolates search sensitivity. Comparing delays combines maturation with continued ecological interaction. Ineligible extractions and unexamined branches remain explicit.
 
-### 3.6 Benefit assay and finite-panel analysis
+### 3.6 Analysis and ecological benefit
 
-Before selecting any atlas winner, we freeze a paired disturbance assay in
-192×192 tori over 1,600 updates. At updates 600 and 1,000, a specified 24×24
-block is removed; this is an external ecological intervention. The metric is
-mean intact-core population of isolation-confirmed genotypes, sampled every
-20 updates. Two development and two independent confirmation schedules specify
-block positions and initial orientations. A candidate must exceed both input
-means in both panels. The measure targets persistence and recolonization
-occupancy, not evolvability by itself. Because recognized cores can include doomed
-individuals, viability calibration is required before confirmed-benefit claims.
-Benefit remains pending if those assays or calibration are unfinished.
+The completed primary endpoint is any confirmed novel stable transmission path per near configuration, retaining all 40 near states in the denominator. Candidate and unresolved outcomes are reported separately. For each main or held-out panel, the candidate interaction contrast is the difference of differences:
 
-The primary completed endpoint is any confirmed novel stable inheritance path
-per near configuration, with all 32 main and eight held-out states in the
-denominator. Candidate-only and unresolved outcomes remain explicit. A 2×2
-focal-by-partner rate matrix and difference of differences summarize interaction:
-`(S13,S13 − N01,S13) − (S13,N01 − N01,N01)`. Main and held-out panels are
-analyzed separately, along with signs of the partner-specific focal contrasts.
-These are pair-configuration interactions under ambiguous ancestry, not
-identified focal mutation capacities. A partner main effect is insufficient
-for H2.
+`[rate(S13,S13) − rate(N01,S13)] − [rate(S13,N01) − rate(N01,N01)]`.
 
-Distinct complete deterministic configurations are finite-panel census units.
-Repeated states are reproducibility checks. We report no binomial confidence
-intervals, p-values, or resampling of repeated deterministic trajectories.
-Held-out geometries test configuration transfer, not transfer across independent
-organisms or ecological histories. Conditional beneficial-heritable yield is
-unknown until benefit confirmation is completed; it must not be plotted as zero.
+This measures pair-configuration interaction under ambiguous parentage, rather than an identified focal mutation capacity. The configurations form a specified finite panel, not a random sample from a natural encounter distribution. Deterministic reruns verify reproducibility. Accordingly, we report descriptive contrasts without binomial intervals or inferential p-values. Held-out geometries assess configuration transfer; they do not supply independent organisms or evolutionary histories.
 
-### 3.7 Prospective candidate-fate calibration
-
-Protocol 004 (EXP-fate-calibration-001) follows the completed atlas rather than
-expanding its encounter panel. All seven observed candidate identities, nested
-in six original configurations, are replayed to their first observation.
-The lexicographically first matching core tuple is fixed as the target.
-Verified S13 and N01 snapshots placed in empty 384×384 worlds are positive
-controls. Source states, code, protocol, configuration, and analysis hashes
-are frozen before observing delays 0, 60, 120, and 240 updates: 28 candidate
-and eight control observations.
-
-Ten-update tracking records target loss before extraction. Same-tuple recurrence
-after observed loss is ineligible, as are lost, unknown, shared, boundary, and
-oversized components. No successful later structure substitutes for a target.
-Each complete delayed world continues another 1,600 updates, recording target
-and original-word core counts. Original-word appearance elsewhere is a
-structural diagnostic; it establishes neither offspring ancestry nor inheritance.
-Overlapping continuation windows are deterministic paired observations.
-
-Every eligible complete component is assessed by the unchanged legacy assay
-and a bounded expanded search on the identical snapshot. Each expanded
-generation admits the first three detached newly positioned valid cores,
-once per core tuple, ordered by time, core, and snapshot hash. Depth-first
-traversal permits six transmissions and at most 24 generation simulations per
-root, each with a 1,600-update ceiling. Identity changes reset the transmission
-streak; two consecutive identical composite transmissions confirm a stable
-path. Candidate recovery additionally requires a stable word different from
-both original inputs; positive-control recovery requires the original composite
-identity. Ineligible phases and unexamined paths remain explicit. Same-snapshot
-comparisons isolate search sensitivity, whereas delay comparisons combine
-maturation with continued ecology. Serial isolated paths may be assay-derived.
-There are no inferential intervals or independent-history claims.
+A prospectively specified benefit assay would compare an inheritance-confirmed candidate with both inputs in 192×192 tori over 1,600 updates, removing a 24×24 block at updates 600 and 1,000. The proposed score is mean intact-core population of isolation-confirmed identities, sampled every 20 updates, under two development and two independent confirmation schedules. Success requires exceeding both inputs' means in both panels. Viability calibration is necessary because intact cores can be doomed. These comparisons have not been completed; beneficial-heritable yield is therefore unknown. The present results concern production and transmission.
 
 ## 4. Results
 
-### 4.1 Verified foundations and exploratory inheritance
+### 4.1 A transient structure supplies an inherited input variant
 
-All 59,049 local transitions agree with the selected callable reference and the
-independent author-rule expansion. The seed agrees byte for byte with the
-documented author seed, reproduces into multiple closed cores, and passes exact
-replay and resume checks. The exploratory candidate observed at update 2,910
-has an 11×13 inner core and a changed signal word. In complete-component
-isolation it produces a stable 12×12-core descendant; two subsequent isolated
-generations reproduce that stable genotype. Detachment is first observed at
-380, 390, and 390 updates in the three assays, sampled every ten updates.
-N01 denotes the stable descendant, not the transient source configuration.
-The transient and stable structures share the changed signal word: their
-11×13-to-12×12 difference is morphological stabilization, while their shared
-signal word differs from S13's. This separates phenotype change from signal
-genotype change in the exploratory path.
+In discovery, a candidate appearing at update 2,910 had an 11×13 core and a signal word different from S13. Isolation yielded a 12×12-core descendant, followed by two generations transmitting that stable identity. Detachment was first observed after 380, 390, and 390 updates in the successive assays, at ten-update resolution. N01 denotes the stable descendant. The transient and stable forms share the changed word, distinguishing morphological stabilization from signal change. This observed route motivates allowing transient-to-stable paths in encounter assays.
 
-### 4.2 Encounter atlas
+### 4.2 Encounters produce candidate changes without confirmed stable transmission
 
-All 40 near configurations completed the 1,600-update window with recorded
-contact and no boundary-touch flags. Candidate composite identity changes
-occurred in five of 32 main states and one of eight held-out states. All seven
-run/identity candidates also differed in signal word from both inputs, so the
-strict reporting audit currently agrees with candidate classification. Five
-candidate-producing configurations supplied 11 complete-component snapshots;
-one candidate could not be separated within the window. None of the 11
-isolation paths met the frozen stable-transmission criterion. Six produced a
-changed detached descendant in the first isolation stage. Four of those next
-isolated descendants dissolved; two did not reproduce the same identity by
-the next horizon. Two initial snapshots dissolved, and three remained without
-a qualifying detached descendant. These are completed assay observations, not
-proof that all possible ecological inheritance paths are absent.
+All 40 near configurations contacted within the observation window. Five of 32 main configurations and one of eight held-out configurations produced candidate composite changes. All seven candidate identities also differed in signal word from both inputs, so the post-hoc word-only classification agrees here. Separated controls produced 0/40 candidates and solitary controls 0/24. No atlas state received a boundary-touch flag. The matched near-minus-separated candidate contrast is 6/40, or 0.150, for this panel.
 
-The 40 matched separated states had no contact and no candidate novelty. All
-24 alone controls likewise had no candidate novelty. No atlas run touched a
-boundary during observation. The matched near-minus-separated candidate rate
-was 6/40 = 0.150; this is a descriptive finite-panel contrast. Full initial/final
-hashes and candidate extraction checks pass for all 104 states. Four chunked
-encounter replays reproduce final grids and provenance, and 17 isolated-generation
-replays match recorded terminal hashes.
+Five candidate-producing configurations supplied 11 isolation snapshots; the remaining candidate could not be separated. None confirmed stable novel transmission. Six paths produced changed detached descendants in their first stage: four subsequently dissolved, and two failed to reproduce the same identity by the next horizon. Two initial snapshots dissolved, and three produced no qualifying detached descendant. These observations separate candidate appearance from transmission under the stated assay.
 
-| Focal × partner | Main candidate / n | Held-out candidate / n | Stable inheritance |
+| Pair | Candidates: main | Candidates: held-out | Inherited: main; held-out |
 |---|---:|---:|---:|
 | S13 × S13 | 3/8 | 0/2 | 0/8; 0/2 |
 | S13 × N01 | 0/8 | 0/2 | 0/8; 0/2 |
 | N01 × S13 | 1/8 | 1/2 | 0/8; 0/2 |
 | N01 × N01 | 1/8 | 0/2 | 0/8; 0/2 |
 
-In the main panel, the candidate-only focal contrast was +0.250 with S13 as
-partner and −0.125 with N01 as partner, a rank reversal and difference of
-differences +0.375. In held-out configurations the corresponding contrasts
-were −0.500 and 0.000, giving −0.500 and no strict rank reversal. The candidate
-pattern therefore did not transfer. Confirmed isolated-inheritance contrasts
-were zero in both panels because no path satisfied that criterion. Candidate
-interactions do not establish H2 for useful heritable variation.
+Changing the focal organism in the main panel gives candidate contrasts of +0.250 with S13 as partner and −0.125 with N01 as partner: a rank reversal and interaction contrast of +0.375. Held-out contrasts are −0.500 and 0.000, giving −0.500 without a strict rank reversal. The candidate pattern does not transfer to the held-out configurations. All confirmed-inheritance contrasts are zero because no tested path satisfies the criterion; the candidate pattern therefore does not establish an interaction in useful heritable variation.
 
-Thirty of 40 near states lost both recognized initial cores by the horizon,
-but this is not equivalent to lineage extinction: many retained numerous
-input-type descendants. Five near states had no recognized closed core at
-the horizon; one was completely empty, while four retained debris. Original
-cores also disappeared in all separated and alone controls while colonies
-continued. These observations reinforce the distinction between individual
-structure persistence, reproduction proxies, and lineage viability.
+Thirty near states lost both initial recognized cores, although many retained input-type descendants. Five ended without a recognized core: one empty and four retaining debris. Initial cores also disappeared in all separated and solitary controls while colonies continued. Individual-core loss is therefore an unsuitable substitute for lineage extinction.
 
-Summed recorded run time was 1,177.1 seconds (19.6 minutes), with peak reported
-runner RSS 63,400 KiB (61.9 MiB), excluding separate rendering processes. Raw
-results, unresolved outcomes, and controls are in data/atlas/outcomes.json and
-analysis.json. Figures show the observed-versus-confirmed funnel, crossed
-matrices, and three raw-grid replays. Benefit assays and viability calibration
-remain pending; beneficial-heritable yield is unknown, not zero. H1 and H3
-remain untested, and no increased-evolvability or RSI claim is supported.
+### 4.3 Neither delayed extraction nor broader search recovers candidate inheritance
 
-### 4.3 Exploratory extension of a multi-transient path
+An exploratory extension first followed the earliest N01×N01 offset candidate, observed at encounter update 1,550. Its 3×12-core source produced a 6×6 descendant, then a 4×4 descendant that dissolved at the third isolation stage. This selected diagnostic motivates examining more paths, but adds no independent confirmation.
 
-A follow-up selected after observing the failed first-descendant inheritance
-search is reported separately as EXP-lineage-followup-001 (protocol 003).
-Starting from the earliest N01×N01 offset candidate at encounter t=1,550, it
-allows up to six serial isolation stages and requires two consecutive stable
-transmissions. The 3×12-core source produces a 6×6-core descendant, which
-produces a 4×4-core descendant; that descendant dissolves in the third stage.
-No stable path is confirmed. This exploratory diagnostic leaves the frozen
-atlas outcomes unchanged and provides no independent confirmation sample.
+The subsequent prospective calibration completed all 36 observations. Of 28 candidate-delay observations, 15 were eligible, ten had lost the fixed source core, and three remained shared. No extraction was excluded for recurrence, unknown identity, boundary contact, or size. All eight controls were eligible. Both searches confirmed 0/15 novel candidate paths and recovered 8/8 known control identities. None of the six originating configurations supplied a confirmed novel path. The 13 ineligible observations remain in the denominator for extraction eligibility; their inheritance outcomes are missing.
 
-### 4.4 Completed candidate-fate calibration
-
-All 36 cases in EXP-fate-calibration-001 completed. Among 28 candidate-delay
-observations, 15 had eligible components, ten had lost the fixed source core,
-and three remained shared components. No target recurrence, unknown-identity,
-boundary-component, or oversize exclusion was observed at extraction. All eight
-S13/N01 positive-control states were eligible. On identical extracted snapshots,
-both legacy and expanded searches recovered the original identity for 8/8
-controls and confirmed novel stable inheritance for 0/15 eligible candidate
-states. At the six originating configuration units, none yielded a confirmed
-novel path. The 13 ineligible delay observations remain in the 28-state denominator;
-their assay outcome is missing rather than a tested failure.
-
-| Delay | Candidate eligible | Novel: legacy; expanded | Parents: legacy; expanded |
+| Delay | Eligible / observed | Novel: legacy; expanded | Parents: legacy; expanded |
 |---|---:|---:|---:|
-| 0 | 4/7 | 0/7; 0/7 | 2/2; 2/2 |
-| 60 | 4/7 | 0/7; 0/7 | 2/2; 2/2 |
-| 120 | 4/7 | 0/7; 0/7 | 2/2; 2/2 |
-| 240 | 3/7 | 0/7; 0/7 | 2/2; 2/2 |
+| 0 | 4/7 | 0/4; 0/4 | 2/2; 2/2 |
+| 60 | 4/7 | 0/4; 0/4 | 2/2; 2/2 |
+| 120 | 4/7 | 0/4; 0/4 | 2/2; 2/2 |
+| 240 | 3/7 | 0/3; 0/3 | 2/2; 2/2 |
 
-The expanded search executed 69 candidate and 16 control generation simulations.
-No root reached the 24-simulation or six-transmission limit. Eighteen candidate
-generation states did reach the three-offspring collection limit, so later
-offspring and phases remain unexamined. Each of the four 3×12-source delay states
-examined ten generation states without stable novel recovery, extending the
-earlier single-path diagnostic. Other eligible roots either supplied descendants
-that dissolved under further isolation or remained unresolved at the horizon.
-These results do not rescue the tested candidates by either the declared delays
-or broader search, while demonstrating recovery of the tested verified parents.
-They do not establish universal assay sensitivity or ecological nonviability.
+Expanded search examined 69 candidate and 16 control generation states. No root reached the 24-simulation or six-transmission limit. Eighteen candidate generation states reached the three-offspring collection limit, leaving later offspring unexamined. Each delay of the 3×12 source generated ten searched states without stable recovery. Other eligible roots produced descendants that dissolved under further isolation or remained unresolved at the horizon.
 
-The native 9×9 candidate word reappeared at a different core at original encounter
-times 1,150 and 1,160 (C05-relative times 380 and 390). The same event occurs in
-all four overlapping continuation windows; it is one structural recurrence,
-not four independent reproductions or confirmed native ancestry. None of the
-candidate original words was recognized at the end of its 28 native windows.
-Boundary flags occurred in 16/28 candidate and 2/8 control windows, so native
-core counts can miss seam-crossing structures. Their endpoint absence cannot
-be equated with ecological extinction. Positive-control words appeared at new
-core locations and persisted at all eight native horizons.
+In native continuation, the 9×9 candidate word appeared at another core at original encounter times 1,150 and 1,160. Its appearance in all four overlapping windows is one structural recurrence, not four independent reproduction events. No candidate original word was recognized at the endpoint of its continuation windows. However, boundary flags occurred in 16/28 candidate and 2/8 control windows, limiting these counts. Control words appeared at new locations and persisted at all eight endpoints. Native endpoint absence consequently cannot establish candidate extinction.
 
-All 36 native terminal-grid replays, 85 expanded-generation replays, 41 legacy
-generation replays, and saved component extractions agree. Acquisition took
-511.2 seconds (8.5 minutes), peak runner RSS 65,112 KiB (63.6 MiB), one worker.
-The new paired matrix, native diagnostic curves, and raw-state comparison are
-traceable through figures/manifest.json. Protocol 001's atlas endpoint remains
-unchanged. Benefit was not assayed; H1/H3 and RSI remain unestablished.
+## 5. Discussion
 
-## 5. Limitations and alternative explanations
+### 5.1 Production and transmission require separate explanations
 
-The panel contains one documented organism and one selected descendant from
-one exploratory history. Selection for isolation eligibility can favor certain
-structures or phases; genotype is less than the complete transferred organism
-state. Phase, arm state, phenotype, and genotype effects are entangled in this
-first atlas. A measured pair interaction need not be a gene-sequence interaction.
-Equal global observation horizons also give unequal postcontact exposure when contact latency differs. The operational genotype may miss junction-state distinctions or identify
-states with different future behavior as the same circulating signal word.
+The encounter comparison identifies configurations that produce changed signal words; the inheritance comparison asks whether those changes persist through repeated reproduction. The two measurements diverge in this panel. Treating candidate counts as evolvability would attribute significance to the main-panel partner reversal despite its failure to transfer and the absence of recovered stable novelty. Transmission changes the interpretation of that apparent interaction.
 
-Contact provenance overapproximates causality. Structure detection does not
-provide universal individuality, precise biological births, or genetic pedigree.
-Isolation removes ecological assistance and can stabilize or disrupt a structure.
-Its limited first-descendant and phase search can miss viable paths. Boundary
-and nonrectangular structures can be missed. Surviving closed cores are therefore
-distinct from independently verified viable individuals.
+The calibration addresses two specific explanations for the negative inheritance result. Allowing the prescribed maturation delays and following additional detached descendants did not recover a stable novel path. Successful recovery of S13 and N01 shows that both searches can extract and transmit those tested identities at those delays. It makes a blanket explanation that the assay never recovers reproducing loops incompatible with the controls. It does not establish sensitivity for every altered phenotype. Candidate-specific extraction damage, ecological assistance, later offspring, and longer transient sequences remain possible.
 
-The calibration broadens isolated search and recovers known parents across four
-tested delays, but this does not validate extraction for every phenotype.
-Its fixed-core rule intentionally excludes lost or reshaped targets and their
-possible later descendants. Thirteen candidate-delay states remain ineligible;
-the three-offspring cap leaves additional paths unsearched. Native continuation
-changes ecological exposure as delay increases, and its boundary flags limit
-structural counts. A recurrent word need not descend from the original candidate.
+The discovery path supplies a useful contrast: a transient structure did produce stable novelty under complete-component isolation. It demonstrates a route accommodated by the method, while its exploratory selection prevents using it to estimate encounter-wide success. The current evidence supports a conditional separation between candidate production and recovered inheritance, rather than a universal barrier to heritable variation.
 
-Separated controls change grid extent as well as displacement, so they support
-contact-window diagnostics rather than an unrestricted causal estimate of
-contact alone. Relative geometry, orientation, and phase are interventions, not
-random samples from a natural encounter distribution. Descriptive contrasts
-cannot establish population-general effects. Beneficial variation, increased
-evolvability, H1, H3, and recursive self-improvement remain unestablished.
+### 5.2 Scope of the causal comparison
 
-## 6. Subsequent experiment plan
+The two-organism panel contains one selected descendant from one history. Signal word, shape, arms, and reproductive phase can covary; a pair effect cannot be assigned solely to a gene sequence. Equal observation horizons also permit unequal time after contact. Separated controls change world extent as well as distance, limiting interpretation to the declared configurations.
 
-The completed fate calibration supplies known-parent recovery but no rescued
-candidate. The next experiment should broaden the viable input panel to three
-or four naturally generated, separately isolation-verified identities, using
-a predeclared discovery/selection rule. Freeze fresh crossed encounters and
-held-out configurations after panel verification, retaining paired controls
-and the bounded inheritance search. This tests whether the original negative
-result is conditional on its narrow two-organism panel. Avoid reusing successful
-exploratory configurations as confirmation, and make native observation boundary
-safe or explicitly implement periodic recognition before quantitative native
-population claims. Benefit confirmation still requires a stable novel organism
-and calibrated ecological metric; see docs/next-experiment.md.
+Isolation deliberately changes the environment and can disrupt or stabilize reproduction. Fixed-core tracking excludes lost or reshaped targets and their possible descendants. The three-offspring cap, ineligible phases, finite horizons, rectangular detector, and seam-crossing failures bound the searched paths. The negative result therefore identifies what was not recovered under specified interventions, while the controls identify what those interventions demonstrably recover.
 
-For H1, evolve independent population histories, retain matched ancestors, and
-sample transferable complete organisms using a fixed sampling rule. Cross each
-with the same held-out partner/geometry/phase panel. This transplant holds the
-assessment encounter distribution fixed and changes inherited organism state.
-Population history, not each encounter or repeated deterministic run, is the
-replication unit. Compare conditional beneficial-heritable yields only after
-calibrated inheritance and benefit assays.
+### 5.3 Connecting encounters, organisms, and history
 
-For H3, compare undisturbed histories, structured disturbances, and shuffled
-controls matched on disturbance amount and an explicitly declared shuffle unit.
-One transplant puts history-derived organisms into a shared encounter panel,
-holding encounter distribution fixed. A second puts shared organisms into
-history-specific encounter distributions, holding organism state fixed.
-Crossing the two separates inherited-state and encounter-distribution pathways
-and their interaction. Preserve independent histories as replication units.
-All histories still act through present state and future scheduled interventions;
-no residual history effect is expected for identical complete states.
+The next informative comparison broadens the verified organism panel under a predeclared discovery and selection rule, then tests fresh crossed configurations. This asks whether the present separation persists beyond the initial pair. Native observation must handle periodic boundaries before supporting quantitative population claims. A stable novel organism and a calibrated ecological score would then permit benefit assessment; the detailed design is in [the next-experiment plan](../docs/next-experiment.md).
 
-## Reproducibility and data availability
+H1 extends this comparison by sampling organisms from independently evolved populations and testing them, alongside matched ancestors, against a common held-out encounter panel. Higher beneficial-heritable-variant yield than matched ancestors under these shared conditions would locate an increase in transferable organism state. Population history supplies replication.
 
-Repository: https://github.com/ReloadLightly/evoloop-levels. Reproduction commands:
-`python -m scripts.verify`, `python -m scripts.atlas run`,
-`python -m scripts.atlas inherit`, `python -m scripts.analyze`,
-`python -m scripts.figures`, `python -m scripts.render_manuscript`, and
-`python -m scripts.check_evidence`. README explains fresh versus resumed runs.
-Calibration commands are `python -m scripts.fate_calibration run`,
-`python -m scripts.fate_calibration verify`, `python -m scripts.analyze_fate`,
-and `python -m scripts.figures_fate`.
-Protocols,
-configurations, source, compact raw grids, analysis, and figures are versioned.
-Each figure must reference experiment IDs and a regeneration command.
-The manuscript and bibliography are working artifacts, not a submitted paper.
+H3 crosses organisms and encounter distributions derived from undisturbed, structured-disturbance, and appropriately shuffled histories. Transplanting history-derived organisms into common encounters isolates the organism pathway; exposing shared organisms to history-specific encounters isolates the exposure pathway. Their cross identifies dependence between these contributions. In deterministic dynamics, history acts through present state and scheduled interventions: identical complete states and schedules have identical futures.
 
-## References
+Together these experiments turn the title's question into comparisons with interpretable outcomes. Their common requirement is to follow variation from its production through transmission to ecological consequence. The present study establishes the first of those comparisons and shows why its stages cannot be collapsed into a single novelty count.
 
-Verified BibTeX is in `paper/references.bib`. Primary papers are linked in
-`docs/source_review.md`; bibliographic caveats and exact inspected hashes are
-recorded there. The review's final journal issue is 2025, while its preprint is
-2024. No third-party PDFs are included in this repository.
+## Reproducibility and references
+
+Protocols, configurations, complete starting grids, compact evidence, analyses, and figure-generation scripts are available at https://github.com/ReloadLightly/evoloop-levels. [Reproduction instructions](../docs/reproducing-results.md) link commands and evidence locations. Figures and their data provenance are indexed in [the figure manifest](../figures/manifest.json). Exact reference versions, licensing, and bibliographic caveats are documented in [the source review](../docs/source_review.md); verified bibliographic entries are in [references.bib](references.bib).
+
+
+Sayama, H. (1999). A New Structurally Dissolvable Self-Reproducing Loop Evolving in a Simple Cellular Automata Space. *Artificial Life*, 5(4), 343–365. DOI: 10.1162/106454699568818.
+
+Salzberg, C., and Sayama, H. (2004). Complex Genetic Evolution of Artificial Self-Replicators in Cellular Automata. *Complexity*, 10(2), 33–39. DOI: 10.1002/cplx.20060.
+
+Salzberg, C., Antony, A., and Sayama, H. (2004). Evolutionary Dynamics of Cellular Automata-Based Self-Replicators in Hostile Environments. *BioSystems*, 78(1–3), 119–134. DOI: 10.1016/j.biosystems.2004.07.004.
+
+Sayama, H., and Nehaniv, C. L. (2025). Self-Reproduction and Evolution in Cellular Automata: 25 Years After Evoloops. *Artificial Life*, 31(1), 81–95. DOI: 10.1162/artl_a_00451. Earlier version: arXiv:2402.03961v2 (2024).
+
+Software sources: Luis M. Antunes, *CellPyLib* and its evoloop documentation (inspected 2026); Hiroki Sayama, *EvoLoopS*, version 1.0 (1999). Exact versions and source links are recorded in the bibliography and source review.
