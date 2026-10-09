@@ -1,0 +1,235 @@
+{
+  "experiment_id": "EXP-fate-calibration-001",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "config": {
+    "experiment_id": "EXP-fate-calibration-001",
+    "source_experiment": "EXP-atlas-001",
+    "delays": [
+      0,
+      60,
+      120,
+      240
+    ],
+    "controls": [
+      "S13",
+      "N01"
+    ],
+    "control_world_shape": [
+      384,
+      384
+    ],
+    "control_snapshot_placement": [
+      192,
+      144
+    ],
+    "native_horizon_after_delay": 1600,
+    "isolation_shape": [
+      192,
+      192
+    ],
+    "generation_horizon": 1600,
+    "detection_interval": 10,
+    "offspring_per_generation": 3,
+    "max_depth": 6,
+    "max_generation_simulations_per_root": 24,
+    "stable_transmissions": 2,
+    "target_matching": "exact first-observed core tuple, regardless of subsequent genotype; never substitute",
+    "search_order": "depth-first; offspring ordered by first eligible detached time, core tuple, snapshot hash",
+    "genetic_novelty": "stable channel word differs from both encounter inputs",
+    "benefit_status": "not_assayed"
+  },
+  "config_sha256": "9672cc9e7365c16b3b2b273e0e218114db837ec98268e55bce0773d7d82bb34b",
+  "protocol_sha256": "f8510ced6d893ccc2065eaf9ad80be257fc96e18bd34fa5a96b0a0ba9685e197",
+  "code_hashes": {
+    "evoloop/kernel.c": "6de57b310164c91617feb3ca191751db64e63028b850a8983eca10631accf969",
+    "evoloop/engine.py": "8a151597c529794a7406af334a32df74363a0bb7f8245fe1d6c525bf9e9a6c10",
+    "evoloop/tracking.py": "870e35a08f824fb92a67330dca8a823587c582b1387c7d63c1bc46e571026358",
+    "evoloop/assays.py": "7b7d0ffaa45905e589657d58adee560e4952fe9dfa638ad81180a4c69ddd613d",
+    "scripts/atlas.py": "702caf5077b29938ad569c8e8961fca693e68ed696e1c44e074ac2abfa0207ae",
+    "evoloop/fate.py": "95f546a027f65bf96e10a714daae58b5ff42aab73f1e9fba7e245f9b2d930fe8",
+    "scripts/fate_calibration.py": "eec5279e172e6e3f74e915194f6894fd1e7f40b0c67eed260a3cb3886fe9a2f4",
+    "scripts/analyze_fate.py": "759328b8e1547bea92063d51d9ef3abe989db87ac1b00212045055361e76e57e"
+  },
+  "source_manifest_sha256": "057e1e3c25d3babb2d0db86202592aec048b0a1e9127aa8ecc3e90cb2d562eb0",
+  "sources": [
+    {
+      "id": "C01",
+      "kind": "candidate",
+      "run_id": "near-heldout-N01-S13-p30-held-parallel",
+      "source_t": 820,
+      "target_core": [
+        207,
+        180,
+        11,
+        11
+      ],
+      "identity": "11x11:00011401401111111111117017017017017017017017017017017017",
+      "source_hash": "1a1fa6baf688dc8ee4c4879d5b6980bf4e5d0762f07da5f5f74dd71bac6a36c2",
+      "source_labels_hash": "2897d42be7c70cd92d0c60afb75b0c74c9a3401e82806a4c92d148c74b5c74d4",
+      "input_identities": [
+        "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ],
+      "source_result_sha256": "995bb2c71220df9ed15006210735fdda39f0770129a8a4a66aa09d1389eadaff"
+    },
+    {
+      "id": "C02",
+      "kind": "candidate",
+      "run_id": "near-main-N01-N01-p0-offset",
+      "source_t": 1550,
+      "target_core": [
+        224,
+        185,
+        12,
+        3
+      ],
+      "identity": "3x12:011111111111170170170170170170170117014014",
+      "source_hash": "2572039ed244c51ef941a9d1914d89ecaea3fe0236a159fae412f29f69961323",
+      "source_labels_hash": "411682b65031dba3399dd3f4c37fc5228fc5a31876ae14a99921440a433dc51f",
+      "input_identities": [
+        "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "12x12:011111111111170170170170170170170170170170170170170117014014"
+      ],
+      "source_result_sha256": "5357378c023f00302effe0eaa04cafc3c6410980ccaaa784a90dc98bd59bbdeb"
+    },
+    {
+      "id": "C03",
+      "kind": "candidate",
+      "run_id": "near-main-N01-S13-p0-crossed",
+      "source_t": 800,
+      "target_core": [
+        206,
+        160,
+        1,
+        5
+      ],
+      "identity": "1x5:011117017017017017017017",
+      "source_hash": "d5c15b5bd4af1a58f95f6364ad447102a3a7538827281953adcabbccc2168775",
+      "source_labels_hash": "c959a2cbdc79458a75d007837520b24dc45a335a216b3073b7dbec7661ce19e4",
+      "input_identities": [
+        "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ],
+      "source_result_sha256": "3318f8c9be2758c126a7e1581e52d14dffd855b0b1d8dca997ccf706f4c9f3fc"
+    },
+    {
+      "id": "C04",
+      "kind": "candidate",
+      "run_id": "near-main-S13-S13-p0-crossed",
+      "source_t": 430,
+      "target_core": [
+        206,
+        188,
+        11,
+        9
+      ],
+      "identity": "9x11:0111111111111701701701701701701701701117017017014014",
+      "source_hash": "3a67020fcf820ae25a7d4fcd77d5cc7566a349c0424fb5ff74722adb7a55b547",
+      "source_labels_hash": "32cf5386fe51f3e1e3ac377497e0549760fa248ff4524a0cbc89e095bcf05c97",
+      "input_identities": [
+        "11x11:01111111111117017017017017017017017017017017017017014014",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ],
+      "source_result_sha256": "dd458ce74c80d5084f0aa40c19d64088aae1b483cd066dbc5980dccc798675c0"
+    },
+    {
+      "id": "C05",
+      "kind": "candidate",
+      "run_id": "near-main-S13-S13-p0-crossed",
+      "source_t": 770,
+      "target_core": [
+        183,
+        188,
+        9,
+        9
+      ],
+      "identity": "9x9:011111111111170170170170170170170170111701114014",
+      "source_hash": "c21361d9ec143affcfd67e8ac4dddbb4182e5d09f57aeac12dc5d1db6f5b1a91",
+      "source_labels_hash": "e7ad8df52b41baf900ac73b6b9f31589c8fa74d162e0e0295a8ee0d878dad0ee",
+      "input_identities": [
+        "11x11:01111111111117017017017017017017017017017017017017014014",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ],
+      "source_result_sha256": "dd458ce74c80d5084f0aa40c19d64088aae1b483cd066dbc5980dccc798675c0"
+    },
+    {
+      "id": "C06",
+      "kind": "candidate",
+      "run_id": "near-main-S13-S13-p0-opposed",
+      "source_t": 130,
+      "target_core": [
+        195,
+        173,
+        11,
+        12
+      ],
+      "identity": "11x12:0111111111111701701701701401401111111111117017017017014014",
+      "source_hash": "f06cce8aee0bc38b608ccdd4e327ae506d83c30de1b79b6fa61a45a8f762d6ed",
+      "source_labels_hash": "9e7f00293962ed6ad0fb04ae79965301e2549533d663ff680a281dbb3ca0ed1b",
+      "input_identities": [
+        "11x11:01111111111117017017017017017017017017017017017017014014",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ],
+      "source_result_sha256": "17e84ca35803cfc78fe188304a61f40ebd1bdaec9973829a6c83d209cf9fb87f"
+    },
+    {
+      "id": "C07",
+      "kind": "candidate",
+      "run_id": "near-main-S13-S13-p60-offset",
+      "source_t": 1100,
+      "target_core": [
+        171,
+        210,
+        11,
+        11
+      ],
+      "identity": "11x11:00701401401111111111117017017017017017017017017017017017",
+      "source_hash": "185710d9377bc93a465a55d98d5d749db14223834c51095e0d4e828cd7e859dd",
+      "source_labels_hash": "3356446e5e6c22edeb422419b4cd2e09c8fcb84517d2ecdb007bfc5480fbf2ff",
+      "input_identities": [
+        "11x11:01111111111117017017017017017017017017017017017017014014",
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ],
+      "source_result_sha256": "9365d4bad9fb521ddc6bc93b22c29e87f00feb3a79722ec5b2bb0cb4268da427"
+    },
+    {
+      "id": "P-S13",
+      "kind": "control",
+      "organism": "S13",
+      "run_id": null,
+      "source_t": 0,
+      "target_core": [
+        195,
+        147,
+        11,
+        11
+      ],
+      "identity": "11x11:01111111111117017017017017017017017017017017017017014014",
+      "source_hash": "d0f41a3115a493c6294983cb818203d820581ab52b86188a75660cba9a89911e",
+      "source_labels_hash": "c6b8a97cbe213de96646a41e5922249189190e2221892ae01ae52bf54f989888",
+      "input_identities": [
+        "11x11:01111111111117017017017017017017017017017017017017014014"
+      ]
+    },
+    {
+      "id": "P-N01",
+      "kind": "control",
+      "organism": "N01",
+      "run_id": null,
+      "source_t": 0,
+      "target_core": [
+        195,
+        147,
+        12,
+        12
+      ],
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+      "source_hash": "fcd77561e28b6ffe776261fc58ea5d6fed8ccc5309b350deeeb7382f68474e11",
+      "source_labels_hash": "7532b1a697e8c80cc172387588a35d4ba73e8107da215c98ea02da48c8143198",
+      "input_identities": [
+        "12x12:011111111111170170170170170170170170170170170170170117014014"
+      ]
+    }
+  ],
+  "expected_cases": 36
+}
