@@ -1,0 +1,191 @@
+{
+  "node": 0,
+  "parent_node": null,
+  "incoming_child": null,
+  "path": [],
+  "depth": 1,
+  "input_identity": "9x11:0111111111111701701701701701701701701117017017014014",
+  "input_snapshot_hash": "be52a5889c01c0779a369c3dec9828e6ad3189c6a424b30443bf0edd35b98c29",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "2d680085229ce97f3ca3a3a5df4d2f0f211ef45d7add226eab8aded1af1fbcc7",
+    "final_hash": "f30b23a3736d094fee9e01edc63b8da998047dbc5858507610b6381e47eb1003",
+    "completed_updates": 860,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 110,
+        "closure_first_seen_t": 100,
+        "core": [
+          79,
+          92,
+          9,
+          9
+        ],
+        "identity": "9x9:011111111111170170170170170170170170111701114014",
+        "snapshot_hash": "20ad803a3650bf74dd17e8a72cac498fb92b6332208ac23e7efae97b19438565",
+        "extraction_bbox": [
+          76,
+          89,
+          15,
+          15
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 480,
+        "closure_first_seen_t": 470,
+        "core": [
+          102,
+          69,
+          9,
+          9
+        ],
+        "identity": "9x9:011111111111170170170170170170170170111701114014",
+        "snapshot_hash": "4c3e806c4deeb95e1417d39a2e479b184f232e6f84e42b50a34204d941795f21",
+        "extraction_bbox": [
+          99,
+          66,
+          15,
+          15
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 860,
+        "closure_first_seen_t": 850,
+        "core": [
+          127,
+          92,
+          9,
+          9
+        ],
+        "identity": "9x9:011111111111170170170170170170170170111701114014",
+        "snapshot_hash": "08603d4ef9585403e6e7bcf2f077e8de6847ac5dacd1b42b61b15cf2e3b1684e",
+        "extraction_bbox": [
+          124,
+          89,
+          15,
+          15
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 239
+      },
+      {
+        "t": 100,
+        "closed_cores": 2,
+        "occupied_cells": 291
+      },
+      {
+        "t": 200,
+        "closed_cores": 1,
+        "occupied_cells": 157
+      },
+      {
+        "t": 300,
+        "closed_cores": 1,
+        "occupied_cells": 203
+      },
+      {
+        "t": 400,
+        "closed_cores": 1,
+        "occupied_cells": 258
+      },
+      {
+        "t": 500,
+        "closed_cores": 1,
+        "occupied_cells": 238
+      },
+      {
+        "t": 600,
+        "closed_cores": 1,
+        "occupied_cells": 172
+      },
+      {
+        "t": 700,
+        "closed_cores": 1,
+        "occupied_cells": 213
+      },
+      {
+        "t": 800,
+        "closed_cores": 1,
+        "occupied_cells": 267
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          102,
+          92,
+          11,
+          9
+        ],
+        "identity": "9x11:0111111111111701701701701701701701701117017017014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 100,
+        "core": [
+          79,
+          92,
+          9,
+          9
+        ],
+        "identity": "9x9:011111111111170170170170170170170170111701114014"
+      },
+      {
+        "type": "core_loss",
+        "t": 120,
+        "core": [
+          79,
+          92,
+          9,
+          9
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 470,
+        "core": [
+          102,
+          69,
+          9,
+          9
+        ],
+        "identity": null
+      },
+      {
+        "type": "core_loss",
+        "t": 500,
+        "core": [
+          102,
+          69,
+          9,
+          9
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 850,
+        "core": [
+          127,
+          92,
+          9,
+          9
+        ],
+        "identity": null
+      }
+    ]
+  }
+}
