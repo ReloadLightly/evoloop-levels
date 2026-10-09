@@ -20,8 +20,11 @@ event times, snapshots, and compact evidence. No normal exhaustive histories.
 Maintain at least 200 MiB available memory; start with one worker, benchmark
 before increasing batch size. Do not change physics to make a result appear.
 
-Use conservative component extraction: retain arms, reject boundary-spanning
-or multicore components for isolation, and allow transient-to-stable paths.
+Use conservative component extraction: retain arms and reject multicore
+components. Legacy experiments reject boundary-spanning components; new
+protocols may use validated periodic unwrapping when an empty row and column
+exist and the entire single-core component is retained. Reject noncontractible
+components. Allow transient-to-stable paths; preserve old frozen measurements.
 Operational phase-normalized channel genotypes preserve spacing and chirality;
 they are not automatically published species identifiers or full organism state.
 Ancestry labels are causal overapproximations, not genetic parent assignments.

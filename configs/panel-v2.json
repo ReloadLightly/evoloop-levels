@@ -1,0 +1,20 @@
+{
+  "experiment_id": "EXP-panel-discovery-002",
+  "target_identities": 3,
+  "sampling_interval": 20,
+  "metrics_interval": 200,
+  "attempts_per_source_identity": 2,
+  "attempts_per_history": 32,
+  "phases": [20,50,80],
+  "isolation_shape": [192,192],
+  "generation_horizon": 1600,
+  "detection_interval": 10,
+  "offspring_per_generation": 1,
+  "histories": [
+    {"id":"D01","shape":[160,160],"horizon":12000,"focal":"S13","partner":null,"y":65,"x":45,"rotation":0,"gap":0,"dy":0},
+    {"id":"D02","shape":[320,320],"horizon":16000,"focal":"S13","partner":"N01","y":140,"x":120,"rotation":2,"gap":8,"dy":0},
+    {"id":"D03","shape":[320,320],"horizon":16000,"focal":"N01","partner":"N01","y":140,"x":120,"rotation":1,"gap":12,"dy":24}
+  ],
+  "selection": "native word differs from S13 and admitted words; first detached offspring followed by two identical composite-identity transmissions; stable word equals native source word; third descendant snapshot; one unchanged core at all declared phases",
+  "stopping": "stop immediately when three identities admitted; otherwise execute frozen histories in order and report shortfall"
+}
