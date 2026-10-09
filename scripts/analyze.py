@@ -29,6 +29,9 @@ def main():
                      'unresolved_candidates':sum(not c['confirmed_novel'] for c in checks),
                      'assay_extinct_paths':sum(o['status']=='assay_extinct' for c in checks for o in c['outcomes']),
                      'isolation_attempts':sum(len(c['outcomes']) for c in checks),
+                     'first_detached_offspring_paths':sum(o['generation1']['status']=='reproduced' for c in checks for o in c['outcomes']),
+                     'second_generation_extinct_paths':sum(o['generation2']['status']=='extinct' for c in checks for o in c['outcomes']),
+                     'final_closed_cores':r['metrics'][-1]['closed_cores'],'final_occupied_cells':r['metrics'][-1]['occupied_cells'],
                      'new_core_positions':r['new_core_count'],
                      'input_cores_present_at_horizon':sum(z['closed_core_present_at_horizon'] for z in r['input_structural_survival']),
                      'all_input_cores_lost':not any(z['closed_core_present_at_horizon'] for z in r['input_structural_survival']),
@@ -44,6 +47,8 @@ def main():
                 'unresolved_candidates':sum(r['unresolved_candidates'] for r in subset),
                 'isolation_attempts':sum(r['isolation_attempts'] for r in subset),
                 'assay_extinct_paths':sum(r['assay_extinct_paths'] for r in subset),
+                'first_detached_offspring_paths':sum(r['first_detached_offspring_paths'] for r in subset),
+                'second_generation_extinct_paths':sum(r['second_generation_extinct_paths'] for r in subset),
                 'boundary_flagged_runs':sum(r['boundary_t'] is not None for r in subset),
                 'beneficial_heritable_yield':None,'benefit_status':'pending_calibration_and_assay'}
     panels={}
