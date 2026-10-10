@@ -1,4 +1,4 @@
-# Research state — three viable inputs selected; fresh atlas frozen
+# Research state — fresh atlas confirms two pair-relative inherited outcomes
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
@@ -61,23 +61,79 @@ integrity.json; figures/fate-{calibration-matrix,native-trajectories,raw-compari
 Protocols: 000 scientific contract; 001 frozen atlas; 002 postfreeze identity
 reporting audit; 003 exploratory lineage follow-up; 004 prospective calibration.
 
-Single next action: predeclare selection of three or four naturally generated,
-isolation-verified viable identities, then freeze a fresh crossed atlas and
-held-out configurations. See docs/next-experiment.md. Keep boundary-safe native
-measurement, pending benefit, and independent histories for H1/H3 explicit.
+Single next action: calibrate the frozen mean viable-population proxy, then run
+the frozen paired disturbance benefit assay for both confirmed identities
+against both originating inputs. See docs/next-experiment.md. Benefit is pending;
+H1/H3 need independent population histories and remain untested.
 
-## Fresh input discovery and atlas freeze
+## Fresh input discovery and completed atlas
 
-EXP-panel-discovery-002 reached its frozen target without an extension:79 trials,
+EXP-panel-discovery-002 reached its frozen target without an extension: 79 trials,
 three native-word identities admitted. V01 reverifies original native N01;
-V02/V03 arise in D03 (N01/N01 320-square history) at 3440/5040 and stabilize
-12×14→13×13 with different words.74 trials unresolved/identity-changed; two
-stable-word mismatches rejected. D01/D02 complete12,000/16,000 updates; D03
+V02/V03 native sources are first observed in D03 (N01/N01 320-square history)
+at 3440/5040 and stabilize
+12×14 → 13×13 with different words. 74 trials unresolved/identity-changed; two
+stable-word mismatches rejected. D01/D02 complete 12,000/16,000 updates; D03
 stops at 5040. Runtime 787.4 s, peak RSS 66,220 KiB, one worker.
 
-EXP-atlas-002 is frozen under protocol 006:144 distinct starts,36 main + 18 held-out
-near,54 matched separated in the same 640-square domains,36 solo. Fresh phases
-20/80 main, 50 held-out. Calibrated expanded search and validated periodic
-measurement; native-word screening excludes morphology-only paths. Benefit
-assay remains frozen and pending. Next action: execute the 144 states and their
-inheritance checks after source replay verification.
+EXP-atlas-002 completed protocol 006: 144 distinct starts, 36 main + 18 held-out
+near, 54 matched separated in the same 640-square domains, 36 solo. All 54 near
+states contact; no separated contact violations. Candidate word yield 14/36
+main, 4/18 held-out, 0/90 controls. Confirmed pair-relative inherited yield 2/36
+main, 0/18 held-out (2/54 overall). Positive states:
+
+- near-main-V01-V03-p20-a-parallel: contact 224; native 13×15 candidate at 1,110
+  yields stable 14×14 word absent from all three inputs, then two unchanged
+  transmissions. Matching 14×14 identity also appears natively at 1,550.
+- near-main-V02-V03-p20-a-parallel: contact 233; native 12×13 candidate at 460
+  yields stable 12×12 identity exactly matching V01, then two unchanged
+  transmissions. V01 is absent from the originating V02/V03 inputs: pair-relative
+  novelty, not catalogue novelty. Matching 12×12 word appears natively at 860.
+
+Eight confirmed extraction roots converge on two identities from two states;
+these repeated/convergent paths are not independent inherited events.
+Supplementary catalogue-relative yield 1/36 main and 0/18 held-out. Both stable
+words occur natively; no native parentage is assigned to matching observations.
+Changed words produced along an isolation path are assay-derived at that stage.
+
+The expanded search executes 88 roots, 1,205 generation simulations from 52
+run/composite identities. Six identities lack an extractable phase; 16 other
+candidate-producing states remain unresolved. Recorded truncations: 134
+simulation-budget and 24 depth-limit; 441 generation nodes reach offspring cap.
+All denominators retain lethal/nonproductive states. Native edge activity in
+73/144 arenas is measured with validated small-body periodic recognition;
+large/nonrectangular/winding/shared structures remain outside confirmed scope.
+Main candidate rank reversals do not persist held-out. Four main inherited
+interaction contrasts are −0.250; all held-out inherited contrasts are zero.
+No inherited strict rank reversal. These are descriptive pair-configuration
+effects, not identified focal genetic yield or population-general H2 evidence.
+
+Acquisition sum 2,145.8 s across original and equivalent tiled stepping; final
+acquisition invocation peak RSS 71,600 KiB, one worker. Isolation invocation 344.9 s.
+Tiled execution matches 59,049 local cases, 480 random steps, and two complete
+atlas trajectories with provenance masks. Independent lineage integrity passes all 144 initial/final self-hash pairs,
+52 first observations, 88 source snapshots, and 1,205 linked isolation nodes.
+The original-dense source audit retains 52 raw observation frames and verifies
+eight confirmation paths with zero mismatches. Original dense replay also passes
+four complete native encounter/control trajectories and all 1,205 isolated
+generations, including their saved child-selection grids (544.8 s). See
+data/atlas-v2/lineage-integrity.json and verification.json. Optimization changes
+execution cost, not the frozen physics or endpoint.
+
+Fresh figures render in 66.3 s at 211.3 MiB peak RSS. Replays retain sampled raw
+frames; browser animations display every second retained frame plus annotation
+frames at one pixel per cell, avoiding encoder memory growth. The shared dark
+style and literal-state mapping are preserved. The PDF renderer used 223.1 MiB.
+
+The two atlases change inputs, arena extent, native screen, measurement, and
+search together. Their yield difference cannot identify a causal enrichment
+or isolated implementation effect. V02/V03 share 13×13 core dimensions; arms,
+words, complete states, and developmental timing still vary. Discovery selected
+related descendants, not independent evolutionary histories.
+
+New analysis: data/atlas-v2/analysis.json, analysis.md, inheritance.json.
+Figures: figures/atlas2-{outcome-matrix,evidence-stages,inheritance-path}-dark.svg,
+annotated encounter replays, and paper variants; figures/manifest.json supplies
+run IDs and commands. Updated manuscript: paper/manuscript.md and its PDF.
+Benefit remains frozen and pending; useful-variation yield unknown. H1/H3 and
+recursive self-improvement remain unestablished.

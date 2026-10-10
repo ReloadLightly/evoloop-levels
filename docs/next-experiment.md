@@ -1,41 +1,72 @@
-# Next scientific action: broaden the verified viable encounter panel
+# Next scientific action: test ecological value of confirmed inherited outcomes
 
-EXP-fate-calibration-001 is complete. Both the legacy and expanded searches
-recover 8/8 known S13/N01 parent-control delay states. Neither confirms stable
-novelty in 15 eligible candidate-delay states; ten other states lost the target
-and three remain shared. This supports the tested controls and search behavior,
-not universal sensitivity or ecological nonviability. No candidate is yet
-available for a confirmed-benefit comparison. The native C05 word recurrence
-is fleeting, ancestry-ambiguous, and repeated across overlapping windows.
+EXP-atlas-002 completed 144 frozen states. Pair-relative inherited novelty was
+recovered in 2/36 main and 0/18 held-out encounters. One stable 14×14 word differs
+from all three catalogue inputs; the other stable 12×12 identity exactly matches
+V01 and differs from its originating V02/V03 pair. Eight successful extraction
+roots converge on these two identities from two configurations. They supply
+assay inputs, not eight independent variants. Parentage remains pair-level
+ambiguous. The original atlas and calibration retain their negative outcomes.
 
-The most informative next experiment is a small fresh crossed atlas with
-three or four naturally generated, separately isolation-verified viable
-identities. First freeze a discovery/selection rule, observation budget, and
-maximum verification attempts; retain all rejected and unresolved candidates.
-Select on viability and provenance before seeing encounter outcomes or benefit.
-Do not invent genomes, select encounter winners into the input panel, or claim
-independent histories from repeated deterministic runs or translations.
+The single most informative next experiment is ecological-score calibration
+followed by the already frozen paired benefit assay. No benefit assay has run;
+beneficial-heritable yield is unknown. This step connects demonstrated stable
+transmission to a specified ecological consequence before expanding claims
+about adaptive capacity.
 
-After verification, freeze fresh relative geometries/phases, paired controls,
-contact and exposure horizons, the bounded inheritance search, and held-out
-configurations. Keep all lethal/nonproductive states in the denominator. This
-asks whether the original lack of recovered variants depends on its narrow
-S13/N01 input panel. It is a fresh H2 comparison, not independent confirmation
-of the previously observed candidate-only rank reversal. Benefit comparison
-still requires confirmed stable novelty and a calibrated ecological assay.
+First declare and freeze the viability-calibration procedure, sample selection,
+horizon, and pass criterion before collecting its observations. The frozen
+score counts intact closed cores of isolation-verified identities; identity
+verification does not establish that each counted core is viable. Compare
+sampled complete components with subsequent reproduction under the stated
+environment, retain shared/ineligible and censored cases, and assess whether
+score changes reflect viable population rather than doomed bodies or detector
+coverage. If the score fails calibration, report that result and retain benefit
+as pending; any revised score needs a separately versioned prospective assay.
+Do not alter the metric after seeing which variant performs best.
 
-Use boundary-safe observation or validated periodic structure recognition
-before quantitative native population claims; the calibration had native edge
-flags in 16/28 candidate and 2/8 control windows. Native matching words remain
-structural evidence unless ancestry is separately demonstrated. Maintain
-matched legacy/expanded snapshots where search sensitivity is compared.
+Then use one declared complete verified snapshot per confirmed stable identity
+and execute every frozen condition, without selecting a winner first. Compare
+the 14×14 identity with V01 and V03; compare the recovered V01 identity with V02
+and V03. Serial isolation is an imposed preparation and transmission assay,
+not proof of native ecological ancestry. Preserve exact starting grids and
+condition pairing. Additional roots that converge on identical states are
+reproducibility checks rather than independent ecological observations.
+The recovered V01 identity has a different complete detached snapshot from the
+panel's V01 representative. Identity equality does not imply complete-state
+equality: preserve snapshot hashes and preparation phases, and interpret the
+assay as a comparison of declared organism states rather than signal words alone.
 
-This is a subsequent plan, not an executed or fully frozen experiment.
+The assay in configs/atlas-v2.json specifies 192×192 periodic arenas, 1,600 updates,
+24×24 block removals at 600 and 1,000, and sampling every 20 updates. Development
+conditions use rotations 0/1 and blocks at (40,40)/(128,128); reserved confirmation
+conditions use rotations 2/3 and blocks at (40,128)/(128,40). Within each condition,
+the candidate and both inputs receive the same schedule. The frozen criterion
+requires the candidate's mean population score to exceed each input's mean in
+both development and confirmation panels. This captures persistence and
+recolonization under those disturbances. It is conditional on the score,
+conditions, and horizon; neither population increase nor assay advantage alone
+demonstrates evolution of the capacity for further adaptive change or RSI.
 
-H1 transplant: independent evolved organisms versus matched ancestors into a
-common held-out encounter distribution; change organism state, fix assessment
-encounters. H3 transplants: history-derived organisms into a shared encounter
-panel, and shared organisms into history-specific encounter distributions;
-respectively fix encounters and fix organisms. Compare undisturbed, structured
-disturbance, and matched shuffled-disturbance histories, with independent
-population histories as replication units. H1/H3 remain untested.
+Report pair-relative beneficial-heritable yield using all 54 encounter
+configurations, with main/held-out denominators separately. Keep known-word
+recovery distinct from catalogue-relative novelty. Preserve pending calibration,
+benefit, and unexamined candidates explicitly. The new atlas's higher inherited
+yield is not a controlled panel-enrichment effect: organism inputs, domain size,
+screening, periodic measurement, and descendant search also changed.
+
+H1 remains untested. Sample organisms from independently evolved populations
+and compare them with matched ancestors under a common held-out encounter
+panel. Change organism state while fixing the assessment encounter distribution.
+Independent source populations, not related selected descendants or deterministic
+reruns, supply replication. Measure beneficial-heritable-variant yield rather
+than ordinary growth or adaptation alone.
+
+H3 remains untested. Compare undisturbed histories, structured-disturbance
+histories, and matched shuffled-disturbance controls. Transplant history-derived
+organisms into shared encounters to hold exposure fixed; transplant shared
+organisms into history-derived encounter distributions to hold organisms fixed.
+Crossing these transplants tests dependence between inherited organism and
+exposure pathways. Independent population histories supply replication. History
+acts through present organisms, encounter states, and intervention schedules:
+identical complete states and schedules have identical deterministic futures.

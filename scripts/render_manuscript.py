@@ -32,6 +32,10 @@ def main():
                   if not re.match(r'^\|[-| :]+\|$',line)]
             rows=[[cell.strip() for cell in row] for row in rows]
             widths=[max(len(row[i]) for row in rows) for i in range(len(rows[0]))]
+            # Keep these short results tables together, including their header.
+            # A split table otherwise leaves counts on a page without labels.
+            if y+len(rows)*13+8>690 and lines:
+                pages.append(lines);lines=[];y=0
             for row in rows:
                 add('| '+' | '.join(cell.ljust(width) for cell,width in zip(row,widths))+' |','table')
             add('','space');continue
@@ -78,7 +82,7 @@ def main():
         for name in ['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3',
                      'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison',
                      'panel2-native-worlds','panel2-selection','atlas2-verified-panel','atlas2-outcome-matrix',
-                     'atlas2-evidence-stages','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3']:
+                     'atlas2-evidence-stages','atlas2-inheritance-path','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3']:
             p=ROOT/f'figures/{name}-dark.png'
             if not p.exists():continue
             fig=plt.figure(figsize=(11.69,8.27),facecolor=STYLE['ink']);ax=fig.add_axes([.035,.07,.93,.86]);ax.imshow(Image.open(p));ax.axis('off')
