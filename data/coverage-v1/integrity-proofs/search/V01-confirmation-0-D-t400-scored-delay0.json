@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "search",
+  "unit": "V01-confirmation-0-D-t400-scored-delay0",
+  "provenance": {
+    "auditor_sha256": "4f62547fd660dc02c21fb0844a448c3bb4a73242a434a853f480083cc5169b83",
+    "manifest_sha256": "6663202e1ae550cf220263d9c0e8a6887829f187cb5006131f24ef5f05d27b4c",
+    "readiness_sha256": "91ee5d04504a6ae1c7d8ee6707ec65cb7b0fb6a58e4daceba968974a65ce15c3",
+    "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+    "initial_grid_or_component_hash": "b68796a5c203e6c5285380bc605d8a4601d41496846d23ec37bd4eec0c3c00ed",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593",
+      "scripts/verify_impact.py": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+      "scripts/memory_guard.py": "a41279ab050e038a4d6f6e33dfad6e957d00c6db973c3db95c9d65b85aa27b4f"
+    },
+    "physical_source_sha256": {
+      "data/coverage-v1/searches/V01-confirmation-0-D-t400-scored-delay0/node-00.json": "e6fde5936402e83eb36f9bcab0e7067ef4f127c96ddc9ceb80788ae0d9b5333f",
+      "data/coverage-v1/searches/V01-confirmation-0-D-t400-scored-delay0/node-00.npz": "226d2db3c2a34bb283ab3e2cb1ad0a8b8ac8d9286c6290d6281a3fd1b502fdd8",
+      "data/coverage-v1/searches/V01-confirmation-0-D-t400-scored-delay0/receipt.json": "9d81b025798632efa8431ffcf4384891e2066052bfff6d2afb02aba2404fb6aa",
+      "data/coverage-v1/searches/V01-confirmation-0-D-t400-scored-delay0/result.json": "ace98bc3f7d603d3bec54533a58bfe56375e5cec6c9bb76af1a7c3711c17da4e",
+      "data/coverage-v1/worlds/V01-confirmation-0-D/V01-confirmation-0-D-t400-scored-delay0.npz": "4d876874692a7f23d188cac50806182fa32895b5e29d49fb4570b188b3fd5dbb"
+    }
+  },
+  "verified_counts_delta": {
+    "isolated_generation_states_replayed": 1,
+    "dense_isolation_updates_replayed": 1600,
+    "search_nodes_verified": 1,
+    "search_roots_verified": 1,
+    "isolated_detection_samples_verified": 161,
+    "dense_admission_schedule_updates_replayed": 1600
+  },
+  "verification_seconds": 0.44188651500007836,
+  "scope": "complete DFS graph, dense isolated states and sampled child-admission schedule"
+}

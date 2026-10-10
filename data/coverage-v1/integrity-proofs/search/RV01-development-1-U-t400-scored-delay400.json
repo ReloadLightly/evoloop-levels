@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "search",
+  "unit": "RV01-development-1-U-t400-scored-delay400",
+  "provenance": {
+    "auditor_sha256": "4f62547fd660dc02c21fb0844a448c3bb4a73242a434a853f480083cc5169b83",
+    "manifest_sha256": "6663202e1ae550cf220263d9c0e8a6887829f187cb5006131f24ef5f05d27b4c",
+    "readiness_sha256": "91ee5d04504a6ae1c7d8ee6707ec65cb7b0fb6a58e4daceba968974a65ce15c3",
+    "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+    "initial_grid_or_component_hash": "2ca39fd68ad5439ba83ecd2a8caa72a046c8d7798e828ee4877b905529c3996a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593",
+      "scripts/verify_impact.py": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+      "scripts/memory_guard.py": "a41279ab050e038a4d6f6e33dfad6e957d00c6db973c3db95c9d65b85aa27b4f"
+    },
+    "physical_source_sha256": {
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/confirmation.json": "4cb544db72b447c962eeafd0c3ce082b4fad9cc487a811e0062efdf478b7dcf7",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/confirmation.npz": "a187488796f2c63abf14ced2b61e229ef2a7b8a019c2ebd2286223bcd6d873e2",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/node-00.json": "ff7b45371384b51513fda575f6e73d539073287a7518a0482119fa2e3f1c7fee",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/node-00.npz": "31e69b949148d13ffa680d77c7a2e991c088a092bb156eb24258700c106a5296",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/node-01.json": "6f5c40d9bcdfa3497baf67ace8e0d1bcd639e7e7281e1d33f9ed7e70a4a40cdf",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/node-01.npz": "29a6103a91e8f25283457b1864c5e2bd9e3560ff320b210b76c6a9e1909ea13c",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/receipt.json": "65311daa73b75fd5fd7f7a94797fd1d4b9d2d9c9b3ba2700702995a472e02d7f",
+      "data/coverage-v1/searches/RV01-development-1-U-t400-scored-delay400/result.json": "285124e6104fcd6f1ed0836064293e2d16948ff5ceb70e716f9e6a826b1a6791",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t400-scored-delay400.npz": "925dea92d059e4addc33a6d475592b7bfa985ed465738685e64f061c867455aa"
+    }
+  },
+  "verified_counts_delta": {
+    "complete_components_verified": 6,
+    "isolated_generation_states_replayed": 2,
+    "child_selection_states_replayed": 6,
+    "dense_isolation_updates_replayed": 5320,
+    "search_nodes_verified": 2,
+    "parent_child_edges_verified": 1,
+    "confirmations_verified": 1,
+    "search_roots_verified": 1,
+    "isolated_detection_samples_verified": 159,
+    "dense_admission_schedule_updates_replayed": 1570
+  },
+  "verification_seconds": 1.4917355140000836,
+  "scope": "complete DFS graph, dense isolated states and sampled child-admission schedule"
+}

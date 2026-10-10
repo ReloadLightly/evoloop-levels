@@ -1,0 +1,5599 @@
+{
+  "experiment_id": "EXP-score-coverage-001",
+  "complete_worlds": 40,
+  "phase_controls": {
+    "confirmed": 30,
+    "selected": 30
+  },
+  "gate_status": "failed",
+  "gate_checks": {
+    "phase_controls": true,
+    "overall_scored_delay0": true,
+    "each_state_scored_delay0": false
+  },
+  "scored_delay0": {
+    "confirmed": 109,
+    "selected": 120,
+    "per_state": [
+      {
+        "state": "V01",
+        "selected": 24,
+        "confirmed_delay0": 21
+      },
+      {
+        "state": "V02",
+        "selected": 24,
+        "confirmed_delay0": 24
+      },
+      {
+        "state": "V03",
+        "selected": 24,
+        "confirmed_delay0": 23
+      },
+      {
+        "state": "RV01",
+        "selected": 24,
+        "confirmed_delay0": 23
+      },
+      {
+        "state": "RV02",
+        "selected": 24,
+        "confirmed_delay0": 18
+      }
+    ]
+  },
+  "by_class": [
+    {
+      "source_class": "scored",
+      "selected": 120,
+      "confirmed": 118,
+      "eligible_observations": 119,
+      "planned_delays": 360,
+      "eligible_delays": 337,
+      "confirmed_delays": 315,
+      "root_reproduction_delays": 315,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 315,
+        "unresolved_search": 22,
+        "sampled_target_lost": 18,
+        "shared_component": 5
+      },
+      "confirmed_registered_descendant_observations": 118,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "source_class": "valid_unregistered",
+      "selected": 9,
+      "confirmed": 0,
+      "eligible_observations": 5,
+      "planned_delays": 27,
+      "eligible_delays": 11,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "unresolved_search": 11,
+        "sampled_target_lost": 8,
+        "shared_component": 8
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "source_class": "unknown_identity",
+      "selected": 8,
+      "confirmed": 6,
+      "eligible_observations": 6,
+      "planned_delays": 24,
+      "eligible_delays": 14,
+      "confirmed_delays": 14,
+      "root_reproduction_delays": 14,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 14,
+        "shared_component": 2,
+        "sampled_target_lost": 8
+      },
+      "confirmed_registered_descendant_observations": 6,
+      "confirmed_outside_registry_descendant_observations": 0
+    }
+  ],
+  "by_delay": [
+    {
+      "delay": 0,
+      "source_class": "scored",
+      "planned": 120,
+      "eligible": 118,
+      "confirmed": 109,
+      "identity_preserving": 109,
+      "statuses": {
+        "confirmed_stable_descendant": 109,
+        "unresolved_search": 9,
+        "shared_component": 2
+      }
+    },
+    {
+      "delay": 0,
+      "source_class": "valid_unregistered",
+      "planned": 9,
+      "eligible": 5,
+      "confirmed": 0,
+      "identity_preserving": 0,
+      "statuses": {
+        "unresolved_search": 5,
+        "shared_component": 4
+      }
+    },
+    {
+      "delay": 0,
+      "source_class": "unknown_identity",
+      "planned": 8,
+      "eligible": 6,
+      "confirmed": 6,
+      "identity_preserving": 0,
+      "statuses": {
+        "confirmed_stable_descendant": 6,
+        "shared_component": 2
+      }
+    },
+    {
+      "delay": 100,
+      "source_class": "scored",
+      "planned": 120,
+      "eligible": 117,
+      "confirmed": 111,
+      "identity_preserving": 111,
+      "statuses": {
+        "confirmed_stable_descendant": 111,
+        "unresolved_search": 6,
+        "shared_component": 2,
+        "sampled_target_lost": 1
+      }
+    },
+    {
+      "delay": 100,
+      "source_class": "valid_unregistered",
+      "planned": 9,
+      "eligible": 3,
+      "confirmed": 0,
+      "identity_preserving": 0,
+      "statuses": {
+        "unresolved_search": 3,
+        "sampled_target_lost": 4,
+        "shared_component": 2
+      }
+    },
+    {
+      "delay": 100,
+      "source_class": "unknown_identity",
+      "planned": 8,
+      "eligible": 4,
+      "confirmed": 4,
+      "identity_preserving": 0,
+      "statuses": {
+        "confirmed_stable_descendant": 4,
+        "sampled_target_lost": 4
+      }
+    },
+    {
+      "delay": 400,
+      "source_class": "scored",
+      "planned": 120,
+      "eligible": 102,
+      "confirmed": 95,
+      "identity_preserving": 95,
+      "statuses": {
+        "confirmed_stable_descendant": 95,
+        "sampled_target_lost": 17,
+        "unresolved_search": 7,
+        "shared_component": 1
+      }
+    },
+    {
+      "delay": 400,
+      "source_class": "valid_unregistered",
+      "planned": 9,
+      "eligible": 3,
+      "confirmed": 0,
+      "identity_preserving": 0,
+      "statuses": {
+        "unresolved_search": 3,
+        "sampled_target_lost": 4,
+        "shared_component": 2
+      }
+    },
+    {
+      "delay": 400,
+      "source_class": "unknown_identity",
+      "planned": 8,
+      "eligible": 4,
+      "confirmed": 4,
+      "identity_preserving": 0,
+      "statuses": {
+        "confirmed_stable_descendant": 4,
+        "sampled_target_lost": 4
+      }
+    }
+  ],
+  "breakdown": [
+    {
+      "dimension": "state",
+      "value": "V01",
+      "source_class": "scored",
+      "selected": 24,
+      "confirmed": 24,
+      "eligible_observations": 24,
+      "planned_delays": 72,
+      "eligible_delays": 68,
+      "confirmed_delays": 61,
+      "root_reproduction_delays": 61,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 61,
+        "unresolved_search": 7,
+        "sampled_target_lost": 3,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 24,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V01",
+      "source_class": "valid_unregistered",
+      "selected": 1,
+      "confirmed": 0,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 3,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 3
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V01",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V02",
+      "source_class": "scored",
+      "selected": 24,
+      "confirmed": 24,
+      "eligible_observations": 24,
+      "planned_delays": 72,
+      "eligible_delays": 67,
+      "confirmed_delays": 65,
+      "root_reproduction_delays": 65,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 65,
+        "sampled_target_lost": 5,
+        "unresolved_search": 2
+      },
+      "confirmed_registered_descendant_observations": 24,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V02",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 4,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V02",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V03",
+      "source_class": "scored",
+      "selected": 24,
+      "confirmed": 23,
+      "eligible_observations": 23,
+      "planned_delays": 72,
+      "eligible_delays": 65,
+      "confirmed_delays": 65,
+      "root_reproduction_delays": 65,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 65,
+        "sampled_target_lost": 6,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 23,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V03",
+      "source_class": "valid_unregistered",
+      "selected": 4,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 12,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 8,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "V03",
+      "source_class": "unknown_identity",
+      "selected": 4,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 12,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6,
+        "shared_component": 2,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "RV01",
+      "source_class": "scored",
+      "selected": 24,
+      "confirmed": 24,
+      "eligible_observations": 24,
+      "planned_delays": 72,
+      "eligible_delays": 68,
+      "confirmed_delays": 65,
+      "root_reproduction_delays": 65,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 65,
+        "sampled_target_lost": 3,
+        "unresolved_search": 3,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 24,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "RV01",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 4,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "RV01",
+      "source_class": "unknown_identity",
+      "selected": 2,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 2,
+      "confirmed_delays": 2,
+      "root_reproduction_delays": 2,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 2,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "RV02",
+      "source_class": "scored",
+      "selected": 24,
+      "confirmed": 23,
+      "eligible_observations": 24,
+      "planned_delays": 72,
+      "eligible_delays": 69,
+      "confirmed_delays": 59,
+      "root_reproduction_delays": 59,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 59,
+        "unresolved_search": 10,
+        "sampled_target_lost": 1,
+        "shared_component": 2
+      },
+      "confirmed_registered_descendant_observations": 23,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "RV02",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "state",
+      "value": "RV02",
+      "source_class": "unknown_identity",
+      "selected": 2,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "treatment",
+      "value": "D",
+      "source_class": "scored",
+      "selected": 60,
+      "confirmed": 58,
+      "eligible_observations": 59,
+      "planned_delays": 180,
+      "eligible_delays": 169,
+      "confirmed_delays": 156,
+      "root_reproduction_delays": 156,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 156,
+        "unresolved_search": 13,
+        "sampled_target_lost": 10,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 58,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "treatment",
+      "value": "D",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 6,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "treatment",
+      "value": "D",
+      "source_class": "unknown_identity",
+      "selected": 4,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 12,
+      "eligible_delays": 7,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "shared_component": 1,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "treatment",
+      "value": "U",
+      "source_class": "scored",
+      "selected": 60,
+      "confirmed": 60,
+      "eligible_observations": 60,
+      "planned_delays": 180,
+      "eligible_delays": 168,
+      "confirmed_delays": 159,
+      "root_reproduction_delays": 159,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 159,
+        "unresolved_search": 9,
+        "sampled_target_lost": 8,
+        "shared_component": 4
+      },
+      "confirmed_registered_descendant_observations": 60,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "treatment",
+      "value": "U",
+      "source_class": "valid_unregistered",
+      "selected": 7,
+      "confirmed": 0,
+      "eligible_observations": 5,
+      "planned_delays": 21,
+      "eligible_delays": 11,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "unresolved_search": 11,
+        "sampled_target_lost": 6,
+        "shared_component": 4
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "treatment",
+      "value": "U",
+      "source_class": "unknown_identity",
+      "selected": 4,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 12,
+      "eligible_delays": 7,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "shared_component": 1,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 400,
+      "source_class": "scored",
+      "selected": 40,
+      "confirmed": 40,
+      "eligible_observations": 40,
+      "planned_delays": 120,
+      "eligible_delays": 119,
+      "confirmed_delays": 111,
+      "root_reproduction_delays": 111,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 111,
+        "unresolved_search": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 40,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 400,
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 400,
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 800,
+      "source_class": "scored",
+      "selected": 40,
+      "confirmed": 39,
+      "eligible_observations": 39,
+      "planned_delays": 120,
+      "eligible_delays": 114,
+      "confirmed_delays": 109,
+      "root_reproduction_delays": 109,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 109,
+        "unresolved_search": 5,
+        "sampled_target_lost": 4,
+        "shared_component": 2
+      },
+      "confirmed_registered_descendant_observations": 39,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 800,
+      "source_class": "valid_unregistered",
+      "selected": 4,
+      "confirmed": 0,
+      "eligible_observations": 2,
+      "planned_delays": 12,
+      "eligible_delays": 4,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "shared_component": 6,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 800,
+      "source_class": "unknown_identity",
+      "selected": 2,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 1200,
+      "source_class": "scored",
+      "selected": 40,
+      "confirmed": 39,
+      "eligible_observations": 40,
+      "planned_delays": 120,
+      "eligible_delays": 104,
+      "confirmed_delays": 95,
+      "root_reproduction_delays": 95,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 95,
+        "unresolved_search": 9,
+        "sampled_target_lost": 13,
+        "shared_component": 3
+      },
+      "confirmed_registered_descendant_observations": 39,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 1200,
+      "source_class": "valid_unregistered",
+      "selected": 5,
+      "confirmed": 0,
+      "eligible_observations": 3,
+      "planned_delays": 15,
+      "eligible_delays": 7,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "unresolved_search": 7,
+        "sampled_target_lost": 6,
+        "shared_component": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "source_time",
+      "value": 1200,
+      "source_class": "unknown_identity",
+      "selected": 6,
+      "confirmed": 4,
+      "eligible_observations": 4,
+      "planned_delays": 18,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "shared_component": 2,
+        "sampled_target_lost": 8,
+        "confirmed_stable_descendant": 8
+      },
+      "confirmed_registered_descendant_observations": 4,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "development-0",
+      "source_class": "scored",
+      "selected": 30,
+      "confirmed": 30,
+      "eligible_observations": 30,
+      "planned_delays": 90,
+      "eligible_delays": 84,
+      "confirmed_delays": 81,
+      "root_reproduction_delays": 81,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 81,
+        "unresolved_search": 3,
+        "sampled_target_lost": 6
+      },
+      "confirmed_registered_descendant_observations": 30,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "development-0",
+      "source_class": "valid_unregistered",
+      "selected": 3,
+      "confirmed": 0,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 7,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "unresolved_search": 7,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "development-0",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "development-1",
+      "source_class": "scored",
+      "selected": 30,
+      "confirmed": 29,
+      "eligible_observations": 29,
+      "planned_delays": 90,
+      "eligible_delays": 85,
+      "confirmed_delays": 78,
+      "root_reproduction_delays": 78,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 78,
+        "unresolved_search": 7,
+        "sampled_target_lost": 4,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 29,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "development-1",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 4,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "development-1",
+      "source_class": "unknown_identity",
+      "selected": 2,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "confirmation-0",
+      "source_class": "scored",
+      "selected": 30,
+      "confirmed": 30,
+      "eligible_observations": 30,
+      "planned_delays": 90,
+      "eligible_delays": 81,
+      "confirmed_delays": 75,
+      "root_reproduction_delays": 75,
+      "delay_statuses": {
+        "unresolved_search": 6,
+        "confirmed_stable_descendant": 75,
+        "sampled_target_lost": 7,
+        "shared_component": 2
+      },
+      "confirmed_registered_descendant_observations": 30,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "confirmation-0",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "confirmation-0",
+      "source_class": "unknown_identity",
+      "selected": 2,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "confirmation-1",
+      "source_class": "scored",
+      "selected": 30,
+      "confirmed": 29,
+      "eligible_observations": 30,
+      "planned_delays": 90,
+      "eligible_delays": 87,
+      "confirmed_delays": 81,
+      "root_reproduction_delays": 81,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 81,
+        "unresolved_search": 6,
+        "sampled_target_lost": 1,
+        "shared_component": 2
+      },
+      "confirmed_registered_descendant_observations": 29,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "confirmation-1",
+      "source_class": "valid_unregistered",
+      "selected": 4,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 12,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 8,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "condition",
+      "value": "confirmation-1",
+      "source_class": "unknown_identity",
+      "selected": 4,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 12,
+      "eligible_delays": 2,
+      "confirmed_delays": 2,
+      "root_reproduction_delays": 2,
+      "delay_statuses": {
+        "shared_component": 2,
+        "sampled_target_lost": 8,
+        "confirmed_stable_descendant": 2
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "split",
+      "value": "development",
+      "source_class": "scored",
+      "selected": 60,
+      "confirmed": 59,
+      "eligible_observations": 59,
+      "planned_delays": 180,
+      "eligible_delays": 169,
+      "confirmed_delays": 159,
+      "root_reproduction_delays": 159,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 159,
+        "unresolved_search": 10,
+        "sampled_target_lost": 10,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 59,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "split",
+      "value": "development",
+      "source_class": "valid_unregistered",
+      "selected": 5,
+      "confirmed": 0,
+      "eligible_observations": 5,
+      "planned_delays": 15,
+      "eligible_delays": 11,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "unresolved_search": 11,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "split",
+      "value": "development",
+      "source_class": "unknown_identity",
+      "selected": 2,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "split",
+      "value": "confirmation",
+      "source_class": "scored",
+      "selected": 60,
+      "confirmed": 59,
+      "eligible_observations": 60,
+      "planned_delays": 180,
+      "eligible_delays": 168,
+      "confirmed_delays": 156,
+      "root_reproduction_delays": 156,
+      "delay_statuses": {
+        "unresolved_search": 12,
+        "confirmed_stable_descendant": 156,
+        "sampled_target_lost": 8,
+        "shared_component": 4
+      },
+      "confirmed_registered_descendant_observations": 59,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "split",
+      "value": "confirmation",
+      "source_class": "valid_unregistered",
+      "selected": 4,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 12,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 8,
+        "sampled_target_lost": 4
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "split",
+      "value": "confirmation",
+      "source_class": "unknown_identity",
+      "selected": 6,
+      "confirmed": 4,
+      "eligible_observations": 4,
+      "planned_delays": 18,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "shared_component": 2,
+        "sampled_target_lost": 8,
+        "confirmed_stable_descendant": 8
+      },
+      "confirmed_registered_descendant_observations": 4,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "unresolved_search": 1,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "unresolved_search": 1,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 1,
+      "confirmed": 0,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 3,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 3
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "unresolved_search": 2
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-development-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "unresolved_search": 1,
+        "confirmed_stable_descendant": 7,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "unresolved_search": 1,
+        "confirmed_stable_descendant": 7,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "unresolved_search": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V01-confirmation-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 7,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6,
+        "sampled_target_lost": 2,
+        "unresolved_search": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 4,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-development-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 7,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6,
+        "unresolved_search": 1,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V02-confirmation-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 2,
+      "eligible_observations": 2,
+      "planned_delays": 9,
+      "eligible_delays": 6,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 6,
+        "shared_component": 1,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-1-D",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 1,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 3,
+      "confirmed_delays": 3,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 3
+      },
+      "confirmed_registered_descendant_observations": 1,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-development-1-U",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 1,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 3,
+      "confirmed_delays": 3,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 3
+      },
+      "confirmed_registered_descendant_observations": 1,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 6,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-1-D",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 3,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 1,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 6,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "V03-confirmation-1-U",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 3,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {
+        "shared_component": 1,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 2,
+      "confirmed": 0,
+      "eligible_observations": 2,
+      "planned_delays": 6,
+      "eligible_delays": 4,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "unresolved_search": 2
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-development-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 7,
+      "root_reproduction_delays": 7,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 7,
+        "unresolved_search": 1,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "shared_component": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-1-D",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 1,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 1,
+      "confirmed_delays": 1,
+      "root_reproduction_delays": 1,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 1,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 1,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV01-confirmation-1-U",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 1,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 1,
+      "confirmed_delays": 1,
+      "root_reproduction_delays": 1,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 1,
+        "sampled_target_lost": 2
+      },
+      "confirmed_registered_descendant_observations": 1,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "unresolved_search": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-0-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 9,
+      "root_reproduction_delays": 9,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 9
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-0-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "unresolved_search": 1,
+        "confirmed_stable_descendant": 8
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "unresolved_search": 1,
+        "confirmed_stable_descendant": 8
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-development-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-0-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "unresolved_search": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-0-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-0-D",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 1,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 3,
+      "confirmed_delays": 3,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 3
+      },
+      "confirmed_registered_descendant_observations": 1,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-0-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 9,
+      "confirmed_delays": 8,
+      "root_reproduction_delays": 8,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 8,
+        "unresolved_search": 1
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-0-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-0-U",
+      "source_class": "unknown_identity",
+      "selected": 1,
+      "confirmed": 1,
+      "eligible_observations": 1,
+      "planned_delays": 3,
+      "eligible_delays": 3,
+      "confirmed_delays": 3,
+      "root_reproduction_delays": 3,
+      "delay_statuses": {
+        "confirmed_stable_descendant": 3
+      },
+      "confirmed_registered_descendant_observations": 1,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-1-D",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 2,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 8,
+      "confirmed_delays": 4,
+      "root_reproduction_delays": 4,
+      "delay_statuses": {
+        "unresolved_search": 4,
+        "confirmed_stable_descendant": 4,
+        "sampled_target_lost": 1
+      },
+      "confirmed_registered_descendant_observations": 2,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-1-D",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-1-D",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-1-U",
+      "source_class": "scored",
+      "selected": 3,
+      "confirmed": 3,
+      "eligible_observations": 3,
+      "planned_delays": 9,
+      "eligible_delays": 7,
+      "confirmed_delays": 6,
+      "root_reproduction_delays": 6,
+      "delay_statuses": {
+        "unresolved_search": 1,
+        "confirmed_stable_descendant": 6,
+        "shared_component": 2
+      },
+      "confirmed_registered_descendant_observations": 3,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-1-U",
+      "source_class": "valid_unregistered",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    },
+    {
+      "dimension": "run_id",
+      "value": "RV02-confirmation-1-U",
+      "source_class": "unknown_identity",
+      "selected": 0,
+      "confirmed": 0,
+      "eligible_observations": 0,
+      "planned_delays": 0,
+      "eligible_delays": 0,
+      "confirmed_delays": 0,
+      "root_reproduction_delays": 0,
+      "delay_statuses": {},
+      "confirmed_registered_descendant_observations": 0,
+      "confirmed_outside_registry_descendant_observations": 0
+    }
+  ],
+  "omitted": {
+    "selected": 17,
+    "confirmed": 6,
+    "eligible_observations": 11,
+    "planned_delays": 51,
+    "eligible_delays": 25,
+    "confirmed_delays": 14,
+    "root_reproduction_delays": 23,
+    "delay_statuses": {
+      "unresolved_search": 11,
+      "sampled_target_lost": 16,
+      "confirmed_stable_descendant": 14,
+      "shared_component": 10
+    },
+    "confirmed_registered_descendant_observations": 6,
+    "confirmed_outside_registry_descendant_observations": 0
+  },
+  "omitted_recoverability_observed": true,
+  "generation_simulations": 969,
+  "search_roots": 392,
+  "search_censoring": {
+    "offspring_cap": 752,
+    "simulation_budget": 45,
+    "generation_horizon": 2
+  },
+  "phase_control_search_censoring": {
+    "offspring_cap": 60
+  },
+  "isolated_extinction_nodes": 155,
+  "native_target_loss_observations": 133,
+  "native_target_recurrence_observations": 19,
+  "benefit": "not_assayed; prior registry and outcomes unchanged",
+  "scope": "finite coordinate-selected diagnostic observations; not total viable population or independent histories",
+  "strata": [
+    {
+      "stratum_id": "V01-development-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 11,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 11,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 15,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-development-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-development-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 12,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 16,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 12,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 19,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V01-confirmation-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 2,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 3,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 5,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 14,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-development-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 13,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 2,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-development-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 13,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V02-confirmation-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 2,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 3,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 5,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 13,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-development-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-development-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 13,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "V03-confirmation-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 11,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 11,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 15,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-development-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 12,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 16,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 11,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 10,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 18,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV01-confirmation-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 2,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 3,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 7,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-development-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 2,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 5,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 3,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-0-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 1,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 4,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 5,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-D-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t400-scored",
+      "source_time": 400,
+      "source_class": "scored",
+      "available_cores": 6,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t400-valid_unregistered",
+      "source_time": 400,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t400-unknown_identity",
+      "source_time": 400,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t800-scored",
+      "source_time": 800,
+      "source_class": "scored",
+      "available_cores": 8,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t800-valid_unregistered",
+      "source_time": 800,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t800-unknown_identity",
+      "source_time": 800,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t1200-scored",
+      "source_time": 1200,
+      "source_class": "scored",
+      "available_cores": 9,
+      "selected_cores": 1
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t1200-valid_unregistered",
+      "source_time": 1200,
+      "source_class": "valid_unregistered",
+      "available_cores": 0,
+      "selected_cores": 0
+    },
+    {
+      "stratum_id": "RV02-confirmation-1-U-t1200-unknown_identity",
+      "source_time": 1200,
+      "source_class": "unknown_identity",
+      "available_cores": 0,
+      "selected_cores": 0
+    }
+  ],
+  "recovery_sha256": "14943048761f9f08b7336ea003ef612523247f0fc101c07b12827821a761fe5c",
+  "readiness_sha256": "91ee5d04504a6ae1c7d8ee6707ec65cb7b0fb6a58e4daceba968974a65ce15c3"
+}

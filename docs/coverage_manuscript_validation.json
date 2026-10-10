@@ -1,0 +1,31 @@
+{
+  "status": "accepted",
+  "experiment_id": "EXP-score-coverage-001",
+  "pdf": "paper/manuscript.pdf",
+  "pdf_sha256": "89e7d846165b704901193de992ea200d3e8a2ef24896c209f94c466c6f1a75ae",
+  "source": "paper/manuscript.md",
+  "source_sha256": "fe1575f2ba8f2458db79874ab36d6968b77e334c6639c24fe03fbfcb5d8daf01",
+  "renderer_sha256": "222d84a25f074d4a6f0eb5770a5e8abc302763eb1fca67011c36a8dab7b8b92e",
+  "figure_manifest_sha256": "5d38ccccb4a15bca1b4c36aa84c463b43699cfd90fc719316545ccc1368ed995",
+  "pages": 57,
+  "appended_vector_figures": 35,
+  "full_decode": "all 57 pages pass Ghostscript PDFSTOPONERROR",
+  "visual_review_pages": {
+    "17": "coverage table and failed recovery gate, no clipping",
+    "54": "recovery matrix with exact counts and RV02 gate qualification",
+    "57": "complete unknown-source components and stable registered descendants, crisp square geometry and explicit isolation labels"
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.render_manuscript",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -sDEVICE=nullpage paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dFirstPage=17 -dLastPage=17 -sDEVICE=png16m -r90 -sOutputFile=/tmp/coverage-paper-page17.png paper/manuscript.pdf"
+  ],
+  "execution_log": "data/coverage-v1/execution.jsonl",
+  "render_metrics": {
+    "file": "data/coverage-v1/render-manuscript.txt",
+    "seconds": 10.31,
+    "peak_rss_kib": 90356,
+    "exit": 0
+  },
+  "scope": "working manuscript; authoritative Markdown and all earlier scientific outcomes preserved"
+}

@@ -91,19 +91,44 @@ root selection, or recovery acquisition. `freeze` creates a new receipt only
 when none exists and refuses to replace one. Do not remove the committed receipt
 to change the design: a revised scientific design requires a new version.
 
-The recovery runner and independent replay audit are not yet implemented for
-protocol 010. Before main acquisition, bind their validated source hashes in a
-separate readiness receipt and remotely verify that receipt. Benchmark one
-declared phase control with one worker and record timing separately; then use
-the memory guard with at least 200 MiB headroom for resumable acquisition.
-Run acquisition, audits, rendering and Git packing sequentially. Keep source
-class separate from the delayed snapshot's measured identity; validate unknown
-roots and roots that become identifiable during maturation before readiness.
-The design ceiling is 1080 delayed roots plus 30 controls, at most 26,640
-generation simulations; empty source strata reduce actual work. Neither roots
-nor new coverage outcomes are present in the design receipt. Existing scientific
-figures and the manuscript describe completed results and are unchanged by this
-pre-acquisition freeze.
+The implementation-readiness receipt is `data/coverage-v1/readiness.json`,
+committed and remotely verified at `3aa73b85892e3d06115e738978ccef1bc54bf53d`
+before acquisition. It binds the runner, independent auditor, fixtures, reused
+verifiers, memory guard and all 40 original sample-record files. Thirty tests
+passed before readiness, including an unknown source becoming identifiable at
+a later delay. Search input identity is measured from the delayed snapshot;
+source class remains immutable. The timing benchmark uses V01-age0 and does
+not add an independent scientific sample.
+
+```sh
+OPENBLAS_NUM_THREADS=1 python -m scripts.memory_guard --retry --reserve 140 --log data/coverage-v1/execution.jsonl python -m scripts.coverage_assay run --readiness-commit 3aa73b85892e3d06115e738978ccef1bc54bf53d
+OPENBLAS_NUM_THREADS=1 python -m scripts.memory_guard --retry --reserve 180 --log data/coverage-v1/execution.jsonl python -m scripts.verify_coverage
+OPENBLAS_NUM_THREADS=1 python -m scripts.memory_guard --retry --reserve 140 --log data/coverage-v1/execution.jsonl python -m scripts.coverage_equivalence
+OPENBLAS_NUM_THREADS=1 python -m scripts.memory_guard --retry --reserve 220 --log data/coverage-v1/execution.jsonl python -m scripts.figures_coverage
+OPENBLAS_NUM_THREADS=1 python -m scripts.memory_guard --retry --reserve 180 --log data/coverage-v1/execution.jsonl python -m scripts.verify_coverage_figures
+```
+
+Run acquisition, audits, rendering and Git packing sequentially. Commands use
+one worker with at least 200 MiB available memory. Completed native/search cases
+are reused only after their bindings and complete artifact hashes pass. Interrupted
+invocations remain in `execution.jsonl`; independent proofs permit audit resumption.
+The hard design ceiling is 1080 delayed roots plus 30 controls, at most 26,640
+generation simulations; empty strata reduce actual work. The design receipt
+remains an immutable pre-acquisition record, while recovery results, analyses
+and integrity proofs are separate artifacts. `--fresh` on the verifier requests
+full replay instead of reusing passed proofs.
+
+The completed coverage batch contains 40 native worlds, 137 selected sources,
+411 planned delays, 362 eligible searches and 30 phase controls. Independent
+replay passes with zero mismatches. Analysis and per-unit proof receipts are in
+`data/coverage-v1`; the immutable input and readiness receipts remain separate.
+The supplementary equivalence check groups 362 delayed inputs into 188 complete
+states, without changing frozen source counts. Publication validation is in
+`docs/coverage_figure_validation.json` and `docs/coverage_manuscript_validation.json`.
+The one-control benchmark took 0.614 s (65.4 MiB peak RSS); main runner work took
+580.713 s (78.8 MiB peak RSS), and independent audit work 849.307 s (134.0 MiB).
+Guarded invocation durations include startup and other overhead and are retained
+separately in `execution.jsonl`. These are verification timings, not replicates.
 
 ## Three-identity discovery and fresh atlas
 

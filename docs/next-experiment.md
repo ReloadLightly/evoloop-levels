@@ -1,4 +1,4 @@
-# Next scientific action: calibrate coverage of the paired-world population score
+# Next scientific action: calibrate a population measure for recoverable developmental states
 
 EXP-atlas-002 recovered pair-relative inherited novelty in 2/36 main and 0/18
 held-out encounters. One stable 14×14 word differs from all three catalogue
@@ -23,48 +23,34 @@ joint-confirmed counts are 0/36 main, 0/18 held out, and 0/54 overall under this
 assay. These are confirmed-outcome counts, not proof of zero true beneficial
 variation. The earlier criterion and the new joint criterion are distinct.
 
-The immediate measurement uncertainty is score coverage. Valid unregistered and
-unknown-identity structures appear in the paired response worlds but not at the
-separate calibration source-time selections. For example, valid unregistered
-cores average 0.852 in V02's undisturbed development-1 world and 0.593 in V01/RV01's
-undisturbed development-0 worlds. Their viability is untested. Passing sampled
-recovery thresholds does not establish that the fixed registry captures total
-viable population, or that omitted classes contribute equally to D and U.
+The completed [protocol 010 coverage assay](../protocols/010-paired-world-score-coverage.md)
+selects 137 source observations from 360 declared strata in all 40 paired worlds,
+then tests delays 0/100/400 with 1600-update native continuations. Stable recovery
+occurs for 118/120 scored, 0/9 valid-unregistered, and 6/8 unknown-identity sources
+at any delay. All six omitted positives already confirm at delay zero. They are
+three disturbed/undisturbed pairs of identical complete component inputs, and
+all descendants belong to the existing registry. These sources demonstrate
+recoverable states excluded by the score; they do not establish total viable
+population, source genotype, native parentage, or benefit. Three valid-unregistered
+sources produce offspring in nine capped searches, so their zero stable recovery
+is unresolved rather than evidence of nonviability.
 
-The single most informative next experiment is a prospective coverage calibration
-of these paired worlds. [Protocol 010](../protocols/010-paired-world-score-coverage.md)
-and [coverage-v1.json](../configs/coverage-v1.json) now freeze its design before
-root selection or new recovery acquisition. The provenance receipt binds all 40
-native starting files and 30 saved phase controls. At times 400,800,1200, select
-one lexicographically first core per run/time/class: scored, valid unregistered,
-and unknown identity, before extraction filtering. Retain empty strata and class
-availability. Isolate at delays 0,100,400; observe native continuation for 1600
-updates after each source. Use complete components with arms; do not repair or
-crop a structure to make it extractable. Preserve all selected observations,
-including shared components, sampled target loss and recurrence, unknown
-identities, extraction failures, and capped searches. Source class stays fixed
-when later identity changes. This is a diagnostic sample, not a representative
-estimate of omitted viable population.
+Calibration fails: all 30 phase controls pass and aggregate delay-zero scored
+recovery is 109/120, but RV02 recovers 18/24 against an 80% threshold. The later
+118/120 union does not replace the frozen gate. These results remain diagnostic,
+and earlier population scores and ecological classifications remain unchanged.
 
-Follow each declared native source through maturation and a fixed continuation,
-then test reproduction after isolation at the declared delays. A transient may
-produce stable descendants with a different identity. Stable transmission after
-isolation establishes recoverability outside the registry; matching words in
-native worlds remain structural evidence without genetic parentage. Native
-continuation and isolation answer different fate questions, and overlapping
-windows and repeated roots are not independent organisms or histories. Report
-recoverable omissions by treatment and source state, with explicit denominators
-and unresolved classes, rather than assuming every omitted closed body is viable.
-
-Keep the current registry and numerical criteria frozen. If coverage reveals
-recoverable omitted organisms, develop and freeze a revised score and new paired
-assay before its main acquisition. Any exploratory sensitivity calculation must
-remain separate from the existing primary outcomes. The design is frozen; no
-coverage recovery acquisition has started. The immediate execution step is to
-implement and validate its runner and independent audit, record a hash-bound
-readiness receipt before main acquisition, and benchmark one declared control
-with one worker. The delay-zero scored recovery gate checks source-time assay
-performance; delayed searches describe maturation and sampled persistence.
+The next scientific action is to define and prospectively calibrate a revised
+population measure and its recovery assay. The omission concerns unknown/transient
+source states whose descendants are already registered, so registry expansion
+alone cannot address it. First use separately labeled exploratory comparisons to
+understand phase-dependent identity readability, complete-component eligibility,
+and the RV02 recovery gap. Then freeze the metric, sampling units, control states,
+horizons, missing/unknown categories, exclusions, transmission rules, and benefit
+comparison before new main acquisition. Retain ineligible selections and bounded
+unresolved searches. Successful isolation is an intervention-dependent recovery
+endpoint, not a retrospective native-population census. Do not relabel old outcomes
+using the revised measure.
 
 A subsequent experiment should fully cross declared elapsed ages with nonsymmetric
 site geometries. RV01 versus V02 changes retention sign between development-0 and

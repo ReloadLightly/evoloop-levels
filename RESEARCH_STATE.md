@@ -1,4 +1,4 @@
-# Research state — matched depletion completed; neither recovered state meets the new criterion
+# Research state — coverage finds recoverable omitted states; recovery gate fails
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
@@ -28,8 +28,12 @@ establishes increased evolvability or zero true beneficial variation.
 
 The registry omits valid and unknown-identity cores in paired worlds. V02's
 undisturbed development-1 world averages 0.852 unregistered valid cores per
-sample. Their viability is untested: the score measures registered structural
-population, not total viable population. Full independent native and isolation
+sample. The subsequent coverage assay recovers stable registered descendants from 6/8
+selected unknown-identity sources, representing three distinct complete inputs.
+Valid-unregistered recovery is 0/9, with productive capped searches unresolved.
+The new gate fails: scored delay-zero recovery is 109/120 overall but RV02 is
+18/24, below 80%, while all 30 phase controls pass. The score measures registered
+structural population, not total viable population; earlier outcomes stay frozen. Full independent native and isolation
 replay, preparation checks, and exact arithmetic pass with zero mismatches.
 H1/H3 remain untested; RSI remains unestablished.
 
@@ -100,21 +104,55 @@ integrity.json; figures/fate-{calibration-matrix,native-trajectories,raw-compari
 Protocols: 000 scientific contract; 001 frozen atlas; 002 postfreeze identity
 reporting audit; 003 exploratory lineage follow-up; 004 prospective calibration.
 
-Protocol 010 and configs/coverage-v1.json now freeze the coverage-calibration
-design and input provenance for EXP-score-coverage-001. The design receipt binds
-40 paired native starts, all 30 complete phase controls, the four-identity
-registry and earlier outcomes with 93 file hashes. No roots or recovery outcomes
-have been acquired. Source times are 400/800/1200, delays 0/100/400, native
-continuation 1600 updates per source, and the existing bounded isolation budgets
-are retained. Unknown source identities may enter complete-component isolation.
-The new scored recovery gate uses delay zero; the primary omission endpoint
-unions successful delays per source observation. Both retain ineligible selections.
+EXP-score-coverage-001 completes protocol 010 after the design/input freeze at
+4d37799 and the 30-test implementation-readiness freeze at 3aa73b8, both pushed
+and remotely verified before main acquisition. The immutable design receipt binds
+40 starts, 30 phase controls, the registry, and earlier outcomes with 93 hashes;
+its pre-acquisition empty root inventory is retained. The readiness receipt binds
+the runner, independent audit, verification helpers, tests, and validation record.
 
-Single next action: implement and validate the protocol 010 runner and independent
-audit, freeze an implementation-readiness receipt, benchmark one declared control,
-then acquire coverage evidence sequentially under the memory guard. Do not expand
-the old registry retrospectively. Afterwards, fully cross ages and nonsymmetric
-geometries to separate their condition effects. See [the plan](docs/next-experiment.md).
+Coverage selects 137 sources from 360 strata (223 empty), with 411 planned delays
+and 362 eligible delayed roots. Source unions are scored 118/120, valid-unregistered
+0/9, unknown 6/8; delay confirmations are 315/337/360, 0/11/27, and 14/14/24
+respectively (confirmed/eligible/planned). All six omitted positives already
+confirm at delay zero and have registered descendants. Three valid-unregistered
+sources produce offspring in nine searches, all simulation-budget capped. The
+frozen delay-zero gate fails RV02 and is not replaced by the delayed union.
+Native coordinate losses, recurrence, unknown genotype, ancestry ambiguity,
+unresolved transmission, and untested benefit remain separate.
+
+One-control benchmark: 0.614 s, 66956 KiB peak RSS. Main runner work: 580.713 s (guarded invocation 637.398 s),
+80664 KiB peak RSS (78.8 MiB), one worker, 969 generation simulations across 392
+search roots including controls. Acquisition, independent replay, and rendering
+run sequentially under the memory guard. Evidence and per-unit hash receipts
+are in data/coverage-v1; analysis retains every source and planned delay.
+Independent replay passes with zero mismatches: all 40 native histories, 411 delay
+labels, 392 roots, 969 isolated nodes, 2436 child-selection states, and exact
+integer gates/unions. Audit work is 849.307 s (guarded invocation 929.737 s), peak RSS 137228 KiB
+(134.0 MiB).
+The supplementary complete-input comparison passes: 362 eligible delays collapse
+to 188 distinct inputs; the six omitted positives comprise three distinct
+complete delay-zero inputs with identical D/U isolation futures.
+
+Coverage publication adds four dark SVG/PDF/PNG figures (12 artifacts, 120 total
+manifest entries) while preserving all 108 prior artifact bytes and entries.
+Independent figure checks verify all 225524 embedded raster cell centers against
+recorded arrays and the shared palette; native PNG alignment excludes declared
+annotations. All four PNGs were visually reviewed. The working PDF now has 57
+pages and 35 appended vector figures; all pages decode, and coverage table page
+17, matrix page 54, and inheritance page 57 were inspected. Rendering peaks at
+185448 KiB (181.1 MiB); all completed logged jobs retain at least 762.49 MiB
+sampled available memory. Review receipts: docs/coverage_figure_validation.json,
+docs/coverage_manuscript_validation.json, docs/coverage-scientific-review.md,
+and docs/coverage-figure-review.md. Earlier publication receipts remain records
+of their corresponding export versions.
+
+Single next scientific action: prospectively define and calibrate a population
+measure that handles recoverable unknown/transient states and the RV02 recovery
+gap. Adding identities alone is insufficient because all confirmed omitted
+sources recover registered descendants. Preserve existing scores and outcomes.
+Then fully cross preparation ages and nonsymmetric geometries, with paired
+controls and exact fractional removal. See [the programme](docs/next-experiment.md).
 
 ## Fresh input discovery and completed atlas
 
@@ -302,11 +340,9 @@ docs/impact_manuscript_validation.json. The publication renderer now concatenate
 verified vector PDFs and replaces its output atomically; its corrected initial
 cross-filesystem move and earlier waiting-session exits remain in execution.jsonl.
 
-The coverage-calibration design is now frozen in protocol 010, its JSON configuration
-and data/coverage-v1/manifest.json. No new scientific outcomes are acquired by this
-freeze. Its deterministic coordinate sample diagnoses selected omitted structures;
-it cannot estimate total viable population or establish registry completeness.
-The next acquisition requires a validated runner, independent audit, hash-bound
-implementation-readiness receipt and one-worker control benchmark. A later fully
-crossed age×geometry design can explain condition reversals after this measurement
-gap is assessed. Earlier benefits and publication figures remain unchanged.
+The protocol 010 design/input and implementation-readiness freezes precede the
+completed coverage acquisition summarized above. They preserve old source,
+registry and outcome hashes. Coverage adds selected unknown-source recovery
+paths and bounded unresolved valid-unregistered paths without recoding previous
+scores. Current publication exports and replay integrity are documented in the
+coverage review receipts; prior impact receipts describe the prior PDF version.

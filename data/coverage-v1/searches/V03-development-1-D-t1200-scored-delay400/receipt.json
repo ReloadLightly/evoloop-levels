@@ -1,0 +1,35 @@
+{
+  "binding": {
+    "manifest_sha256": "6663202e1ae550cf220263d9c0e8a6887829f187cb5006131f24ef5f05d27b4c",
+    "readiness_sha256": "91ee5d04504a6ae1c7d8ee6707ec65cb7b0fb6a58e4daceba968974a65ce15c3",
+    "snapshot_hash": "49205a3872f1734ea99f412a6d5333a67bb439818eac60a82b10b92941da2167",
+    "input_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+    "original_endpoint": false,
+    "search_config": {
+      "isolation_shape": [
+        192,
+        192
+      ],
+      "generation_horizon": 1600,
+      "detection_interval": 10,
+      "offspring_per_generation": 3,
+      "max_depth": 6,
+      "max_generation_simulations_per_root": 24,
+      "stable_transmissions": 2,
+      "ordering": "existing expanded_search depth-first ordering by detached_t, core and snapshot_hash",
+      "sampled_root_endpoint": "any valid composite identity transmitted unchanged on two consecutive isolated parent-child edges; identity may change before the stable streak",
+      "phase_control_endpoint": "original phase identity transmitted unchanged twice",
+      "unknown_root_initial_identity": null,
+      "unsearched_paths": "unresolved; retain offspring, depth, size and simulation truncations"
+    }
+  },
+  "artifact_sha256": {
+    "confirmation.json": "f490719819db8b680e697014364a0d6c4d5f6303c20fa362449867ca556b02eb",
+    "confirmation.npz": "0724d9025f6b99833c2361f34517db8ae3ea2518274b819a48011591d6d34517",
+    "node-00.json": "944ddc7d31ce610443bab0a9de403b9ba77c64a2688808c735a69eeea9ac21d1",
+    "node-00.npz": "488b450bd71fa1d2896dd18697472cb23ca2868b8b8e02832fd946b1888a2139",
+    "node-01.json": "6f00278fd17f647830cb063c3a40265f3f9f8cf7b73bcb42ca72b9fdb04bacb6",
+    "node-01.npz": "81326a0d78b9f34f6c87e21109dd5e2ea6e68ddbb2775ac05c0c29205512e2d4",
+    "result.json": "0b1342aa0cf70a6de0e6b892bc1aeb5f26b74e9619c568b2b61a59da84b1316e"
+  }
+}

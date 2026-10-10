@@ -1,0 +1,40 @@
+{"utc_epoch": 1791643968.7326412, "status": "start", "available_mib": 924.30859375, "command": [".venv/bin/python", "-m", "unittest", "tests.test_coverage_protocol", "tests.test_coverage_assay", "tests.test_verify_coverage", "tests.test_periodic_tracking", "tests.test_fate", "-v"]}
+{"utc_epoch": 1791643969.7342796, "status": "complete", "available_mib": 925.078125, "exit_code": 0, "minimum_available_mib": 888.79296875, "seconds": 1.0020499229431152}
+{"utc_epoch": 1791644016.4439807, "status": "start", "available_mib": 921.640625, "command": [".venv/bin/python", "-m", "scripts.coverage_assay", "benchmark"]}
+{"utc_epoch": 1791644017.9467168, "status": "complete", "available_mib": 934.6640625, "exit_code": 0, "minimum_available_mib": 902.13671875, "seconds": 1.5038514137268066}
+{"utc_epoch": 1791644032.865804, "status": "start", "available_mib": 927.671875, "command": [".venv/bin/python", "-m", "scripts.coverage_assay", "run", "--readiness-commit", "3aa73b85892e3d06115e738978ccef1bc54bf53d"]}
+{"utc_epoch": 1791644670.2635987, "status": "complete", "available_mib": 948.51953125, "exit_code": 0, "minimum_available_mib": 881.67578125, "seconds": 637.3979773521423}
+{"utc_epoch": 1791644735.870605, "status": "start", "available_mib": 932.23046875, "command": [".venv/bin/python", "-m", "scripts.verify_coverage"]}
+{"utc_epoch": 1791645665.607303, "status": "complete", "available_mib": 949.43359375, "exit_code": 0, "minimum_available_mib": 839.09765625, "seconds": 929.7370746135712}
+{"utc_epoch": 1791645672.8238494, "status": "start", "available_mib": 945.6328125, "command": [".venv/bin/python", "-m", "scripts.coverage_equivalence"]}
+{"utc_epoch": 1791645673.8254666, "status": "complete", "available_mib": 945.5, "exit_code": 0, "minimum_available_mib": 904.4609375, "seconds": 1.0018012523651123}
+{"utc_epoch": 1791645691.320115, "status": "start", "available_mib": 948.2578125, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "recovery"]}
+{"utc_epoch": 1791645695.322704, "status": "complete", "available_mib": 963.765625, "exit_code": 0, "minimum_available_mib": 863.67578125, "seconds": 4.002832412719727}
+{"utc_epoch": 1791645721.2409763, "status": "start", "available_mib": 893.16796875, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "strata"]}
+{"utc_epoch": 1791645733.120223, "status": "complete", "available_mib": 907.9375, "exit_code": 0, "minimum_available_mib": 794.41796875, "seconds": 11.880014657974243}
+{"utc_epoch": 1791645736.6340458, "status": "start", "available_mib": 899.59765625, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "raw"]}
+{"utc_epoch": 1791645740.6372807, "status": "complete", "available_mib": 907.8359375, "exit_code": 0, "minimum_available_mib": 774.4765625, "seconds": 4.003443479537964}
+{"utc_epoch": 1791645747.17708, "status": "start", "available_mib": 906.73828125, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "inheritance"]}
+{"utc_epoch": 1791645751.180209, "status": "complete", "available_mib": 918.13671875, "exit_code": 0, "minimum_available_mib": 762.48828125, "seconds": 4.003341197967529}
+{"utc_epoch": 1791645812.4258115, "status": "start", "available_mib": 929.8359375, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "recovery"]}
+{"utc_epoch": 1791645814.4275796, "status": "complete", "available_mib": 929.0234375, "exit_code": 0, "minimum_available_mib": 835.6640625, "seconds": 2.001948833465576}
+{"utc_epoch": 1791645828.1053653, "status": "start", "available_mib": 924.31640625, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "raw"]}
+{"utc_epoch": 1791645833.3348854, "status": "complete", "available_mib": 932.64453125, "exit_code": 0, "minimum_available_mib": 807.01171875, "seconds": 5.229698181152344}
+{"utc_epoch": 1791645843.3709984, "status": "start", "available_mib": 925.3828125, "command": [".venv/bin/python", "-m", "scripts.figures_coverage", "--only", "inheritance"]}
+{"utc_epoch": 1791645845.372855, "status": "complete", "available_mib": 909.12109375, "exit_code": 0, "minimum_available_mib": 793.2265625, "seconds": 2.002121686935425}
+{"utc_epoch": 1791645866.8582587, "status": "start", "available_mib": 903.890625, "command": [".venv/bin/python", "-m", "scripts.verify_coverage_figures"]}
+{"utc_epoch": 1791645871.3615975, "status": "complete", "available_mib": 899.390625, "exit_code": 0, "minimum_available_mib": 798.3046875, "seconds": 4.5035600662231445}
+{"utc_epoch": 1791645927.462649, "status": "start", "available_mib": 890.7578125, "command": [".venv/bin/python", "-m", "scripts.render_manuscript"]}
+{"utc_epoch": 1791645937.7262237, "status": "complete", "available_mib": 894.41015625, "exit_code": 0, "minimum_available_mib": 799.92578125, "seconds": 10.263899326324463}
+{"utc_epoch": 1791645990.4942353, "status": "start", "available_mib": 893.44140625, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-sDEVICE=nullpage", "figures/coverage1-recovery-dark.pdf", "figures/coverage1-state-unions-dark.pdf", "figures/coverage1-native-targets-dark.pdf", "figures/coverage1-inheritance-dark.pdf", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791645991.9966002, "status": "complete", "available_mib": 897.97265625, "exit_code": 0, "minimum_available_mib": 870.58203125, "seconds": 1.5029258728027344}
+{"utc_epoch": 1791646000.1479797, "status": "start", "available_mib": 896.73046875, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=txtwrite", "-sOutputFile=/tmp/coverage-manuscript.txt", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791646006.9083335, "status": "complete", "available_mib": 901.88671875, "exit_code": 0, "minimum_available_mib": 873.328125, "seconds": 6.760570526123047}
+{"utc_epoch": 1791646020.063695, "status": "start", "available_mib": 888.56640625, "command": ["gs", "-q", "-dNODISPLAY", "-dNOSAFER", "-c", "(paper/manuscript.pdf) (r) file runpdfbegin pdfpagecount = quit"]}
+{"utc_epoch": 1791646020.5648897, "status": "complete", "available_mib": 889.5390625, "exit_code": 0, "minimum_available_mib": 888.56640625, "seconds": 0.5013883113861084}
+{"utc_epoch": 1791646037.7174346, "status": "start", "available_mib": 890.015625, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dFirstPage=17", "-dLastPage=17", "-sDEVICE=png16m", "-r90", "-sOutputFile=/tmp/coverage-paper-page17.png", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791646040.9831862, "status": "complete", "available_mib": 891.98046875, "exit_code": 0, "minimum_available_mib": 890.015625, "seconds": 3.2659435272216797}
+{"utc_epoch": 1791646041.1399903, "status": "start", "available_mib": 896.27734375, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dFirstPage=54", "-dLastPage=54", "-sDEVICE=png16m", "-r90", "-sOutputFile=/tmp/coverage-paper-page54.png", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791646041.6413221, "status": "complete", "available_mib": 902.140625, "exit_code": 0, "minimum_available_mib": 896.27734375, "seconds": 0.5015463829040527}
+{"utc_epoch": 1791646041.7676578, "status": "start", "available_mib": 902.0, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dFirstPage=57", "-dLastPage=57", "-sDEVICE=png16m", "-r90", "-sOutputFile=/tmp/coverage-paper-page57.png", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791646042.2690861, "status": "complete", "available_mib": 901.96875, "exit_code": 0, "minimum_available_mib": 902.0, "seconds": 0.5016195774078369}

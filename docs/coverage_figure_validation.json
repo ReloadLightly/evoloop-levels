@@ -1,0 +1,79 @@
+{
+  "status": "accepted",
+  "experiment_id": "EXP-score-coverage-001",
+  "manifest_sha256": "5d38ccccb4a15bca1b4c36aa84c463b43699cfd90fc719316545ccc1368ed995",
+  "new_artifacts": 12,
+  "total_artifacts": 120,
+  "prior_entries_and_artifact_bytes_preserved": 108,
+  "artifact_and_source_hashes": "all verified by auxiliary receipt",
+  "svg_xml": "all four parse",
+  "pdf_decode": "all four pass Ghostscript PDFSTOPONERROR",
+  "recorded_pixels": {
+    "receipt": "data/coverage-v1/figure-integrity.json",
+    "receipt_sha256": "971f94294700d145d86b8199b33e68613acd0f232b77ea22433ca95ad804040a",
+    "svg_cell_centers_verified": 225524,
+    "native_panels": 6,
+    "complete_component_panels": 12,
+    "png_qualification": "alignment excludes declared native annotations; SVG raster centers exact; see receipt and visual review"
+  },
+  "visual_review": "docs/coverage-figure-review.md",
+  "artifacts": {
+    "coverage1-state-unions-dark.svg": "5206bfa1e3840b1cac4c11d2ed031cfa72d03150480c99ddd7db879060529e3a",
+    "coverage1-state-unions-dark.pdf": "657d2a3c58b8a10c8037ef0d3d3f1786fab1d8190b7717db7c95a9583f3a8f84",
+    "coverage1-state-unions-dark.png": "9212def4e64165231ff7a5873082454ec7ed5f8bee9d6228db1bd849127efd4a",
+    "coverage1-recovery-dark.svg": "818f72d99be9c00ec4e12fdffa769f769f43f85790e4ed4f69a98ac0ba072f72",
+    "coverage1-recovery-dark.pdf": "c211b1ced6a6a210a0eab3d970092f6d9a97359465c5f00cb263fee5c1dd9013",
+    "coverage1-recovery-dark.png": "608e39e927ede1329a4aa03aed9f20b1508f9b3c069156cd5becb43375fdca40",
+    "coverage1-native-targets-dark.svg": "dd6619ee7b461f26595f3ad7380371924e3e061e38802db2828577c3dbb355f4",
+    "coverage1-native-targets-dark.pdf": "5c83c73c4f94376c5656935d35207ea219a0537483aad7cdd53cb5b5decf8a11",
+    "coverage1-native-targets-dark.png": "806a00d4bce1653372fb6aea6c29bd52e35f9cdeda92afa858bdf9742e64a210",
+    "coverage1-inheritance-dark.svg": "929f9f4e8b7c75bda850f20d7b1a7852462419d699ad31d53b85d31bb02eb536",
+    "coverage1-inheritance-dark.pdf": "6ea62075dba8d9cf406185aa1e6e37b75f951291c7c69e43fbf66f358d3d0a9d",
+    "coverage1-inheritance-dark.png": "4962441fc11f8f1766ebd3f93bf6c254291cd04af95367c408d807a7cf103365"
+  },
+  "render_metrics": [
+    {
+      "file": "data/coverage-v1/render-inheritance-final.txt",
+      "seconds": 2.03,
+      "peak_rss_kib": 163752,
+      "exit": 0
+    },
+    {
+      "file": "data/coverage-v1/render-inheritance.txt",
+      "seconds": 4.04,
+      "peak_rss_kib": 163308,
+      "exit": 0
+    },
+    {
+      "file": "data/coverage-v1/render-raw-final.txt",
+      "seconds": 5.26,
+      "peak_rss_kib": 185448,
+      "exit": 0
+    },
+    {
+      "file": "data/coverage-v1/render-raw.txt",
+      "seconds": 4.04,
+      "peak_rss_kib": 185124,
+      "exit": 0
+    },
+    {
+      "file": "data/coverage-v1/render-recovery-final.txt",
+      "seconds": 2.04,
+      "peak_rss_kib": 156520,
+      "exit": 0
+    },
+    {
+      "file": "data/coverage-v1/render-recovery.txt",
+      "seconds": 4.05,
+      "peak_rss_kib": 162224,
+      "exit": 0
+    },
+    {
+      "file": "data/coverage-v1/render-strata.txt",
+      "seconds": 12.02,
+      "peak_rss_kib": 167524,
+      "exit": 0
+    }
+  ],
+  "minimum_available_mib_across_logged_completed_jobs": 762.48828125
+}

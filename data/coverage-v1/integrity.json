@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "counts": {
+    "original_samples_verified": 3240,
+    "world_samples_verified": 5640,
+    "source_delay_grids_verified": 280,
+    "strata_verified": 360,
+    "empty_strata_verified": 223,
+    "complete_components_verified": 2798,
+    "eligible_delay_components_verified": 362,
+    "delay_selections_verified": 411,
+    "native_continuations_verified": 137,
+    "full_world_trajectories_verified": 40,
+    "dense_world_updates_replayed": 112000,
+    "world_proofs_created": 40,
+    "isolated_generation_states_replayed": 969,
+    "child_selection_states_replayed": 2436,
+    "dense_isolation_updates_replayed": 2412430,
+    "search_nodes_verified": 969,
+    "parent_child_edges_verified": 577,
+    "confirmations_verified": 359,
+    "search_roots_verified": 392,
+    "isolated_detection_samples_verified": 90606,
+    "dense_admission_schedule_updates_replayed": 896370,
+    "search_proofs_created": 392,
+    "selected_delays_verified": 411,
+    "selected_observations_verified": 137,
+    "ineligible_delays_verified": 49,
+    "phase_controls_verified": 30,
+    "exact_gate_and_unions_verified": 1
+  },
+  "scope": "all 40 complete 2800-update native worlds, original source records through 1600, all class selections and delays, full sampled loss/recurrence labels, complete component extraction, all executed isolated nodes and child admission schedules, exact integer gate and observation unions; no native genetic ancestry or total viable population",
+  "mismatches": 0,
+  "experiment_id": "EXP-score-coverage-001",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "manifest_sha256": "6663202e1ae550cf220263d9c0e8a6887829f187cb5006131f24ef5f05d27b4c",
+  "readiness_sha256": "91ee5d04504a6ae1c7d8ee6707ec65cb7b0fb6a58e4daceba968974a65ce15c3",
+  "auditor_sha256": "4f62547fd660dc02c21fb0844a448c3bb4a73242a434a853f480083cc5169b83",
+  "evidence_sha256": {
+    "recovery.json": "14943048761f9f08b7336ea003ef612523247f0fc101c07b12827821a761fe5c",
+    "analysis.json": "cccfcb96cbec5fa04f4b94306ec6a5c64ab18756fb8c6ea89925a4ff7b5eedc6"
+  },
+  "gate_status": "failed",
+  "omitted": {
+    "selected": 17,
+    "confirmed": 6,
+    "eligible_observations": 11,
+    "planned_delays": 51,
+    "eligible_delays": 25,
+    "confirmed_delays": 14,
+    "root_reproduction_delays": 23,
+    "delay_statuses": {
+      "unresolved_search": 11,
+      "sampled_target_lost": 16,
+      "confirmed_stable_descendant": 14,
+      "shared_component": 10
+    },
+    "confirmed_registered_descendant_observations": 6,
+    "confirmed_outside_registry_descendant_observations": 0
+  },
+  "seconds": 849.3069125929997,
+  "peak_rss_kib": 137228
+}

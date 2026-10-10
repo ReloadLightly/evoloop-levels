@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "world",
+  "unit": "RV01-development-1-U",
+  "provenance": {
+    "auditor_sha256": "4f62547fd660dc02c21fb0844a448c3bb4a73242a434a853f480083cc5169b83",
+    "manifest_sha256": "6663202e1ae550cf220263d9c0e8a6887829f187cb5006131f24ef5f05d27b4c",
+    "readiness_sha256": "91ee5d04504a6ae1c7d8ee6707ec65cb7b0fb6a58e4daceba968974a65ce15c3",
+    "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+    "initial_grid_or_component_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593",
+      "scripts/verify_impact.py": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+      "scripts/memory_guard.py": "a41279ab050e038a4d6f6e33dfad6e957d00c6db973c3db95c9d65b85aa27b4f"
+    },
+    "physical_source_sha256": {
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t1200-scored-delay0.npz": "b4b9fa736542e41c97e79ac8630d89e2682401850494305560c9c0528cd4a530",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t1200-scored-delay100.npz": "427d1a4a858d8efef2d174726366ff9e42922df59eb0ef1ea2a86dd73a808b5c",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t1200-scored-delay400.npz": "161ecc709e5a10d339d62e689486ee8b2a05b404cd3c1f98eb08fdd252aacb67",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t400-scored-delay0.npz": "ac02192c1f779d5fc3c4cb3b0b33958756bdfc3ec70d089174f708c1e48ce45a",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t400-scored-delay100.npz": "5457fdf0e56c8ce4ae7bdf7fbbd0e791749d16c38b39de68dfb0f27b832d19a0",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t400-scored-delay400.npz": "925dea92d059e4addc33a6d475592b7bfa985ed465738685e64f061c867455aa",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t800-scored-delay0.npz": "0f61f6a75faf9619a7258612728e101e7f51d649f3bc2191cd7dd844b04b687e",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t800-scored-delay100.npz": "585e01e28a466fe13c8ea00444ad98a4d03eaa35df30dfb6563f39e7235964eb",
+      "data/coverage-v1/worlds/RV01-development-1-U/RV01-development-1-U-t800-scored-delay400.npz": "b4b9fa736542e41c97e79ac8630d89e2682401850494305560c9c0528cd4a530",
+      "data/coverage-v1/worlds/RV01-development-1-U/final.npz": "7cafae97b36f0fb9236b557ba90e289ee51fc30c8097d19a5e87e2953e8fadce",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-1200.npz": "9accfccb3bc5dc480b1649459a2d36891a571fbe0f46c1d137a4aae15ee52bc6",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-1300.npz": "52eb90bdbed94b64742c16fea582d4d1b8d9567c6c3edc5e20df01bbf288deb8",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-1600.npz": "3a9ca2bea17d8b4c771667debd56df6ec104c61b7addd5c35646acc04a47f8c8",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-400.npz": "d04021a7a242acc2cde79a3981a27fc9036c5f0525ea44d4481a1c06d893fbb3",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-500.npz": "076f98cf34fa813c61b0f4f89166871551e56edc1d96c772ab22fd61328c28f6",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-800.npz": "cd4d203edf6c31d91d31bf7f3c44a268a836260d0f51d0fe93d32ff69e9f34bb",
+      "data/coverage-v1/worlds/RV01-development-1-U/grid-900.npz": "6d46a0f09b65f16f365a8d8f9774174cb56f03a728e3692b1577eb354e8b9b81",
+      "data/coverage-v1/worlds/RV01-development-1-U/receipt.json": "52cc598cb23895b9bbc87e180c3f0b839ae860c6c808ce8e503cbca030620976",
+      "data/coverage-v1/worlds/RV01-development-1-U/result.json": "f8571fa08538c8b63933fa8444e608d292af6fd071e2a6030241eba0f9e63b88",
+      "data/impact-v1/development/RV01-development-1-U/result.json": "cf47fb9d6e9df450b33ccd8a56636c8d1f7d3ffe24fcddd894fc8722e5db2668",
+      "data/impact-v1/initial/RV01-development-1-U.npz": "57ce2f0913c834b6e290bb5b80c8798ee6bfbc59cc55177654c079689b1a4f32"
+    }
+  },
+  "verified_counts_delta": {
+    "original_samples_verified": 81,
+    "world_samples_verified": 141,
+    "source_delay_grids_verified": 7,
+    "strata_verified": 9,
+    "empty_strata_verified": 6,
+    "complete_components_verified": 9,
+    "eligible_delay_components_verified": 9,
+    "delay_selections_verified": 9,
+    "native_continuations_verified": 3,
+    "full_world_trajectories_verified": 1,
+    "dense_world_updates_replayed": 2800
+  },
+  "verification_seconds": 8.498853660999885,
+  "scope": "complete original-dense trajectory and source/delay evidence"
+}

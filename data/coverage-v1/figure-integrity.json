@@ -1,0 +1,500 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "experiment_id": "EXP-score-coverage-001",
+  "baseline_commit": "3aa73b85892e3d06115e738978ccef1bc54bf53d",
+  "prior_artifacts_preserved": 108,
+  "new_artifacts_verified": 12,
+  "native_panels_verified": 6,
+  "inheritance_panels_verified": 12,
+  "commands": {
+    "render": "OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.figures_coverage",
+    "verify": "OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.verify_coverage_figures"
+  },
+  "validator_sha256": "ede5eb061c8c25b3db4473c70fc1e13dfaaa937d0975dd517d9674239f40e9c2",
+  "figure_manifest_sha256": "5d38ccccb4a15bca1b4c36aa84c463b43699cfd90fc719316545ccc1368ed995",
+  "results": {
+    "native-targets": {
+      "cell_pixels": [
+        {
+          "panel": 0,
+          "recorded_file": "data/coverage-v1/worlds/V01-development-0-U/grid-1200.npz",
+          "array_key": "grid",
+          "shape": [
+            192,
+            192
+          ],
+          "cells_verified": 36864,
+          "occupied_cells_verified": 3143,
+          "cell_scale_points": [
+            1.1916666666666667,
+            1.1916666666666667
+          ]
+        },
+        {
+          "panel": 1,
+          "recorded_file": "data/coverage-v1/worlds/V01-development-0-U/grid-1300.npz",
+          "array_key": "grid",
+          "shape": [
+            192,
+            192
+          ],
+          "cells_verified": 36864,
+          "occupied_cells_verified": 3363,
+          "cell_scale_points": [
+            1.1916666666666667,
+            1.1916666666666667
+          ]
+        },
+        {
+          "panel": 2,
+          "recorded_file": "data/coverage-v1/worlds/V01-development-0-U/grid-1600.npz",
+          "array_key": "grid",
+          "shape": [
+            192,
+            192
+          ],
+          "cells_verified": 36864,
+          "occupied_cells_verified": 3386,
+          "cell_scale_points": [
+            1.1916666666666667,
+            1.1916666666666667
+          ]
+        },
+        {
+          "panel": 3,
+          "recorded_file": "data/coverage-v1/worlds/V03-development-1-D/grid-800.npz",
+          "array_key": "grid",
+          "shape": [
+            192,
+            192
+          ],
+          "cells_verified": 36864,
+          "occupied_cells_verified": 1413,
+          "cell_scale_points": [
+            1.1916666666666667,
+            1.1916666666666667
+          ]
+        },
+        {
+          "panel": 4,
+          "recorded_file": "data/coverage-v1/worlds/V03-development-1-D/grid-900.npz",
+          "array_key": "grid",
+          "shape": [
+            192,
+            192
+          ],
+          "cells_verified": 36864,
+          "occupied_cells_verified": 1492,
+          "cell_scale_points": [
+            1.1916666666666667,
+            1.1916666666666667
+          ]
+        },
+        {
+          "panel": 5,
+          "recorded_file": "data/coverage-v1/worlds/V03-development-1-D/grid-1200.npz",
+          "array_key": "grid",
+          "shape": [
+            192,
+            192
+          ],
+          "cells_verified": 36864,
+          "occupied_cells_verified": 1455,
+          "cell_scale_points": [
+            1.1916666666666667,
+            1.1916666666666667
+          ]
+        }
+      ],
+      "png_pixels": [
+        {
+          "panel": 0,
+          "matching_occupied_fraction": 0.999354213755247,
+          "matching_all_fraction": 0.9946986221939973,
+          "alignment_pixels": [
+            -1,
+            -1
+          ],
+          "tested_cell_centers": 36217,
+          "tested_occupied_cell_centers": 3097
+        },
+        {
+          "panel": 1,
+          "matching_occupied_fraction": 0.9990947495473748,
+          "matching_all_fraction": 0.9946986221939973,
+          "alignment_pixels": [
+            -1,
+            -1
+          ],
+          "tested_cell_centers": 36217,
+          "tested_occupied_cell_centers": 3314
+        },
+        {
+          "panel": 2,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 0.9946986221939973,
+          "alignment_pixels": [
+            -1,
+            -1
+          ],
+          "tested_cell_centers": 36217,
+          "tested_occupied_cell_centers": 3227
+        },
+        {
+          "panel": 3,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 0.9946978902021429,
+          "alignment_pixels": [
+            -1,
+            -2
+          ],
+          "tested_cell_centers": 36212,
+          "tested_occupied_cell_centers": 1366
+        },
+        {
+          "panel": 4,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 0.9946978902021429,
+          "alignment_pixels": [
+            -1,
+            -2
+          ],
+          "tested_cell_centers": 36212,
+          "tested_occupied_cell_centers": 1442
+        },
+        {
+          "panel": 5,
+          "matching_occupied_fraction": 0.99644128113879,
+          "matching_all_fraction": 0.9946978902021429,
+          "alignment_pixels": [
+            -1,
+            -2
+          ],
+          "tested_cell_centers": 36212,
+          "tested_occupied_cell_centers": 1405
+        }
+      ]
+    },
+    "inheritance": {
+      "cell_pixels": [
+        {
+          "panel": 0,
+          "recorded_file": "data/coverage-v1/worlds/V03-development-1-D/V03-development-1-D-t800-unknown_identity-delay0.npz",
+          "array_key": "snapshot",
+          "shape": [
+            19,
+            19
+          ],
+          "cells_verified": 361,
+          "occupied_cells_verified": 171,
+          "cell_scale_points": [
+            5.4526315789473685,
+            5.4526315789473685
+          ]
+        },
+        {
+          "panel": 1,
+          "recorded_file": "data/coverage-v1/searches/V03-development-1-D-t800-unknown_identity-delay0/node-00.npz",
+          "array_key": "child0",
+          "shape": [
+            19,
+            19
+          ],
+          "cells_verified": 361,
+          "occupied_cells_verified": 171,
+          "cell_scale_points": [
+            5.4526315789473685,
+            5.4526315789473685
+          ]
+        },
+        {
+          "panel": 2,
+          "recorded_file": "data/coverage-v1/searches/V03-development-1-D-t800-unknown_identity-delay0/node-01.npz",
+          "array_key": "child0",
+          "shape": [
+            19,
+            19
+          ],
+          "cells_verified": 361,
+          "occupied_cells_verified": 171,
+          "cell_scale_points": [
+            5.4526315789473685,
+            5.4526315789473685
+          ]
+        },
+        {
+          "panel": 3,
+          "recorded_file": "data/coverage-v1/searches/V03-development-1-D-t800-unknown_identity-delay0/node-02.npz",
+          "array_key": "child0",
+          "shape": [
+            19,
+            19
+          ],
+          "cells_verified": 361,
+          "occupied_cells_verified": 171,
+          "cell_scale_points": [
+            5.4526315789473685,
+            5.4526315789473685
+          ]
+        },
+        {
+          "panel": 4,
+          "recorded_file": "data/coverage-v1/worlds/RV01-confirmation-1-D/RV01-confirmation-1-D-t1200-unknown_identity-delay0.npz",
+          "array_key": "snapshot",
+          "shape": [
+            18,
+            18
+          ],
+          "cells_verified": 324,
+          "occupied_cells_verified": 160,
+          "cell_scale_points": [
+            5.466666666666667,
+            5.466666666666667
+          ]
+        },
+        {
+          "panel": 5,
+          "recorded_file": "data/coverage-v1/searches/RV01-confirmation-1-D-t1200-unknown_identity-delay0/node-00.npz",
+          "array_key": "child0",
+          "shape": [
+            18,
+            18
+          ],
+          "cells_verified": 324,
+          "occupied_cells_verified": 160,
+          "cell_scale_points": [
+            5.466666666666667,
+            5.466666666666667
+          ]
+        },
+        {
+          "panel": 6,
+          "recorded_file": "data/coverage-v1/searches/RV01-confirmation-1-D-t1200-unknown_identity-delay0/node-01.npz",
+          "array_key": "child0",
+          "shape": [
+            18,
+            18
+          ],
+          "cells_verified": 324,
+          "occupied_cells_verified": 160,
+          "cell_scale_points": [
+            5.466666666666667,
+            5.466666666666667
+          ]
+        },
+        {
+          "panel": 7,
+          "recorded_file": "data/coverage-v1/searches/RV01-confirmation-1-D-t1200-unknown_identity-delay0/node-02.npz",
+          "array_key": "child0",
+          "shape": [
+            18,
+            18
+          ],
+          "cells_verified": 324,
+          "occupied_cells_verified": 160,
+          "cell_scale_points": [
+            5.466666666666667,
+            5.466666666666667
+          ]
+        },
+        {
+          "panel": 8,
+          "recorded_file": "data/coverage-v1/worlds/RV02-confirmation-0-D/RV02-confirmation-0-D-t1200-unknown_identity-delay0.npz",
+          "array_key": "snapshot",
+          "shape": [
+            20,
+            20
+          ],
+          "cells_verified": 400,
+          "occupied_cells_verified": 182,
+          "cell_scale_points": [
+            5.46,
+            5.46
+          ]
+        },
+        {
+          "panel": 9,
+          "recorded_file": "data/coverage-v1/searches/RV02-confirmation-0-D-t1200-unknown_identity-delay0/node-00.npz",
+          "array_key": "child0",
+          "shape": [
+            20,
+            20
+          ],
+          "cells_verified": 400,
+          "occupied_cells_verified": 182,
+          "cell_scale_points": [
+            5.46,
+            5.46
+          ]
+        },
+        {
+          "panel": 10,
+          "recorded_file": "data/coverage-v1/searches/RV02-confirmation-0-D-t1200-unknown_identity-delay0/node-01.npz",
+          "array_key": "child0",
+          "shape": [
+            20,
+            20
+          ],
+          "cells_verified": 400,
+          "occupied_cells_verified": 182,
+          "cell_scale_points": [
+            5.46,
+            5.46
+          ]
+        },
+        {
+          "panel": 11,
+          "recorded_file": "data/coverage-v1/searches/RV02-confirmation-0-D-t1200-unknown_identity-delay0/node-02.npz",
+          "array_key": "child0",
+          "shape": [
+            20,
+            20
+          ],
+          "cells_verified": 400,
+          "occupied_cells_verified": 182,
+          "cell_scale_points": [
+            5.46,
+            5.46
+          ]
+        }
+      ],
+      "png_pixels": [
+        {
+          "panel": 0,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 361,
+          "tested_occupied_cell_centers": 171
+        },
+        {
+          "panel": 1,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 361,
+          "tested_occupied_cell_centers": 171
+        },
+        {
+          "panel": 2,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 361,
+          "tested_occupied_cell_centers": 171
+        },
+        {
+          "panel": 3,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 361,
+          "tested_occupied_cell_centers": 171
+        },
+        {
+          "panel": 4,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 324,
+          "tested_occupied_cell_centers": 160
+        },
+        {
+          "panel": 5,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 324,
+          "tested_occupied_cell_centers": 160
+        },
+        {
+          "panel": 6,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 324,
+          "tested_occupied_cell_centers": 160
+        },
+        {
+          "panel": 7,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 324,
+          "tested_occupied_cell_centers": 160
+        },
+        {
+          "panel": 8,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 400,
+          "tested_occupied_cell_centers": 182
+        },
+        {
+          "panel": 9,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 400,
+          "tested_occupied_cell_centers": 182
+        },
+        {
+          "panel": 10,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 400,
+          "tested_occupied_cell_centers": 182
+        },
+        {
+          "panel": 11,
+          "matching_occupied_fraction": 1.0,
+          "matching_all_fraction": 1.0,
+          "alignment_pixels": [
+            -4,
+            -4
+          ],
+          "tested_cell_centers": 400,
+          "tested_occupied_cell_centers": 182
+        }
+      ]
+    }
+  },
+  "seconds": 3.401753925000321,
+  "scope": "recorded SVG raster cell centers and palettes, square/shared geometry, PNG cell-center alignment excluding declared native annotations, provenance and prior artifact preservation; separate visual review remains required"
+}
