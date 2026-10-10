@@ -1,0 +1,45 @@
+{
+  "calibration_experiment_id": "EXP-ecological-calibration-001",
+  "benefit_experiment_id": "EXP-benefit-001",
+  "states": ["V01", "V02", "V03", "RV01", "RV02"],
+  "pairs": [
+    {"candidate": "RV01", "inputs": ["V02", "V03"]},
+    {"candidate": "RV02", "inputs": ["V01", "V03"]}
+  ],
+  "benefit_source": "configs/atlas-v2.json",
+  "calibration": {
+    "conditions": [
+      {"id": "cal-a", "rotation": 0, "block": [80, 80]},
+      {"id": "cal-b", "rotation": 1, "block": [80, 112]}
+    ],
+    "source_times": [400, 620, 1020, 1400],
+    "cores_per_class_per_stratum": 2,
+    "selection": "first and last distinct lexicographic core tuples, separately for scored and unscored cores",
+    "native_continuation_horizon": 1600,
+    "gate": {
+      "overall_scored_recovery_fraction": 0.9,
+      "per_starting_state_recovery_fraction": 0.8,
+      "baseline_recoveries_required": 5,
+      "minimum_confirmed_per_nonempty_scored_stratum": 1
+    },
+    "positive_endpoint": "two consecutive transmissions of the originally counted exact composite identity",
+    "unscored_endpoint": "any stable composite identity after two consecutive transmissions; descriptive coverage only",
+    "failure_action": "complete frozen paired structural diagnostics; block benefit confirmation and retain beneficial yield unknown"
+  },
+  "search": {
+    "isolation_shape": [192, 192],
+    "generation_horizon": 1600,
+    "detection_interval": 10,
+    "offspring_per_generation": 3,
+    "max_depth": 6,
+    "max_generation_simulations_per_root": 24,
+    "stable_transmissions": 2
+  },
+  "score_registry": "fixed union of exact isolation-confirmed composite identities from the five prepared states; aliases deduplicated",
+  "schedule_order": "advance to time t, clear specified block at disturbance times, then detect and sample",
+  "score_samples": "all 81 post-intervention samples at t=0,20,...,1600, equally weighted",
+  "strict_comparison": "integer sums of scored-core counts over 162 samples per panel; exact ties fail",
+  "placement": "rotate complete snapshot, center at (height//2,width//2) using rotated bounding dimensions; no phase advancement",
+  "analysis_unit": "finite deterministic condition panels and nested selected core states, not independent histories",
+  "execution": {"workers": 1, "minimum_available_memory_mib": 200, "kernel": "original dense synchronous periodic"}
+}

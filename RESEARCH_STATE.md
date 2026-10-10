@@ -2,6 +2,19 @@
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
+Current execution: protocol 007 and configs/ecological-v1.json prospectively
+freeze ecological-score calibration and the previously frozen paired benefit
+assay. Five complete verified starting snapshots form four unique scored
+identities. Ten new calibration ecologies select spatially declared cores at
+four times; five baseline controls and bounded serial isolation test recovery.
+Gate: at least 90% over all selected scored cores, 80% within each starting
+state, five baseline recoveries, and one recovery per nonempty scored stratum.
+All twenty paired conditions follow; failed calibration blocks benefit claims
+while retaining structural diagnostics. Benefit comparison uses integer panel
+sums so ties fail exactly. No acquisition outcomes have been observed at freeze.
+Four focused contract tests pass. Short V01 timing: 200 updates plus ten
+observations in 0.087 s, peak RSS 62,900 KiB; one worker, no full-run claim.
+
 Completed experiment IDs:
 
 - EXP-verification-001: all 59,049 local transitions match CellPyLib and the
