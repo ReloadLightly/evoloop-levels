@@ -70,7 +70,7 @@ Operational continuity is recorded in [RESEARCH_STATE.md](../RESEARCH_STATE.md).
 
 ## Three-identity discovery and fresh atlas
 
-Protocol005 reached three viable native-word identities in 79 selected trials,
+Protocol 005 reached three viable native-word identities in 79 selected trials,
 with complete source and serial-isolation evidence in `data/panel-v2/`.
 Runtime was 13.1 minutes and peak RSS 64.7 MiB with one worker. All three histories,
 79 source extractions, and 149 generation states replayed exactly. The periodic
@@ -80,26 +80,65 @@ seam translation, full-component extraction, shared cores, and winding rejection
 ```sh
 OPENBLAS_NUM_THREADS=1 python -m unittest tests.test_periodic_tracking -v
 OPENBLAS_NUM_THREADS=1 python -m scripts.verify_fresh panel
-OPENBLAS_NUM_THREADS=1 python -m scripts.fresh_atlas run
-OPENBLAS_NUM_THREADS=1 python -m scripts.fresh_atlas inherit
+OPENBLAS_NUM_THREADS=1 python -m scripts.cropped_fresh_atlas run
+OPENBLAS_NUM_THREADS=1 python -m scripts.cropped_fresh_atlas inherit
 OPENBLAS_NUM_THREADS=1 python -m scripts.analyze_fresh_atlas
+OPENBLAS_NUM_THREADS=1 python -m scripts.audit_fresh_atlas
 OPENBLAS_NUM_THREADS=1 python -m scripts.verify_fresh atlas
+OPENBLAS_NUM_THREADS=1 python -m scripts.audit_fresh_lineages
+OPENBLAS_NUM_THREADS=1 python -m scripts.catalogue_fresh_variants
 OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel
 OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fresh_atlas
 OPENBLAS_NUM_THREADS=1 python -m scripts.render_manuscript
 ```
 
 The 144 complete starting grids are frozen in `data/atlas-v2/manifest.json`:
-36 main near, 18 held-out near,54 matched separated,36 solitary. This uses the same
+36 main near, 18 held-out near, 54 matched separated, 36 solitary. This uses the same
 640-square world extent for every treatment. The inheritance search follows
 three offspring per generation, depth six, and at most 24 simulations per root.
-Benefit remains a separate, unfinished comparison.
+Benefit remains a separate, unfinished comparison. The optimized route requires
+the committed implementation-equivalence report. It preserves the frozen rule,
+starting states, detector outcomes, and search budgets; [tiled execution](tiled-execution.md)
+and [cropped detection](cropped-execution.md) document equivalence checks and
+the original dense alternative.
 
 For full reconstruction, preserve the committed evidence in another checkout,
 then remove that copy's `data/panel-v2/` and `data/atlas-v2/` directories. Run
 `python -m scripts.panel_discovery freeze`, `python -m scripts.panel_discovery run`,
-and `python -m scripts.fresh_atlas freeze`, then the acquisition/analysis commands
-above. Compare physical grid and snapshot hashes, endpoint counts, and plots.
+and `python -m scripts.fresh_atlas freeze`, then use the unoptimized
+`python -m scripts.fresh_atlas run` and `python -m scripts.fresh_atlas inherit`
+followed by the analysis/export commands above. Optimization proofs are bound
+to the committed manifest; reconstruct and reverify them before using optimized
+execution with a renewed manifest. Compare physical grid and snapshot hashes, endpoint counts, and plots.
 Runtime fields change; frozen manifest hashes are renewed for the new execution.
 Do not rerun discovery over an existing frozen atlas: its source-report hash is
 enforced. Check committed `data/SHA256SUMS` before regenerating timing metadata.
+
+The completed acquisition took 35.8 minutes summed across the recorded runs;
+the last acquisition process used 69.9 MiB peak RSS. The serial-isolation search
+took 344.9 seconds for 88 captured roots and 1,205 generation simulations.
+These times describe this machine and the mixed, explicitly recorded execution
+routes; the short kernel benchmark is not a full-campaign speedup estimate.
+
+`outcomes.csv` joins acquisition records with the final inheritance searches.
+Acquisition `result.json` files preserve their original, pre-search pending
+statuses; consult the joined table and `inheritance.json` for completed search
+outcomes. Structural core appearances and disappearance are recorded separately
+from verified serial reproduction. The independent lineage audit checks every
+candidate's first observation and every linked search state, while the dense
+verification replays four full encounter/control trajectories and every isolated
+generation. Its scope is recorded in the corresponding JSON reports; it does
+not imply dense replay of all 144 complete trajectories.
+
+The frozen analyzer's generic sentence about zero confirmed inheritance applies
+to zero cells and nonconfirming searches, not the complete fresh atlas, whose
+observed count is 2/54. Its source and generated report are preserved; the
+[independent interpretation audit](scientific_review.md) records this wording
+clarification and verifies the positive denominators and paths.
+
+`confirmed/catalogue.json` retains both recovered stable identities and all
+eight confirmation origins. One matches V01 in the input catalogue and is novel
+relative to its V02/V03 encounter inputs; the other differs from all three input
+words. Repeated roots in one encounter are not independent variant-generating
+events. Export labels and the earliest-capture representative rule are fixed in
+`scripts.catalogue_fresh_variants`; benefit is unknown for both identities.

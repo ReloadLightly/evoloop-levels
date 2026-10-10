@@ -21,6 +21,7 @@ def render(manifest):
                 ax.set_xticks([0,g.shape[1]//2,g.shape[1]-1]);ax.set_yticks([0,g.shape[0]//2,g.shape[0]-1]);ax.set_xlabel('column / cells')
             axes[row,0].set_ylabel('row / cells')
         fig.suptitle('Native discovery histories · fixed initial configurations')
+        fig.text(.5,.105,'EXP-panel-discovery-002 · periodic domains; axes in cells.\nD03 stopped at t=5,040; its last sampled frame is t=5,000.',ha='center',fontsize=9)
         fig.subplots_adjust(bottom=.16,top=.93,wspace=.27,hspace=.48);legend(fig)
         save(fig,'panel2-native-worlds',dark,manifest,[EXP],{'command':COMMAND,'source':'data/panel-v2/*-world.npz'})
         theme(dark);fig,ax=plt.subplots(figsize=(10,4.6));labels=['Admitted\n(native word retained)','Reproduced\na different word','Unresolved /\nidentity changed','Other exclusions']

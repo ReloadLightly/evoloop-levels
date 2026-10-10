@@ -287,3 +287,67 @@ panels. The rerendered curves and raw panels were inspected and all 64 figure
 checksums pass. The working PDF's calibration results and limitations pages
 were rasterized and inspected with Ghostscript; Markdown tables are aligned
 in their monospaced export. These refinements change presentation, not data.
+
+## Fresh atlas and recovered-path acceptance
+
+Reviewed completed `EXP-atlas-002` Midnight Blue exports: outcome matrix,
+evidence stages, verified inputs, all three annotated static encounters,
+representative decoded frames of all three encounter WebPs, and the recovered
+inheritance paths. The current shared style intentionally uses canonical dark
+exports; the fixed literal nine-state palette remains unchanged. Quantitative
+blue scales, annotation roles, and solid/dashed input-placement outlines are
+separate from literal cell-state encodings.
+
+Matrix and stage counts match completed analysis: 14/36 main and 4/18 held-out
+near configurations have native candidate words; 2/36 main and 0/18 held-out
+have confirmed isolated inheritance. Each main pair cell retains four declared
+configurations, each held-out cell two. The colorbar has clear separation from
+axes and text. The independent benefit status card is visibly unquantified and
+says NOT ASSAYED, rather than depicting missing benefit as a measured zero.
+The caption preserves unsearched candidate fates as unresolved and limits the
+result to serial isolation and finite-panel pair-level novelty.
+
+All three static encounter panels now share a focused crop over their annotated
+states. Inputs, first operational contact, first observed candidate, and later
+state remain visible at readable cell scale. The animation crop covers the union
+of all recorded replay frames, so this static focus does not omit later cells
+from the animations. Candidate core outlines, placement outlines, and literal
+state pixels remain distinct. Experimental IDs, periodic domain labels,
+10-update candidate sampling, ancestry caveats, axes, titles, and nine-state
+legends are readable without clipping.
+
+The reviewer independently reconstructed every retained raw replay frame from
+its full original initial grid: 43, 43, and 44 frames, respectively. All 130
+cropped frame arrays match exactly, and all three complete final-state hashes
+match stored outcomes. Representative initial, middle, and final decoded WebP
+frames match those NPZ arrays pixel-for-pixel at the declared one pixel per
+cell. WebP frame counts match `display_times`; reduced display cadence is
+explicit metadata, while the finer retained raw evidence remains available.
+The animations' centered domain border, labels, scale, and legend remain clear;
+the static panels supply enlarged cell-level detail.
+
+Recovered paths select one actual root per stable composite identity, sorted by
+identity and then earliest native capture/run/genotype/source file. All eight
+source/selected-child component hashes match their manifest paths and saved
+arrays. RV01 starts at native t=460, changes its word after isolation, and
+recovers known panel V01 through 12×13 → 12×12 → 12×12 → 12×12, with detached
+observations +400, +390, +390. RV02 starts at native t=1110, retains its word
+through 13×15 → 14×14 → 14×14 → 14×14, with +440, +440, +440. Its final identity
+is labeled "absent from input catalogue," avoiding a claim of global novelty.
+Complete saved components retain their arms; a common padded canvas gives every
+panel the same cell scale and component-relative coordinates. The caption
+separates native and restarted isolation clocks and explicitly limits the
+images to assay-derived paths with ambiguous native ancestry and no benefit
+claim. Both final rows and footer are readable.
+
+The initial verified-input render overlapped provenance and x-axis labels. Its
+selective rerender moves provenance below the labels and uses integer ticks;
+that issue is resolved. The final recovered-path wording was also rerendered
+and inspected. All 66 current figure-manifest artifact checksums match their
+files after those changes. No critical scientific or rendering issue remains
+in the reviewed fresh-atlas outputs.
+
+The final 31-page working PDF passes Ghostscript decoding. Rendered checks of
+the opening page, fresh-results page, outcome matrix, and inheritance-path page
+show readable text and figures. The renderer keeps short results tables intact
+with their headers; the calibration and fresh-atlas tables fit the page width.
