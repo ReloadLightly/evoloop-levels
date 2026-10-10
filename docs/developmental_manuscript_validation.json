@@ -1,0 +1,38 @@
+{
+  "status": "accepted",
+  "experiment_id": "EXP-developmental-calibration-001",
+  "pdf": "paper/manuscript.pdf",
+  "pdf_sha256": "e746e33a76916107db98de22a7f038dadccbd3f6ae645173de97b8b07d6a2087",
+  "source": "paper/manuscript.md",
+  "source_sha256": "bbcc062b984412ee2a3f58389cc5a7ce266b6508fb7656a2885a1366bbf71569",
+  "renderer_sha256": "4640e9cbadbb64a61f71c61b2458b1bcb4f2c82f8176b14cc75a08271af7c26c",
+  "figure_manifest_sha256": "0f7118133726ce1cc032c4b4d4f4a83c459a2613d381890f9e85588e302a0c41",
+  "pages": 61,
+  "appended_vector_figures": 37,
+  "full_decode": "all61 pages pass Ghostscript PDFSTOPONERROR using txtwrite; page object and decoded-file counts agree",
+  "visual_review_pages": {
+    "20": "complete source-class table, Q/R/C and distinct-input denominators, old gate and crossed unacquired scope; no clipping",
+    "60": "resolved-share matrix, all exact Q/C/R labels and qualification footer readable; dark source geometry preserved",
+    "61": "full paired192 grids, literal cells/arms/periodic boundary, complete source labels, scale and legend; no borders over data"
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.render_manuscript",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -sDEVICE=txtwrite -sOutputFile=/tmp/developmental-paper-%03d.txt paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dFirstPage=20 -dLastPage=20 -sDEVICE=png16m -r90 -sOutputFile=/tmp/developmental-paper-page20.png paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dFirstPage=60 -dLastPage=61 -sDEVICE=png16m -r90 -sOutputFile=/tmp/developmental-last-%02d.png paper/manuscript.pdf"
+  ],
+  "execution_log": "data/developmental-v1/execution.jsonl",
+  "render_metrics": {
+    "file": "data/developmental-v1/render-manuscript.txt",
+    "seconds": 7.45,
+    "peak_rss_kib": 90944,
+    "exit": 0
+  },
+  "decode_metrics": {
+    "file": "data/developmental-v1/decode-manuscript.txt",
+    "seconds": 3.61,
+    "peak_rss_kib": 40264,
+    "exit": 0
+  },
+  "scope": "authoritative scientific Markdown; finite calibration and unacquired crossed design; all earlier scientific measurements and figure artifacts preserved"
+}

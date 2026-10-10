@@ -123,7 +123,8 @@ def main():
                      'eco1-evidence-stages','eco1-disturbance-states',
                      'impact1-exposure','impact1-calibration','impact1-score-matrices','impact1-contrasts',
                      'impact1-paired-curves','impact1-raw-states',
-                     'coverage1-recovery','coverage1-state-unions','coverage1-native-targets','coverage1-inheritance']
+                     'coverage1-recovery','coverage1-state-unions','coverage1-native-targets','coverage1-inheritance',
+                     'developmental1-resolution','developmental1-paired-states']
     figure_pdfs=[ROOT/f'figures/{name}-dark.pdf' for name in names]
     missing=[str(p) for p in figure_pdfs if not p.exists()]
     if missing:

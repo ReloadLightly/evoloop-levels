@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-age-geometry-cross-001",
+  "protocol": "protocols/012-crossed-age-geometry.md",
+  "output": "data/crossed-v1",
+  "states": [
+    "V01",
+    "V02",
+    "V03",
+    "RV01",
+    "RV02"
+  ],
+  "ages": [
+    0,
+    30,
+    100,
+    120
+  ],
+  "geometries": [
+    {
+      "id": "A",
+      "split": "development",
+      "sites": [
+        [
+          55,
+          45
+        ],
+        [
+          83,
+          115
+        ],
+        [
+          140,
+          72
+        ]
+      ],
+      "remove_index": 1
+    },
+    {
+      "id": "B",
+      "split": "development",
+      "sites": [
+        [
+          48,
+          70
+        ],
+        [
+          110,
+          44
+        ],
+        [
+          128,
+          132
+        ]
+      ],
+      "remove_index": 0
+    },
+    {
+      "id": "E",
+      "split": "confirmation",
+      "sites": [
+        [
+          35,
+          41
+        ],
+        [
+          89,
+          116
+        ],
+        [
+          145,
+          83
+        ]
+      ],
+      "remove_index": 0
+    },
+    {
+      "id": "F",
+      "split": "confirmation",
+      "sites": [
+        [
+          47,
+          124
+        ],
+        [
+          103,
+          46
+        ],
+        [
+          151,
+          135
+        ]
+      ],
+      "remove_index": 1
+    }
+  ],
+  "treatments": [
+    "D",
+    "U"
+  ],
+  "shape": [
+    192,
+    192
+  ],
+  "boundary": "periodic",
+  "horizon": 1600,
+  "source_times": [
+    0,
+    400,
+    800,
+    1200,
+    1600
+  ],
+  "structural_sample_interval": 20,
+  "measure_config": "configs/developmental-v1.json",
+  "calibration_assessment": "data/developmental-v1/analysis.json",
+  "calibration_integrity": "data/developmental-v1/integrity.json",
+  "pairs": [
+    {
+      "candidate": "RV01",
+      "inputs": [
+        "V02",
+        "V03"
+      ]
+    },
+    {
+      "candidate": "RV02",
+      "inputs": [
+        "V01",
+        "V03"
+      ]
+    }
+  ],
+  "sampling_unit": "complete state\u00d7age\u00d7geometry\u00d7D/U configuration; census snapshots nested; no independent populations",
+  "preparation": "three identical full saved complete phase components including arms; remove one whole clone at t0; no later native intervention",
+  "phase": "elapsed preparation updates, not homologous reproductive phases",
+  "contrasts": {
+    "age_pairs": [
+      [
+        0,
+        100
+      ],
+      [
+        30,
+        120
+      ]
+    ],
+    "geometry_pairs": {
+      "development": [
+        "A",
+        "B"
+      ],
+      "confirmation": [
+        "E",
+        "F"
+      ]
+    },
+    "age_effect": "per state and fixed geometry, signed difference of exact per-condition retention bounds and absolute disturbed count ranges",
+    "geometry_effect": "per state and fixed age, B-A or F-E; complete spatial challenges include sites and removed-clone location, not a pure distance effect or replicated identical geometry treatment",
+    "interaction": "difference of age differences across each declared geometry pair; report intervals and missingness",
+    "all_cells": "retain all4age\u00d74geometry cells for descriptive comparison"
+  },
+  "benefit": {
+    "relative": "each panel averages eight per-condition retention intervals (4ages\u00d72geometries); candidate lower strictly exceeds both originating input upper bounds in both panels",
+    "absolute": "candidate disturbed Q mean strictly exceeds both input disturbed C means in both panels; exact five-snapshot sums; ties fail",
+    "joint": "relative and absolute robust superiority plus all calibration, exposure and non-equivalence gates; failed frozen calibration prevents joint confirmation",
+    "overlap": "unresolved robust advantage, not zero true benefit",
+    "zero_control": "zero C_U undefined; zero Q_U unbounded upper; no fabricated ratios",
+    "originating_encounter_denominators": {
+      "main": 36,
+      "held_out": 18,
+      "overall": 54
+    },
+    "registry_score": "81-sample legacy structural score remains a separate secondary diagnostic, not retrospectively revised"
+  },
+  "limits": {
+    "worlds": 160,
+    "pairs": 80,
+    "census_snapshots": 800,
+    "unique_admitted_keys_per_world": 128,
+    "max_ecological_root_executions": 20480,
+    "maximum_ecological_generation_simulations": 491520,
+    "controls": 33,
+    "maximum_generation_simulations_including_controls": 492312
+  },
+  "confirmation": "reserved E/F starts must not be rotation/translation equivalents of any development, prior protocol009, or new calibration start; equivalence blocked before acquisition",
+  "previous_observation": "A age0 and B age100 reproduce previously measured preparations; flag all exact effective aliases and never call them independent or heldout",
+  "execution": {
+    "workers": 1,
+    "minimum_available_memory_mib": 200,
+    "benchmark_before_acquisition": true,
+    "schedule": "acquisition, independent audit, rendering and Git packing sequentially",
+    "resume": "hash-bound completed cases; all interruptions retained"
+  },
+  "acquisition": "design freeze only in this step; runner/readiness validation and benchmark required before main acquisition",
+  "controls": {
+    "original_phase_controls": "all30 saved protocol009 complete phase patches, require original identity",
+    "known_omitted_inputs": "three distinct protocol010 unknown-source complete inputs, require any stable identity",
+    "scope": "repeated implementation/assay controls, never new independent samples"
+  }
+}

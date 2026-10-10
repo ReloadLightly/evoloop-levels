@@ -348,3 +348,44 @@ classification; the contrast command also formats analysis.md from unchanged
 analysis.json. The latter replays the documented pre-response eligibility scan
 and retains both disconnected-cell V03 grids; it never continues a disturbed
 state or chooses configurations from response outcomes.
+
+## Developmental source measure and crossed design
+
+[Protocol 011](../protocols/011-developmental-source-measure.md) and
+[developmental-v1.json](../configs/developmental-v1.json) prospectively define
+Q confirmed recoverable sources, C all detected cores, and R=C−Q unresolved
+sources. The range concerns detected bodies under isolation, not total viable
+population. The calibration/input/code freeze was remotely verified at
+`1bae4a102737d72b725974ffdaa6535ec0d4907d` before benchmarking or acquisition.
+The new manifest binds 20 complete starts, all source code/audit/test hashes,
+33 controls, and 1,000 prior-state non-equivalence checks. Earlier protocol 010
+failure and all ecological classifications remain unchanged.
+
+Use the existing pinned virtual environment and one worker. Run acquisition,
+audits, rendering and Git packing sequentially; launch guard refusals and
+interruptions remain in `data/developmental-v1/execution.jsonl`. Completed roots
+and worlds resume only after their complete evidence inventories and bindings
+verify. Repeated identical inputs save computation but retain source multiplicity.
+
+```bash
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.developmental_measure verify
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m unittest tests.test_developmental tests.test_developmental_audit tests.test_periodic_tracking tests.test_fate -v
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 140 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.developmental_measure benchmark
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 140 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.developmental_measure run --freeze-commit 1bae4a102737d72b725974ffdaa6535ec0d4907d
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.verify_developmental
+mkdir -p data/crossed-v1
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 100 --log data/developmental-v1/execution.jsonl .venv/bin/python -m unittest tests.test_crossed_design_audit -v > data/crossed-v1/validation.txt 2>&1
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.freeze_crossed
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.verify_crossed_design
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 220 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.figures_developmental
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/developmental-v1/execution.jsonl .venv/bin/python -m scripts.verify_developmental_figures
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/developmental-v1/execution.jsonl /usr/bin/time -f 'seconds=%e peak_rss_kib=%M exit=%x' -o data/developmental-v1/render-manuscript.txt .venv/bin/python -m scripts.render_manuscript
+```
+
+Freeze commands create immutable manifests and refuse overwriting. Reproduction
+from a checkout with completed freezes uses verification, rather than re-freezing.
+The acquisition command requires its original committed HEAD; reproduce in that
+checkout with a separate output workspace, retaining the frozen source bindings.
+Audits replay completed evidence in the current checkout; no physics is changed.
+The crossed design is only a 160-world input freeze. A separately hash-bound,
+tested runner/audit and one-worker benchmark are required before its responses.

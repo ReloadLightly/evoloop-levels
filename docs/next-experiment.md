@@ -1,4 +1,4 @@
-# Next scientific action: calibrate a population measure for recoverable developmental states
+# Next scientific action: implement the frozen crossed age–geometry assessment
 
 EXP-atlas-002 recovered pair-relative inherited novelty in 2/36 main and 0/18
 held-out encounters. One stable 14×14 word differs from all three catalogue
@@ -40,28 +40,49 @@ recovery is 109/120, but RV02 recovers 18/24 against an 80% threshold. The later
 118/120 union does not replace the frozen gate. These results remain diagnostic,
 and earlier population scores and ecological classifications remain unchanged.
 
-The next scientific action is to define and prospectively calibrate a revised
-population measure and its recovery assay. The omission concerns unknown/transient
-source states whose descendants are already registered, so registry expansion
-alone cannot address it. First use separately labeled exploratory comparisons to
-understand phase-dependent identity readability, complete-component eligibility,
-and the RV02 recovery gap. Then freeze the metric, sampling units, control states,
-horizons, missing/unknown categories, exclusions, transmission rules, and benefit
-comparison before new main acquisition. Retain ineligible selections and bounded
-unresolved searches. Successful isolation is an intervention-dependent recovery
-endpoint, not a retrospective native-population census. Do not relabel old outcomes
-using the revised measure.
+The [protocol 011 measure](../protocols/011-developmental-source-measure.md) now
+prospectively counts confirmed recoverable source bodies as Q, every detected core
+as C, and unresolved sources as R=C−Q. Unknown genotype does not block recovery;
+recovered descendant identity does not relabel its source. Complete components
+include arms, while shared, noncontractible, ineligible, nonproductive and bounded
+unsearched sources remain unresolved. The source envelope [Q,C] does not bound
+all viable organisms or identify native offspring. Twenty newly prepared paired
+calibration worlds assess the fixed measure at five source times, keeping all
+source cores and separately repeating33 known assay controls. The old registry,
+old coverage failure and old ecological classifications remain unchanged.
 
-A subsequent experiment should fully cross declared elapsed ages with nonsymmetric
-site geometries. RV01 versus V02 changes retention sign between development-0 and
-development-1, but the existing conditions vary age and geometry together.
-Holding geometry fixed while changing age tests preparation dependence; holding
-age fixed while changing geometry tests spatial dependence. Retain all five
-complete prepared states, both candidates against both inputs, exact one-third
-removal, paired undisturbed controls, and separate relative/absolute criteria.
-Reserve non-equivalent age–geometry combinations before acquisition. Common elapsed
-ages are not homologous intrinsic reproductive phases. Constructed clone colonies
-are imposed ecologies, not native population-history transplants.
+The completed new calibration confirms 736/820 detected source observations,
+retains 84 unresolved, and passes all 33 controls plus every scored-recovery and
+state×treatment resolved-share gate. Ten unknown-source confirmations share one
+complete input. This new finite-context qualification does not repair the prior
+coverage failure or establish total viable population. Full independent replay
+and recorded-data figures accompany the assessment.
+
+The [protocol 012 crossed design](../protocols/012-crossed-age-geometry.md) freezes
+four elapsed ages 0, 30, 100, 120 at each of four nonsymmetric layouts for all five
+states and D/U twins: 160 worlds, 80 complete pairs. Holding layout fixed tests age;
+holding age fixed tests spatial arrangement; differences of age differences
+address interaction. Each layout includes its removed-clone site, so layout
+contrasts concern complete spatial challenges rather than pure distance. Two development layouts and two reserved layouts each use
+all ages. Reserved complete starts are checked against all development, all prior
+microcolony and all new calibration inputs, including cross-state aliases.
+Earlier observed development starts remain labeled deterministic repeats. Elapsed
+ages are not homologous reproductive phases. Constructed colonies are imposed
+ecologies, not native population-history transplants. The two panels compare
+different layout contrasts; they do not independently replicate the same geometry
+treatment.
+
+The next implementation must preserve the frozen measure, preparation and
+admission limits, validate a separately hash-bound runner and independent audit,
+then benchmark one worker before response acquisition. Keep all 800 declared source
+censuses and 81-sample registry diagnostics separately. Retention envelopes use
+exact per-condition Q_D/C_U and C_D/Q_U, averaged over eight conditions per panel,
+never pooled totals. Robust relative and absolute superiority must exceed both
+originating inputs in both panels. Overlap and unbounded endpoints leave robust
+advantage unresolved. Joint confirmation additionally requires every frozen
+calibration, exposure and challenge gate; a failed calibration allows diagnostic
+contrasts but prevents joint ecological confirmation. No crossed responses are
+acquired in this design-freeze step.
 
 H1 remains untested. Sample organisms from independently evolved populations
 and compare them with matched ancestors under a common held-out encounter

@@ -1,0 +1,179 @@
+{
+  "experiment_id": "EXP-developmental-calibration-001",
+  "complete_worlds": 20,
+  "snapshot_strata": 100,
+  "controls": {
+    "phase_confirmed": 30,
+    "phase_selected": 30,
+    "omitted_confirmed": 3,
+    "omitted_selected": 3
+  },
+  "gate_status": "passed",
+  "gate_checks": {
+    "phase_controls": true,
+    "omitted_controls": true,
+    "scored_overall": true,
+    "scored_per_state": true,
+    "resolved_share": true
+  },
+  "scored": {
+    "Q": 726,
+    "R": 73,
+    "C": 799
+  },
+  "scored_per_state": [
+    {
+      "state": "V01",
+      "Q": 175,
+      "R": 10,
+      "C": 185,
+      "passed": true
+    },
+    {
+      "state": "V02",
+      "Q": 120,
+      "R": 17,
+      "C": 137,
+      "passed": true
+    },
+    {
+      "state": "V03",
+      "Q": 145,
+      "R": 10,
+      "C": 155,
+      "passed": true
+    },
+    {
+      "state": "RV01",
+      "Q": 170,
+      "R": 25,
+      "C": 195,
+      "passed": true
+    },
+    {
+      "state": "RV02",
+      "Q": 116,
+      "R": 11,
+      "C": 127,
+      "passed": true
+    }
+  ],
+  "resolution": [
+    {
+      "state": "V01",
+      "treatment": "D",
+      "Q": 81,
+      "R": 3,
+      "C": 84,
+      "passed": true
+    },
+    {
+      "state": "V01",
+      "treatment": "U",
+      "Q": 104,
+      "R": 8,
+      "C": 112,
+      "passed": true
+    },
+    {
+      "state": "V02",
+      "treatment": "D",
+      "Q": 53,
+      "R": 8,
+      "C": 61,
+      "passed": true
+    },
+    {
+      "state": "V02",
+      "treatment": "U",
+      "Q": 67,
+      "R": 12,
+      "C": 79,
+      "passed": true
+    },
+    {
+      "state": "V03",
+      "treatment": "D",
+      "Q": 67,
+      "R": 3,
+      "C": 70,
+      "passed": true
+    },
+    {
+      "state": "V03",
+      "treatment": "U",
+      "Q": 78,
+      "R": 11,
+      "C": 89,
+      "passed": true
+    },
+    {
+      "state": "RV01",
+      "treatment": "D",
+      "Q": 75,
+      "R": 9,
+      "C": 84,
+      "passed": true
+    },
+    {
+      "state": "RV01",
+      "treatment": "U",
+      "Q": 95,
+      "R": 18,
+      "C": 113,
+      "passed": true
+    },
+    {
+      "state": "RV02",
+      "treatment": "D",
+      "Q": 53,
+      "R": 5,
+      "C": 58,
+      "passed": true
+    },
+    {
+      "state": "RV02",
+      "treatment": "U",
+      "Q": 63,
+      "R": 7,
+      "C": 70,
+      "passed": true
+    }
+  ],
+  "total": {
+    "Q": 736,
+    "R": 84,
+    "C": 820
+  },
+  "by_class": [
+    {
+      "source_class": "scored",
+      "Q": 726,
+      "R": 73,
+      "C": 799
+    },
+    {
+      "source_class": "valid_unregistered",
+      "Q": 0,
+      "R": 9,
+      "C": 9
+    },
+    {
+      "source_class": "unknown_identity",
+      "Q": 10,
+      "R": 2,
+      "C": 12
+    }
+  ],
+  "source_statuses": {
+    "confirmed": 736,
+    "unresolved_search": 74,
+    "shared_component": 10
+  },
+  "unique_searches": 240,
+  "generation_simulations": 530,
+  "source_reproduction_observations": 742,
+  "prior_coverage_gate": "failed; unchanged",
+  "benefit": "not_assayed",
+  "scope": "finite detected-source recovery; Q,R,C are not total viable population or independent histories"
+}
