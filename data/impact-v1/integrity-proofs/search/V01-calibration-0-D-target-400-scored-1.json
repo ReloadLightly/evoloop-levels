@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "search",
+  "unit": "V01-calibration-0-D-target-400-scored-1",
+  "scope": "complete bounded serial-search graph and every original-dense isolated generation",
+  "provenance": {
+    "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+    "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+    },
+    "initial_grid_or_component_hash": "40f06b9caf916b2e8821caef0208e0a683e648f21a2283494412440c1ac1c906",
+    "physical_source_sha256": {
+      "data/impact-v1/calibration/V01-calibration-0-D/result.json": "1dbaea04bda461751be413008315f312c7c9dae7aa8fd0da5327c7184fc54342",
+      "data/impact-v1/calibration/V01-calibration-0-D/source-400.npz": "00fbac28037dcdbedaa2b79403a245b7fb74b616623121e7544e3abd01a20c57",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/confirmation.json": "4410a4971ffd52f717afa82751ebdb4ac73f2d34474db1a637cb1a7f44dce19e",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/confirmation.npz": "90d90841699d508a61b87bdc9a71bcf15ea61ce0c8687a0cc83ae02736f655dd",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/node-00.json": "9720b2e85b6513a923a7eaab6c7cdfd1ef7fad8c4a69d0558fbefdf65fa3180e",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/node-00.npz": "5b7c496cb636ac483a808b0819f38e2a74390c380bcbdc4f2c01f913e8ba6591",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/node-01.json": "75bbf77da4870ecb2236c2fd5ff2eb5743ad6a1232c0be80dc6ccb389e8fedd2",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/node-01.npz": "8bf730753857f920aa4ab5103952ead1ad17d051c9ec2a67413f8fcd8164029e",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1-search/result.json": "c2546de16a673644369e7c8569296574494e2a9116c677ce62653d7832164f0a",
+      "data/impact-v1/calibration/V01-calibration-0-D/target-400-scored-1.npz": "510dbb7ffa8fa1518ca09bebcd953fd254e0a653a444749d91d0b4e7b30718af",
+      "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993"
+    }
+  },
+  "verified_counts_delta": {
+    "isolated_generation_states_replayed": 2,
+    "child_selection_states_replayed": 6,
+    "dense_isolation_updates_replayed": 5700,
+    "search_nodes_verified": 2,
+    "parent_child_edges_verified": 1,
+    "confirmations_verified": 1,
+    "search_roots_verified": 1
+  },
+  "verification_seconds": 1.1646943219966488
+}

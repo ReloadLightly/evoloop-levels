@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "search",
+  "unit": "V03-calibration-1-D-target-800-scored-1",
+  "scope": "complete bounded serial-search graph and every original-dense isolated generation",
+  "provenance": {
+    "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+    "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+    },
+    "initial_grid_or_component_hash": "f72d1695062c1156f1e363d2be95d70ee23f4e376f5e33b42553450b83a73f5b",
+    "physical_source_sha256": {
+      "data/impact-v1/calibration/V03-calibration-1-D/result.json": "7655352b31c2eeb07dcdd7207e18bc000d94973dca0d6db0bf3e87c53cc099ca",
+      "data/impact-v1/calibration/V03-calibration-1-D/source-800.npz": "cc86bced866c0dc366bc2938b8180e08fb5c9a151dd3a5baeab5ce1e47646c21",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/confirmation.json": "fe3b84431c307ce4a4f7a1799fd8eeeaedacb220799897c3046d9508f681b62c",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/confirmation.npz": "68827ac030aafc82e61508fd21e4f59e83f01f8dcf47e2e011d801d1bb4c2f14",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/node-00.json": "4c5f6c8ff05091a350f9e8eb4989888cdeec7667fa087582294f3e7cb7920719",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/node-00.npz": "516563a121d0e8687eedb38963e2302e10fbaeb219f3eebe50ae91b792d835cf",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/node-01.json": "05db34726b74a05cea697e1ec48b1a1e11201d8a542833f6a136973dece6b53c",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/node-01.npz": "c9c2279cecbe9fd548adca266fac693d8839e8108359e02ff0970a3f9284b487",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1-search/result.json": "3b541a86db7926fb7cada1d8cf63dffd57530d2e5288235ea91468a0e6eae427",
+      "data/impact-v1/calibration/V03-calibration-1-D/target-800-scored-1.npz": "ca32807e74314a36be2a03d0d7ad17b4829ff836693316eac3a0c4b08faf8b92",
+      "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993"
+    }
+  },
+  "verified_counts_delta": {
+    "isolated_generation_states_replayed": 2,
+    "child_selection_states_replayed": 6,
+    "dense_isolation_updates_replayed": 5870,
+    "search_nodes_verified": 2,
+    "parent_child_edges_verified": 1,
+    "confirmations_verified": 1,
+    "search_roots_verified": 1
+  },
+  "verification_seconds": 1.7712155639965204
+}

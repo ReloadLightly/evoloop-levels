@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "world",
+  "unit": "V01-confirmation-1-U",
+  "scope": "complete original-dense native trajectory and sampled sources",
+  "provenance": {
+    "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+    "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+    },
+    "initial_grid_or_component_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+    "physical_source_sha256": {
+      "data/impact-v1/confirmation/V01-confirmation-1-U/final.npz": "16eddbffd4ee8ef4ded219b8c8ba1f659a13f9dc8ee590c10864638ffa44060d",
+      "data/impact-v1/confirmation/V01-confirmation-1-U/result.json": "51cc1fd1af56cc03a35ce0759ffc2024ed2d39bd624e382a2189d8c8b5ff198e",
+      "data/impact-v1/initial/V01-confirmation-1-U.npz": "779a8b66b40f3de479636d09dbf57b3a390b75c8779a38bd9a426467d73ae153",
+      "data/impact-v1/phase/V01-age120.npz": "8ae89705c750612374757cc784a40178ac59f6ac5296ff2694750414e7aeccd9",
+      "data/impact-v1/prepared/V01-confirmation-1.npz": "4f493379d0c7fce75873d567b82ca459a8845a50118494c0c9a06e3ed3c38999"
+    }
+  },
+  "verified_counts_delta": {
+    "world_samples_verified": 81,
+    "full_world_trajectories_verified": 1,
+    "dense_world_updates_replayed": 1600
+  },
+  "verification_seconds": 10.851703843996802
+}

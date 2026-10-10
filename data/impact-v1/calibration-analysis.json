@@ -1,0 +1,421 @@
+{
+  "experiment_id": "EXP-impact-calibration-001",
+  "calibration_sha256": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993",
+  "gate_passed": true,
+  "gate_checks": {
+    "all_baselines": true,
+    "overall_recovery": true,
+    "each_starting_state": true,
+    "each_nonempty_stratum": true
+  },
+  "baseline_confirmed": 30,
+  "baseline_total": 30,
+  "scored_selected": 80,
+  "scored_eligible": 80,
+  "scored_confirmed": 77,
+  "scored_statuses": {
+    "confirmed": 77,
+    "unresolved_search": 3
+  },
+  "unscored_selected": 0,
+  "unscored_confirmed": 0,
+  "unscored_confirmed_identities": [],
+  "by_state": [
+    {
+      "state": "V01",
+      "selected": 16,
+      "eligible": 16,
+      "confirmed": 16
+    },
+    {
+      "state": "V02",
+      "selected": 16,
+      "eligible": 16,
+      "confirmed": 14
+    },
+    {
+      "state": "V03",
+      "selected": 16,
+      "eligible": 16,
+      "confirmed": 15
+    },
+    {
+      "state": "RV01",
+      "selected": 16,
+      "eligible": 16,
+      "confirmed": 16
+    },
+    {
+      "state": "RV02",
+      "selected": 16,
+      "eligible": 16,
+      "confirmed": 16
+    }
+  ],
+  "strata": [
+    {
+      "stratum_id": "V01-calibration-0-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-0-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-0-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-0-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 14,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-1-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-1-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-1-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V01-calibration-1-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 14,
+      "selected_cores": 2,
+      "state": "V01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-0-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-0-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-0-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-0-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 6,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-1-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-1-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 1
+    },
+    {
+      "stratum_id": "V02-calibration-1-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V02-calibration-1-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 10,
+      "selected_cores": 2,
+      "state": "V02",
+      "confirmed": 1
+    },
+    {
+      "stratum_id": "V03-calibration-0-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V03-calibration-0-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V03-calibration-0-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V03-calibration-0-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V03-calibration-1-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V03-calibration-1-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "V03-calibration-1-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 1
+    },
+    {
+      "stratum_id": "V03-calibration-1-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 13,
+      "selected_cores": 2,
+      "state": "V03",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-0-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-0-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-0-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-0-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 14,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-1-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-1-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-1-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV01-calibration-1-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 14,
+      "selected_cores": 2,
+      "state": "RV01",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-0-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-0-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-0-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-0-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-1-D-t0-scored",
+      "t": 0,
+      "scored": true,
+      "available_cores": 2,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-1-D-t400-scored",
+      "t": 400,
+      "scored": true,
+      "available_cores": 4,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-1-D-t800-scored",
+      "t": 800,
+      "scored": true,
+      "available_cores": 6,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    },
+    {
+      "stratum_id": "RV02-calibration-1-D-t1200-scored",
+      "t": 1200,
+      "scored": true,
+      "available_cores": 8,
+      "selected_cores": 2,
+      "state": "RV02",
+      "confirmed": 2
+    }
+  ],
+  "truncations": {},
+  "offspring_cap_nodes": 214,
+  "generation_simulations": 217,
+  "interpretation": "finite selected isolation recovery, not native reproduction proof; ineligible/nonconfirming cores remain unresolved"
+}

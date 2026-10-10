@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "counts": {
+    "phase_states_verified": 30,
+    "dense_phase_updates_replayed": 1900,
+    "preparations_verified": 30,
+    "dev_confirmation_equivalence_pairs_verified": 20,
+    "cross_state_equivalence_pairs_verified": 120,
+    "world_samples_verified": 4650,
+    "animation_frames_verified": 126,
+    "full_world_trajectories_verified": 50,
+    "dense_world_updates_replayed": 92000,
+    "world_proofs_reused": 30,
+    "source_frames_verified": 40,
+    "source_components_verified": 80,
+    "native_continuations_verified": 80,
+    "world_proofs_created": 20,
+    "isolated_generation_states_replayed": 217,
+    "child_selection_states_replayed": 642,
+    "dense_isolation_updates_replayed": 595490,
+    "search_nodes_verified": 217,
+    "parent_child_edges_verified": 107,
+    "confirmations_verified": 107,
+    "search_roots_verified": 110,
+    "search_proofs_created": 110,
+    "baseline_controls_verified": 30,
+    "selected_observations_verified": 80,
+    "calibration_gate_verified": 1,
+    "paired_comparisons_verified": 2
+  },
+  "scope": "all50 dense native trajectories;30 autonomous phase preparations and controls; complete component connectivity, clone placements, one-third removal, exact symmetry, selections, serial-search graphs and every generation; exact Fraction paired retention and joint endpoint. Not genetic ancestry, total viable population, or independent histories.",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+  "calibration_experiment_id": "EXP-impact-calibration-001",
+  "benefit_experiment_id": "EXP-impact-paired-001",
+  "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+  "reused_verifier_sha256": {
+    "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+    "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+  },
+  "evidence_sha256": {
+    "calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993",
+    "calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+    "benefit.json": "9ac59c8735830ed0cd0ca41527c77afcf20aaafc748125bcff2255b0bc99f26d",
+    "analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858"
+  },
+  "mismatches": 0,
+  "seconds": 345.6971619129981,
+  "peak_rss_kib": 90488
+}

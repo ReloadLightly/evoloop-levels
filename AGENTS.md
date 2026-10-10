@@ -83,3 +83,13 @@ The user authorizes commits and pushes to ReloadLightly/evoloop-levels.
 Use main unless protected. Preserve remote changes, never force-push. Verify
 remote commit. Do not send email or other messages without explicit permission.
 Delegate independent source verification or scientific/visual review when useful.
+
+For standardized impact treatments, clone complete phase components including
+arms, reject disconnected residual cells, and label constructed colonies explicitly.
+Declared elapsed ages are not automatically homologous reproductive phases.
+Verify one-third cell-state histogram and core loss before acquiring responses.
+Retention panels average exact per-condition D/U Fractions; never pool totals.
+Keep absolute disturbed advantage and all calibration/exposure/confirmation gates
+separate. D>U is a measured outcome, not an identified crowding mechanism.
+Run acquisition, independent audits, rendering, and Git packing sequentially under
+the memory guard; retain interrupted invocation logs and resume completed cases.

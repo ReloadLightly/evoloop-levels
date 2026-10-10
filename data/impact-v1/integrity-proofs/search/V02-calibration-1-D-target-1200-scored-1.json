@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "search",
+  "unit": "V02-calibration-1-D-target-1200-scored-1",
+  "scope": "complete bounded serial-search graph and every original-dense isolated generation",
+  "provenance": {
+    "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+    "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+    },
+    "initial_grid_or_component_hash": "4e1d06daae03dc80c5d3d0d64c6f50829b92cce196de92f04ba5c2d168784d07",
+    "physical_source_sha256": {
+      "data/impact-v1/calibration/V02-calibration-1-D/result.json": "62ad12961d92bba45f822134277b8e45a7604f4dfa6206f0f80791c6ab7d937b",
+      "data/impact-v1/calibration/V02-calibration-1-D/source-1200.npz": "67c81c9315515f1eff57cf14d20924cf2ac8cb419c6aa673834f427bade9802d",
+      "data/impact-v1/calibration/V02-calibration-1-D/target-1200-scored-1-search/node-00.json": "6d11ad020d066370973224fa663f4ec4d90aec0dc18718fc5058d81260a9d259",
+      "data/impact-v1/calibration/V02-calibration-1-D/target-1200-scored-1-search/node-00.npz": "69b3c504e88bb4d21ad5ce9d01ef9aaa0485168946c8925259c52d629f7f0cfc",
+      "data/impact-v1/calibration/V02-calibration-1-D/target-1200-scored-1-search/result.json": "5bf3fd4622ffe24cf8fc59af3466869c8fa6fbec16857731d5ea4171399383a0",
+      "data/impact-v1/calibration/V02-calibration-1-D/target-1200-scored-1.npz": "7a983e264fb3dcbbe8a35c31afe48a877747fcf13ff65e55fb3999cfb9eb295f",
+      "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993"
+    }
+  },
+  "verified_counts_delta": {
+    "isolated_generation_states_replayed": 1,
+    "dense_isolation_updates_replayed": 1600,
+    "search_nodes_verified": 1,
+    "search_roots_verified": 1
+  },
+  "verification_seconds": 0.3688336560007883
+}

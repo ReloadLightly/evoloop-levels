@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "world",
+  "unit": "RV02-confirmation-1-U",
+  "scope": "complete original-dense native trajectory and sampled sources",
+  "provenance": {
+    "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+    "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+    },
+    "initial_grid_or_component_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+    "physical_source_sha256": {
+      "data/impact-v1/confirmation/RV02-confirmation-1-U/final.npz": "227b72b80cceaef7edff7364289c53ceb605ffdf1b5981b715cd24b91f333039",
+      "data/impact-v1/confirmation/RV02-confirmation-1-U/replay.npz": "f534caf9a8669a7bc59255426cfa73bcf83ed0e17fd382ace4e501e34c95a8a5",
+      "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+      "data/impact-v1/initial/RV02-confirmation-1-U.npz": "91a09151f1a4ef77619848b6a053bc2f6094847c2f6d9affabc21f2e661594f3",
+      "data/impact-v1/phase/RV02-age120.npz": "ff734abf126f5a57ff0fa2d971b2c4a8e568b63d3bd9e7f0bdc74d8f8aee70dc",
+      "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420"
+    }
+  },
+  "verified_counts_delta": {
+    "world_samples_verified": 81,
+    "animation_frames_verified": 21,
+    "full_world_trajectories_verified": 1,
+    "dense_world_updates_replayed": 1600
+  },
+  "verification_seconds": 8.812233176002337
+}

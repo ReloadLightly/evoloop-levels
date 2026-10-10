@@ -217,3 +217,68 @@ figure command. Successful measured peak export RSS was 202.6 MiB. Allow at leas
 packing or other heavy jobs. The 41-page manuscript PDF used 201.3 MiB peak RSS;
 its full decoding and sampled results-table/figure pages were inspected. Renderer
 image references point to the appended figure pages; Markdown retains live links.
+
+## Nonsymmetric, impact-matched paired assay
+
+[Protocol009](../protocols/009-impact-matched-paired-assay.md) and
+[configuration](../configs/impact-v1.json) were frozen with every starting grid
+before acquiring disturbed responses. The exposure-only pilot and rejected
+preparation remain in `data/impact-exposure-v1/`; no disturbed continuation was
+used to select preparation ages or placements. The treatment constructs three
+identical complete components at declared ages and sites, then removes one.
+It does not reconstruct a native ecological history.
+
+Read `data/impact-v1/analysis.md` and the exact rational values in `analysis.json`.
+Commands use one worker. Memory guard requires300 MiB available before launch
+and terminates if available memory drops below200 MiB; the --retry option waits for headroom and resumes completed cases
+without counting them again. Timing and invocation logs are not scientific
+replicates. Run heavy verification, rendering, and Git packing sequentially.
+
+```sh
+export OPENBLAS_NUM_THREADS=1
+python -m scripts.memory_guard --retry --log data/impact-v1/execution.jsonl python -m scripts.impact_assay calibrate
+python -m scripts.analyze_impact calibration
+python -m scripts.memory_guard --retry --log data/impact-v1/execution.jsonl python -m scripts.impact_assay benefit
+python -m scripts.analyze_impact benefit
+python -m scripts.impact_contrasts
+python -m scripts.memory_guard --retry --log data/impact-v1/execution.jsonl python -m scripts.verify_impact
+python -m scripts.memory_guard --retry --reserve 240 --log data/impact-v1/execution.jsonl python -m scripts.figures_impact
+python -m scripts.memory_guard --retry --reserve 240 --log data/impact-v1/execution.jsonl python -m scripts.render_manuscript
+```
+
+For a full fresh acquisition, use a separate checkout and remove only that
+copy's `data/impact-v1`, run `python -m scripts.impact_assay freeze`, compare the
+initial/phase/prepared grid hashes with the committed manifest, then execute the
+commands above. Exposure-pilot source files remain required. Runners verify
+frozen code, rule, protocol, configuration and source hashes. Prepared source
+states and isolated search nodes are retained as compact NPZ; normal runs stream
+sampled measurements rather than retaining exhaustive frame histories. Only
+three pairs retain declared replay frames. The independent verifier reconstructs
+all phase preparation, exact clone removal, native sampled worlds, selected
+components, and isolated search generations, plus exact paired arithmetic and
+complete-state rotation/translation checks. Figure provenance records source
+hashes, run IDs and regeneration commands.
+
+The endpoint averages two exact within-condition disturbed/control ratios per
+panel. It never substitutes a pooled ratio of totals. Absolute disturbed score
+advantage is an additional requirement, not a consequence of relative retention.
+Failed calibration or repeated effective challenges leave ecological confirmation
+unknown, even when numerical score inequalities pass. All counted populations
+remain fixed-registry structural proxies, not total native viable populations.
+
+The independent audit writes small per-world/per-search proof receipts under
+`data/impact-v1/integrity-proofs/`. Each records the verifier version, complete
+physical evidence inventory and hashes, initial-state hash and verified count
+deltas. A resumed audit rehashes every source before reusing its completed proof;
+prepared states and exact analyses are rechecked on every invocation. This avoids
+restarting all completed physical replays after a memory interruption. To force
+an entirely new replay, add `--fresh` to `python -m scripts.verify_impact` (use a
+separate checkout to preserve the recorded audit). These receipts are scientific
+verification evidence, not simulation frames or independent replications.
+
+Supplementary per-condition contrasts and rejected-preparation proof regenerate
+with `python -m scripts.impact_contrasts` and
+`python -m scripts.verify_preparation_rejection`. They do not alter frozen
+classification. The latter replays the documented pre-response eligibility scan
+and retains both disconnected-cell V03 grids; it never continues a disturbed
+state or chooses configurations from response outcomes.

@@ -1,41 +1,39 @@
-# Research state — proxy criterion met; distinct ecological confirmation unresolved
+# Research state — matched depletion completed; neither recovered state meets the new criterion
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
-Current evidence: the frozen ecological-score calibration passed: all five
-verified starting-state controls reproduced; 63/68 selected scored cores recovered
-their original identity through two unchanged transmissions (92.6%). All 68 were
-extractable; five bounded searches do not confirm recovery (three isolated-grid
-extinctions and two nonempty nonreproducing outcomes). Their native continuations
-later regain the original fixed-coordinate identity, without establishing survival
-or offspring ancestry. Every nonempty scored
-stratum recovered at least one identity, and each starting-state group exceeded
-80% recovery. No unregistered/unknown cores were selected; sensitivity to those
-classes is untested. Paired worlds later contain brief unregistered valid and
-unknown cores, excluded by the frozen registry; these were absent only at the
-selected calibration source times. The score remains a fixed-registry structural population
-proxy, supported by this selected isolation calibration, not total viable population.
+Current evidence: the nonsymmetric, impact-matched assay has completed all40
+paired response worlds and ten independent calibration worlds. Each constructed
+three-clone colony loses exactly one complete component (1/3 occupied cells,
+3→2 registered cores); its undisturbed twin receives no intervention. Complete
+reserved states are distinct from development under rotation/translation.
+Preparation ages0,20,30,100,110,120 are elapsed updates, not homologous phases.
 
-All twenty frozen paired conditions completed. RV01 exceeded both originating
-inputs under the declared two-condition development mean and reserved
-confirmation mean: 3.580 vs V02 3.370 and V03 3.321. RV02 scored below both inputs:
-3.136 vs V01 3.562 and V03 3.321. Strict comparisons use exact integer totals over
-162 samples per panel; ties fail. One originating encounter meets the frozen calibrated
-proxy criterion: 1/36 main, 0/18 held-out, 1/54 overall. Sixteen other
-candidate-producing encounters remain unresolved. This is a finite conditional
-criterion yield, not an exhaustive estimate of true useful variation or independently
-confirmed ecological benefit.
+Calibration passes:77/80 selected scored cores recover their original composite
+identity through two transmissions, with30/30 phase controls. All80 selections
+are extractable; three isolated searches end in grid extinction, without proving
+native lineage extinction. Per-state counts:V01 16/16,V02 14/16,V03 15/16,
+RV01 16/16,RV02 16/16. No unscored selections occur at calibration source times.
 
-Disturbance exposure is weak: 36/40 scheduled clearings remove zero occupied
-cells; four remove 18 cells each. Development and confirmation conditions repeat the
-same effective challenges under rotation and small centering offsets: their complete
-initial/final grids and sampled counts agree after the transform. The four effective
-clearings also transform equivalently; remaining clears are no-ops. Consequently,
-meeting both nominal panels supplies no distinct confirmation challenge. The frozen
-proxy comparison is completed, but independent ecological benefit confirmation and
-recovery from meaningful damage remain unresolved. RV01's composite identity matches the
-known V01 identity, but their full prepared snapshots differ. H1/H3 are untested;
-RSI is unestablished. Independent full-world and isolated-state replay passed with zero mismatches.
+Neither recovered state satisfies the new strict both-input/both-panel relative
+retention or absolute disturbed-population criterion. Joint confirmed count0/36
+main,0/18 held-out,0/54 overall is conditional on this assay;16 other candidate
+encounters retain unresolved inheritance. RV01 exceeds V02 on one development
+configuration but falls below it on the other, with age and geometry confounded.
+Its panel retention is0.7442 development/0.6409 confirmation. RV02 retention
+is0.6772/0.6855; higher confirmation retention than V01 alone accompanies lower
+absolute disturbed population. Neither finding measures increased evolvability.
+
+The registry omits valid/unknown cores in paired worlds, including V02's
+development-1 control mean0.852 unregistered valid cores. Their viability is
+untested; the score measures recognized structural population, not total viable
+population. H1/H3 remain untested and RSI unestablished. Independent preparation
+and exact arithmetic checks pass; full native and isolation replay passed with zero mismatches.
+
+The earlier frozen ecological1 proxy flag remains1/54, with distinct ecological
+confirmation unresolved because36/40 clears were empty and nominal confirmation
+repeated development. The new assay changes preparation, effective exposure,
+controls and criterion; it does not retrospectively rewrite that result.
 
 Prospective freeze: protocol 007, configs/ecological-v1.json and all source hashes
 were committed and remotely verified at 5677f0d before acquisition. Four focused
@@ -102,11 +100,13 @@ integrity.json; figures/fate-{calibration-matrix,native-trajectories,raw-compari
 Protocols: 000 scientific contract; 001 frozen atlas; 002 postfreeze identity
 reporting audit; 003 exploratory lineage follow-up; 004 prospective calibration.
 
-Single next action: an impact-matched paired disturbance assay with undisturbed
-controls, testing both recovered identities against both originating inputs.
-Prospectively calibrate damage exposure and exclude symmetry-equivalent effective
-trajectories when reserving genuinely distinct test conditions. See docs/next-experiment.md. This addresses the current assay's
-mostly empty clearing blocks before expanding the encounter atlas.
+Single next action: prospectively calibrate score coverage for valid/unknown
+cores omitted in the paired worlds, using native continuation, fixed maturation
+delays and isolation alongside scored-core/verified-phase controls. Retain all
+five representative D/U states, preserve unknown/shared/unextractable fates,
+and do not expand the frozen registry retrospectively. Afterwards, fully cross
+ages and nonsymmetric geometries to separate their condition effects. See
+[the plan](docs/next-experiment.md).
 
 ## Fresh input discovery and completed atlas
 
@@ -233,3 +233,35 @@ headroom and rerun; scientific data were unchanged. Final working PDF: 41 pages,
 22.7 seconds, peak RSS 201.3 MiB. Complete Ghostscript decoding and inspected
 results-table/figure pages pass. Review details: docs/visual_review.md and
 docs/scientific_review.md. Source Markdown remains authoritative.
+
+## Verified impact-matched evidence; publication exports pending
+
+Protocol009/configs/impact-v1.json and all50 native starting grids were pushed
+and verified at ea49ea02b21c517ad4f3ab5dcb6bb9b21910ade3 before responses.
+Exposure-only pilot EXP-impact-exposure-001 completes in17.874s at64.3MiB peak
+RSS: eligible native3-core phases6/30, insufficient common offsets. A subsequent
+constructed preparation rejects V03 ages40/80 because one occupied cell is
+outside its single-core component; no cell discarded or disturbed future acquired.
+The failed proposal and partial grids remain in microcolony-attempt-01.
+
+Final standardized colonies retain allfive complete representatives, advanced
+at elapsed ages0,20,30,100,110,120, not homologous reproductive-cycle phases.
+Thirty preparation conditions contain3 identical complete components; deleting
+one removes exactly1/3 occupied cells and registered cores. All20 within-state
+development×confirmation before/after state comparisons are inequivalent under
+rotation/translation; no same-condition cross-state aliases. Independent
+preparation reconstruction passes in3.86s. Four focused impact/ratio/equivalence
+tests pass. Thirty phase controls, ten new depleted calibration worlds and forty
+paired response worlds completed. Calibration uses217 generation simulations;
+214 nodes reach the three-offspring cap, with no depth/simulation-limit truncation.
+Independent audit passes all50 native trajectories (92,000 updates),4650 full
+sample records,80 extracted source components/native windows,30 phase controls,
+217 isolated generations,642 child-selection states and126 replay grids. Exact
+Fraction arithmetic/gate/symmetry matches. Per-unit proof receipts cover160 units,
+653.3s cumulative completed verification; final resumed invocation345.7s,88.4MiB
+peak RSS. Unique native acquisition sum686.1s. Calibration/paired final invocations
+peak67.8/62.7MiB respectively; invocation timings omit completed work resumed
+from prior attempts. Execution.jsonl preserves all memory interruptions/waits.
+
+Figures and updated manuscript source are ready for export; PDF/rendered review
+pending at this dataset milestone.

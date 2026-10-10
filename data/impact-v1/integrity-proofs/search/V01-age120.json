@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "mismatches": 0,
+  "kind": "search",
+  "unit": "V01-age120",
+  "scope": "complete bounded serial-search graph and every original-dense isolated generation",
+  "provenance": {
+    "auditor_sha256": "8f6f54a61655d51dc8aacceb0a1f8a81f6bf84d6dda5d360f04fcf12c2bec7fb",
+    "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "reused_verifier_sha256": {
+      "scripts/verify_ecological.py": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+      "scripts/verify_fresh.py": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593"
+    },
+    "initial_grid_or_component_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+    "physical_source_sha256": {
+      "data/impact-v1/calibration/baseline/V01-age120/confirmation.json": "92eee92186368f0ec00bd0ba51a96d588e54f7fad293c94aec3723878d05f3bf",
+      "data/impact-v1/calibration/baseline/V01-age120/confirmation.npz": "a656dd4561b1dcb204cbb1d9077361f44a0510c71eed77579622fe56592026c7",
+      "data/impact-v1/calibration/baseline/V01-age120/node-00.json": "00d83cdab9a62fa9f422de1dd945e4969d9af7e2a139e72d416469296d7f7198",
+      "data/impact-v1/calibration/baseline/V01-age120/node-00.npz": "4813d05a1b96c47399d922e75e61c645ce8f62a12a6b96dcef94324221804353",
+      "data/impact-v1/calibration/baseline/V01-age120/node-01.json": "2ee47b5edfe1d10f314c4292c67240e57f7256d225e1f8a7e01a588aa3abd039",
+      "data/impact-v1/calibration/baseline/V01-age120/node-01.npz": "f9edd82522b1677a14cfbcfc43141f59930798c7cffb58294fc70615bdcd0e61",
+      "data/impact-v1/calibration/baseline/V01-age120/result.json": "74d505bce78bb3c456f44daeee7dd376ba15ec6190432bcf28ffcb3aa6b4dfa1",
+      "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993",
+      "data/impact-v1/phase/V01-age120.npz": "8ae89705c750612374757cc784a40178ac59f6ac5296ff2694750414e7aeccd9"
+    }
+  },
+  "verified_counts_delta": {
+    "isolated_generation_states_replayed": 2,
+    "child_selection_states_replayed": 6,
+    "dense_isolation_updates_replayed": 5140,
+    "search_nodes_verified": 2,
+    "parent_child_edges_verified": 1,
+    "confirmations_verified": 1,
+    "search_roots_verified": 1
+  },
+  "verification_seconds": 1.0903566950000823
+}

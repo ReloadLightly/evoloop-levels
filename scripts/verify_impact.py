@@ -25,6 +25,46 @@ from scripts.verify_ecological import (graph, isolated, measured, native_window,
                                        read, require, same, sha)
 
 OUT = ROOT/'data/impact-v1'
+FRESH = False
+
+
+def proof_sources(paths):
+    """Hash actual evidence inventory and bytes; receipts never supply data."""
+    files = set()
+    for path in paths:
+        require(path.exists(), f'proof source missing: {path}')
+        files.update(p for p in path.rglob('*') if p.is_file()) if path.is_dir() else files.add(path)
+    return {str(p.relative_to(ROOT)): sha(p) for p in sorted(files)}
+
+
+def proven(kind, name, paths, initial_hash, counts, operation):
+    """Reviewable atomic proof receipts; invalidate on any source/code change."""
+    evidence = proof_sources(paths)
+    provenance = {'auditor_sha256': sha(Path(__file__)), 'manifest_sha256': sha(OUT/'manifest.json'),
+        'reused_verifier_sha256': {p: sha(ROOT/p) for p in ('scripts/verify_ecological.py', 'scripts/verify_fresh.py')},
+        'initial_grid_or_component_hash': initial_hash, 'physical_source_sha256': evidence}
+    destination = OUT/'integrity-proofs'/kind/f'{name}.json'
+    if destination.exists() and not FRESH:
+        receipt = read(destination)
+        if receipt.get('status') == 'passed' and receipt.get('provenance') == provenance:
+            delta = receipt['verified_counts_delta']
+            require(all(isinstance(v, int) and v >= 0 for v in delta.values()), 'invalid proof counts')
+            counts.update(delta); counts[f'{kind}_proofs_reused'] += 1
+            print('reused checked proof', kind, name, flush=True)
+            return
+    before = counts.copy(); start = time.perf_counter(); operation()
+    # Rehash after verification: an acquisition writer or changed source must
+    # not leave a valid receipt linking the proof to different evidence bytes.
+    require(proof_sources(paths) == evidence, f'{kind}/{name}: evidence changed while verifying')
+    delta = {k: counts[k]-before[k] for k in counts if counts[k] != before[k]}
+    require(all(v >= 0 for v in delta.values()), 'proof count regression')
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    temporary = destination.with_suffix('.json.tmp')
+    write_json(temporary, {'status': 'passed', 'mismatches': 0, 'kind': kind, 'unit': name,
+        'scope': 'complete original-dense native trajectory and sampled sources' if kind == 'world' else
+                 'complete bounded serial-search graph and every original-dense isolated generation',
+        'provenance': provenance, 'verified_counts_delta': delta, 'verification_seconds': time.perf_counter()-start})
+    temporary.replace(destination); counts[f'{kind}_proofs_created'] += 1
 
 
 def components(grid):
@@ -328,13 +368,22 @@ def audit(report):
         'auditor_sha256': sha(Path(__file__)), 'reused_verifier_sha256': {p: sha(ROOT/p) for p in ('scripts/verify_ecological.py', 'scripts/verify_fresh.py')},
         'evidence_sha256': {p: sha(OUT/p) for p in ('calibration.json', 'calibration-analysis.json', 'benefit.json', 'analysis.json')}})
     patches, prepared = preparations(m, counts)
-    results = {r['run_id']: world(r, m, prepared, counts) for r in m['runs']}
+    results = {}
+    for r in m['runs']:
+        folder = OUT/r['split']/r['run_id']
+        proven('world', r['run_id'], [folder, OUT/'initial'/f'{r["run_id"]}.npz',
+            OUT/'prepared'/f'{r["pair_id"]}.npz', OUT/'phase'/f'{r["phase"]}.npz'], r['initial_hash'], counts,
+            lambda r=r: world(r, m, prepared, counts))
+        # Always use rehashed actual results, never duplicated receipt payloads.
+        results[r['run_id']] = read(folder/'result.json')
     calibration = read(OUT/'calibration.json')
     require(calibration['experiment_id'] == m['calibration_experiment_id'] and len(calibration['baselines']) == 30, 'calibration and30 control inventory')
     for phase, base in zip(m['phases'], calibration['baselines']):
         require({k: base[k] for k in phase} == phase, 'phase-to-positive-control linkage')
         folder = OUT/'calibration'/'baseline'/phase['name']; require(OUT/base['folder'] == folder, 'positive control folder')
-        graph(base['outcome'], folder, patches[phase['name']], m['states'][phase['state']]['identity'], True, cfg['search'], counts)
+        proven('search', phase['name'], [folder, OUT/'phase'/f'{phase["name"]}.npz', OUT/'calibration.json'],
+            phase['snapshot_hash'], counts, lambda base=base, folder=folder, phase=phase:
+            graph(base['outcome'], folder, patches[phase['name']], m['states'][phase['state']]['identity'], True, cfg['search'], counts))
         counts['baseline_controls_verified'] += 1
     expected = [(r, target) for r in m['runs'] if r['split'] == 'calibration' for target in results[r['run_id']]['targets']]
     require(len(expected) == len(calibration['observations']), 'selected-root inventory')
@@ -343,8 +392,13 @@ def audit(report):
         folder = OUT/'calibration'/spec['run_id']
         if target['extraction_status'] == 'eligible':
             require(observation['outcome'] is not None and OUT/observation['folder'] == folder/f'{target["target_id"]}-search', 'eligible source search')
-            with np.load(folder/target['snapshot_file'], allow_pickle=False) as data:
-                graph(observation['outcome'], OUT/observation['folder'], data['snapshot'].copy(), target['identity'], target['scored'], cfg['search'], counts)
+            snapshot_file = folder/target['snapshot_file']
+            with np.load(snapshot_file, allow_pickle=False) as data:
+                snapshot = data['snapshot'].copy()
+            proven('search', f'{spec["run_id"]}-{target["target_id"]}',
+                [OUT/observation['folder'], snapshot_file, folder/f'source-{target["t"]}.npz', folder/'result.json', OUT/'calibration.json'],
+                target['snapshot_hash'], counts, lambda observation=observation, snapshot=snapshot, target=target:
+                graph(observation['outcome'], OUT/observation['folder'], snapshot, target['identity'], target['scored'], cfg['search'], counts))
         else:
             require(observation['outcome'] is None and observation['folder'] is None, 'ineligible source missing outcome retained')
             counts['ineligible_observations_verified'] += 1
@@ -354,9 +408,12 @@ def audit(report):
 
 
 def main():
+    global FRESH
     parser = argparse.ArgumentParser()
     parser.add_argument('--preparations-only', action='store_true', help='replay phases and exposure only, before responses')
+    parser.add_argument('--fresh', action='store_true', help='ignore existing proof receipts and replay every unit')
     args = parser.parse_args()
+    FRESH = args.fresh
     start = time.perf_counter(); report = {'status': 'running', 'counts': Counter(),
         'scope': 'all50 dense native trajectories;30 autonomous phase preparations and controls; complete component connectivity, clone placements, one-third removal, exact symmetry, selections, serial-search graphs and every generation; exact Fraction paired retention and joint endpoint. Not genetic ancestry, total viable population, or independent histories.'}
     destination = OUT/('preparation-integrity.json' if args.preparations_only else 'integrity.json')
