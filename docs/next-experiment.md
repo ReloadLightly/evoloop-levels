@@ -1,59 +1,68 @@
-# Next scientific action: test ecological value of confirmed inherited outcomes
+# Next scientific action: distinguish baseline growth from response to actual depletion
 
-EXP-atlas-002 completed 144 frozen states. Pair-relative inherited novelty was
-recovered in 2/36 main and 0/18 held-out encounters. One stable 14×14 word differs
-from all three catalogue inputs; the other stable 12×12 identity exactly matches
-V01 and differs from its originating V02/V03 pair. Eight successful extraction
-roots converge on these two identities from two configurations. They supply
-assay inputs, not eight independent variants. Parentage remains pair-level
-ambiguous. The original atlas and calibration retain their negative outcomes.
+EXP-atlas-002 recovered pair-relative inherited novelty in 2/36 main and 0/18
+held-out encounters. One stable 14×14 word differs from all three catalogue
+inputs; the other stable 12×12 identity recovers V01 and differs from its
+originating V02/V03 pair. Eight successful extraction roots converge on these
+two identities from two configurations, rather than eight independent variants.
+Parentage remains pair-level ambiguous. The original atlas and delayed-extraction
+calibration retain their negative outcomes.
 
-The single most informative next experiment is ecological-score calibration
-followed by the already frozen paired benefit assay. No benefit assay has run;
-beneficial-heritable yield is unknown. This step connects demonstrated stable
-transmission to a specified ecological consequence before expanding claims
-about adaptive capacity.
+The ecological calibration and frozen paired assay are now complete. Original
+identity is recovered from 63/68 selected scored components and all five baseline
+controls, passing the frozen gate. All 20 paired conditions run. RV01, the known
+V01 recovery, exceeds both V02 and V03 under the frozen finite population-score
+criterion; RV02, the catalogue-novel identity, does not exceed V01/V03. Formal
+proxy-criterion yield is 1/36 main, 0/18 held out, and 1/54 overall. Sixteen other
+candidate-producing encounters remain unresolved. No unscored components are
+selected in calibration, leaving coverage of viable unregistered identities
+untested.
 
-First declare and freeze the viability-calibration procedure, sample selection,
-horizon, and pass criterion before collecting its observations. The frozen
-score counts intact closed cores of isolation-verified identities; identity
-verification does not establish that each counted core is viable. Compare
-sampled complete components with subsequent reproduction under the stated
-environment, retain shared/ineligible and censored cases, and assess whether
-score changes reflect viable population rather than doomed bodies or detector
-coverage. If the score fails calibration, report that result and retain benefit
-as pending; any revised score needs a separately versioned prospective assay.
-Do not alter the metric after seeing which variant performs best.
+Independent ecological benefit confirmation remains unresolved. Of 40 scheduled
+clearings, 36 remove no occupied cells; four remove 18 cells each without reducing
+the immediate registered-core count. Reserved confirmation trajectories are
+rotation duplicates of development, including the effective removals. There is
+no distinct confirmation challenge and no paired undisturbed control. These
+limitations prevent interpreting the result as recolonization after population
+depletion or general ecological superiority. Preserve the frozen classification
+and its audit rather than changing its endpoint retrospectively.
 
-Then use one declared complete verified snapshot per confirmed stable identity
-and execute every frozen condition, without selecting a winner first. Compare
-the 14×14 identity with V01 and V03; compare the recovered V01 identity with V02
-and V03. Serial isolation is an imposed preparation and transmission assay,
-not proof of native ecological ancestry. Preserve exact starting grids and
-condition pairing. Additional roots that converge on identical states are
-reproducibility checks rather than independent ecological observations.
-The recovered V01 identity has a different complete detached snapshot from the
-panel's V01 representative. Identity equality does not imply complete-state
-equality: preserve snapshot hashes and preparation phases, and interpret the
-assay as a comparison of declared organism states rather than signal words alone.
+The single most informative next experiment is a prospectively frozen,
+nonsymmetric impact-matched disturbance assay with paired undisturbed controls.
+Retain both inherited states and both originating inputs: RV01 versus V02/V03,
+and RV02 versus V01/V03. Do not select only the higher-scoring state. Before
+outcome acquisition, declare multiple reproductive phases or matched complete-state
+preparations, disturbance times, targeting policy, intended depletion, horizon,
+score, calibration gate, and strict paired criterion. RV01 and V01 share an
+identity but have different complete snapshots; preserve arms, exact starting
+grids, hashes, and phase information. Assessing declared complete states is a
+necessary first step toward separating inherited-word effects from preparation.
 
-The assay in configs/atlas-v2.json specifies 192×192 periodic arenas, 1,600 updates,
-24×24 block removals at 600 and 1,000, and sampling every 20 updates. Development
-conditions use rotations 0/1 and blocks at (40,40)/(128,128); reserved confirmation
-conditions use rotations 2/3 and blocks at (40,128)/(128,40). Within each condition,
-the candidate and both inputs receive the same schedule. The frozen criterion
-requires the candidate's mean population score to exceed each input's mean in
-both development and confirmation panels. This captures persistence and
-recolonization under those disturbances. It is conditional on the score,
-conditions, and horizon; neither population increase nor assay advantage alone
-demonstrates evolution of the capacity for further adaptive change or RSI.
+Calibrate exposure prospectively using a declared procedure that verifies removal
+of its intended occupied structures or counted cores. Record absolute and
+fractional occupied-cell and core removal, retaining ineffective exposures in the
+denominator. An impact-matched policy may target state-dependent locations; if
+used, label that policy as an intervention and preserve the actual masks. A common
+fixed block location and a common depletion policy answer different comparisons.
+Pair each disturbed initial state with its undisturbed continuation, so changes
+in baseline multiplication can be separated from disturbance response. Repeat
+recovery calibration in the new depleted ecologies; the present registry gate
+does not automatically transfer.
 
-Report pair-relative beneficial-heritable yield using all 54 encounter
-configurations, with main/held-out denominators separately. Keep known-word
-recovery distinct from catalogue-relative novelty. Preserve pending calibration,
-benefit, and unexamined candidates explicitly. The new atlas's higher inherited
-yield is not a controlled panel-enrichment effect: organism inputs, domain size,
-screening, periodic measurement, and descendant search also changed.
+Reserve genuinely distinct confirmation phases and geometries. Check complete
+states and effective intervention masks for rotational or translational equivalence
+before outcome acquisition. Use distinct asymmetric challenges rather than
+rotating the world and its disturbances together. Deterministic assessment
+conditions remain finite panel members, not independent population histories;
+repeated identical states are replay checks. Report all candidate and input
+comparisons, actual exposure, unresolved recovery, and the pair-relative versus
+catalogue-relative novelty distinction. Ordinary growth, recovery, or assay
+advantage alone does not demonstrate evolution of the capacity for further
+adaptive change or recursive self-improvement.
+
+The new atlas's higher inherited yield is not a controlled panel-enrichment
+effect: organism inputs, domain size, native screening, periodic measurement,
+and descendant search changed. Maintain separate experimental endpoints.
 
 H1 remains untested. Sample organisms from independently evolved populations
 and compare them with matched ancestors under a common held-out encounter

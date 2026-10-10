@@ -351,3 +351,78 @@ The final 31-page working PDF passes Ghostscript decoding. Rendered checks of
 the opening page, fresh-results page, outcome matrix, and inheritance-path page
 show readable text and figures. The renderer keeps short results tables intact
 with their headers; the calibration and fresh-atlas tables fit the page width.
+
+## Ecological calibration and frozen proxy criterion
+
+Reviewed all six `eco1-` static PNG exports and representative decoded frames
+of all three WebPs for `EXP-ecological-calibration-001` and `EXP-benefit-001`.
+The 21 new exports preserve the earlier 66 manifest entries. SVG/PDF/PNG use
+canonical Midnight Blue, the shared quantitative scale, and the fixed literal
+nine-state palette. Wrapped gate-card and evidence-category labels resolve
+the initially crowded text; score annotations now separate prominent means
+from smaller occupied-cell removal counts. Final titles, axes, colorbars,
+footers, legends, and status cards are readable without clipping or overlap.
+
+Calibration plots match all 68 selected scored observations, including the five
+unresolved recoveries: 68/68 extractable, 63/68 original-identity recoveries,
+and 5/5 baseline recoveries. State-specific fractions and all 40 scored strata
+retain their declared denominators. Thresholds are shown explicitly: 90%
+overall, 80% per prepared state, all five baselines, and at least one recovery
+per nonempty scored stratum. The legend and captions distinguish extraction
+eligibility from bounded serial-isolation recovery and native viability.
+Empty strata have an explicit missing/empty encoding in the script; none occurred
+in this completed batch. No confidence intervals suggest independent sampled
+populations.
+
+The 5×4 score matrix and paired margins agree with completed analysis. RV01
+exceeds V02 and V03 by 0.210 and 0.259 registered cores in each pooled panel;
+RV02 falls below V01 and V03 by 0.426 and 0.185. These are means of fixed-
+registry recognized closed-core counts, not a total viable-population census.
+V01 and RV01 share one identity while retaining distinct prepared snapshots.
+All 20 score cells display actual removals at t=600 and 1000. Across 40 clearings,
+36 remove zero occupied cells; four remove 18 cells, and zero immediately change
+registered core counts. The plots explicitly reject a disturbance-resilience
+interpretation.
+
+The independently recorded symmetry audit is included among hashed sources.
+Development and nominal confirmation means are identical because the complete
+states and effective interventions repeat under rotational symmetry (with
+centering translations where needed). Cards therefore say FROZEN CRITERION MET,
+not independently confirmed benefit. Independent exposure confirmation remains
+unresolved. The current evidence figure shares one 54-encounter denominator:
+18 candidate-producing encounters, two confirmed isolated inheritance
+encounters, one inherited identity absent from the input catalogue, and one
+meeting the frozen calibrated-proxy criterion. It separates these last two
+endpoints: RV01 recovers known V01 and meets the frozen criterion; RV02 is absent
+from the input catalogue and does not meet it. The 16 other candidate encounters
+remain visibly unresolved, rather than appearing as confirmed failures in a
+funnel. Earlier atlas figures record the earlier benefit-pending checkpoint.
+H1/H3 and RSI remain untested or unestablished.
+
+The full-domain disturbance figure uses the prospectively declared development-0
+V01/RV01/RV02 cases. All six depicted clearings remove zero occupied cells; this
+fact is explicit in its caption and each row's annotation. Before and after
+have the same update time, separated only by the imposed clearing. The dashed
+24×24 block is an intervention overlay, distinct from literal cells and any
+lineage encoding. World extents are 192×192 with row/column cell coordinates.
+All 75 displayed WebP frames (25 per case) match their raw NPZ frames or declared
+pre-clear snapshots pixel-for-pixel at exactly two nearest-neighbor pixels per
+cell. Before/after ordering and duplicate clock times match manifest stages.
+The animations retain full worlds, labeled update times, periodic geometry,
+10-cell scales, state legends, and zero-impact annotations.
+
+All 87 artifact checksums and every declared figure source checksum match.
+Sources include final calibration/benefit analysis, the frozen manifest, all
+20 result files for disturbance summaries, actual disturbance/replay arrays,
+input catalogue evidence, and the symmetry audit as appropriate. Every new
+artifact records experiment IDs and `python -m scripts.figures_ecological`
+regeneration instructions. Normal evidence remains compact sampled grids.
+
+Sequential rendering used one process per group, approximately 35 seconds in
+total, with maximum observed RSS 202.6 MiB and minimum sampled available memory
+300.6 MiB on the successful batch. An earlier guard stopped an evidence attempt
+when concurrent repository packing reduced available memory to 184.9 MiB;
+that aborted attempt changed no scientific data and was superseded by complete
+exports after packing ended. No critical scientific or presentation issue
+remains in the reviewed final ecological exports. The independent-challenge
+limitation is a finding, not a rendering defect.

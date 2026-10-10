@@ -36,6 +36,17 @@ remain unresolved. Native matching-word appearance is structural evidence,
 not inherited offspring. Keep positive-control recovery and candidate novelty
 as separate endpoints, and retain ineligible delays in the denominator.
 
+For ecological scores, distinguish fixed-registry core counts from total viable
+population. Freeze registry, recovery gate, prepared states, and comparison
+criteria before acquisition. Compare both recovered identities against both
+originating inputs; preserve exact integer totals so ties fail. Record actual
+occupied-cell removal and population impact, including no-op interventions.
+Check effective challenge equivalence under rotation/translation before treating
+reserved conditions as new confirmation. A frozen numerical criterion can be
+met while distinct ecological confirmation remains unresolved; retain both
+facts without rewriting frozen outcomes. Use paired undisturbed controls and
+declared preparation phases to separate baseline multiplication from recovery.
+
 Update README, RESEARCH_STATE, manuscript, and figures after scientific batches.
 Write README and manuscript for a researcher encountering the work for the
 first time. Develop the scientific argument: explain the phenomenon and prior

@@ -1638,6 +1638,1110 @@
         29
       ],
       "cell_coordinate_origin": "complete component top-left before padding"
+    },
+    {
+      "file": "eco1-calibration-recovery-dark.svg",
+      "experiments": [
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "9ea0e176ca6deca96601d21cd53e97b31a303cafc1b6e8a868b3d033771c26bf",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "gate_thresholds": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 5,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      },
+      "gate_passed": true
+    },
+    {
+      "file": "eco1-calibration-recovery-dark.pdf",
+      "experiments": [
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "64867724bca84f7cfe9230437f18f6b522d68d867c3a74157a4655da92f98b05",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "gate_thresholds": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 5,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      },
+      "gate_passed": true
+    },
+    {
+      "file": "eco1-calibration-recovery-dark.png",
+      "experiments": [
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "330415923ca6db78baf874611b5cde17f9b927718bf3d6300fd20205ce529cbc",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "gate_thresholds": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 5,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      },
+      "gate_passed": true
+    },
+    {
+      "file": "eco1-calibration-strata-dark.svg",
+      "experiments": [
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "67b5b90f22caf606b8b8fbb21b3afbcb0303f255b20f68f75d12c99c43fa6fe4",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "columns": [
+        [
+          "cal-a",
+          400
+        ],
+        [
+          "cal-a",
+          620
+        ],
+        [
+          "cal-a",
+          1020
+        ],
+        [
+          "cal-a",
+          1400
+        ],
+        [
+          "cal-b",
+          400
+        ],
+        [
+          "cal-b",
+          620
+        ],
+        [
+          "cal-b",
+          1020
+        ],
+        [
+          "cal-b",
+          1400
+        ]
+      ],
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "denominator": "selected scored cores per stratum"
+    },
+    {
+      "file": "eco1-calibration-strata-dark.pdf",
+      "experiments": [
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "37758bc380a5b8e61fc78db6689db72dbbd24d19ff29f6326ef21eba1f09545d",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "columns": [
+        [
+          "cal-a",
+          400
+        ],
+        [
+          "cal-a",
+          620
+        ],
+        [
+          "cal-a",
+          1020
+        ],
+        [
+          "cal-a",
+          1400
+        ],
+        [
+          "cal-b",
+          400
+        ],
+        [
+          "cal-b",
+          620
+        ],
+        [
+          "cal-b",
+          1020
+        ],
+        [
+          "cal-b",
+          1400
+        ]
+      ],
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "denominator": "selected scored cores per stratum"
+    },
+    {
+      "file": "eco1-calibration-strata-dark.png",
+      "experiments": [
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "0b5be566a979e610d411d49f23badcf44a8c2b53cb9860f0aa062eef2abb5e11",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "columns": [
+        [
+          "cal-a",
+          400
+        ],
+        [
+          "cal-a",
+          620
+        ],
+        [
+          "cal-a",
+          1020
+        ],
+        [
+          "cal-a",
+          1400
+        ],
+        [
+          "cal-b",
+          400
+        ],
+        [
+          "cal-b",
+          620
+        ],
+        [
+          "cal-b",
+          1020
+        ],
+        [
+          "cal-b",
+          1400
+        ]
+      ],
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "denominator": "selected scored cores per stratum"
+    },
+    {
+      "file": "eco1-score-matrix-dark.svg",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "d34e4188f69a3ef695e6d404cdf1687dee96a97d43ec984b0a3afed0edc0fc8a",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "conditions": [
+        "development-0",
+        "development-1",
+        "confirmation-0",
+        "confirmation-1"
+      ],
+      "sample_count_per_condition": 81,
+      "metric": "mean fixed-registry recognized closed-core count; structural proxy",
+      "disturbance_impact": "36/40 clearings removed zero occupied cells; 0/40 immediately changed registered core counts.",
+      "identical_panel_means": true
+    },
+    {
+      "file": "eco1-score-matrix-dark.pdf",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "63d92ebab693fb0dc44cff23dc5e16c6900f56239d196fbedbc8f0359a08de98",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "conditions": [
+        "development-0",
+        "development-1",
+        "confirmation-0",
+        "confirmation-1"
+      ],
+      "sample_count_per_condition": 81,
+      "metric": "mean fixed-registry recognized closed-core count; structural proxy",
+      "disturbance_impact": "36/40 clearings removed zero occupied cells; 0/40 immediately changed registered core counts.",
+      "identical_panel_means": true
+    },
+    {
+      "file": "eco1-score-matrix-dark.png",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "286424d13c86ee2f443bf082fecdf551deb573e5f8c980ccedc39760fcd8c40d",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "conditions": [
+        "development-0",
+        "development-1",
+        "confirmation-0",
+        "confirmation-1"
+      ],
+      "sample_count_per_condition": 81,
+      "metric": "mean fixed-registry recognized closed-core count; structural proxy",
+      "disturbance_impact": "36/40 clearings removed zero occupied cells; 0/40 immediately changed registered core counts.",
+      "identical_panel_means": true
+    },
+    {
+      "file": "eco1-paired-margins-dark.svg",
+      "experiments": [
+        "EXP-benefit-001",
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "0e0168790e627ef5a0901cfff385b0b520b5200394f557f8424c7bd4249e69c8",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "candidate_pairs": [
+        {
+          "candidate": "RV01",
+          "inputs": [
+            "V02",
+            "V03"
+          ]
+        },
+        {
+          "candidate": "RV02",
+          "inputs": [
+            "V01",
+            "V03"
+          ]
+        }
+      ],
+      "gate_passed": true,
+      "metric": "candidate minus each input mean fixed-registry core score; paired condition panels"
+    },
+    {
+      "file": "eco1-paired-margins-dark.pdf",
+      "experiments": [
+        "EXP-benefit-001",
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "e3211bbadc2c1832489bf3aed0c7d3f2a888ea046bdd5c103642ba05af138923",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "candidate_pairs": [
+        {
+          "candidate": "RV01",
+          "inputs": [
+            "V02",
+            "V03"
+          ]
+        },
+        {
+          "candidate": "RV02",
+          "inputs": [
+            "V01",
+            "V03"
+          ]
+        }
+      ],
+      "gate_passed": true,
+      "metric": "candidate minus each input mean fixed-registry core score; paired condition panels"
+    },
+    {
+      "file": "eco1-paired-margins-dark.png",
+      "experiments": [
+        "EXP-benefit-001",
+        "EXP-ecological-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "2a9950f62a4e97fb1d38d68cb13f62290dac5a908fe76754d6e6db004b654678",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "candidate_pairs": [
+        {
+          "candidate": "RV01",
+          "inputs": [
+            "V02",
+            "V03"
+          ]
+        },
+        {
+          "candidate": "RV02",
+          "inputs": [
+            "V01",
+            "V03"
+          ]
+        }
+      ],
+      "gate_passed": true,
+      "metric": "candidate minus each input mean fixed-registry core score; paired condition panels"
+    },
+    {
+      "file": "eco1-disturbance-states-dark.svg",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "513d2d2c9cdbe4cb963da2231508b469d98eab0a5788b44d105cf649db9bf7bc",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-1000.npz": "be25ad295ad997e1c4307c824b94c6103a6a26c7fae25a49da8859b74025957e",
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-600.npz": "fd22e0812474c6cd1b338c3ad3b15b5d31aa7f24005bce1e44615125cc3c244d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-1000.npz": "ca82f2a4076c3edbb94c7f90a28c0c9496d87b46f45f027e71b6011ee33e562e",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-600.npz": "79fe905641a291c5363b61b6c99d6c0a76722d69f436fc3c62e92853cbcef065",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-1000.npz": "3fcf7ed1327b272b03a1ab21b2f2ff56e9b1b8f5e0809e4e7b897711efac1f14",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-600.npz": "3b495a43d7d6d50ed6ed219196ca65742887001e99d3b09e6273ab7ad566c269",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "cases": [
+        {
+          "state": "V01",
+          "run_id": "development-V01-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        },
+        {
+          "state": "RV01",
+          "run_id": "development-RV01-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        },
+        {
+          "state": "RV02",
+          "run_id": "development-RV02-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        }
+      ],
+      "selection": "predeclared development-0 states V01, RV01, RV02"
+    },
+    {
+      "file": "eco1-disturbance-states-dark.pdf",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "b6f44626a09599c5dd1b4dd6557172c80bc2ee762579638a2a847608b4ecf0f5",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-1000.npz": "be25ad295ad997e1c4307c824b94c6103a6a26c7fae25a49da8859b74025957e",
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-600.npz": "fd22e0812474c6cd1b338c3ad3b15b5d31aa7f24005bce1e44615125cc3c244d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-1000.npz": "ca82f2a4076c3edbb94c7f90a28c0c9496d87b46f45f027e71b6011ee33e562e",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-600.npz": "79fe905641a291c5363b61b6c99d6c0a76722d69f436fc3c62e92853cbcef065",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-1000.npz": "3fcf7ed1327b272b03a1ab21b2f2ff56e9b1b8f5e0809e4e7b897711efac1f14",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-600.npz": "3b495a43d7d6d50ed6ed219196ca65742887001e99d3b09e6273ab7ad566c269",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "cases": [
+        {
+          "state": "V01",
+          "run_id": "development-V01-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        },
+        {
+          "state": "RV01",
+          "run_id": "development-RV01-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        },
+        {
+          "state": "RV02",
+          "run_id": "development-RV02-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        }
+      ],
+      "selection": "predeclared development-0 states V01, RV01, RV02"
+    },
+    {
+      "file": "eco1-disturbance-states-dark.png",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "5fc03177885717a3b718fcbcc6028174a6613c4db715961b456283ee91f9d0e5",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-1000.npz": "be25ad295ad997e1c4307c824b94c6103a6a26c7fae25a49da8859b74025957e",
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-600.npz": "fd22e0812474c6cd1b338c3ad3b15b5d31aa7f24005bce1e44615125cc3c244d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-1000.npz": "ca82f2a4076c3edbb94c7f90a28c0c9496d87b46f45f027e71b6011ee33e562e",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-600.npz": "79fe905641a291c5363b61b6c99d6c0a76722d69f436fc3c62e92853cbcef065",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-1000.npz": "3fcf7ed1327b272b03a1ab21b2f2ff56e9b1b8f5e0809e4e7b897711efac1f14",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-600.npz": "3b495a43d7d6d50ed6ed219196ca65742887001e99d3b09e6273ab7ad566c269",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "cases": [
+        {
+          "state": "V01",
+          "run_id": "development-V01-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        },
+        {
+          "state": "RV01",
+          "run_id": "development-RV01-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        },
+        {
+          "state": "RV02",
+          "run_id": "development-RV02-development-0",
+          "times": [
+            600,
+            1000
+          ],
+          "block": [
+            40,
+            40
+          ],
+          "block_size": 24
+        }
+      ],
+      "selection": "predeclared development-0 states V01, RV01, RV02"
+    },
+    {
+      "file": "eco1-disturbance-V01.webp",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "run_id": "development-V01-development-0",
+      "source_sha256": {
+        "data/ecological-v1/development/development-V01-development-0/disturbance-1000.npz": "3fcf7ed1327b272b03a1ab21b2f2ff56e9b1b8f5e0809e4e7b897711efac1f14",
+        "data/ecological-v1/development/development-V01-development-0/disturbance-600.npz": "3b495a43d7d6d50ed6ed219196ca65742887001e99d3b09e6273ab7ad566c269",
+        "data/ecological-v1/development/development-V01-development-0/replay.npz": "59589b86442f91b9aa806f0abb1ee9f1e762a06f51b08a38f614843e2eb5105b",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "selection": "predeclared development-0 case",
+      "display_times": [
+        0,
+        80,
+        160,
+        240,
+        320,
+        400,
+        480,
+        560,
+        600,
+        600,
+        640,
+        720,
+        800,
+        880,
+        960,
+        1000,
+        1000,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440,
+        1520,
+        1600
+      ],
+      "display_stages": [
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "before clear \u00b7 removes 0 occupied",
+        "after clear \u00b7 removed 0 occupied",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "before clear \u00b7 removes 0 occupied",
+        "after clear \u00b7 removed 0 occupied",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample"
+      ],
+      "pixels_per_cell": 2,
+      "disturbance_impact": "2/2 clearings remove zero occupied cells.",
+      "sha256": "ccb90ab64ef9aa3fc36a4482316d8e715f9eb7f51469f003da37050dea272334",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+    },
+    {
+      "file": "eco1-disturbance-RV01.webp",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "run_id": "development-RV01-development-0",
+      "source_sha256": {
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-1000.npz": "be25ad295ad997e1c4307c824b94c6103a6a26c7fae25a49da8859b74025957e",
+        "data/ecological-v1/development/development-RV01-development-0/disturbance-600.npz": "fd22e0812474c6cd1b338c3ad3b15b5d31aa7f24005bce1e44615125cc3c244d",
+        "data/ecological-v1/development/development-RV01-development-0/replay.npz": "45241d15f300afeee74a5cdf38a151ab6a701cf2c4b41b69f39d65f3a617ac4b",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "selection": "predeclared development-0 case",
+      "display_times": [
+        0,
+        80,
+        160,
+        240,
+        320,
+        400,
+        480,
+        560,
+        600,
+        600,
+        640,
+        720,
+        800,
+        880,
+        960,
+        1000,
+        1000,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440,
+        1520,
+        1600
+      ],
+      "display_stages": [
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "before clear \u00b7 removes 0 occupied",
+        "after clear \u00b7 removed 0 occupied",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "before clear \u00b7 removes 0 occupied",
+        "after clear \u00b7 removed 0 occupied",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample"
+      ],
+      "pixels_per_cell": 2,
+      "disturbance_impact": "2/2 clearings remove zero occupied cells.",
+      "sha256": "b3f80bed044e65ebaf8a503a009cc0aabf0561aeaa4b718176ef98f7fe5c61db",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+    },
+    {
+      "file": "eco1-disturbance-RV02.webp",
+      "experiments": [
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "run_id": "development-RV02-development-0",
+      "source_sha256": {
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-1000.npz": "ca82f2a4076c3edbb94c7f90a28c0c9496d87b46f45f027e71b6011ee33e562e",
+        "data/ecological-v1/development/development-RV02-development-0/disturbance-600.npz": "79fe905641a291c5363b61b6c99d6c0a76722d69f436fc3c62e92853cbcef065",
+        "data/ecological-v1/development/development-RV02-development-0/replay.npz": "1d430b4ee7f423c29fe6709cb346a996c8b44739299200e9776380a5e934fe36",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9"
+      },
+      "selection": "predeclared development-0 case",
+      "display_times": [
+        0,
+        80,
+        160,
+        240,
+        320,
+        400,
+        480,
+        560,
+        600,
+        600,
+        640,
+        720,
+        800,
+        880,
+        960,
+        1000,
+        1000,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440,
+        1520,
+        1600
+      ],
+      "display_stages": [
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "before clear \u00b7 removes 0 occupied",
+        "after clear \u00b7 removed 0 occupied",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "before clear \u00b7 removes 0 occupied",
+        "after clear \u00b7 removed 0 occupied",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample",
+        "post-intervention sample"
+      ],
+      "pixels_per_cell": 2,
+      "disturbance_impact": "2/2 clearings remove zero occupied cells.",
+      "sha256": "674f0c27cf1b02a64691ddba9bde3e378c0993fd366e05b75329b99f8c748078",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+    },
+    {
+      "file": "eco1-evidence-stages-dark.svg",
+      "experiments": [
+        "EXP-atlas-002",
+        "EXP-ecological-calibration-001",
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "f898af9ce7c1b5bca968c6771c446bd702e98aaa3e5a07aa43ba8a5ee1b5c9ad",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/atlas-v2/analysis.json": "08a8ba3aa3769dee5cff30852fdb98dd9ed0e264904fda595a4340c79ea31f5e",
+        "data/atlas-v2/confirmed/catalogue.json": "d4aa9374a8951d2bbbe493f807d0049f258893f5e9854445621df2cd22fca3a3",
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "denominator": 54,
+      "counts": {
+        "pair_relative_candidate": 18,
+        "pair_relative_inheritance": 2,
+        "inherited_absent_input_catalogue": 1,
+        "frozen_proxy_criterion": 1
+      },
+      "unresolved_other_candidate_encounters": 16,
+      "independent_exposure_confirmation": "unresolved; reserved conditions are symmetry duplicates"
+    },
+    {
+      "file": "eco1-evidence-stages-dark.pdf",
+      "experiments": [
+        "EXP-atlas-002",
+        "EXP-ecological-calibration-001",
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "7940a82be3071988845f468f7f827e382cc2aea04a69a5b56b3ac64add6d4c2b",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/atlas-v2/analysis.json": "08a8ba3aa3769dee5cff30852fdb98dd9ed0e264904fda595a4340c79ea31f5e",
+        "data/atlas-v2/confirmed/catalogue.json": "d4aa9374a8951d2bbbe493f807d0049f258893f5e9854445621df2cd22fca3a3",
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "denominator": 54,
+      "counts": {
+        "pair_relative_candidate": 18,
+        "pair_relative_inheritance": 2,
+        "inherited_absent_input_catalogue": 1,
+        "frozen_proxy_criterion": 1
+      },
+      "unresolved_other_candidate_encounters": 16,
+      "independent_exposure_confirmation": "unresolved; reserved conditions are symmetry duplicates"
+    },
+    {
+      "file": "eco1-evidence-stages-dark.png",
+      "experiments": [
+        "EXP-atlas-002",
+        "EXP-ecological-calibration-001",
+        "EXP-benefit-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological",
+      "sha256": "419f698963498e888ea1767f12abd883cf466ba7adce8d60f9eaa3fcb91cc424",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "data/atlas-v2/analysis.json": "08a8ba3aa3769dee5cff30852fdb98dd9ed0e264904fda595a4340c79ea31f5e",
+        "data/atlas-v2/confirmed/catalogue.json": "d4aa9374a8951d2bbbe493f807d0049f258893f5e9854445621df2cd22fca3a3",
+        "data/ecological-v1/analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0",
+        "data/ecological-v1/calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-0/result.json": "8b4da1af7a736985537008987fb640dc45d22ca08247a74fce0e45611d73d65f",
+        "data/ecological-v1/confirmation/confirmation-RV01-confirmation-1/result.json": "152d86936b46d68f824610c5d1914a873bb1bb06ef8cd42ba4c3796f509ce10d",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-0/result.json": "104db0ae44170c8cf39d2938fdd052c405b140e4e454180a9c02be5a9e657637",
+        "data/ecological-v1/confirmation/confirmation-RV02-confirmation-1/result.json": "b7e96f39d32a6843fdbbe4ef3d17a915b50c70fe8d46cdd66e3cc523263c6e92",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-0/result.json": "8a3b5968ad9bb2d13a24a4b4e1bd24f2b0107413c04d3ba6c7e1759a41eb9a50",
+        "data/ecological-v1/confirmation/confirmation-V01-confirmation-1/result.json": "a730724a0532cea87c295e63a48b4a23f4d2b9abff2f106d0a70bd2963c728a3",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-0/result.json": "17b733cbb3d37dcc33865b8039e6871c340ab67da94dd715db6238749f7e1cec",
+        "data/ecological-v1/confirmation/confirmation-V02-confirmation-1/result.json": "1cffcc926963d9cf7060a682f273514b3dde61ca99a4537954b63e5890ce2ff6",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-0/result.json": "21a116c79810a2ef8255ff9245a9e53d477d8960ce2785348485b863c56bd7f4",
+        "data/ecological-v1/confirmation/confirmation-V03-confirmation-1/result.json": "5f8812b1640d1694c7d2db58b95c8d4232bf94db56ab9f6d8119a431e37eef3d",
+        "data/ecological-v1/development/development-RV01-development-0/result.json": "c8fbc58bb29f42bfc2bca9729056118c2c0889149bb30ee743fa98f3c7e32b5c",
+        "data/ecological-v1/development/development-RV01-development-1/result.json": "d98b2627f1b11913fcf93617a6e81ec38da1c6baea4c706b8d6d4ccd866f9b4d",
+        "data/ecological-v1/development/development-RV02-development-0/result.json": "c70a2bc499edc49371daa8071929c602fc030c2c442858c00e3b7ae64cbf102a",
+        "data/ecological-v1/development/development-RV02-development-1/result.json": "66b12ac832925b1cbe2f4377168f46d413c72d8c07a7eb7c4b8d4da6e223830a",
+        "data/ecological-v1/development/development-V01-development-0/result.json": "6536d2f801fd92ab22639356aeef3fc272b98efe1e6b226effa16efafdbc04a7",
+        "data/ecological-v1/development/development-V01-development-1/result.json": "4145a2acb059ae15afcdf71d2f75d03dd1ac7bb30dc4329e233304d0196ff7fd",
+        "data/ecological-v1/development/development-V02-development-0/result.json": "8f89c67be8dbd65ae480805e76e8ebea6646d3067de71fe95a6dacf12bbf2d52",
+        "data/ecological-v1/development/development-V02-development-1/result.json": "f310ab2420a2d5c85319bc4b77cf8a8fdd1cb557b6e5bb348e5e7774418b1972",
+        "data/ecological-v1/development/development-V03-development-0/result.json": "6191755197dd4028f2c6aa8ecf7012148c931385f56aa4cd7754644896243f36",
+        "data/ecological-v1/development/development-V03-development-1/result.json": "5adeaaf9b1674607a4c11790ec7224423f477b73458c5a7eec6df8abb5168852",
+        "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+        "data/ecological-v1/symmetry-audit.json": "9164635ebd82291c3638532e22792130e715b95bc9554a7032cd97ec65e3a120"
+      },
+      "denominator": 54,
+      "counts": {
+        "pair_relative_candidate": 18,
+        "pair_relative_inheritance": 2,
+        "inherited_absent_input_catalogue": 1,
+        "frozen_proxy_criterion": 1
+      },
+      "unresolved_other_candidate_encounters": 16,
+      "independent_exposure_confirmation": "unresolved; reserved conditions are symmetry duplicates"
     }
   ]
 }

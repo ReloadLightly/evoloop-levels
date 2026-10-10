@@ -211,7 +211,10 @@ an inherited stabilized descendant of encounter novelty under the standardized
 isolation intervention, not automatically as a stable variant observed in the
 unintervened encounter world.
 
-## Final first-checkpoint reporting assessment
+## Final first-checkpoint reporting assessment: EXP-atlas-001 (2026-10-10)
+
+This historical assessment predates EXP-atlas-002 and the ecological batches;
+its pending-benefit statements describe that checkpoint only.
 
 Reviewed final README, research state, manuscript, and machine-generated atlas
 analysis after all 104 configurations and 11 frozen isolation paths completed.
@@ -245,7 +248,7 @@ assay sensitivity before expanding the causal comparisons. The review does not
 certify every raw array or figure; those are covered by the repository's
 separate integrity and visualization checks.
 
-## Completed candidate-fate calibration assessment
+## Completed candidate-fate calibration assessment: EXP-fate-calibration-001 (2026-10-10)
 
 Reviewed `data/fate-calibration/analysis.json`, its rendered analysis, and all
 36 case summaries after acquisition. Of 28 candidate identity/delay observations,
@@ -282,7 +285,10 @@ benefit assay. Quantitative native counts require boundary-safe observation or
 periodic detection. This recommendation does not authorize execution and does
 not establish H2, H1/H3, beneficial evolvability, or RSI.
 
-## Fresh crossed atlas: independent results review
+## Fresh crossed atlas: independent results review before ecological assays (2026-10-10)
+
+This historical assessment records the post-atlas, pre-benefit checkpoint. The
+completed ecological assessment below supersedes its pending-benefit status.
 
 Reviewed the frozen `EXP-atlas-002` analyzer, its actual aggregate results, and
 the eight reported positive isolation paths. The independent dense-source and
@@ -360,3 +366,83 @@ development and independent confirmation conditions. Its first task is to
 test whether recognized closed-core counts track reproductively viable
 organisms in the assay, so a change in structural counts is not misreported as
 benefit. Recovered V01 must retain its known-catalogue label throughout.
+
+## Ecological calibration and benefit: independent assessment (2026-10-10)
+
+The independent original-dense audit passed with zero mismatches in 306.45
+seconds, peak RSS 63,960 KiB (62.46 MiB). It replayed all 30 ecological worlds,
+62,000 updates, 3,130 sampled records, 60 explicit block removals, and 123
+animation frames. It verified all 40 calibration source frames, 68 extracted
+components and native continuation windows, 73 isolation-search roots, 141
+isolated generation states, 408 child-selection states, 68 graph edges, and 68
+confirmations (five baselines and 63 selected sources). Gate and paired
+comparison arithmetic were independently reconstructed using exact integer
+sample totals. Evidence is `data/ecological-v1/integrity.json`; rerun with
+`OPENBLAS_NUM_THREADS=1 python -m scripts.verify_ecological`.
+
+The frozen calibration gate passes: all five baseline states recover, and
+63/68 selected scored cores recover their original composite identity. Each
+starting-state and nonempty-stratum requirement also passes. All 68 selected
+cores were extractable; there were no selected unscored cores. Thus the
+unscored class supplies no recovery evidence (0/0, not a zero recovery rate).
+Three scored components dissolve under isolation and two produce no detached
+offspring by the horizon. These five unresolved native fates are allowed by
+the prospective gate and must remain visible. No depth or simulation cap was
+reached, while 136 productive nodes reached the three-offspring collection cap.
+Passing this finite sampled gate does not make every counted core viable in
+its native ecology or turn the score into total viable population.
+
+RV01, the recovered known V01 identity from V02/V03, **meets the frozen numerical
+proxy-advantage criterion** in both named panels. Its panel score is
+580/162 = 3.58025, against V02's 546/162 = 3.37037 and V03's 538/162 = 3.32099.
+RV02, the catalogue-new 14-by-14 identity, does not meet it: 508/162 = 3.13580,
+below V01's 577/162 = 3.56173 and V03's 538/162. The frozen analyzer's resulting
+formal confirmed-proxy yield is 1/36 main, 0/18 held-out, or **1/54 overall**.
+Its label is preserved as the result of the declared rule, not silently changed
+after the experiment. The other 16 candidate-producing encounter states remain
+unresolved under the earlier bounded inheritance search. No new catalogue word
+has demonstrated advantage in this assay.
+
+The supplementary symmetry audit identifies a material limitation of that
+formal result. For every starting state, development-1 and confirmation-0
+initial and final grids are related by a 90-degree counterclockwise rotation;
+the odd 19-by-19 V02/V03 snapshots additionally require a one-row translation
+because of centering. Development-0 and confirmation-1 are related by a
+270-degree rotation, with a one-column translation for those odd snapshots.
+All 81 samples match for scored, unscored, unknown, total-core, and occupied-cell
+counts. The proof includes byte hashes, raw array locations, actual clearing
+operations, and transformations in `data/ecological-v1/symmetry-audit.json`;
+rerun with `OPENBLAS_NUM_THREADS=1 python -m scripts.audit_ecological_symmetry`.
+
+Development-1's block at (128,128) rotates to confirmation-0's (40,128) for the
+only impacted states, V01/RV01. Other differing block footprints do nothing to
+occupied cells in both corresponding histories. Exactly 36/40 benefit clears
+remove zero occupied cells. The remaining four each remove 18 occupied cells
+at t=1000 in V01/RV01 development-1/confirmation-0. None of the 40 clears changes
+the registered-core count immediately. The update law's rotation/translation
+symmetry, transformed initial arrays, and identical effective removals explain
+the identical panel scores. Nominally reserved confirmation schedules therefore
+repeat the development challenges; they do not provide a distinct effective
+ecological confirmation.
+
+Consequently, **the frozen criterion is met, but independent challenge
+confirmation remains unresolved**. The evidence supports a finite-panel
+advantage in the known-identity structural population proxy for RV01. It does
+not establish recovery of a depleted viable population, robustness to effective
+disturbance, generally superior ecological performance, an increased capacity
+for further adaptive variation, or RSI. The known identity's recovered snapshot
+differs from the catalogue preparation, so score differences must be attributed
+to declared complete states rather than signal words alone. Native continuation
+and causal provenance do not identify genetic parentage. H1/H3 remain untested,
+and the original held-out encounter inheritance result remains zero.
+
+The single most informative next experiment is a prospectively frozen,
+nonsymmetric, **impact-matched disturbance comparison with paired undisturbed
+controls**. Retain both outcomes and the relevant inputs, declare preparation
+phases, and specify a minimum nonzero population-impact target and a deterministic
+selection rule before seeing performance. Record the actual lost registered
+cores and occupied cells; preserve unmet-target cases explicitly. Use reserved
+conditions that cannot be obtained from development conditions by CA symmetries,
+and compare the disturbance effect with each state's exact no-clear control.
+This separates ordinary growth and preparation-phase effects from recovery
+under real damage without revising the completed assay's metric or criterion.

@@ -8,6 +8,7 @@ from pathlib import Path
 os.environ.setdefault('MPLCONFIGDIR',str(Path(__file__).resolve().parents[1]/'.cache/matplotlib'))
 import re
 import json
+import gc
 import textwrap
 import matplotlib
 matplotlib.use('Agg')
@@ -46,6 +47,9 @@ def main():
         elif paragraph.startswith('# '):text=paragraph[2:];style='title'
         else:text=paragraph;style='body'
         text=text.replace('**','').replace('`','')
+        text=re.sub(r'!\[([^\]]+)\]\(([^)]+)\)',r'Figure: \1 (see appended figure pages).',text)
+        if text.startswith('*') and text.endswith('*'):
+            text=text[1:-1]
         text=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',r'\1 (\2)',text)
         width=44 if style=='title' else 78 if style!='body' else WIDTH
         for line in textwrap.wrap(text,width=width,break_long_words=True,break_on_hyphens=False):add(line,style)
@@ -82,12 +86,19 @@ def main():
         for name in ['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3',
                      'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison',
                      'panel2-native-worlds','panel2-selection','atlas2-verified-panel','atlas2-outcome-matrix',
-                     'atlas2-evidence-stages','atlas2-inheritance-path','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3']:
+                     'atlas2-evidence-stages','atlas2-inheritance-path','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3',
+                     'eco1-calibration-recovery','eco1-calibration-strata','eco1-score-matrix','eco1-paired-margins',
+                     'eco1-evidence-stages','eco1-disturbance-states']:
             p=ROOT/f'figures/{name}-dark.png'
             if not p.exists():continue
-            fig=plt.figure(figsize=(11.69,8.27),facecolor=STYLE['ink']);ax=fig.add_axes([.035,.07,.93,.86]);ax.imshow(Image.open(p));ax.axis('off')
+            fig=plt.figure(figsize=(11.69,8.27),facecolor=STYLE['ink']);ax=fig.add_axes([.035,.07,.93,.86])
+            with Image.open(p) as recorded:
+                ax.imshow(recorded)
+            ax.axis('off')
             fig.text(.05,.03,f'Figure: {name}. Source and regeneration: figures/manifest.json.',fontsize=9,color=STYLE['text'])
             pdf.savefig(fig);plt.close(fig)
+            del fig, ax
+            gc.collect()
     print('Rendered',target,'from authoritative Markdown and recorded-data figures')
 
 if __name__=='__main__':main()

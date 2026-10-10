@@ -96,7 +96,7 @@ The 144 complete starting grids are frozen in `data/atlas-v2/manifest.json`:
 36 main near, 18 held-out near, 54 matched separated, 36 solitary. This uses the same
 640-square world extent for every treatment. The inheritance search follows
 three offspring per generation, depth six, and at most 24 simulations per root.
-Benefit remains a separate, unfinished comparison. The optimized route requires
+Benefit is a separate comparison, completed in ecological-v1 below. The optimized route requires
 the committed implementation-equivalence report. It preserves the frozen rule,
 starting states, detector outcomes, and search budgets; [tiled execution](tiled-execution.md)
 and [cropped detection](cropped-execution.md) document equivalence checks and
@@ -141,4 +141,79 @@ eight confirmation origins. One matches V01 in the input catalogue and is novel
 relative to its V02/V03 encounter inputs; the other differs from all three input
 words. Repeated roots in one encounter are not independent variant-generating
 events. Export labels and the earliest-capture representative rule are fixed in
-`scripts.catalogue_fresh_variants`; benefit is unknown for both identities.
+`scripts.catalogue_fresh_variants`; the later ecological-v1 analysis supplies
+the completed paired proxy-benefit status for both identities.
+
+## Ecological-score calibration and paired benefit conditions
+
+[Protocol 007](../protocols/007-ecological-calibration-and-benefit.md) and
+`configs/ecological-v1.json` extend the assay already frozen in atlas-v2.
+`data/ecological-v1/manifest.json` pins all source snapshots, the four-identity
+score registry, code hashes, and 30 condition configurations: ten new calibration
+ecologies and twenty frozen paired conditions. Some calibration/benefit initial
+grids coincide, but their future disturbance schedules differ. These conditions
+are not independent evolutionary histories.
+
+```sh
+OPENBLAS_NUM_THREADS=1 python -m unittest tests.test_ecology -v
+OPENBLAS_NUM_THREADS=1 python -m scripts.ecological_assay calibrate
+OPENBLAS_NUM_THREADS=1 python -m scripts.analyze_ecological calibration
+OPENBLAS_NUM_THREADS=1 python -m scripts.ecological_assay benefit
+OPENBLAS_NUM_THREADS=1 python -m scripts.analyze_ecological benefit
+OPENBLAS_NUM_THREADS=1 python -m scripts.verify_ecological
+OPENBLAS_NUM_THREADS=1 python -m scripts.audit_ecological_symmetry
+OPENBLAS_NUM_THREADS=1 python -m scripts.figures_ecological
+OPENBLAS_NUM_THREADS=1 python -m scripts.render_manuscript
+```
+
+The runner skips completed acquisition cases; the analyzer regenerates summaries
+from their physical records. Frozen source/protocol/configuration hashes are
+enforced. Each declared 24-square block is cleared after advancing to update
+600/1000, before the corresponding sample. Every condition uses 81 samples and
+comparisons use integer sums over 162 samples per panel, so exact ties fail.
+Complete source, removal, and isolation-selection grids make each intervention
+reviewable.
+
+The independent verifier replays all 30 complete native trajectories, all sampled
+scores and removals, each selected source component, native continuation labels,
+and every linked isolated-generation state. It recomputes the calibration gate
+and paired comparisons without importing the production ecological analyzer.
+Read its scope and counts in `data/ecological-v1/integrity.json`. Figure sources,
+style hashes, run identifiers, and regeneration commands are indexed under
+`eco1-` in `figures/manifest.json`.
+
+The supplementary symmetry audit retains the frozen outcome flags and tests
+whether nominal confirmation conditions supply distinct effective challenges.
+Read `data/ecological-v1/symmetry-audit.json`: rotated/translated initial and
+final grids, all score samples, and actual clearing deltas expose repeated
+conditions. An operational criterion pass does not supply independent ecological
+confirmation when those challenges are symmetry duplicates.
+
+Calibration tests the recoverability of known-identity cores under standardized
+isolation. Shared, oversized, and nonconfirming states remain unresolved and in
+the gate denominator. A failed gate still permits the prescribed twenty
+structural diagnostics; benefit confirmation and beneficial-heritable yield
+remain unknown. The registry is never expanded from observed assay performance.
+
+To reconstruct in a separate checkout, remove only that copy's
+`data/ecological-v1/`, then run `python -m scripts.ecological_assay benchmark`
+and `python -m scripts.ecological_assay freeze` before the commands above.
+The frozen benefit source and atlas/discovery evidence must remain intact.
+
+The completed calibration took 297.5 seconds at 65.9 MiB peak RSS; the twenty
+paired conditions took 85.7 seconds at 66.3 MiB peak RSS with one worker. These
+are acquisition-process measurements, excluding independent verification,
+analysis, and rendering. The calibration passed its declared recovery gate;
+read `analysis.md` for the paired result and the mostly zero-impact clearings.
+
+The independent full replay took 306.4 seconds at 62.5 MiB peak RSS, verifying
+all 30 native trajectories, 141 isolated generations, and 408 child-selection
+states with zero mismatches. This is a separate verification process.
+
+Render export groups sequentially if memory is tight: append `--only calibration`,
+`--only benefit`, `--only evidence`, or `--only disturbances` to the ecological
+figure command. Successful measured peak export RSS was 202.6 MiB. Allow at least
+200 MiB additional available memory and avoid overlapping rendering with Git
+packing or other heavy jobs. The 41-page manuscript PDF used 201.3 MiB peak RSS;
+its full decoding and sampled results-table/figure pages were inspected. Renderer
+image references point to the appended figure pages; Markdown retains live links.

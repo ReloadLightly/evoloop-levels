@@ -4,7 +4,7 @@
 
 ### Abstract
 
-Evolution depends on variation that survives reproduction. In evoloops, digital organisms reproduce within a cellular grid, and their encounters can change the structures they produce. We investigate how organisms, their partners, and ecological history contribute to useful heritable variation. An initial two-organism experiment produced candidate changes in six of 40 contacting configurations but no confirmed stable novelty, including after a delayed-extraction calibration. A fresh three-organism atlas now confirms pair-relative inherited novelty in **2/36 main configurations and 0/18 held-out configurations**, with no candidates in 90 controls. One successful configuration produces a word absent from all three inputs; the other recovers the third catalogue identity. Candidate rank reversals and inherited interaction contrasts do not transfer to held-out states. Ecological benefit remains unassessed.
+Evolution depends on variation that survives reproduction. In evoloops, digital organisms reproduce within a cellular grid, and their encounters can change the structures they produce. We investigate how organisms, their partners, and ecological history contribute to useful heritable variation. An initial two-organism experiment produced candidate changes in six of 40 contacting configurations but no confirmed stable novelty, including after a delayed-extraction calibration. A fresh three-organism atlas now confirms pair-relative inherited novelty in **2/36 main configurations and 0/18 held-out configurations**, with no candidates in 90 controls. One successful configuration produces a word absent from all three inputs; the other recovers the third catalogue identity. Candidate rank reversals and inherited interaction contrasts do not transfer to held-out states. A calibrated population-score comparison gives the known-word recovery an advantage over both inputs under the frozen finite criterion. Most disturbances miss occupied cells, however, and reserved confirmation conditions are rotational duplicates; independent ecological benefit confirmation remains unresolved.
 
 ![Recorded evoloop world, with cell states shown in the project's Chromatic Fields palette](figures/world-overview-dark.png)
 
@@ -18,7 +18,7 @@ An evoloop contains circulating signals that guide the construction of another l
 
 Sayama's original work established that this system supports heritable variation and natural selection [1]. Subsequent studies showed that genetic arrangements influence colony form and mutational biases, and that ecological conditions affect evolutionary dynamics [2, 3]. These findings raise a further experimental question: **when one organism produces more heritable variation than another, how much of that difference travels with the organism, and how much depends on whom it meets?**
 
-We approach evolvability as the capacity to generate useful heritable variation under specified conditions. Measuring it requires connecting three observations: the appearance of a changed structure, the transmission of a changed identity through reproduction, and an advantage in a stated ecological task. The completed experiments examine the first two stages. A separate ecological comparison will assess whether confirmed variants improve persistence and recolonization. The distinction between replication and reproduction with inherited variation is developed in the recent review [4].
+We approach evolvability as the capacity to generate useful heritable variation under specified conditions. Measuring it requires connecting three observations: the appearance of a changed structure, the transmission of a changed identity through reproduction, and an advantage in a stated ecological task. The completed experiments test transmission and compare both inherited outcomes under a calibrated ecological population proxy. The comparison reveals a finite score advantage, while its actual disturbance exposure and duplicated confirmation conditions prevent a claim of independently confirmed ecological benefit. The distinction between replication and reproduction with inherited variation is developed in the recent review [4].
 
 ## Three linked research questions
 
@@ -112,17 +112,45 @@ The successful states are V01×V03 and V02×V03 in the parallel geometry at offs
 
 ![Fresh focal-by-partner outcome matrix](figures/atlas2-outcome-matrix-dark.svg)
 
-*Candidate and inherited outcomes retain every declared configuration in their denominators. Main candidate rank reversals do not persist held out; inherited main differences also disappear held out. [Candidate, inheritance, and pending-benefit stages](figures/atlas2-evidence-stages-dark.svg) and [annotated replay](figures/atlas2-encounter-1.webp).*
+*Candidate and inherited outcomes retain every declared configuration in their denominators. Main candidate rank reversals do not persist held out; inherited main differences also disappear held out. [Candidate and inheritance stages, with the original pending-benefit status](figures/atlas2-evidence-stages-dark.svg) and [annotated replay](figures/atlas2-encounter-1.webp).*
 
-The isolation search evaluates 88 roots from 52 run/composite candidate identities, executing 1,205 generation simulations. Six identities have no extractable phase. Simulation-budget and depth limits leave 158 recorded truncations, and 441 nodes reach the three-offspring collection cap. Unrecovered candidates and later branches remain unresolved. No benefit comparison has been run; beneficial-heritable-variant yield is unknown.
+The isolation search evaluates 88 roots from 52 run/composite candidate identities, executing 1,205 generation simulations. Six identities have no extractable phase. Simulation-budget and depth limits leave 158 recorded truncations, and 441 nodes reach the three-offspring collection cap. Unrecovered candidates and later branches remain unresolved. Both recovered stable outcomes proceed to a frozen ecological comparison; the other 16 candidate-producing encounters retain unresolved inheritance outcomes.
+
+
+### Ecological calibration passes; independent benefit confirmation remains unresolved
+
+The frozen score counts closed cores from four verified composite identities, rather than all viable organisms. Calibration recovers the original identity from **63/68 selected scored components (92.6%)** and **5/5 baseline controls**, passing every frozen gate. Five sampled components do not confirm recovery: three isolated grids become empty and two remain nonempty without qualifying reproduction; their original identities recur natively without established ancestry. No unscored cores are selected, so sensitivity to viable identities outside the registry remains untested.
+
+![Recovery calibration for the population score](figures/eco1-calibration-recovery-dark.svg)
+
+*Selected components are nested observations within ten deterministic ecologies. Passing recovery thresholds validates the sampled proxy, not every native body's reproductive fate. [Stratum-level recovery](figures/eco1-calibration-strata-dark.svg) and [calibration analysis](data/ecological-v1/calibration-analysis.json) retain the denominators.*
+
+All 20 frozen paired state-condition runs complete. Unregistered valid and unknown-identity cores occur briefly in these worlds; their viability is untested and they remain outside the fixed score. Each candidate is compared with **both** originating inputs. The mean is registered-core population over 162 equally weighted samples per two-condition panel; development and reserved confirmation have identical means:
+
+| Inherited candidate | Candidate mean | Originating input means | Frozen finite criterion |
+|---|---:|---|---|
+| RV01: recovered V01 identity | 3.580 | V02: 3.370; V03: 3.321 | Met |
+| RV02: new 14×14 identity | 3.136 | V01: 3.562; V03: 3.321 | Not met |
+
+The formal proxy-criterion yield is **1/36 main encounters, 0/18 held out, and 1/54 overall**. The successful state recovers a known catalogue word; the catalogue-novel word does not meet the criterion. The other 16 candidate-producing encounters remain unresolved. RV01 and V01 have the same composite identity but different complete prepared states, so performance differences cannot be assigned solely to genotype.
+
+![Population scores under all four frozen conditions](figures/eco1-score-matrix-dark.svg)
+
+*The score is conditional on the fixed identity registry and 1,600-update horizon. [Both-input margins](figures/eco1-paired-margins-dark.svg) retain the strict arithmetic; [measurement stages](figures/eco1-evidence-stages-dark.svg) distinguish inherited outcomes, the finite proxy criterion, and unresolved independent ecological benefit.*
+
+**Independent ecological benefit confirmation remains unresolved.** Of 40 scheduled clearings, 36 remove no occupied cells; four remove 18 cells each without immediately reducing the counted population. An independent symmetry audit shows that the reserved confirmation trajectories duplicate development under rotation and periodic centering translations. They provide no new ecological challenge. Without effective measured depletion or paired undisturbed controls, the result does not demonstrate recolonization or general ecological superiority.
+
+![Recorded states surrounding the frozen clearings](figures/eco1-disturbance-states-dark.svg)
+
+*Actual cell states and disturbance impacts remain visible, including zero-impact clearings. Recorded animations show the predeclared development-0 condition for [V01](figures/eco1-disturbance-V01.webp), [RV01](figures/eco1-disturbance-RV01.webp), and [RV02](figures/eco1-disturbance-RV02.webp); both scheduled blocks remove zero occupied cells in each of these runs. [Complete paired analysis](data/ecological-v1/analysis.md) preserves the frozen classification; the [scientific review](docs/scientific_review.md) explains its scope and the symmetry limitation.*
 
 ## What these findings mean
 
-The completed comparisons separate candidate production from stable transmission. The original negative result persists under its specified maturation and search extensions; the fresh atlas supplies two positive configurations, including a transient-to-stable route carrying a word absent from the catalogue. Success after isolation demonstrates heritable variation under that imposed assay. It does not establish native ancestry or ecological advantage.
+The completed comparisons separate candidate production from stable transmission. The original negative result persists under its specified maturation and search extensions; the fresh atlas supplies two positive configurations, including a transient-to-stable route carrying a word absent from the catalogue. Success after isolation demonstrates heritable variation under that imposed assay. It does not establish native ancestry. The later population-score comparison supplies a conditional performance result, with independent ecological confirmation unresolved.
 
 The atlases differ in organism inputs, arena extent, candidate screening, periodic measurement, and descendant search. Their different yields therefore cannot be attributed to enrichment of the organism panel alone. The same-size V02/V03 comparison holds core dimensions fixed, while words, arms, complete states, and developmental timing still vary. All three fresh identities are related selected descendants, not independent population histories.
 
-The next experiment will calibrate the ecological population score and execute the frozen paired disturbance assay for both confirmed identities against both originating inputs. It measures persistence and recolonization; increasing that score alone would not demonstrate recursive self-improvement. The [experimental extension](docs/next-experiment.md) retains independent organism and ecological-history transplants for H1 and H3, which remain untested.
+The next experiment uses nonsymmetric impact-matched disturbances and paired undisturbed controls, with prospectively calibrated exposure and declared reproductive phases. It will distinguish baseline multiplication from a response to actual depletion and retain both inherited outcomes against both inputs. Increasing a population score alone would not demonstrate recursive self-improvement. The [experimental extension](docs/next-experiment.md) retains independent organism and ecological-history transplants for H1 and H3, which remain untested.
 
 The longer-term question is whether evolutionary change alters the capacity for further adaptive change. The route to answering it is to measure the production, transmission, and ecological consequences of variation together, then determine which differences transfer with organisms and which depend on their encounters.
 

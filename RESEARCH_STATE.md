@@ -1,19 +1,46 @@
-# Research state — fresh atlas confirms two pair-relative inherited outcomes
+# Research state — proxy criterion met; distinct ecological confirmation unresolved
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
-Current execution: protocol 007 and configs/ecological-v1.json prospectively
-freeze ecological-score calibration and the previously frozen paired benefit
-assay. Five complete verified starting snapshots form four unique scored
-identities. Ten new calibration ecologies select spatially declared cores at
-four times; five baseline controls and bounded serial isolation test recovery.
-Gate: at least 90% over all selected scored cores, 80% within each starting
-state, five baseline recoveries, and one recovery per nonempty scored stratum.
-All twenty paired conditions follow; failed calibration blocks benefit claims
-while retaining structural diagnostics. Benefit comparison uses integer panel
-sums so ties fail exactly. No acquisition outcomes have been observed at freeze.
-Four focused contract tests pass. Short V01 timing: 200 updates plus ten
-observations in 0.087 s, peak RSS 62,900 KiB; one worker, no full-run claim.
+Current evidence: the frozen ecological-score calibration passed: all five
+verified starting-state controls reproduced; 63/68 selected scored cores recovered
+their original identity through two unchanged transmissions (92.6%). All 68 were
+extractable; five bounded searches do not confirm recovery (three isolated-grid
+extinctions and two nonempty nonreproducing outcomes). Their native continuations
+later regain the original fixed-coordinate identity, without establishing survival
+or offspring ancestry. Every nonempty scored
+stratum recovered at least one identity, and each starting-state group exceeded
+80% recovery. No unregistered/unknown cores were selected; sensitivity to those
+classes is untested. Paired worlds later contain brief unregistered valid and
+unknown cores, excluded by the frozen registry; these were absent only at the
+selected calibration source times. The score remains a fixed-registry structural population
+proxy, supported by this selected isolation calibration, not total viable population.
+
+All twenty frozen paired conditions completed. RV01 exceeded both originating
+inputs under the declared two-condition development mean and reserved
+confirmation mean: 3.580 vs V02 3.370 and V03 3.321. RV02 scored below both inputs:
+3.136 vs V01 3.562 and V03 3.321. Strict comparisons use exact integer totals over
+162 samples per panel; ties fail. One originating encounter meets the frozen calibrated
+proxy criterion: 1/36 main, 0/18 held-out, 1/54 overall. Sixteen other
+candidate-producing encounters remain unresolved. This is a finite conditional
+criterion yield, not an exhaustive estimate of true useful variation or independently
+confirmed ecological benefit.
+
+Disturbance exposure is weak: 36/40 scheduled clearings remove zero occupied
+cells; four remove 18 cells each. Development and confirmation conditions repeat the
+same effective challenges under rotation and small centering offsets: their complete
+initial/final grids and sampled counts agree after the transform. The four effective
+clearings also transform equivalently; remaining clears are no-ops. Consequently,
+meeting both nominal panels supplies no distinct confirmation challenge. The frozen
+proxy comparison is completed, but independent ecological benefit confirmation and
+recovery from meaningful damage remain unresolved. RV01's composite identity matches the
+known V01 identity, but their full prepared snapshots differ. H1/H3 are untested;
+RSI is unestablished. Independent full-world and isolated-state replay passed with zero mismatches.
+
+Prospective freeze: protocol 007, configs/ecological-v1.json and all source hashes
+were committed and remotely verified at 5677f0d before acquisition. Four focused
+contract tests passed. One acquisition worker retained memory headroom; the
+200-update timing benchmark did not determine scientific endpoints.
 
 Completed experiment IDs:
 
@@ -45,8 +72,9 @@ This does not establish H2 for useful heritable variation or disprove underlying
 encounter dependence. Frozen composite identity and added signal-word audit
 agree on observed candidate classification. Ancestry remains pair-level ambiguous.
 
-Benefit calibration and paired ecological assays: pending. Beneficial-heritable
-variant yield is unknown, not zero. H1/H3 are untested. RSI unestablished.
+Ecological calibration and the paired assay are completed as described above.
+The earlier atlas had no confirmed inherited path eligible for benefit testing.
+H1/H3 are untested. RSI unestablished.
 Unresolved candidate fates and bounded phase/offspring searches prevent
 classification of all candidates as ecological failures. Core loss is not
 lineage extinction; control colonies reproduce after original cores disappear.
@@ -74,10 +102,11 @@ integrity.json; figures/fate-{calibration-matrix,native-trajectories,raw-compari
 Protocols: 000 scientific contract; 001 frozen atlas; 002 postfreeze identity
 reporting audit; 003 exploratory lineage follow-up; 004 prospective calibration.
 
-Single next action: calibrate the frozen mean viable-population proxy, then run
-the frozen paired disturbance benefit assay for both confirmed identities
-against both originating inputs. See docs/next-experiment.md. Benefit is pending;
-H1/H3 need independent population histories and remain untested.
+Single next action: an impact-matched paired disturbance assay with undisturbed
+controls, testing both recovered identities against both originating inputs.
+Prospectively calibrate damage exposure and exclude symmetry-equivalent effective
+trajectories when reserving genuinely distinct test conditions. See docs/next-experiment.md. This addresses the current assay's
+mostly empty clearing blocks before expanding the encounter atlas.
 
 ## Fresh input discovery and completed atlas
 
@@ -146,7 +175,61 @@ related descendants, not independent evolutionary histories.
 
 New analysis: data/atlas-v2/analysis.json, analysis.md, inheritance.json.
 Figures: figures/atlas2-{outcome-matrix,evidence-stages,inheritance-path}-dark.svg,
-annotated encounter replays, and paper variants; figures/manifest.json supplies
+annotated encounter replays; figures/manifest.json supplies
 run IDs and commands. Updated manuscript: paper/manuscript.md and its PDF.
-Benefit remains frozen and pending; useful-variation yield unknown. H1/H3 and
-recursive self-improvement remain unestablished.
+The ecological calibration and frozen paired comparison are now complete; the
+conditional result and qualifications are recorded above. H1/H3 and recursive
+self-improvement remain unestablished.
+
+## Ecological calibration and paired benefit evidence
+
+- EXP-ecological-calibration-001: ten native 192-square ecologies continued to
+  3,000 updates, four predeclared source times, 68 complete selected components,
+  five baseline controls, 141 isolated generation simulations. Recovery 63/68;
+  no depth/simulation-budget truncations, 136 generation nodes at the three-child
+  cap. Native continuation labels are structural, not offspring ancestry.
+- EXP-benefit-001: five complete snapshots × four frozen conditions, 1,600
+  updates and 81 post-intervention samples each. Registered-identity counts
+  include all four registry identities, not only the starting identity. RV01's
+  paired margins are +34/162 against V02 and +42/162 against V03 in both panels;
+  RV02's margins are −69/162 against V01 and −30/162 against V03 in both panels.
+
+Acquisition: calibration 297.5 seconds, peak RSS 65.9 MiB; paired conditions
+85.7 seconds, peak RSS 66.3 MiB. These are measured single-worker invocation
+costs, excluding separate verification and export processes.
+
+Evidence: data/ecological-v1/manifest.json, calibration.json,
+calibration-analysis.json, benefit.json, analysis.json, analysis.md, scores.csv.
+Each condition retains its initial/final grids, complete samples, event records,
+and before/after disturbance grids. Calibration retains full source grids,
+selected component snapshots, complete linked serial-isolation graphs, and
+native continuation labels. Three predeclared development replays retain compact
+raw frames. Figures: figures/eco1-*; regeneration commands and source hashes in
+figures/manifest.json. Protocol: protocols/007-ecological-calibration-and-benefit.md.
+
+Independent verification: all 30 full worlds (62,000 updates), 3,130 complete
+samples, 60 declared clearings across calibration and benefit, 123 raw animation
+frames, 40 native source grids, 68 source components and structural continuation
+windows, all 73 linked searches and 141 isolated generations, and 408 saved
+child-selection states agree exactly. Five baseline and 63 target confirmation
+paths and both exact paired comparisons pass. Audit: 306.4 seconds, peak RSS
+62.5 MiB; `data/ecological-v1/integrity.json`. This checks recorded measurements
+and imposed inheritance assays, not native genetic parentage or total viability.
+
+Supplementary symmetry audit: ten development/confirmation transform pairs cover
+all twenty scored worlds. Rotated/translated initial/final grids, all 81 count
+samples per world, and actual removal deltas agree. Nominal confirmation therefore
+adds no effective challenge. See `data/ecological-v1/symmetry-audit.json`; the
+frozen operational flag is preserved, while distinct ecological confirmation
+remains unresolved.
+
+Completed exports: six new scientific figures in SVG/PDF/PNG plus three compact
+recorded WebP replays, 21 new artifacts and 87 total manifest entries. All 75
+animation display frames are pixel-exact against retained raw grids. Successful
+sequential export groups took 9.84/7.62/3.21/14.06 seconds (calibration/benefit/
+evidence/disturbances), maximum measured peak RSS 202.6 MiB; minimum monitored
+available memory 300.6 MiB. A guarded partial attempt was stopped for memory
+headroom and rerun; scientific data were unchanged. Final working PDF: 41 pages,
+22.7 seconds, peak RSS 201.3 MiB. Complete Ghostscript decoding and inspected
+results-table/figure pages pass. Review details: docs/visual_review.md and
+docs/scientific_review.md. Source Markdown remains authoritative.
