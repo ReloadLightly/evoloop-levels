@@ -1,15 +1,89 @@
 {
-  "name": "Chromatic Fields",
-  "ink": "#101421", "paper": "#EDE9DF", "cobalt": "#5C7DDB",
-  "cyan": "#60D6D0", "magenta": "#C16FAD", "amber": "#E0B45D",
+  "name": "Chromatic Fields / Midnight Blue",
+  "ink": "#101421",
+  "paper": "#EDE9DF",
+  "cobalt": "#5C7DDB",
+  "cyan": "#60D6D0",
+  "magenta": "#C16FAD",
+  "amber": "#E0B45D",
   "terracotta": "#D66B4F",
-  "cell_states": ["#101421", "#60D6D0", "#5C7DDB", "#EDE9DF", "#E0B45D", "#C16FAD", "#D66B4F", "#B6DE83", "#FFFFFF"],
-  "cell_state_meaning": ["quiescence", "carrier", "sheath", "junction/sprout", "turn instruction", "messenger", "cord dissolution", "growth instruction", "structural dissolution"],
-  "lineage_overlay": {"focal": "#C16FAD", "partner": "#E0B45D", "ambiguous": "#EDE9DF"},
-  "quantitative_colormap": "viridis",
-  "quantitative_line": {"dark": "#60D6D0", "light": "#198A86"},
+  "cell_states": [
+    "#101421",
+    "#60D6D0",
+    "#5C7DDB",
+    "#EDE9DF",
+    "#E0B45D",
+    "#C16FAD",
+    "#D66B4F",
+    "#B6DE83",
+    "#FFFFFF"
+  ],
+  "cell_state_meaning": [
+    "quiescence",
+    "carrier",
+    "sheath",
+    "junction/sprout",
+    "turn instruction",
+    "messenger",
+    "cord dissolution",
+    "growth instruction",
+    "structural dissolution"
+  ],
+  "lineage_overlay": {
+    "focal": "#75B5E8",
+    "partner": "#A4D5FF",
+    "ambiguous": "#6F91BE"
+  },
+  "quantitative_colormap": "chromatic_fields_blue",
+  "quantitative_line": {
+    "dark": "#86B6FF",
+    "light": "#3155A6"
+  },
   "font": "DejaVu Sans",
   "grid_interpolation": "nearest",
   "missing": "hatched neutral; never zero",
-  "state_palette_note": "Research visualization palette, not original simulator colors. Same literal state mapping in dark and light exports."
+  "state_palette_note": "Fixed categorical mapping for the nine literal CA states, not original simulator colors. Additional hues are reserved for these labeled states. Charts use shared blue scales; missing outcomes use neutral hatching.",
+  "version": 2,
+  "export_themes": [
+    "dark"
+  ],
+  "text": "#AFCBFA",
+  "heading": "#86B6FF",
+  "secondary_text": "#6F91BE",
+  "axis": "#526E95",
+  "quantitative_stops": [
+    "#17243D",
+    "#3155A6",
+    "#709DEF",
+    "#B6D4FF"
+  ],
+  "series": {
+    "primary": "#648EE0",
+    "secondary": "#75B5E8",
+    "tertiary": "#A4D5FF",
+    "quaternary": "#527199"
+  },
+  "status": {
+    "eligible": "#75B5E8",
+    "target_lost": "#273248",
+    "shared_component": "#46668D",
+    "unknown_identity": "#353D4A",
+    "boundary_component": "#353D4A",
+    "oversized_component": "#353D4A",
+    "target_recurrence_after_loss": "#527199",
+    "confirmed": "#A4D5FF",
+    "unconfirmed": "#17243D",
+    "missing": "#353D4A",
+    "candidate": "#648EE0",
+    "unresolved": "#46668D",
+    "excluded": "#273248"
+  },
+  "annotation": {
+    "target": "#A4D5FF",
+    "delay": "#6F91BE",
+    "absent": "#AFCBFA",
+    "known_core": "#AFCBFA",
+    "novel_core": "#86B6FF"
+  },
+  "presentation_note": "Dark navy backgrounds and blue typography are the canonical presentation for README, charts, replays, and paper figure pages. Avoid per-plot accent choices and alternate light exports."
 }

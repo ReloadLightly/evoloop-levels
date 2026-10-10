@@ -57,10 +57,15 @@ inherited mutation bias, and disturbances. State the narrower addition precisely
 Read docs/source_review.md; check licenses before adding code or artwork.
 Link papers, never redistribute unlicensed PDFs. Preserve vendored Apache notices.
 
-Chromatic Fields uses configs/style.json. Literal state colors and lineage
-overlays are separate. Render crisp cells with exact geometry; label time,
-scale, encoding, denominators, missingness, and experimental status. Dark and
-light exports share data. Every figure records experiment IDs and regeneration
+Chromatic Fields / Midnight Blue uses configs/style.json as the single source
+for all visual roles. Use dark navy backgrounds, blue text, shared sequential
+blue scales, and the configured status/annotation colors. Import theme, THEMES,
+quantitative_cmap, and annotation_color from scripts.figures; do not choose
+local colors or built-in rainbow scales. README, replays, and paper figure pages
+use the dark exports. Retire obsolete light exports when regenerating the set.
+Literal cell-state colors and lineage overlays are separate. Render crisp cells with exact geometry; label time,
+scale, encoding, denominators, missingness, and experimental status. Use labels and hatching alongside color; preserve exact cell-state mappings
+and the distinction between missing observations and measured zero. Every figure records experiment IDs and regeneration
 command in figures/manifest.json. Review rendered outputs before publication.
 
 The user authorizes commits and pushes to ReloadLightly/evoloop-levels.
