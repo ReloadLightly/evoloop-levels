@@ -25,6 +25,8 @@ OUT = ROOT/'data/impact-v1'
 PREFIX = 'impact1-'
 COMMAND = 'OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact'
 BASE = [OUT/'manifest.json', ROOT/'configs/impact-v1.json', ROOT/'protocols/009-impact-matched-paired-assay.md']
+if (OUT/'integrity.json').exists():
+    BASE.append(OUT/'integrity.json')
 
 
 def read(path):
@@ -138,9 +140,9 @@ def calibration(c,m,artifacts):
         lines += [' ']+[f'{r["state"]}: {r["confirmed"]}/{r["selected"]} recovered' for r in c['by_state']]
         card.text(.5,.50,'\n'.join(lines),transform=card.transAxes,ha='center',va='center',fontsize=9)
         fig.suptitle(f'Selected isolation recovery · {m["calibration_experiment_id"]}',fontsize=14)
-        fig.subplots_adjust(left=.07,right=.97,top=.86,bottom=.25,wspace=.35)
-        cax=fig.add_axes([.11,.135,.43,.018]);fig.colorbar(im,cax=cax,orientation='horizontal',label='confirmed / selected scored cores')
-        fig.text(.5,.035,'First and last distinct cores selected prospectively. Ineligible and nonconfirming selections remain in denominators; empty ≠ failed.\n'
+        fig.subplots_adjust(left=.07,right=.97,top=.86,bottom=.30,wspace=.35)
+        cax=fig.add_axes([.11,.175,.43,.018]);fig.colorbar(im,cax=cax,orientation='horizontal',label='confirmed / selected scored cores')
+        fig.text(.5,.025,'First and last distinct cores selected prospectively. Ineligible and nonconfirming selections remain in denominators; empty ≠ failed.\n'
                  f'{c["unscored_confirmed"]}/{c["unscored_selected"]} unscored selections recovered any stable identity. Recovery is bounded serial isolation, not native viability proof.\n'
                  'Nested deterministic observations; unresolved searches are not proven nonviable. No confidence intervals or independent histories.',ha='center',fontsize=8)
         export(fig,'calibration',dark,artifacts,[m['calibration_experiment_id']],paths,{'gate':gate,'gate_passed':c['gate_passed'],'states':states,'stratum_columns':[(q['id'],t) for q,t in cols]})
@@ -167,9 +169,9 @@ def score_matrices(a,m,artifacts):
                                           (axes[1],damaged,dt,'Absolute disturbed score','mean registered closed-core count')]:
             im=matrix(ax,values,texts,states,labels,font=9);ax.axvline(1.5,color=STYLE['text'],lw=1);ax.set_title(title,fontsize=12)
             ax.set_ylabel('complete representative state');ax.tick_params(axis='x',labelsize=8)
-            box=ax.get_position();cax=fig.add_axes([box.x0, .16,box.width,.018]);fig.colorbar(im,cax=cax,orientation='horizontal',label=label)
+            box=ax.get_position();cax=fig.add_axes([box.x0, .19,box.width,.018]);fig.colorbar(im,cax=cax,orientation='horizontal',label=label)
         fig.suptitle(f'Paired registered-population scores · {a["experiment_id"]}',fontsize=14)
-        fig.text(.5,.035,'D: one complete clone removed at t=0; U: unchanged matched three-clone colony. Each condition has 81 equal samples (0,20,…,1600).\n'
+        fig.text(.5,.025,'D: one complete clone removed at t=0; U: unchanged matched three-clone colony. Each condition has 81 equal samples (0,20,…,1600).\n'
                  'Ratios display exact reduced fractions; zero U makes retention undefined, never zero. D/U>1 may reflect release from crowding.\n'
                  'Fixed four-identity structural registry; V01/RV01 share an identity. Unknown and unregistered types omitted; not total viable population.\n'
                  'Ages denote completed preparation updates. Finite constructed conditions, not independent ecological histories or evolvability measures.',ha='center',fontsize=8)
@@ -266,12 +268,12 @@ def raw_states(m,artifacts):
             names=['U / shared pre-removal · t=0','D / after removal · t=0',f'D / t={int(times[-1])}',f'U / t={int(times[-1])}']
             for j,(grid,title) in enumerate(zip(selectedgrids,names)):
                 ax=axes[i,j];ax.imshow(grid,cmap=CMAP,norm=NORM,interpolation='nearest');ax.set_title(f'{sel["state"]} · {title}',fontsize=9)
-                if j<2:ax.contour(mask,levels=[.5],colors=[STYLE['annotation']['target']],linewidths=.65,linestyles='--')
+                if j==0:ax.contour(mask,levels=[.5],colors=[STYLE['annotation']['target']],linewidths=.65,linestyles='--')
                 ax.set_xticks([0,96,191]);ax.set_yticks([0,96,191]);ax.set_xlabel('column / cells',fontsize=8)
                 if j==0:ax.set_ylabel('row / cells',fontsize=8)
             axes[i,0].text(0,-.32,f'{pair}; age {c["age"]}; actual removal {impact["removed_occupied_cells"]}/{impact["occupied_before"]} occupied cells, 3→2 cores.',transform=axes[i,0].transAxes,ha='left',fontsize=8)
         fig.suptitle(f'Predeclared matched removal and paired endpoints · {m["benefit_experiment_id"]}',fontsize=14)
-        fig.text(.5,.10,'Dashed outline: exact removed occupied-cell mask, retaining arms; it does not recolor literal cell states. U at t=0 equals the common pre-state.\n'
+        fig.text(.5,.10,'Dashed pre-state outline: exact removed occupied-cell mask, retaining arms; literal cell-state colors remain separate. U at t=0 equals the common pre-state.\n'
                  'Full 192×192 periodic domains and recorded endpoints. Three clones were placed externally; component removal is a declared treatment.\n'
                  'Replay selection was frozen before outcomes. Age is preparation time; t is continuation time after preparation/removal. No native ancestry assignment.',ha='center',fontsize=8)
         fig.subplots_adjust(left=.07,right=.98,top=.91,bottom=.23,wspace=.26,hspace=.64);legend(fig)

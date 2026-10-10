@@ -2742,6 +2742,1140 @@
       },
       "unresolved_other_candidate_encounters": 16,
       "independent_exposure_confirmation": "unresolved; reserved conditions are symmetry duplicates"
+    },
+    {
+      "file": "impact1-exposure-dark.svg",
+      "experiments": [
+        "EXP-impact-calibration-001",
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "e4d7312faace82ee8275b95749b927c6d06aedff05603f916453d6bde9455cc9",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-calibration-0.npz": "3b81afdfbe9d8624342666c715b87665666d06517429654987026642a21a834b",
+        "data/impact-v1/prepared/RV01-calibration-1.npz": "f22fbb47bc8869707f1c67cf43082d957c3b0989cc87a9aecc86edc7c0187b8a",
+        "data/impact-v1/prepared/RV01-confirmation-0.npz": "67d85a419ae23b566f03a3054e580f8a30e349eeb940d7d45c08f17e092f059b",
+        "data/impact-v1/prepared/RV01-confirmation-1.npz": "0e97b8d68bf7253c2a7fcc8b5d06f69a282e3fe9a0132818b0b61651baff0e85",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "data/impact-v1/prepared/RV01-development-1.npz": "1c517b79f61b3e73d7416bbfcbcffea91f4dddb121beea1f625c8e7f248a7066",
+        "data/impact-v1/prepared/RV02-calibration-0.npz": "2420acdd44437a6347dd2b06180b655b2765a4e6a9b908a0ab7f5c75720ebaca",
+        "data/impact-v1/prepared/RV02-calibration-1.npz": "3fb1c8c7395b7106f44ebbcca2e31105e3f094bc1b95452b3b2c0496c49694e6",
+        "data/impact-v1/prepared/RV02-confirmation-0.npz": "74d588a3c0b1f33b2746b2fd4d9f799cba2cb6633eb2f8abeac6c33423ce557d",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "data/impact-v1/prepared/RV02-development-0.npz": "5400c541f53b46ce2922ccd47e67188af7fe8a9a51370a4ab168619a25f05c96",
+        "data/impact-v1/prepared/RV02-development-1.npz": "20f4729d190d709596360a9a730057880a2f8f4a27af0d951694f2486695d542",
+        "data/impact-v1/prepared/V01-calibration-0.npz": "ede0ec3cfd7b40d5afe5b16d9673b7eea12b139690b98304ca7fe296ca892fad",
+        "data/impact-v1/prepared/V01-calibration-1.npz": "2e41b3177442e81c039a7f630f0eefed040fef398fbe977729f26406fcba5975",
+        "data/impact-v1/prepared/V01-confirmation-0.npz": "29d0758f77098bd2e05f480b53bdfdff8abbecaf1127546d76d8045ec47d1691",
+        "data/impact-v1/prepared/V01-confirmation-1.npz": "4f493379d0c7fce75873d567b82ca459a8845a50118494c0c9a06e3ed3c38999",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "data/impact-v1/prepared/V01-development-1.npz": "a7f898b1b22855445967f5ab0f2859922e728edb1fe550a71c80f73a9362978f",
+        "data/impact-v1/prepared/V02-calibration-0.npz": "0d5896da3ed34fd36dae219485cdb1f24ccfba7e3b091f61d8e196f52acd6157",
+        "data/impact-v1/prepared/V02-calibration-1.npz": "c0f85c4fe6b841a59d29f4810fe752ec85eba78e01af5744f3a0c8251424eb64",
+        "data/impact-v1/prepared/V02-confirmation-0.npz": "e8ef8c0359f6a6c192b600c6343d7193c3e9d0794a8dce59736c4b984eca4259",
+        "data/impact-v1/prepared/V02-confirmation-1.npz": "2368b94ff2865f8ad6cd47ba4ab5beb3566e7a146a9e27e970e61b19c6849c76",
+        "data/impact-v1/prepared/V02-development-0.npz": "b076e46072a77b84049f260fd688e5b92cc3b7d1c076ee1c9e29ce41f70514f2",
+        "data/impact-v1/prepared/V02-development-1.npz": "c176210cabd58cba4dbd8d6564a7d3ba799cb499f293eb0015539f49fe2ae662",
+        "data/impact-v1/prepared/V03-calibration-0.npz": "869f6e4217b9b2b37c1099e467d22b31d3e6d892089881d602b24aef8e442b8f",
+        "data/impact-v1/prepared/V03-calibration-1.npz": "bf119f36fe27fb52b7c2d11d7ac5bb356afd6faaf97264b4f8d939b817c68bc2",
+        "data/impact-v1/prepared/V03-confirmation-0.npz": "4ebf2dc8f63f571edc80bccc795f3197744f36b2c39691d64c902314b4fa6458",
+        "data/impact-v1/prepared/V03-confirmation-1.npz": "fdaea12900d4bbf28f6e24e0480eee692b03096fbeaef219e3133e976c208269",
+        "data/impact-v1/prepared/V03-development-0.npz": "9a853b0ac2d687c9b917f53eb6305a6fe11b1524e8d5e3c6696fbd468e2fb9e3",
+        "data/impact-v1/prepared/V03-development-1.npz": "9e6a794675e09acb5a7eaa3b7391c335b3c8a7136d089b6f13d82789c0413f46",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "matched_preparations": 30,
+      "denominator": 30,
+      "distinct_confirmation_checks": 20,
+      "equivalence_check_count": 20
+    },
+    {
+      "file": "impact1-exposure-dark.pdf",
+      "experiments": [
+        "EXP-impact-calibration-001",
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "8f67ce3f3cb5fa07894fd4a81d8f027ec92e556366157635c505dae18baf8af0",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-calibration-0.npz": "3b81afdfbe9d8624342666c715b87665666d06517429654987026642a21a834b",
+        "data/impact-v1/prepared/RV01-calibration-1.npz": "f22fbb47bc8869707f1c67cf43082d957c3b0989cc87a9aecc86edc7c0187b8a",
+        "data/impact-v1/prepared/RV01-confirmation-0.npz": "67d85a419ae23b566f03a3054e580f8a30e349eeb940d7d45c08f17e092f059b",
+        "data/impact-v1/prepared/RV01-confirmation-1.npz": "0e97b8d68bf7253c2a7fcc8b5d06f69a282e3fe9a0132818b0b61651baff0e85",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "data/impact-v1/prepared/RV01-development-1.npz": "1c517b79f61b3e73d7416bbfcbcffea91f4dddb121beea1f625c8e7f248a7066",
+        "data/impact-v1/prepared/RV02-calibration-0.npz": "2420acdd44437a6347dd2b06180b655b2765a4e6a9b908a0ab7f5c75720ebaca",
+        "data/impact-v1/prepared/RV02-calibration-1.npz": "3fb1c8c7395b7106f44ebbcca2e31105e3f094bc1b95452b3b2c0496c49694e6",
+        "data/impact-v1/prepared/RV02-confirmation-0.npz": "74d588a3c0b1f33b2746b2fd4d9f799cba2cb6633eb2f8abeac6c33423ce557d",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "data/impact-v1/prepared/RV02-development-0.npz": "5400c541f53b46ce2922ccd47e67188af7fe8a9a51370a4ab168619a25f05c96",
+        "data/impact-v1/prepared/RV02-development-1.npz": "20f4729d190d709596360a9a730057880a2f8f4a27af0d951694f2486695d542",
+        "data/impact-v1/prepared/V01-calibration-0.npz": "ede0ec3cfd7b40d5afe5b16d9673b7eea12b139690b98304ca7fe296ca892fad",
+        "data/impact-v1/prepared/V01-calibration-1.npz": "2e41b3177442e81c039a7f630f0eefed040fef398fbe977729f26406fcba5975",
+        "data/impact-v1/prepared/V01-confirmation-0.npz": "29d0758f77098bd2e05f480b53bdfdff8abbecaf1127546d76d8045ec47d1691",
+        "data/impact-v1/prepared/V01-confirmation-1.npz": "4f493379d0c7fce75873d567b82ca459a8845a50118494c0c9a06e3ed3c38999",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "data/impact-v1/prepared/V01-development-1.npz": "a7f898b1b22855445967f5ab0f2859922e728edb1fe550a71c80f73a9362978f",
+        "data/impact-v1/prepared/V02-calibration-0.npz": "0d5896da3ed34fd36dae219485cdb1f24ccfba7e3b091f61d8e196f52acd6157",
+        "data/impact-v1/prepared/V02-calibration-1.npz": "c0f85c4fe6b841a59d29f4810fe752ec85eba78e01af5744f3a0c8251424eb64",
+        "data/impact-v1/prepared/V02-confirmation-0.npz": "e8ef8c0359f6a6c192b600c6343d7193c3e9d0794a8dce59736c4b984eca4259",
+        "data/impact-v1/prepared/V02-confirmation-1.npz": "2368b94ff2865f8ad6cd47ba4ab5beb3566e7a146a9e27e970e61b19c6849c76",
+        "data/impact-v1/prepared/V02-development-0.npz": "b076e46072a77b84049f260fd688e5b92cc3b7d1c076ee1c9e29ce41f70514f2",
+        "data/impact-v1/prepared/V02-development-1.npz": "c176210cabd58cba4dbd8d6564a7d3ba799cb499f293eb0015539f49fe2ae662",
+        "data/impact-v1/prepared/V03-calibration-0.npz": "869f6e4217b9b2b37c1099e467d22b31d3e6d892089881d602b24aef8e442b8f",
+        "data/impact-v1/prepared/V03-calibration-1.npz": "bf119f36fe27fb52b7c2d11d7ac5bb356afd6faaf97264b4f8d939b817c68bc2",
+        "data/impact-v1/prepared/V03-confirmation-0.npz": "4ebf2dc8f63f571edc80bccc795f3197744f36b2c39691d64c902314b4fa6458",
+        "data/impact-v1/prepared/V03-confirmation-1.npz": "fdaea12900d4bbf28f6e24e0480eee692b03096fbeaef219e3133e976c208269",
+        "data/impact-v1/prepared/V03-development-0.npz": "9a853b0ac2d687c9b917f53eb6305a6fe11b1524e8d5e3c6696fbd468e2fb9e3",
+        "data/impact-v1/prepared/V03-development-1.npz": "9e6a794675e09acb5a7eaa3b7391c335b3c8a7136d089b6f13d82789c0413f46",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "matched_preparations": 30,
+      "denominator": 30,
+      "distinct_confirmation_checks": 20,
+      "equivalence_check_count": 20
+    },
+    {
+      "file": "impact1-exposure-dark.png",
+      "experiments": [
+        "EXP-impact-calibration-001",
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "48cac7bd3eb7edca4091f7a311aff9c9b7540b5ac132d8f67cd81cbf5c4767cb",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-calibration-0.npz": "3b81afdfbe9d8624342666c715b87665666d06517429654987026642a21a834b",
+        "data/impact-v1/prepared/RV01-calibration-1.npz": "f22fbb47bc8869707f1c67cf43082d957c3b0989cc87a9aecc86edc7c0187b8a",
+        "data/impact-v1/prepared/RV01-confirmation-0.npz": "67d85a419ae23b566f03a3054e580f8a30e349eeb940d7d45c08f17e092f059b",
+        "data/impact-v1/prepared/RV01-confirmation-1.npz": "0e97b8d68bf7253c2a7fcc8b5d06f69a282e3fe9a0132818b0b61651baff0e85",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "data/impact-v1/prepared/RV01-development-1.npz": "1c517b79f61b3e73d7416bbfcbcffea91f4dddb121beea1f625c8e7f248a7066",
+        "data/impact-v1/prepared/RV02-calibration-0.npz": "2420acdd44437a6347dd2b06180b655b2765a4e6a9b908a0ab7f5c75720ebaca",
+        "data/impact-v1/prepared/RV02-calibration-1.npz": "3fb1c8c7395b7106f44ebbcca2e31105e3f094bc1b95452b3b2c0496c49694e6",
+        "data/impact-v1/prepared/RV02-confirmation-0.npz": "74d588a3c0b1f33b2746b2fd4d9f799cba2cb6633eb2f8abeac6c33423ce557d",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "data/impact-v1/prepared/RV02-development-0.npz": "5400c541f53b46ce2922ccd47e67188af7fe8a9a51370a4ab168619a25f05c96",
+        "data/impact-v1/prepared/RV02-development-1.npz": "20f4729d190d709596360a9a730057880a2f8f4a27af0d951694f2486695d542",
+        "data/impact-v1/prepared/V01-calibration-0.npz": "ede0ec3cfd7b40d5afe5b16d9673b7eea12b139690b98304ca7fe296ca892fad",
+        "data/impact-v1/prepared/V01-calibration-1.npz": "2e41b3177442e81c039a7f630f0eefed040fef398fbe977729f26406fcba5975",
+        "data/impact-v1/prepared/V01-confirmation-0.npz": "29d0758f77098bd2e05f480b53bdfdff8abbecaf1127546d76d8045ec47d1691",
+        "data/impact-v1/prepared/V01-confirmation-1.npz": "4f493379d0c7fce75873d567b82ca459a8845a50118494c0c9a06e3ed3c38999",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "data/impact-v1/prepared/V01-development-1.npz": "a7f898b1b22855445967f5ab0f2859922e728edb1fe550a71c80f73a9362978f",
+        "data/impact-v1/prepared/V02-calibration-0.npz": "0d5896da3ed34fd36dae219485cdb1f24ccfba7e3b091f61d8e196f52acd6157",
+        "data/impact-v1/prepared/V02-calibration-1.npz": "c0f85c4fe6b841a59d29f4810fe752ec85eba78e01af5744f3a0c8251424eb64",
+        "data/impact-v1/prepared/V02-confirmation-0.npz": "e8ef8c0359f6a6c192b600c6343d7193c3e9d0794a8dce59736c4b984eca4259",
+        "data/impact-v1/prepared/V02-confirmation-1.npz": "2368b94ff2865f8ad6cd47ba4ab5beb3566e7a146a9e27e970e61b19c6849c76",
+        "data/impact-v1/prepared/V02-development-0.npz": "b076e46072a77b84049f260fd688e5b92cc3b7d1c076ee1c9e29ce41f70514f2",
+        "data/impact-v1/prepared/V02-development-1.npz": "c176210cabd58cba4dbd8d6564a7d3ba799cb499f293eb0015539f49fe2ae662",
+        "data/impact-v1/prepared/V03-calibration-0.npz": "869f6e4217b9b2b37c1099e467d22b31d3e6d892089881d602b24aef8e442b8f",
+        "data/impact-v1/prepared/V03-calibration-1.npz": "bf119f36fe27fb52b7c2d11d7ac5bb356afd6faaf97264b4f8d939b817c68bc2",
+        "data/impact-v1/prepared/V03-confirmation-0.npz": "4ebf2dc8f63f571edc80bccc795f3197744f36b2c39691d64c902314b4fa6458",
+        "data/impact-v1/prepared/V03-confirmation-1.npz": "fdaea12900d4bbf28f6e24e0480eee692b03096fbeaef219e3133e976c208269",
+        "data/impact-v1/prepared/V03-development-0.npz": "9a853b0ac2d687c9b917f53eb6305a6fe11b1524e8d5e3c6696fbd468e2fb9e3",
+        "data/impact-v1/prepared/V03-development-1.npz": "9e6a794675e09acb5a7eaa3b7391c335b3c8a7136d089b6f13d82789c0413f46",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "matched_preparations": 30,
+      "denominator": 30,
+      "distinct_confirmation_checks": 20,
+      "equivalence_check_count": 20
+    },
+    {
+      "file": "impact1-contrasts-dark.svg",
+      "experiments": [
+        "EXP-impact-paired-001",
+        "EXP-impact-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "109fa65a5ac6933c7b2f7bf322587861e432e056e62560a4eda17a12c837d027",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "retention_aggregation": "arithmetic mean of two exact per-condition ratios",
+      "criteria": "strict both inputs in both panels; exact ties fail",
+      "joint_status": {
+        "RV01": false,
+        "RV02": false
+      }
+    },
+    {
+      "file": "impact1-contrasts-dark.pdf",
+      "experiments": [
+        "EXP-impact-paired-001",
+        "EXP-impact-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "857da357e2ede8cd6a05fd726098cc5a6c187860486275fd7a8fea63907e709f",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "retention_aggregation": "arithmetic mean of two exact per-condition ratios",
+      "criteria": "strict both inputs in both panels; exact ties fail",
+      "joint_status": {
+        "RV01": false,
+        "RV02": false
+      }
+    },
+    {
+      "file": "impact1-contrasts-dark.png",
+      "experiments": [
+        "EXP-impact-paired-001",
+        "EXP-impact-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "79206dc46263525c28b039515953bcd9871bfae8c18649ab2194dbbb853199c0",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "retention_aggregation": "arithmetic mean of two exact per-condition ratios",
+      "criteria": "strict both inputs in both panels; exact ties fail",
+      "joint_status": {
+        "RV01": false,
+        "RV02": false
+      }
+    },
+    {
+      "file": "impact1-paired-curves-dark.svg",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "0acf0c47797566f59bbf5d18548e60f21c3bd7f3eb7e98a68587fa0c1b99d031",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV01-confirmation-0-D/result.json": "a77b92107955a6717fa72fb7e95ab2998998237c6aab26dc4eff6ff00921ae21",
+        "data/impact-v1/confirmation/RV01-confirmation-0-U/result.json": "4603749153f1a8ab42f3cd80613a314c40420fc84c44faded35f47ebd7db7588",
+        "data/impact-v1/confirmation/RV01-confirmation-1-D/result.json": "e1840ef06b0df9bc5b92d15d9e3234ce2ba35cce79ae5b866bb78e61f185979e",
+        "data/impact-v1/confirmation/RV01-confirmation-1-U/result.json": "372330551b6ef8c9d8df5d20ff524a8e72946c94d1d741126939914d9457a40f",
+        "data/impact-v1/confirmation/RV02-confirmation-0-D/result.json": "d6fe6d2ab070eab224ff0c00511a0d71f9dd763b1539e06bf131345e1fd6b80b",
+        "data/impact-v1/confirmation/RV02-confirmation-0-U/result.json": "294b90466864c13f5171931550bbd4db4a85c691da0153f26d3a46f8d249ba62",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/confirmation/V01-confirmation-0-D/result.json": "8b0bc06c78ae196a1766d19038af706ff4bc6906ef90111a79614b152b9c1225",
+        "data/impact-v1/confirmation/V01-confirmation-0-U/result.json": "4107c0c173fbd57fac33e2246c788fba0045cc7bfffc3e83b88d2982340150ed",
+        "data/impact-v1/confirmation/V01-confirmation-1-D/result.json": "05fd0def4485467a91461f478b288152ca4148d40ee035474342a9bf1145dd4a",
+        "data/impact-v1/confirmation/V01-confirmation-1-U/result.json": "51cc1fd1af56cc03a35ce0759ffc2024ed2d39bd624e382a2189d8c8b5ff198e",
+        "data/impact-v1/confirmation/V02-confirmation-0-D/result.json": "4001475932cf3344dac7af4a81d344b0bf975089bfc1f3bb641f71892b5e3447",
+        "data/impact-v1/confirmation/V02-confirmation-0-U/result.json": "306ecd522317bb921594bbaec938b9bcfc27ddfa8fe2e1570207410a59ac9f5e",
+        "data/impact-v1/confirmation/V02-confirmation-1-D/result.json": "8749969103cc14759872f579d2d1a8111844afb25e8198dfd370495d87dd1d6e",
+        "data/impact-v1/confirmation/V02-confirmation-1-U/result.json": "a9e7b208291086f0e5bca1d21d729499345462d9b24f1eca33ee3e0488ccee4b",
+        "data/impact-v1/confirmation/V03-confirmation-0-D/result.json": "3f1ee074bd40724e9edc742174e8d5d331b385d31d2ecb1b4ae7715f7464033b",
+        "data/impact-v1/confirmation/V03-confirmation-0-U/result.json": "96e735d4d494a58cb03c10cd679995503c2ac78d6081bc9eb514baf11f77b7f9",
+        "data/impact-v1/confirmation/V03-confirmation-1-D/result.json": "0bac6a9848a4f8011cde38e2e9aecdd68fa5d80afc25802dde84727f0ccd6ec0",
+        "data/impact-v1/confirmation/V03-confirmation-1-U/result.json": "7806bc8d510c523d0275aa8a32ff24f7c9c6776274837f4d400873f49a0cfd0e",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/development/RV01-development-1-D/result.json": "135e7fa60ba643a637e1c3d41728d5b6877031500ee0f98c284a516aabd04eca",
+        "data/impact-v1/development/RV01-development-1-U/result.json": "cf47fb9d6e9df450b33ccd8a56636c8d1f7d3ffe24fcddd894fc8722e5db2668",
+        "data/impact-v1/development/RV02-development-0-D/result.json": "5662bf01a35ec772b1946f191061467a9febc12e12635ef6a4d7bb838d266341",
+        "data/impact-v1/development/RV02-development-0-U/result.json": "37c3551f5630df6a60479317b67279699e1e4d819f2e929a4d4ef41982fe5530",
+        "data/impact-v1/development/RV02-development-1-D/result.json": "88b42c0a355ad650f0ac719d6e82dc7a6544cd8300288537284bfd7442141de0",
+        "data/impact-v1/development/RV02-development-1-U/result.json": "7a5b76e09e9c34b5e141ac2a21cdbbeacc5d82b2e9f047e708b08e65dc065a7e",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/development/V01-development-1-D/result.json": "8ba4d687f284f0aadfe075cb790d30bca0bd193edb52098d9cd5d3859a403a83",
+        "data/impact-v1/development/V01-development-1-U/result.json": "c56b75363763c608ea1e67348f4784c78abf0e1c30037988af95c4e2c3edf648",
+        "data/impact-v1/development/V02-development-0-D/result.json": "fc8485e09c3445170b462ad6666e4cd749ffb70df6ce15e13338d4352be9ef0f",
+        "data/impact-v1/development/V02-development-0-U/result.json": "d17e99b90ed8d1133a8e3e41bd38ba8483e1997aec1903fd7189587455a7e261",
+        "data/impact-v1/development/V02-development-1-D/result.json": "455192b13d85b1bd71d797b7070d2966c1e1b46baad95eae7555d6eacf1e8fe2",
+        "data/impact-v1/development/V02-development-1-U/result.json": "09c81d0e368ee8cdabf2b2098443f226f3d5a8f951cea87b08167348330b0d50",
+        "data/impact-v1/development/V03-development-0-D/result.json": "60342a8b5aa57e36b04c4499c10127ea742955e5f9467ac876ca97fd17e9e9c1",
+        "data/impact-v1/development/V03-development-0-U/result.json": "89a615da88751df7df1d308209380399e80a442fc0db13f5030a8e861e62eade",
+        "data/impact-v1/development/V03-development-1-D/result.json": "0bc89b923a1312a47189b150306dd56f71bcddc2a6dd2dbf768f06c1290042bd",
+        "data/impact-v1/development/V03-development-1-U/result.json": "6ae50da8f6c7bde7f2457ed3de0a6a6d47e33422d9c49024bfa4d7d2d229f401",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "metric": "sampled registered closed cores",
+      "sampling_interval": 20,
+      "run_ids": [
+        "V01-development-0-D",
+        "V01-development-0-U",
+        "V01-development-1-D",
+        "V01-development-1-U",
+        "V01-confirmation-0-D",
+        "V01-confirmation-0-U",
+        "V01-confirmation-1-D",
+        "V01-confirmation-1-U",
+        "V02-development-0-D",
+        "V02-development-0-U",
+        "V02-development-1-D",
+        "V02-development-1-U",
+        "V02-confirmation-0-D",
+        "V02-confirmation-0-U",
+        "V02-confirmation-1-D",
+        "V02-confirmation-1-U",
+        "V03-development-0-D",
+        "V03-development-0-U",
+        "V03-development-1-D",
+        "V03-development-1-U",
+        "V03-confirmation-0-D",
+        "V03-confirmation-0-U",
+        "V03-confirmation-1-D",
+        "V03-confirmation-1-U",
+        "RV01-development-0-D",
+        "RV01-development-0-U",
+        "RV01-development-1-D",
+        "RV01-development-1-U",
+        "RV01-confirmation-0-D",
+        "RV01-confirmation-0-U",
+        "RV01-confirmation-1-D",
+        "RV01-confirmation-1-U",
+        "RV02-development-0-D",
+        "RV02-development-0-U",
+        "RV02-development-1-D",
+        "RV02-development-1-U",
+        "RV02-confirmation-0-D",
+        "RV02-confirmation-0-U",
+        "RV02-confirmation-1-D",
+        "RV02-confirmation-1-U"
+      ]
+    },
+    {
+      "file": "impact1-paired-curves-dark.pdf",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "ddc59454ecefe3a1933fdbb32c56f65728383cbc34bb1438a86620d21c76dffa",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV01-confirmation-0-D/result.json": "a77b92107955a6717fa72fb7e95ab2998998237c6aab26dc4eff6ff00921ae21",
+        "data/impact-v1/confirmation/RV01-confirmation-0-U/result.json": "4603749153f1a8ab42f3cd80613a314c40420fc84c44faded35f47ebd7db7588",
+        "data/impact-v1/confirmation/RV01-confirmation-1-D/result.json": "e1840ef06b0df9bc5b92d15d9e3234ce2ba35cce79ae5b866bb78e61f185979e",
+        "data/impact-v1/confirmation/RV01-confirmation-1-U/result.json": "372330551b6ef8c9d8df5d20ff524a8e72946c94d1d741126939914d9457a40f",
+        "data/impact-v1/confirmation/RV02-confirmation-0-D/result.json": "d6fe6d2ab070eab224ff0c00511a0d71f9dd763b1539e06bf131345e1fd6b80b",
+        "data/impact-v1/confirmation/RV02-confirmation-0-U/result.json": "294b90466864c13f5171931550bbd4db4a85c691da0153f26d3a46f8d249ba62",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/confirmation/V01-confirmation-0-D/result.json": "8b0bc06c78ae196a1766d19038af706ff4bc6906ef90111a79614b152b9c1225",
+        "data/impact-v1/confirmation/V01-confirmation-0-U/result.json": "4107c0c173fbd57fac33e2246c788fba0045cc7bfffc3e83b88d2982340150ed",
+        "data/impact-v1/confirmation/V01-confirmation-1-D/result.json": "05fd0def4485467a91461f478b288152ca4148d40ee035474342a9bf1145dd4a",
+        "data/impact-v1/confirmation/V01-confirmation-1-U/result.json": "51cc1fd1af56cc03a35ce0759ffc2024ed2d39bd624e382a2189d8c8b5ff198e",
+        "data/impact-v1/confirmation/V02-confirmation-0-D/result.json": "4001475932cf3344dac7af4a81d344b0bf975089bfc1f3bb641f71892b5e3447",
+        "data/impact-v1/confirmation/V02-confirmation-0-U/result.json": "306ecd522317bb921594bbaec938b9bcfc27ddfa8fe2e1570207410a59ac9f5e",
+        "data/impact-v1/confirmation/V02-confirmation-1-D/result.json": "8749969103cc14759872f579d2d1a8111844afb25e8198dfd370495d87dd1d6e",
+        "data/impact-v1/confirmation/V02-confirmation-1-U/result.json": "a9e7b208291086f0e5bca1d21d729499345462d9b24f1eca33ee3e0488ccee4b",
+        "data/impact-v1/confirmation/V03-confirmation-0-D/result.json": "3f1ee074bd40724e9edc742174e8d5d331b385d31d2ecb1b4ae7715f7464033b",
+        "data/impact-v1/confirmation/V03-confirmation-0-U/result.json": "96e735d4d494a58cb03c10cd679995503c2ac78d6081bc9eb514baf11f77b7f9",
+        "data/impact-v1/confirmation/V03-confirmation-1-D/result.json": "0bac6a9848a4f8011cde38e2e9aecdd68fa5d80afc25802dde84727f0ccd6ec0",
+        "data/impact-v1/confirmation/V03-confirmation-1-U/result.json": "7806bc8d510c523d0275aa8a32ff24f7c9c6776274837f4d400873f49a0cfd0e",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/development/RV01-development-1-D/result.json": "135e7fa60ba643a637e1c3d41728d5b6877031500ee0f98c284a516aabd04eca",
+        "data/impact-v1/development/RV01-development-1-U/result.json": "cf47fb9d6e9df450b33ccd8a56636c8d1f7d3ffe24fcddd894fc8722e5db2668",
+        "data/impact-v1/development/RV02-development-0-D/result.json": "5662bf01a35ec772b1946f191061467a9febc12e12635ef6a4d7bb838d266341",
+        "data/impact-v1/development/RV02-development-0-U/result.json": "37c3551f5630df6a60479317b67279699e1e4d819f2e929a4d4ef41982fe5530",
+        "data/impact-v1/development/RV02-development-1-D/result.json": "88b42c0a355ad650f0ac719d6e82dc7a6544cd8300288537284bfd7442141de0",
+        "data/impact-v1/development/RV02-development-1-U/result.json": "7a5b76e09e9c34b5e141ac2a21cdbbeacc5d82b2e9f047e708b08e65dc065a7e",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/development/V01-development-1-D/result.json": "8ba4d687f284f0aadfe075cb790d30bca0bd193edb52098d9cd5d3859a403a83",
+        "data/impact-v1/development/V01-development-1-U/result.json": "c56b75363763c608ea1e67348f4784c78abf0e1c30037988af95c4e2c3edf648",
+        "data/impact-v1/development/V02-development-0-D/result.json": "fc8485e09c3445170b462ad6666e4cd749ffb70df6ce15e13338d4352be9ef0f",
+        "data/impact-v1/development/V02-development-0-U/result.json": "d17e99b90ed8d1133a8e3e41bd38ba8483e1997aec1903fd7189587455a7e261",
+        "data/impact-v1/development/V02-development-1-D/result.json": "455192b13d85b1bd71d797b7070d2966c1e1b46baad95eae7555d6eacf1e8fe2",
+        "data/impact-v1/development/V02-development-1-U/result.json": "09c81d0e368ee8cdabf2b2098443f226f3d5a8f951cea87b08167348330b0d50",
+        "data/impact-v1/development/V03-development-0-D/result.json": "60342a8b5aa57e36b04c4499c10127ea742955e5f9467ac876ca97fd17e9e9c1",
+        "data/impact-v1/development/V03-development-0-U/result.json": "89a615da88751df7df1d308209380399e80a442fc0db13f5030a8e861e62eade",
+        "data/impact-v1/development/V03-development-1-D/result.json": "0bc89b923a1312a47189b150306dd56f71bcddc2a6dd2dbf768f06c1290042bd",
+        "data/impact-v1/development/V03-development-1-U/result.json": "6ae50da8f6c7bde7f2457ed3de0a6a6d47e33422d9c49024bfa4d7d2d229f401",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "metric": "sampled registered closed cores",
+      "sampling_interval": 20,
+      "run_ids": [
+        "V01-development-0-D",
+        "V01-development-0-U",
+        "V01-development-1-D",
+        "V01-development-1-U",
+        "V01-confirmation-0-D",
+        "V01-confirmation-0-U",
+        "V01-confirmation-1-D",
+        "V01-confirmation-1-U",
+        "V02-development-0-D",
+        "V02-development-0-U",
+        "V02-development-1-D",
+        "V02-development-1-U",
+        "V02-confirmation-0-D",
+        "V02-confirmation-0-U",
+        "V02-confirmation-1-D",
+        "V02-confirmation-1-U",
+        "V03-development-0-D",
+        "V03-development-0-U",
+        "V03-development-1-D",
+        "V03-development-1-U",
+        "V03-confirmation-0-D",
+        "V03-confirmation-0-U",
+        "V03-confirmation-1-D",
+        "V03-confirmation-1-U",
+        "RV01-development-0-D",
+        "RV01-development-0-U",
+        "RV01-development-1-D",
+        "RV01-development-1-U",
+        "RV01-confirmation-0-D",
+        "RV01-confirmation-0-U",
+        "RV01-confirmation-1-D",
+        "RV01-confirmation-1-U",
+        "RV02-development-0-D",
+        "RV02-development-0-U",
+        "RV02-development-1-D",
+        "RV02-development-1-U",
+        "RV02-confirmation-0-D",
+        "RV02-confirmation-0-U",
+        "RV02-confirmation-1-D",
+        "RV02-confirmation-1-U"
+      ]
+    },
+    {
+      "file": "impact1-paired-curves-dark.png",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "23e88116d1b76b13eb792a32a9fe90290897671fb057e92ca657e67fb0595bf5",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV01-confirmation-0-D/result.json": "a77b92107955a6717fa72fb7e95ab2998998237c6aab26dc4eff6ff00921ae21",
+        "data/impact-v1/confirmation/RV01-confirmation-0-U/result.json": "4603749153f1a8ab42f3cd80613a314c40420fc84c44faded35f47ebd7db7588",
+        "data/impact-v1/confirmation/RV01-confirmation-1-D/result.json": "e1840ef06b0df9bc5b92d15d9e3234ce2ba35cce79ae5b866bb78e61f185979e",
+        "data/impact-v1/confirmation/RV01-confirmation-1-U/result.json": "372330551b6ef8c9d8df5d20ff524a8e72946c94d1d741126939914d9457a40f",
+        "data/impact-v1/confirmation/RV02-confirmation-0-D/result.json": "d6fe6d2ab070eab224ff0c00511a0d71f9dd763b1539e06bf131345e1fd6b80b",
+        "data/impact-v1/confirmation/RV02-confirmation-0-U/result.json": "294b90466864c13f5171931550bbd4db4a85c691da0153f26d3a46f8d249ba62",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/confirmation/V01-confirmation-0-D/result.json": "8b0bc06c78ae196a1766d19038af706ff4bc6906ef90111a79614b152b9c1225",
+        "data/impact-v1/confirmation/V01-confirmation-0-U/result.json": "4107c0c173fbd57fac33e2246c788fba0045cc7bfffc3e83b88d2982340150ed",
+        "data/impact-v1/confirmation/V01-confirmation-1-D/result.json": "05fd0def4485467a91461f478b288152ca4148d40ee035474342a9bf1145dd4a",
+        "data/impact-v1/confirmation/V01-confirmation-1-U/result.json": "51cc1fd1af56cc03a35ce0759ffc2024ed2d39bd624e382a2189d8c8b5ff198e",
+        "data/impact-v1/confirmation/V02-confirmation-0-D/result.json": "4001475932cf3344dac7af4a81d344b0bf975089bfc1f3bb641f71892b5e3447",
+        "data/impact-v1/confirmation/V02-confirmation-0-U/result.json": "306ecd522317bb921594bbaec938b9bcfc27ddfa8fe2e1570207410a59ac9f5e",
+        "data/impact-v1/confirmation/V02-confirmation-1-D/result.json": "8749969103cc14759872f579d2d1a8111844afb25e8198dfd370495d87dd1d6e",
+        "data/impact-v1/confirmation/V02-confirmation-1-U/result.json": "a9e7b208291086f0e5bca1d21d729499345462d9b24f1eca33ee3e0488ccee4b",
+        "data/impact-v1/confirmation/V03-confirmation-0-D/result.json": "3f1ee074bd40724e9edc742174e8d5d331b385d31d2ecb1b4ae7715f7464033b",
+        "data/impact-v1/confirmation/V03-confirmation-0-U/result.json": "96e735d4d494a58cb03c10cd679995503c2ac78d6081bc9eb514baf11f77b7f9",
+        "data/impact-v1/confirmation/V03-confirmation-1-D/result.json": "0bac6a9848a4f8011cde38e2e9aecdd68fa5d80afc25802dde84727f0ccd6ec0",
+        "data/impact-v1/confirmation/V03-confirmation-1-U/result.json": "7806bc8d510c523d0275aa8a32ff24f7c9c6776274837f4d400873f49a0cfd0e",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/development/RV01-development-1-D/result.json": "135e7fa60ba643a637e1c3d41728d5b6877031500ee0f98c284a516aabd04eca",
+        "data/impact-v1/development/RV01-development-1-U/result.json": "cf47fb9d6e9df450b33ccd8a56636c8d1f7d3ffe24fcddd894fc8722e5db2668",
+        "data/impact-v1/development/RV02-development-0-D/result.json": "5662bf01a35ec772b1946f191061467a9febc12e12635ef6a4d7bb838d266341",
+        "data/impact-v1/development/RV02-development-0-U/result.json": "37c3551f5630df6a60479317b67279699e1e4d819f2e929a4d4ef41982fe5530",
+        "data/impact-v1/development/RV02-development-1-D/result.json": "88b42c0a355ad650f0ac719d6e82dc7a6544cd8300288537284bfd7442141de0",
+        "data/impact-v1/development/RV02-development-1-U/result.json": "7a5b76e09e9c34b5e141ac2a21cdbbeacc5d82b2e9f047e708b08e65dc065a7e",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/development/V01-development-1-D/result.json": "8ba4d687f284f0aadfe075cb790d30bca0bd193edb52098d9cd5d3859a403a83",
+        "data/impact-v1/development/V01-development-1-U/result.json": "c56b75363763c608ea1e67348f4784c78abf0e1c30037988af95c4e2c3edf648",
+        "data/impact-v1/development/V02-development-0-D/result.json": "fc8485e09c3445170b462ad6666e4cd749ffb70df6ce15e13338d4352be9ef0f",
+        "data/impact-v1/development/V02-development-0-U/result.json": "d17e99b90ed8d1133a8e3e41bd38ba8483e1997aec1903fd7189587455a7e261",
+        "data/impact-v1/development/V02-development-1-D/result.json": "455192b13d85b1bd71d797b7070d2966c1e1b46baad95eae7555d6eacf1e8fe2",
+        "data/impact-v1/development/V02-development-1-U/result.json": "09c81d0e368ee8cdabf2b2098443f226f3d5a8f951cea87b08167348330b0d50",
+        "data/impact-v1/development/V03-development-0-D/result.json": "60342a8b5aa57e36b04c4499c10127ea742955e5f9467ac876ca97fd17e9e9c1",
+        "data/impact-v1/development/V03-development-0-U/result.json": "89a615da88751df7df1d308209380399e80a442fc0db13f5030a8e861e62eade",
+        "data/impact-v1/development/V03-development-1-D/result.json": "0bc89b923a1312a47189b150306dd56f71bcddc2a6dd2dbf768f06c1290042bd",
+        "data/impact-v1/development/V03-development-1-U/result.json": "6ae50da8f6c7bde7f2457ed3de0a6a6d47e33422d9c49024bfa4d7d2d229f401",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "metric": "sampled registered closed cores",
+      "sampling_interval": 20,
+      "run_ids": [
+        "V01-development-0-D",
+        "V01-development-0-U",
+        "V01-development-1-D",
+        "V01-development-1-U",
+        "V01-confirmation-0-D",
+        "V01-confirmation-0-U",
+        "V01-confirmation-1-D",
+        "V01-confirmation-1-U",
+        "V02-development-0-D",
+        "V02-development-0-U",
+        "V02-development-1-D",
+        "V02-development-1-U",
+        "V02-confirmation-0-D",
+        "V02-confirmation-0-U",
+        "V02-confirmation-1-D",
+        "V02-confirmation-1-U",
+        "V03-development-0-D",
+        "V03-development-0-U",
+        "V03-development-1-D",
+        "V03-development-1-U",
+        "V03-confirmation-0-D",
+        "V03-confirmation-0-U",
+        "V03-confirmation-1-D",
+        "V03-confirmation-1-U",
+        "RV01-development-0-D",
+        "RV01-development-0-U",
+        "RV01-development-1-D",
+        "RV01-development-1-U",
+        "RV01-confirmation-0-D",
+        "RV01-confirmation-0-U",
+        "RV01-confirmation-1-D",
+        "RV01-confirmation-1-U",
+        "RV02-development-0-D",
+        "RV02-development-0-U",
+        "RV02-development-1-D",
+        "RV02-development-1-U",
+        "RV02-confirmation-0-D",
+        "RV02-confirmation-0-U",
+        "RV02-confirmation-1-D",
+        "RV02-confirmation-1-U"
+      ]
+    },
+    {
+      "file": "impact1-paired-V01-development-0.webp",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/development/V01-development-0-D/replay.npz": "fb9fb862d3f6d83981ac4df13efdcbb38a40d09df7e61aac812322376d670926",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/replay.npz": "49e6b116961e25929dacbbd0dc5712b6232969f4255e3a72c1a26a0e1b34f6dc",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "selection": "predeclared configuration replay",
+      "pair_id": "V01-development-0",
+      "display_times": [
+        0,
+        80,
+        160,
+        240,
+        320,
+        400,
+        480,
+        560,
+        640,
+        720,
+        800,
+        880,
+        960,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440,
+        1520,
+        1600
+      ],
+      "pixels_per_cell": 2,
+      "grid_rectangles": [
+        {
+          "treatment": "D",
+          "left": 16,
+          "top": 104,
+          "width": 384,
+          "height": 384
+        },
+        {
+          "treatment": "U",
+          "left": 420,
+          "top": 104,
+          "width": 384,
+          "height": 384
+        }
+      ],
+      "sha256": "405f4175669f55a275c842c762ff76ccacd4b893b004a7abc5824d3ead739461",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+    },
+    {
+      "file": "impact1-paired-RV01-development-0.webp",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/development/RV01-development-0-D/replay.npz": "83162ba2f530f815cadc014e059dd5815f56d81d018660508cfeb22db9b02761",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/replay.npz": "5e50fee3449f7cc3fda269b4533a149bf04e662af68202e7cd4df81cf5630f84",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "selection": "predeclared configuration replay",
+      "pair_id": "RV01-development-0",
+      "display_times": [
+        0,
+        80,
+        160,
+        240,
+        320,
+        400,
+        480,
+        560,
+        640,
+        720,
+        800,
+        880,
+        960,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440,
+        1520,
+        1600
+      ],
+      "pixels_per_cell": 2,
+      "grid_rectangles": [
+        {
+          "treatment": "D",
+          "left": 16,
+          "top": 104,
+          "width": 384,
+          "height": 384
+        },
+        {
+          "treatment": "U",
+          "left": 420,
+          "top": 104,
+          "width": 384,
+          "height": 384
+        }
+      ],
+      "sha256": "9dcfe0e2a951f8079ec09d3da737f4acbbddec33fae1e91cc9679c6b8f3a5eb1",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+    },
+    {
+      "file": "impact1-paired-RV02-confirmation-1.webp",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/replay.npz": "744eba353001130f6d284190ef60c4102acfe5f56859ab5cf723e85abc535f0e",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/replay.npz": "f534caf9a8669a7bc59255426cfa73bcf83ed0e17fd382ace4e501e34c95a8a5",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "selection": "predeclared configuration replay",
+      "pair_id": "RV02-confirmation-1",
+      "display_times": [
+        0,
+        80,
+        160,
+        240,
+        320,
+        400,
+        480,
+        560,
+        640,
+        720,
+        800,
+        880,
+        960,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440,
+        1520,
+        1600
+      ],
+      "pixels_per_cell": 2,
+      "grid_rectangles": [
+        {
+          "treatment": "D",
+          "left": 16,
+          "top": 104,
+          "width": 384,
+          "height": 384
+        },
+        {
+          "treatment": "U",
+          "left": 420,
+          "top": 104,
+          "width": 384,
+          "height": 384
+        }
+      ],
+      "sha256": "19876939d616605eca150be80c73ab2daf7b9bd95d2d3c56269fc763989fe1df",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+    },
+    {
+      "file": "impact1-calibration-dark.svg",
+      "experiments": [
+        "EXP-impact-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "c157bbd4141ec006c0bec6a2cff392c82c673660420d7ca732bcd96a45f771d4",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "gate": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 30,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      },
+      "gate_passed": true,
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "stratum_columns": [
+        [
+          "calibration-0",
+          0
+        ],
+        [
+          "calibration-0",
+          400
+        ],
+        [
+          "calibration-0",
+          800
+        ],
+        [
+          "calibration-0",
+          1200
+        ],
+        [
+          "calibration-1",
+          0
+        ],
+        [
+          "calibration-1",
+          400
+        ],
+        [
+          "calibration-1",
+          800
+        ],
+        [
+          "calibration-1",
+          1200
+        ]
+      ]
+    },
+    {
+      "file": "impact1-calibration-dark.pdf",
+      "experiments": [
+        "EXP-impact-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "5e61b8a931f74dd9efbd193a5867eabc00525e9bd8b97dba3e2933085c908311",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "gate": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 30,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      },
+      "gate_passed": true,
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "stratum_columns": [
+        [
+          "calibration-0",
+          0
+        ],
+        [
+          "calibration-0",
+          400
+        ],
+        [
+          "calibration-0",
+          800
+        ],
+        [
+          "calibration-0",
+          1200
+        ],
+        [
+          "calibration-1",
+          0
+        ],
+        [
+          "calibration-1",
+          400
+        ],
+        [
+          "calibration-1",
+          800
+        ],
+        [
+          "calibration-1",
+          1200
+        ]
+      ]
+    },
+    {
+      "file": "impact1-calibration-dark.png",
+      "experiments": [
+        "EXP-impact-calibration-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "0ffe50fbd941d0f7ba9e5524f6bade2ed17c8b411ce9da1b85e53646880dfe40",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/calibration.json": "743d11441f3aafacb08720b60bc3f5de85d1070c700dfacd5f95c32569a9f993",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "gate": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 30,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      },
+      "gate_passed": true,
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "stratum_columns": [
+        [
+          "calibration-0",
+          0
+        ],
+        [
+          "calibration-0",
+          400
+        ],
+        [
+          "calibration-0",
+          800
+        ],
+        [
+          "calibration-0",
+          1200
+        ],
+        [
+          "calibration-1",
+          0
+        ],
+        [
+          "calibration-1",
+          400
+        ],
+        [
+          "calibration-1",
+          800
+        ],
+        [
+          "calibration-1",
+          1200
+        ]
+      ]
+    },
+    {
+      "file": "impact1-score-matrices-dark.svg",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "549003b2fec47b8d6a387351b3f6237d285cbb68d2ae19471719f3bebca430ce",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "condition_order": [
+        "development-0",
+        "development-1",
+        "confirmation-0",
+        "confirmation-1"
+      ],
+      "ratio": "exact per-condition integer D_sum/U_sum",
+      "sample_count_per_condition": 81
+    },
+    {
+      "file": "impact1-score-matrices-dark.pdf",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "f52de33b08735c4d7b312a9238281959bae0f2c0cec7ddcefe2d1447cac25973",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "condition_order": [
+        "development-0",
+        "development-1",
+        "confirmation-0",
+        "confirmation-1"
+      ],
+      "ratio": "exact per-condition integer D_sum/U_sum",
+      "sample_count_per_condition": 81
+    },
+    {
+      "file": "impact1-score-matrices-dark.png",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "3bde6230c9d4340f0cb3fb6bc6631ca2cdb48abaee3fc1400ccd65b6887454b1",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+        "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "states": [
+        "V01",
+        "V02",
+        "V03",
+        "RV01",
+        "RV02"
+      ],
+      "condition_order": [
+        "development-0",
+        "development-1",
+        "confirmation-0",
+        "confirmation-1"
+      ],
+      "ratio": "exact per-condition integer D_sum/U_sum",
+      "sample_count_per_condition": 81
+    },
+    {
+      "file": "impact1-raw-states-dark.svg",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "0d9b8b8551fb527b35d3e9d949d8eddffe79ec970e77b3003ef915e945d0e783",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/replay.npz": "744eba353001130f6d284190ef60c4102acfe5f56859ab5cf723e85abc535f0e",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/replay.npz": "f534caf9a8669a7bc59255426cfa73bcf83ed0e17fd382ace4e501e34c95a8a5",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/development/RV01-development-0-D/replay.npz": "83162ba2f530f815cadc014e059dd5815f56d81d018660508cfeb22db9b02761",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/replay.npz": "5e50fee3449f7cc3fda269b4533a149bf04e662af68202e7cd4df81cf5630f84",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/development/V01-development-0-D/replay.npz": "fb9fb862d3f6d83981ac4df13efdcbb38a40d09df7e61aac812322376d670926",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/replay.npz": "49e6b116961e25929dacbbd0dc5712b6232969f4255e3a72c1a26a0e1b34f6dc",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "selection": [
+        {
+          "state": "V01",
+          "condition": "development-0"
+        },
+        {
+          "state": "RV01",
+          "condition": "development-0"
+        },
+        {
+          "state": "RV02",
+          "condition": "confirmation-1"
+        }
+      ],
+      "selection_rule": "configuration-declared before responses",
+      "grid_encoding": "literal cells; separate dashed occupied-mask perimeter"
+    },
+    {
+      "file": "impact1-raw-states-dark.pdf",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "0ceaf385b191dc93af17ba8a5e79d5ef0d622602ae2d99b6197c22d97d2ddab8",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/replay.npz": "744eba353001130f6d284190ef60c4102acfe5f56859ab5cf723e85abc535f0e",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/replay.npz": "f534caf9a8669a7bc59255426cfa73bcf83ed0e17fd382ace4e501e34c95a8a5",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/development/RV01-development-0-D/replay.npz": "83162ba2f530f815cadc014e059dd5815f56d81d018660508cfeb22db9b02761",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/replay.npz": "5e50fee3449f7cc3fda269b4533a149bf04e662af68202e7cd4df81cf5630f84",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/development/V01-development-0-D/replay.npz": "fb9fb862d3f6d83981ac4df13efdcbb38a40d09df7e61aac812322376d670926",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/replay.npz": "49e6b116961e25929dacbbd0dc5712b6232969f4255e3a72c1a26a0e1b34f6dc",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "selection": [
+        {
+          "state": "V01",
+          "condition": "development-0"
+        },
+        {
+          "state": "RV01",
+          "condition": "development-0"
+        },
+        {
+          "state": "RV02",
+          "condition": "confirmation-1"
+        }
+      ],
+      "selection_rule": "configuration-declared before responses",
+      "grid_encoding": "literal cells; separate dashed occupied-mask perimeter"
+    },
+    {
+      "file": "impact1-raw-states-dark.png",
+      "experiments": [
+        "EXP-impact-paired-001"
+      ],
+      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_impact",
+      "sha256": "8e702050e8cbe9c3029ab6d3dd824eb396e9d63336e5fb65f1f4160f8002608b",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+      "source_sha256": {
+        "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/replay.npz": "744eba353001130f6d284190ef60c4102acfe5f56859ab5cf723e85abc535f0e",
+        "data/impact-v1/confirmation/RV02-confirmation-1-D/result.json": "694aad2cb25952e7ff2f54e8fdb674961acb7ccaf9d75ea3eaa54ebd53ed62f6",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/replay.npz": "f534caf9a8669a7bc59255426cfa73bcf83ed0e17fd382ace4e501e34c95a8a5",
+        "data/impact-v1/confirmation/RV02-confirmation-1-U/result.json": "7d64265bdacf26aaf22fe5089b3ea48f8f47eb85c655c6700e44b8496fa5dd73",
+        "data/impact-v1/development/RV01-development-0-D/replay.npz": "83162ba2f530f815cadc014e059dd5815f56d81d018660508cfeb22db9b02761",
+        "data/impact-v1/development/RV01-development-0-D/result.json": "a6bb746946a0165766eb928a71c9e1851a019a97ed87a6973cb1c5e8bb4fde4d",
+        "data/impact-v1/development/RV01-development-0-U/replay.npz": "5e50fee3449f7cc3fda269b4533a149bf04e662af68202e7cd4df81cf5630f84",
+        "data/impact-v1/development/RV01-development-0-U/result.json": "b05c9abd7838624a722c513eb2771c55addab65dd2b558a4c2673209a68f78fd",
+        "data/impact-v1/development/V01-development-0-D/replay.npz": "fb9fb862d3f6d83981ac4df13efdcbb38a40d09df7e61aac812322376d670926",
+        "data/impact-v1/development/V01-development-0-D/result.json": "0a41fc22c3457117fb2b11463ca6c7ed17318b664f42c02c28f29ef48adce3b1",
+        "data/impact-v1/development/V01-development-0-U/replay.npz": "49e6b116961e25929dacbbd0dc5712b6232969f4255e3a72c1a26a0e1b34f6dc",
+        "data/impact-v1/development/V01-development-0-U/result.json": "7b5335311094ac4eba06cc87c82414343de73709f88c25b760fd2a4a769a2f7b",
+        "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+        "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+        "data/impact-v1/prepared/RV01-development-0.npz": "f87cdf99f67c6a8ce3b9ff14fc71a4c563c32ed9a8f0b949be418448cf0d3e27",
+        "data/impact-v1/prepared/RV02-confirmation-1.npz": "b9f0ee674a56aea5048e4d989d1a8a827f7b26223afec12231c55d4cd1283420",
+        "data/impact-v1/prepared/V01-development-0.npz": "bf107ea611f113a84dc3801b34fb523a650b914de0163217bbc36b6a2e41d139",
+        "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78"
+      },
+      "selection": [
+        {
+          "state": "V01",
+          "condition": "development-0"
+        },
+        {
+          "state": "RV01",
+          "condition": "development-0"
+        },
+        {
+          "state": "RV02",
+          "condition": "confirmation-1"
+        }
+      ],
+      "selection_rule": "configuration-declared before responses",
+      "grid_encoding": "literal cells; separate dashed occupied-mask perimeter"
     }
   ]
 }

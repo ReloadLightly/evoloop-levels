@@ -1,24 +1,50 @@
 """Readable working PDF using the existing Matplotlib toolchain.
 
 This deliberately simple renderer avoids a TeX/pandoc installation diversion.
-Markdown remains authoritative; figures are appended as full-page paper panels.
+Markdown remains authoritative. Verified vector figure PDFs are appended with
+Ghostscript, keeping raster pages out of the Matplotlib PDF cache.
 """
 import os
 from pathlib import Path
 os.environ.setdefault('MPLCONFIGDIR',str(Path(__file__).resolve().parents[1]/'.cache/matplotlib'))
 import re
 import json
-import gc
+import subprocess
+import tempfile
+import signal
 import textwrap
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
-from PIL import Image
 from evoloop.engine import ROOT
 
 WIDTH=90
 STYLE=json.loads((ROOT/'configs/style.json').read_text())
+
+def assemble_vectors(command):
+    """Terminate the decoder too when the memory guard stops this renderer."""
+    child=None
+    def terminate_child():
+        if child is not None and child.poll() is None:
+            child.terminate()
+            try:
+                child.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                child.kill()
+                child.wait()
+    def stop(signum, frame):
+        terminate_child()
+        raise SystemExit(128+signum)
+    previous=signal.signal(signal.SIGTERM,stop)
+    try:
+        child=subprocess.Popen(command)
+        return_code=child.wait()
+        if return_code:
+            raise subprocess.CalledProcessError(return_code,command)
+    finally:
+        terminate_child()
+        signal.signal(signal.SIGTERM,previous)
 
 def main():
     source=(ROOT/'paper/manuscript.md').read_text();pages=[];lines=[];y=0
@@ -57,7 +83,11 @@ def main():
     if lines:pages.append(lines)
     plt.rcParams.update({'font.family':'DejaVu Serif','pdf.fonttype':42})
     target=ROOT/'paper/manuscript.pdf'
-    with PdfPages(target,metadata={'Title':'Where Does Evolvability Reside?','Subject':'Production and transmission of variation in controlled encounters'}) as pdf:
+    work_root=ROOT/'.cache'
+    work_root.mkdir(exist_ok=True)
+    work=tempfile.TemporaryDirectory(prefix='manuscript-',dir=work_root)
+    text_target=Path(work.name)/'text.pdf'
+    with PdfPages(text_target,metadata={'Title':'Where Does Evolvability Reside?','Subject':'Production and transmission of variation in controlled encounters'}) as pdf:
         for page_number,page in enumerate(pages,1):
             fig=plt.figure(figsize=(8.27,11.69),facecolor='white');ax=fig.add_axes([0,0,1,1]);ax.set_axis_off()
             for text,style,yp in page:
@@ -83,22 +113,26 @@ def main():
             for line in wrapped:ax.text(.085,yp,line,fontsize=8.5,va='top');yp-=.017
             yp-=.018
         pdf.savefig(fig);plt.close(fig)
-        for name in ['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3',
+    # Concatenation preserves native vector geometry and avoids retaining every
+    # raster figure in PdfPages. Install nothing: gs is the existing decoder.
+    names=['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3',
                      'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison',
                      'panel2-native-worlds','panel2-selection','atlas2-verified-panel','atlas2-outcome-matrix',
                      'atlas2-evidence-stages','atlas2-inheritance-path','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3',
                      'eco1-calibration-recovery','eco1-calibration-strata','eco1-score-matrix','eco1-paired-margins',
-                     'eco1-evidence-stages','eco1-disturbance-states']:
-            p=ROOT/f'figures/{name}-dark.png'
-            if not p.exists():continue
-            fig=plt.figure(figsize=(11.69,8.27),facecolor=STYLE['ink']);ax=fig.add_axes([.035,.07,.93,.86])
-            with Image.open(p) as recorded:
-                ax.imshow(recorded)
-            ax.axis('off')
-            fig.text(.05,.03,f'Figure: {name}. Source and regeneration: figures/manifest.json.',fontsize=9,color=STYLE['text'])
-            pdf.savefig(fig);plt.close(fig)
-            del fig, ax
-            gc.collect()
+                     'eco1-evidence-stages','eco1-disturbance-states',
+                     'impact1-exposure','impact1-calibration','impact1-score-matrices','impact1-contrasts',
+                     'impact1-paired-curves','impact1-raw-states']
+    figure_pdfs=[ROOT/f'figures/{name}-dark.pdf' for name in names]
+    missing=[str(p) for p in figure_pdfs if not p.exists()]
+    if missing:
+        raise FileNotFoundError('Required figure PDFs missing: '+', '.join(missing))
+    assembled=Path(work.name)/'assembled.pdf'
+    assemble_vectors(['gs','-q','-dNOPAUSE','-dBATCH','-sDEVICE=pdfwrite',
+                    '-sOutputFile='+str(assembled),str(text_target),
+                    *map(str,figure_pdfs)])
+    os.replace(assembled,target)
+    work.cleanup()
     print('Rendered',target,'from authoritative Markdown and recorded-data figures')
 
 if __name__=='__main__':main()

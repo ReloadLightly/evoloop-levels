@@ -6,6 +6,10 @@ The [README](../README.md) explains the research and results. This guide contain
 
 Use Python 3.10+, GCC, and the pinned packages. Commands below assume a shell in the repository root and an activated environment.
 
+PDF assembly also requires Ghostscript (`gs`). The renderer builds the text
+pages with Matplotlib, appends the verified vector figure PDFs at their native
+page sizes, and replaces the working PDF only after successful assembly.
+
 ```sh
 python -m venv .venv
 source .venv/bin/activate
@@ -220,7 +224,7 @@ image references point to the appended figure pages; Markdown retains live links
 
 ## Nonsymmetric, impact-matched paired assay
 
-[Protocol009](../protocols/009-impact-matched-paired-assay.md) and
+[Protocol 009](../protocols/009-impact-matched-paired-assay.md) and
 [configuration](../configs/impact-v1.json) were frozen with every starting grid
 before acquiring disturbed responses. The exposure-only pilot and rejected
 preparation remain in `data/impact-exposure-v1/`; no disturbed continuation was
@@ -229,8 +233,11 @@ identical complete components at declared ages and sites, then removes one.
 It does not reconstruct a native ecological history.
 
 Read `data/impact-v1/analysis.md` and the exact rational values in `analysis.json`.
-Commands use one worker. Memory guard requires300 MiB available before launch
-and terminates if available memory drops below200 MiB; the --retry option waits for headroom and resumes completed cases
+Commands use one worker. The default memory guard requires 300 MiB available
+before launch; figure rendering below requires 420 MiB and vector manuscript
+assembly requires 360 MiB.
+The guard terminates a child if available memory drops below 200 MiB. The
+`--retry` option waits for headroom and resumes completed cases
 without counting them again. Timing and invocation logs are not scientific
 replicates. Run heavy verification, rendering, and Git packing sequentially.
 
@@ -242,8 +249,8 @@ python -m scripts.memory_guard --retry --log data/impact-v1/execution.jsonl pyth
 python -m scripts.analyze_impact benefit
 python -m scripts.impact_contrasts
 python -m scripts.memory_guard --retry --log data/impact-v1/execution.jsonl python -m scripts.verify_impact
-python -m scripts.memory_guard --retry --reserve 240 --log data/impact-v1/execution.jsonl python -m scripts.figures_impact
-python -m scripts.memory_guard --retry --reserve 240 --log data/impact-v1/execution.jsonl python -m scripts.render_manuscript
+python -m scripts.memory_guard --retry --reserve 220 --log data/impact-v1/execution.jsonl python -m scripts.figures_impact
+python -m scripts.memory_guard --retry --reserve 160 --log data/impact-v1/execution.jsonl python -m scripts.render_manuscript
 ```
 
 For a full fresh acquisition, use a separate checkout and remove only that
@@ -279,6 +286,7 @@ verification evidence, not simulation frames or independent replications.
 Supplementary per-condition contrasts and rejected-preparation proof regenerate
 with `python -m scripts.impact_contrasts` and
 `python -m scripts.verify_preparation_rejection`. They do not alter frozen
-classification. The latter replays the documented pre-response eligibility scan
+classification; the contrast command also formats analysis.md from unchanged
+analysis.json. The latter replays the documented pre-response eligibility scan
 and retains both disconnected-cell V03 grids; it never continues a disturbed
 state or chooses configurations from response outcomes.

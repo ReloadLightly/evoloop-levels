@@ -2,43 +2,43 @@
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
-Current evidence: the nonsymmetric, impact-matched assay has completed all40
-paired response worlds and ten independent calibration worlds. Each constructed
-three-clone colony loses exactly one complete component (1/3 occupied cells,
-3→2 registered cores); its undisturbed twin receives no intervention. Complete
-reserved states are distinct from development under rotation/translation.
-Preparation ages0,20,30,100,110,120 are elapsed updates, not homologous phases.
+Current evidence: all 40 paired response worlds and ten separate calibration
+worlds have completed. Each constructed three-clone colony loses one complete
+component: exactly one third of occupied cells and 3→2 registered cores. Its
+undisturbed twin receives no intervention. Reserved complete states are distinct
+from development under rotation and translation. Preparation ages 0, 20, 30,
+100, 110, and 120 are elapsed updates, not homologous biological phases.
 
-Calibration passes:77/80 selected scored cores recover their original composite
-identity through two transmissions, with30/30 phase controls. All80 selections
-are extractable; three isolated searches end in grid extinction, without proving
-native lineage extinction. Per-state counts:V01 16/16,V02 14/16,V03 15/16,
-RV01 16/16,RV02 16/16. No unscored selections occur at calibration source times.
+Calibration passes: 77/80 selected scored structures recover their original
+composite identity through two transmissions; 30/30 age controls also pass.
+All 80 selections are extractable. Three isolated searches end in grid extinction,
+without establishing native lineage extinction. Recovery counts are V01 16/16,
+V02 14/16, V03 15/16, RV01 16/16, and RV02 16/16. No unscored selections occur
+at these calibration source times.
 
-Neither recovered state satisfies the new strict both-input/both-panel relative
-retention or absolute disturbed-population criterion. Joint confirmed count0/36
-main,0/18 held-out,0/54 overall is conditional on this assay;16 other candidate
-encounters retain unresolved inheritance. RV01 exceeds V02 on one development
-configuration but falls below it on the other, with age and geometry confounded.
-Its panel retention is0.7442 development/0.6409 confirmation. RV02 retention
-is0.6772/0.6855; higher confirmation retention than V01 alone accompanies lower
-absolute disturbed population. Neither finding measures increased evolvability.
+Neither recovered state satisfies the strict both-input/both-panel relative
+retention or absolute disturbed-population criterion. Joint-confirmed originating
+encounters are 0/36 main, 0/18 held out, and 0/54 overall, conditional on this
+assay; 16 other candidate encounters retain unresolved inheritance. RV01 exceeds
+V02 on one development configuration and falls below it on the other, with age
+and geometry confounded. RV01's panel retention is 0.7442 development and 0.6409
+confirmation; RV02's is 0.6772 and 0.6855. RV02's higher confirmation retention
+than V01 alone accompanies lower absolute disturbed population. Neither outcome
+establishes increased evolvability or zero true beneficial variation.
 
-The registry omits valid/unknown cores in paired worlds, including V02's
-development-1 control mean0.852 unregistered valid cores. Their viability is
-untested; the score measures recognized structural population, not total viable
-population. H1/H3 remain untested and RSI unestablished. Independent preparation
-and exact arithmetic checks pass; full native and isolation replay passed with zero mismatches.
+The registry omits valid and unknown-identity cores in paired worlds. V02's
+undisturbed development-1 world averages 0.852 unregistered valid cores per
+sample. Their viability is untested: the score measures registered structural
+population, not total viable population. Full independent native and isolation
+replay, preparation checks, and exact arithmetic pass with zero mismatches.
+H1/H3 remain untested; RSI remains unestablished.
 
-The earlier frozen ecological1 proxy flag remains1/54, with distinct ecological
-confirmation unresolved because36/40 clears were empty and nominal confirmation
+The earlier frozen ecological-1 proxy flag remains 1/54, with distinct ecological
+confirmation unresolved: 36/40 clearings were empty and nominal confirmation
 repeated development. The new assay changes preparation, effective exposure,
-controls and criterion; it does not retrospectively rewrite that result.
-
-Prospective freeze: protocol 007, configs/ecological-v1.json and all source hashes
-were committed and remotely verified at 5677f0d before acquisition. Four focused
-contract tests passed. One acquisition worker retained memory headroom; the
-200-update timing benchmark did not determine scientific endpoints.
+controls, and criterion; it does not rewrite that result. The earlier protocol
+007 freeze was remotely verified at 5677f0d; the new protocol 009 and all prepared
+states were verified remotely at ea49ea0 before acquiring their responses.
 
 Completed experiment IDs:
 
@@ -234,34 +234,70 @@ headroom and rerun; scientific data were unchanged. Final working PDF: 41 pages,
 results-table/figure pages pass. Review details: docs/visual_review.md and
 docs/scientific_review.md. Source Markdown remains authoritative.
 
-## Verified impact-matched evidence; publication exports pending
+## Verified impact-matched evidence and publication exports
 
-Protocol009/configs/impact-v1.json and all50 native starting grids were pushed
+Protocol 009, configs/impact-v1.json, and all 50 native starting grids were pushed
 and verified at ea49ea02b21c517ad4f3ab5dcb6bb9b21910ade3 before responses.
-Exposure-only pilot EXP-impact-exposure-001 completes in17.874s at64.3MiB peak
-RSS: eligible native3-core phases6/30, insufficient common offsets. A subsequent
-constructed preparation rejects V03 ages40/80 because one occupied cell is
-outside its single-core component; no cell discarded or disturbed future acquired.
-The failed proposal and partial grids remain in microcolony-attempt-01.
+The completed, independently verified dataset is pushed at d5a38643d1dfbcd5e528300389d234df45fef4ae.
 
-Final standardized colonies retain allfive complete representatives, advanced
-at elapsed ages0,20,30,100,110,120, not homologous reproductive-cycle phases.
-Thirty preparation conditions contain3 identical complete components; deleting
-one removes exactly1/3 occupied cells and registered cores. All20 within-state
-development×confirmation before/after state comparisons are inequivalent under
-rotation/translation; no same-condition cross-state aliases. Independent
-preparation reconstruction passes in3.86s. Four focused impact/ratio/equivalence
-tests pass. Thirty phase controls, ten new depleted calibration worlds and forty
-paired response worlds completed. Calibration uses217 generation simulations;
-214 nodes reach the three-offspring cap, with no depth/simulation-limit truncation.
-Independent audit passes all50 native trajectories (92,000 updates),4650 full
-sample records,80 extracted source components/native windows,30 phase controls,
-217 isolated generations,642 child-selection states and126 replay grids. Exact
-Fraction arithmetic/gate/symmetry matches. Per-unit proof receipts cover160 units,
-653.3s cumulative completed verification; final resumed invocation345.7s,88.4MiB
-peak RSS. Unique native acquisition sum686.1s. Calibration/paired final invocations
-peak67.8/62.7MiB respectively; invocation timings omit completed work resumed
-from prior attempts. Execution.jsonl preserves all memory interruptions/waits.
+EXP-impact-exposure-001 is an exposure-only pilot: 17.874 seconds, 64.3 MiB peak
+RSS, with eligible native three-core preparations at only 6/30 offsets.
+The subsequent provisional construction rejects V03 ages 40/80 because an
+occupied cell lies outside its single-core component. No cell was discarded
+and no disturbed future was acquired. Both failed preparations and the partial
+initial grids remain under data/impact-exposure-v1/.
 
-Figures and updated manuscript source are ready for export; PDF/rendered review
-pending at this dataset milestone.
+The final standardized colonies retain all five complete representatives at
+elapsed ages 0, 20, 30, 100, 110, and 120. All 30 preparations have three identical
+complete components and lose one third of occupied cells and registered cores.
+All 20 within-state development×confirmation comparisons are inequivalent in
+complete disturbed and undisturbed states under rotation and translation; no
+same-condition cross-state aliases occur. Independent preparation reconstruction
+passes in 3.64 seconds. Four focused impact, ratio, and equivalence tests pass.
+
+EXP-impact-calibration-001 completes 30 phase controls and ten depleted worlds.
+EXP-impact-paired-001 completes 40 paired response worlds. The calibration search
+executes 217 isolated generations: 214 nodes reach the three-offspring cap, with
+no depth or simulation-budget truncation. Later uncollected offspring remain
+unsearched. Full independent verification passes all 50 native trajectories
+(92,000 updates), 4,650 sample records, 80 extracted components and native
+continuation windows, 30 phase controls, 217 isolated generations, 642 saved
+child-selection states, and 126 replay grids. Exact Fraction arithmetic, recovery
+gates, and complete-state symmetry checks agree. Proof receipts cover 160 units;
+cumulative completed verification takes 653.3 seconds. The final resumed audit
+invocation takes 345.7 seconds at 88.4 MiB peak RSS.
+
+Unique completed native acquisition totals 686.1 seconds. Final calibration and
+paired invocations peak at 67.8 and 62.7 MiB respectively; invocation timings omit
+work already completed in resumed attempts. data/impact-v1/execution.jsonl
+preserves actual memory interruptions and launch waits. These are execution
+records, not independent scientific replicates.
+
+Completed publication exports: six static scientific figures in SVG/PDF/PNG and
+three lossless paired WebP replays, 21 new artifacts and 108 total manifest entries.
+All 126 displayed world rectangles are pixel-exact against retained raw grids.
+Artifact and source hashes pass, with all 87 prior manifest entries preserved.
+Initial serial rendering takes 64.33 active seconds; final layout refinements
+24.06 seconds. Maximum measured process RSS is 186.95 MiB; successful jobs retain
+at least 214.21 MiB monitored available memory. Interrupted/denied attempts are
+preserved and final artifacts repaired; no frozen scientific source changes.
+
+The updated working PDF has 51 pages, including 31 appended vector figures.
+Vector assembly takes 17.05 seconds; Python and Ghostscript each record 79.5 MiB
+per-process peak RSS, reported separately rather than as a simultaneous total.
+The successful guarded run retains at least 266.82 MiB sampled available memory.
+All 51 pages decode with Ghostscript PDFSTOPONERROR. The results table (page 15),
+score matrix (48), and raw-state figure (51) are inspected for readability and
+geometry. Source Markdown remains authoritative. Review and traceability:
+docs/visual_review.md, docs/impact_figure_validation.json, and
+docs/impact_manuscript_validation.json. The publication renderer now concatenates
+verified vector PDFs and replaces its output atomically; its corrected initial
+cross-filesystem move and earlier waiting-session exits remain in execution.jsonl.
+
+Single next scientific action: prospectively calibrate paired-world score coverage
+for omitted valid and unknown-identity structures, with matched scored roots,
+fixed maturation delays, native continuation, complete-component isolation, and
+age-specific positive controls across all five states and both treatments.
+Freeze selection before observing recovery; preserve ineligible and unresolved
+observations. A later fully crossed age×geometry design can explain condition
+reversals after addressing this measurement gap.

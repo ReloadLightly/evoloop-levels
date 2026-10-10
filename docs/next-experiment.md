@@ -1,68 +1,72 @@
-# Next scientific action: distinguish baseline growth from response to actual depletion
+# Next scientific action: calibrate coverage of the paired-world population score
 
 EXP-atlas-002 recovered pair-relative inherited novelty in 2/36 main and 0/18
 held-out encounters. One stable 14×14 word differs from all three catalogue
 inputs; the other stable 12×12 identity recovers V01 and differs from its
 originating V02/V03 pair. Eight successful extraction roots converge on these
-two identities from two configurations, rather than eight independent variants.
-Parentage remains pair-level ambiguous. The original atlas and delayed-extraction
-calibration retain their negative outcomes.
+two identities from two configurations. Parentage remains pair-level ambiguous.
+Sixteen other candidate-producing encounters retain unresolved inheritance.
 
-The ecological calibration and frozen paired assay are now complete. Original
-identity is recovered from 63/68 selected scored components and all five baseline
-controls, passing the frozen gate. All 20 paired conditions run. RV01, the known
-V01 recovery, exceeds both V02 and V03 under the frozen finite population-score
-criterion; RV02, the catalogue-novel identity, does not exceed V01/V03. Formal
-proxy-criterion yield is 1/36 main, 0/18 held out, and 1/54 overall. Sixteen other
-candidate-producing encounters remain unresolved. No unscored components are
-selected in calibration, leaving coverage of viable unregistered identities
-untested.
+The first ecological score passes its recovery gate at 63/68 selected components
+and 5/5 baseline controls. Its frozen proxy criterion classifies RV01 positively
+(1/54 originating encounters), but most clearings miss occupied cells and reserved
+confirmation duplicates development under rotation. Distinct challenge confirmation
+for that assay remains unresolved; its frozen classification is retained.
 
-Independent ecological benefit confirmation remains unresolved. Of 40 scheduled
-clearings, 36 remove no occupied cells; four remove 18 cells each without reducing
-the immediate registered-core count. Reserved confirmation trajectories are
-rotation duplicates of development, including the effective removals. There is
-no distinct confirmation challenge and no paired undisturbed control. These
-limitations prevent interpreting the result as recolonization after population
-depletion or general ecological superiority. Preserve the frozen classification
-and its audit rather than changing its endpoint retrospectively.
+The subsequent standardized microcolony assay matches one-third occupied-cell and
+registered-core loss, includes paired undisturbed controls, and reserves complete
+worlds that are not rotation/translation duplicates. Recovery calibration passes
+at 77/80 selected scored components and 30/30 preparation controls. All 40 paired
+worlds complete. Neither RV01 nor RV02 exceeds both originating inputs in both
+panels for relative retention or absolute disturbed population. Conditional
+joint-confirmed counts are 0/36 main, 0/18 held out, and 0/54 overall under this
+assay. These are confirmed-outcome counts, not proof of zero true beneficial
+variation. The earlier criterion and the new joint criterion are distinct.
 
-The single most informative next experiment is a prospectively frozen,
-nonsymmetric impact-matched disturbance assay with paired undisturbed controls.
-Retain both inherited states and both originating inputs: RV01 versus V02/V03,
-and RV02 versus V01/V03. Do not select only the higher-scoring state. Before
-outcome acquisition, declare multiple reproductive phases or matched complete-state
-preparations, disturbance times, targeting policy, intended depletion, horizon,
-score, calibration gate, and strict paired criterion. RV01 and V01 share an
-identity but have different complete snapshots; preserve arms, exact starting
-grids, hashes, and phase information. Assessing declared complete states is a
-necessary first step toward separating inherited-word effects from preparation.
+The immediate measurement uncertainty is score coverage. Valid unregistered and
+unknown-identity structures appear in the paired response worlds but not at the
+separate calibration source-time selections. For example, valid unregistered
+cores average 0.852 in V02's undisturbed development-1 world and 0.593 in V01/RV01's
+undisturbed development-0 worlds. Their viability is untested. Passing sampled
+recovery thresholds does not establish that the fixed registry captures total
+viable population, or that omitted classes contribute equally to D and U.
 
-Calibrate exposure prospectively using a declared procedure that verifies removal
-of its intended occupied structures or counted cores. Record absolute and
-fractional occupied-cell and core removal, retaining ineffective exposures in the
-denominator. An impact-matched policy may target state-dependent locations; if
-used, label that policy as an intervention and preserve the actual masks. A common
-fixed block location and a common depletion policy answer different comparisons.
-Pair each disturbed initial state with its undisturbed continuation, so changes
-in baseline multiplication can be separated from disturbance response. Repeat
-recovery calibration in the new depleted ecologies; the present registry gate
-does not automatically transfer.
+The single most informative next experiment is a prospective coverage calibration
+of these paired worlds. Freeze the run/time sampling panel, core-selection rule,
+maturation delays, continuation horizon, extraction budget, and recovery endpoint
+before selecting roots by replay or outcome. Retain all five prepared states and
+both disturbed and undisturbed treatments. Sample valid unregistered and unknown
+cores, with matched registry-scored structures and age-specific positive controls.
+Use complete components with arms; do not repair or crop a structure to make it
+extractable. Preserve all selected observations, including shared components,
+lost targets, unknown identities, extraction failures, and capped searches.
 
-Reserve genuinely distinct confirmation phases and geometries. Check complete
-states and effective intervention masks for rotational or translational equivalence
-before outcome acquisition. Use distinct asymmetric challenges rather than
-rotating the world and its disturbances together. Deterministic assessment
-conditions remain finite panel members, not independent population histories;
-repeated identical states are replay checks. Report all candidate and input
-comparisons, actual exposure, unresolved recovery, and the pair-relative versus
-catalogue-relative novelty distinction. Ordinary growth, recovery, or assay
-advantage alone does not demonstrate evolution of the capacity for further
-adaptive change or recursive self-improvement.
+Follow each declared native source through maturation and a fixed continuation,
+then test reproduction after isolation at the declared delays. A transient may
+produce stable descendants with a different identity. Stable transmission after
+isolation establishes recoverability outside the registry; matching words in
+native worlds remain structural evidence without genetic parentage. Native
+continuation and isolation answer different fate questions, and overlapping
+windows and repeated roots are not independent organisms or histories. Report
+recoverable omissions by treatment and source state, with explicit denominators
+and unresolved classes, rather than assuming every omitted closed body is viable.
 
-The new atlas's higher inherited yield is not a controlled panel-enrichment
-effect: organism inputs, domain size, native screening, periodic measurement,
-and descendant search changed. Maintain separate experimental endpoints.
+Keep the current registry and numerical criteria frozen. If coverage reveals
+recoverable omitted organisms, develop and freeze a revised score and new paired
+assay before its main acquisition. Any exploratory sensitivity calculation must
+remain separate from the existing primary outcomes. No coverage experiment has
+yet been completed.
+
+A subsequent experiment should fully cross declared elapsed ages with nonsymmetric
+site geometries. RV01 versus V02 changes retention sign between development-0 and
+development-1, but the existing conditions vary age and geometry together.
+Holding geometry fixed while changing age tests preparation dependence; holding
+age fixed while changing geometry tests spatial dependence. Retain all five
+complete prepared states, both candidates against both inputs, exact one-third
+removal, paired undisturbed controls, and separate relative/absolute criteria.
+Reserve non-equivalent age–geometry combinations before acquisition. Common elapsed
+ages are not homologous intrinsic reproductive phases. Constructed clone colonies
+are imposed ecologies, not native population-history transplants.
 
 H1 remains untested. Sample organisms from independently evolved populations
 and compare them with matched ancestors under a common held-out encounter
@@ -79,3 +83,5 @@ Crossing these transplants tests dependence between inherited organism and
 exposure pathways. Independent population histories supply replication. History
 acts through present organisms, encounter states, and intervention schedules:
 identical complete states and schedules have identical deterministic futures.
+Ordinary growth, recovery, or assay advantage alone does not establish recursive
+self-improvement or evolution of the capacity for further adaptive change.

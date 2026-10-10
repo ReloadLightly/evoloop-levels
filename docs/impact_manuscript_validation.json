@@ -1,0 +1,124 @@
+{
+  "status": "accepted",
+  "pages": 51,
+  "text_pages_including_references": 20,
+  "appended_vector_figure_pages": 31,
+  "full_ghostscript_decode": "passed with PDFSTOPONERROR",
+  "inspected_rendered_pages": [
+    15,
+    48,
+    51
+  ],
+  "inspected_content": [
+    "matched-depletion results table and qualifications",
+    "exact retention and absolute score matrix",
+    "raw before/removal/paired-endpoint geometry and state legend"
+  ],
+  "seconds": 17.04502085599961,
+  "peak_python_rss_kib": 81428,
+  "peak_ghostscript_rss_kib": 81428,
+  "minimum_monitored_available_mib": 266.82421875,
+  "assembly": "Matplotlib text PDF, existing vector figure PDFs, Ghostscript concatenation; atomic replacement on repository filesystem",
+  "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.memory_guard --retry --reserve 160 --log data/impact-v1/execution.jsonl python -m scripts.render_manuscript",
+  "sha256": {
+    "paper/manuscript.md": "f8c6a0d239b9b1838f2e23155841bc0cfd4419f4c363711eda83f9ef349b5f64",
+    "paper/manuscript.pdf": "b6c45a2b6126e3f33d73b00cec3f1a0980d584992f400b39dea76c245951553a",
+    "paper/references.bib": "98d70b28d6d4c3a3f71895dde02c9357aeb50e1e7680d4a9b96ca0fd59940ecb",
+    "scripts/render_manuscript.py": "5c2a691b85fee109c8819035bff2bff16cb40ac73be9f50547b5ba425a1a4214",
+    "figures/manifest.json": "dafcd10f5c134727d0dd6728a70b900788a1e85c817841f1e6d93bb3bd092190",
+    "configs/style.json": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
+  },
+  "notes": [
+    "Markdown remains authoritative. Native figure page sizes preserve geometry and readable vector labels.",
+    "Per-process peaks are reported separately; their sum is not a measured simultaneous RSS.",
+    "Raster-assembly waiting sessions and the corrected cross-filesystem output move remain in execution.jsonl."
+  ],
+  "publication_checks": {
+    "data_artifact_checksums": 6574,
+    "SHA256SUMS_sha256": "4ea216609cd5922961a9feee48e951a5d267765b1a41d85e692feea39e0308b1",
+    "figure_artifacts_and_sources_verified": 108,
+    "previous_manifest_entries_preserved": 87,
+    "frozen_code_config_protocol_hashes": "unchanged",
+    "checksum_guard_events": [
+      {
+        "utc_epoch": 1791603366.641093,
+        "status": "not_started_insufficient_launch_headroom",
+        "available_mib": 240.03125,
+        "command": [
+          "env",
+          "OPENBLAS_NUM_THREADS=1",
+          "python",
+          "-m",
+          "scripts.checksums",
+          "write"
+        ]
+      },
+      {
+        "utc_epoch": 1791603381.682781,
+        "status": "not_started_insufficient_launch_headroom",
+        "available_mib": 243.92578125,
+        "command": [
+          "env",
+          "OPENBLAS_NUM_THREADS=1",
+          "python",
+          "-m",
+          "scripts.checksums",
+          "write"
+        ]
+      },
+      {
+        "utc_epoch": 1791603398.3420157,
+        "status": "start",
+        "available_mib": 310.3359375,
+        "command": [
+          "env",
+          "OPENBLAS_NUM_THREADS=1",
+          "python",
+          "-m",
+          "scripts.checksums",
+          "write"
+        ]
+      },
+      {
+        "utc_epoch": 1791603399.3628063,
+        "status": "terminated_headroom_below_minimum",
+        "available_mib": 194.16796875,
+        "minimum_mib": 194.66796875
+      },
+      {
+        "utc_epoch": 1791603414.4279656,
+        "status": "not_started_insufficient_launch_headroom",
+        "available_mib": 206.16796875,
+        "command": [
+          "env",
+          "OPENBLAS_NUM_THREADS=1",
+          "python",
+          "-m",
+          "scripts.checksums",
+          "write"
+        ]
+      },
+      {
+        "utc_epoch": 1791603431.0337756,
+        "status": "start",
+        "available_mib": 364.80078125,
+        "command": [
+          "env",
+          "OPENBLAS_NUM_THREADS=1",
+          "python",
+          "-m",
+          "scripts.checksums",
+          "write"
+        ]
+      },
+      {
+        "utc_epoch": 1791603442.062592,
+        "status": "complete",
+        "available_mib": 364.25390625,
+        "exit_code": 0,
+        "minimum_available_mib": 253.53125,
+        "seconds": 11.030198574066162
+      }
+    ]
+  }
+}

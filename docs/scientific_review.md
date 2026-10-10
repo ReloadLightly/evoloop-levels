@@ -446,3 +446,41 @@ conditions that cannot be obtained from development conditions by CA symmetries,
 and compare the disturbance effect with each state's exact no-clear control.
 This separates ordinary growth and preparation-phase effects from recovery
 under real damage without revising the completed assay's metric or criterion.
+
+## Matched-depletion checkpoint — 2026-10-10
+
+Protocol 009 and all prepared states were committed and remotely verified before
+post-removal responses (ea49ea0). The completed dataset is published at d5a3864.
+The new independent auditor reconstructs all 30 phase states with a separate
+periodic occupied-cell flood fill, verifies all 30 exact clone placements and
+one-third cell-state/core loss, and excludes rotation/translation-equivalent
+reserved complete states. No geometry or phase was selected from future response.
+Rejected V03 preparations retain their disconnected cells in the audit evidence.
+
+Full verification passes with zero mismatches: 50 original-dense native trajectories,
+4,650 sample records, 40 source frames, 80 extracted components/native continuation
+windows, 217 isolated generations and 642 child-selection states. All 110 calibration
+roots link to raw source states. The recovery gate passes 77/80 selected scored
+roots and 30/30 phase controls. Three isolated-grid extinctions remain nonconfirming
+bounded searches; they do not identify native lineage extinction. Proof receipts
+allow interrupted verification to resume only after rehashing identical evidence.
+They are replay proofs, not extra scientific replicates. `--fresh` replays all units.
+
+Exact mean-of-ratios retention, integer absolute score totals, strict both-input
+comparisons and all confirmation gates agree with the frozen analyzer. Neither
+RV01 nor RV02 exceeds both originating inputs in both development and confirmation
+for either criterion. The observed joint-confirmed count is 0/54 under this assay;
+16 other candidate-producing encounter states retain unresolved inheritance.
+The earlier ecological-1 frozen proxy flag remains 1/54 with ineffective exposure
+and duplicated-confirmation limitations. Endpoints differ and are not rewritten.
+
+The new assay resolves those exposure/control defects through standardized
+constructed microcolonies, not native history replication. Apparent differences
+still concern complete representative snapshots and elapsed preparation ages,
+not an isolated channel-word effect. Age and geometry covary in the current
+conditions. Several valid/unknown paired-world cores are excluded by the fixed
+registry; none were selected at the separate calibration source times. Viability
+of omitted types is therefore untested. Calibration of that coverage is the
+immediate priority before interpreting registered population as viable population.
+A later factorial age×geometry panel can separate condition contributions.
+H1/H3 and evolution of an increased capacity for adaptive variation remain untested.

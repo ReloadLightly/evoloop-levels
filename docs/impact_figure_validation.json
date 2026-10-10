@@ -1,0 +1,381 @@
+{
+  "status": "accepted",
+  "experiments": [
+    "EXP-impact-calibration-001",
+    "EXP-impact-paired-001"
+  ],
+  "manifest_sha256": "dafcd10f5c134727d0dd6728a70b900788a1e85c817841f1e6d93bb3bd092190",
+  "total_artifacts": 108,
+  "new_artifacts": 21,
+  "prior_entries_preserved_exactly": 87,
+  "artifact_and_source_hashes": "all verified",
+  "svg_xml": "all six parse",
+  "pdf_decode": "all six pass Ghostscript",
+  "pixel_proof": {
+    "status": "passed",
+    "exact_display_world_comparisons": 126,
+    "cases": [
+      {
+        "file": "impact1-paired-V01-development-0.webp",
+        "display_frames": 21,
+        "worlds_per_frame": 2,
+        "exact_world_comparisons": 42,
+        "pixels_per_cell": 2
+      },
+      {
+        "file": "impact1-paired-RV01-development-0.webp",
+        "display_frames": 21,
+        "worlds_per_frame": 2,
+        "exact_world_comparisons": 42,
+        "pixels_per_cell": 2
+      },
+      {
+        "file": "impact1-paired-RV02-confirmation-1.webp",
+        "display_frames": 21,
+        "worlds_per_frame": 2,
+        "exact_world_comparisons": 42,
+        "pixels_per_cell": 2
+      }
+    ],
+    "method": "lossless WebP decoded RGB rectangles compared against raw uint8 NPY frames under fixed literal-state palette and exact nearest scaling"
+  },
+  "render_metrics_including_wait": [
+    {
+      "seconds": 39.74,
+      "peak_rss_kib": 191440,
+      "exit": 0,
+      "group": "exposure"
+    },
+    {
+      "seconds": 5.68,
+      "peak_rss_kib": 177376,
+      "exit": 0,
+      "group": "calibration"
+    },
+    {
+      "seconds": 5.57,
+      "peak_rss_kib": 174332,
+      "exit": 0,
+      "group": "scores"
+    },
+    {
+      "seconds": 5.71,
+      "peak_rss_kib": 137924,
+      "exit": 0,
+      "group": "contrasts"
+    },
+    {
+      "seconds": 11.22,
+      "peak_rss_kib": 177648,
+      "exit": 0,
+      "group": "curves"
+    },
+    {
+      "seconds": 15.26,
+      "peak_rss_kib": 169868,
+      "exit": 0,
+      "group": "raw"
+    },
+    {
+      "seconds": 5.12,
+      "peak_rss_kib": 185420,
+      "exit": 0,
+      "group": "animation-0"
+    },
+    {
+      "seconds": 4.69,
+      "peak_rss_kib": 185272,
+      "exit": 0,
+      "group": "animation-1"
+    },
+    {
+      "seconds": 4.07,
+      "peak_rss_kib": 187280,
+      "exit": 0,
+      "group": "animation-2"
+    },
+    {
+      "seconds": 86.98,
+      "peak_rss_kib": 170096,
+      "exit": 0,
+      "group": "calibration-layout-refinement",
+      "launch_reserve_mib": 220
+    },
+    {
+      "seconds": 123.58,
+      "peak_rss_kib": 171888,
+      "exit": 0,
+      "group": "calibration-layout-refinement",
+      "launch_reserve_mib": 200
+    },
+    {
+      "seconds": 38.77,
+      "peak_rss_kib": 171860,
+      "exit": 0,
+      "group": "scores-layout-refinement",
+      "launch_reserve_mib": 200
+    },
+    {
+      "seconds": 10.27,
+      "peak_rss_kib": 165884,
+      "exit": 0,
+      "group": "raw-layout-refinement",
+      "launch_reserve_mib": 200
+    }
+  ],
+  "renderer_complete_events": [
+    {
+      "utc_epoch": 1791601704.6686425,
+      "status": "complete",
+      "available_mib": 484.96484375,
+      "exit_code": 0,
+      "minimum_available_mib": 291.625,
+      "seconds": 8.161632299423218,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "exposure"
+      ]
+    },
+    {
+      "utc_epoch": 1791601710.3587668,
+      "status": "complete",
+      "available_mib": 484.2109375,
+      "exit_code": 0,
+      "minimum_available_mib": 375.92578125,
+      "seconds": 5.511437654495239,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "calibration"
+      ]
+    },
+    {
+      "utc_epoch": 1791601715.944185,
+      "status": "complete",
+      "available_mib": 489.85546875,
+      "exit_code": 0,
+      "minimum_available_mib": 353.88671875,
+      "seconds": 5.5130085945129395,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "scores"
+      ]
+    },
+    {
+      "utc_epoch": 1791601721.6093338,
+      "status": "complete",
+      "available_mib": 474.8828125,
+      "exit_code": 0,
+      "minimum_available_mib": 373.75,
+      "seconds": 5.514418363571167,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "contrasts"
+      ]
+    },
+    {
+      "utc_epoch": 1791601732.8996887,
+      "status": "complete",
+      "available_mib": 456.296875,
+      "exit_code": 0,
+      "minimum_available_mib": 309.12109375,
+      "seconds": 11.03331732749939,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "curves"
+      ]
+    },
+    {
+      "utc_epoch": 1791601748.1678827,
+      "status": "complete",
+      "available_mib": 484.8125,
+      "exit_code": 0,
+      "minimum_available_mib": 357.75390625,
+      "seconds": 15.078247547149658,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "raw"
+      ]
+    },
+    {
+      "utc_epoch": 1791601753.300945,
+      "status": "complete",
+      "available_mib": 464.82421875,
+      "exit_code": 0,
+      "minimum_available_mib": 326.60546875,
+      "seconds": 5.011459112167358,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "animations",
+        "--case",
+        "0"
+      ]
+    },
+    {
+      "utc_epoch": 1791601757.9930692,
+      "status": "complete",
+      "available_mib": 486.38671875,
+      "exit_code": 0,
+      "minimum_available_mib": 364.2890625,
+      "seconds": 4.511162519454956,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "animations",
+        "--case",
+        "1"
+      ]
+    },
+    {
+      "utc_epoch": 1791601762.0749657,
+      "status": "complete",
+      "available_mib": 485.640625,
+      "exit_code": 0,
+      "minimum_available_mib": 338.12109375,
+      "seconds": 4.011437892913818,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "animations",
+        "--case",
+        "2"
+      ]
+    },
+    {
+      "utc_epoch": 1791602154.2738297,
+      "status": "complete",
+      "available_mib": 400.05078125,
+      "exit_code": 0,
+      "minimum_available_mib": 285.80078125,
+      "seconds": 7.01849627494812,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "calibration"
+      ]
+    },
+    {
+      "utc_epoch": 1791602292.125658,
+      "status": "complete",
+      "available_mib": 350.7890625,
+      "exit_code": 0,
+      "minimum_available_mib": 247.921875,
+      "seconds": 7.016690969467163,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "calibration"
+      ]
+    },
+    {
+      "utc_epoch": 1791602330.9023585,
+      "status": "complete",
+      "available_mib": 426.4609375,
+      "exit_code": 0,
+      "minimum_available_mib": 214.21484375,
+      "seconds": 7.018245697021484,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "scores"
+      ]
+    },
+    {
+      "utc_epoch": 1791602341.1843903,
+      "status": "complete",
+      "available_mib": 446.90625,
+      "exit_code": 0,
+      "minimum_available_mib": 322.328125,
+      "seconds": 10.021203517913818,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "raw"
+      ]
+    }
+  ],
+  "denied_launch_count": 31,
+  "guard_terminated_attempts": [
+    {
+      "utc_epoch": 1791602175.2807682,
+      "status": "terminated_headroom_below_minimum",
+      "available_mib": 171.8359375,
+      "minimum_mib": 171.8359375,
+      "command": [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "python",
+        "-m",
+        "scripts.figures_impact",
+        "--only",
+        "calibration"
+      ]
+    }
+  ],
+  "successful_minimum_available_mib": 214.21484375,
+  "peak_render_rss_mib": 186.953125,
+  "source_integrity_sha256": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+  "notes": [
+    "Guard-stopped calibration attempt overwrote SVG/PDF before manifest update; final completed rerender restored valid artifact hashes.",
+    "Idle reserve-change interruption raced completed calibration and caused redundant rerender; final guard queue completed serially.",
+    "No frozen scientific data or physics changes."
+  ]
+}

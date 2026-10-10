@@ -426,3 +426,113 @@ that aborted attempt changed no scientific data and was superseded by complete
 exports after packing ended. No critical scientific or presentation issue
 remains in the reviewed final ecological exports. The independent-challenge
 limitation is a finding, not a rendering defect.
+
+## Impact-matched paired population assay
+
+Reviewed the six static `impact1-` Midnight Blue figure groups and decoded
+initial, middle, and final frames from all three paired WebPs for
+`EXP-impact-calibration-001` and `EXP-impact-paired-001`. Final exports comprise
+six SVG/PDF/PNG groups and three animations. The figure manifest now has 108
+entries; the earlier 87 entries retain their metadata exactly. Titles, cell
+axes, update/age labels, legends, quantitative scales, annotations, and
+footers are legible. Initial calibration/score colorbar labels overlapped
+footers; the final selective rerenders resolve this. Raw removal outlines now
+appear only in pre-removal panels, so a ghost outline cannot resemble a
+surviving organism after clearing.
+
+Exposure evidence matches all 30 frozen preparations: each constructed colony
+has three copies of one complete component; removal leaves two registered
+cores and removes exactly one third of occupied cells, including arms. Absolute
+removed-cell counts are shown for every condition/state. The other two complete
+components remain unchanged. All 20 within-state development/confirmation
+comparisons are nonequivalent in both full control and disturbed states under
+the declared rotations/translations; zero cross-state aliases are recorded.
+The captions distinguish matching structural impact from matching future
+reproductive value. Age labels are elapsed updates since the detached
+representative, not homologous reproductive phases; constructed microcolonies
+are not native population histories.
+
+The calibration matrix retains all 80 selected scored observations: 80/80
+extractable, 77/80 original identities recovered, and 30/30 phase controls
+recovered. The three remaining selected fates are unresolved under bounded
+searches, not proved nonviable. All state groups and nonempty strata pass the
+frozen thresholds shown on the card. There are zero unscored selections, so
+coverage of viable unregistered identities remains untested. The caption
+separates isolation recovery from certified native viability and identifies
+nested deterministic observations rather than independent populations.
+
+The score matrices show all 20 disturbed/control comparisons using 81 equally
+weighted observations each. Per-condition D/U ratios display exact reduced
+fractions; all control sums are positive here. Missing ratios have an explicit
+undefined encoding in the renderer. Absolute disturbed means and both integer
+score sums remain visible beside ratios. The contrast plot shows PANEL
+comparisons: an arithmetic mean of two exact per-condition ratios, not a ratio
+of pooled totals. Absolute panel means use 162 samples. Both recovered states
+fail the strict relative and absolute criteria against both inputs across both
+panels; neither meets the joint calibrated population criterion. This is
+conditional on this assay and does not convert the other 16 unresolved
+candidate-producing encounters into confirmed failures. The earlier frozen
+proxy result remains a separate checkpoint.
+
+RV01's relative comparison with V02 changes sign between development
+configurations, visible in the per-condition matrix. Age and geometry change
+together, so the figures do not identify which causes that sensitivity. A full
+age-by-geometry cross is needed for that separation. The result concerns
+conditional fixed-registry structural population performance, not evolvability,
+H1/H3, or recursive self-improvement. V01/RV01 share an operational identity
+while retaining different representative complete states; no figure assigns
+native genetic parentage.
+
+The trajectory overview plots all 40 completed continuations on common integer
+count scales: D solid, U dashed, sampled every 20 updates. Step segments position
+sampled observations without claiming exact event times. These are faithful CA
+continuations after external preparation/removal, with no later interventions.
+The raw figure uses only the three configuration-declared cases, preserving
+full 192-square periodic geometry, exact pre-state masks, disturbed t=0, and
+both recorded endpoints. The paired animations use 21 retained times each,
+0 through 1600 every 80 updates, and no cell overlays. All 126 displayed world
+rectangles (three animations × 21 times × D/U) match raw uint8 NPZ arrays
+pixel-for-pixel under the fixed literal palette and exact two-pixel nearest
+scaling. Times, source rectangles, legends, and scales agree with manifest
+metadata. No cases were selected by future performance.
+
+All 108 final artifact checksums and declared source checksums pass; every new
+artifact includes the frozen configuration/protocol/manifest and independent
+integrity evidence. All six SVG documents parse, and all six figure PDFs pass
+Ghostscript decoding. Detailed frame proof, source validation, rendering
+metrics, and guard outcomes are in `docs/impact_figure_validation.json`.
+Commands are recorded per artifact and use `python -m scripts.figures_impact`;
+`--only` groups and individual `--only animations --case N` allow bounded
+single-process reproduction.
+
+Initial active rendering took 64.33 seconds across nine serial processes, with
+maximum measured RSS 186.95 MiB. The final three refinements took 24.06 active
+seconds. Host memory fluctuations caused 31 denied launches and one calibration
+attempt stopped at the first sampled headroom below 200 MiB (171.84 MiB).
+An idle reserve-change interruption raced a completed calibration and caused
+one redundant retry; its interrupted SVG/PDF writes were superseded by a full
+successful rerender. Failed/denied attempts remain in the execution log. Final
+successful jobs retained at least 214.21 MiB sampled available memory. All
+render queues are closed; frozen physics and scientific data were unchanged.
+No critical scientific or presentation issue remains in the final exports.
+
+
+## Matched-depletion working PDF — final root review
+
+The updated 51-page PDF passes full Ghostscript decoding with PDFSTOPONERROR.
+Rendered page 15 retains the five-state results table with its header, calibrated
+recovery counts, negative joint criterion, and qualifications. Pages 48 and 51
+retain the exact ratio/integer-score annotations, elapsed ages, paired worlds,
+raw removal geometry, and literal state legend without clipping or label overlap.
+The six new standalone PNG layouts were also inspected by root.
+
+The renderer now appends the verified vector figure PDFs at native page sizes,
+using the existing Ghostscript toolchain. This avoids accumulating raster figures
+and preserves sharp geometry and labels. Successful assembly takes 17.05 seconds;
+Python and Ghostscript each record a 79.5 MiB per-process peak, with minimum
+monitored available memory 266.82 MiB. These peaks are separate measurements,
+not a simultaneous process-total estimate. Output replacement is atomic on the
+repository filesystem; the first cross-filesystem move was corrected before
+publication. Earlier waiting-session exits and failed/denied invocations remain
+in execution.jsonl. Source and PDF hashes, inspected pages, regeneration command,
+and measurements are recorded in docs/impact_manuscript_validation.json.
