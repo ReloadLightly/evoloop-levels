@@ -67,3 +67,39 @@ An independent author-file comparison is available as `python -m scripts.compare
 `python -m scripts.accelerated_atlas` uses the independently checked compiled contact diagnostic. The original route and its equivalence checks are recorded in `data/atlas/execution.json` and [execution-optimization.md](execution-optimization.md). Recorded runner times were 19.6 minutes for the atlas and 8.5 minutes for calibration, with peak runner memory of 61.9 and 63.6 MiB respectively; these exclude separate rendering processes and describe the acquisition machine.
 
 Operational continuity is recorded in [RESEARCH_STATE.md](../RESEARCH_STATE.md). The [next experiment](next-experiment.md) describes the scientific extension beyond the committed data.
+
+## Three-identity discovery and fresh atlas
+
+Protocol005 reached three viable native-word identities in 79 selected trials,
+with complete source and serial-isolation evidence in `data/panel-v2/`.
+Runtime was 13.1 minutes and peak RSS 64.7 MiB with one worker. All three histories,
+79 source extractions, and 149 generation states replayed exactly. The periodic
+measurement module is separate from the frozen legacy detector; its tests cover
+seam translation, full-component extraction, shared cores, and winding rejection.
+
+```sh
+OPENBLAS_NUM_THREADS=1 python -m unittest tests.test_periodic_tracking -v
+OPENBLAS_NUM_THREADS=1 python -m scripts.verify_fresh panel
+OPENBLAS_NUM_THREADS=1 python -m scripts.fresh_atlas run
+OPENBLAS_NUM_THREADS=1 python -m scripts.fresh_atlas inherit
+OPENBLAS_NUM_THREADS=1 python -m scripts.analyze_fresh_atlas
+OPENBLAS_NUM_THREADS=1 python -m scripts.verify_fresh atlas
+OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel
+OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fresh_atlas
+OPENBLAS_NUM_THREADS=1 python -m scripts.render_manuscript
+```
+
+The 144 complete starting grids are frozen in `data/atlas-v2/manifest.json`:
+36 main near, 18 held-out near,54 matched separated,36 solitary. This uses the same
+640-square world extent for every treatment. The inheritance search follows
+three offspring per generation, depth six, and at most 24 simulations per root.
+Benefit remains a separate, unfinished comparison.
+
+For full reconstruction, preserve the committed evidence in another checkout,
+then remove that copy's `data/panel-v2/` and `data/atlas-v2/` directories. Run
+`python -m scripts.panel_discovery freeze`, `python -m scripts.panel_discovery run`,
+and `python -m scripts.fresh_atlas freeze`, then the acquisition/analysis commands
+above. Compare physical grid and snapshot hashes, endpoint counts, and plots.
+Runtime fields change; frozen manifest hashes are renewed for the new execution.
+Do not rerun discovery over an existing frozen atlas: its source-report hash is
+enforced. Check committed `data/SHA256SUMS` before regenerating timing metadata.

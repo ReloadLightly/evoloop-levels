@@ -1,0 +1,38 @@
+{
+  "experiment_id":"EXP-atlas-002",
+  "organisms":["V01","V02","V03"],
+  "shape":[640,640],"focal_origin":[320,104],"far_dx":320,
+  "horizon":1600,"detection_interval":10,"metrics_interval":100,
+  "main_phases":[20,80],"heldout_phase":50,
+  "main_geometries":[
+    {"id":"a-parallel","partner_rotation":0,"gap":10,"dy":-16},
+    {"id":"b-crossed","partner_rotation":1,"gap":12,"dy":8}
+  ],
+  "heldout_geometries":[
+    {"id":"c-opposed","partner_rotation":2,"gap":18,"dy":-8},
+    {"id":"d-offset","partner_rotation":3,"gap":16,"dy":20}
+  ],
+  "candidate_phase_budget_per_run_genotype":2,
+  "isolation_shape":[192,192],"generation_horizon":1600,
+  "offspring_per_generation":3,"max_depth":6,
+  "max_generation_simulations_per_root":24,"stable_transmissions":2,
+  "primary":"pair-level stable word different from both inputs, recovered by bounded serial isolation",
+  "benefit":{
+    "status":"prospective; viability-calibration and paired assays pending",
+    "shape":[192,192],"horizon":1600,"sample_interval":20,
+    "metric":"mean intact closed-core count of isolation-confirmed genotypes",
+    "disturbance_times":[600,1000],"block_size":24,
+    "development":[{"rotation":0,"block":[40,40]},{"rotation":1,"block":[128,128]}],
+    "confirmation":[{"rotation":2,"block":[40,128]},{"rotation":3,"block":[128,40]}],
+    "criterion":"candidate mean exceeds each input mean in both development and independent confirmation panels",
+    "limitation":"structural population proxy requires viability calibration before confirmed benefit"
+  },
+  "analysis":{
+    "unit":"distinct complete deterministic configuration; finite crossed panel",
+    "endpoints":["novel native channel candidate","confirmed inherited novel channel","confirmed benefit: pending"],
+    "model":"balanced focal and partner marginal means plus pair residual from additive fit, separately by split",
+    "interaction":"all nine 2-by-2 differences of differences and strict partner-specific focal rank reversals; compare held-out signs",
+    "uncertainty":"descriptive finite-panel census; no inferential confidence intervals or p-values",
+    "controls":"paired near-minus-separated contrasts; all control contact violations retained"
+  }
+}

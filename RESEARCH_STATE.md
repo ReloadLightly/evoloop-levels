@@ -1,4 +1,4 @@
-# Research state — atlas and candidate-fate calibration completed
+# Research state — three viable inputs selected; fresh atlas frozen
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
@@ -65,3 +65,19 @@ Single next action: predeclare selection of three or four naturally generated,
 isolation-verified viable identities, then freeze a fresh crossed atlas and
 held-out configurations. See docs/next-experiment.md. Keep boundary-safe native
 measurement, pending benefit, and independent histories for H1/H3 explicit.
+
+## Fresh input discovery and atlas freeze
+
+EXP-panel-discovery-002 reached its frozen target without an extension:79 trials,
+three native-word identities admitted. V01 reverifies original native N01;
+V02/V03 arise in D03 (N01/N01 320-square history) at 3440/5040 and stabilize
+12×14→13×13 with different words.74 trials unresolved/identity-changed; two
+stable-word mismatches rejected. D01/D02 complete12,000/16,000 updates; D03
+stops at 5040. Runtime 787.4 s, peak RSS 66,220 KiB, one worker.
+
+EXP-atlas-002 is frozen under protocol 006:144 distinct starts,36 main + 18 held-out
+near,54 matched separated in the same 640-square domains,36 solo. Fresh phases
+20/80 main, 50 held-out. Calibrated expanded search and validated periodic
+measurement; native-word screening excludes morphology-only paths. Benefit
+assay remains frozen and pending. Next action: execute the 144 states and their
+inheritance checks after source replay verification.

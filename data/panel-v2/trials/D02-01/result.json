@@ -1,0 +1,181 @@
+{
+  "eligible": false,
+  "reason": "unresolved_or_identity_changed",
+  "native_identity": "11x12:0111111111111701701701701701701701701701701701701117014014",
+  "stable_identity": null,
+  "native_word": "0111111111111701701701701701701701701701701701701117014014",
+  "morphological_stabilization": false,
+  "snapshot_hash": null,
+  "source": {
+    "history": "D02",
+    "t": 2920,
+    "core": [
+      274,
+      123,
+      12,
+      11
+    ],
+    "extraction_bbox": [
+      271,
+      120,
+      18,
+      17
+    ],
+    "source_hash": "b80c02cfe2539bc6d6bc1e105c147bbb6319df202701bde82bd2a89588da92d4"
+  },
+  "stages": [
+    {
+      "status": "offspring_observed",
+      "initial_hash": "25a3fa02904b6bb4c0fa2413a8e8de9b79e53e6b7fa4daca4d12cd8b1261ee63",
+      "final_hash": "12be625468250a62b4de1c5770d7ca494ea33341fff2049f1aea7fce41fcb8ec",
+      "completed_updates": 370,
+      "horizon": 1600,
+      "sampling_interval": 10,
+      "boundary_first_t": null,
+      "children": [
+        {
+          "detached_t": 370,
+          "closure_first_seen_t": 360,
+          "core": [
+            63,
+            91,
+            11,
+            11
+          ],
+          "identity": "11x11:01111111111117017017017017017017017017017017011117014014",
+          "snapshot_hash": "5c8082ca5231c5334642fbd7be3569f7a590aec75c33a801b5b5e375429a40c2",
+          "extraction_bbox": [
+            60,
+            88,
+            17,
+            17
+          ],
+          "size_eligible": true
+        }
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "closed_cores": 1,
+          "occupied_cells": 155
+        },
+        {
+          "t": 100,
+          "closed_cores": 1,
+          "occupied_cells": 192
+        },
+        {
+          "t": 200,
+          "closed_cores": 1,
+          "occupied_cells": 250
+        },
+        {
+          "t": 300,
+          "closed_cores": 1,
+          "occupied_cells": 304
+        }
+      ],
+      "events": [
+        {
+          "type": "core_appearance",
+          "t": 0,
+          "core": [
+            90,
+            91,
+            12,
+            11
+          ],
+          "identity": "11x12:0111111111111701701701701701701701701701701701701117014014"
+        },
+        {
+          "type": "core_appearance",
+          "t": 360,
+          "core": [
+            63,
+            91,
+            11,
+            11
+          ],
+          "identity": null
+        }
+      ]
+    },
+    {
+      "status": "offspring_observed",
+      "initial_hash": "f9b48b26c263e8e858d0a8892e590862b21b0c04465b2791259dec37412c4686",
+      "final_hash": "d6dd6f516b0b8f59237af164e2b0e344c8157244004c2f159531e2ba5692c318",
+      "completed_updates": 360,
+      "horizon": 1600,
+      "sampling_interval": 10,
+      "boundary_first_t": null,
+      "children": [
+        {
+          "detached_t": 360,
+          "closure_first_seen_t": 350,
+          "core": [
+            66,
+            92,
+            10,
+            10
+          ],
+          "identity": "10x10:0111111111111701701701701701701701701701111117014014",
+          "snapshot_hash": "0a301a6f20c78e3891a9ab95a520c7810adc788937b98c6b7cf34930733906f8",
+          "extraction_bbox": [
+            63,
+            89,
+            16,
+            16
+          ],
+          "size_eligible": true
+        }
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "closed_cores": 1,
+          "occupied_cells": 150
+        },
+        {
+          "t": 100,
+          "closed_cores": 1,
+          "occupied_cells": 184
+        },
+        {
+          "t": 200,
+          "closed_cores": 1,
+          "occupied_cells": 244
+        },
+        {
+          "t": 300,
+          "closed_cores": 1,
+          "occupied_cells": 288
+        }
+      ],
+      "events": [
+        {
+          "type": "core_appearance",
+          "t": 0,
+          "core": [
+            91,
+            91,
+            11,
+            11
+          ],
+          "identity": "11x11:01111111111117017017017017017017017017017017011117014014"
+        },
+        {
+          "type": "core_appearance",
+          "t": 350,
+          "core": [
+            66,
+            92,
+            10,
+            10
+          ],
+          "identity": "10x10:0111111111111701701701701701701701701701111117014014"
+        }
+      ]
+    }
+  ],
+  "trial": "D02-01"
+}

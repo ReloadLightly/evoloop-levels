@@ -1,0 +1,71 @@
+{
+  "status": "offspring_observed",
+  "initial_hash": "62310a30290da31b4402573c81be38bb8a54f664563f52de05eb63e1c3a7b5b0",
+  "final_hash": "74347474499ba417f9f6e322791d372c54b0ac135b051b84065450a3eefafa19",
+  "completed_updates": 210,
+  "horizon": 1600,
+  "sampling_interval": 10,
+  "boundary_first_t": null,
+  "children": [
+    {
+      "detached_t": 210,
+      "closure_first_seen_t": 200,
+      "core": [
+        93,
+        82,
+        3,
+        3
+      ],
+      "identity": "3x3:011111111111170117014014",
+      "snapshot_hash": "8e556801f228aa88a49d9e1da69a7558bb6f8be51c9ca949355341276fc41fff",
+      "extraction_bbox": [
+        90,
+        79,
+        9,
+        9
+      ],
+      "size_eligible": true
+    }
+  ],
+  "samples": [
+    {
+      "t": 0,
+      "closed_cores": 1,
+      "occupied_cells": 97
+    },
+    {
+      "t": 100,
+      "closed_cores": 1,
+      "occupied_cells": 127
+    },
+    {
+      "t": 200,
+      "closed_cores": 2,
+      "occupied_cells": 169
+    }
+  ],
+  "events": [
+    {
+      "type": "core_appearance",
+      "t": 0,
+      "core": [
+        93,
+        93,
+        6,
+        6
+      ],
+      "identity": "6x6:011111111111170170170170111117014014"
+    },
+    {
+      "type": "core_appearance",
+      "t": 200,
+      "core": [
+        93,
+        82,
+        3,
+        3
+      ],
+      "identity": null
+    }
+  ]
+}

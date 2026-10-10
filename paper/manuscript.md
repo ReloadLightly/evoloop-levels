@@ -34,11 +34,15 @@ We use the original nine-state evoloop transition system, synchronous updates, a
 
 S13 is CellPyLib's documented species13 seed, matching the author's `13.img`, rather than the alternative default `13-2.img` (Antunes, CellPyLib documentation). N01 is a stable descendant obtained from a 160×160 exploratory torus initiated with S13 at (65,45). Discovery samples every ten updates, considers up to four detached phases per candidate, and ends after two verified identities. This selected exploratory history supplies an experimental input; it is not replication across independently evolved populations.
 
+A prospective discovery schedule (protocol 005) supplies the fresh extension with three naturally generated channel identities. It reverifies the original native N01 component, then searches three declared histories: the original 160-square S13 ecology to 12,000 updates, an S13/N01 encounter in 320-square space to 16,000, and an N01/N01 encounter in 320-square space to 16,000 or the three-identity stopping point. Sampling is every 20 updates, with at most two complete-component hashes per source composite identity and 32 verification trials per history. The first detached offspring must transmit its composite identity in two further isolated generations, and its word must equal the native source word. Selection also requires one unchanged core at elapsed offsets 20, 50, 80. Third detached descendants supply uniform input snapshots. Discovery selects on provenance and reproduction before viewing encounter outcomes; it is not independent-population replication.
+
 ### 3.2 Crossed encounters and controls
 
 Before acquisition, protocol 001 specifies 32 main encounters, eight held-out encounters, and controls. Complete input snapshots advance alone by 0, 30, or 60 updates. Each resulting state must retain one recognized core, unchanged identity, and no boundary contact. These offsets refer to different snapshot origins; they are not necessarily homologous reproductive phases.
 
 All four ordered S13/N01 pairings are tested against four main geometries at offsets 0 and 60, giving eight configurations per pair. Two held-out geometries at offset 30 give two further configurations per pair. Near configurations occupy 384×384 tori, with specified positions, rotations in 90-degree increments, and nonoverlapping input rectangles. Forty separated controls retain identities, offsets, orientations, and row displacement in 640×640 tori, with horizontal displacement of 320 cells. Twenty-four solitary controls cover organism, offset, and orientation. Every configuration runs for 1,600 completed updates; separated controls are checked for contact throughout.
+
+The fresh protocol 006 defines nine ordered V01/V02/V03 pairings, four main configurations per pair at offsets 20/80, and two held-out configurations per pair at offset 50. Complete phase snapshots, relative displacements, and rotations differ from the original panel. All 144 near, separated, and solitary arenas use the same 640-square periodic domain. The 54 paired separated controls change only horizontal partner displacement; 36 solitary states cover each organism, offset, and orientation. Acquisition is pending at this protocol-freeze checkpoint.
 
 ### 3.3 What counts as a variant?
 
@@ -83,6 +87,16 @@ A prospectively specified benefit assay would compare an inheritance-confirmed c
 ### 4.1 A transient structure supplies an inherited input variant
 
 In discovery, a candidate appearing at update 2,910 had an 11×13 core and a signal word different from S13. Isolation yielded a 12×12-core descendant, followed by two generations transmitting that stable identity. Detachment was first observed after 380, 390, and 390 updates in the successive assays, at ten-update resolution. N01 denotes the stable descendant. The transient and stable forms share the changed word, distinguishing morphological stabilization from signal change. This observed route motivates allowing transient-to-stable paths in encounter assays.
+
+The prospective discovery reached three eligible identities in 79 selected native-component trials: the original N01 source and 78 new trials. V01 is the reverified N01 word; V02 and V03 arose in the N01/N01 history at updates 3,440 and 5,040. Each retains its native word while stabilizing from a 12×14 to a 13×13 core under isolation. Their stable words differ from one another and from V01. Seventy-four trials were unresolved or changed identity before completing the declared transmission chain; two recovered stable words different from their native source and were therefore rejected. These counts describe input selection, not encounter yields.
+
+| Input | Native history, time | Native → stable core | Detachment times |
+|---|---|---|---|
+| V01 | Original discovery,2910 | 11×13 →12×12 | 380,390,390 |
+| V02 | N01/N01,3440 | 12×14 →13×13 | 430,410,420 |
+| V03 | N01/N01,5040 | 12×14 →13×13 | 410,420,410 |
+
+Times are updates from each isolated generation's start, sampled every 10. Both new identities come from the same history and are separately verified, not independently evolved population replicates. These positive transmission paths broaden the input panel and show that the earlier negative encounter result does not amount to a general inability of transients to stabilize.
 
 ### 4.2 Encounters produce candidate changes without confirmed stable transmission
 

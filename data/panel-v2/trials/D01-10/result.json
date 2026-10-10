@@ -1,0 +1,215 @@
+{
+  "eligible": false,
+  "reason": "unresolved_or_identity_changed",
+  "native_identity": "4x5:011111111111170170117017014014",
+  "stable_identity": null,
+  "native_word": "011111111111170170117017014014",
+  "morphological_stabilization": false,
+  "snapshot_hash": null,
+  "source": {
+    "history": "D01",
+    "t": 8040,
+    "core": [
+      141,
+      55,
+      5,
+      4
+    ],
+    "extraction_bbox": [
+      133,
+      52,
+      16,
+      10
+    ],
+    "source_hash": "83b3ad103b8dd39dd3934f795edd16dd905f68cffba85021579c2efaeba3e90f"
+  },
+  "stages": [
+    {
+      "status": "offspring_observed",
+      "initial_hash": "a4dc38cdd744a1a370a34376e89169e8bb7bd754e521c0a95a2d2d808459a1b9",
+      "final_hash": "db3a36c5804e56925347bb0b171dbf745d3c60b010641c3051c22442f5440cb6",
+      "completed_updates": 140,
+      "horizon": 1600,
+      "sampling_interval": 10,
+      "boundary_first_t": null,
+      "children": [
+        {
+          "detached_t": 140,
+          "closure_first_seen_t": 130,
+          "core": [
+            87,
+            96,
+            2,
+            2
+          ],
+          "identity": "2x2:01111111111117014014",
+          "snapshot_hash": "a7867fe441f425161c78cfa791684b489ca5971a5be3f0758b795e30a9696160",
+          "extraction_bbox": [
+            84,
+            93,
+            8,
+            8
+          ],
+          "size_eligible": true
+        }
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "closed_cores": 1,
+          "occupied_cells": 94
+        },
+        {
+          "t": 100,
+          "closed_cores": 1,
+          "occupied_cells": 132
+        }
+      ],
+      "events": [
+        {
+          "type": "core_appearance",
+          "t": 0,
+          "core": [
+            96,
+            94,
+            5,
+            4
+          ],
+          "identity": "4x5:011111111111170170117017014014"
+        },
+        {
+          "type": "core_appearance",
+          "t": 130,
+          "core": [
+            87,
+            96,
+            2,
+            2
+          ],
+          "identity": null
+        }
+      ]
+    },
+    {
+      "status": "assay_extinct",
+      "initial_hash": "cc6b7e64b3179aadb6fcd3895a94deff2b7ba12b2f27e7b65291f4eaec3605ac",
+      "final_hash": "1c0273095382988333e2f2b5ae487cea460737ed9be65cbad9c5de537f95bf75",
+      "completed_updates": 1600,
+      "horizon": 1600,
+      "sampling_interval": 10,
+      "boundary_first_t": null,
+      "children": [],
+      "samples": [
+        {
+          "t": 0,
+          "closed_cores": 1,
+          "occupied_cells": 53
+        },
+        {
+          "t": 100,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 200,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 300,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 400,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 500,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 600,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 700,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 800,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 900,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1000,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1100,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1200,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1300,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1400,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1500,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        },
+        {
+          "t": 1600,
+          "closed_cores": 0,
+          "occupied_cells": 0
+        }
+      ],
+      "events": [
+        {
+          "type": "core_appearance",
+          "t": 0,
+          "core": [
+            95,
+            95,
+            2,
+            2
+          ],
+          "identity": "2x2:01111111111117014014"
+        },
+        {
+          "type": "core_loss",
+          "t": 30,
+          "core": [
+            95,
+            95,
+            2,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "trial": "D01-10"
+}

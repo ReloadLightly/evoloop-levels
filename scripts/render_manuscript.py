@@ -74,7 +74,9 @@ def main():
             yp-=.018
         pdf.savefig(fig);plt.close(fig)
         for name in ['world-overview','inheritance-path','outcome-matrix','evidence-stages','encounter-1','encounter-2','encounter-3',
-                     'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison']:
+                     'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison',
+                     'panel2-native-worlds','panel2-selection','atlas2-verified-panel','atlas2-outcome-matrix',
+                     'atlas2-evidence-stages','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3']:
             p=ROOT/f'figures/{name}-light.png'
             if not p.exists():continue
             fig=plt.figure(figsize=(11.69,8.27),facecolor='#EDE9DF');ax=fig.add_axes([.035,.07,.93,.86]);ax.imshow(Image.open(p));ax.axis('off')

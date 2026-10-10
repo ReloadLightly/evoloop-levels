@@ -1,0 +1,171 @@
+{
+  "eligible": false,
+  "reason": "unresolved_or_identity_changed",
+  "native_identity": "5x11:01111111111117017017017017017017017017014014",
+  "stable_identity": null,
+  "native_word": "01111111111117017017017017017017017017014014",
+  "morphological_stabilization": false,
+  "snapshot_hash": null,
+  "source": {
+    "history": "D02",
+    "t": 5280,
+    "core": [
+      176,
+      42,
+      5,
+      11
+    ],
+    "extraction_bbox": [
+      173,
+      39,
+      11,
+      17
+    ],
+    "source_hash": "8f1bc7920d92af7ea9307efdaf92ca7f1a4801f23ed822aa47235a5ba701be72"
+  },
+  "stages": [
+    {
+      "status": "offspring_observed",
+      "initial_hash": "924696753f21fec17fd6f8442b020a7527f995941a6fd88c47e212a28778660d",
+      "final_hash": "5a13ebe1408299d3638b6ea8122a4990711ad22e0f67e167de9e13badb09ae72",
+      "completed_updates": 270,
+      "horizon": 1600,
+      "sampling_interval": 10,
+      "boundary_first_t": null,
+      "children": [
+        {
+          "detached_t": 270,
+          "closure_first_seen_t": 260,
+          "core": [
+            92,
+            114,
+            7,
+            7
+          ],
+          "identity": "7x7:0111111111111701701701701701701117014014",
+          "snapshot_hash": "150dc67216b2aef646f27bc532fb7d117e160cd00f5e07866ec471416edc6d36",
+          "extraction_bbox": [
+            89,
+            111,
+            13,
+            13
+          ],
+          "size_eligible": true
+        }
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "closed_cores": 1,
+          "occupied_cells": 117
+        },
+        {
+          "t": 100,
+          "closed_cores": 1,
+          "occupied_cells": 163
+        },
+        {
+          "t": 200,
+          "closed_cores": 1,
+          "occupied_cells": 211
+        }
+      ],
+      "events": [
+        {
+          "type": "core_appearance",
+          "t": 0,
+          "core": [
+            94,
+            91,
+            5,
+            11
+          ],
+          "identity": "5x11:01111111111117017017017017017017017017014014"
+        },
+        {
+          "type": "core_appearance",
+          "t": 260,
+          "core": [
+            92,
+            114,
+            7,
+            7
+          ],
+          "identity": null
+        }
+      ]
+    },
+    {
+      "status": "offspring_observed",
+      "initial_hash": "9e2f6ce1c884218c90f303bba8b4f7936c06c92065274409f0dcfbed811b7fe2",
+      "final_hash": "d0804b8a44ada01491660409e82702af0d97a10bdf8ccd707334f8a749c66197",
+      "completed_updates": 250,
+      "horizon": 1600,
+      "sampling_interval": 10,
+      "boundary_first_t": null,
+      "children": [
+        {
+          "detached_t": 250,
+          "closure_first_seen_t": 240,
+          "core": [
+            95,
+            110,
+            5,
+            5
+          ],
+          "identity": "5x5:01111111111117017017011117014014",
+          "snapshot_hash": "4bac62e6461f5ca095b1f69030f876d73a7883578558da8d3126a93a8124a193",
+          "extraction_bbox": [
+            92,
+            107,
+            11,
+            11
+          ],
+          "size_eligible": true
+        }
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "closed_cores": 1,
+          "occupied_cells": 107
+        },
+        {
+          "t": 100,
+          "closed_cores": 1,
+          "occupied_cells": 145
+        },
+        {
+          "t": 200,
+          "closed_cores": 1,
+          "occupied_cells": 191
+        }
+      ],
+      "events": [
+        {
+          "type": "core_appearance",
+          "t": 0,
+          "core": [
+            93,
+            93,
+            7,
+            7
+          ],
+          "identity": "7x7:0111111111111701701701701701701117014014"
+        },
+        {
+          "type": "core_appearance",
+          "t": 240,
+          "core": [
+            95,
+            110,
+            5,
+            5
+          ],
+          "identity": null
+        }
+      ]
+    }
+  ],
+  "trial": "D02-17"
+}

@@ -85,6 +85,16 @@ For the positive controls, the endpoint was recovery of the **original** identit
 
 *The two searches assess the same extracted structures. Delay observations revisit candidates from six originating configurations; they are not independent populations. [Complete follow-up analysis](data/fate-calibration/analysis.md).*
 
+### Three viable identities are ready for fresh encounters
+
+A frozen discovery schedule has now verified three distinct naturally generated channel identities. V01 is the reverified N01 word. V02 and V03 arose in a native N01×N01 history at updates 3,440 and 5,040, then each stabilized from a 12×14 to a 13×13 core while transmitting its changed word through two further isolated generations. The two new identities share core dimensions but carry different channel words.
+
+All 79 verification trials are retained: three identities passed, 74 remained unresolved or changed identity during the transmission chain, and two reproduced a word different from their native source. These selected trials assemble inputs; they do not estimate encounter yield or provide independent population histories. The fresh atlas has 144 frozen states, including 54 near configurations and matched controls, with acquisition pending.
+
+![Native discovery histories](figures/panel2-native-worlds-light.svg)
+
+*Recorded cell states under the unchanged rule; isolation verification supplies the viable input identities. [Discovery protocol](protocols/005-natural-panel-discovery.md) and [complete evidence](data/panel-v2/discovery.json).*
+
 ## What these findings mean
 
 The completed comparisons reveal a gap between producing a changed structure and recovering a new identity that reproduces stably. The follow-up makes that result more informative: the procedures recovered the known organisms across the tested delays, while giving the eligible candidates additional development time and descendant-search opportunities did not produce a confirmed novel lineage. Thus the initial result persists under these specific changes to the inheritance test.

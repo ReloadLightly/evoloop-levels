@@ -191,6 +191,12 @@ def main():
     if (ROOT/'data/fate-calibration/analysis.json').exists():
         from scripts.figures_fate import render
         render(manifest)
+    if (ROOT/'data/panel-v2/discovery.json').exists():
+        from scripts.figures_panel import render as render_panel
+        render_panel(manifest)
+    if (ROOT/'data/atlas-v2/analysis.json').exists():
+        from scripts.figures_fresh_atlas import render as render_fresh
+        render_fresh(manifest)
     (FIG/'manifest.json').write_text(json.dumps({'style':'configs/style.json',
                                                'font_sha256':hashlib.sha256(Path(FONT_PATH).read_bytes()).hexdigest(),
                                                'font_license':'docs/font-license.txt','artifacts':manifest},indent=2)+'\n')

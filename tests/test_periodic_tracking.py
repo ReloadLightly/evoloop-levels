@@ -39,4 +39,11 @@ class PeriodicTests(unittest.TestCase):
             loops=detect(grid);self.assertEqual(len(loops),2)
             self.assertTrue(all(o['isolation_snapshot'] is None for o in loops))
 
+    def test_winding_component_ineligible(self):
+        g=np.zeros((192,192),np.uint8);place(g,seed13(),70,70)
+        g[70,:]=2
+        loops=detect(g);self.assertEqual(len(loops),1)
+        self.assertEqual(loops[0]['extraction_status'],'noncontractible_component')
+        self.assertIsNone(loops[0]['isolation_snapshot'])
+
 if __name__=='__main__':unittest.main()
