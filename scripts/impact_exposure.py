@@ -11,7 +11,7 @@ from evoloop.periodic_tracking import detect
 from evoloop.impact import eligible_population, select_component, removal
 from scripts.atlas import write_json
 
-OUT = ROOT/'data/impact-exposure-v1'
+OUT = ROOT/'data/impact-exposure-v1/attempt-02'
 OFFSETS = [0,40,80,120,160,200]
 VECTORS = [[1,2],[-2,1],[2,-3],[-3,-1]]
 

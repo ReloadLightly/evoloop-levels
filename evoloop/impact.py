@@ -13,7 +13,7 @@ def complete_mask(grid, organism):
     rows, cols = (np.arange(h)+y)%grid.shape[0], (np.arange(w)+x)%grid.shape[1]
     mask = np.zeros(grid.shape, bool)
     mask[np.ix_(rows, cols)] = snapshot != 0
-    assert np.array_equal(grid[mask], snapshot[snapshot != 0])
+    assert np.array_equal(grid[np.ix_(rows, cols)][snapshot != 0], snapshot[snapshot != 0])
     return mask
 
 
