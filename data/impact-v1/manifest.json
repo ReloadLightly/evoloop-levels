@@ -1,0 +1,4859 @@
+{
+  "config": {
+    "calibration_experiment_id": "EXP-impact-calibration-001",
+    "benefit_experiment_id": "EXP-impact-paired-001",
+    "states": [
+      "V01",
+      "V02",
+      "V03",
+      "RV01",
+      "RV02"
+    ],
+    "pairs": [
+      {
+        "candidate": "RV01",
+        "inputs": [
+          "V02",
+          "V03"
+        ]
+      },
+      {
+        "candidate": "RV02",
+        "inputs": [
+          "V01",
+          "V03"
+        ]
+      }
+    ],
+    "shape": [
+      192,
+      192
+    ],
+    "horizon": 1600,
+    "sample_interval": 20,
+    "conditions": [
+      {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      }
+    ],
+    "calibration": {
+      "source_times": [
+        0,
+        400,
+        800,
+        1200
+      ],
+      "native_continuation_horizon": 1600,
+      "gate": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 30,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      }
+    },
+    "search": {
+      "isolation_shape": [
+        192,
+        192
+      ],
+      "generation_horizon": 1600,
+      "detection_interval": 10,
+      "offspring_per_generation": 3,
+      "max_depth": 6,
+      "max_generation_simulations_per_root": 24,
+      "stable_transmissions": 2
+    },
+    "preparation": "three identical complete components from autonomously advanced representative; core-anchored placement, orientation 0; one whole component removed at t=0",
+    "phase": "completed updates since verified detached representative, not a homologous biological cycle position",
+    "retention": "arithmetic mean of two exact per-condition damaged/control score-sum ratios; zero control sum undefined",
+    "primary": "candidate retention strictly exceeds both inputs in both panels; ties fail",
+    "joint": "primary plus strictly larger absolute damaged score than both inputs in both panels, calibration gate passed, exact exposure and non-equivalence passed",
+    "sampling": "finite deterministic condition panels and nested selected states; no independent histories, confidence intervals or p-values",
+    "execution": {
+      "workers": 1,
+      "minimum_available_memory_mib": 200
+    },
+    "replays": [
+      {
+        "state": "V01",
+        "condition": "development-0"
+      },
+      {
+        "state": "RV01",
+        "condition": "development-0"
+      },
+      {
+        "state": "RV02",
+        "condition": "confirmation-1"
+      }
+    ],
+    "replay_interval": 80
+  },
+  "benefit": {
+    "calibration_experiment_id": "EXP-impact-calibration-001",
+    "benefit_experiment_id": "EXP-impact-paired-001",
+    "states": [
+      "V01",
+      "V02",
+      "V03",
+      "RV01",
+      "RV02"
+    ],
+    "pairs": [
+      {
+        "candidate": "RV01",
+        "inputs": [
+          "V02",
+          "V03"
+        ]
+      },
+      {
+        "candidate": "RV02",
+        "inputs": [
+          "V01",
+          "V03"
+        ]
+      }
+    ],
+    "shape": [
+      192,
+      192
+    ],
+    "horizon": 1600,
+    "sample_interval": 20,
+    "conditions": [
+      {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      }
+    ],
+    "calibration": {
+      "source_times": [
+        0,
+        400,
+        800,
+        1200
+      ],
+      "native_continuation_horizon": 1600,
+      "gate": {
+        "overall_scored_recovery_fraction": 0.9,
+        "per_starting_state_recovery_fraction": 0.8,
+        "baseline_recoveries_required": 30,
+        "minimum_confirmed_per_nonempty_scored_stratum": 1
+      }
+    },
+    "search": {
+      "isolation_shape": [
+        192,
+        192
+      ],
+      "generation_horizon": 1600,
+      "detection_interval": 10,
+      "offspring_per_generation": 3,
+      "max_depth": 6,
+      "max_generation_simulations_per_root": 24,
+      "stable_transmissions": 2
+    },
+    "preparation": "three identical complete components from autonomously advanced representative; core-anchored placement, orientation 0; one whole component removed at t=0",
+    "phase": "completed updates since verified detached representative, not a homologous biological cycle position",
+    "retention": "arithmetic mean of two exact per-condition damaged/control score-sum ratios; zero control sum undefined",
+    "primary": "candidate retention strictly exceeds both inputs in both panels; ties fail",
+    "joint": "primary plus strictly larger absolute damaged score than both inputs in both panels, calibration gate passed, exact exposure and non-equivalence passed",
+    "sampling": "finite deterministic condition panels and nested selected states; no independent histories, confidence intervals or p-values",
+    "execution": {
+      "workers": 1,
+      "minimum_available_memory_mib": 200
+    },
+    "replays": [
+      {
+        "state": "V01",
+        "condition": "development-0"
+      },
+      {
+        "state": "RV01",
+        "condition": "development-0"
+      },
+      {
+        "state": "RV02",
+        "condition": "confirmation-1"
+      }
+    ],
+    "replay_interval": 80
+  },
+  "states": {
+    "V01": {
+      "id": "V01",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+      "snapshot_file": "data/panel-v2/V01.npz",
+      "snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+      "shape": [
+        18,
+        18
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "history": "EXP-discovery-001",
+        "t": 2910,
+        "core": [
+          14,
+          48,
+          11,
+          13
+        ],
+        "source_hash": "692e22d7fcd752884db9b397ad69590bad7385be3fcb2912896b785baea821d6",
+        "note": "same native complete component originally observed at update2910"
+      }
+    },
+    "V02": {
+      "id": "V02",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+      "snapshot_file": "data/panel-v2/V02.npz",
+      "snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+      "shape": [
+        19,
+        19
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "history": "D03",
+        "t": 3440,
+        "core": [
+          138,
+          124,
+          14,
+          12
+        ],
+        "extraction_bbox": [
+          135,
+          121,
+          20,
+          18
+        ],
+        "source_hash": "b7f3daa3b40e8e475726e50f505964661d9852ef0a9dfa37b2f77e9d5d994118"
+      }
+    },
+    "V03": {
+      "id": "V03",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+      "snapshot_file": "data/panel-v2/V03.npz",
+      "snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+      "shape": [
+        19,
+        19
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "history": "D03",
+        "t": 5040,
+        "core": [
+          143,
+          7,
+          12,
+          14
+        ],
+        "extraction_bbox": [
+          140,
+          4,
+          18,
+          20
+        ],
+        "source_hash": "5ccffd96ad849d5ba0e640036f34e4ea496c08f80f7208021c68f80569b6a888"
+      }
+    },
+    "RV01": {
+      "id": "RV01",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+      "snapshot_file": "data/atlas-v2/confirmed/RV01.npz",
+      "snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+      "shape": [
+        18,
+        18
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "run_id": "near-main-V02-V03-p20-a-parallel",
+        "folder": "runs/near-main-V02-V03-p20-a-parallel/candidate-3f0449c11c21-0-search",
+        "encounter_identity": "12x13:01111111111117017017017017017017017017017017017011170117014014",
+        "native_capture_t": 460,
+        "source": {
+          "file": "candidate-3f0449c11c21-0.npz",
+          "t": 460,
+          "core": [
+            307,
+            105,
+            12,
+            13
+          ],
+          "extraction_bbox": [
+            304,
+            102,
+            18,
+            19
+          ],
+          "snapshot_hash": "1be793958482a135c3907927c06719cbbe99f385f30614a009717ea5f700ec22",
+          "provenance_mask": 3,
+          "ancestry_status": "ambiguous_pair",
+          "conservative_parent_set": [
+            "V02",
+            "V03"
+          ]
+        },
+        "confirmation": {
+          "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "node": 2,
+          "child": 0,
+          "transmission_streak": 2,
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066"
+        },
+        "stable_word_observed_natively": true
+      }
+    },
+    "RV02": {
+      "id": "RV02",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+      "snapshot_file": "data/atlas-v2/confirmed/RV02.npz",
+      "snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+      "shape": [
+        20,
+        20
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "run_id": "near-main-V01-V03-p20-a-parallel",
+        "folder": "runs/near-main-V01-V03-p20-a-parallel/candidate-656df4acc248-0-search",
+        "encounter_identity": "13x15:01111111111117017017017017017017017017017017017017011701170117014014",
+        "native_capture_t": 1110,
+        "source": {
+          "file": "candidate-656df4acc248-0.npz",
+          "t": 1110,
+          "core": [
+            307,
+            98,
+            13,
+            15
+          ],
+          "extraction_bbox": [
+            304,
+            95,
+            19,
+            21
+          ],
+          "snapshot_hash": "96448822fee06a9f4c9a58819c6955fae0fb8b9d23d62208ca45f86dfb6c866a",
+          "provenance_mask": 3,
+          "ancestry_status": "ambiguous_pair",
+          "conservative_parent_set": [
+            "V01",
+            "V03"
+          ]
+        },
+        "confirmation": {
+          "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+          "node": 2,
+          "child": 0,
+          "transmission_streak": 2,
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224"
+        },
+        "stable_word_observed_natively": true
+      }
+    }
+  },
+  "registry": [
+    "12x12:011111111111170170170170170170170170170170170170170117014014",
+    "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+    "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+    "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+  ],
+  "runs": [
+    {
+      "run_id": "V01-development-0-D",
+      "split": "development",
+      "state": "V01",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+      "pair_id": "V01-development-0",
+      "phase": "V01-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+        "after_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+        "mask_hash": "c3f8a8fcf22bb62e2405705014653abe7fccfb980b9620eaab0f781216357842",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-development-0-U",
+      "split": "development",
+      "state": "V01",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+      "pair_id": "V01-development-0",
+      "phase": "V01-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+        "after_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+        "mask_hash": "c3f8a8fcf22bb62e2405705014653abe7fccfb980b9620eaab0f781216357842",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-development-1-D",
+      "split": "development",
+      "state": "V01",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+      "pair_id": "V01-development-1",
+      "phase": "V01-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+        "after_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+        "mask_hash": "35d9b304361fc4c2abdefceca24aab41e0bfa0d321c63fb70c73f94c0e7d95fb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-development-1-U",
+      "split": "development",
+      "state": "V01",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+      "pair_id": "V01-development-1",
+      "phase": "V01-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+        "after_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+        "mask_hash": "35d9b304361fc4c2abdefceca24aab41e0bfa0d321c63fb70c73f94c0e7d95fb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-0-D",
+      "split": "confirmation",
+      "state": "V01",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+      "pair_id": "V01-confirmation-0",
+      "phase": "V01-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+        "after_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+        "mask_hash": "e011bf33a2446ca1b5956746b5e8356fe8bf25aedfb6b6395f0a62182965cda7",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-0-U",
+      "split": "confirmation",
+      "state": "V01",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+      "pair_id": "V01-confirmation-0",
+      "phase": "V01-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+        "after_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+        "mask_hash": "e011bf33a2446ca1b5956746b5e8356fe8bf25aedfb6b6395f0a62182965cda7",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-1-D",
+      "split": "confirmation",
+      "state": "V01",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+      "pair_id": "V01-confirmation-1",
+      "phase": "V01-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+        "after_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+        "mask_hash": "a2afb73d7b857cb57189d12f50d8760f8dfb773eb2846835790f1f31058fba4d",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-1-U",
+      "split": "confirmation",
+      "state": "V01",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+      "pair_id": "V01-confirmation-1",
+      "phase": "V01-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+        "after_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+        "mask_hash": "a2afb73d7b857cb57189d12f50d8760f8dfb773eb2846835790f1f31058fba4d",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-calibration-0-D",
+      "split": "calibration",
+      "state": "V01",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "97bde87779ff4485514829628136565bc871766a7fbe5b3535690ee8bd06c7ce",
+      "pair_id": "V01-calibration-0",
+      "phase": "V01-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "48de1b9b1f9312186eb59635643926558956d0e5a785dd9dd7fcfc1117c482b6",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d6eabee6a5923d0b308d337c35e7d7d86dd262961702f212d4fe27cc7a90f3e1",
+        "after_hash": "97bde87779ff4485514829628136565bc871766a7fbe5b3535690ee8bd06c7ce",
+        "mask_hash": "102897bacee248990d8f6e77f3a7b55848204778c60e2ba8ce9b4090ee0691dd",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-calibration-1-D",
+      "split": "calibration",
+      "state": "V01",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "a655f126c5bb30cadd09ca10c41500ecd257e37a9019117daeb98c1226d8dadc",
+      "pair_id": "V01-calibration-1",
+      "phase": "V01-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "ac342b23cd037225f4df71ce6ffacac3311ace68f67d9c2308198806bd992999",
+        "removed_occupied_cells": 199,
+        "occupied_before": 597,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "96f6a7906d329c26e325795915b41e033616f34e322cc0649f766667178d940b",
+        "after_hash": "a655f126c5bb30cadd09ca10c41500ecd257e37a9019117daeb98c1226d8dadc",
+        "mask_hash": "af60cf2ed39bec51bd2c0cebfd8cd879b3cacdbc4f11a58cba359bc71608f55b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-0-D",
+      "split": "development",
+      "state": "V02",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+      "pair_id": "V02-development-0",
+      "phase": "V02-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+        "after_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+        "mask_hash": "4ec205499a77bcbccd476405c085f273a5a093c2476dde7e82232cd5b76aaadb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-0-U",
+      "split": "development",
+      "state": "V02",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+      "pair_id": "V02-development-0",
+      "phase": "V02-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+        "after_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+        "mask_hash": "4ec205499a77bcbccd476405c085f273a5a093c2476dde7e82232cd5b76aaadb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-1-D",
+      "split": "development",
+      "state": "V02",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+      "pair_id": "V02-development-1",
+      "phase": "V02-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+        "removed_occupied_cells": 217,
+        "occupied_before": 651,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+        "after_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+        "mask_hash": "ecb53a54226fec1973034e3e98d7d69be626dde0b392d456c95e096f3d0da56e",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-1-U",
+      "split": "development",
+      "state": "V02",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+      "pair_id": "V02-development-1",
+      "phase": "V02-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+        "removed_occupied_cells": 217,
+        "occupied_before": 651,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+        "after_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+        "mask_hash": "ecb53a54226fec1973034e3e98d7d69be626dde0b392d456c95e096f3d0da56e",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-0-D",
+      "split": "confirmation",
+      "state": "V02",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+      "pair_id": "V02-confirmation-0",
+      "phase": "V02-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+        "after_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+        "mask_hash": "f3fa857245afe60e09e97e1158fc24e2ed441ac8f996db5fd1bbd632d4e62c3b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-0-U",
+      "split": "confirmation",
+      "state": "V02",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+      "pair_id": "V02-confirmation-0",
+      "phase": "V02-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+        "after_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+        "mask_hash": "f3fa857245afe60e09e97e1158fc24e2ed441ac8f996db5fd1bbd632d4e62c3b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-1-D",
+      "split": "confirmation",
+      "state": "V02",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+      "pair_id": "V02-confirmation-1",
+      "phase": "V02-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+        "after_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+        "mask_hash": "bfa89b470c44d0a6880cf5aefaa1ba90000f6a6fa7a00721b6faa2865885e3ff",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-1-U",
+      "split": "confirmation",
+      "state": "V02",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+      "pair_id": "V02-confirmation-1",
+      "phase": "V02-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+        "after_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+        "mask_hash": "bfa89b470c44d0a6880cf5aefaa1ba90000f6a6fa7a00721b6faa2865885e3ff",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-calibration-0-D",
+      "split": "calibration",
+      "state": "V02",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "6072fdfeb2117d8bdb6d8b8c158fe707c6be1b5d64809c908d6676dec6c7def9",
+      "pair_id": "V02-calibration-0",
+      "phase": "V02-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "2fc301316cf87947385a338a50905d7b7298c8573032bfebce7880837dec1006",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "7c39035c610b529bfbc0d2ffe2e9dbe6c00c1980aa5e99e202364d6cebee652a",
+        "after_hash": "6072fdfeb2117d8bdb6d8b8c158fe707c6be1b5d64809c908d6676dec6c7def9",
+        "mask_hash": "8f34e5f5183ad0af9edeea2dc8c00ad8bf1dd683e57a96410f9c59eee4681b6a",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-calibration-1-D",
+      "split": "calibration",
+      "state": "V02",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "41fd35450623147d34d0e9baca4f2a7daa417764e1fc48ff2ed98795fb33f7dc",
+      "pair_id": "V02-calibration-1",
+      "phase": "V02-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "c17a06c68dd9163f0f2fd95dbb7d40f0c1ef819e19c07c5f1c06feee62231a3e",
+        "removed_occupied_cells": 214,
+        "occupied_before": 642,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d5155d73658199278b5b60bc2794e7e8abb45bb54209f77fcbfd78ca278d53d9",
+        "after_hash": "41fd35450623147d34d0e9baca4f2a7daa417764e1fc48ff2ed98795fb33f7dc",
+        "mask_hash": "03bc3899798f7b5aa4563c640c4efb79474e16220ebf5d86de71f6b234ee6106",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-0-D",
+      "split": "development",
+      "state": "V03",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+      "pair_id": "V03-development-0",
+      "phase": "V03-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+        "after_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+        "mask_hash": "108886404e0fbe72fd86de8969e8d74683804929fa1cc26aed6a59d5cff3e72b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-0-U",
+      "split": "development",
+      "state": "V03",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+      "pair_id": "V03-development-0",
+      "phase": "V03-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+        "after_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+        "mask_hash": "108886404e0fbe72fd86de8969e8d74683804929fa1cc26aed6a59d5cff3e72b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-1-D",
+      "split": "development",
+      "state": "V03",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+      "pair_id": "V03-development-1",
+      "phase": "V03-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+        "after_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+        "mask_hash": "062cd81ade0a355fcac3f6f462a5689bda909bb0df2a10429889a49b2de4baa9",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-1-U",
+      "split": "development",
+      "state": "V03",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+      "pair_id": "V03-development-1",
+      "phase": "V03-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+        "after_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+        "mask_hash": "062cd81ade0a355fcac3f6f462a5689bda909bb0df2a10429889a49b2de4baa9",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-0-D",
+      "split": "confirmation",
+      "state": "V03",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+      "pair_id": "V03-confirmation-0",
+      "phase": "V03-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+        "after_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+        "mask_hash": "ef1e749ca3fe78f92f744af8dc6300963c9b4fa5fc922670cc5fce74fc8a1ceb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-0-U",
+      "split": "confirmation",
+      "state": "V03",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+      "pair_id": "V03-confirmation-0",
+      "phase": "V03-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+        "after_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+        "mask_hash": "ef1e749ca3fe78f92f744af8dc6300963c9b4fa5fc922670cc5fce74fc8a1ceb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-1-D",
+      "split": "confirmation",
+      "state": "V03",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+      "pair_id": "V03-confirmation-1",
+      "phase": "V03-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+        "after_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+        "mask_hash": "d5587d057fc01f24ce9bb5998970ed2d38d348c21fb19e3a6b0fcb0ae8c1e4cb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-1-U",
+      "split": "confirmation",
+      "state": "V03",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+      "pair_id": "V03-confirmation-1",
+      "phase": "V03-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+        "after_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+        "mask_hash": "d5587d057fc01f24ce9bb5998970ed2d38d348c21fb19e3a6b0fcb0ae8c1e4cb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-calibration-0-D",
+      "split": "calibration",
+      "state": "V03",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "708ec6e9a7531d84901cf320ac60212eb0b2e727a238f64c656d602170385f71",
+      "pair_id": "V03-calibration-0",
+      "phase": "V03-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "41d262c1fee293b9ae5a0d708c5c4f0122676480952ed8037799b4f43a76f9cb",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "4d5491ca4e2f585725a2d975046fe7ca128a8a8bf1136f91c90449eae651df56",
+        "after_hash": "708ec6e9a7531d84901cf320ac60212eb0b2e727a238f64c656d602170385f71",
+        "mask_hash": "f37a2fa758f260eb1156e9e9cbf4f3720cac48b0d32ad82e0f8a35ec5dc81dfa",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-calibration-1-D",
+      "split": "calibration",
+      "state": "V03",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "2cf216d6ddd61cbdb89b8822031fc55ab0a706f9e56ad68d1d666a9cdde17af5",
+      "pair_id": "V03-calibration-1",
+      "phase": "V03-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "99b0ba043114426c992edd8cdcc773b1b0d0c67d0c137dd49173005ac4eb7865",
+        "removed_occupied_cells": 215,
+        "occupied_before": 645,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "32b2cf3484996511ab2f1842dc04e8531a6fd978a94f31f753da9c48e17f5c0e",
+        "after_hash": "2cf216d6ddd61cbdb89b8822031fc55ab0a706f9e56ad68d1d666a9cdde17af5",
+        "mask_hash": "a5edf10d80363fa53b41e27d4709b1f4ab5b00b5e32f654f25438fd11c32023f",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-0-D",
+      "split": "development",
+      "state": "RV01",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+      "pair_id": "RV01-development-0",
+      "phase": "RV01-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+        "after_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+        "mask_hash": "5f066c83447de93f1234557fdbfc944537ea12afe1710b136a324458a77431e4",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-0-U",
+      "split": "development",
+      "state": "RV01",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+      "pair_id": "RV01-development-0",
+      "phase": "RV01-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+        "after_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+        "mask_hash": "5f066c83447de93f1234557fdbfc944537ea12afe1710b136a324458a77431e4",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-1-D",
+      "split": "development",
+      "state": "RV01",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+      "pair_id": "RV01-development-1",
+      "phase": "RV01-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+        "removed_occupied_cells": 201,
+        "occupied_before": 603,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+        "after_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+        "mask_hash": "d251342dce12265cccea5652faed591ad996bb09206c2f22ffe903b007ace682",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-1-U",
+      "split": "development",
+      "state": "RV01",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+      "pair_id": "RV01-development-1",
+      "phase": "RV01-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+        "removed_occupied_cells": 201,
+        "occupied_before": 603,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+        "after_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+        "mask_hash": "d251342dce12265cccea5652faed591ad996bb09206c2f22ffe903b007ace682",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-0-D",
+      "split": "confirmation",
+      "state": "RV01",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+      "pair_id": "RV01-confirmation-0",
+      "phase": "RV01-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+        "after_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+        "mask_hash": "665b4d9c81ed39e463d1d8c460a31d227aee698b3169be47b1799c50476b3814",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-0-U",
+      "split": "confirmation",
+      "state": "RV01",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+      "pair_id": "RV01-confirmation-0",
+      "phase": "RV01-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+        "after_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+        "mask_hash": "665b4d9c81ed39e463d1d8c460a31d227aee698b3169be47b1799c50476b3814",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-1-D",
+      "split": "confirmation",
+      "state": "RV01",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+      "pair_id": "RV01-confirmation-1",
+      "phase": "RV01-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+        "after_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+        "mask_hash": "7a10fbfc24d5da9d1a1a7550d2ab14e0d80bf91c98f7e9ed4505b1d209af137a",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-1-U",
+      "split": "confirmation",
+      "state": "RV01",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+      "pair_id": "RV01-confirmation-1",
+      "phase": "RV01-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+        "after_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+        "mask_hash": "7a10fbfc24d5da9d1a1a7550d2ab14e0d80bf91c98f7e9ed4505b1d209af137a",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-calibration-0-D",
+      "split": "calibration",
+      "state": "RV01",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "5814dd298ba6b4e08ea065822ea84dd11288ba13a344e245a3ffcb9ff382b68d",
+      "pair_id": "RV01-calibration-0",
+      "phase": "RV01-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "23c8a07d45c18d2a7e14fef6f94267f8ac70524d8d5c06aa4ab75d3f29a39ba5",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "2d1817755fe13293d0e8b06a3d9a1ca85940c74a7d7ee5995d844567b55cb2e8",
+        "after_hash": "5814dd298ba6b4e08ea065822ea84dd11288ba13a344e245a3ffcb9ff382b68d",
+        "mask_hash": "88df479737bfdebb19ad70b45958029eff42231dedfb91ce00766bbde06b8427",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-calibration-1-D",
+      "split": "calibration",
+      "state": "RV01",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "0fc1b378fa1081d28e0797516f79a9e81b9bb8748c9081021a8341e7b97b9279",
+      "pair_id": "RV01-calibration-1",
+      "phase": "RV01-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "173b86c77a0a0a7d63daa6ef51a162e53b2c308aa8f667aa11e99102900c6b56",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a8c75f8005b009329252cd4747af7d467a080960d95df676a636a50b96fe3f86",
+        "after_hash": "0fc1b378fa1081d28e0797516f79a9e81b9bb8748c9081021a8341e7b97b9279",
+        "mask_hash": "291f1a0209fba0a702a941fbb823eef5335d7ecc401a331acdc93deed1d5777c",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-0-D",
+      "split": "development",
+      "state": "RV02",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+      "pair_id": "RV02-development-0",
+      "phase": "RV02-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+        "after_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+        "mask_hash": "31cb9fc6e460bd44cc6d92a35836e915277aaf1f3387d63f3d8e6d83012f52ac",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-0-U",
+      "split": "development",
+      "state": "RV02",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+      "pair_id": "RV02-development-0",
+      "phase": "RV02-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+        "after_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+        "mask_hash": "31cb9fc6e460bd44cc6d92a35836e915277aaf1f3387d63f3d8e6d83012f52ac",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-1-D",
+      "split": "development",
+      "state": "RV02",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+      "pair_id": "RV02-development-1",
+      "phase": "RV02-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+        "removed_occupied_cells": 222,
+        "occupied_before": 666,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+        "after_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+        "mask_hash": "add8d6ae001bd73d71438b0e212c4ca8dbd000e2cc2f31c2b9353a7d08352082",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-1-U",
+      "split": "development",
+      "state": "RV02",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+      "pair_id": "RV02-development-1",
+      "phase": "RV02-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+        "removed_occupied_cells": 222,
+        "occupied_before": 666,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+        "after_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+        "mask_hash": "add8d6ae001bd73d71438b0e212c4ca8dbd000e2cc2f31c2b9353a7d08352082",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-0-D",
+      "split": "confirmation",
+      "state": "RV02",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+      "pair_id": "RV02-confirmation-0",
+      "phase": "RV02-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+        "removed_occupied_cells": 184,
+        "occupied_before": 552,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+        "after_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+        "mask_hash": "5450d8257c2bb2d555c7fe79eccaaca3f31231329c3bb0b98c4450a1c3550a15",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-0-U",
+      "split": "confirmation",
+      "state": "RV02",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+      "pair_id": "RV02-confirmation-0",
+      "phase": "RV02-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+        "removed_occupied_cells": 184,
+        "occupied_before": 552,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+        "after_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+        "mask_hash": "5450d8257c2bb2d555c7fe79eccaaca3f31231329c3bb0b98c4450a1c3550a15",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-1-D",
+      "split": "confirmation",
+      "state": "RV02",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+      "pair_id": "RV02-confirmation-1",
+      "phase": "RV02-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+        "removed_occupied_cells": 228,
+        "occupied_before": 684,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+        "after_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+        "mask_hash": "0920f8afe3252bef31be48c5902a74dda7401fae67d0686fc49c0db1355dfe45",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-1-U",
+      "split": "confirmation",
+      "state": "RV02",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+      "pair_id": "RV02-confirmation-1",
+      "phase": "RV02-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+        "removed_occupied_cells": 228,
+        "occupied_before": 684,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+        "after_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+        "mask_hash": "0920f8afe3252bef31be48c5902a74dda7401fae67d0686fc49c0db1355dfe45",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-calibration-0-D",
+      "split": "calibration",
+      "state": "RV02",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_hash": "ae043faafb73c66e23fd8b4b2720e8c74ba73a5fe74e675a21dd4caeae8780b3",
+      "pair_id": "RV02-calibration-0",
+      "phase": "RV02-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "31343b01f4ef37c44ba7471627675d091a9dbdaaa9f86b63c72342e33e47537a",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "4cfaf7c615cffd2487eeee3239d6deb4687085a1d856743ecbb7e5cabd652c5b",
+        "after_hash": "ae043faafb73c66e23fd8b4b2720e8c74ba73a5fe74e675a21dd4caeae8780b3",
+        "mask_hash": "b9e846538744b39b863c5de309f4b246dafebf90593790a2d0a18062d470510e",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-calibration-1-D",
+      "split": "calibration",
+      "state": "RV02",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_hash": "2cc3a21b92b261bb71a0c9eea9bbc6dba00f2b0e2f633a246c35a37b8c55444b",
+      "pair_id": "RV02-calibration-1",
+      "phase": "RV02-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "b891557bdfe46580e185c48c1170dc6a8721706a1feb982b464b684e47753fb0",
+        "removed_occupied_cells": 231,
+        "occupied_before": 693,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1e3158357ae370612ed6804d6080e1185a04a30c613e65bedee05b75cd223563",
+        "after_hash": "2cc3a21b92b261bb71a0c9eea9bbc6dba00f2b0e2f633a246c35a37b8c55444b",
+        "mask_hash": "970582e492c6790c8def30b1433f76dbfcd020d960a30a7e60fe9a9a9bdcc067",
+        "matched_impact": true
+      }
+    }
+  ],
+  "phases": [
+    {
+      "state": "V01",
+      "age": 0,
+      "name": "V01-age0",
+      "grid_hash": "c883bb8f317ac455c0dfcc6076fd601e7b0e66dabdc14e5ca01701f6e2ef3111",
+      "snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V01",
+      "age": 100,
+      "name": "V01-age100",
+      "grid_hash": "98527a72f291f82f7088704e522e74f7efbf7479f67c94640d4f74e5c0e91a6e",
+      "snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+      "offset": [
+        3,
+        18
+      ]
+    },
+    {
+      "state": "V01",
+      "age": 30,
+      "name": "V01-age30",
+      "grid_hash": "f1243a74d35ca77a72e4a7c62ca76ce01d4491678d4c194a0b472ba626798ebc",
+      "snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+      "offset": [
+        3,
+        4
+      ]
+    },
+    {
+      "state": "V01",
+      "age": 120,
+      "name": "V01-age120",
+      "grid_hash": "6c4ae394e4a8aecebd0d99c844a4bdd666797a8000306b17edf303632d441132",
+      "snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+      "offset": [
+        3,
+        21
+      ]
+    },
+    {
+      "state": "V01",
+      "age": 20,
+      "name": "V01-age20",
+      "grid_hash": "096165a86bbabd45fe589ecb10fcb2c6f2dd332cf21fabb9a02e3fb499149a4b",
+      "snapshot_hash": "48de1b9b1f9312186eb59635643926558956d0e5a785dd9dd7fcfc1117c482b6",
+      "offset": [
+        3,
+        4
+      ]
+    },
+    {
+      "state": "V01",
+      "age": 110,
+      "name": "V01-age110",
+      "grid_hash": "55117addb81085b0c6282625daf89827995ee3c555b59da955a19a68144611c5",
+      "snapshot_hash": "ac342b23cd037225f4df71ce6ffacac3311ace68f67d9c2308198806bd992999",
+      "offset": [
+        3,
+        18
+      ]
+    },
+    {
+      "state": "V02",
+      "age": 0,
+      "name": "V02-age0",
+      "grid_hash": "ee7e42aeff38813bf8b4ab4a232387cb1b0323ecdff62ecf71d4135355a19c9b",
+      "snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V02",
+      "age": 100,
+      "name": "V02-age100",
+      "grid_hash": "3181c7ac846098d2b6f1c0e25abcb9511c3af9b7f83dd23baba5a6cca138f25f",
+      "snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V02",
+      "age": 30,
+      "name": "V02-age30",
+      "grid_hash": "4b81c51a8973a6f9f6efaf0c3593fe7e05c4225c3954d0157526bdc3cc6147da",
+      "snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V02",
+      "age": 120,
+      "name": "V02-age120",
+      "grid_hash": "c9163c07c2473a206bffaf3c3578867557e46c98a944f637d6eb82a8b9b06aee",
+      "snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V02",
+      "age": 20,
+      "name": "V02-age20",
+      "grid_hash": "8fa9232cc4e844794e5651c6532817a67af4adaa6256b333d277d4af0a4e9fc5",
+      "snapshot_hash": "2fc301316cf87947385a338a50905d7b7298c8573032bfebce7880837dec1006",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V02",
+      "age": 110,
+      "name": "V02-age110",
+      "grid_hash": "9dd8d949460047cf6dc4d0fb60312ec8352eceab54534d5ef09525ac5563a292",
+      "snapshot_hash": "c17a06c68dd9163f0f2fd95dbb7d40f0c1ef819e19c07c5f1c06feee62231a3e",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V03",
+      "age": 0,
+      "name": "V03-age0",
+      "grid_hash": "f8ff9b0fc271b971f02f95af0223821ae0ba154b5d4dea39df0cdca559a940d8",
+      "snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V03",
+      "age": 100,
+      "name": "V03-age100",
+      "grid_hash": "c94c0a8a244465918e8f080cc156fdba5fac7ab5cc098bf550eded9e002f71dd",
+      "snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+      "offset": [
+        3,
+        19
+      ]
+    },
+    {
+      "state": "V03",
+      "age": 30,
+      "name": "V03-age30",
+      "grid_hash": "28b59f71326eefb4bf250510e8fe35e8812f067bd7f5f14343b9c776d18a88b1",
+      "snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+      "offset": [
+        3,
+        4
+      ]
+    },
+    {
+      "state": "V03",
+      "age": 120,
+      "name": "V03-age120",
+      "grid_hash": "b42faaeec1fe1b32153e55353e13297f412ac3e60cc07d2e64da2c35c138da81",
+      "snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+      "offset": [
+        3,
+        20
+      ]
+    },
+    {
+      "state": "V03",
+      "age": 20,
+      "name": "V03-age20",
+      "grid_hash": "39b28df07cad104a2dba6d6e16ba82bd7ed11d09a9e81957d67697b610b3fe63",
+      "snapshot_hash": "41d262c1fee293b9ae5a0d708c5c4f0122676480952ed8037799b4f43a76f9cb",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "V03",
+      "age": 110,
+      "name": "V03-age110",
+      "grid_hash": "0560398467b75b930f75832009fc23d22c8f2495a473c12851ef3487ffbd3945",
+      "snapshot_hash": "99b0ba043114426c992edd8cdcc773b1b0d0c67d0c137dd49173005ac4eb7865",
+      "offset": [
+        3,
+        19
+      ]
+    },
+    {
+      "state": "RV01",
+      "age": 0,
+      "name": "RV01-age0",
+      "grid_hash": "877dbffb4b5b32564a31d3f5d04c48b715af049fc3ad64096c7128e9b40be31f",
+      "snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "RV01",
+      "age": 100,
+      "name": "RV01-age100",
+      "grid_hash": "3a1b784d168617610dd2dcf59d93de5544cd10b2202e110f0d021a873ccbbc17",
+      "snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+      "offset": [
+        3,
+        18
+      ]
+    },
+    {
+      "state": "RV01",
+      "age": 30,
+      "name": "RV01-age30",
+      "grid_hash": "7a41b56abc892b48825b467a4643a32647ee6a69cdc54bcf4dd8d1c8452f1c29",
+      "snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+      "offset": [
+        3,
+        4
+      ]
+    },
+    {
+      "state": "RV01",
+      "age": 120,
+      "name": "RV01-age120",
+      "grid_hash": "8ce8ac2d511113e6455248c3d41f526597494ec0dcfe776e96f65cfaee9c4016",
+      "snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+      "offset": [
+        3,
+        21
+      ]
+    },
+    {
+      "state": "RV01",
+      "age": 20,
+      "name": "RV01-age20",
+      "grid_hash": "1121eb58ec6d58ba63fdc76aa476cebecc069f94cb0d7e526bd3b5d808ff914c",
+      "snapshot_hash": "23c8a07d45c18d2a7e14fef6f94267f8ac70524d8d5c06aa4ab75d3f29a39ba5",
+      "offset": [
+        3,
+        4
+      ]
+    },
+    {
+      "state": "RV01",
+      "age": 110,
+      "name": "RV01-age110",
+      "grid_hash": "55f284dd53f18a2bca67aa9517abd828093339cc974af472545fd37a9bb2bc2e",
+      "snapshot_hash": "173b86c77a0a0a7d63daa6ef51a162e53b2c308aa8f667aa11e99102900c6b56",
+      "offset": [
+        3,
+        19
+      ]
+    },
+    {
+      "state": "RV02",
+      "age": 0,
+      "name": "RV02-age0",
+      "grid_hash": "b57211b62d34195c3069ed83f0b37cb1aa19eb4ba400410c8aad2a1a796b145c",
+      "snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "RV02",
+      "age": 100,
+      "name": "RV02-age100",
+      "grid_hash": "0cfb4a4448806212320662620f1f2d777e4982f72c58de5d288dcc7b689f131b",
+      "snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+      "offset": [
+        3,
+        18
+      ]
+    },
+    {
+      "state": "RV02",
+      "age": 30,
+      "name": "RV02-age30",
+      "grid_hash": "95c666d857bcda435c066a3734daf96a6d73112b1175967d4dcdd80f4cbe457e",
+      "snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+      "offset": [
+        3,
+        4
+      ]
+    },
+    {
+      "state": "RV02",
+      "age": 120,
+      "name": "RV02-age120",
+      "grid_hash": "7ad793d0615d59a70430064bb2e248401398ee38e69daa0dc0425bcef8ceccdf",
+      "snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+      "offset": [
+        3,
+        20
+      ]
+    },
+    {
+      "state": "RV02",
+      "age": 20,
+      "name": "RV02-age20",
+      "grid_hash": "0e154cb1ffe790d135e69502c9f1cd3be4153eda49fa352dbecc657e392d8f46",
+      "snapshot_hash": "31343b01f4ef37c44ba7471627675d091a9dbdaaa9f86b63c72342e33e47537a",
+      "offset": [
+        3,
+        3
+      ]
+    },
+    {
+      "state": "RV02",
+      "age": 110,
+      "name": "RV02-age110",
+      "grid_hash": "725292c2f58709de79dce762360fec15fa66ed12f2fe3e653f0f63b35db405ea",
+      "snapshot_hash": "b891557bdfe46580e185c48c1170dc6a8721706a1feb982b464b684e47753fb0",
+      "offset": [
+        3,
+        20
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "pair_id": "V01-development-0",
+      "state": "V01",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "V01-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+        "after_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+        "mask_hash": "c3f8a8fcf22bb62e2405705014653abe7fccfb980b9620eaab0f781216357842",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V01-development-1",
+      "state": "V01",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "V01-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+        "after_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+        "mask_hash": "35d9b304361fc4c2abdefceca24aab41e0bfa0d321c63fb70c73f94c0e7d95fb",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V01-confirmation-0",
+      "state": "V01",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "V01-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+        "after_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+        "mask_hash": "e011bf33a2446ca1b5956746b5e8356fe8bf25aedfb6b6395f0a62182965cda7",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V01-confirmation-1",
+      "state": "V01",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "V01-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+        "after_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+        "mask_hash": "a2afb73d7b857cb57189d12f50d8760f8dfb773eb2846835790f1f31058fba4d",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V01-calibration-0",
+      "state": "V01",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "V01-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "48de1b9b1f9312186eb59635643926558956d0e5a785dd9dd7fcfc1117c482b6",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d6eabee6a5923d0b308d337c35e7d7d86dd262961702f212d4fe27cc7a90f3e1",
+        "after_hash": "97bde87779ff4485514829628136565bc871766a7fbe5b3535690ee8bd06c7ce",
+        "mask_hash": "102897bacee248990d8f6e77f3a7b55848204778c60e2ba8ce9b4090ee0691dd",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V01-calibration-1",
+      "state": "V01",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "V01-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "ac342b23cd037225f4df71ce6ffacac3311ace68f67d9c2308198806bd992999",
+        "removed_occupied_cells": 199,
+        "occupied_before": 597,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "96f6a7906d329c26e325795915b41e033616f34e322cc0649f766667178d940b",
+        "after_hash": "a655f126c5bb30cadd09ca10c41500ecd257e37a9019117daeb98c1226d8dadc",
+        "mask_hash": "af60cf2ed39bec51bd2c0cebfd8cd879b3cacdbc4f11a58cba359bc71608f55b",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V02-development-0",
+      "state": "V02",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "V02-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+        "after_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+        "mask_hash": "4ec205499a77bcbccd476405c085f273a5a093c2476dde7e82232cd5b76aaadb",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V02-development-1",
+      "state": "V02",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "V02-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+        "removed_occupied_cells": 217,
+        "occupied_before": 651,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+        "after_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+        "mask_hash": "ecb53a54226fec1973034e3e98d7d69be626dde0b392d456c95e096f3d0da56e",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V02-confirmation-0",
+      "state": "V02",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "V02-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+        "after_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+        "mask_hash": "f3fa857245afe60e09e97e1158fc24e2ed441ac8f996db5fd1bbd632d4e62c3b",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V02-confirmation-1",
+      "state": "V02",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "V02-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+        "after_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+        "mask_hash": "bfa89b470c44d0a6880cf5aefaa1ba90000f6a6fa7a00721b6faa2865885e3ff",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V02-calibration-0",
+      "state": "V02",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "V02-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "2fc301316cf87947385a338a50905d7b7298c8573032bfebce7880837dec1006",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "7c39035c610b529bfbc0d2ffe2e9dbe6c00c1980aa5e99e202364d6cebee652a",
+        "after_hash": "6072fdfeb2117d8bdb6d8b8c158fe707c6be1b5d64809c908d6676dec6c7def9",
+        "mask_hash": "8f34e5f5183ad0af9edeea2dc8c00ad8bf1dd683e57a96410f9c59eee4681b6a",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V02-calibration-1",
+      "state": "V02",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "V02-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "c17a06c68dd9163f0f2fd95dbb7d40f0c1ef819e19c07c5f1c06feee62231a3e",
+        "removed_occupied_cells": 214,
+        "occupied_before": 642,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d5155d73658199278b5b60bc2794e7e8abb45bb54209f77fcbfd78ca278d53d9",
+        "after_hash": "41fd35450623147d34d0e9baca4f2a7daa417764e1fc48ff2ed98795fb33f7dc",
+        "mask_hash": "03bc3899798f7b5aa4563c640c4efb79474e16220ebf5d86de71f6b234ee6106",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V03-development-0",
+      "state": "V03",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "V03-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+        "after_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+        "mask_hash": "108886404e0fbe72fd86de8969e8d74683804929fa1cc26aed6a59d5cff3e72b",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V03-development-1",
+      "state": "V03",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "V03-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+        "after_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+        "mask_hash": "062cd81ade0a355fcac3f6f462a5689bda909bb0df2a10429889a49b2de4baa9",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V03-confirmation-0",
+      "state": "V03",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "V03-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+        "after_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+        "mask_hash": "ef1e749ca3fe78f92f744af8dc6300963c9b4fa5fc922670cc5fce74fc8a1ceb",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V03-confirmation-1",
+      "state": "V03",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "V03-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+        "after_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+        "mask_hash": "d5587d057fc01f24ce9bb5998970ed2d38d348c21fb19e3a6b0fcb0ae8c1e4cb",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V03-calibration-0",
+      "state": "V03",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "V03-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "41d262c1fee293b9ae5a0d708c5c4f0122676480952ed8037799b4f43a76f9cb",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "4d5491ca4e2f585725a2d975046fe7ca128a8a8bf1136f91c90449eae651df56",
+        "after_hash": "708ec6e9a7531d84901cf320ac60212eb0b2e727a238f64c656d602170385f71",
+        "mask_hash": "f37a2fa758f260eb1156e9e9cbf4f3720cac48b0d32ad82e0f8a35ec5dc81dfa",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "V03-calibration-1",
+      "state": "V03",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "V03-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "99b0ba043114426c992edd8cdcc773b1b0d0c67d0c137dd49173005ac4eb7865",
+        "removed_occupied_cells": 215,
+        "occupied_before": 645,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "32b2cf3484996511ab2f1842dc04e8531a6fd978a94f31f753da9c48e17f5c0e",
+        "after_hash": "2cf216d6ddd61cbdb89b8822031fc55ab0a706f9e56ad68d1d666a9cdde17af5",
+        "mask_hash": "a5edf10d80363fa53b41e27d4709b1f4ab5b00b5e32f654f25438fd11c32023f",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV01-development-0",
+      "state": "RV01",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "RV01-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+        "after_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+        "mask_hash": "5f066c83447de93f1234557fdbfc944537ea12afe1710b136a324458a77431e4",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV01-development-1",
+      "state": "RV01",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "RV01-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+        "removed_occupied_cells": 201,
+        "occupied_before": 603,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+        "after_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+        "mask_hash": "d251342dce12265cccea5652faed591ad996bb09206c2f22ffe903b007ace682",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV01-confirmation-0",
+      "state": "RV01",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "RV01-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+        "after_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+        "mask_hash": "665b4d9c81ed39e463d1d8c460a31d227aee698b3169be47b1799c50476b3814",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV01-confirmation-1",
+      "state": "RV01",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "RV01-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+        "after_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+        "mask_hash": "7a10fbfc24d5da9d1a1a7550d2ab14e0d80bf91c98f7e9ed4505b1d209af137a",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV01-calibration-0",
+      "state": "RV01",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "RV01-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "23c8a07d45c18d2a7e14fef6f94267f8ac70524d8d5c06aa4ab75d3f29a39ba5",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "2d1817755fe13293d0e8b06a3d9a1ca85940c74a7d7ee5995d844567b55cb2e8",
+        "after_hash": "5814dd298ba6b4e08ea065822ea84dd11288ba13a344e245a3ffcb9ff382b68d",
+        "mask_hash": "88df479737bfdebb19ad70b45958029eff42231dedfb91ce00766bbde06b8427",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV01-calibration-1",
+      "state": "RV01",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "RV01-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "173b86c77a0a0a7d63daa6ef51a162e53b2c308aa8f667aa11e99102900c6b56",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a8c75f8005b009329252cd4747af7d467a080960d95df676a636a50b96fe3f86",
+        "after_hash": "0fc1b378fa1081d28e0797516f79a9e81b9bb8748c9081021a8341e7b97b9279",
+        "mask_hash": "291f1a0209fba0a702a941fbb823eef5335d7ecc401a331acdc93deed1d5777c",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV02-development-0",
+      "state": "RV02",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "RV02-age0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+        "after_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+        "mask_hash": "31cb9fc6e460bd44cc6d92a35836e915277aaf1f3387d63f3d8e6d83012f52ac",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV02-development-1",
+      "state": "RV02",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "RV02-age100",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+        "removed_occupied_cells": 222,
+        "occupied_before": 666,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+        "after_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+        "mask_hash": "add8d6ae001bd73d71438b0e212c4ca8dbd000e2cc2f31c2b9353a7d08352082",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV02-confirmation-0",
+      "state": "RV02",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "RV02-age30",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+        "removed_occupied_cells": 184,
+        "occupied_before": 552,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+        "after_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+        "mask_hash": "5450d8257c2bb2d555c7fe79eccaaca3f31231329c3bb0b98c4450a1c3550a15",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV02-confirmation-1",
+      "state": "RV02",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "phase": "RV02-age120",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+        "removed_occupied_cells": 228,
+        "occupied_before": 684,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+        "after_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+        "mask_hash": "0920f8afe3252bef31be48c5902a74dda7401fae67d0686fc49c0db1355dfe45",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV02-calibration-0",
+      "state": "RV02",
+      "condition": {
+        "id": "calibration-0",
+        "split": "calibration",
+        "age": 20,
+        "sites": [
+          [
+            50,
+            50
+          ],
+          [
+            99,
+            135
+          ],
+          [
+            146,
+            95
+          ]
+        ],
+        "remove_index": 1
+      },
+      "phase": "RV02-age20",
+      "impact": {
+        "removed_core": [
+          99,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "31343b01f4ef37c44ba7471627675d091a9dbdaaa9f86b63c72342e33e47537a",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "4cfaf7c615cffd2487eeee3239d6deb4687085a1d856743ecbb7e5cabd652c5b",
+        "after_hash": "ae043faafb73c66e23fd8b4b2720e8c74ba73a5fe74e675a21dd4caeae8780b3",
+        "mask_hash": "b9e846538744b39b863c5de309f4b246dafebf90593790a2d0a18062d470510e",
+        "matched_impact": true
+      }
+    },
+    {
+      "pair_id": "RV02-calibration-1",
+      "state": "RV02",
+      "condition": {
+        "id": "calibration-1",
+        "split": "calibration",
+        "age": 110,
+        "sites": [
+          [
+            48,
+            112
+          ],
+          [
+            97,
+            50
+          ],
+          [
+            140,
+            132
+          ]
+        ],
+        "remove_index": 2
+      },
+      "phase": "RV02-age110",
+      "impact": {
+        "removed_core": [
+          140,
+          132,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "b891557bdfe46580e185c48c1170dc6a8721706a1feb982b464b684e47753fb0",
+        "removed_occupied_cells": 231,
+        "occupied_before": 693,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1e3158357ae370612ed6804d6080e1185a04a30c613e65bedee05b75cd223563",
+        "after_hash": "2cc3a21b92b261bb71a0c9eea9bbc6dba00f2b0e2f633a246c35a37b8c55444b",
+        "mask_hash": "970582e492c6790c8def30b1433f76dbfcd020d960a30a7e60fe9a9a9bdcc067",
+        "matched_impact": true
+      }
+    }
+  ],
+  "equivalence_checks": [
+    {
+      "state": "V01",
+      "development": "V01-development-0",
+      "confirmation": "V01-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V01",
+      "development": "V01-development-0",
+      "confirmation": "V01-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V01",
+      "development": "V01-development-1",
+      "confirmation": "V01-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V01",
+      "development": "V01-development-1",
+      "confirmation": "V01-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V02",
+      "development": "V02-development-0",
+      "confirmation": "V02-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V02",
+      "development": "V02-development-0",
+      "confirmation": "V02-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V02",
+      "development": "V02-development-1",
+      "confirmation": "V02-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V02",
+      "development": "V02-development-1",
+      "confirmation": "V02-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V03",
+      "development": "V03-development-0",
+      "confirmation": "V03-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V03",
+      "development": "V03-development-0",
+      "confirmation": "V03-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V03",
+      "development": "V03-development-1",
+      "confirmation": "V03-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "V03",
+      "development": "V03-development-1",
+      "confirmation": "V03-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV01",
+      "development": "RV01-development-0",
+      "confirmation": "RV01-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV01",
+      "development": "RV01-development-0",
+      "confirmation": "RV01-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV01",
+      "development": "RV01-development-1",
+      "confirmation": "RV01-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV01",
+      "development": "RV01-development-1",
+      "confirmation": "RV01-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV02",
+      "development": "RV02-development-0",
+      "confirmation": "RV02-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV02",
+      "development": "RV02-development-0",
+      "confirmation": "RV02-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV02",
+      "development": "RV02-development-1",
+      "confirmation": "RV02-confirmation-0",
+      "before": null,
+      "after": null,
+      "mask": null
+    },
+    {
+      "state": "RV02",
+      "development": "RV02-development-1",
+      "confirmation": "RV02-confirmation-1",
+      "before": null,
+      "after": null,
+      "mask": null
+    }
+  ],
+  "cross_state_aliases": [],
+  "exposure_verified": true,
+  "distinct_confirmation_verified": true,
+  "calibration_experiment_id": "EXP-impact-calibration-001",
+  "benefit_experiment_id": "EXP-impact-paired-001",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "code_hashes": {
+    "evoloop/kernel.c": "6de57b310164c91617feb3ca191751db64e63028b850a8983eca10631accf969",
+    "evoloop/engine.py": "8a151597c529794a7406af334a32df74363a0bb7f8245fe1d6c525bf9e9a6c10",
+    "evoloop/tracking.py": "870e35a08f824fb92a67330dca8a823587c582b1387c7d63c1bc46e571026358",
+    "evoloop/periodic_tracking.py": "9730485b7b6271a58428500dd1350d33d70239c71a628d1f08aafb10a9770523",
+    "evoloop/periodic_assays.py": "2496d85177a178f2959bdc7e41f3789552359334d69ac8d9bb92826e16848195",
+    "evoloop/fate.py": "95f546a027f65bf96e10a714daae58b5ff42aab73f1e9fba7e245f9b2d930fe8",
+    "evoloop/ecology.py": "6c028631af21713e44c518b6350e9eeeae4b4b9b6d8d24b6337a6122dadf134e",
+    "evoloop/impact.py": "92baa4a47f87e6416d365758954f4eca515648ffb19f7719e40509b44bb2dc77",
+    "evoloop/microcolony.py": "58401ba7565f3885439a17bbd66282ce915080ad11cc2eaa66b3584d8d5b9555",
+    "scripts/ecological_assay.py": "19a5630964bf7ac8195877cdaf2570277e24044f4a95f751157645c21d0e21bb",
+    "scripts/impact_assay.py": "4fdca6bfcbd0e91fbd0a68cf62086ff970105106f5dea657ddf3148f339a5534",
+    "scripts/analyze_impact.py": "34fa4cb509468ea85aa9ea2605270ec0ec810e22d71ca1cabc6643486a885a5f"
+  },
+  "config_sha256": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+  "protocol_sha256": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78",
+  "source_sha256": {
+    "data/ecological-v1/manifest.json": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+    "data/ecological-v1/snapshots.npz": "4f8737f9a8348924a0489f6b743a862617924bafa192f921cd7ab074eaa65604",
+    "data/impact-exposure-v1/attempt-02/report.json": "c919917e1e86aa235b37203b73f97f40ccd4f27186233103ede9cac02ea20287"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.35"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "calibration_experiment_id":"EXP-impact-calibration-001",
+  "benefit_experiment_id":"EXP-impact-paired-001",
+  "states":["V01","V02","V03","RV01","RV02"],
+  "pairs":[{"candidate":"RV01","inputs":["V02","V03"]},{"candidate":"RV02","inputs":["V01","V03"]}],
+  "shape":[192,192],"horizon":1600,"sample_interval":20,
+  "conditions":[
+    {"id":"development-0","split":"development","age":0,"sites":[[55,45],[83,115],[140,72]],"remove_index":1},
+    {"id":"development-1","split":"development","age":80,"sites":[[48,70],[110,44],[128,132]],"remove_index":0},
+    {"id":"confirmation-0","split":"confirmation","age":40,"sites":[[43,48],[90,132],[142,86]],"remove_index":2},
+    {"id":"confirmation-1","split":"confirmation","age":120,"sites":[[62,135],[110,55],[143,123]],"remove_index":0},
+    {"id":"calibration-0","split":"calibration","age":20,"sites":[[50,50],[99,135],[146,95]],"remove_index":1},
+    {"id":"calibration-1","split":"calibration","age":100,"sites":[[48,112],[97,50],[140,132]],"remove_index":2}
+  ],
+  "calibration":{"source_times":[0,400,800,1200],"native_continuation_horizon":1600,"gate":{"overall_scored_recovery_fraction":0.9,"per_starting_state_recovery_fraction":0.8,"baseline_recoveries_required":30,"minimum_confirmed_per_nonempty_scored_stratum":1}},
+  "search":{"isolation_shape":[192,192],"generation_horizon":1600,"detection_interval":10,"offspring_per_generation":3,"max_depth":6,"max_generation_simulations_per_root":24,"stable_transmissions":2},
+  "preparation":"three identical complete components from autonomously advanced representative; core-anchored placement, orientation 0; one whole component removed at t=0",
+  "phase":"completed updates since verified detached representative, not a homologous biological cycle position",
+  "retention":"arithmetic mean of two exact per-condition damaged/control score-sum ratios; zero control sum undefined",
+  "primary":"candidate retention strictly exceeds both inputs in both panels; ties fail",
+  "joint":"primary plus strictly larger absolute damaged score than both inputs in both panels, calibration gate passed, exact exposure and non-equivalence passed",
+  "sampling":"finite deterministic condition panels and nested selected states; no independent histories, confidence intervals or p-values",
+  "execution":{"workers":1,"minimum_available_memory_mib":200},
+  "replays":[{"state":"V01","condition":"development-0"},{"state":"RV01","condition":"development-0"},{"state":"RV02","condition":"confirmation-1"}],
+  "replay_interval":80
+}
