@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 os.environ.setdefault('MPLCONFIGDIR',str(Path(__file__).resolve().parents[1]/'.cache/matplotlib'))
 import re
+import json
 import textwrap
 import matplotlib
 matplotlib.use('Agg')
@@ -16,6 +17,7 @@ from PIL import Image
 from evoloop.engine import ROOT
 
 WIDTH=90
+STYLE=json.loads((ROOT/'configs/style.json').read_text())
 
 def main():
     source=(ROOT/'paper/manuscript.md').read_text();pages=[];lines=[];y=0
@@ -47,7 +49,7 @@ def main():
     if lines:pages.append(lines)
     plt.rcParams.update({'font.family':'DejaVu Serif','pdf.fonttype':42})
     target=ROOT/'paper/manuscript.pdf'
-    with PdfPages(target,metadata={'Title':'Where Does Evolvability Reside?','Subject':'Working first scientific checkpoint; benefit pending'}) as pdf:
+    with PdfPages(target,metadata={'Title':'Where Does Evolvability Reside?','Subject':'Production and transmission of variation in controlled encounters'}) as pdf:
         for page_number,page in enumerate(pages,1):
             fig=plt.figure(figsize=(8.27,11.69),facecolor='white');ax=fig.add_axes([0,0,1,1]);ax.set_axis_off()
             for text,style,yp in page:
@@ -77,10 +79,10 @@ def main():
                      'fate-calibration-matrix','fate-native-trajectories','fate-raw-comparison',
                      'panel2-native-worlds','panel2-selection','atlas2-verified-panel','atlas2-outcome-matrix',
                      'atlas2-evidence-stages','atlas2-encounter-1','atlas2-encounter-2','atlas2-encounter-3']:
-            p=ROOT/f'figures/{name}-light.png'
+            p=ROOT/f'figures/{name}-dark.png'
             if not p.exists():continue
-            fig=plt.figure(figsize=(11.69,8.27),facecolor='#EDE9DF');ax=fig.add_axes([.035,.07,.93,.86]);ax.imshow(Image.open(p));ax.axis('off')
-            fig.text(.05,.03,f'Figure: {name}. Source and regeneration: figures/manifest.json.',fontsize=9,color='#101421')
+            fig=plt.figure(figsize=(11.69,8.27),facecolor=STYLE['ink']);ax=fig.add_axes([.035,.07,.93,.86]);ax.imshow(Image.open(p));ax.axis('off')
+            fig.text(.05,.03,f'Figure: {name}. Source and regeneration: figures/manifest.json.',fontsize=9,color=STYLE['text'])
             pdf.savefig(fig);plt.close(fig)
     print('Rendered',target,'from authoritative Markdown and recorded-data figures')
 

@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from evoloop.engine import ROOT,advance,digest
-from scripts.figures import FIG,STYLE,theme,save,legend,CMAP,NORM,animation
+from scripts.figures import FIG,STYLE,theme,save,legend,CMAP,NORM,animation,THEMES,quantitative_cmap,annotation_color
 from scripts.atlas import write_json
 EXP='EXP-atlas-002';OUT=ROOT/'data/atlas-v2';COMMAND='OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fresh_atlas'
 
@@ -15,17 +15,18 @@ def export(fig,name,dark,manifest,extra=None):
 
 def render(manifest):
     a=json.loads((OUT/'analysis.json').read_text());ids=a['ids']
-    for dark in (False,True):
+    for dark in THEMES:
         theme(dark);fig,axes=plt.subplots(2,2,figsize=(10,9))
         for row,endpoint in enumerate(('candidate','inherited')):
             for col,split in enumerate(('main','heldout')):
                 ax=axes[row,col];cells=a['splits'][split]['cells'];lookup={(c['focal'],c['partner']):c for c in cells}
                 values=np.array([[lookup[p,q][endpoint]/lookup[p,q]['denominator'] for q in ids] for p in ids])
-                im=ax.imshow(values,cmap='viridis',vmin=0,vmax=1,interpolation='nearest')
+                cmap=quantitative_cmap()
+                im=ax.imshow(values,cmap=cmap,vmin=0,vmax=1,interpolation='nearest')
                 for i,p in enumerate(ids):
                     for j,q in enumerate(ids):
                         c=lookup[p,q];v=values[i,j]
-                        ax.text(j,i,f'{c[endpoint]}/{c["denominator"]}',ha='center',va='center',fontsize=17,color='white' if v<.5 else STYLE['ink'])
+                        ax.text(j,i,f'{c[endpoint]}/{c["denominator"]}',ha='center',va='center',fontsize=17,color=annotation_color(cmap(v)))
                 ax.set_xticks(range(3),ids);ax.set_yticks(range(3),ids);ax.set_xlabel('partner');ax.set_ylabel('focal')
                 ax.set_title(f'{split.capitalize()} · {"native novel word" if row==0 else "confirmed inherited word"}')
         fig.colorbar(im,ax=axes.ravel().tolist(),fraction=.025,pad=.03,label='fraction of all declared near configurations')
@@ -36,7 +37,7 @@ def render(manifest):
         theme(dark);fig,axes=plt.subplots(1,2,figsize=(10,4.6))
         for ax,split in zip(axes,('main','heldout')):
             s=a['splits'][split];vals=[s['candidate_runs'],s['confirmed_inherited_runs'],0];labels=['Native word\ncandidates','Confirmed\ninheritance','Benefit\nPENDING']
-            ax.bar([0,1],vals[:2],color=[STYLE['amber'],STYLE['cobalt']],width=.6)
+            ax.bar([0,1],vals[:2],color=[STYLE['status']['candidate'],STYLE['status']['confirmed']],width=.6)
             ax.bar(2,s['total'],color='none',edgecolor=plt.rcParams['text.color'],hatch='///',width=.6,alpha=.3)
             for i,v in enumerate(vals[:2]):ax.text(i,v+.6,f'{v}/{s["total"]}',ha='center',va='bottom')
             ax.text(2,s['total']/2,'unknown',ha='center',va='center');ax.set_xticks(range(3),labels)
@@ -50,7 +51,7 @@ def render(manifest):
 
 def panel_figure(manifest):
     d=json.loads((ROOT/'data/panel-v2/discovery.json').read_text())
-    for dark in (False,True):
+    for dark in THEMES:
         theme(dark);fig,axes=plt.subplots(1,3,figsize=(11,5))
         for ax,p in zip(axes,d['panel']):
             snap=np.load(ROOT/f'data/panel-v2/{p["id"]}.npz')['snapshot']
@@ -92,7 +93,7 @@ def replays(manifest):
         np.savez_compressed(folder/f'encounter-{idx}.npz',frames=np.array([f[sy:ey,sx:ex] for f in frames]),times=np.array(times),annotated_frames=np.array([states[t][sy:ey,sx:ex] for t in keytimes]),annotated_times=np.array(keytimes),crop=np.array(box))
         path=FIG/f'atlas2-encounter-{idx}.webp';animation([f[sy:ey,sx:ex] for f in frames],times,path,f'CHROMATIC FIELDS / {r["focal"]} × {r["partner"]}',f'{rid} | crop row{sy},col{sx}',scale=2,contact_t=r['contact_t'])
         manifest.append({'file':path.name,'experiments':[EXP],'command':COMMAND,'run_id':rid,'crop':box,'source':f'data/atlas-v2/replays/encounter-{idx}.npz','sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
-        for dark in (False,True):
+        for dark in THEMES:
             theme(dark);fig,axes=plt.subplots(1,len(keytimes),figsize=(13,5))
             for ax,t in zip(np.atleast_1d(axes),keytimes):
                 ax.imshow(states[t][sy:ey,sx:ex],cmap=CMAP,norm=NORM,interpolation='nearest',extent=(sx-.5,ex-.5,ey-.5,sy-.5))
@@ -101,7 +102,7 @@ def replays(manifest):
                 if t==0:
                     for input_idx,b in enumerate(r['input_boxes']):
                         if b:
-                            y,x,h,w=b;ax.add_patch(Rectangle((x-.5,y-.5),w,h,fill=False,edgecolor=STYLE['cyan'] if input_idx==0 else STYLE['magenta'],lw=1.1))
+                            y,x,h,w=b;ax.add_patch(Rectangle((x-.5,y-.5),w,h,fill=False,edgecolor=STYLE['lineage_overlay']['focal' if input_idx==0 else 'partner'],lw=1.1))
             axes[0].set_ylabel('row / cells');fig.suptitle(f'{r["focal"]} × {r["partner"]} · actual encounter states')
             fig.text(.5,.13,f'{rid}\nInput outlines encode placement only; literal cell states retain shared palette. Candidate ≠ confirmed inheritance.',ha='center',fontsize=8)
             fig.subplots_adjust(bottom=.26,top=.83,wspace=.25);legend(fig)

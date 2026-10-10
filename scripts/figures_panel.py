@@ -6,13 +6,13 @@ import collections
 import numpy as np
 import matplotlib.pyplot as plt
 from evoloop.engine import ROOT
-from scripts.figures import FIG,STYLE,theme,save,legend,CMAP,NORM,animation
+from scripts.figures import FIG,STYLE,theme,save,legend,CMAP,NORM,animation,THEMES
 from scripts.atlas import write_json
 OUT=ROOT/'data/panel-v2';EXP='EXP-panel-discovery-002';COMMAND='OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel'
 
 def render(manifest):
     d=json.loads((OUT/'discovery.json').read_text());reason=collections.Counter(t['reason'] for t in d['trials'])
-    for dark in (False,True):
+    for dark in THEMES:
         theme(dark);fig,axes=plt.subplots(len(d['histories']),4,figsize=(12,3.1*len(d['histories'])+1.4),squeeze=False)
         for row,h in enumerate(d['histories']):
             a=np.load(OUT/f'{h["id"]}-world.npz');indices=np.linspace(0,len(a['frames'])-1,4,dtype=int)
@@ -25,7 +25,7 @@ def render(manifest):
         save(fig,'panel2-native-worlds',dark,manifest,[EXP],{'command':COMMAND,'source':'data/panel-v2/*-world.npz'})
         theme(dark);fig,ax=plt.subplots(figsize=(10,4.6));labels=['Admitted\n(native word retained)','Reproduced\na different word','Unresolved /\nidentity changed','Other exclusions']
         counts=[reason['verified'],reason['stable_word_not_native_source_word'],reason['unresolved_or_identity_changed'],sum(v for k,v in reason.items() if k not in ('verified','stable_word_not_native_source_word','unresolved_or_identity_changed'))]
-        ax.bar(range(4),counts,color=[STYLE['cyan'],STYLE['magenta'],STYLE['amber'],STYLE['terracotta']])
+        ax.bar(range(4),counts,color=[STYLE['status'][key] for key in ('confirmed','candidate','unresolved','excluded')])
         for i,v in enumerate(counts):ax.text(i,v+.7,str(v),ha='center')
         ax.set_xticks(range(4),labels);ax.set_ylim(0,max(counts)+10);ax.set_ylabel('Verification trials\n(selected component snapshots)')
         ax.set_title(f'Exploratory input selection · {len(d["panel"])}/3 eligible identities · {len(d["trials"])} trials')

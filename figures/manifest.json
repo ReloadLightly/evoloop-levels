@@ -1,6 +1,7 @@
 {
   "style": "configs/style.json",
-  "font_sha256": "690243adfefe0ce154b547db6205794bd30ac4277275179517a90994f4980648",
+  "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
+  "font_sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
   "font_license": "docs/font-license.txt",
   "artifacts": [
     {
@@ -10,31 +11,7 @@
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
       "source": "data/exploration/world.npz",
-      "sha256": "d16dae08a9e3be5d39167e3c3e86d312e86d77f575ff27de299ceabb534525b5"
-    },
-    {
-      "file": "world-overview-light.svg",
-      "experiments": [
-        "EXP-discovery-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "fd854d1f9e83a906b5a230b0a34663f7c395f35fbdc0cae897c54b0dd3647ab2"
-    },
-    {
-      "file": "world-overview-light.pdf",
-      "experiments": [
-        "EXP-discovery-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "1758dfdb383dda587963e497016fcf2fa3c1c0149bfd576690e1644865822d25"
-    },
-    {
-      "file": "world-overview-light.png",
-      "experiments": [
-        "EXP-discovery-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "acd1f3159c8620c754e15ceaa58a153e110a663c9ab4bd77c6aabaa99c2ad3dd"
+      "sha256": "9b52c234324911ae30adf391a3dffcbd912b6215795ef08f1cb8f7bd1c9a5b0c"
     },
     {
       "file": "world-overview-dark.svg",
@@ -42,7 +19,8 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "992fe45076b02c52c7b3f75d2eb3a0010b1f6f7cd382de4d5ca54d014e62d2ec"
+      "sha256": "69a50aa97407de2f712bd711175ea2979f2dc20e258cf6e721c44048520a74b0",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "world-overview-dark.pdf",
@@ -50,7 +28,8 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "82cadd29ebc88b864c32438b4bcad832c7e976a2ac0d66e38de4cd502ae1c0b6"
+      "sha256": "340471a41f6a781790e31c611465d64bd83a7317dc340d70ad02d7d6b85532cd",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "world-overview-dark.png",
@@ -58,31 +37,8 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "ead822153015b06e025804309291ff4860aabc5fe565568909efff8eecea4a8b"
-    },
-    {
-      "file": "inheritance-path-light.svg",
-      "experiments": [
-        "EXP-discovery-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "a38f4dc45695e75e60b6de5fb494cdf8ad0bdd46cb6aed85fa97e7c663497bb1"
-    },
-    {
-      "file": "inheritance-path-light.pdf",
-      "experiments": [
-        "EXP-discovery-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "a59f626dbc6eb643ab6d6c0110d64e72b9d26f2dc1a457d818c11ef1496b4e07"
-    },
-    {
-      "file": "inheritance-path-light.png",
-      "experiments": [
-        "EXP-discovery-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "2de5b32a0cb8727fc019bc903759cc10dbbb006ce800a3d79df966c967ca38ba"
+      "sha256": "2ecc47c454093e78a9d3a2eeafe89d87dc8403493f00c2dbdcd737c374e979ee",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "inheritance-path-dark.svg",
@@ -90,7 +46,8 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "a96a019c6bf82896f0777a368ee90ab4ea44982b1d83d96133e9a659a7d2b0bf"
+      "sha256": "b0f91d64b3b413b62d2fe3354c83f5c269c90b2b97afdbcf5fa0a852ea3e10d3",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "inheritance-path-dark.pdf",
@@ -98,7 +55,8 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "165f283452f9d758026fcc33839100cce2deb813fae9748afb9103440baa0ed2"
+      "sha256": "c4db5ffa5e11553eb3c3686b259a118f954535e9da015207fe2be3272388b4c9",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "inheritance-path-dark.png",
@@ -106,55 +64,8 @@
         "EXP-discovery-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "dd6503e134d71fdfbd5d79efe390b67311201ea2f7fa8f3117a05a21e17718e3"
-    },
-    {
-      "file": "outcome-matrix-light.svg",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "bd805057845333ae6022542f355ae33eed6935e70910462064ae36cb1eb253d3"
-    },
-    {
-      "file": "outcome-matrix-light.pdf",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "6aa66dc11444dc9565055ab59eb91b4a7f45e404a9d41dfac4173b711c01e36e"
-    },
-    {
-      "file": "outcome-matrix-light.png",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "7345cfdbd766e0efe2a954046ec40a561999c61a93bcb30125c48341aa85f101"
-    },
-    {
-      "file": "evidence-stages-light.svg",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "11d90d6057addcacec2b210ef6ae557fe446ce65086ba7978c5c3adf682597b8"
-    },
-    {
-      "file": "evidence-stages-light.pdf",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "53fdf344fb880f1ad8b1984a376bde08fe0bcf22fb2c8e890158f515af12fcbd"
-    },
-    {
-      "file": "evidence-stages-light.png",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "0ef7f86f4e34156c16483cf8e0ca6d56b1711661528404f182cad9e618a7da14"
+      "sha256": "a4647372c882131722b6b52d17b8c05bd9c6b90683f2409d133c504564e05671",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "outcome-matrix-dark.svg",
@@ -162,7 +73,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "9970bcbf586b64439c7ef2a9f6f3791d50adec7b74c98743cf5c4a766a22452a"
+      "sha256": "d5a8d86f258639f8b1dd2b0b429460f1271d63fb5aabff88ed9e1cb4d976624c",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "outcome-matrix-dark.pdf",
@@ -170,7 +82,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "62e162445cb15c6acd71441ba075d7fae98a99eb373b522787ec6aa80176d385"
+      "sha256": "688eb9883c08d7f3cfabe4b88b47d07d8e5f00de7f11350ff4c1893b99f4bcd8",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "outcome-matrix-dark.png",
@@ -178,7 +91,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "7ec15a608c97465b85505c301861595c5a88c5d333c3d2bbea6f6f0b5ffee57b"
+      "sha256": "d66cebf397f44c57242bc74cf1a436f8f7dbe0effab42eddff6f1ec7276495e2",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "evidence-stages-dark.svg",
@@ -186,7 +100,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "8a46811d421d08d9f34dbc0090182a272d4ef3356403d759627162012164c014"
+      "sha256": "b539a98d74abcae600c493d8e2698612d241d1bb0c84c7697aea65606beb27de",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "evidence-stages-dark.pdf",
@@ -194,7 +109,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "bc03733cd034e5262fa4d05c4fd69574a4cfc9a9990d550ee76497e6994b89c4"
+      "sha256": "b84cb214bd284610879f7a44f887f277166e5729c1cb6d5e56a3d1de162c8527",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "evidence-stages-dark.png",
@@ -202,7 +118,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "cd2dbd9644999b4f2e5ceb06fdb151b41b3c2ea7f414640570d3e95f7a5a1e10"
+      "sha256": "dae5dd3484450c675ee6ed7d06cb585f0cf44f212234fdcb6f0a8f4497a87f58",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4"
     },
     {
       "file": "encounter-1.webp",
@@ -218,52 +135,7 @@
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
       "selection": "post-analysis illustrative selection",
-      "sha256": "c5b6de50ec78740a204292de88d8587520ad3e511d6e3c08c7a8f6a5d121a954"
-    },
-    {
-      "file": "encounter-1-light.svg",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "3b7cfaae9a445531811df1becb7015fbb7ee8a907da50a8e2da6e445b58295eb",
-      "run_id": "near-main-N01-N01-p0-offset",
-      "crop": [
-        43,
-        19,
-        260,
-        198
-      ]
-    },
-    {
-      "file": "encounter-1-light.pdf",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "6b890879097ee6f2b367249e9445536ea9c0251862f12df3a0f46981b0ed569a",
-      "run_id": "near-main-N01-N01-p0-offset",
-      "crop": [
-        43,
-        19,
-        260,
-        198
-      ]
-    },
-    {
-      "file": "encounter-1-light.png",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "e58015c57494901a4df9a5150e57c36bad0f64c0f5e0eb92f672b0db877e5b8e",
-      "run_id": "near-main-N01-N01-p0-offset",
-      "crop": [
-        43,
-        19,
-        260,
-        198
-      ]
+      "sha256": "b8888818bd2825ce9c4c8a6c8de216953f8aa6409a1465eea9bb722315fcf8a9"
     },
     {
       "file": "encounter-1-dark.svg",
@@ -271,7 +143,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "7f8ecedb28d2d6f46ddc82303cd7634c0e51c85e9387b9dcb355c1bb4524b326",
+      "sha256": "b9858d6cd79a0c260bce100a25013c45eaa70a21b981b2a8531fcedbe77cb48d",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-main-N01-N01-p0-offset",
       "crop": [
         43,
@@ -286,7 +159,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "7a0fa3aee33b8116d9adaeab7eebdafb36afd8e0f53bbfd93b8eae75369e374c",
+      "sha256": "9fd20769b785923f8ef83a1544c9e001ba02cccfffde613a5364ed2fcf2cd460",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-main-N01-N01-p0-offset",
       "crop": [
         43,
@@ -301,7 +175,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "5ed169c0b94a5b7f107d1f75b98d21d5c75ff84e5143957083ddc56b8acb1772",
+      "sha256": "9997f6695ba94baf001a0e077693a933d121c801ee2a3b6b272c94e5f22edc83",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-main-N01-N01-p0-offset",
       "crop": [
         43,
@@ -324,52 +199,7 @@
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
       "selection": "post-analysis illustrative selection",
-      "sha256": "b4022376f512a2182b741319047695ffd44e0504d430e619202df71e2926d647"
-    },
-    {
-      "file": "encounter-2-light.svg",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "7075b3339f7c4c274888419561139ceb73602f7bb6b88a97511f1689b3de216b",
-      "run_id": "near-heldout-N01-N01-p30-held-parallel",
-      "crop": [
-        186,
-        114,
-        42,
-        88
-      ]
-    },
-    {
-      "file": "encounter-2-light.pdf",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "d54c5698fe727145b7a7876b370bc76231bd7b60302b19439aafa4af710d112d",
-      "run_id": "near-heldout-N01-N01-p30-held-parallel",
-      "crop": [
-        186,
-        114,
-        42,
-        88
-      ]
-    },
-    {
-      "file": "encounter-2-light.png",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "ee2303e81d075e6619f6dc7792437e404c6c1088ba7bca0797a2dfbee97e7ec1",
-      "run_id": "near-heldout-N01-N01-p30-held-parallel",
-      "crop": [
-        186,
-        114,
-        42,
-        88
-      ]
+      "sha256": "3fcef3fa762a4f132f3a628b29ced45a86d6a07440da0e175e556f124547c320"
     },
     {
       "file": "encounter-2-dark.svg",
@@ -377,7 +207,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "917721210014f6cf63c1b33087c69cdcce4c30e357dd45f34b8fbd05224a4b5d",
+      "sha256": "5854cfd191d3a5115002408084887273a732cccdacd680519e4a8dacef127a56",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-heldout-N01-N01-p30-held-parallel",
       "crop": [
         186,
@@ -392,7 +223,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "9c5e1e64d9cecd44c6d061550dba3a6ad34193b9a050c00a8ba9f92b066b03a4",
+      "sha256": "621ad00bd47465f401166748f220ee22e86f2a1ea9aa254175b51dfe5904d6b0",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-heldout-N01-N01-p30-held-parallel",
       "crop": [
         186,
@@ -407,7 +239,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "3fa731436bb78ad2f01de3f0f794d54f20642dde8d6d6525bf9b543830f750d0",
+      "sha256": "6995e5b7fed7c608282fdb9ada2cfc1e8864d09895c1b5e9094d77038032fc1a",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-heldout-N01-N01-p30-held-parallel",
       "crop": [
         186,
@@ -430,52 +263,7 @@
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
       "selection": "post-analysis illustrative selection",
-      "sha256": "7f59c032f72de022aee013107c4d1794dc4a44848541125de158e27794622b82"
-    },
-    {
-      "file": "encounter-3-light.svg",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "19e2b2e1206495789af35830bab8c74b233a57e55c6689c8f566fafd101aaa2c",
-      "run_id": "near-heldout-N01-N01-p30-held-opposed",
-      "crop": [
-        110,
-        13,
-        194,
-        314
-      ]
-    },
-    {
-      "file": "encounter-3-light.pdf",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "710d4a56434d83652fd0300a0f87094c22a88cf5a5b4dccfd3809b7132dc70e6",
-      "run_id": "near-heldout-N01-N01-p30-held-opposed",
-      "crop": [
-        110,
-        13,
-        194,
-        314
-      ]
-    },
-    {
-      "file": "encounter-3-light.png",
-      "experiments": [
-        "EXP-atlas-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "a089eb4299c4d53a1a95a252074ac5143fa14bced3208effcdcac3d7628b366d",
-      "run_id": "near-heldout-N01-N01-p30-held-opposed",
-      "crop": [
-        110,
-        13,
-        194,
-        314
-      ]
+      "sha256": "c28b369c2859dc96c3e1a1fd7bdc4771e137961377f193282ef342aa5365b7a9"
     },
     {
       "file": "encounter-3-dark.svg",
@@ -483,7 +271,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "fc245d5f819c079bdaf207b80d9d752465ac7922f79af401e30cca4d51920951",
+      "sha256": "5aabc42106e0760c8972e0214c335cf3010d3ba2d9a339373a9c5f5695175850",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-heldout-N01-N01-p30-held-opposed",
       "crop": [
         110,
@@ -498,7 +287,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "63531f62b7f8154d2589bfa1f90c0d8dbeda864eb1e29c8255f9623af62e2bad",
+      "sha256": "7c91da10be46d2b0ddde7509fb5421b9ad17cff9543e92918d82112ee27922b1",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-heldout-N01-N01-p30-held-opposed",
       "crop": [
         110,
@@ -513,7 +303,8 @@
         "EXP-atlas-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures",
-      "sha256": "05e10c0dc32cdab88a83c9b512a03926b35fb58ba25538918bbd26fb0d1fbd9b",
+      "sha256": "28791c990d1fafc151d15e285a18a0cd7bf4aca5718f2a00f27a277063dab922",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "run_id": "near-heldout-N01-N01-p30-held-opposed",
       "crop": [
         110,
@@ -523,90 +314,13 @@
       ]
     },
     {
-      "file": "fate-calibration-matrix-light.svg",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "9a6d2970fe330e79c1e2059c6a9a24c2c0c602bf5c3058880f3ab6567c32485e",
-      "source": "data/fate-calibration/outcomes.json",
-      "source_ids": [
-        "C01",
-        "C02",
-        "C03",
-        "C04",
-        "C05",
-        "C06",
-        "C07",
-        "P-S13",
-        "P-N01"
-      ],
-      "delays": [
-        0,
-        60,
-        120,
-        240
-      ]
-    },
-    {
-      "file": "fate-calibration-matrix-light.pdf",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "31b821cda8141da5949b08f3e5012cd204f042b955dad5b19cdddd45cbcef8e5",
-      "source": "data/fate-calibration/outcomes.json",
-      "source_ids": [
-        "C01",
-        "C02",
-        "C03",
-        "C04",
-        "C05",
-        "C06",
-        "C07",
-        "P-S13",
-        "P-N01"
-      ],
-      "delays": [
-        0,
-        60,
-        120,
-        240
-      ]
-    },
-    {
-      "file": "fate-calibration-matrix-light.png",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "9b10623972836d66a53bd1cf8037d67f33375ab3ffe9ba9219cd5166137b603b",
-      "source": "data/fate-calibration/outcomes.json",
-      "source_ids": [
-        "C01",
-        "C02",
-        "C03",
-        "C04",
-        "C05",
-        "C06",
-        "C07",
-        "P-S13",
-        "P-N01"
-      ],
-      "delays": [
-        0,
-        60,
-        120,
-        240
-      ]
-    },
-    {
       "file": "fate-calibration-matrix-dark.svg",
       "experiments": [
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "b96d75e0aacdca1546cd4d8ae4273f1d7781d8470f2e70064a1895195b6edd62",
+      "sha256": "f822f3783031c415104040ed2062f040e99a3b7ef0b2c3c5dcbf9a623efc604c",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "source_ids": [
         "C01",
@@ -632,7 +346,8 @@
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "543fc8f69e1d7a900abbe64481859ba18efd543e2fb9249e217d6dfd5123b2ba",
+      "sha256": "8672cf902e03ce7629634b8d2d5129adbfa8c02e69cfea22a7a88b383e5e8c37",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "source_ids": [
         "C01",
@@ -658,7 +373,8 @@
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "ea8e5f52bb9ba43ead57ece3d122fec59d427b759c159a38cb58e8ad02f7023e",
+      "sha256": "cc85b8b45311c7d1bb62b46537ed74f9abcc21af9db450fd450f04abd0a3d32f",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "source_ids": [
         "C01",
@@ -679,66 +395,13 @@
       ]
     },
     {
-      "file": "fate-native-trajectories-light.svg",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "ac38f8368b4e53de3feb18366811185865974d0af0fab3e57957fa3080e0eb68",
-      "source": "data/fate-calibration/outcomes.json",
-      "sources": "data/fate-calibration/runs/*/result.json",
-      "sampling_interval": 10,
-      "boundary_first_times_since_source": {
-        "C01": 880,
-        "C02": 170,
-        "C03": 920,
-        "C07": 1120,
-        "P-N01": 1720
-      }
-    },
-    {
-      "file": "fate-native-trajectories-light.pdf",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "25137b3ca0af289169f8232ee59dfdae0a7818f095de79f62b99a84de403ce5a",
-      "source": "data/fate-calibration/outcomes.json",
-      "sources": "data/fate-calibration/runs/*/result.json",
-      "sampling_interval": 10,
-      "boundary_first_times_since_source": {
-        "C01": 880,
-        "C02": 170,
-        "C03": 920,
-        "C07": 1120,
-        "P-N01": 1720
-      }
-    },
-    {
-      "file": "fate-native-trajectories-light.png",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "61ec64eb5b83fb746967f1f155ee57a45382ec7618dcb2eb1ecec1a1e689dfef",
-      "source": "data/fate-calibration/outcomes.json",
-      "sources": "data/fate-calibration/runs/*/result.json",
-      "sampling_interval": 10,
-      "boundary_first_times_since_source": {
-        "C01": 880,
-        "C02": 170,
-        "C03": 920,
-        "C07": 1120,
-        "P-N01": 1720
-      }
-    },
-    {
       "file": "fate-native-trajectories-dark.svg",
       "experiments": [
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "b619a0a63424454560238c9f7b874f2853bd91f93ada83cc735cafc63e5292c3",
+      "sha256": "c4d36b52533c73d6396350866fb708f7026eb507bb9e4ced5d4b9cbf0bf7b770",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "sources": "data/fate-calibration/runs/*/result.json",
       "sampling_interval": 10,
@@ -756,7 +419,8 @@
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "3155e7df11fdc76d9a6487701ec52f3724b357422ba771959bd156375d21c05d",
+      "sha256": "77e2a8a8e2625ae0c2283d863ae13165dc495c7dcf95ab82edd28991628b76b1",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "sources": "data/fate-calibration/runs/*/result.json",
       "sampling_interval": 10,
@@ -774,7 +438,8 @@
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "ce3e24179084febe08844ba80377408c2c3bfd870f6cba8ae889fe163f34f3d6",
+      "sha256": "e3f613b475a8c15d3e56a7358bcac3a3b622851890d883deb4657b8b2e3b162c",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "sources": "data/fate-calibration/runs/*/result.json",
       "sampling_interval": 10,
@@ -787,75 +452,13 @@
       }
     },
     {
-      "file": "fate-raw-comparison-light.svg",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "8c93ee535566d323f12f2348134ecf645ec4bb358e3a881d735492266875e9ce",
-      "source": "data/fate-calibration/outcomes.json",
-      "case_id": "C02-d000",
-      "grid_files": [
-        "data/fate-calibration/runs/C02-d000/native.npz",
-        "data/fate-calibration/runs/C02-d000/node-00.npz"
-      ],
-      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
-      "panel_times": [
-        0,
-        1600,
-        0,
-        510
-      ]
-    },
-    {
-      "file": "fate-raw-comparison-light.pdf",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "e652e555de6560b3221a1d7d41ce8ff1533b013910eeb618400cf32c89589cf8",
-      "source": "data/fate-calibration/outcomes.json",
-      "case_id": "C02-d000",
-      "grid_files": [
-        "data/fate-calibration/runs/C02-d000/native.npz",
-        "data/fate-calibration/runs/C02-d000/node-00.npz"
-      ],
-      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
-      "panel_times": [
-        0,
-        1600,
-        0,
-        510
-      ]
-    },
-    {
-      "file": "fate-raw-comparison-light.png",
-      "experiments": [
-        "EXP-fate-calibration-001"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "3bf411023b256ac5d30826b2b6803679d475141aa571dff0bedf788dd8d130e4",
-      "source": "data/fate-calibration/outcomes.json",
-      "case_id": "C02-d000",
-      "grid_files": [
-        "data/fate-calibration/runs/C02-d000/native.npz",
-        "data/fate-calibration/runs/C02-d000/node-00.npz"
-      ],
-      "selection": "post-analysis maximal expanded simulation count, then lexicographic case ID",
-      "panel_times": [
-        0,
-        1600,
-        0,
-        510
-      ]
-    },
-    {
       "file": "fate-raw-comparison-dark.svg",
       "experiments": [
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "57d71e1c44788372dc3bcfaaeeaf172e735728e4541f8a06f4ef5e450f6d938a",
+      "sha256": "ef2a9c9fb15cb8e273fed34557f375ee2c1eb0e333b7f2299725917e5efa5c00",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "case_id": "C02-d000",
       "grid_files": [
@@ -876,7 +479,8 @@
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "7cbfd1be63b6d4a939fe11433441ef42ad70f1969ad8dcf1beee00272cd9ce0d",
+      "sha256": "8438a9c5c54beb0ffabab500c421b7e38bf49d59a419a6fec9a7e3c5bd90907a",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "case_id": "C02-d000",
       "grid_files": [
@@ -897,7 +501,8 @@
         "EXP-fate-calibration-001"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_fate",
-      "sha256": "3e472788d2484069a449e8f221fb7f85b0e0730f17fe4f639b8267f562f17531",
+      "sha256": "1930916ea08a938172f03ab64d13b531cb2e3198605d3f3c89bef581e866b219",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/fate-calibration/outcomes.json",
       "case_id": "C02-d000",
       "grid_files": [
@@ -913,66 +518,13 @@
       ]
     },
     {
-      "file": "panel2-native-worlds-light.svg",
-      "experiments": [
-        "EXP-panel-discovery-002"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "24ab187cd7eb42e29a7ad7619188e6c21a051a32b1897d778dde2ae2b51425bf",
-      "source": "data/panel-v2/*-world.npz"
-    },
-    {
-      "file": "panel2-native-worlds-light.pdf",
-      "experiments": [
-        "EXP-panel-discovery-002"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "cbe58fe21f186e021409ec2da0303db55343e62b7a0757ad725e636d20bdfe41",
-      "source": "data/panel-v2/*-world.npz"
-    },
-    {
-      "file": "panel2-native-worlds-light.png",
-      "experiments": [
-        "EXP-panel-discovery-002"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "0a3317bcfe7bf8cb738a9fc899e6fbffbab310b8dd94f1ccd41804cc1dd2b7d3",
-      "source": "data/panel-v2/*-world.npz"
-    },
-    {
-      "file": "panel2-selection-light.svg",
-      "experiments": [
-        "EXP-panel-discovery-002"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "b6916749bd2f41f6b461353d2789dd142a9297d7e980c68412b03299bc6f7c40",
-      "source": "data/panel-v2/discovery.json"
-    },
-    {
-      "file": "panel2-selection-light.pdf",
-      "experiments": [
-        "EXP-panel-discovery-002"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "94c537bb772350bdc272b6af23da16132ef5a11ae946325faf5f01da39f90610",
-      "source": "data/panel-v2/discovery.json"
-    },
-    {
-      "file": "panel2-selection-light.png",
-      "experiments": [
-        "EXP-panel-discovery-002"
-      ],
-      "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "ed60cb4a129465ce05e75723a9a55c1c7ff03921569cce1738ab61802cfadf17",
-      "source": "data/panel-v2/discovery.json"
-    },
-    {
       "file": "panel2-native-worlds-dark.svg",
       "experiments": [
         "EXP-panel-discovery-002"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "f28babae0c88b7b6900a9f4e3f691335a6273a35a50c5cdd094cf09ea453a300",
+      "sha256": "97a5b6f1fef5dfe57aa356816afbc586bc22593020e5414072621782821646ac",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/panel-v2/*-world.npz"
     },
     {
@@ -981,7 +533,8 @@
         "EXP-panel-discovery-002"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "0b635a73f2242e1a0668d36612f314ad429e78b629baf6bbb3827395cd43d9f6",
+      "sha256": "602439025a76f3f844c2662c08136c249cf0bc70a2707493fb9b927497df97a2",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/panel-v2/*-world.npz"
     },
     {
@@ -990,7 +543,8 @@
         "EXP-panel-discovery-002"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "978f81cfd3fc6a63a6f58ce52f08fb4b2737633cd012ce78f0c0403ec2a063ef",
+      "sha256": "7160afc511607016012eb2c23528835c88162807bc6fd730449e3b096f4a8e18",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/panel-v2/*-world.npz"
     },
     {
@@ -999,7 +553,8 @@
         "EXP-panel-discovery-002"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "943ff9f7239c28083c0086e232ad357a90e4f4463bce531195ed39b23038546e",
+      "sha256": "edfcc901374373e387059b05282167a2ef4ca399fce20ced6b2ffe1c0048f2e4",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/panel-v2/discovery.json"
     },
     {
@@ -1008,7 +563,8 @@
         "EXP-panel-discovery-002"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "81ee61ccd8192ff57959b4a0256a6666f341fa9f73bcd1404bfa7b26f511463a",
+      "sha256": "37dc6afbaa6a345a4cfdf0134961c363e0a2b39574cf25b39a189d76ec1e726b",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/panel-v2/discovery.json"
     },
     {
@@ -1017,7 +573,8 @@
         "EXP-panel-discovery-002"
       ],
       "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.figures_panel",
-      "sha256": "f0b3af3a6d30f8212e829a102862ad53b3f7a08c39d314798fe12036d302060e",
+      "sha256": "fbbe73812b63ffa8f3cff48c7545fb5a454254478023286416fea31eff321508",
+      "style_sha256": "f015d8d719543dd947de72536cf45bb0dcfab9bf0220b6fec00c19632b294bb4",
       "source": "data/panel-v2/discovery.json"
     },
     {
@@ -1055,7 +612,7 @@
         4800,
         5000
       ],
-      "sha256": "0b8c4a60ec6cf6021276d2d9c4598cbda0117af0100fb62298f0d475525844c7"
+      "sha256": "a7dddb673bbb2423759d356a253f46bf3412b363f323a9daa52cc2cc8226ddc5"
     }
   ]
 }

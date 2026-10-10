@@ -67,7 +67,7 @@ Candidate production also depended on which inputs were paired. However, the par
 
 In the main panel, S13×S13 configurations produced candidates more often than N01×S13, whereas S13×N01 produced fewer than N01×N01. That reversal did not persist in the held-out panel, and neither panel yielded confirmed stable novel inheritance. The observed ranking therefore concerns candidate production in the main configurations, rather than a transferable ranking of evolvability.
 
-![Crossed encounter outcomes](figures/outcome-matrix-light.svg)
+![Crossed encounter outcomes](figures/outcome-matrix-dark.svg)
 
 *Candidate production and confirmed inheritance are shown separately. Counts refer to the specified configurations, not independent evolutionary populations. [Complete encounter analysis](data/atlas/analysis.md).*
 
@@ -81,7 +81,7 @@ The follow-up revisited all seven candidate identities at four delays, yielding 
 
 For the positive controls, the endpoint was recovery of the **original** identity. Both searches recovered it in **8/8 states**: two known organisms assessed at four delays each.
 
-![Paired inheritance tests for candidate and known-organism states](figures/fate-calibration-matrix-light.svg)
+![Paired inheritance tests for candidate and known-organism states](figures/fate-calibration-matrix-dark.svg)
 
 *The two searches assess the same extracted structures. Delay observations revisit candidates from six originating configurations; they are not independent populations. [Complete follow-up analysis](data/fate-calibration/analysis.md).*
 
@@ -91,7 +91,7 @@ A frozen discovery schedule has now verified three distinct naturally generated 
 
 All 79 verification trials are retained: three identities passed, 74 remained unresolved or changed identity during the transmission chain, and two reproduced a word different from their native source. These selected trials assemble inputs; they do not estimate encounter yield or provide independent population histories. The fresh atlas has 144 frozen states, including 54 near configurations and matched controls, with acquisition pending.
 
-![Native discovery histories](figures/panel2-native-worlds-light.svg)
+![Native discovery histories](figures/panel2-native-worlds-dark.svg)
 
 *Recorded cell states under the unchanged rule; isolation verification supplies the viable input identities. [Discovery protocol](protocols/005-natural-panel-discovery.md) and [complete evidence](data/panel-v2/discovery.json).*
 
@@ -109,7 +109,7 @@ The longer-term question is whether evolutionary change alters the capacity for 
 
 The repository includes complete starting states, compact outcome data, experiment protocols, analysis scripts, and figure sources. [Reproduction instructions](docs/reproducing-results.md) cover installation, analysis, replay, and fresh runs. The [working paper](paper/manuscript.md) gives the full methods and interpretation; [source notes](docs/source_review.md) document the model and literature.
 
-Visualizations use the shared [Chromatic Fields configuration](configs/style.json) and recorded cell states. [Encounter replays](figures/encounter-1.webp), [an exploratory inheritance path](figures/inheritance-path-light.svg), and [raw-state comparisons](figures/fate-raw-comparison-light.svg) make individual events inspectable. The [figure manifest](figures/manifest.json) links each image to its evidence and regeneration command.
+Visualizations use one shared [Chromatic Fields / Midnight Blue configuration](configs/style.json): dark navy, blue typography, and blue quantitative scales. The nine literal cell states retain a fixed, labelled categorical palette; missing measurements use neutral hatching. [Encounter replays](figures/encounter-1.webp), [an exploratory inheritance path](figures/inheritance-path-dark.svg), and [raw-state comparisons](figures/fate-raw-comparison-dark.svg) make individual events inspectable. The [figure manifest](figures/manifest.json) links each image to its evidence and regeneration command.
 
 ## References
 
