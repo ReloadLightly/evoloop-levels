@@ -1,0 +1,32 @@
+{
+  "experiment_id": "EXP-atlas-002",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "local_transition_cases": 59049,
+  "random_step_checks": 480,
+  "full_trajectories": [
+    {
+      "run_id": "near-main-V01-V01-p20-a-parallel",
+      "updates_compared": 1601,
+      "final_hash": "076e7de911416b710c24987315cd5dd19c671f28bc769bef82e640d20894fb1f",
+      "final_labels_hash": "7f1cb8c1111e624b60860f53b5f415e0de7c9c200d00cd59614caa80d99ca76a"
+    },
+    {
+      "run_id": "near-main-V01-V01-p20-b-crossed",
+      "updates_compared": 1601,
+      "final_hash": "f1d71e84a7c59fbcfbb1db7545c2c09b639573757f216860f231c28a8d886b90",
+      "final_labels_hash": "1ed7d25f413d9b0b78b8c1cb654423b6e10944907bcef1a80098aa5df65fdc22"
+    }
+  ],
+  "mismatches": 0,
+  "optimization_hashes": {
+    "evoloop/tiled_kernel.c": "09f6872b23a3f2ba59253b5d421dd7974babd1e77dc400a66eb23f513173f976",
+    "evoloop/tiled_engine.py": "f43899b512928ec824637cdb4c41ff0178c1337a4abfa744844bc45ec58ad284",
+    "scripts/accelerated_fresh_atlas.py": "3ec2e30f7f88254013b102addde0a9f8faf0f453300926f106d4249c2b98219a"
+  },
+  "benchmark": {
+    "reference_seconds_200_updates": 0.5132466010036296,
+    "tiled_seconds_200_updates": 0.03140862999862293
+  },
+  "seconds": 25.482122285000514,
+  "scope": "synchronous implementation equivalence; no changed scientific states, endpoints, or search budgets"
+}
