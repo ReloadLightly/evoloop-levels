@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "counts": {
+    "phase_states_verified": 30,
+    "dense_phase_updates_replayed": 1900,
+    "preparations_verified": 30,
+    "dev_confirmation_equivalence_pairs_verified": 20,
+    "cross_state_equivalence_pairs_verified": 120
+  },
+  "scope": "preparation-only, no post-removal response data read",
+  "mismatches": 0,
+  "manifest_sha256": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+  "auditor_sha256": "67fbe80a0470da4d49d83ef062b2cb879b59d53c12521bcd80b428074d41f525",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "frozen_code_hashes": {
+    "evoloop/kernel.c": "6de57b310164c91617feb3ca191751db64e63028b850a8983eca10631accf969",
+    "evoloop/engine.py": "8a151597c529794a7406af334a32df74363a0bb7f8245fe1d6c525bf9e9a6c10",
+    "evoloop/tracking.py": "870e35a08f824fb92a67330dca8a823587c582b1387c7d63c1bc46e571026358",
+    "evoloop/periodic_tracking.py": "9730485b7b6271a58428500dd1350d33d70239c71a628d1f08aafb10a9770523",
+    "evoloop/periodic_assays.py": "2496d85177a178f2959bdc7e41f3789552359334d69ac8d9bb92826e16848195",
+    "evoloop/fate.py": "95f546a027f65bf96e10a714daae58b5ff42aab73f1e9fba7e245f9b2d930fe8",
+    "evoloop/ecology.py": "6c028631af21713e44c518b6350e9eeeae4b4b9b6d8d24b6337a6122dadf134e",
+    "evoloop/impact.py": "92baa4a47f87e6416d365758954f4eca515648ffb19f7719e40509b44bb2dc77",
+    "evoloop/microcolony.py": "58401ba7565f3885439a17bbd66282ce915080ad11cc2eaa66b3584d8d5b9555",
+    "scripts/ecological_assay.py": "19a5630964bf7ac8195877cdaf2570277e24044f4a95f751157645c21d0e21bb",
+    "scripts/impact_assay.py": "4fdca6bfcbd0e91fbd0a68cf62086ff970105106f5dea657ddf3148f339a5534",
+    "scripts/analyze_impact.py": "34fa4cb509468ea85aa9ea2605270ec0ec810e22d71ca1cabc6643486a885a5f"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 python -m scripts.verify_impact --preparations-only",
+  "seconds": 3.6388144439988537,
+  "peak_rss_kib": 68096
+}
