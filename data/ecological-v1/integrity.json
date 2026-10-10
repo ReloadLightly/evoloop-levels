@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "counts": {
+    "full_world_trajectories_verified": 30,
+    "dense_world_updates_replayed": 62000,
+    "world_samples_verified": 3130,
+    "disturbances_verified": 60,
+    "animation_frames_verified": 123,
+    "source_frames_verified": 40,
+    "source_components_verified": 68,
+    "native_continuations_verified": 68,
+    "search_roots_verified": 73,
+    "search_nodes_verified": 141,
+    "parent_child_edges_verified": 68,
+    "isolated_generation_states_replayed": 141,
+    "child_selection_states_replayed": 408,
+    "dense_isolation_updates_replayed": 369420,
+    "oversized_empty_nodes_verified": 0,
+    "confirmations_verified": 68,
+    "baseline_controls_verified": 5,
+    "selected_observations_verified": 68,
+    "ineligible_observations_verified": 0,
+    "paired_comparisons_verified": 2,
+    "calibration_gate_verified": 1
+  },
+  "scope": "all 30 native/paired trajectories, complete sampled records, interventions, selections, source extractions, linked bounded searches and individual isolated generations, exact integer gate/paired arithmetic; not native genetic ancestry or total viable population",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "manifest_sha256": "438a32502ef89ba4380326037df7f22c5850124ba19c49070ec97346683e75e9",
+  "calibration_experiment_id": "EXP-ecological-calibration-001",
+  "benefit_experiment_id": "EXP-benefit-001",
+  "auditor_sha256": "03830ce7eb3d759c61b5adce02d55d9d707220a9003c590350f4827a9bc6b68a",
+  "generation_verifier_sha256": "cd1d8ad019ba44d3fee55731630632560b8b63c7b600000720e0be3811022593",
+  "evidence_sha256": {
+    "calibration.json": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+    "calibration-analysis.json": "500cb6b0ca91b98ee7a0506649e0bd77bf44e6d3e53d0a2d5dd2b5ffb50d9753",
+    "benefit.json": "ac131b760709b830fa155a65f57407d79f8f0112df32376713bb16ef4dd12769",
+    "analysis.json": "cb2258e14f963465575264e7e32e9358fe2dabc141859eded17a4271f8c265b0"
+  },
+  "mismatches": 0,
+  "seconds": 306.4472906250012,
+  "peak_rss_kib": 63960
+}

@@ -1,0 +1,915 @@
+{
+  "experiment_id": "EXP-benefit-001",
+  "calibration": {
+    "experiment_id": "EXP-ecological-calibration-001",
+    "calibration_sha256": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+    "gate_passed": true,
+    "gate_checks": {
+      "all_baselines": true,
+      "overall_recovery": true,
+      "each_starting_state": true,
+      "each_nonempty_stratum": true
+    },
+    "baseline_confirmed": 5,
+    "baseline_total": 5,
+    "scored_selected": 68,
+    "scored_eligible": 68,
+    "scored_confirmed": 63,
+    "scored_statuses": {
+      "confirmed": 63,
+      "unresolved_search": 5
+    },
+    "unscored_selected": 0,
+    "unscored_confirmed": 0,
+    "unscored_confirmed_identities": [],
+    "by_state": [
+      {
+        "state": "V01",
+        "selected": 15,
+        "eligible": 15,
+        "confirmed": 14
+      },
+      {
+        "state": "V02",
+        "selected": 12,
+        "eligible": 12,
+        "confirmed": 11
+      },
+      {
+        "state": "V03",
+        "selected": 13,
+        "eligible": 13,
+        "confirmed": 12
+      },
+      {
+        "state": "RV01",
+        "selected": 15,
+        "eligible": 15,
+        "confirmed": 14
+      },
+      {
+        "state": "RV02",
+        "selected": 13,
+        "eligible": 13,
+        "confirmed": 12
+      }
+    ],
+    "strata": [
+      {
+        "stratum_id": "calibration-V01-cal-a-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V01-cal-a-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V01",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V01-cal-a-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V01-cal-a-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V02-cal-a-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V02-cal-a-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V02-cal-a-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V02",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V02-cal-a-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "V02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V03-cal-a-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V03",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V03-cal-a-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V03",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V03-cal-a-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V03",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V03-cal-a-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "V03",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-a-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-a-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "RV01",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-a-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-a-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-a-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "RV02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-a-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "RV02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-a-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV02",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-a-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "RV02",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V01-cal-b-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V01-cal-b-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V01-cal-b-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V01-cal-b-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "V01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V02-cal-b-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V02-cal-b-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V02-cal-b-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V02",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V02-cal-b-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "V02",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V03-cal-b-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "V03",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V03-cal-b-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V03",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-V03-cal-b-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "V03",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-V03-cal-b-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "V03",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-b-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-b-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-b-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV01-cal-b-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "RV01",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-b-t400-scored",
+        "t": 400,
+        "scored": true,
+        "available_cores": 1,
+        "selected_cores": 1,
+        "state": "RV02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-b-t620-scored",
+        "t": 620,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV02",
+        "confirmed": 1
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-b-t1020-scored",
+        "t": 1020,
+        "scored": true,
+        "available_cores": 2,
+        "selected_cores": 2,
+        "state": "RV02",
+        "confirmed": 2
+      },
+      {
+        "stratum_id": "calibration-RV02-cal-b-t1400-scored",
+        "t": 1400,
+        "scored": true,
+        "available_cores": 4,
+        "selected_cores": 2,
+        "state": "RV02",
+        "confirmed": 2
+      }
+    ],
+    "truncations": {},
+    "offspring_cap_nodes": 136,
+    "generation_simulations": 141,
+    "interpretation": "finite selected isolation recovery, not native reproduction proof; ineligible/nonconfirming cores remain unresolved"
+  },
+  "runs": [
+    {
+      "run_id": "development-V01-development-0",
+      "state": "V01",
+      "split": "development",
+      "condition": "development-0",
+      "score": 3.5555555555555554,
+      "score_sum": 288,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-V02-development-0",
+      "state": "V02",
+      "split": "development",
+      "condition": "development-0",
+      "score": 3.3703703703703702,
+      "score_sum": 273,
+      "mean_unscored_valid_cores": 0.024691358024691357,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-V03-development-0",
+      "state": "V03",
+      "split": "development",
+      "condition": "development-0",
+      "score": 3.3209876543209877,
+      "score_sum": 269,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-RV01-development-0",
+      "state": "RV01",
+      "split": "development",
+      "condition": "development-0",
+      "score": 3.567901234567901,
+      "score_sum": 289,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-RV02-development-0",
+      "state": "RV02",
+      "split": "development",
+      "condition": "development-0",
+      "score": 3.1358024691358026,
+      "score_sum": 254,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-V01-development-1",
+      "state": "V01",
+      "split": "development",
+      "condition": "development-1",
+      "score": 3.567901234567901,
+      "score_sum": 289,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 18
+    },
+    {
+      "run_id": "development-V02-development-1",
+      "state": "V02",
+      "split": "development",
+      "condition": "development-1",
+      "score": 3.3703703703703702,
+      "score_sum": 273,
+      "mean_unscored_valid_cores": 0.024691358024691357,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-V03-development-1",
+      "state": "V03",
+      "split": "development",
+      "condition": "development-1",
+      "score": 3.3209876543209877,
+      "score_sum": 269,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "development-RV01-development-1",
+      "state": "RV01",
+      "split": "development",
+      "condition": "development-1",
+      "score": 3.5925925925925926,
+      "score_sum": 291,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.012345679012345678,
+      "deleted_occupied_cells": 18
+    },
+    {
+      "run_id": "development-RV02-development-1",
+      "state": "RV02",
+      "split": "development",
+      "condition": "development-1",
+      "score": 3.1358024691358026,
+      "score_sum": 254,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-V01-confirmation-0",
+      "state": "V01",
+      "split": "confirmation",
+      "condition": "confirmation-0",
+      "score": 3.567901234567901,
+      "score_sum": 289,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 18
+    },
+    {
+      "run_id": "confirmation-V02-confirmation-0",
+      "state": "V02",
+      "split": "confirmation",
+      "condition": "confirmation-0",
+      "score": 3.3703703703703702,
+      "score_sum": 273,
+      "mean_unscored_valid_cores": 0.024691358024691357,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-V03-confirmation-0",
+      "state": "V03",
+      "split": "confirmation",
+      "condition": "confirmation-0",
+      "score": 3.3209876543209877,
+      "score_sum": 269,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-RV01-confirmation-0",
+      "state": "RV01",
+      "split": "confirmation",
+      "condition": "confirmation-0",
+      "score": 3.5925925925925926,
+      "score_sum": 291,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.012345679012345678,
+      "deleted_occupied_cells": 18
+    },
+    {
+      "run_id": "confirmation-RV02-confirmation-0",
+      "state": "RV02",
+      "split": "confirmation",
+      "condition": "confirmation-0",
+      "score": 3.1358024691358026,
+      "score_sum": 254,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-V01-confirmation-1",
+      "state": "V01",
+      "split": "confirmation",
+      "condition": "confirmation-1",
+      "score": 3.5555555555555554,
+      "score_sum": 288,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-V02-confirmation-1",
+      "state": "V02",
+      "split": "confirmation",
+      "condition": "confirmation-1",
+      "score": 3.3703703703703702,
+      "score_sum": 273,
+      "mean_unscored_valid_cores": 0.024691358024691357,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-V03-confirmation-1",
+      "state": "V03",
+      "split": "confirmation",
+      "condition": "confirmation-1",
+      "score": 3.3209876543209877,
+      "score_sum": 269,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-RV01-confirmation-1",
+      "state": "RV01",
+      "split": "confirmation",
+      "condition": "confirmation-1",
+      "score": 3.567901234567901,
+      "score_sum": 289,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.024691358024691357,
+      "deleted_occupied_cells": 0
+    },
+    {
+      "run_id": "confirmation-RV02-confirmation-1",
+      "state": "RV02",
+      "split": "confirmation",
+      "condition": "confirmation-1",
+      "score": 3.1358024691358026,
+      "score_sum": 254,
+      "mean_unscored_valid_cores": 0.0,
+      "mean_unknown_identity_cores": 0.0,
+      "deleted_occupied_cells": 0
+    }
+  ],
+  "pairs": [
+    {
+      "candidate": "RV01",
+      "inputs": [
+        "V02",
+        "V03"
+      ],
+      "panels": {
+        "development": {
+          "scores": {
+            "RV01": 3.580246913580247,
+            "V02": 3.3703703703703702,
+            "V03": 3.3209876543209877
+          },
+          "exact_totals": {
+            "RV01": {
+              "score_sum": 580,
+              "sample_count": 162,
+              "mean": 3.580246913580247
+            },
+            "V02": {
+              "score_sum": 546,
+              "sample_count": 162,
+              "mean": 3.3703703703703702
+            },
+            "V03": {
+              "score_sum": 538,
+              "sample_count": 162,
+              "mean": 3.3209876543209877
+            }
+          },
+          "candidate_minus_inputs": {
+            "V02": 0.20987654320987653,
+            "V03": 0.25925925925925924
+          },
+          "strict_advantage": true
+        },
+        "confirmation": {
+          "scores": {
+            "RV01": 3.580246913580247,
+            "V02": 3.3703703703703702,
+            "V03": 3.3209876543209877
+          },
+          "exact_totals": {
+            "RV01": {
+              "score_sum": 580,
+              "sample_count": 162,
+              "mean": 3.580246913580247
+            },
+            "V02": {
+              "score_sum": 546,
+              "sample_count": 162,
+              "mean": 3.3703703703703702
+            },
+            "V03": {
+              "score_sum": 538,
+              "sample_count": 162,
+              "mean": 3.3209876543209877
+            }
+          },
+          "candidate_minus_inputs": {
+            "V02": 0.20987654320987653,
+            "V03": 0.25925925925925924
+          },
+          "strict_advantage": true
+        }
+      },
+      "conditions": [
+        {
+          "condition": "development-0",
+          "candidate": 3.567901234567901,
+          "inputs": {
+            "V02": 3.3703703703703702,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V02": 0.19753086419753085,
+            "V03": 0.24691358024691357
+          }
+        },
+        {
+          "condition": "development-1",
+          "candidate": 3.5925925925925926,
+          "inputs": {
+            "V02": 3.3703703703703702,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V02": 0.2222222222222222,
+            "V03": 0.2716049382716049
+          }
+        },
+        {
+          "condition": "confirmation-0",
+          "candidate": 3.5925925925925926,
+          "inputs": {
+            "V02": 3.3703703703703702,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V02": 0.2222222222222222,
+            "V03": 0.2716049382716049
+          }
+        },
+        {
+          "condition": "confirmation-1",
+          "candidate": 3.567901234567901,
+          "inputs": {
+            "V02": 3.3703703703703702,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V02": 0.19753086419753085,
+            "V03": 0.24691358024691357
+          }
+        }
+      ],
+      "structural_advantage_both_panels": true,
+      "confirmed_benefit": true,
+      "benefit_status": "confirmed_calibrated_proxy_advantage",
+      "originating_encounters": "near-main-V02-V03-p20-a-parallel",
+      "ancestry": "conservative comparison against both inputs; no genetic parent assignment"
+    },
+    {
+      "candidate": "RV02",
+      "inputs": [
+        "V01",
+        "V03"
+      ],
+      "panels": {
+        "development": {
+          "scores": {
+            "RV02": 3.1358024691358026,
+            "V01": 3.5617283950617282,
+            "V03": 3.3209876543209877
+          },
+          "exact_totals": {
+            "RV02": {
+              "score_sum": 508,
+              "sample_count": 162,
+              "mean": 3.1358024691358026
+            },
+            "V01": {
+              "score_sum": 577,
+              "sample_count": 162,
+              "mean": 3.5617283950617282
+            },
+            "V03": {
+              "score_sum": 538,
+              "sample_count": 162,
+              "mean": 3.3209876543209877
+            }
+          },
+          "candidate_minus_inputs": {
+            "V01": -0.42592592592592593,
+            "V03": -0.18518518518518517
+          },
+          "strict_advantage": false
+        },
+        "confirmation": {
+          "scores": {
+            "RV02": 3.1358024691358026,
+            "V01": 3.5617283950617282,
+            "V03": 3.3209876543209877
+          },
+          "exact_totals": {
+            "RV02": {
+              "score_sum": 508,
+              "sample_count": 162,
+              "mean": 3.1358024691358026
+            },
+            "V01": {
+              "score_sum": 577,
+              "sample_count": 162,
+              "mean": 3.5617283950617282
+            },
+            "V03": {
+              "score_sum": 538,
+              "sample_count": 162,
+              "mean": 3.3209876543209877
+            }
+          },
+          "candidate_minus_inputs": {
+            "V01": -0.42592592592592593,
+            "V03": -0.18518518518518517
+          },
+          "strict_advantage": false
+        }
+      },
+      "conditions": [
+        {
+          "condition": "development-0",
+          "candidate": 3.1358024691358026,
+          "inputs": {
+            "V01": 3.5555555555555554,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V01": -0.41975308641975306,
+            "V03": -0.18518518518518517
+          }
+        },
+        {
+          "condition": "development-1",
+          "candidate": 3.1358024691358026,
+          "inputs": {
+            "V01": 3.567901234567901,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V01": -0.43209876543209874,
+            "V03": -0.18518518518518517
+          }
+        },
+        {
+          "condition": "confirmation-0",
+          "candidate": 3.1358024691358026,
+          "inputs": {
+            "V01": 3.567901234567901,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V01": -0.43209876543209874,
+            "V03": -0.18518518518518517
+          }
+        },
+        {
+          "condition": "confirmation-1",
+          "candidate": 3.1358024691358026,
+          "inputs": {
+            "V01": 3.5555555555555554,
+            "V03": 3.3209876543209877
+          },
+          "candidate_minus_inputs": {
+            "V01": -0.41975308641975306,
+            "V03": -0.18518518518518517
+          }
+        }
+      ],
+      "structural_advantage_both_panels": false,
+      "confirmed_benefit": false,
+      "benefit_status": "criterion_not_met",
+      "originating_encounters": "near-main-V01-V03-p20-a-parallel",
+      "ancestry": "conservative comparison against both inputs; no genetic parent assignment"
+    }
+  ],
+  "confirmed_beneficial_encounters": 1,
+  "yield": {
+    "main": {
+      "confirmed": 1,
+      "denominator": 36,
+      "yield": 0.027777777777777776
+    },
+    "heldout": {
+      "confirmed": 0,
+      "denominator": 18,
+      "yield": 0.0
+    },
+    "overall": {
+      "confirmed": 1,
+      "denominator": 54,
+      "yield": 0.018518518518518517
+    }
+  },
+  "unresolved_other_candidate_encounters": 16,
+  "metric_scope": "fixed known-identity population; unregistered viable types may be omitted",
+  "uncertainty": "descriptive paired condition panels; nested deterministic observations, no p-values or confidence intervals",
+  "calibration_sha256": "ba77172f9eace6e66b28b3fb380d6dfbf67e964eb94420ee22772120b4486ece",
+  "benefit_sha256": "ac131b760709b830fa155a65f57407d79f8f0112df32376713bb16ef4dd12769"
+}
