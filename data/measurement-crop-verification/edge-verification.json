@@ -1,0 +1,5587 @@
+{
+  "experiment_id": "EXP-measurement-crop-verification-001",
+  "source_hashes": {
+    "scripts/verify_cropped_edges.py": "8c72f2a5d916541a2b00aceafac3e149e38f541e4130ba5afcbe32383d4ce1ef",
+    "scripts/verify_cropped_tracking.py": "6d669c7ada55d482f4b26274f214c914a9ce74e26dc8888a049c24959b7a32cc",
+    "evoloop/cropped_tracking.py": "2443e334fdc50dbf9a48340b9e22e79b172c842aa33ba9c1669706f124cb8611",
+    "evoloop/periodic_tracking.py": "9730485b7b6271a58428500dd1350d33d70239c71a628d1f08aafb10a9770523",
+    "evoloop/tracking.py": "870e35a08f824fb92a67330dca8a823587c582b1387c7d63c1bc46e571026358"
+  },
+  "true_edge_cases": [
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "15a10c2a766dc47b06657a3939609f20a802311be7b48eb2a89df4e4194b526f",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        175,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "64d18242ef025d4acdd2a7d76e0b1e2b72ff42ccd5df44d56dd9bb6f4c88d9e8",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "3b3a644e6aab79c5fef5f79b0789dd07e94b85326efd969e537af9d4c4f91534",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        161
+      ],
+      "margin": 0,
+      "grid_hash": "f3392f0cb2e82a1155d72e44d00446d6aa13a24c841e8a9b356722119df067a1",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "2837466595d62ccaba5161f1f8341e543d9a652c40ce81dffd5235eed0d6ac5c",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        175,
+        161
+      ],
+      "margin": 0,
+      "grid_hash": "b1bc3d4d81705c1dfc5f89c730d558651a33350f2e75b3a71a7394ee3dc87583",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "7a10c2c9d21a62474cc411254314037d952f5f8da9f5ec476f87cf968544f2c0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "411d22bf7e2c8ea403d27f6a7993e6c2e4d165d61e5a13f32ddbcf2e9b5959dc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "9a5fe1ea9b518815f49fe294daca55853a20d07b90602cae77935a0b094f2aa2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        160
+      ],
+      "margin": 1,
+      "grid_hash": "2d7695a3dcaf2c2495d63c3b44554819d7abbafbfd39be5f3ef9bc39a95a9cce",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "5631ede195b8fccf949d2966e5211a6c6e3505b3641ce79473c9337b8105f186",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        174,
+        160
+      ],
+      "margin": 1,
+      "grid_hash": "7af9548d69ee7edcd382538a4d28427c1e1e4b6b52533aaff4c241e1c39167d2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "c56403a860e071b9609e5a22b5e049893167f78b8453ecc82756a5b6707172be",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "dcd3fc34382145efdc699c0d01edd3dff870139bbc2dee2d312a275d6603a9d6",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "2e71860175c907c41f59b8c7a74b7e66e56f64d37692982e4f7a738adbf9f084",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        159
+      ],
+      "margin": 2,
+      "grid_hash": "977e90c64255bd1e7ae57dfe25a9398a454ef4c3d9836fcdc02a768c28abaae1",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "e9b67014102c3c134c1296108fb0857708a86e8fc0b1993f0f50a73b1993f540",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        173,
+        159
+      ],
+      "margin": 2,
+      "grid_hash": "e4ce099ff13f48d5250c5a3f9c02f2dffdb832b42f57408eb03bf39eb350f928",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "287fbcebbb42c0d4b4de4de558e3a636fb72e487da7a535b2899ec154330a136",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "084f241ebfc9c8861e9f79566cf7d2027273454b9f7250cf52ecd42b1aede67c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "1e8f5f0bcdc17bbc949b8acacf7921c33ab658390e076700222c9c93e603c7fe",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        60,
+        157
+      ],
+      "margin": 4,
+      "grid_hash": "63c0c6e7757f715208463f9cf2150e2abfe34fb68f6aced4a3493864e461e44f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "f595b76eb4c678a8294424da9fc7d17e13047bb9e06c43489669b617a3bb3a70",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 0,
+      "placement": [
+        171,
+        157
+      ],
+      "margin": 4,
+      "grid_hash": "2b4a36acf827e316bc5b438a5dca33b8717691536468b209335825c777ddf7e7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "b1b7a89747083644ef02f27847f49ad24fd8df7ed03300a16d11c3a8c7b3d506",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        161,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "9fd72544068f253a63c6430b0399db6106229376cdd13ebef51ffe842303d32e",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "cff417aa0e2ec3e4de3466358dac693fafe7d9a299474fcf12c1a543cc769691",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        175
+      ],
+      "margin": 0,
+      "grid_hash": "690b0327e563a47fdad547d01c2ff00c521073d77b1cbba288a5799064e349d7",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "cc74d8e60785c9f86977a32fc5fdf2747841fe3fa968a3f6a3018c91a8714881",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        161,
+        175
+      ],
+      "margin": 0,
+      "grid_hash": "815066f32646b169c1f0f121538b3bd9722e8dc52a01bdc91e0dfdf34987938e",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "cd347a16de097e1c27e4fb4188770abca3b96cd73d428d7f420390bba2a45ca0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        160,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "04ed644ab4cee712f746782181d00b80f4dcf1b5c3c8bc0560b4175138b664dc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "0ddeb634d46a650dff871a6be19d9abbff9ed70ea1f6506998fc2101db16c911",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 1,
+      "grid_hash": "1a4fa21a96eb90a95a61d42e75083a0fe87a97e57938df97e4abae065e92ce60",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "dde503fdc10579cf49da32424da7d263c8d7b68cbfcc71f2a36a742e15845998",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        160,
+        174
+      ],
+      "margin": 1,
+      "grid_hash": "6540e58e27b604a3094a19cca2ceb74f54601da1bfcb58729f75ca2c112613c6",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "9bc7bf059c95ba0981698ff6d02355ada6798093c2875078ba9c1eaaba393ba9",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        159,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "2f10b2f5164b0cad44d0fc36b643fb148654845e330dd9d38ddb44586bb42d8d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "7e65bb3a01a7297e661356f8fc43ea1f78f34c26a01113f638e16f56c0c4c307",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 2,
+      "grid_hash": "7c03d65021b61f0ed7e9a77ea4170e994b008bae9dce344f15351b32b9813707",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "deb5fd201b81e88e99a766a12d050c81e00d88f75f240f1d82c6bf9d6cece583",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        159,
+        173
+      ],
+      "margin": 2,
+      "grid_hash": "83460d8351a9a867b3eda8e205db66b1f94a25366717f7b88e34ac21d0743a98",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "a79231a48d88c07ceba9ae003e5855145db9dcc9283e46914fb8d97cea5316d7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        157,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "0e3d281a9dc19118d4de91453cb6b58e475c1cf6f10fc1f73d457dd9575eef3c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "12ebd0c1b538cb4fef52946c8fa8007a0015bfed78dfa6b2fcd49c1633690894",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 4,
+      "grid_hash": "7b911a1cd70ab0b589bcbf8cfa26398494ebddecdcf4715786225cab666cfdcc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "a697a6c7bb268dcaadd9c6f00d78d081d0afb28f9bb4ef33a5694cf339d9c62c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 1,
+      "placement": [
+        157,
+        171
+      ],
+      "margin": 4,
+      "grid_hash": "9fcecef169b44922fc37b76378f8300f0b38c1e3782ad8db97bf8f1aec88e325",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "592c8cd7990309be65f383fe4f68c96340a5f7ed9e6adb1138292bff8d0849eb",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        175,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "f2adfba4694ed6ddee0f625ab93f022acf476ac8ed024fb2fbfec2670fd4e3a0",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "0cf37bb00fc1262a55cf3865a0bce569f608dc25d3f95c62843a2cb8d27e7198",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        161
+      ],
+      "margin": 0,
+      "grid_hash": "28b265a624d576116dfcd79623236b5b98b80a37d364029f323e8b95abdeff12",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "56b6140ce7cc768922834138e339bc6a1ab9a4d29edc61ac4a1c834b6e14a699",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        175,
+        161
+      ],
+      "margin": 0,
+      "grid_hash": "83e982c0d6479b8e6a51076adff03bc897fd2a89cbae100c3ef04915ddf0e1d8",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "a2d53bdc103d443aa65797cc133ef9fc20873f7020ff039cfd3b9cd882e392a6",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "3c76f1d7e53ac984e2050624e50667f005257885d24103df6b8dd734ed4291c0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "6e4c5b379ac68029c98818a0595796380c15766f0fa69f7d54c5909ac86dbd25",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        160
+      ],
+      "margin": 1,
+      "grid_hash": "09e499014ae949fc8ea9a8712e48dd528384830413a31bab6169bd5da525e813",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "711e233bb3b1fa22dbde1125fd3fd0049e6436282ba269e26dd1e56c13c76e89",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        174,
+        160
+      ],
+      "margin": 1,
+      "grid_hash": "c9b148a848122bcfc2c9edadf42286aee9543687285a117e733d379fa92b3937",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "cfbf89c750b83ac1099c3d653d0188c96e86eb83ac3e8f6760e9390a1f3b94ae",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "7a20fd0cd39c7abb3f0fb7ffc680e8c5ee9d07f51bee722ee7c791bcfa05e5e1",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "31042f45d73df8a7ea834b8b816485384325064728fe573bdb5b9e6227d3f271",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        159
+      ],
+      "margin": 2,
+      "grid_hash": "a95adfd9b692e3d021f5a75c0c586051b832f4d5c6c47751e57ee4ac8792a62b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "708b4105f200c609a98f1866272ecb031b37ff5abf3cead339b8f3fffecc5c9e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        173,
+        159
+      ],
+      "margin": 2,
+      "grid_hash": "be5a67ce848fa4be8dd1920531dbccb3982e848d14810533b7fe2c177a470086",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "97cdf43431e96460928d92584a5bfdf3213e04bc4bffd3f1c412335042d0bcff",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "36200f4945b7e91bedb3d92fc4ecfcd8c8d9c42dc16272f7634a8e82e154c663",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "9e4b21aa5cc279214f339b5918223469a4b513b60b87ef5a676f4b9992523fde",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        60,
+        157
+      ],
+      "margin": 4,
+      "grid_hash": "11df3e65bbc3e63ce29e4a3c756c5c70cc363a29f1ebe2e1bcf7831754edfcd7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "d31443970c379372af7e4c6048c66c477ce309875c373e59c9033cd41c729667",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 2,
+      "placement": [
+        171,
+        157
+      ],
+      "margin": 4,
+      "grid_hash": "fba45cfe4a31a4000a469c8ec4537a71ff31d5a51c18fed39888060d8e943252",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "570258c032747f84154ba6cc7cbad6c459e5c050a3345d70c1f96942569195da",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        161,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "cfb1766970ecc3c7dd67d80ef8cc94b3b2153e9e612d706f948131ed8d95528e",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "7ed1bdd029e76954edb949aa659b6d375ffc02815b2306141ae046fce44b3a64",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        175
+      ],
+      "margin": 0,
+      "grid_hash": "c1d4de77b2eb20679b1dc2e5356a7822822a0f50503b5a7af343d6c95a6f38cd",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "d5aa12faedddf634966e676d8bdee3ac7fc5fa0d097eb19ecc1c67cf0c78f2e3",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        161,
+        175
+      ],
+      "margin": 0,
+      "grid_hash": "2327172d5538cfb6882035191905357ec4bfa80e584a3ad06d1521b13572435f",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "d015beebcfda287ca167c967b59b5cdc7c837455117e0201a830c0ad7f37529a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        160,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "1d52424cd7f5060e51b2378c81e0a52ece665098ea640a2359dceab4a84ef059",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "79ea103400d65ea08e3f86b2c8e6de5664f7cee8388ffad046a63df17ba80272",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 1,
+      "grid_hash": "b4cc801db806daf50b8501fc2652a520fef18be8c99d4c827781bef180d56a67",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "d2d954e91219abbb55a05055b8c63866a8a543148a8efb270550cfe7732606c3",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        160,
+        174
+      ],
+      "margin": 1,
+      "grid_hash": "98de50b71c66471d5e22fe3415b6c36447d3135906cfa3f6ce60570d340415ec",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "3a6f37d925d68b9da8f8d96ec1f0310f603523a82e279a3e2bdf4ba2800aa843",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        159,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "027d8798044d2692725b3cec2612ac3373a852d42e3d7bb46a39ca3b78de94d4",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "d66d654d7ec25aba2e78e9402695027eb0b24fc61907970b60754e769372f70c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 2,
+      "grid_hash": "283a2022a8a56705443e06229ff7be7681f0da7cdc098d166171458813fdd8ab",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "da028a0934eefb761c5a83bdcd51b652a5c3606bca2e219fa7920306f9749373",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        159,
+        173
+      ],
+      "margin": 2,
+      "grid_hash": "cfc571f23b10ce646c772280c06724659f2af836bc5cd5ad6550cc5090ce31d9",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "b8134b2dfff2e80daadbc89fecfbd966a65d161ba77a5c26402d738d29e39519",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        157,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "3903a7362b856602f69e3b493b9b1231919092afe4e7c17ec5858ac8408ab58b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "38b92611de2da085dc8f7849cc35b34cec261491c09391c86b279c7c7adc549f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 4,
+      "grid_hash": "72c323852b82cbfe398280f066ef5f481448ed284aede59a0290cf68f954f4ac",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "18fadc65b2aa0b3dfae0c2214c027230c2fb5a0542826db068e29b395e36cc41",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 0,
+      "rotation": 3,
+      "placement": [
+        157,
+        171
+      ],
+      "margin": 4,
+      "grid_hash": "165e67a214f00e7db66ee1ad6ab78a1280e51c470b44cc74dbebc188e47fdf8f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "604b340580eff0ce3cb78f62a088e3bf49fcf49d8d29ac849220ec3f2a1a68c7",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "7fbc81d7ce8bb8b357a81962b60778b3442c6ffc2cabed6e95b26c6148ea561f",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "a7f58c500a86850ebfab9ed3aea2e44c4826fe7c8c4f34d3400914926ac09ff2",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "418fb0d075bf3c0d61ea083d30ce72ba4ebd234af06a450865e87751f6de23a2",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "29317d3e5fc13e3472b1b3bfa0c97b495eaaa4c1341a2c4fbd40179ec300b312",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "f15f206cbd1b991f9c2108efcbbb26796b6c419add9819bdbe144ad2e32d3fff",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "6905023761da76475b95d6dc61dc283d3e82f4297652995d596294614c3cfe6c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "a459e794dedd881b6d20807868756745c92f589a269d6f9e8173e188e8a284b5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "2fea7d62465af09b0e6ff5dcadd250c5a0d5f3407ceddd4b8be48a020ace3bae",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "af2b8761d14b86ba25aec400699750627adf6a9c3fa010ca9537a1971eb7ce67",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "e1ed77cf1c5ee5bbe943378c435c47d911493323ce8f963cb5ba24347887c056",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "95ac0f26cd105004e8632246fee94fada7069048319807a8380c0c884eec6b0c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "d09f97fd77c54c0b0277e38b26bd2a21fbff42f1522ac3ddba1adcc9d62e2485",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "967220b058f0ca6276d84302324063429adaaff1d5b6f24f932316e17e763e87",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "1527b52c17bd0477080e673c26a35c13a9448ae1d0f720090bcb4c4a24a45044",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "b72f80a66527e010c5dcf9a658b35cdf2404fa5b505844fe5eeb532355e5342b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "9a1d2a090197ee84c88711d250a982f05c02d7c25f8fb42a0f0206e59a1f8532",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "8c0edb467d38d9dac910096cba119aca88ffbc9720e8a5f39529a6bf81bb87b0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "407a01919965600e42025e5a60fe30ace6bfdc86f86bccb18e0eaf55e24053af",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "27b7e9de39ef97e86f132d995e63bfadd62eef23b1cbee978bbaa22aca3cce1b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "735ad5a043ef9033f4745c1edc50020607678a89e97596cfcc57b22c3186f5a5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "92f8ebc4a39685cbf3edbe05cec032866cfe98f34b386074e852625ce61a61dc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "084045a8081aaf44f7ba28833802e1dd097553f27c034d79d3cdfc2c739cfd3f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 0,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "5ae8ddc5e0049a734b5227887bd50da49cdec2ee2abc89204dceeee2cdfff855",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "caa20c2088bbe3c6c23b96e432b9b26bada39c6cbff2445d42034a2631b1f325",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "6d41d13a5e2e9f1ed7f72845bc5e3f38f089cd4dc069c02fc646265665774e59",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "70a1fa3ad1ca97e458e748da153fcf147f9b240eae54cd2114d04f44b0d544bb",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "721471969b1796b174847e8050fd678c1fff64748b34202d1628ae7e79a4e686",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "3b4289d60203b6c1a7f06cabf767a6f54342d0256cb50919d91c693cc6fd80da",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "40cd61a57efaad247cad6d8c63b875d94344434e1f79cb8e2fcf18d33eabb2d8",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "3793e34957ac86b6916184b6b4619ced7bdc3a50a13d540ae46f91bf1a9ecbf7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "0b78e7e0abc0ffe4c098b44e53fae028ab1c6972a9556d2c4795bab519ce0bf4",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "396acfa544626bd3641722d7e6e749ce5fe0d133516a3aeb991b4ce09a8aad2f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "3b0b95270cbc0d0fb70a1bc3bb8de0a4a9494483c404fc1bde9b208b9c186fe2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "f2d4ae1c4501acefa990de2fd67047f009ca5732e64f103f04ed41d6c98e6840",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "016b069fd6feb5fecede1dcaab2d208546c93c09caf8e30913acbc88f86392e2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "b97958713c8888230b5a04c296908d1eaa47df6ae0bd76aaac10014f7938ff92",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "3b59516972e208a17ee2f7c9ca91e4982a596483577e89de15895dfa340714ee",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "e43f8faa4b64d8bce1c0668b4045b98530142f25c01dfaa99ae1dd8f630daf04",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "a3930d2c99aa25c92d443ce608774352809ad794c9a3bfc5e9a0c9b2978d0f34",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "9e56e4bad0ffb64ab6c08fca82fd6ba0d74961825bdf4b7327f4287a17818c8c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "e0457a467eaeea63c31ef0f9ae86a7a9040fc138ed75edfd20515e9b980b27d6",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "a7d63252796c9bb1d78930bd58071b49cdbf66ae6fc293207822c61e1bbdb373",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "ae00536302237483518b86dfd4fdf6f785f39b4051717ed274dfb79604dc44b0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "586664368d2e32c6462d22949e2608f5fabc6af7a61b844411ee08f26f668f3e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "699375da4ce2cbea791380471285161815221d073e8f45e416a4fbb91137d672",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "26ac57c2cbb84a812d08926f9bae779d93598be2e4d03852422905365a897c1c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 1,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "0c386aeac80545e15259ef8a7606605edc28bf5943f0a93b981a3b75f2f0e5d5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "103882b2489e975728a4634879a7573b6fe89d5244e9c3a72a3a6b889b6883e3",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "c4f0ca490cd49ebe19d0bf4d6d64d50d67dca927753e1a52b14e44f123cf17dd",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "06fde0d14459fefc2b0eddb2092a03f0901f629f90b912d7e8a4b3c62e8f8265",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "8bf2010451da6c002c4409eb77d72b72b3e7e8c85f35932bf9a183f154726775",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "f14c0682edfc2d3b1ce734990c77ea2c0191954764d2e1605eb15725d9c7a2a5",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "4b07be1b4c12d463e15372e8cd6cad323eb74aafdfac8477be24ed0f73f52cd4",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "659bfc41c80f63f733cf9e7e03438176c1e12844635776ccaf072bafd3996eb5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "7c82f9b5c6b987738272c17ad248c10172dfede58b5a8b6e4111b68ed6824b28",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "35530bb7b2709b68fbd159f4baf0b344bca78bf5793ca3043f770cbe1a7f2b53",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "98c5ec6e74575990df2744f7da897e785a0eae32ecc6badf7b82a3da6f1edd97",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "e17cdd4899b1989f2d901f228b263dcab886903a4b6de1207e0d2e3eb78a65ed",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "dfdf381ac694873507dd664a2be365241f3c63225bed83d217e7529211ea6aea",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "6cecf824229e80a58ba5726445e4243ba871a38ded8566f8e507c252b7eb787a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "78c123b1a0daa73d24021cd77c63f97bd273218f52176ad3f91f2cd509fdd92f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "2a8f05b380117a478abce80f3438d1a86f53e399a392243f258a24417f0c9d92",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "441eee290b4eb0eae616c8699379d9477884dc4afccb8fe4952ffdc150150301",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "cf21e0aba15106af1df2fa2bd56cd0720975b6ecf74aff274b490e93bf3d320c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "a9c3e0cdc01abdd7841fed68fed8fb83c1462ca08bc460c1dafee42d2cccea01",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "085563570f15c1af1fc0e6cae516158c0658e70f3b6e7515a7ddcf05476917b2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "a236813d2bfc914777aa4f3a175114a0cf9d64a518b19a9ecf92bef4efbeb5a7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "d20de89d6a688ff0234787f322725dd5c5210034ea4a0349e03bc4d2d73944b2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "85cfc3a0887c96ff0620d3ce1cdc5c88c1655a10c930e96ccdd7e7e4b9b0c1da",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "4ad81e89a6938e2783f29782b63581ca4c7a7bffa12ef37183a8ba1fec623e2d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 2,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "19ca2ff3cdcfbadd307abff621e5698964b508e5d343579e06e1dafbedf54b7d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "0fc314ff6929142fd6f00661ba151fd53fe9334d9bb77a54e1ee2474ecddc7e6",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "88d81edbad40591a25eed486888242d9d8b91b47041b07b69092c034fa27c743",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "886518ce45f31612c15d7ada05ea18e12a952e44bd54cb41f49b3f594db14ad8",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "0cc29f0a039ed49e1206b1d4c025ea22fb68d5b3cbf6d02dedc0c1c8670ab48d",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "71dd66467a7e07b6cbd14e719cbe4896c210fb2b5eb63b82b0fc667d7749a48e",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "f2defaebc6155483865b4c881558c6e01b8ed27e9924fa7445a4f4bfbf525927",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "c1ee4419229402f9217c8a69899bc6304a6d183b2e5791cd0a1130562c257010",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "3fa561cb8bcdd13a6b2b3f467f860c28ec3a9c9d1719410a5a777b6ecd259447",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "5cf71a6526362bbb70781115cf17bec180bfe7977b75b761f5da95d379b17668",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "a48112dfd64db7a832f37d404211efc3baf65cf667cb2fe8b1df519a32274243",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "32db5ff1fd8880fd702434f4b94d640571f34705e03be91406910c8ddeced15a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "89f1cf6e12d43e6ec70f812087e1edca0461dcfe725a2008768ba072e6ee73b7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "707fe396afed36b173ee86c43972c59c0a65b1715147a7f439a74440f835dcd2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "307df1a440339c077bb772620f366adadd95667c67962b4af70f667036fb5b04",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "549d5a880b7f9f2cc1470dd26b47278f468a2e71c7442c5741b8ba4f1120da3f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "792445ba36afbb9cc449eb00e4ab632b5669482ccd5804455567c1acded3a6e7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "243054ce52705a8b2fae8d534b223927e605d82d6adb16f71f19a210828d63c2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "8f525a9138df8c5588d12d54bd7159ac8f290e6877b3a618fe2fc747504c3e3b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "a74aaa2f9ead5b2646e48ec35ff18a333d672a937289aa90d0e24d4abe1e8e68",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "157b866c5de083d86f212751bf94e8c7af8c72524e0ed010c5cfb124b0ad7cba",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "0bd556e24d56ee575e0c025729420cdf99bb0faa1536cc745a111ee44cc53f47",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "fe6112f4c4cfb81ace793f15748fddfc2cb8f97f1adb5ec90a0a49f38d831520",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "0f91cb31f3d7b7b39da07a92aec7e38d5ac05eb1b009888bb041524526ecde02",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 1,
+      "rotation": 3,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "ba66075e686b866bcb2798c56adc142053bad8418d424553878b66300b073bc0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "32cfab361b2b8bd1f0ecfe9be484d5885572972c26ca24039443c51b51fa191d",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "eb54b34a12871941eec3b4722d70a5ea1b5a5a0c9ccbd089e78f457057f4e217",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "5b0809379f3e1b96c13042209f3fb52fc9fb852194e94fccfe48d856c0559326",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "7c87f01fbe3deef1511fc8258299ead553722a4c811df74eafecb60af6f95817",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "3a2c8c2d20447ab5acfd5f5c0e00514673ce67398df6ad638fb7697541ef9c9d",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "ee70ab986f4a6745a872608b36296642c2d837f75ae9eba24696cbb19a472169",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "ee07b4329285605bb2ae494cfa1ac3d5b2b8b3da61e5794f7e273cf0b991b263",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "cc668a17d45b2292583533cdc2446cd45e62593bc7827c9120c2bd125a262e08",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "5dc874103ed86acaba6e3d50aaf47ed290dea8e88bd3b2068bd790be8f3b910d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "7130001cbe24a924dfd430d75dc4d0a6bc4ead527d8435fd7b9f93713d6278fc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "1c0d47d4ea426c9136d339c54bb40075122b2ad574243f4fcaf87deff869b86d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "d9f30a453eda817faf4116a747e4111264b030729d79289d4a81d5ddf4477119",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "22d121f4a440c3c6070f6c929799ee64c7ddc3f8e819bfff12faa7fd8ebe10a9",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "d00b95187218032001d5ffcce6179a73a8945aac70ee10bb0ef1f41e9e1c119a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "e4deba3cdaf547774bd667e08348dd54188458dac2fff70cfd9e80229c4f797a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "bcccd4ad8f63d3db7fc6b5953740143b8d65ccb0d04fa7867c7b4ebeeb519f25",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "bd6a98ef2513a5f71050f9cfebd4860db50f18a7fdf7bab326a1373385853faa",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "e6ae3cf19e1e19a982b66b8ddcea712a6cbf3c937d5ddddf4b904b2cf4a9f2ed",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "b3534ac0c3bf3df887f5dbf66e0f485203791e58adfaa33d6d1522ea58939805",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "00cafaf3849002dab482bfc9fcb8b99a027b9b2a294ea8ba0da47c843d2bed5d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "fc1553965dca78794dc58f6f13ac1dde148fa100a2c3d718deafba5ac0ef9fd8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "8697fef899eda9b1572b0e6154e30fc50eabbf3067e76299dc9487c737f5c171",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "ab154453d4db512b6fbd41d475b9cbc834eb85329b3568a061fbdd8d82a013e0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 0,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "e42af13023f1ce700042bb8fe6a0400fcbda776dac6aedc54b71a86056685ae3",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "86f0cf59fc76568e17594a68c7d07d4458a7d23e7d8d8fc16009601ab8d62b59",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "f4b28b7416748f8fd79694de5730e2d8a2f3977513148e2574b60b550d1fcbd1",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "91ab60d7681262a48945ba9322f6d76cc188a93dd5ad1c5e5f38d3816e34e32a",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "1737ebf483fafcc790efcaac08c01d9c2413841b2884147078a42dfca0c1eab7",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "68d265bf650cfd217a5b5c74fa89266d5fa8da31d03430711774f55feef9930a",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "f8b8d212c6226642fd828965d94c9d6b79bf54510e9c17a1cf9e5835cce4e81d",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "8f2f3808c78188fb9ab6c38b8bb9dda3cc1ef9df41d00b6ac5604d24c56b6aec",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "b96c71af499d06986e146d087b5bfecd90d0dacbd86f4a8f3ef73c68f981b84c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "4f029cc1451191aba46a956dc9244bd8a5dc816259256df580f641f761c8c756",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "3fef842d9bac363f13de22041a598f4ef7b9c07b6f14dcf3428a7f013140f9aa",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "197d3e176f17afdb60c6ff877f28b5687207e1bfdffb75b49f49e4d243e95303",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "afe69f4ed5f6dd3ccfce75f08dd6baee1723c43d7cbf22e6d37dd52370796add",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "023b7ba2932f72d66e06a8bd84e7f2ec0c929d132f85035245c233fff57cd620",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "2230e44c2c8db629fcdbcf75cba4c89897f15f98a83ac971b83de5647525c899",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "58a46c26cec4a72d728918bd7d321d843b96f406a9f943f3b4b4f74848317c1f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "3414ac432acb39e1acf67b3e018e69bc45c732dd4476fbad509fa70831f04b40",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "14b0e62f8226dfd93aefd4f43890fb1d97e516d27d3fef85741644e533619b64",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "62834bbbbc10ed51a7988ccb46fdea3b2bd59266fe77b988a6197b1e4ceaf929",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "d43ba3b40042677f2a293042d61e7ccd6a4b9f37404844add28601ab5df0ff22",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "82fc15ab6314eadee601173ff2593da4e98b8d30e290d865819f906529516a34",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "cd5ae8eebeebb720162ad6a6759a17204f9c89afe93de7fa287cb9011eca3010",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "10300b8f441b2f704a957cdc34d8313cbfe0c629f29d0dd9791663055fc288c3",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "ef3bb587bfbfdb30abff4a8052387726c23fdae21f1f2b0f48ec76222c5e7d0a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 1,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "6f6c0a4f80f3ac3b0db889df2104ec6e7f9f217bc48d6292afe40ae28885e781",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "e513692fbea0e5c61e4483e8d02a34705b18da3bb34eea04ad8d2bd19da3bee1",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "30515d64167258c88adfa77702af696100ead6fc667795743078035d5b3ac299",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "c83ae44204ad53e19b5c13f7bc8d999c8cca88f4c188c003ac996607f4ab7758",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "f3c6e4c42d8459338673035b4ae4724c9029a0f134797cd67e160201820daee9",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "509f80230a62e072424b0c7dccb46fa7f7790d2628aba86994fdba633c666ac6",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "cb38863d25d5a8cfd80b77ec29502a902aeafdf08a98affda7bee5c9fdcea2b1",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "a671fdee19eadfdec3ca676275282b726fbbe899ac38c501f4e1745ec3b58448",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "dbc4d85af18edbda0b941163aacfa113aa1c53471fac8ee4e75732896777afcc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "6f33bb773b4ae6fee3ab194db29a4f2c71aab4455af63b6adb4dac1abe26390c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "b83ed516de4f2affcb8380334d54201bf08ffa27d636db764abd33a2e60f0239",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "fd7f13271af324258ca14c7e57e8550f9db470a179be4c14247a72af0202ffa7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "686b554f79b9259dfd4ea7377b01c5cd46d1dbcc3de76d7a7c2cfcb501a3de80",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "a757ed86c6790a3ade8d8e040646eaef014b6d02ab734227a33db91d13d87b87",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "61e973b4458cc322b110d0614a0e97849d175a93c9e179c4f1ff0d6527b83909",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "24b2bbc107e05659cc94644d112175824e663b326f678c0874a4677b3723596d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "1d175118b51953ac3e29748266cecaa632f34686d77011f43c55be8f4f7960ab",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "b30dfded382af19a16db23bcb716c58956487d3a00051b6e4aa9b5e16d35fdbb",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "ae3c5193cd843573d8682982e8ec459582272adb3b5610c93b8b5a4313fa4906",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "850dea528f02f6e34612f97a433a890050947b8e701d2fdeeadda55993934d7c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "9b1252a368989742935c1a64a7e54d5ff4c7e38f614dea65ee6744d2fa1c1057",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "6fe1c18eae8d69b5064e0d9d85ae09778fb666a0583048380d9d6dbdfeef1b5d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "6f4f5b7cd67745373bdb23a9b0675576325bf9a98fa10956f0c3e8433abe4f38",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "8ba527e46df24746b4a1b0cbf7b4e987a6ad3f2398339750df4df499a4144e10",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 2,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "80529c8ccf1422a61a6f514157351cfc70165fc4690e27c0cb1e619f043452bf",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "ca08b453ca588b540ee05128ce3f4bbdd81fd4fca608f616e1d6f88dac83b5dc",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        174,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "5ad35275ecadf9ea1c92f7fd2b26aafa981d123dd30199fadd7ff81132aaa44c",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "14715d682b2202c41bf9492566fa8f63189e12eb38aa2471723e1d86f77b912b",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "b5d916049bc21ddd40a49b001e75422c70d286cdc0a900a6198a3e500cf34ba9",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "100223dbe322e3bfadbed0740ca4fadb5949a1846166899161014643a19d7ec2",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        174,
+        174
+      ],
+      "margin": 0,
+      "grid_hash": "e1d332a00555d167700a7d4f2342a7862deb7cb3469529a4b103cb8fa1ee1c77",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "aed385288ba979eafd46287776cdee8fbd158b2cedf04bdb33f322abfca26ae4",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "6acff5adadb974d949187a9882e3212e5906d075a35be5b97cb7a87c14028a07",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "ff4b018247be3ea5c87d115da02eaaa9d0894146d7e78cb27a0ae003c52681e8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "75e81d89f5fae4226b2983c9797290aeccff304a711674a471bcda7f7c82ef20",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "7b1c25cf503b60eb666c4f76865b6dc587d324ca640533d0741f460098204d93",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 1,
+      "grid_hash": "6e45e4a0b723f3259f9bb1ce66cb943f03fbc2a9f6803b202e559177ac5a1dbc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "1d84944da348c7fa775d86cc5e4fc92e8c6dbde2065ce0e6d0e983cde43e4a02",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "b9882a6015c7e7dee9203cf6ca1d7d5fd0eb95e7c1dffa805ab504057c06af0c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "c2f6b2c06e1dfb589942be462202154c9d26d6a7c13e38d70b890f46d41ccfab",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "357533c5da175459b6c3559d88198499e59a699dc459a0e8fb82d65d39fdae44",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "029929d55b26262a078b4e9130e9b5a949af3623157bf23da437b811573503fe",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 2,
+      "grid_hash": "b562cdb307c691bdcd2dfef33fd2dfc2d33b334f335fe424e64250d5e663224a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "b73a64f971ae299260431237dc895b438a1c4fc0bf8815cff2758ab84333cd19",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        170,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "d7ef818e68ba70ec81ab4a1ee7d2ee1c6c79cc41cdf808d2799a3dbf628ecab4",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "f8e3ae6b15fcf3d1d9814f37bc52d02c957604fe00ecbb816e23f72ead975e53",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        60,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "8544da53827705abfe39add5e94fe64fa67075b8c5c7546f8fbd8040cca5b2d9",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "9c0e1ff9c6c7e979d30173acfe3c6628974a20576eb75dfd323c3fc9bbe12404",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 2,
+      "rotation": 3,
+      "placement": [
+        170,
+        170
+      ],
+      "margin": 4,
+      "grid_hash": "2b534cd6721c615e4775e34026d38682cafb703b03da2ce192cec1b97ce9b971",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "5d98c0c500c1ed92ade45d98d1387a5727c66513c717bafc2521b35849d432de",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "73251b18b1e8af1bad39ac1eb6d05e3bccb267a340daa9b1c3738e05ecfed23f",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "13da4a0747a1c075bcc3e5142e669bfb1bac3b04d91e919f222c25ff59f82fe2",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "8e6f79d12531ae5f31c8b7a647cd2fbacd07b72ab2372f86358a5f15714125ea",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "dea8a39f9a7381afaf2025c2750045caed27d1719ef8be3534c506beda49f2ce",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "fc23c44b8cdadb58e7ed1909a43f204390d181884e7bb75818db76e746ae5949",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "12b531a8d156993bb206da60627b73af2b56bbd595baa61553016958491cddfb",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "79eeb1f18e4908c6c15238c7cd6aa369d0581a5afc0fa1bc5ee039a7043380e1",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "94790e0b6472900c377fc2fb3cdfed491ae0b1ef4be9378d2d3db9bdad7fa295",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "a33978b984b7ce1a1b37c20a1c13352e3bd5372b5f345490e4356d5c5d247340",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "93b2d8e7177d8abe7dd029b8ac6e15fb8844d33a146b6e485ffaf25fe298e3b5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "5c4a1f10ac5acf693f4543e3cb66f0afa8f63220a93f716dd8fb72c413c3ccc7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "e7d956e52d8acfb483b0b8af412d966d88f6be6845217d15f8ee2c9e9a183d13",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "e274d6b709a4d60b9727e18fe596928d0abd4dd31781ab9cc51dfe008971d202",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "d497df9aeb6421a763cb9e1ebd9b15ecd72159026719525c0abc06951218d8d1",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "2a1a174151baf0c22237bf21f9b258c1676c8af69344ab3a51e51a8d73499f7c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "640940ccb4de4e89dda121cd9ce7ed76e084d51c1ebb8f6c8724a787ab2329c9",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "533c196b9dd12ce615439878ba5ccb3d130cc7f4137cf262b6c3c9f5f34c5fe8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "3c1433ab070d49ff7f321954f1cfc28c515735af6f9f33f16267f0e6c51c3a30",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "f03d107cc3e73f4ad2e20fe2f42bfa2fc8a1e2a95783340629e3ed2a5d219101",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "64944231cfde54efc7867fceb8030ed50218b8b3279d7b5bd2a5209853af0f33",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "3fb708ae161dc7ddbb1ed8567b29c4775647516ea89fa91481129e593f6ac4c0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "55b999702bd6cc07ee0a86ee213762fa991921058ac830066e9d261960a75534",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 0,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "5142ad7f3a3c4496ba9d60a559ace01df38d0cb1aa2cdfd6d165d39e2af4b88b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "6deaa7739a9c91c38938607958daeefbbcb7892e7517f7d9373b78d9953108e4",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "a8a42d5fb000ce8519bacd198441967df0534f5371ac55b3c3566635e1dda186",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "c563a6c5180b9258d63fd373f5314ef489812cc8ffecfb5b4108109ae7197413",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "e0e841c038277031e36f1e7582ef21f2e0b6f440e4b4bab3c3dcd6b262069f90",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "96b15918ad5c320d867703d31b152b14df85e110c7845a4a98a0983450c594cb",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "fae4dbce9ca1deda17940ed74a2213dc7a8f7b59374e846577e1a9ca53a01d53",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "decdfc88a5f7c5a31c8c1018900784714d9c748dbd414e0d1e037b8b6724e0c0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "098250059f08cbb8abf7b04435f9bb3742abda12122f6aadf5e678b104820a69",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "8266a17f7274ab93bc8366df457878fb4480936140c3817c0cb7b339452d1c5a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "c042368e953d0f1577f6104015ed4b11fba8f837156d61b77a82cd454377e511",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "7ba876a8380d5b2b81aa45a26baf7cfe3a7d22929ac3bfbef4f418257ed98e6e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "a0af3e768978328536b90e47bf84f8ac525bf50dff569fba38f6d811710db818",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "2498e2b5689bb5a875299e826e50c3d19e0d5efcaaec81716824b4f9834f2231",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "7202f7ecc6961b985e244943a7af7cba67a0648015b36a6a423874bdfd6631a7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "087c236196a30f436f0f27bb5e05477ac6b6c27fc5d253cf8c7db9571dba8b2e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "f691bd88c618f5035d9d47684adb094dc1a93643bf4ee390622f95ae83e2ef0a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "13e3b0eec09cefc23720ddd76a5332eabdca1e95e2f2237e3b2ad3f7d7b0c372",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "e0e0ea9843ed7d28746830c289f809ddc98bfb9710e5faf6030be020fffcd88c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "ce2d14b2f4d346d364fa5f5e90a5745917aef4be80289c0de88408e5020b5f68",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "81ef9e5d82669d85008432a793e7160bf2badc0e50a8069865d0f94d18c11ba8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "a62628465ad11ed954b4d1c3a0bce9a540ea89b8c439b8d2473b8959db23cc22",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "8479819641c6c6503b6c4da826b4bfabdebdb24a21ae268cd1586e86cfc2d4f4",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "184410fa537ca29bc42e45f42e4816947163c6270e0f443297ef1a86926c0cf3",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 1,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "2441ea41cad20d955950039c370ff5b864a9709587dd6c26cfe2e8490af34d50",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "fc5d3d432d51fbf629e94ec7576cad80aeca49f47c39a1b961ce901259f43a05",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "29ece7fda1daa1b72e2eef00017ca3060408a480cf4f1827fd2e866eac5ca0ce",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "f0fc94118967aa2b13e5c78b54c1f5eb58a6b1662d344c7b5e79c1384fbf16d4",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "0d6582fb3a3b2248c177a3c38fc00c55f2559077eed4c89e44edc90f1cc29d4c",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "1ca6d719708d052a9597abb664f0fa4fbaf77f7227a255fa5a9537418f57c3a4",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "ad5f2690209db370e2c0a1185757fc39f3741a4e76bd9ff1eb0720abfdb1e761",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "41983eee2b550109e9e60c5f6d868b09af7ec34ff3c9d16727178af319d61cee",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "5c9b0950b6d0565467145e9bff820e2e9b5a63ef2118aa544e62349d9abbc38d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "9d001cb528333f0d6d3aebe501d15c8d7bfc67801a2f828c45e66d624b7ee4eb",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "d3ac47b1e3ed445828a17797f49837eacff665a4d2872128f12e687637dd5aa0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "dda9943e4f3469e9696ca2950a2381fe47d9c01209d36efbc0560f32f2088d20",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "30c463c67f362a693c31fbf9b6e59deb567c1c777c39c43a112129fe1b727fdf",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "3e83f4b575172b17e8fd4bff263e58c6d7f2dddeba3c8ff41020c15cbe0c804d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "585323acc3ba9f9c27215a4c3e7bc217825dba7fbe53b0eaa005303205920884",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "5efd8fde27aeecb27ee110a56929eb2c037ae8b1a10b43fb9ba9ebb7ce6a9af2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "3c903ae3b69f811bcdc199ab6635e9b8a96823b6f9d9882ad5eedb3509456606",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "e62e59467ab2b9996f3d5b124402400021aa7fb6e9b0848c4a225770ca6ccc74",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "f39da7ce4b516cbe013718e42f16d8b8b2d67ea0b2d5bc9e7ebadeaf316d9f0f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "4be4687fd36e2de1b1ddb7788a3476e2f78759cfea4f971ffd5065b9651bd9ae",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "ad281b23d71ade8ce3a85fb12cd159e23c4ee6f959ff6f4e0661ea3b4d6d6b83",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "b54434f2d7a605ede33a0b3eba57c8af9c3fa78a38e30125e92f52264d6ddcdd",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "fb0665c7d3c83951a8ed268b86efb6e1f3410e01834de0adc8d8e81dc264dafb",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "d8824d504e606c50f6a752a13617e26babf5d0edbdf28c333340a932d2622a29",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 2,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "97639b81f0c475ff308458d413078f32cabf67a68d03be17bc0cd65191366c58",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "092e5fc8bd93deaadcba287b2e5a2f6cb998d3def33ce40fcc5b61fe4b463bc8",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "5973586a55b5559ca6139ccc2dd4203a5bc07326ad635ede26826e695a06b032",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "4cfdb2ae99ae9119be09fbb1079d3ab26f4ed6b4d457316956851d1cd719f4b1",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "72098798a84c293859e04902058dc9a81e2b7e0c76c9845696576b38992e26c8",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "8685e6768bb5f2ad1a621a88d59789b03bf8cac5baa69640635e37cbbcece06b",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "924fcbba9041de8c6cda840780bb89a73774564f9001ccab00f8f570048e5fa0",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "9fc99b475be7ea456d95125858cfa6a1267f36fc5bec34bd020f9ae8aaed5552",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "c71add729fc2fa26e802628d533ae27d4198b529ac343e99365920d67c637c2a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "56c8c754230c0bdeab8c2c29d26e8e2a1074788ede73b6e544b8e53a81771f6f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "70c1c50390613ca03cfdd05e093173aec5634038827d5580f0a3f2a213f29d92",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "1255ff854bf47baa4def3a3ec00bafbd0d44f58c6949a01778f1eaaf74295b82",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "8f1e20131bff6ef39dfab9e9016ba6d813fdfa2ed174175359edeca0f4f0b5ee",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "b45b88087be8477fc4482031525f3f22a0376f3374e8f3940f44624a9f65592f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "9af5b427ac63d25440c3c3051afd07fae264c5aadb78601c8ab43c56e084f690",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "7ecdeaa22f00f034432cdd06a226110443ed993a2db3151b5d3102942ec4d47a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "b989cfb8a6053e49c0ed95d1df3be7ef92400eff0fc34f4f8cdf7bdaf474e266",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "f7a7fc91096ed6d44dfdf5fcb57088f85a7caa7d0dd4839869df568c8247263e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "68bf6c76eec09cd8cb5dd80dffcf04d77e964ec91984b9a813a3647d62f3304a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "17ef0c90fad1342c85c2c961780a6dedc191dc5de03d552581cab56e5753f0a8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "bf204ba32745257bbe318e2b8b19d31f78f611b09e0293d172e73a649ad1a30d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "047c44493aa1073c1720ac2a258687d7fafa470dec0f97e3521a3fb566196e9e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "9883f61f3d7bb9a41bec95a9e0fe1acaaa1f24603fa5bcbef3b7c873040d8071",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "fe8b55d8f94383b88d3cc8b70e7be4a4bf318278db0c3f6867fee4452244f695",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 3,
+      "rotation": 3,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "02610e7a7ac6ab1dfd8b0bd4ed7c41bc1461d2f50bae7710dc1c2234e7cdaf78",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "38a2b8c3297d5f187b497304945fb06c44ddffede1ddecb414eef6ef6d6f2727",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "41aeaec31dbe6ec946f018a5d76652db8ed9b8351954d8081a56c74d97d62b59",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "dafe95fab06990e4b4794faf2e9248190dba4481519c558153e6f691dbaa09e5",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "90c927b718ba97b6f06267b60348ccf009b4624fc0e05e8ebb03c76b7a695fba",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "480b9bee1f72d2ad4a2e91737481a309b1f516b51a673113b1f5fb51e4ba986f",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "11e55f0976101b17e764c05afc68b2754456a59cf793fd039a17839c6290a46c",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "d379f55a2846070beb4c0e2504800afca1dd464a882b161a3267fb051f0f260b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "9c7fa7d2a492a037d76fef04965d83327d2e6658f26d7a4436220f36336f3184",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "3bd0275be6eb637b93a7027c07dd4d0ef8f69d17536023a56df3a3be9d8aad54",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "4edc4eef6c10460ffab6c794043031d1a22ba7f02c13faeda84ad78558a22ef6",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "ea4850577d25a4acd7fbc09b16b84e9a8f7564eb1f51a43278a8abff451e583f",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "84bf52fafa1179f71a2263f86c7001fe174489492a452a831f732c164a94f55b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "e25701401c0ca6fe3387c202ddf2800cbd2b0021f43120728d4b274d099515fd",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "9b48c4fd047d045598c321d90f04b0f6865f68e52c3757e5018f9f0b436c4084",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "4dfbb55b5e16a0842506b56a39ed8b9b89087ac1896a114972c770c57ab7f54a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "d55ae85e48d551b879d6def5425cf6c99e2739a6087526a5c5f2e2d550868aef",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "b27db6f16a87715c13585a281e48354cca8a8836998d8467d7da24be2d597c75",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "f14ab816183cdf7fefdeb791181cb3fb90d0932f0fe8f18f6a9b10940f7eb1da",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "f59de5b286d396e469cc47bd4af4a9e7a291063978c7cfc17e8f6128adfc7d1e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "6a80cd8128cf9656123a720a8443d99054d5b813debee90a05db88e25021517e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "7918cef1d1b22cab7fe4bf5a2e249d1280f68710553f1525fc188f3a8c9c28b0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "52b930dc85478c28cb4fdfca8ea0c4b99446f9b3577c132cadc3dcf26d7968ba",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "7f73d40a3459f68b5c752bfbf46cc018fe6938ac285af4f187d1068847548852",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 0,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "1b6c9f19611281acb9827add7168d5dc659180152596d33a94bd5f9f5e41c7f7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "7470ed1d174b3ffc8eda397172b6858e2e10d8020b7400ef68170bc80d3eed07",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "e34a2f3481742d625c7cc12591ee68f31b00fdd555b2510e85d44a067d36153b",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "3f8a4b8e1825965fc7d3fbdc3c0f7841bcf9a7c7ef89bbb4f8d688aacb4adf06",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "aa50fa74c65527258cca83337a490fb8358a53c52a2c855863357358002a5470",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "9c8c601cce757b9191bea38045347648d8340adbceb2b8c32600584ed46db0ac",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "da2e5f6f3c456bd3331ec50ef03fd03791b529bba6751436ca28da85a16b0356",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "488e64a185ba21d90ab704f836a71988789af90e33c8c64992b8cef2a1b623f8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "34b5a32c09578fde9afa4aafa8051f00a4b51e93ad9fbada36497842cc37dc0c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "7eec17fe67753cc8d4e58919332e62de993593ea4c8ccdddb76a711f2dfc1184",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "851431ca52334e12838bba48993a5d1fec3cb30ff661071201e55805913d3de0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "8a351d8ee04be063f22cb35bdeb3afc2af585ba87cd3b59724744163cde4342b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "1372dcbabd6d0a65322d0ac955a0714b0f41f417af49f175e9b8aa084d79cb8a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "16aed2a708054d3379c13940cdc1595444c9129006f485331c527bf7bfda12a5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "d19d70385b45f495c1d970612298b9d52aa9b27ce3eee2fe8b3928499d97c87d",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "67fc43277d7e7919f7eb1efc1587d273d6e2348fbba660f494d292e4d2af88ab",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "8484bcbd4710f0b29d87569a3d0bac2bdce26bb24d2fb93d4cbf8638c72bea47",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "37cfdbb63a4025715f0b021eae19ac0cc12419752a5b72e24bb31bf69ea24819",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "ac64b311d14829104e1ede3bcb4dcf9fbf4c7557e77d62b01d9ba7d104119845",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "4589b26760c9641595c42ba0de74b0b31505ac3cdf4778a4754a7ecc5636deb0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "1a24bca366ab99c2cdcaa20a708e50181bf15c7ac94b76159bcbaef8d427f69a",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "bef7f473510d786e9ad7064062eaac8a32e5407082a951bed324c4f40cbac3b5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "d13e385164c9524a1491df5d9045ed6a360d22730523a431cccb9edb24b12348",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "0a39dc74222edc9ae9831ed99e29e8087029f0a45c68b33922e8d53052576423",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 1,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "220a9b6cb980fe55d76003817443d80c1db0eac41f4703672e2398d37beb5cfc",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "977585cd56ad6adbe7c145569619e38455ab047ea3f8054341bfc8c87c6e5674",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "f69a8a6d92fbe9e507cb432d2b96afefdc4365050c9c2a9c6e4c71b7952d99ca",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "937829870adfdfb1fa42bf1edccf6d0f95e05cef7a6a21750b487a524d0469d5",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "15acf88b5c889262ff7f363f92ed3896c5f449885168fc7908013bd52e2791e0",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "a94e41319ae6d9494e2949d04bc185005bb23534328860ef3555f9999f5d4507",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "0e78a4f842c90fe33afc83d4dfd7e44fc9b8135061b39b99161103d799259119",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "5d43d82d8f43e930b0e9bb7a325373fdc4523d0cca88a6d09833df0b542602ed",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "0f51dc0fd967b92e744a0266c4ac67f9daece0f90fa4b45bea447b4ca759937c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "ba2d9c96e198d6e5b1b0a9bb5212159ec2121c4603681f9445460e556d983a48",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "17d4ad60e75d08c4ec47dfdbfbb647b7c7843755691defca48cace393a7d051c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "49774b46dc32209e2b6802809579beaf4888c298acdeb2fea13f15c1484c945b",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "f03ac1d365e9be6a1f10f4b9b9642593041390d650f3b9754549667373481086",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "3c70d0375f30ec7d050982c65e0b23bfa2cfb4f2eb5ca5e48b0d4b648b488c7e",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "e4ac6f37e90fb6a6dccbfea12e35624d3eee72c4602db4333e1c43181fbe8b58",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "457bc2890c2cf73bf868d8a600cc03a43ee79fc9aef4e5878ae2161340e832ac",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "9262c46b5a21c38ad0f287861b122ae48e43961749e2cb10f768f74e5aaf4698",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "21779fd9acd222fa87cecbcad0e796a7ff4f243dc3384eae4b4383e9da6e5401",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "f73144e5a3e91df0d5a4a5f021b50862510a867456047cb5332773716f13020c",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "b3502ec35ced40c86ab50d0860f27f2835e934a7a28dbef108f24dc8b8442f68",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "e0f900c2a4377e83752c352aba652a92d5a87bcd51ed11ccee25f7fbd9be8ef3",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "a7ac6c5129172cc367739b8f129e773a25567b11ac5c0f08935c213a8b882fab",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "ebda1023641f2adc4f4d14aba302658d7cbcd61449e4a52ba9a3c3fc87109108",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "518bdd071c244d9102bd3720c2a58823f4107cd2e3987fb33825e7ea0ebac284",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 2,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "6a77a916a2e764ef8eda395e320e59ef05810a94f0887b0abe16b7cf9cd066e2",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        0,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "e0de96cf6db7aefe083cd1e80726f621b31a98024092ca3c9c9933ac93b8d3f4",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        173,
+        60
+      ],
+      "margin": 0,
+      "grid_hash": "eafef650fbb61f4937812749872917c252b9bd6c4b5d992e19a3b19d427c0ecd",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "16636c57d22e5412417f0b3c99054726a1cad5878c24ab71ab9a40a99c2786e4",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "2275163a5d60546cf0678c76b6fc6de3138015921f256aa30009d11bd1b70926",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "grid_hash": "40f843650c4e77688e380ed7edd024f422ef736f78416f0645de05b468dadb87",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        173,
+        173
+      ],
+      "margin": 0,
+      "grid_hash": "3d5e5c7633361336f704f17558d7d96f52d1875cdb9fef3a4a25ccdae6c8a6c7",
+      "occupied_global_edge": true
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        1,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "5bd8e8c046bb4d468cf42d782b68628f291876b3f1ff6ecc6de204a0bf62bb87",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        172,
+        60
+      ],
+      "margin": 1,
+      "grid_hash": "e3ac5d01e19118f8490240f3ee901c37686972e7017a21ea73244815fd104a99",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "d64e9aa6bf79329594b67008006613d1bc948979b68c44727f449c616becd367",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "60d61cc69646f922bc406478fcce513456b8692dbb5c08327527b256e55218d1",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        1,
+        1
+      ],
+      "margin": 1,
+      "grid_hash": "9605e6bf2608d8f357e3449bd2d9eadc069a2ce50129b718ac303cf9b32255e5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        172,
+        172
+      ],
+      "margin": 1,
+      "grid_hash": "6af510c60221a5488a6a35d4003cbcd24b336a9eebdde04aca2ad1813f18a0aa",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        2,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "4aa8d0b4c3556b95a2a5c66299f2aff24ac35f64e571903ed2adebb39523f402",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        171,
+        60
+      ],
+      "margin": 2,
+      "grid_hash": "b7d2f6a975a1221e35948a7de104aa7ff960c68aa1a22d0a40931da50f6bf5a8",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "e8362ff99630af24e354eac713ae8339dd2afbf2f77b22ff24a9b18a70d3eaa5",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "eb27ca8388d50fb2526b546f938d93c435fa6c6e303d940d402e2ce1a7ab8794",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        2,
+        2
+      ],
+      "margin": 2,
+      "grid_hash": "1759e8e2ebee1655cbab0c0897e23315ae429b10a0a6f3cda54bb71dd47999b0",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        171,
+        171
+      ],
+      "margin": 2,
+      "grid_hash": "844bf2e5f76e15785235ad0881e3613ffedd30247e706cb1dcb46cb9594740e3",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        4,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "72a1bf763eba03604cf31c48cdbc524343158c81256f6bb1708164ddfb2001cd",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        169,
+        60
+      ],
+      "margin": 4,
+      "grid_hash": "fb2d04a5386aadddf4cbbd07f61e49f9f6a960da3d29fe33ea9339782a8b66e7",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "5fb9cceadbe706f446da454177dc02ebb50626663e5fc446759ec191fb3c0308",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        60,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "2e4230be31c9e85be0f3e66a268e5d9303d19cdde6ce59a8c4500fd0823dd460",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        4,
+        4
+      ],
+      "margin": 4,
+      "grid_hash": "8c4c92f31f66f42b1a729c84aab20e0094b874c14d332d2d2ed72ae76d04b117",
+      "occupied_global_edge": false
+    },
+    {
+      "sample": 4,
+      "rotation": 3,
+      "placement": [
+        169,
+        169
+      ],
+      "margin": 4,
+      "grid_hash": "a6edb13f565ac79d930211470d8ce4124065227892d0f4b6673d143b97d3ca7f",
+      "occupied_global_edge": false
+    }
+  ],
+  "completed_final_checks": [
+    {
+      "run_id": "near-heldout-V01-V01-p50-c-opposed",
+      "final_hash": "8582c32fe7652c9f3995c6d99ebd572778c0f148638c2e199fd129965932cd3c",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V01-V01-p50-d-offset",
+      "final_hash": "e719333e32706fe8c25f6b44e3baf5336965469dc0697213cf07ef203baf5e96",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V01-V02-p50-c-opposed",
+      "final_hash": "ae6f2b7e166dec5dc7a2a01fa3b09931e326e3d99573463d3eace3dbdb0f342c",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V01-V02-p50-d-offset",
+      "final_hash": "41c8da3787aa72127ddee66290f2817c1e9e4aa788e37cd9bdbe5cdce2001edc",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V01-V03-p50-c-opposed",
+      "final_hash": "fd6f869a901f439f24a1903d2d9f3477883ccea5c45274ea172717288d8da9fc",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V01-V03-p50-d-offset",
+      "final_hash": "3ecdd6535e9ee743bb97ad4ec7e503db629f783b929701e03e658abd893fe999",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V02-V01-p50-c-opposed",
+      "final_hash": "a7f450c501f7bede0c9b4490a555a2407edda4aa4d699f361bc8a93e2514c8ec",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-heldout-V02-V01-p50-d-offset",
+      "final_hash": "d19d598f6a2b18f5354869191580708416c97b1a5bd24fccde3662a90cf3bff4",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-heldout-V02-V02-p50-c-opposed",
+      "final_hash": "9844ae5f3bd4f75a47de1511ec1ff68a9ac84fea747dae99f0125b28727968b1",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-heldout-V02-V02-p50-d-offset",
+      "final_hash": "d730cffde51678dd33a1e888b14339a467a2afc9b1483062372f1271a712664d",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-heldout-V02-V03-p50-c-opposed",
+      "final_hash": "87c3c7f2f57c61bf726623b029022f0bb54773a1eded97c79518d8994b7269ba",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-heldout-V02-V03-p50-d-offset",
+      "final_hash": "535a50cdab83813ea0af07c8a59b2a822cba3062d11d1b724cd2443cf374764d",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-heldout-V03-V01-p50-c-opposed",
+      "final_hash": "af005af737b18450041dcb0823d408735d82c13680051f724ff520fe36a9f658",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V03-V01-p50-d-offset",
+      "final_hash": "39f930dac828c46b7e7282fa8433805ff81fde739e54d7526adfc3c9e4b92f00",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V03-V02-p50-c-opposed",
+      "final_hash": "d25e390fce9b1ee59fe30447b832e2da27c86432e665a14d14e23394df8a843a",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V03-V02-p50-d-offset",
+      "final_hash": "b343ea4b881213c19c8c09179ef71e7490034c2db35820203a44b349252e7662",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V03-V03-p50-c-opposed",
+      "final_hash": "82312e9c3071b6aa2c8b8b25b53a23bc8d9f7ec6ab9860de968a8b93672a44c7",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-heldout-V03-V03-p50-d-offset",
+      "final_hash": "cdcf95b756532d692217fef3e1c14c4b21631900960a1e108c2712f3fca2e192",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V01-p20-a-parallel",
+      "final_hash": "076e7de911416b710c24987315cd5dd19c671f28bc769bef82e640d20894fb1f",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V01-V01-p20-b-crossed",
+      "final_hash": "f1d71e84a7c59fbcfbb1db7545c2c09b639573757f216860f231c28a8d886b90",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V01-p80-a-parallel",
+      "final_hash": "ae521b304c656facc278f1c481ebc4221f353d590a4946bba27817e3f5968a6d",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V01-V01-p80-b-crossed",
+      "final_hash": "abe6e77935ce1b6688a87f0e0c8c7066ae2d32e526cc4d048800e5e46655d1ed",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V02-p20-a-parallel",
+      "final_hash": "c06e1b394dae174ed5d004e873db3ad3d4e5619117696ea1b7398eb8157e9f0a",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V02-p20-b-crossed",
+      "final_hash": "bb3e0fac0b4b8fd60c5b89c153aa27e4b77da5cd2ab2cd15d2b9eb1e07f996c3",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V02-p80-a-parallel",
+      "final_hash": "59df1ce444ed9b17532ab1de7f1b8181c666aa71c00d7d36d9280006a0ee142c",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V02-p80-b-crossed",
+      "final_hash": "fd49d3850eb9da56acf3226b3291ce9e133166bde966c4ecae9550212241e191",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V03-p20-a-parallel",
+      "final_hash": "46fdcc75c3b85ea4afd0525629701a2dcd98e5000b24f78d0764f668e4447a04",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V01-V03-p20-b-crossed",
+      "final_hash": "1fa0ad24bd50b72f152d7a95bcc54a13f997c4c3fa2a41ef8fae7661963d0928",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V01-V03-p80-a-parallel",
+      "final_hash": "12567836a1f625ed262966aae896e59146abf1483b1d007c06599f71cdaac678",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V01-V03-p80-b-crossed",
+      "final_hash": "0ebcea0baf86c934e9a48bbbae2bcc8b7501eaecc6d74d769b096d7b840bf5c2",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V02-V01-p20-a-parallel",
+      "final_hash": "5d6ad65f5ab02d680cf498d9ad328565529e9c893a68285f8d7f9604be2e0a12",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V01-p20-b-crossed",
+      "final_hash": "30582f7439fe90921b6dfc7e9db4153f2bafff479b1d8c0336552ac65b28d9a5",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V01-p80-a-parallel",
+      "final_hash": "1b390524a7c33323b0429287f051cca3b77c3bb1a54786b3b52077279737a7e5",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V01-p80-b-crossed",
+      "final_hash": "781ca7fcfd66254461fcb54b4e91305a9eaa75a07cbfd56d19c9b278fac1939a",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V02-p20-a-parallel",
+      "final_hash": "2d263ff8799f0e2d1d8b842aa5d7afc52b14d0ee0b32d6cd779fea81f9fd3b3f",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V02-p20-b-crossed",
+      "final_hash": "3010158d7b22d6e9cd0384355bb94c0acb3f306d296abd96f0607c999caebea9",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V02-p80-a-parallel",
+      "final_hash": "fd041beb558a1dbc30bacf8a09123284d74a7c014c48c5b8121ba47f043f3992",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V02-p80-b-crossed",
+      "final_hash": "6335d578a579199cb95d4b2e4c2449d0d48795e92279ce1c006c6b37c84e7171",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V03-p20-a-parallel",
+      "final_hash": "0a1ee39bd1a9ea8557070c8346d8e2cacf03222efa53c7d7af7b564d6244ec59",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V03-p20-b-crossed",
+      "final_hash": "7fbe2a27df8487eac68718f66d84370be0a86d92f93ddac659a6ee2211e547c9",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "final_hash": "f66c14b85663b21c3e4b9886944431cb90d712bfca899ab64c6b64680e037e4b",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V02-V03-p80-b-crossed",
+      "final_hash": "8dfdf12c79c5fabf6308d9b9c06062e76c9dbaa29a0b6c736135459061643cb4",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V03-V01-p20-a-parallel",
+      "final_hash": "265ae793496fa8a1c32389b6e4e0445419b30e9f42196bff9909bc1d8aeda5df",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V03-V01-p20-b-crossed",
+      "final_hash": "f3aedb25021ddd1a350f40af377f4e52cd6e028326583a5394a16c95f59d9ef1",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V01-p80-a-parallel",
+      "final_hash": "a503ccccb1bf12032fc86586a441e30644cb01e8cce46986c57cb274ee2b7a93",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V03-V01-p80-b-crossed",
+      "final_hash": "6b1ed063a59a84dab6a5a1d838daae1ca2c534c39f3badb0447e8a70ca06037a",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V02-p20-a-parallel",
+      "final_hash": "0b65c5d02ab3474074a8e596d95910d187c9ad7a963c2db56120c8d5b74ef59d",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V02-p20-b-crossed",
+      "final_hash": "60eb60646fadafbc9bf32cb416f4d145b39fb0d8b919563d9d116cc58129588b",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V02-p80-a-parallel",
+      "final_hash": "6af786e017342a8a8463ff16b7f03f10258f8287e6afc20d5bc459bf5e8af545",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V02-p80-b-crossed",
+      "final_hash": "9218e82bc391114efb66056e24c6efa2e4e87434f85147bdd4ff0790700e106a",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V03-p20-a-parallel",
+      "final_hash": "e418e144adb8694eb67ae5a01cd0f2cb79834eae8325c92228d8f95fc1641636",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V03-V03-p20-b-crossed",
+      "final_hash": "b041da35868e9cd2695f0c8342a3b369cff48b405c826221bb0c62634a8b7db2",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "near-main-V03-V03-p80-a-parallel",
+      "final_hash": "759313b96a2ac64f82f93e146db218733180bf4f1030d07bfd4380edbc00abf5",
+      "occupied_global_edge": false
+    },
+    {
+      "run_id": "near-main-V03-V03-p80-b-crossed",
+      "final_hash": "e711329ee44ca982a3c0598af21e804c874e643b4a9ea8a75e1b4f6f142f3efb",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "separated-main-V01-V01-p20-a-parallel",
+      "final_hash": "626edfce5aef76522af5e52bb922ec295460241ef4dbb7ee054244f954cda06b",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "separated-main-V01-V01-p20-b-crossed",
+      "final_hash": "587a748bc3dc5e5b52185a934179a3a2da21c6323a502f8d7deee8f964d5ca6d",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "separated-main-V01-V01-p80-a-parallel",
+      "final_hash": "dcf93f730e99525e211d94bd39bcaef0ac93e9f6c87c8109a471c75e7ec7b5e9",
+      "occupied_global_edge": true
+    },
+    {
+      "run_id": "separated-main-V01-V01-p80-b-crossed",
+      "final_hash": "b8bbf3fa7cf76c2374769917675c00a2e3f2af12d07357fcabd5fb2f2bc155a0",
+      "occupied_global_edge": true
+    }
+  ],
+  "mismatches": 0,
+  "completed_edge_final_count": 32,
+  "completed_nonedge_final_count": 26
+}
