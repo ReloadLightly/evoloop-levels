@@ -1,0 +1,195 @@
+{
+  "node": 17,
+  "parent_node": 16,
+  "incoming_child": 0,
+  "path": [
+    0,
+    2,
+    0
+  ],
+  "depth": 4,
+  "input_identity": "8x8:01111111111117017017017017017011111117014014",
+  "input_snapshot_hash": "18f4fbbacb954a529a13e27f0bbaf20691f360126881800c0f638d8e59c55a83",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "ff0707318f962aaf4e28f2b5573a3f33d94084dd2e7e6441d4661d50dba16858",
+    "final_hash": "9d040707d78092646735fc77890edff874acf8d4fc19715a73fa2b3008059fac",
+    "completed_updates": 810,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 260,
+        "closure_first_seen_t": 260,
+        "core": [
+          110,
+          92,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014",
+        "snapshot_hash": "365bfb7e0dd72fcecf5a1b61d0799d77c361bb33b33a915626c48dd2b952fc7d",
+        "extraction_bbox": [
+          107,
+          89,
+          11,
+          11
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 540,
+        "closure_first_seen_t": 530,
+        "core": [
+          95,
+          110,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014",
+        "snapshot_hash": "14b61fe64e39720caa5e03e0e4859a0a32a69faff32ce04b98f363138a537c70",
+        "extraction_bbox": [
+          92,
+          107,
+          11,
+          11
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 810,
+        "closure_first_seen_t": 810,
+        "core": [
+          77,
+          95,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014",
+        "snapshot_hash": "896660a2fec5a944fdb1fa8f6eced7c539b2b92d2b39d11b64d69761a6d5381c",
+        "extraction_bbox": [
+          74,
+          92,
+          11,
+          11
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 119
+      },
+      {
+        "t": 100,
+        "closed_cores": 1,
+        "occupied_cells": 155
+      },
+      {
+        "t": 200,
+        "closed_cores": 1,
+        "occupied_cells": 195
+      },
+      {
+        "t": 300,
+        "closed_cores": 2,
+        "occupied_cells": 212
+      },
+      {
+        "t": 400,
+        "closed_cores": 2,
+        "occupied_cells": 280
+      },
+      {
+        "t": 500,
+        "closed_cores": 1,
+        "occupied_cells": 213
+      },
+      {
+        "t": 600,
+        "closed_cores": 2,
+        "occupied_cells": 241
+      },
+      {
+        "t": 700,
+        "closed_cores": 2,
+        "occupied_cells": 308
+      },
+      {
+        "t": 800,
+        "closed_cores": 1,
+        "occupied_cells": 233
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          92,
+          92,
+          8,
+          8
+        ],
+        "identity": "8x8:01111111111117017017017017017011111117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 260,
+        "core": [
+          110,
+          92,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014"
+      },
+      {
+        "type": "core_loss",
+        "t": 430,
+        "core": [
+          110,
+          92,
+          5,
+          5
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 530,
+        "core": [
+          95,
+          110,
+          5,
+          5
+        ],
+        "identity": null
+      },
+      {
+        "type": "core_loss",
+        "t": 710,
+        "core": [
+          95,
+          110,
+          5,
+          5
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 810,
+        "core": [
+          77,
+          95,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014"
+      }
+    ]
+  }
+}

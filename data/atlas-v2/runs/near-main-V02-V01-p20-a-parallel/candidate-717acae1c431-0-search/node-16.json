@@ -1,0 +1,194 @@
+{
+  "node": 16,
+  "parent_node": 15,
+  "incoming_child": 0,
+  "path": [
+    2,
+    0
+  ],
+  "depth": 3,
+  "input_identity": "8x8:01111111111117017017017017017011111117014014",
+  "input_snapshot_hash": "585da0419c19e4879dcb73232f1da462be53acb7d33559e43cf072c40fd36ed4",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "88870b660c7a101f63e3e671bec53c7e4986a7a89a1b70dce63f1ebb9aa1505e",
+    "final_hash": "2f5ab42c860d6fcea18dfea0f2fd63a31b8f47ab4e3f26e33d500d412db19bae",
+    "completed_updates": 820,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 270,
+        "closure_first_seen_t": 260,
+        "core": [
+          110,
+          92,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014",
+        "snapshot_hash": "2fca17043d54388ad403352535727a442f7d9f55bc94ec5efc6bd361f1481f63",
+        "extraction_bbox": [
+          107,
+          89,
+          11,
+          11
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 540,
+        "closure_first_seen_t": 540,
+        "core": [
+          95,
+          110,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014",
+        "snapshot_hash": "779c346ad852701d68fc2aae00e50bcdefb55dc2dd0a270ea2fa0d50c5c91e8b",
+        "extraction_bbox": [
+          92,
+          107,
+          11,
+          11
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 820,
+        "closure_first_seen_t": 810,
+        "core": [
+          77,
+          95,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014",
+        "snapshot_hash": "18aee7a6b06e26f8f42b994ac066ea8ec84288b70da8262cf466f8b7253e028f",
+        "extraction_bbox": [
+          74,
+          92,
+          11,
+          11
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 119
+      },
+      {
+        "t": 100,
+        "closed_cores": 1,
+        "occupied_cells": 152
+      },
+      {
+        "t": 200,
+        "closed_cores": 1,
+        "occupied_cells": 191
+      },
+      {
+        "t": 300,
+        "closed_cores": 2,
+        "occupied_cells": 210
+      },
+      {
+        "t": 400,
+        "closed_cores": 2,
+        "occupied_cells": 283
+      },
+      {
+        "t": 500,
+        "closed_cores": 1,
+        "occupied_cells": 211
+      },
+      {
+        "t": 600,
+        "closed_cores": 2,
+        "occupied_cells": 237
+      },
+      {
+        "t": 700,
+        "closed_cores": 2,
+        "occupied_cells": 305
+      },
+      {
+        "t": 800,
+        "closed_cores": 1,
+        "occupied_cells": 227
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          92,
+          92,
+          8,
+          8
+        ],
+        "identity": "8x8:01111111111117017017017017017011111117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 260,
+        "core": [
+          110,
+          92,
+          5,
+          5
+        ],
+        "identity": null
+      },
+      {
+        "type": "core_loss",
+        "t": 440,
+        "core": [
+          110,
+          92,
+          5,
+          5
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 540,
+        "core": [
+          95,
+          110,
+          5,
+          5
+        ],
+        "identity": "5x5:01111111111117017011111117014014"
+      },
+      {
+        "type": "core_loss",
+        "t": 710,
+        "core": [
+          95,
+          110,
+          5,
+          5
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 810,
+        "core": [
+          77,
+          95,
+          5,
+          5
+        ],
+        "identity": null
+      }
+    ]
+  }
+}

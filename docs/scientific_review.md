@@ -281,3 +281,82 @@ calibration; there is presently no recovered novel candidate available for a
 benefit assay. Quantitative native counts require boundary-safe observation or
 periodic detection. This recommendation does not authorize execution and does
 not establish H2, H1/H3, beneficial evolvability, or RSI.
+
+## Fresh crossed atlas: independent results review
+
+Reviewed the frozen `EXP-atlas-002` analyzer, its actual aggregate results, and
+the eight reported positive isolation paths. The independent dense-source and
+graph-link audit passed with zero mismatches in 123.16 seconds; its evidence is
+in `data/atlas-v2/lineage-integrity.json`. It checked all 144 initial/final grid
+and provenance self-hashes, replayed 24,230 original-dense updates across all
+18 candidate-producing runs and 99 observation/capture times, verified every
+one of 52 candidate first observations, and retained 52 compact raw frames.
+It verified all 88 captured native snapshots, 1,205 isolated node inputs,
+1,117 linked parent-child edges, 1,323 child arrays, and eight confirmations.
+This supplements the separate individual-generation replay: it checks actual
+source-to-assay and graph links, not every full terminal native trajectory or
+unobserved ancestry.
+
+The atlas contains 144 distinct configurations: 54 near encounters, 54 matched
+separated controls, and 36 single-organism controls. All 54 near configurations
+made contact; neither control treatment made contact or generated screened
+novel words. Native candidates occurred in 14/36 main and 4/18 held-out near
+configurations. Stable pair-novel descendants were recovered from 2/36 main
+and 0/18 held-out configurations, hence 2/54 over the complete near panel.
+Every configuration remains in these denominators, including nonproductive
+encounters. Benefit was not assayed and beneficial-heritable yield is unknown.
+
+The two positive configurations are `near-main-V01-V03-p20-a-parallel` and
+`near-main-V02-V03-p20-a-parallel`. Their eight positive assay roots are two
+captured phases of each of four encounter composite identities, nested within
+these **two** originating configurations. They are neither eight independent
+encounters nor eight independently discovered stable words. The V01/V03 path
+changes morphology from 13-by-15 to stable 14-by-14 while preserving its channel
+word. The V02/V03 path changes a transient 12-by-13 word into a stable 12-by-12
+word; that stable word also appears in the native encounter. Each reported
+positive path has two consecutive identical composite transmissions after its
+last composite identity change, and the stable word differs from both local
+input words.
+
+The stable 12-by-12 word is exactly the existing V01 catalogue word. Its
+recovery is therefore **novel relative to the V02/V03 input pair**, not new to
+the input catalogue. The stable 14-by-14 word differs from all three input
+catalogue words. These classifications describe word identity, not global
+historical priority or proof of a particular genetic parent. The conservative
+pair-novel endpoint correctly admits both outcomes, but a claim of two new
+catalogue genotypes would be incorrect.
+
+There were 52 run/composite candidate identities, six without any extractable
+captured phase, and 88 isolation roots comprising 1,205 simulated generations.
+The search records 134 simulation-budget truncations, 24 depth truncations,
+and no component-size truncations; 441 nodes collected the maximum three
+offspring. Nonconfirmation is unresolved under these limits, not exhaustive
+evidence of nonheritability. Serial imposed isolation establishes heritable
+recovery under this intervention; native channel recurrence and causal masks
+do not reconstruct native genetic ancestry.
+
+The frozen generated `data/atlas-v2/analysis.md` includes an overgeneralized
+sentence saying “zero confirmed inheritance is a measured search result.”
+For this batch, that qualification applies only to zero cells and
+nonconfirming searches. It must not be read as the overall outcome: its own
+table and machine-readable counts show **2/54 positive encounter states**.
+The generated artifact and frozen analyzer are preserved; this note records
+the necessary interpretation correction without silently changing them.
+
+Candidate ranks reverse for V01 versus V02 and V02 versus V03 between the
+V01/V02 partner columns in the main panel, but neither reversal persists in
+held-out configurations. Confirmed inheritance has no strict rank reversal.
+Four inherited interaction contrasts are -0.25 in the main panel and zero
+held-out; the remaining five are zero in both. These are descriptive contrasts
+over the specified configurations. They show conditional encounter-dependent
+recovery and candidate nonadditivity; they do not establish a stable,
+generalizable H2 effect on useful variation. H1, H3, beneficial evolvability,
+and RSI remain untested or unestablished.
+
+The most informative next experiment is prospective viability calibration of
+the declared disturbance assay, followed by paired benefit comparisons of the
+two recovered stable words against both corresponding inputs under frozen
+development and independent confirmation conditions. Its first task is to
+test whether recognized closed-core counts track reproductively viable
+organisms in the assay, so a change in structural counts is not misreported as
+benefit. Recovered V01 must retain its known-catalogue label throughout.

@@ -1,0 +1,2686 @@
+{
+  "experiment_id": "EXP-atlas-002",
+  "ids": [
+    "V01",
+    "V02",
+    "V03"
+  ],
+  "completed_runs": 144,
+  "splits": {
+    "main": {
+      "cells": [
+        {
+          "focal": "V01",
+          "partner": "V01",
+          "denominator": 4,
+          "candidate": 1,
+          "inherited": 0,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V01",
+          "partner": "V02",
+          "denominator": 4,
+          "candidate": 2,
+          "inherited": 0,
+          "unresolved_candidate_runs": 2,
+          "benefit": null
+        },
+        {
+          "focal": "V01",
+          "partner": "V03",
+          "denominator": 4,
+          "candidate": 2,
+          "inherited": 1,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V02",
+          "partner": "V01",
+          "denominator": 4,
+          "candidate": 2,
+          "inherited": 0,
+          "unresolved_candidate_runs": 2,
+          "benefit": null
+        },
+        {
+          "focal": "V02",
+          "partner": "V02",
+          "denominator": 4,
+          "candidate": 0,
+          "inherited": 0,
+          "unresolved_candidate_runs": 0,
+          "benefit": null
+        },
+        {
+          "focal": "V02",
+          "partner": "V03",
+          "denominator": 4,
+          "candidate": 2,
+          "inherited": 1,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V03",
+          "partner": "V01",
+          "denominator": 4,
+          "candidate": 1,
+          "inherited": 0,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V03",
+          "partner": "V02",
+          "denominator": 4,
+          "candidate": 2,
+          "inherited": 0,
+          "unresolved_candidate_runs": 2,
+          "benefit": null
+        },
+        {
+          "focal": "V03",
+          "partner": "V03",
+          "denominator": 4,
+          "candidate": 2,
+          "inherited": 0,
+          "unresolved_candidate_runs": 2,
+          "benefit": null
+        }
+      ],
+      "model": {
+        "candidate": {
+          "grand_mean": 0.3888888888888889,
+          "focal_marginal_means": {
+            "V01": 0.4166666666666667,
+            "V02": 0.3333333333333333,
+            "V03": 0.4166666666666667
+          },
+          "partner_marginal_means": {
+            "V01": 0.3333333333333333,
+            "V02": 0.3333333333333333,
+            "V03": 0.5
+          },
+          "pair_residual_from_additive_model": [
+            [
+              -0.1111111111111111,
+              0.1388888888888889,
+              -0.02777777777777779
+            ],
+            [
+              0.22222222222222227,
+              -0.27777777777777773,
+              0.05555555555555558
+            ],
+            [
+              -0.1111111111111111,
+              0.1388888888888889,
+              -0.02777777777777779
+            ]
+          ],
+          "interaction_contrasts": [
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                -0.25,
+                0.5
+              ],
+              "difference_of_differences": -0.75,
+              "strict_rank_reversal": true
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                -0.25,
+                0.0
+              ],
+              "difference_of_differences": -0.25,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.5,
+                0.0
+              ],
+              "difference_of_differences": 0.5,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.25,
+                -0.5
+              ],
+              "difference_of_differences": 0.75,
+              "strict_rank_reversal": true
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.25,
+                0.0
+              ],
+              "difference_of_differences": 0.25,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                -0.5,
+                0.0
+              ],
+              "difference_of_differences": -0.5,
+              "strict_rank_reversal": false
+            }
+          ]
+        },
+        "inherited": {
+          "grand_mean": 0.05555555555555555,
+          "focal_marginal_means": {
+            "V01": 0.08333333333333333,
+            "V02": 0.08333333333333333,
+            "V03": 0.0
+          },
+          "partner_marginal_means": {
+            "V01": 0.0,
+            "V02": 0.0,
+            "V03": 0.16666666666666666
+          },
+          "pair_residual_from_additive_model": [
+            [
+              -0.027777777777777776,
+              -0.027777777777777776,
+              0.05555555555555558
+            ],
+            [
+              -0.027777777777777776,
+              -0.027777777777777776,
+              0.05555555555555558
+            ],
+            [
+              0.05555555555555555,
+              0.05555555555555555,
+              -0.1111111111111111
+            ]
+          ],
+          "interaction_contrasts": [
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.25
+              ],
+              "difference_of_differences": -0.25,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.25
+              ],
+              "difference_of_differences": -0.25,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.25
+              ],
+              "difference_of_differences": -0.25,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.25
+              ],
+              "difference_of_differences": -0.25,
+              "strict_rank_reversal": false
+            }
+          ]
+        }
+      },
+      "total": 36,
+      "candidate_runs": 14,
+      "confirmed_inherited_runs": 2,
+      "contact_runs": 36,
+      "contact_range": [
+        151,
+        990
+      ]
+    },
+    "heldout": {
+      "cells": [
+        {
+          "focal": "V01",
+          "partner": "V01",
+          "denominator": 2,
+          "candidate": 0,
+          "inherited": 0,
+          "unresolved_candidate_runs": 0,
+          "benefit": null
+        },
+        {
+          "focal": "V01",
+          "partner": "V02",
+          "denominator": 2,
+          "candidate": 0,
+          "inherited": 0,
+          "unresolved_candidate_runs": 0,
+          "benefit": null
+        },
+        {
+          "focal": "V01",
+          "partner": "V03",
+          "denominator": 2,
+          "candidate": 0,
+          "inherited": 0,
+          "unresolved_candidate_runs": 0,
+          "benefit": null
+        },
+        {
+          "focal": "V02",
+          "partner": "V01",
+          "denominator": 2,
+          "candidate": 1,
+          "inherited": 0,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V02",
+          "partner": "V02",
+          "denominator": 2,
+          "candidate": 0,
+          "inherited": 0,
+          "unresolved_candidate_runs": 0,
+          "benefit": null
+        },
+        {
+          "focal": "V02",
+          "partner": "V03",
+          "denominator": 2,
+          "candidate": 1,
+          "inherited": 0,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V03",
+          "partner": "V01",
+          "denominator": 2,
+          "candidate": 1,
+          "inherited": 0,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        },
+        {
+          "focal": "V03",
+          "partner": "V02",
+          "denominator": 2,
+          "candidate": 0,
+          "inherited": 0,
+          "unresolved_candidate_runs": 0,
+          "benefit": null
+        },
+        {
+          "focal": "V03",
+          "partner": "V03",
+          "denominator": 2,
+          "candidate": 1,
+          "inherited": 0,
+          "unresolved_candidate_runs": 1,
+          "benefit": null
+        }
+      ],
+      "model": {
+        "candidate": {
+          "grand_mean": 0.2222222222222222,
+          "focal_marginal_means": {
+            "V01": 0.0,
+            "V02": 0.3333333333333333,
+            "V03": 0.3333333333333333
+          },
+          "partner_marginal_means": {
+            "V01": 0.3333333333333333,
+            "V02": 0.0,
+            "V03": 0.3333333333333333
+          },
+          "pair_residual_from_additive_model": [
+            [
+              -0.1111111111111111,
+              0.2222222222222222,
+              -0.1111111111111111
+            ],
+            [
+              0.05555555555555558,
+              -0.1111111111111111,
+              0.05555555555555558
+            ],
+            [
+              0.05555555555555558,
+              -0.1111111111111111,
+              0.05555555555555558
+            ]
+          ],
+          "interaction_contrasts": [
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                -0.5,
+                0.0
+              ],
+              "difference_of_differences": -0.5,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                -0.5,
+                -0.5
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                -0.5
+              ],
+              "difference_of_differences": 0.5,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                -0.5,
+                0.0
+              ],
+              "difference_of_differences": -0.5,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                -0.5,
+                -0.5
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                -0.5
+              ],
+              "difference_of_differences": 0.5,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            }
+          ]
+        },
+        "inherited": {
+          "grand_mean": 0.0,
+          "focal_marginal_means": {
+            "V01": 0.0,
+            "V02": 0.0,
+            "V03": 0.0
+          },
+          "partner_marginal_means": {
+            "V01": 0.0,
+            "V02": 0.0,
+            "V03": 0.0
+          },
+          "pair_residual_from_additive_model": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "interaction_contrasts": [
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V02"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V01",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V02"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V01",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            },
+            {
+              "focals": [
+                "V02",
+                "V03"
+              ],
+              "partners": [
+                "V02",
+                "V03"
+              ],
+              "focal_contrasts": [
+                0.0,
+                0.0
+              ],
+              "difference_of_differences": 0.0,
+              "strict_rank_reversal": false
+            }
+          ]
+        }
+      },
+      "total": 18,
+      "candidate_runs": 4,
+      "confirmed_inherited_runs": 0,
+      "contact_runs": 18,
+      "contact_range": [
+        251,
+        1090
+      ]
+    }
+  },
+  "controls": {
+    "separated": {
+      "total": 54,
+      "contact": 0,
+      "candidate": 0,
+      "inherited": 0
+    },
+    "alone": {
+      "total": 36,
+      "contact": 0,
+      "candidate": 0,
+      "inherited": 0
+    }
+  },
+  "inheritance": {
+    "run_identity_candidates": 52,
+    "isolation_roots": 88,
+    "generation_simulations": 1205,
+    "confirmed_roots": 8,
+    "unextractable_candidate_identities": 6,
+    "search_truncations": [
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          1,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "depth_limit",
+        "path": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 7
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          1,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 6
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          1
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2
+        ],
+        "depth": 3
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2,
+          2,
+          2
+        ],
+        "depth": 4
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "depth": 5
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          1
+        ],
+        "depth": 2
+      },
+      {
+        "reason": "simulation_budget",
+        "path": [
+          2
+        ],
+        "depth": 2
+      }
+    ],
+    "offspring_collection_cap_nodes": 441
+  },
+  "heldout_transfer": [
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V01",
+        "V02"
+      ],
+      "partners": [
+        "V01",
+        "V02"
+      ],
+      "main_reversal": true,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.75,
+      "heldout_interaction": -0.5
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V01",
+        "V02"
+      ],
+      "partners": [
+        "V01",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.25,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V01",
+        "V02"
+      ],
+      "partners": [
+        "V02",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.5,
+      "heldout_interaction": 0.5
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V01",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V02"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": -0.5
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V01",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V01",
+        "V03"
+      ],
+      "partners": [
+        "V02",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.5
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V02",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V02"
+      ],
+      "main_reversal": true,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.75,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V02",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.25,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "candidate",
+      "focals": [
+        "V02",
+        "V03"
+      ],
+      "partners": [
+        "V02",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.5,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V01",
+        "V02"
+      ],
+      "partners": [
+        "V01",
+        "V02"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V01",
+        "V02"
+      ],
+      "partners": [
+        "V01",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V01",
+        "V02"
+      ],
+      "partners": [
+        "V02",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V01",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V02"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V01",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.25,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V01",
+        "V03"
+      ],
+      "partners": [
+        "V02",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.25,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V02",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V02"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": 0.0,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V02",
+        "V03"
+      ],
+      "partners": [
+        "V01",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.25,
+      "heldout_interaction": 0.0
+    },
+    {
+      "endpoint": "inherited",
+      "focals": [
+        "V02",
+        "V03"
+      ],
+      "partners": [
+        "V02",
+        "V03"
+      ],
+      "main_reversal": false,
+      "heldout_reversal": false,
+      "same_rank_reversal": false,
+      "main_interaction": -0.25,
+      "heldout_interaction": 0.0
+    }
+  ],
+  "paired": {
+    "candidate_near_minus_separated": 0.3333333333333333,
+    "inherited_near_minus_separated": 0.037037037037037035
+  },
+  "benefit_status": "pending; beneficial-heritable yield unknown",
+  "boundary_touched_runs": 73,
+  "uncertainty": "finite-panel descriptive contrasts; deterministic states are not population replicates"
+}

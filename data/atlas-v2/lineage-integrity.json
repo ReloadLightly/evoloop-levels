@@ -1,0 +1,604 @@
+{
+  "status": "passed",
+  "counts": {
+    "initial_final_run_pairs_verified": 144,
+    "candidate_source_runs_replayed": 18,
+    "candidate_source_time_groups_verified": 99,
+    "candidate_source_files_replayed": 88,
+    "native_candidate_first_observations_verified": 52,
+    "first_observation_raw_frames_retained": 52,
+    "original_dense_updates_replayed": 24230,
+    "captured_root_graphs_verified": 88,
+    "candidate_identities_verified": 52,
+    "expanded_nodes_verified": 1205,
+    "parent_child_edges_verified": 1117,
+    "isolated_initials_verified": 1205,
+    "oversized_empty_nodes_verified": 0,
+    "child_arrays_verified": 1323,
+    "stable_observations_verified": 8,
+    "confirmations_verified": 8
+  },
+  "scope": "registered first-observation and captured native-source replay plus linked serial-isolation graphs; final self-hashes, not all final trajectories; sampled first observation is not exact onset; native ancestry remains ambiguous",
+  "experiment_id": "EXP-atlas-002",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "manifest_sha256": "40fa2c2143392cccc647323131f256b7c46ee000e925a0adefbda5de0d3f9bb5",
+  "inheritance_sha256": "9d5e281607990f8a6a64b80bed2dd971a5fd93a08bdb510bffded526cef27306",
+  "auditor_sha256": "ce32102e0d506e6efb4fb483c3833a9834eb604221fd0f8f8e3a883dd69da2c6",
+  "dense_kernel_source_sha256": "6de57b310164c91617feb3ca191751db64e63028b850a8983eca10631accf969",
+  "retained_first_observation_frames": [
+    {
+      "file": "candidate-observations/near-heldout-V02-V01-p50-d-offset-t0740.npz",
+      "run_id": "near-heldout-V02-V01-p50-d-offset",
+      "t": 740,
+      "identities": [
+        "5x12:0111111111111701170170170170170170170117014014"
+      ],
+      "grid_hash": "1d7e318ffc46885f68902a703251bfc166c5eb64bc87181da2696716784f901d",
+      "labels_hash": "e557ff819abba172625db72a5e676a726aa1e2abfb08f92d99d7840cb752fd78",
+      "file_sha256": "9b3c132a115320f6a55fb353e0e0d805da8fcb828573c682dfbe1842ee733d3d"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V02-V01-p50-d-offset-t1050.npz",
+      "run_id": "near-heldout-V02-V01-p50-d-offset",
+      "t": 1050,
+      "identities": [
+        "7x7:0111111111111701170170170170170117014014"
+      ],
+      "grid_hash": "c37ed078346355b5f5384b37b586b574deb7e829c2dcab579b95911f0d033521",
+      "labels_hash": "31bbea19060f5f0f5ec8edc340cef24e0a35ba7cb54a353788196ce1e15ddd1e",
+      "file_sha256": "afa746802842d797079923c430538c7d79088f4301db15f5d914510c8cb11e60"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V02-V01-p50-d-offset-t1300.npz",
+      "run_id": "near-heldout-V02-V01-p50-d-offset",
+      "t": 1300,
+      "identities": [
+        "5x5:01111111111117011701701117014014"
+      ],
+      "grid_hash": "25848c47116ab9b4faeb0e5c7b4a50a4711de6f150ed32661986798d3d61fb4a",
+      "labels_hash": "cc9f90e66fc4cff6cd31fe4ee723ae2ba19e06c22d8598d289c2a5429517d401",
+      "file_sha256": "381a38691398811eba993c8048d53b67095d4f98aaa4a68a54ba2915ad05ebda"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V02-V01-p50-d-offset-t1500.npz",
+      "run_id": "near-heldout-V02-V01-p50-d-offset",
+      "t": 1500,
+      "identities": [
+        "2x2:01111111111117014014"
+      ],
+      "grid_hash": "9bdfac50e414da0380294f1ff7d191083375740d8ecf996516912f8fa809e50b",
+      "labels_hash": "a65a0d9b76b63a603197547c6e77c59f5929534df6f2d896795a16dae6a24fe1",
+      "file_sha256": "9b81f6ae64bf546fbe4fb06f000968c97f02e827d2fbf1042914f22b019e118f"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V02-V03-p50-c-opposed-t0770.npz",
+      "run_id": "near-heldout-V02-V03-p50-c-opposed",
+      "t": 770,
+      "identities": [
+        "1x13:0117017017017017017017017017017017017017"
+      ],
+      "grid_hash": "b27fe5a4e1fd71baf2d50069d7ba58488f98652200eabeb735a660537ae0c31d",
+      "labels_hash": "a6092bed5539c25692a4b486ee4ff412ade0480b00b4c03a1e5b4b1544a34eab",
+      "file_sha256": "cfb2b76a19be5e558a68b8afc64d2fd2cede7e914c3b61d8521ac9e8fedc0c3b"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V03-V01-p50-d-offset-t0890.npz",
+      "run_id": "near-heldout-V03-V01-p50-d-offset",
+      "t": 890,
+      "identities": [
+        "11x12:0111111111111701701701701701701701701701701701701117014014"
+      ],
+      "grid_hash": "f7d0d20830507218adcca5d94fbde03076136caead8e749e07676447e576a9cd",
+      "labels_hash": "d57e499a68b4c2d1765d6f79292e676a7fceb7b97542d4ef9bfca11bd738fb2c",
+      "file_sha256": "8dac31debe4d506b81b9722dec3e0b60fdd757ac5360847f4551ee41f5b7ab9e"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V03-V03-p50-d-offset-t0820.npz",
+      "run_id": "near-heldout-V03-V03-p50-d-offset",
+      "t": 820,
+      "identities": [
+        "4x9:01111111111117011701701701170117014014"
+      ],
+      "grid_hash": "771c14d26fe7c59dd8b1604e0bb2f9d9dc5875191bce567833bcc973d6c4328c",
+      "labels_hash": "33d08d0e50b0f1cc57f30b74e1030c6ffc4f16f37c1297c2656a5680caa8497d",
+      "file_sha256": "e8b43b8f8386fb498aa4257d6478559f5b83d178829c2f1abb59bd39698d6f46"
+    },
+    {
+      "file": "candidate-observations/near-heldout-V03-V03-p50-d-offset-t1530.npz",
+      "run_id": "near-heldout-V03-V03-p50-d-offset",
+      "t": 1530,
+      "identities": [
+        "7x13:0111111111111701701701701701701701701701170117014014"
+      ],
+      "grid_hash": "809612f1c28303933cdc33b5a96f768ca6f83c124669e30682f27be4cfb916ab",
+      "labels_hash": "8431b3e9661bd4d0978ad30e593a5879b02c78aa44964bb05d8a795ee1cc5055",
+      "file_sha256": "db10dc81c8ec73166ba49c2897efb0f17425098b7fed052bc5a9310c1f904cc8"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V01-p20-a-parallel-t0410.npz",
+      "run_id": "near-main-V01-V01-p20-a-parallel",
+      "t": 410,
+      "identities": [
+        "9x12:011111111111170170170170170170170170170170170117014014"
+      ],
+      "grid_hash": "7c212453aa4f9f2ed4f815fa2fe0b343c98500d0547b9ea19321b7080ff479bc",
+      "labels_hash": "63e9f1eae2529bda0a68185fa3391bcf942d0d051baf3dd1cf18a1598f0de52e",
+      "file_sha256": "92209530fdc4ff4f74b982abfd290dbfafcf3eed194ae247b18591eddc34294c"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V01-p20-a-parallel-t0770.npz",
+      "run_id": "near-main-V01-V01-p20-a-parallel",
+      "t": 770,
+      "identities": [
+        "10x10:0111111111111701701701701701701701701701701117014014"
+      ],
+      "grid_hash": "b5bef3252e5d49abdaf12da373590e0e08d34641d417781e2a6b6a443ac75930",
+      "labels_hash": "c481cec0ae13da6ffdff7d9323ee2aa7730c65d746ac91e7390d3264d7845437",
+      "file_sha256": "3274559d7dfbe143ad22f5e05e9b99a2451580bd575f9542108daa1c468558b9"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V01-p20-a-parallel-t1100.npz",
+      "run_id": "near-main-V01-V01-p20-a-parallel",
+      "t": 1100,
+      "identities": [
+        "9x9:011111111111170170170170170170170170111117014014"
+      ],
+      "grid_hash": "aeacd891d2612764adab1c23d1a918f6a3cd070d8200f64047bfc278ca930d1c",
+      "labels_hash": "b8b02d8b648ba38ea78ac89f7cd6012394ff173b799417312b8fb131db0a1e81",
+      "file_sha256": "4b66f914d9c9da5ff6af0b68be46fdbc3d4ae71138e6ff3b2929c2148c1cd8d7"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V01-p20-a-parallel-t1400.npz",
+      "run_id": "near-main-V01-V01-p20-a-parallel",
+      "t": 1400,
+      "identities": [
+        "7x7:0111111111111701701701701701111117014014"
+      ],
+      "grid_hash": "255f10616f9ea67514d2ad2a77e3af88cacbd4e7ba991aa04cc09a6b92ce5b0b",
+      "labels_hash": "646daab043c3a611547d0fefec619617f05de727478bd478d74730a4dff5f244",
+      "file_sha256": "dbe107121c882408bf0302d28922ee1f605d4e51da0c8baf1ea1db7b3166af18"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V02-p20-a-parallel-t1210.npz",
+      "run_id": "near-main-V01-V02-p20-a-parallel",
+      "t": 1210,
+      "identities": [
+        "8x12:0111111111111701701701701701701170170170170117014014"
+      ],
+      "grid_hash": "79fb22fc05e43aa00baadf652d0861e6fef5fa44257c84f189f16434f5d42703",
+      "labels_hash": "fda98d775a60984ff51d2555bd404b6251d4bf7387197f8481b8b28ce6ea8859",
+      "file_sha256": "beaf0711938f8bfc2f91d31fefe6619c5341d2c2a31f2f0974fe6e685a5e9b3f"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V02-p20-a-parallel-t1550.npz",
+      "run_id": "near-main-V01-V02-p20-a-parallel",
+      "t": 1550,
+      "identities": [
+        "9x9:010117014014011111111111170170170170170170117017"
+      ],
+      "grid_hash": "af80c7c849c8e78820500556006830c833c0a5099a8144b3db4a2b77b31f3ac2",
+      "labels_hash": "a9a21681aff177f7bb690e2974a51e726a590961d295d6bb229ea022a56af3dc",
+      "file_sha256": "f14dabbd5a393e3fd46482c1065a187cbe77eb18b7a40ebcde8dc21e20baacce"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V02-p20-a-parallel-t1560.npz",
+      "run_id": "near-main-V01-V02-p20-a-parallel",
+      "t": 1560,
+      "identities": [
+        "9x9:011111111111170170170170170170117017011117014014"
+      ],
+      "grid_hash": "6eb805fa98f4d7ea8caa1b6249d33c57324b5ea12f714fc99278d56d71b7db51",
+      "labels_hash": "cbb05e6c66339312d79325e27e041e64368cfe3387cf60dedb086281415de5a9",
+      "file_sha256": "8a58642f758d2202f010d991d652e08c991a8f01fe8beb13af940a3309d387ea"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V02-p80-a-parallel-t1150.npz",
+      "run_id": "near-main-V01-V02-p80-a-parallel",
+      "t": 1150,
+      "identities": [
+        "8x12:0111111111111701701701701701701170170170170117014014"
+      ],
+      "grid_hash": "1747783d73b257afc903b9fa60903714da850b9934846ec7f8c0eac5e94cddd4",
+      "labels_hash": "622cbc8dc0e6624e646528e551fad958a196b86553c1e752efd7147ef553fd75",
+      "file_sha256": "36f71f9d5048c13a267e5254e9bfaf70c8d6f0105f885d347fd4ae6f3f398d3e"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V02-p80-a-parallel-t1490.npz",
+      "run_id": "near-main-V01-V02-p80-a-parallel",
+      "t": 1490,
+      "identities": [
+        "9x9:010117014014011111111111170170170170170170117017"
+      ],
+      "grid_hash": "278736880dcf26b252059acbd86e669b3e143e36e772b6df4ff8b05255d2b99d",
+      "labels_hash": "0f896df358db787c14a9d27e244676295dedc7079b9b7b3387194aff91d8250d",
+      "file_sha256": "27663aebf7c8b28a7a2d40de9ea99ed17056399520f35070f1e11a3f3f6fb96d"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V02-p80-a-parallel-t1500.npz",
+      "run_id": "near-main-V01-V02-p80-a-parallel",
+      "t": 1500,
+      "identities": [
+        "9x9:011111111111170170170170170170117017011117014014"
+      ],
+      "grid_hash": "ae634b315249f0e19d1bf14837b798f41136f6f4eb87c6bfd9e897626a620275",
+      "labels_hash": "4f57ef96060000eeca1548a6d07fd6e7f2ca2d4b2abb94589f5b8115b3d46d94",
+      "file_sha256": "15db015fbe30d8d78d1ddaf57992701c1dbdd250426b736f72490b9a25de3971"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V03-p20-a-parallel-t1110.npz",
+      "run_id": "near-main-V01-V03-p20-a-parallel",
+      "t": 1110,
+      "identities": [
+        "13x15:01111111111117017017017017017017017017017017017017011701170117014014"
+      ],
+      "grid_hash": "bd55cbf408aad989e18d829a650ca2e0385a9a338efbe6750a23b782aacfc4fe",
+      "labels_hash": "1fdf8e4b3cfd82d4610763ad73ffee49ab3012c894545add391fffee79274b64",
+      "file_sha256": "cc2df6e006148dbce44233000235d9491d72593c607a54979bb00678df467123"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V03-p20-a-parallel-t1550.npz",
+      "run_id": "near-main-V01-V03-p20-a-parallel",
+      "t": 1550,
+      "identities": [
+        "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+      ],
+      "grid_hash": "99581ed7eaac397882c50f2a07e630eadced1e14d9dad30fd1d7a3d6d444fe3c",
+      "labels_hash": "787b0ede83607b46e2c3e4829f860d2be322f2c08504ac2e326abd4d3f0c41d2",
+      "file_sha256": "a51e4207e7757353a9abfe5a2d25370b9958f63d5ffeb81419fd6e358424f2c2"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V03-p80-a-parallel-t0780.npz",
+      "run_id": "near-main-V01-V03-p80-a-parallel",
+      "t": 780,
+      "identities": [
+        "1x13:0111111111111701701701701701170117014014"
+      ],
+      "grid_hash": "b4ca09a076ad40fcc0a493c2fe77bcb689b53f8af2c569551aae8c4373296fbb",
+      "labels_hash": "a045237fffb202257875dfe581c18e64f368789abb9804102d1a412feabf8990",
+      "file_sha256": "ef1d35e257553be1dec7cfb8ff8e6ace03c1976abe796245d85b75ea377310d8"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V03-p80-a-parallel-t1020.npz",
+      "run_id": "near-main-V01-V03-p80-a-parallel",
+      "t": 1020,
+      "identities": [
+        "5x5:01111111111117017017011117014014"
+      ],
+      "grid_hash": "891d598e4f8ed4bc4c47e9f34d52c135fa1e753d469dc4494de52ce1bb38e91f",
+      "labels_hash": "a2911bedc80b6631333ddea898be302048599d2fc334b6f9702eb68e91597688",
+      "file_sha256": "2db7d91841080fb893fe91dae2bc7f493240a05257fbbc856773ba3dc1908494"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V03-p80-a-parallel-t1220.npz",
+      "run_id": "near-main-V01-V03-p80-a-parallel",
+      "t": 1220,
+      "identities": [
+        "2x2:01111111111117014014"
+      ],
+      "grid_hash": "7f77c0a13d4354fd60a2bfa00714a756bec467ee61d5dc43902cf3bcf0460255",
+      "labels_hash": "2cd8e0af27b0630333c3aed052b9ceaefec5b222fbfa6794554e7f868a4761eb",
+      "file_sha256": "e36c670a766df5320c2f3130431f2c7904ca7df1bcc4fca6b3938a3d74906b23"
+    },
+    {
+      "file": "candidate-observations/near-main-V01-V03-p80-a-parallel-t1470.npz",
+      "run_id": "near-main-V01-V03-p80-a-parallel",
+      "t": 1470,
+      "identities": [
+        "1x13:0007014014011111111111170170170170170117"
+      ],
+      "grid_hash": "cad8621078e5ea5cbe723fa50d962b703fd80d978a87b95abb8f2398da820b96",
+      "labels_hash": "f869ffb1747d4c14fb14cf2ac036cd4ed3f5a3e3ada3894b6b38aabd4f809b74",
+      "file_sha256": "3600107bf851345722f9064e7551c92a6267b04f0cfa9b867ca58e3b04a6cc30"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p20-a-parallel-t0420.npz",
+      "run_id": "near-main-V02-V01-p20-a-parallel",
+      "t": 420,
+      "identities": [
+        "11x12:0111111111111701701701701701701701701701701701170117014014"
+      ],
+      "grid_hash": "7a8f607eb26cde4374e6ef6e0653ad300e0355d4811e8c1d8e64343b48690a27",
+      "labels_hash": "7cd2193b964ef8c76f8ae25bddec1ae7f1e38490dfe69e0aec4d8bab0e056a92",
+      "file_sha256": "9664e7ad95932cfbb769b2e51dded0b60d4b4597e1b985e84bed5813eb8a7a81"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p20-a-parallel-t0800.npz",
+      "run_id": "near-main-V02-V01-p20-a-parallel",
+      "t": 800,
+      "identities": [
+        "11x11:01111111111117017017017017017017017017017017011117014014"
+      ],
+      "grid_hash": "3eb164924fdf46167afd3f5df69efb3fe4406e5dca6b43e491be9464fd667386",
+      "labels_hash": "78db926ffcfb74087bc2deb067942ba1a3d26fcbd3ce1404607691a3e5ad7686",
+      "file_sha256": "a3c041f1ef1061ce103f1204d02c15495b69a0f04e67986a8801910aadacf7b1"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p20-a-parallel-t1160.npz",
+      "run_id": "near-main-V02-V01-p20-a-parallel",
+      "t": 1160,
+      "identities": [
+        "10x10:0111111111111701701701701701701701701701111117014014"
+      ],
+      "grid_hash": "7acbd5bb06362a5e468904bc4adfd182ab0e88d0f080205117bae24e8f8a1a56",
+      "labels_hash": "73512053755f59ea1d47dc4c350bd1aca4f02eb558dcc67b3b97e9e209877b9a",
+      "file_sha256": "00ce9bb3de4b57e1df66935d21af2aa4b17e36bc791d7f3f7e7263f1df19f1ea"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p20-a-parallel-t1480.npz",
+      "run_id": "near-main-V02-V01-p20-a-parallel",
+      "t": 1480,
+      "identities": [
+        "8x8:01111111111117017017017017017011111117014014"
+      ],
+      "grid_hash": "4cdc614975bb6f30cd9301f4c0511b69430a3e7d47b5b7a055fa94eef6a72ee1",
+      "labels_hash": "a34e4da91ac4b4dda1431a56f989f61847da08881b424c1a35a306adb06006f9",
+      "file_sha256": "274c17e17149f1479d1b6902b8d7df89bd68b049f62bf2c46fc2bf26a4682d1b"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p80-a-parallel-t0800.npz",
+      "run_id": "near-main-V02-V01-p80-a-parallel",
+      "t": 800,
+      "identities": [
+        "12x13:01111111111117017017017017017017017017017017017017011117014014"
+      ],
+      "grid_hash": "d5de173a26e7d5d8167b467d799ed0831748ed7c160e9e9e0370ace5bf0e432d",
+      "labels_hash": "414e7400ca148e4a59ba3a81e1ef26a5fb17ce3b73159d6a4189ad060f77d22f",
+      "file_sha256": "ecd6039183a3999d27e83f900ff0b2d1184413657ff8b92fcabceb117d3ba475"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p80-a-parallel-t1200.npz",
+      "run_id": "near-main-V02-V01-p80-a-parallel",
+      "t": 1200,
+      "identities": [
+        "12x12:011111111111170170170170170170170170170170170170111117014014"
+      ],
+      "grid_hash": "53d349b302e09e20beaf0a19464cce89f87cadae068b45505cd6bd951170b70e",
+      "labels_hash": "18fc9918be51f8484504613363c8d91e3cf3ca30017f3296f0cf3924a66a7d86",
+      "file_sha256": "9b59dbb2cd7dd790c09102f6bd20df3c7f8d4d045ff9bc9e442757c96c240532"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V01-p80-a-parallel-t1580.npz",
+      "run_id": "near-main-V02-V01-p80-a-parallel",
+      "t": 1580,
+      "identities": [
+        "11x11:01111111111117017017017017017017017017017011111117014014"
+      ],
+      "grid_hash": "612e32edfc89c3393ef5e1c6f5b20f37d05cad6f163b5056fc27fc64bbbd0cdf",
+      "labels_hash": "ecfc23050ee578910b4eef37e1b88b0ced026995db61d47aeebc4df22d77c347",
+      "file_sha256": "a02eaeea4902ffb85d8201f8a65b18590cd00c0bd7fb6225b19874759bf65593"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p20-a-parallel-t0240.npz",
+      "run_id": "near-main-V02-V03-p20-a-parallel",
+      "t": 240,
+      "identities": [
+        "13x13:0040111111111111701701701701701701701701701170170170170170117014"
+      ],
+      "grid_hash": "c2744ef5bb6ac47c030f1314c012f699b84fa0067cbcc344cc794666b0535235",
+      "labels_hash": "b7f9df2664bdd914466b2f9b64ff0739142c1b4d5ac7adcd8120085d533eeb09",
+      "file_sha256": "df533e1c53f99fcc94c6717fb104c4fff73295e04996321f5f73cf0b1e1a6108"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p20-a-parallel-t0460.npz",
+      "run_id": "near-main-V02-V03-p20-a-parallel",
+      "t": 460,
+      "identities": [
+        "12x13:01111111111117017017017017017017017017017017017011170117014014"
+      ],
+      "grid_hash": "40d418b8a6cabc698946d436e698c0c229053bc07bfa1aa14e3b17299d3da48d",
+      "labels_hash": "582db120b92875abb651c939f226064b49b390159a615b638e3a404672835ec8",
+      "file_sha256": "52c9d587dc0351e9d8e3dc72b573d84b5c7b8e3d15a7c956719b341c73ba496a"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p20-a-parallel-t0860.npz",
+      "run_id": "near-main-V02-V03-p20-a-parallel",
+      "t": 860,
+      "identities": [
+        "12x12:011111111111170170170170170170170170170170170170170117014014"
+      ],
+      "grid_hash": "9eeac1b61482c4a96545d96a8276b54c122b00bf628c53ebda1e193320695db0",
+      "labels_hash": "6fec32a7a4e280d81bf8e6215ec02b3806869751f303190740f015f6996a7511",
+      "file_sha256": "8475ad1898c5c07a0de04a2743f3ea36c5cef65716d520d76f89166bb89547e0"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p20-a-parallel-t1470.npz",
+      "run_id": "near-main-V02-V03-p20-a-parallel",
+      "t": 1470,
+      "identities": [
+        "12x13:00011701701701701701701701117011701401401111111111117017017017"
+      ],
+      "grid_hash": "b810fd95e3f09dc865769f484ae377b52162cfdc89c67d9d30790c2b55ad218e",
+      "labels_hash": "bdf698c86cf05d1e1fa59eb2948e3bfbf9ea1e75e5255d183388de0e9f6f0f46",
+      "file_sha256": "ff8061d8d5d2a11ed47cd906d377f59fb23ed71d623ae486c88d3d9c25aff1dd"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t0320.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 320,
+      "identities": [
+        "9x13:01111111111117017017017017017017011701701701170117014014"
+      ],
+      "grid_hash": "d3fa3d8806eb973e15c9e0b8afafc51270686fdfe3f52f7b8b39a82e822a2819",
+      "labels_hash": "56440cc1971813cff9eb4a773bca84b3a24147dd6e651b1b489829d63ef24e1f",
+      "file_sha256": "fb9f4f24cb466013d12fbeed9d803164685dc9b56ed1a726e4179454d06215ce"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t0690.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 690,
+      "identities": [
+        "10x10:0111111111111701701701701701701701170170170117014014"
+      ],
+      "grid_hash": "982c0d8213d571cf83d4569dd35ac3fa2517da0477448bc983b4195e52be5159",
+      "labels_hash": "fc07032856eeed7b1221c07efb003223b1077e90c0df048851ec6c53c2f0b4e6",
+      "file_sha256": "5eb88c2747972b8870bcc9890c67f4976c39743b94ade4f95d82d19aca858352"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t1020.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 1020,
+      "identities": [
+        "9x9:011111111111170170170170170170170117011117014014"
+      ],
+      "grid_hash": "aab345ba57d92b9d93fcda1307689e653db9e99b879f62de7bbdf6097aec934f",
+      "labels_hash": "fc56eaca0f698ff1338daafef7807c9341c7da77dc3b426b6955bbf6c9edec24",
+      "file_sha256": "b7cc04dd72a1f41fbbefcd1dd60ac8fb88ae21d0ce42d7222602cd9b2c4a009b"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t1300.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 1300,
+      "identities": [
+        "9x13:00011701701701170170170117011701401401111111111117017017"
+      ],
+      "grid_hash": "46b9785f5a3bfa3771fd514a252032d4aa421cbb82ffe45bbf5dc0ab87f4e672",
+      "labels_hash": "015543ba5cfbc31d0a598342eb8ecb0359d29ad0faa5861b90e1fa9f142ecff7",
+      "file_sha256": "c00e986b4213500d300de3272d6a871683e092c946af0e0acfeb5758b4042e12"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t1320.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 1320,
+      "identities": [
+        "7x7:0111111111111701701701701701111117014014"
+      ],
+      "grid_hash": "11a3febc44b830a638adf06594aa35ca8a22723d272360e33467e016600cc4b8",
+      "labels_hash": "73abf27a3290d64653f5b07b71a82478c2138cde94be356678ca87c463b71c25",
+      "file_sha256": "003612d3a96e592cf17fdf152356e7f09ac404da33427f47d3e70b6f22eab77c"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t1420.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 1420,
+      "identities": [
+        "9x9:010117014014011111111111170170170170170170170117"
+      ],
+      "grid_hash": "ee91f1aadbe57139a785c6947bc13b52835b790844c4b2d74f8e3b4c493d4b9b",
+      "labels_hash": "603de532790e6855a1e4f197f185fcbd94edb1d7178764d27f49ea4a7ff71861",
+      "file_sha256": "95c506bb782ff1174ddd056bb314321707dc3a136330ad0887b8b20d0267de2f"
+    },
+    {
+      "file": "candidate-observations/near-main-V02-V03-p80-a-parallel-t1560.npz",
+      "run_id": "near-main-V02-V03-p80-a-parallel",
+      "t": 1560,
+      "identities": [
+        "4x4:0111111111111701111117014014"
+      ],
+      "grid_hash": "ded48112e4d3860f3d9d7ee79f82eefef3c29891badf9de3b353464441dc8a24",
+      "labels_hash": "8b0a59b8b0d7497afaa052ae417c40917a948d23d3646af70b094f9fe39b7657",
+      "file_sha256": "300fc9aab94b78a8cbf377743752d77e36e878f4c4df7cc00f0aa7f4c3f0ef85"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V01-p80-a-parallel-t0800.npz",
+      "run_id": "near-main-V03-V01-p80-a-parallel",
+      "t": 800,
+      "identities": [
+        "12x13:01111111111117017017017017017017017017017017017017011117014014"
+      ],
+      "grid_hash": "14d6318611f1a5c8b54753d414c5dbf0102e3a0e5603535fe6c564e2a18d0984",
+      "labels_hash": "a8c491283a73649c1c0e82963042d03005987e11e7dabb951869a656dd1963d1",
+      "file_sha256": "1fd1b947bcb14d174ce924700a58eab8c3feeee6a7c70f901b45b4aaf5d9acac"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V01-p80-a-parallel-t1200.npz",
+      "run_id": "near-main-V03-V01-p80-a-parallel",
+      "t": 1200,
+      "identities": [
+        "12x12:011111111111170170170170170170170170170170170170111117014014"
+      ],
+      "grid_hash": "06a7a6ebe039c94c7227efe340f63514446370ae0d634e854438d044e1f78855",
+      "labels_hash": "716fa4fcb921a2332090118c78c4bc1fa23656a286ce6fbf0176e5763ed5478f",
+      "file_sha256": "d82b26164ecc414c95ddfd8c8fb85e779aff798bfced99c18701b80b55dcabb8"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V01-p80-a-parallel-t1580.npz",
+      "run_id": "near-main-V03-V01-p80-a-parallel",
+      "t": 1580,
+      "identities": [
+        "11x11:01111111111117017017017017017017017017017011111117014014"
+      ],
+      "grid_hash": "14b10a5747c4ae54b8b7157cab07e6c394a7a42ba17a69f5b9353eaa564ee3b4",
+      "labels_hash": "9fda82e7cecf5bdae28b3152e6731c41eb188519b4911fd515445000b567471c",
+      "file_sha256": "ed578388651b71dede94e29fa2a02e81d2ad5fcff54c180a7a717b12bbab479e"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V02-p20-a-parallel-t1140.npz",
+      "run_id": "near-main-V03-V02-p20-a-parallel",
+      "t": 1140,
+      "identities": [
+        "13x13:0070170117014014011111111111170170170170170170170170170117017017"
+      ],
+      "grid_hash": "b06a52310311dcbf1aa83c273a18d7ebe67891f32900eca0b51e00add7d921e2",
+      "labels_hash": "8f903002d9d5b51976b9e7e126e19ce7873b8f8f79be7897da3349c45ddd13d1",
+      "file_sha256": "b4def104cbb269da9e2a22bd06e32867b67699992bc05882365729ef04e08ea0"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V02-p80-a-parallel-t1080.npz",
+      "run_id": "near-main-V03-V02-p80-a-parallel",
+      "t": 1080,
+      "identities": [
+        "13x13:0070170117014014011111111111170170170170170170170170170117017017"
+      ],
+      "grid_hash": "4045b1e7d46633040394707fa9202d1e1cfb25353bdb4987e340e11aa80dbcd3",
+      "labels_hash": "b09dff112aa154c975fa453238a8c7a1bfba8ac42fb1c6693d0c66830df5a30b",
+      "file_sha256": "5b4f15140a6c19b290358bb86f72f0f69368692fc203b6ccd14dde35aea9403f"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V03-p20-a-parallel-t0450.npz",
+      "run_id": "near-main-V03-V03-p20-a-parallel",
+      "t": 450,
+      "identities": [
+        "11x13:011111111111170170170170170170170170170170111701170117014014"
+      ],
+      "grid_hash": "088215e1c25815ce13634cad7331aed3155cdfdbb70ce2c847234a287c619f8e",
+      "labels_hash": "155d0fcc0b986c611287b52660e56ee007c7cc6647032812db6bf6a9143f8992",
+      "file_sha256": "c4dccd5391c54140730f6c64e5e93fa982f29e99cdf317495a25203a4df8ffe6"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V03-p20-a-parallel-t0840.npz",
+      "run_id": "near-main-V03-V03-p20-a-parallel",
+      "t": 840,
+      "identities": [
+        "11x11:01111111111117017017017017017017017017017011170117014014"
+      ],
+      "grid_hash": "513c469cf88f3a844c525b5c266cf03a925bf80d21f9ce42c6068ecb080a0cf6",
+      "labels_hash": "8f348bff9130d278aae78e9160cb313273598dbd3335d077c54d9802cd5f81b2",
+      "file_sha256": "8e89129b0330f4507164b6a6aef43ff61ab406193b63791d9c87c0acdf6d316f"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V03-p20-a-parallel-t1200.npz",
+      "run_id": "near-main-V03-V03-p20-a-parallel",
+      "t": 1200,
+      "identities": [
+        "10x10:0111111111111701701701701701701701701701170117014014"
+      ],
+      "grid_hash": "95223a929f6e1977602c58c2b22854390d7fb7a49fc566cec5767b499995e02e",
+      "labels_hash": "4f403ce9f6659ec757131d785c2b026fc42c256687c827f42435bc0427691e62",
+      "file_sha256": "760cef8bad65b5999a216b0b59b28df36ac1b02b55825a982c83ae50b46f59ad"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V03-p20-a-parallel-t1530.npz",
+      "run_id": "near-main-V03-V03-p20-a-parallel",
+      "t": 1530,
+      "identities": [
+        "9x9:011111111111170170170170170170170170170117014014"
+      ],
+      "grid_hash": "6df468a914a88765ec91b46474fdbe5bcef24c1eec67c6e58c3efef7f93356a1",
+      "labels_hash": "daec71b63c6f9c049513913392721f803c88a45b440cfffeb100b7b05a48fbda",
+      "file_sha256": "e3b7c225dc8b821787d93b6f8dde2b8e8a84bfb2047796446031c4591d2c3f65"
+    },
+    {
+      "file": "candidate-observations/near-main-V03-V03-p80-a-parallel-t0470.npz",
+      "run_id": "near-main-V03-V03-p80-a-parallel",
+      "t": 470,
+      "identities": [
+        "13x14:011111111111170170170170170170170170170170170170170117011701114014"
+      ],
+      "grid_hash": "7c516a4d69100a4858acf5ff2bc6f87063cae10281a86bac1280a0ca531f1a35",
+      "labels_hash": "3eba508c1c0c339059d852a0e0404e431f29d7eb7d8e973388fa88e41a5b1c76",
+      "file_sha256": "0617cd55d517ffa382f90ab72936561722c5d65d91130fdd23150718e0c30575"
+    }
+  ],
+  "mismatches": 0,
+  "seconds": 123.16058664599404
+}
