@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "ready_before_main_acquisition",
+  "experiment_id": "EXP-age-geometry-cross-001",
+  "manifest_sha256": "8ab856dddb95099ab0125498f5ef33bd5803efa435843c7e01dca5227bc8f264",
+  "design_integrity_sha256": "af9e88e976f6394bff457dac71f78f8d5d16c22e2fc487f15da37a9553699d7b",
+  "code_hashes": {
+    "evoloop/crossed.py": "630e7283594df2562f0ae0ff11e206befeb2721b0ac49a48fdbc3dca4f30c4a0",
+    "scripts/crossed_assay.py": "d1333c041d08ea951c359eab34f196f85f91707dde29c81ee0d5b525c437bd10",
+    "scripts/verify_crossed.py": "65ac8194a18aa593c1006ca26ba5bc9cb1964460b6033c9386e7761019534269",
+    "tests/test_crossed_assay.py": "6ac4e3b22f4ac9c453c4167934b34a01a5faab9c892079c6e89a7380ab540098",
+    "tests/test_crossed_audit.py": "e5237d32486f5333811772481a1d3b84f5b5f8b0b6be8f5ff0efda69a4fdccba",
+    "scripts/verify_developmental.py": "802c0bc3fffbd50e0f12001932b70dba8fd3164e426eb0179a3483b5b91b7429",
+    "scripts/memory_guard.py": "a41279ab050e038a4d6f6e33dfad6e957d00c6db973c3db95c9d65b85aa27b4f"
+  },
+  "source_records_sha256": {
+    "data/atlas-v2/manifest.json": "40fa2c2143392cccc647323131f256b7c46ee000e925a0adefbda5de0d3f9bb5",
+    "data/atlas-v2/analysis.json": "08a8ba3aa3769dee5cff30852fdb98dd9ed0e264904fda595a4340c79ea31f5e",
+    "data/atlas-v2/confirmed/catalogue.json": "d4aa9374a8951d2bbbe493f807d0049f258893f5e9854445621df2cd22fca3a3"
+  },
+  "validation_sha256": "14f2cee042b6e6ba6e9d85f2546c9918e0d6226adf67677216b11e9e4fdb7a91",
+  "review_sha256": "a6337bdf27c5ef2ace9155be5e73aea5fabd1ed742d751602a5c96ab25962a6f",
+  "pre_acquisition_inventory": {
+    "worlds": false,
+    "searches": false,
+    "roots": false,
+    "results.json": false,
+    "analysis.json": false,
+    "benchmark.json": false,
+    "acquisition.json": false,
+    "integrity.json": false,
+    "integrity-proofs": false
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.2.6"
+  },
+  "execution": {
+    "workers": 1,
+    "minimum_available_memory_mib": 200,
+    "benchmark_before_acquisition": true,
+    "schedule": "acquisition, independent audit, rendering and Git packing sequentially",
+    "resume": "hash-bound completed cases; all interruptions retained"
+  },
+  "main_outcomes": "not acquired"
+}

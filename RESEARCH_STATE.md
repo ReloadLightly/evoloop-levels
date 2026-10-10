@@ -1,4 +1,4 @@
-# Research state — new source measure qualifies; crossed design frozen before responses
+# Research state — crossed implementation validated; responses pending
 
 Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
 
@@ -22,9 +22,13 @@ A/B develop, E/F reserve distinct complete spatial challenges; aliases are retai
 including cross-state and already observed development starts. Each layout includes
 its removed-clone position, not a pure distance treatment. Exact one-third cells,
 occupied-state bins and 3→2 registered cores are verified, retaining whole arms.
-Responses remain unacquired. Next: implement/validate a separately hash-bound
-crossed runner and independent audit, then benchmark one worker before main
-acquisition under the guard. H1/H3 remain untested; RSI is unestablished.
+Responses remain unacquired at implementation readiness. The new crossed runner
+and independent dense response auditor pass 63 consolidated tests. The cache
+binds complete array shape and data type as well as bytes, identity, endpoint,
+rules and configuration; earlier frozen implementations remain unchanged.
+Next: commit and remotely verify the hash-bound readiness receipt, benchmark
+the first control with one worker, then acquire and independently audit all
+160 worlds sequentially under the guard. H1/H3 remain untested; RSI is unestablished.
 
 Prior completed evidence: all 40 paired response worlds and ten separate calibration
 worlds have completed. Each constructed three-clone colony loses one complete

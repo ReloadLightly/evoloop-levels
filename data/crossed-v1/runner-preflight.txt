@@ -1,0 +1,71 @@
+test_all_crossed_cells_and_difference_of_age_differences (tests.test_crossed_assay.CrossedArithmeticTests.test_all_crossed_cells_and_difference_of_age_differences) ... ok
+test_panel_averages_condition_fractions_and_population_means (tests.test_crossed_assay.CrossedArithmeticTests.test_panel_averages_condition_fractions_and_population_means) ... ok
+test_signed_interval_subtraction_and_unbounded_endpoints (tests.test_crossed_assay.CrossedArithmeticTests.test_signed_interval_subtraction_and_unbounded_endpoints) ... ok
+test_cached_keys_consume_local_admission_and_unsearched_sources_remain (tests.test_crossed_assay.CrossedRunnerTests.test_cached_keys_consume_local_admission_and_unsearched_sources_remain) ... WORLD synthetic Q/C 3 4
+REUSE WORLD synthetic
+ok
+test_failed_robust_criterion_retains_unresolved_advantage_and_gates (tests.test_crossed_assay.CrossedRunnerTests.test_failed_robust_criterion_retains_unresolved_advantage_and_gates) ... ok
+test_readiness_refuses_any_response_evidence (tests.test_crossed_assay.CrossedRunnerTests.test_readiness_refuses_any_response_evidence) ... ERROR
+test_receipt_reuse_rejects_changed_native_artifacts (tests.test_crossed_assay.CrossedRunnerTests.test_receipt_reuse_rejects_changed_native_artifacts) ... ERROR
+test_cache_endpoint_identity_and_config_bound (tests.test_developmental.DevelopmentalMeasureTests.test_cache_endpoint_identity_and_config_bound) ... ok
+test_empty_measured_zero (tests.test_developmental.DevelopmentalMeasureTests.test_empty_measured_zero) ... ok
+test_false_dominates_missing (tests.test_developmental.DevelopmentalMeasureTests.test_false_dominates_missing) ... ok
+test_interval_and_zero (tests.test_developmental.DevelopmentalMeasureTests.test_interval_and_zero) ... ok
+test_panel_does_not_pool (tests.test_developmental.DevelopmentalMeasureTests.test_panel_does_not_pool) ... ok
+test_tie_fails_and_unknown_kept (tests.test_developmental.DevelopmentalMeasureTests.test_tie_fails_and_unknown_kept) ... ok
+test_unresolved_retained (tests.test_developmental.DevelopmentalMeasureTests.test_unresolved_retained) ... ok
+test_absent_undisturbed_structure_makes_ratio_undefined (tests.test_developmental_audit.DevelopmentalAuditTests.test_absent_undisturbed_structure_makes_ratio_undefined) ... ok
+test_cache_key_requires_whole_input_identity_endpoint_and_limits (tests.test_developmental_audit.DevelopmentalAuditTests.test_cache_key_requires_whole_input_identity_endpoint_and_limits) ... ok
+test_independent_summary_matches_runner_and_failed_gate_cannot_be_rescued (tests.test_developmental_audit.DevelopmentalAuditTests.test_independent_summary_matches_runner_and_failed_gate_cannot_be_rescued) ... ok
+test_integer_threshold_preserves_exact_boundary (tests.test_developmental_audit.DevelopmentalAuditTests.test_integer_threshold_preserves_exact_boundary) ... ok
+test_memory_stop_records_interruption_and_zero_mismatches (tests.test_developmental_audit.DevelopmentalAuditTests.test_memory_stop_records_interruption_and_zero_mismatches) ... ok
+test_noncontractible_component_is_not_an_eligible_zero (tests.test_developmental_audit.DevelopmentalAuditTests.test_noncontractible_component_is_not_an_eligible_zero) ... ok
+test_overlap_and_ties_fail_strict_superiority_missing_bounds_unresolved (tests.test_developmental_audit.DevelopmentalAuditTests.test_overlap_and_ties_fail_strict_superiority_missing_bounds_unresolved) ... ok
+test_panel_averages_exact_condition_ratios_without_pooling (tests.test_developmental_audit.DevelopmentalAuditTests.test_panel_averages_exact_condition_ratios_without_pooling) ... ok
+test_retention_uses_crossed_envelope_terms (tests.test_developmental_audit.DevelopmentalAuditTests.test_retention_uses_crossed_envelope_terms) ... ok
+test_shared_component_rejection_is_independently_checked (tests.test_developmental_audit.DevelopmentalAuditTests.test_shared_component_rejection_is_independently_checked) ... ok
+test_shared_oversized_nonconfirming_and_unsearched_remain_R (tests.test_developmental_audit.DevelopmentalAuditTests.test_shared_oversized_nonconfirming_and_unsearched_remain_R) ... ok
+test_unknown_recovery_counts_source_once_without_retroassigned_identity (tests.test_developmental_audit.DevelopmentalAuditTests.test_unknown_recovery_counts_source_once_without_retroassigned_identity) ... ok
+test_unsearched_unknown_remains_unresolved_with_reproduction_missing (tests.test_developmental_audit.DevelopmentalAuditTests.test_unsearched_unknown_remains_unresolved_with_reproduction_missing) ... ok
+test_zero_is_observation_and_missing_denominator_is_none (tests.test_developmental_audit.DevelopmentalAuditTests.test_zero_is_observation_and_missing_denominator_is_none) ... ok
+test_zero_undisturbed_confirmation_retains_unbounded_upper (tests.test_developmental_audit.DevelopmentalAuditTests.test_zero_undisturbed_confirmation_retains_unbounded_upper) ... ok
+test_away_exact (tests.test_periodic_tracking.PeriodicTests.test_away_exact) ... ok
+test_shared_across_seam (tests.test_periodic_tracking.PeriodicTests.test_shared_across_seam) ... ok
+test_translations_and_replay (tests.test_periodic_tracking.PeriodicTests.test_translations_and_replay) ... ok
+test_winding_component_ineligible (tests.test_periodic_tracking.PeriodicTests.test_winding_component_ineligible) ... ok
+test_budget_exhaustion_remains_unresolved (tests.test_fate.FateSearchTests.test_budget_exhaustion_remains_unresolved) ... ok
+test_changed_identity_resets_stable_transmission_streak (tests.test_fate.FateSearchTests.test_changed_identity_resets_stable_transmission_streak) ... ok
+test_failed_first_sibling_does_not_hide_stable_second_path (tests.test_fate.FateSearchTests.test_failed_first_sibling_does_not_hide_stable_second_path) ... ok
+
+======================================================================
+ERROR: test_readiness_refuses_any_response_evidence (tests.test_crossed_assay.CrossedRunnerTests.test_readiness_refuses_any_response_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roland/actir/evoloop-levels/tests/test_crossed_assay.py", line 126, in test_readiness_refuses_any_response_evidence
+    runner.freeze_readiness()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/roland/actir/evoloop-levels/scripts/crossed_assay.py", line 66, in freeze_readiness
+    require(not any(inventory.values()), 'response evidence must be absent before readiness freeze')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/evoloop-levels/scripts/coverage_protocol.py", line 21, in require
+    raise ValueError(message)
+ValueError: response evidence must be absent before readiness freeze
+
+======================================================================
+ERROR: test_receipt_reuse_rejects_changed_native_artifacts (tests.test_crossed_assay.CrossedRunnerTests.test_receipt_reuse_rejects_changed_native_artifacts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roland/actir/evoloop-levels/tests/test_crossed_assay.py", line 136, in test_receipt_reuse_rejects_changed_native_artifacts
+    runner.verify_receipt(out, {'readiness_sha256': 'frozen'})
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/evoloop-levels/scripts/coverage_assay.py", line 58, in verify_receipt
+    require(saved["artifact_sha256"] == inventory(folder), f"completed-case artifacts changed: {folder}")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/evoloop-levels/scripts/coverage_protocol.py", line 21, in require
+    raise ValueError(message)
+ValueError: completed-case artifacts changed: /tmp/tmprjkqscgm
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.591s
+
+FAILED (errors=2)

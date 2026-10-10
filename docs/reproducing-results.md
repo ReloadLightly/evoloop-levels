@@ -389,3 +389,31 @@ checkout with a separate output workspace, retaining the frozen source bindings.
 Audits replay completed evidence in the current checkout; no physics is changed.
 The crossed design is only a 160-world input freeze. A separately hash-bound,
 tested runner/audit and one-worker benchmark are required before its responses.
+
+### Crossed implementation and response acquisition
+
+The input checkpoint `d9c54db43b65091afafd0f82d0a4e4a63de3bb2a` preserves
+all 160 complete starts and the independent preparation/equivalence audit.
+The subsequent implementation readiness receipt separately binds the crossed
+runner, independent response auditor, 63-test validation, review, and original
+encounter catalogue/denominators. Its pre-acquisition inventory records no
+response evidence. Cache keys additionally bind array dimensions and data type,
+so equal flattened bytes in differently shaped inputs cannot alias.
+
+```bash
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.crossed_assay verify
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 140 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.crossed_assay benchmark
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.crossed_assay run --freeze-commit FULL_READINESS_COMMIT
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 220 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.verify_crossed
+```
+
+Replace `FULL_READINESS_COMMIT` with the recorded acquisition commit. Before
+acquisition the benchmark and runner check that this commit contains the exact
+readiness, implementation, tests, validation, review and source-record bytes.
+Run acquisition, replay, rendering and Git packing sequentially. Resuming reuses
+only complete hash-verified world/search receipts; replay similarly rehashes
+all evidence before reusing passed unit proofs. Interrupted invocations and
+failed preflight attempts remain in the execution records. Native worlds keep
+five complete census grids and 81 compact structural samples, not exhaustive
+histories. Repeat verification checks the preserved design receipt; the original
+design-only auditor intentionally requires response evidence to be absent.
