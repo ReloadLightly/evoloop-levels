@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-developmental-calibration-001",
+  "protocol": "protocols/011-developmental-source-measure.md",
+  "output": "data/developmental-v1",
+  "source_commit": "73dad8f0b22b01ed0bdd94f66eb0628fccdf0814",
+  "states": ["V01", "V02", "V03", "RV01", "RV02"],
+  "shape": [192, 192],
+  "boundary": "periodic",
+  "horizon": 1600,
+  "source_times": [0, 400, 800, 1200, 1600],
+  "structural_sample_interval": 20,
+  "conditions": [
+    {"id": "calibration-0", "age": 20, "sites": [[44,39],[100,123],[146,68]], "remove_index": 1},
+    {"id": "calibration-1", "age": 110, "sites": [[39,104],[91,37],[136,129]], "remove_index": 2}
+  ],
+  "treatments": ["D", "U"],
+  "sampling_unit": "every detected source core at every declared snapshot; times and conditions nested in deterministic worlds",
+  "measure": {
+    "Q": "complete single-core source components confirming any stable identity after delay-zero isolation, counted once per source core",
+    "C": "all detected cores including shared, ineligible, unknown, capped and nonconfirming sources",
+    "R": "C-Q; unresolved potential recovery, never measured nonviability",
+    "range": "[Q,C] over detected source bodies potentially recoverable under declared isolation; never bounds total viable population",
+    "registry_score": "retain protocol009 fixed-registry counts separately at 81 times",
+    "identity": "measure source identity as observed; descendant identity never retroassigned",
+    "delay": 0,
+    "empty_snapshot": "Q=R=C=0; resolution fraction missing, never one",
+    "ancestry": "ambiguous native ancestry; serial isolation is an intervention",
+    "benefit": "not assessed in calibration"
+  },
+  "search": {
+    "isolation_shape": [192,192], "generation_horizon": 1600, "detection_interval": 10,
+    "offspring_per_generation": 3, "max_depth": 6,
+    "max_generation_simulations_per_root": 24, "stable_transmissions": 2
+  },
+  "extraction": {"minimum_empty_margin_total": 20, "unknown_identity_eligible": true, "complete_component": "retain all arms; reject multicore, disconnected residual and noncontractible components; validated periodic unwrapping only"},
+  "controls": {"original_phase_controls": "all30 protocol009 complete phases", "known_omitted_inputs": "three distinct complete delay-zero unknown inputs confirmed by protocol010, repeated implementation controls, not independent calibration samples"},
+  "gates": {
+    "phase_original_identity_required": 30,
+    "omitted_any_identity_required": 3,
+    "scored_overall": "9/10", "scored_per_state": "4/5",
+    "resolved_share_per_state_treatment": "4/5",
+    "empty_denominator": "unresolved",
+    "failure": "retain diagnostics and freeze subsequent design with calibration qualification; no joint ecological confirmation",
+    "prior_gate": "protocol010 failure unchanged; new scored recovery describes new contexts, resolved share is precision not biological sensitivity"
+  },
+  "limits": {"worlds": 20, "snapshot_strata": 100, "unique_admitted_keys_per_world": 128, "max_ecological_root_executions": 2560, "controls": 33, "maximum_generation_simulations": 62232},
+  "cache": "key includes complete component physical hash, measured input identity, rule hash, isolation configuration and original/any endpoint; every distinct eligible key consumes local128 admission even when globally cached; chronological time then lexicographic core; duplicates retain observation multiplicity",
+  "execution": {"workers": 1, "minimum_available_memory_mib": 200, "benchmark_before_acquisition": true, "schedule": "acquisition, independent audits, rendering and Git packing sequentially", "resume": "hash-verified complete unit receipts only; retain interrupted logs"}
+}
