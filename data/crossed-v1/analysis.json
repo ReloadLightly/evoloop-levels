@@ -1,0 +1,8236 @@
+{
+  "experiment_id": "EXP-age-geometry-cross-001",
+  "complete_worlds": 160,
+  "snapshot_strata": 800,
+  "total": {
+    "Q": 5470,
+    "R": 780,
+    "C": 6250
+  },
+  "by_class": [
+    {
+      "source_class": "scored",
+      "Q": 5418,
+      "R": 630,
+      "C": 6048
+    },
+    {
+      "source_class": "valid_unregistered",
+      "Q": 4,
+      "R": 120,
+      "C": 124
+    },
+    {
+      "source_class": "unknown_identity",
+      "Q": 48,
+      "R": 30,
+      "C": 78
+    }
+  ],
+  "source_statuses": {
+    "confirmed": 5470,
+    "unresolved_search": 645,
+    "shared_component": 135
+  },
+  "unique_searches": 950,
+  "generation_simulations": 3347,
+  "controls": {
+    "phase_confirmed": 30,
+    "phase_selected": 30,
+    "omitted_confirmed": 3,
+    "omitted_selected": 3
+  },
+  "gate_checks": {
+    "frozen_calibration": true,
+    "repeated_phase_controls": true,
+    "repeated_omitted_controls": true,
+    "matched_exposure": true,
+    "distinct_confirmation": true
+  },
+  "cells": [
+    {
+      "pair_id": "V01-age0-A",
+      "state": "V01",
+      "age": 0,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 37,
+        "R": 0,
+        "C": 37
+      },
+      "U": {
+        "Q": 37,
+        "R": 7,
+        "C": 44
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 44
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 37,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 564,
+          "samples": 81,
+          "mean": {
+            "numerator": 188,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 632,
+          "samples": 81,
+          "mean": {
+            "numerator": 632,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age0-B",
+      "state": "V01",
+      "age": 0,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 27,
+        "R": 0,
+        "C": 27
+      },
+      "U": {
+        "Q": 43,
+        "R": 1,
+        "C": 44
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 44
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 43
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 397,
+          "samples": 81,
+          "mean": {
+            "numerator": 397,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 680,
+          "samples": 81,
+          "mean": {
+            "numerator": 680,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age0-E",
+      "state": "V01",
+      "age": 0,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 34,
+        "R": 0,
+        "C": 34
+      },
+      "U": {
+        "Q": 46,
+        "R": 1,
+        "C": 47
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 34,
+          "denominator": 47
+        },
+        "upper": {
+          "numerator": 17,
+          "denominator": 23
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 34,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 34,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 502,
+          "samples": 81,
+          "mean": {
+            "numerator": 502,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 696,
+          "samples": 81,
+          "mean": {
+            "numerator": 232,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age0-F",
+      "state": "V01",
+      "age": 0,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 37,
+        "R": 3,
+        "C": 40
+      },
+      "U": {
+        "Q": 49,
+        "R": 3,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 52
+        },
+        "upper": {
+          "numerator": 40,
+          "denominator": 49
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 572,
+          "samples": 81,
+          "mean": {
+            "numerator": 572,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 796,
+          "samples": 81,
+          "mean": {
+            "numerator": 796,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age30-A",
+      "state": "V01",
+      "age": 30,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 41,
+        "R": 2,
+        "C": 43
+      },
+      "U": {
+        "Q": 41,
+        "R": 7,
+        "C": 48
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 48
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 41
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 583,
+          "samples": 81,
+          "mean": {
+            "numerator": 583,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 650,
+          "samples": 81,
+          "mean": {
+            "numerator": 650,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age30-B",
+      "state": "V01",
+      "age": 30,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 30,
+        "R": 2,
+        "C": 32
+      },
+      "U": {
+        "Q": 48,
+        "R": 3,
+        "C": 51
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 10,
+          "denominator": 17
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 3
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 6,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 411,
+          "samples": 81,
+          "mean": {
+            "numerator": 137,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 700,
+          "samples": 81,
+          "mean": {
+            "numerator": 700,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age30-E",
+      "state": "V01",
+      "age": 30,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 37,
+        "R": 2,
+        "C": 39
+      },
+      "U": {
+        "Q": 50,
+        "R": 3,
+        "C": 53
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 53
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 50
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 519,
+          "samples": 81,
+          "mean": {
+            "numerator": 173,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 714,
+          "samples": 81,
+          "mean": {
+            "numerator": 238,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age30-F",
+      "state": "V01",
+      "age": 30,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 41,
+        "R": 5,
+        "C": 46
+      },
+      "U": {
+        "Q": 48,
+        "R": 8,
+        "C": 56
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 56
+        },
+        "upper": {
+          "numerator": 23,
+          "denominator": 24
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 46,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 593,
+          "samples": 81,
+          "mean": {
+            "numerator": 593,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 813,
+          "samples": 81,
+          "mean": {
+            "numerator": 271,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age100-A",
+      "state": "V01",
+      "age": 100,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 35,
+        "R": 9,
+        "C": 44
+      },
+      "U": {
+        "Q": 36,
+        "R": 14,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 10
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 9
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 44,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 625,
+          "samples": 81,
+          "mean": {
+            "numerator": 625,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 679,
+          "samples": 81,
+          "mean": {
+            "numerator": 679,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age100-B",
+      "state": "V01",
+      "age": 100,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 26,
+        "R": 6,
+        "C": 32
+      },
+      "U": {
+        "Q": 42,
+        "R": 10,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "upper": {
+          "numerator": 16,
+          "denominator": 21
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 26,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 441,
+          "samples": 81,
+          "mean": {
+            "numerator": 49,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 743,
+          "samples": 81,
+          "mean": {
+            "numerator": 743,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age100-E",
+      "state": "V01",
+      "age": 100,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 32,
+        "R": 8,
+        "C": 40
+      },
+      "U": {
+        "Q": 38,
+        "R": 15,
+        "C": 53
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 32,
+          "denominator": 53
+        },
+        "upper": {
+          "numerator": 20,
+          "denominator": 19
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 32,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 556,
+          "samples": 81,
+          "mean": {
+            "numerator": 556,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 755,
+          "samples": 81,
+          "mean": {
+            "numerator": 755,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age100-F",
+      "state": "V01",
+      "age": 100,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 35,
+        "R": 12,
+        "C": 47
+      },
+      "U": {
+        "Q": 39,
+        "R": 17,
+        "C": 56
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 8
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 39
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 642,
+          "samples": 81,
+          "mean": {
+            "numerator": 214,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 845,
+          "samples": 81,
+          "mean": {
+            "numerator": 845,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age120-A",
+      "state": "V01",
+      "age": 120,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 37,
+        "R": 7,
+        "C": 44
+      },
+      "U": {
+        "Q": 37,
+        "R": 13,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 50
+        },
+        "upper": {
+          "numerator": 44,
+          "denominator": 37
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 44,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 638,
+          "samples": 81,
+          "mean": {
+            "numerator": 638,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 688,
+          "samples": 81,
+          "mean": {
+            "numerator": 688,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age120-B",
+      "state": "V01",
+      "age": 120,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 28,
+        "R": 4,
+        "C": 32
+      },
+      "U": {
+        "Q": 45,
+        "R": 7,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 13
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 45
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 28,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 451,
+          "samples": 81,
+          "mean": {
+            "numerator": 451,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 757,
+          "samples": 81,
+          "mean": {
+            "numerator": 757,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age120-E",
+      "state": "V01",
+      "age": 120,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 34,
+        "R": 6,
+        "C": 40
+      },
+      "U": {
+        "Q": 44,
+        "R": 8,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 17,
+          "denominator": 26
+        },
+        "upper": {
+          "numerator": 10,
+          "denominator": 11
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 34,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 568,
+          "samples": 81,
+          "mean": {
+            "numerator": 568,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 768,
+          "samples": 81,
+          "mean": {
+            "numerator": 256,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V01-age120-F",
+      "state": "V01",
+      "age": 120,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 37,
+        "R": 10,
+        "C": 47
+      },
+      "U": {
+        "Q": 41,
+        "R": 14,
+        "C": 55
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 55
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 41
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 657,
+          "samples": 81,
+          "mean": {
+            "numerator": 73,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 854,
+          "samples": 81,
+          "mean": {
+            "numerator": 854,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age0-A",
+      "state": "V02",
+      "age": 0,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 22,
+        "R": 4,
+        "C": 26
+      },
+      "U": {
+        "Q": 28,
+        "R": 4,
+        "C": 32
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 11,
+          "denominator": 16
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 14
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 22,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 26,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 465,
+          "samples": 81,
+          "mean": {
+            "numerator": 155,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 599,
+          "samples": 81,
+          "mean": {
+            "numerator": 599,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age0-B",
+      "state": "V02",
+      "age": 0,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 25,
+        "R": 4,
+        "C": 29
+      },
+      "U": {
+        "Q": 28,
+        "R": 9,
+        "C": 37
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 25,
+          "denominator": 37
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 28
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 517,
+          "samples": 81,
+          "mean": {
+            "numerator": 517,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 614,
+          "samples": 81,
+          "mean": {
+            "numerator": 614,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age0-E",
+      "state": "V02",
+      "age": 0,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 20,
+        "R": 1,
+        "C": 21
+      },
+      "U": {
+        "Q": 26,
+        "R": 4,
+        "C": 30
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 2,
+          "denominator": 3
+        },
+        "upper": {
+          "numerator": 21,
+          "denominator": 26
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 21,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 385,
+          "samples": 81,
+          "mean": {
+            "numerator": 385,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 544,
+          "samples": 81,
+          "mean": {
+            "numerator": 544,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age0-F",
+      "state": "V02",
+      "age": 0,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 20,
+        "R": 0,
+        "C": 20
+      },
+      "U": {
+        "Q": 31,
+        "R": 4,
+        "C": 35
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 7
+        },
+        "upper": {
+          "numerator": 20,
+          "denominator": 31
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 376,
+          "samples": 81,
+          "mean": {
+            "numerator": 376,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 630,
+          "samples": 81,
+          "mean": {
+            "numerator": 70,
+            "denominator": 9
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age30-A",
+      "state": "V02",
+      "age": 30,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 27,
+        "R": 3,
+        "C": 30
+      },
+      "U": {
+        "Q": 34,
+        "R": 3,
+        "C": 37
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 37
+        },
+        "upper": {
+          "numerator": 15,
+          "denominator": 17
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 477,
+          "samples": 81,
+          "mean": {
+            "numerator": 53,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 611,
+          "samples": 81,
+          "mean": {
+            "numerator": 611,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age30-B",
+      "state": "V02",
+      "age": 30,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 31,
+        "R": 2,
+        "C": 33
+      },
+      "U": {
+        "Q": 35,
+        "R": 7,
+        "C": 42
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 31,
+          "denominator": 42
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 35
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 31,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 531,
+          "samples": 81,
+          "mean": {
+            "numerator": 59,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 624,
+          "samples": 81,
+          "mean": {
+            "numerator": 208,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age30-E",
+      "state": "V02",
+      "age": 30,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 23,
+        "R": 2,
+        "C": 25
+      },
+      "U": {
+        "Q": 33,
+        "R": 3,
+        "C": 36
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 23,
+          "denominator": 36
+        },
+        "upper": {
+          "numerator": 25,
+          "denominator": 33
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 23,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 5,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 398,
+          "samples": 81,
+          "mean": {
+            "numerator": 398,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 557,
+          "samples": 81,
+          "mean": {
+            "numerator": 557,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age30-F",
+      "state": "V02",
+      "age": 30,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 24,
+        "R": 0,
+        "C": 24
+      },
+      "U": {
+        "Q": 38,
+        "R": 3,
+        "C": 41
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 24,
+          "denominator": 41
+        },
+        "upper": {
+          "numerator": 12,
+          "denominator": 19
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 24,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 24,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 389,
+          "samples": 81,
+          "mean": {
+            "numerator": 389,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 651,
+          "samples": 81,
+          "mean": {
+            "numerator": 217,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age100-A",
+      "state": "V02",
+      "age": 100,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 29,
+        "R": 8,
+        "C": 37
+      },
+      "U": {
+        "Q": 37,
+        "R": 6,
+        "C": 43
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 43
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 37,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 499,
+          "samples": 81,
+          "mean": {
+            "numerator": 499,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 633,
+          "samples": 81,
+          "mean": {
+            "numerator": 211,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age100-B",
+      "state": "V02",
+      "age": 100,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 35,
+        "R": 10,
+        "C": 45
+      },
+      "U": {
+        "Q": 33,
+        "R": 13,
+        "C": 46
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 35,
+          "denominator": 46
+        },
+        "upper": {
+          "numerator": 15,
+          "denominator": 11
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 562,
+          "samples": 81,
+          "mean": {
+            "numerator": 562,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 640,
+          "samples": 81,
+          "mean": {
+            "numerator": 640,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age100-E",
+      "state": "V02",
+      "age": 100,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 26,
+        "R": 6,
+        "C": 32
+      },
+      "U": {
+        "Q": 33,
+        "R": 9,
+        "C": 42
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 13,
+          "denominator": 21
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 33
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 26,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 420,
+          "samples": 81,
+          "mean": {
+            "numerator": 140,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 578,
+          "samples": 81,
+          "mean": {
+            "numerator": 578,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age100-F",
+      "state": "V02",
+      "age": 100,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 24,
+        "R": 9,
+        "C": 33
+      },
+      "U": {
+        "Q": 41,
+        "R": 10,
+        "C": 51
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 8,
+          "denominator": 17
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 41
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 24,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 406,
+          "samples": 81,
+          "mean": {
+            "numerator": 406,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 681,
+          "samples": 81,
+          "mean": {
+            "numerator": 227,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age120-A",
+      "state": "V02",
+      "age": 120,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 31,
+        "R": 6,
+        "C": 37
+      },
+      "U": {
+        "Q": 36,
+        "R": 7,
+        "C": 43
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 31,
+          "denominator": 43
+        },
+        "upper": {
+          "numerator": 37,
+          "denominator": 36
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 31,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 37,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 508,
+          "samples": 81,
+          "mean": {
+            "numerator": 508,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 641,
+          "samples": 81,
+          "mean": {
+            "numerator": 641,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age120-B",
+      "state": "V02",
+      "age": 120,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 39,
+        "R": 6,
+        "C": 45
+      },
+      "U": {
+        "Q": 34,
+        "R": 12,
+        "C": 46
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 39,
+          "denominator": 46
+        },
+        "upper": {
+          "numerator": 45,
+          "denominator": 34
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 39,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 575,
+          "samples": 81,
+          "mean": {
+            "numerator": 575,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 646,
+          "samples": 81,
+          "mean": {
+            "numerator": 646,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age120-E",
+      "state": "V02",
+      "age": 120,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 28,
+        "R": 5,
+        "C": 33
+      },
+      "U": {
+        "Q": 36,
+        "R": 8,
+        "C": 44
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 11
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 12
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 28,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 429,
+          "samples": 81,
+          "mean": {
+            "numerator": 143,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 587,
+          "samples": 81,
+          "mean": {
+            "numerator": 587,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V02-age120-F",
+      "state": "V02",
+      "age": 120,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 28,
+        "R": 5,
+        "C": 33
+      },
+      "U": {
+        "Q": 43,
+        "R": 8,
+        "C": 51
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 28,
+          "denominator": 51
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 43
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 28,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 416,
+          "samples": 81,
+          "mean": {
+            "numerator": 416,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 694,
+          "samples": 81,
+          "mean": {
+            "numerator": 694,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age0-A",
+      "state": "V03",
+      "age": 0,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 27,
+        "R": 1,
+        "C": 28
+      },
+      "U": {
+        "Q": 30,
+        "R": 4,
+        "C": 34
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 34
+        },
+        "upper": {
+          "numerator": 14,
+          "denominator": 15
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 28,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 530,
+          "samples": 81,
+          "mean": {
+            "numerator": 530,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 598,
+          "samples": 81,
+          "mean": {
+            "numerator": 598,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age0-B",
+      "state": "V03",
+      "age": 0,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 18,
+        "R": 0,
+        "C": 18
+      },
+      "U": {
+        "Q": 28,
+        "R": 3,
+        "C": 31
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 18,
+          "denominator": 31
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 14
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 18,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 18,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 363,
+          "samples": 81,
+          "mean": {
+            "numerator": 121,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 624,
+          "samples": 81,
+          "mean": {
+            "numerator": 208,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age0-E",
+      "state": "V03",
+      "age": 0,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 25,
+        "R": 0,
+        "C": 25
+      },
+      "U": {
+        "Q": 32,
+        "R": 3,
+        "C": 35
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 7
+        },
+        "upper": {
+          "numerator": 25,
+          "denominator": 32
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 5,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 492,
+          "samples": 81,
+          "mean": {
+            "numerator": 164,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 698,
+          "samples": 81,
+          "mean": {
+            "numerator": 698,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age0-F",
+      "state": "V03",
+      "age": 0,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 29,
+        "R": 1,
+        "C": 30
+      },
+      "U": {
+        "Q": 31,
+        "R": 2,
+        "C": 33
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 33
+        },
+        "upper": {
+          "numerator": 30,
+          "denominator": 31
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 528,
+          "samples": 81,
+          "mean": {
+            "numerator": 176,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 668,
+          "samples": 81,
+          "mean": {
+            "numerator": 668,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age30-A",
+      "state": "V03",
+      "age": 30,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 30,
+        "R": 1,
+        "C": 31
+      },
+      "U": {
+        "Q": 37,
+        "R": 1,
+        "C": 38
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 15,
+          "denominator": 19
+        },
+        "upper": {
+          "numerator": 31,
+          "denominator": 37
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 6,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 31,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 548,
+          "samples": 81,
+          "mean": {
+            "numerator": 548,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 616,
+          "samples": 81,
+          "mean": {
+            "numerator": 616,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age30-B",
+      "state": "V03",
+      "age": 30,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 22,
+        "R": 0,
+        "C": 22
+      },
+      "U": {
+        "Q": 35,
+        "R": 2,
+        "C": 37
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 22,
+          "denominator": 37
+        },
+        "upper": {
+          "numerator": 22,
+          "denominator": 35
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 22,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 22,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 373,
+          "samples": 81,
+          "mean": {
+            "numerator": 373,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 639,
+          "samples": 81,
+          "mean": {
+            "numerator": 71,
+            "denominator": 9
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age30-E",
+      "state": "V03",
+      "age": 30,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 29,
+        "R": 0,
+        "C": 29
+      },
+      "U": {
+        "Q": 37,
+        "R": 4,
+        "C": 41
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 41
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 37
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 509,
+          "samples": 81,
+          "mean": {
+            "numerator": 509,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 718,
+          "samples": 81,
+          "mean": {
+            "numerator": 718,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age30-F",
+      "state": "V03",
+      "age": 30,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 33,
+        "R": 1,
+        "C": 34
+      },
+      "U": {
+        "Q": 37,
+        "R": 2,
+        "C": 39
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 11,
+          "denominator": 13
+        },
+        "upper": {
+          "numerator": 34,
+          "denominator": 37
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 33,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 34,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 549,
+          "samples": 81,
+          "mean": {
+            "numerator": 61,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 685,
+          "samples": 81,
+          "mean": {
+            "numerator": 685,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age100-A",
+      "state": "V03",
+      "age": 100,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 39,
+        "R": 0,
+        "C": 39
+      },
+      "U": {
+        "Q": 42,
+        "R": 3,
+        "C": 45
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 13,
+          "denominator": 15
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 14
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 39,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 575,
+          "samples": 81,
+          "mean": {
+            "numerator": 575,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 644,
+          "samples": 81,
+          "mean": {
+            "numerator": 644,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age100-B",
+      "state": "V03",
+      "age": 100,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 25,
+        "R": 2,
+        "C": 27
+      },
+      "U": {
+        "Q": 42,
+        "R": 4,
+        "C": 46
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 25,
+          "denominator": 46
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 14
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 383,
+          "samples": 81,
+          "mean": {
+            "numerator": 383,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 659,
+          "samples": 81,
+          "mean": {
+            "numerator": 659,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age100-E",
+      "state": "V03",
+      "age": 100,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 38,
+        "R": 1,
+        "C": 39
+      },
+      "U": {
+        "Q": 48,
+        "R": 6,
+        "C": 54
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 19,
+          "denominator": 27
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 16
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 38,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 536,
+          "samples": 81,
+          "mean": {
+            "numerator": 536,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 750,
+          "samples": 81,
+          "mean": {
+            "numerator": 250,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age100-F",
+      "state": "V03",
+      "age": 100,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 40,
+        "R": 2,
+        "C": 42
+      },
+      "U": {
+        "Q": 45,
+        "R": 5,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 14,
+          "denominator": 15
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 8,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 42,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 583,
+          "samples": 81,
+          "mean": {
+            "numerator": 583,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 707,
+          "samples": 81,
+          "mean": {
+            "numerator": 707,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age120-A",
+      "state": "V03",
+      "age": 120,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 41,
+        "R": 2,
+        "C": 43
+      },
+      "U": {
+        "Q": 42,
+        "R": 8,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 50
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 42
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 588,
+          "samples": 81,
+          "mean": {
+            "numerator": 196,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 657,
+          "samples": 81,
+          "mean": {
+            "numerator": 73,
+            "denominator": 9
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age120-B",
+      "state": "V03",
+      "age": 120,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 26,
+        "R": 3,
+        "C": 29
+      },
+      "U": {
+        "Q": 39,
+        "R": 7,
+        "C": 46
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 13,
+          "denominator": 23
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 39
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 26,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 390,
+          "samples": 81,
+          "mean": {
+            "numerator": 130,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 667,
+          "samples": 81,
+          "mean": {
+            "numerator": 667,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age120-E",
+      "state": "V03",
+      "age": 120,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 40,
+        "R": 3,
+        "C": 43
+      },
+      "U": {
+        "Q": 48,
+        "R": 10,
+        "C": 58
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 20,
+          "denominator": 29
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 48
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 8,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 550,
+          "samples": 81,
+          "mean": {
+            "numerator": 550,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 766,
+          "samples": 81,
+          "mean": {
+            "numerator": 766,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "V03-age120-F",
+      "state": "V03",
+      "age": 120,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 42,
+        "R": 3,
+        "C": 45
+      },
+      "U": {
+        "Q": 45,
+        "R": 5,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 21,
+          "denominator": 25
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 42,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 598,
+          "samples": 81,
+          "mean": {
+            "numerator": 598,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 716,
+          "samples": 81,
+          "mean": {
+            "numerator": 716,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age0-A",
+      "state": "RV01",
+      "age": 0,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 37,
+        "R": 0,
+        "C": 37
+      },
+      "U": {
+        "Q": 37,
+        "R": 7,
+        "C": 44
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 44
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 37,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 566,
+          "samples": 81,
+          "mean": {
+            "numerator": 566,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 635,
+          "samples": 81,
+          "mean": {
+            "numerator": 635,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age0-B",
+      "state": "RV01",
+      "age": 0,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 27,
+        "R": 0,
+        "C": 27
+      },
+      "U": {
+        "Q": 43,
+        "R": 1,
+        "C": 44
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 44
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 43
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 399,
+          "samples": 81,
+          "mean": {
+            "numerator": 133,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 682,
+          "samples": 81,
+          "mean": {
+            "numerator": 682,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age0-E",
+      "state": "RV01",
+      "age": 0,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 34,
+        "R": 0,
+        "C": 34
+      },
+      "U": {
+        "Q": 46,
+        "R": 0,
+        "C": 46
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 17,
+          "denominator": 23
+        },
+        "upper": {
+          "numerator": 17,
+          "denominator": 23
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 34,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 34,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 504,
+          "samples": 81,
+          "mean": {
+            "numerator": 56,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 696,
+          "samples": 81,
+          "mean": {
+            "numerator": 232,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age0-F",
+      "state": "RV01",
+      "age": 0,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 37,
+        "R": 3,
+        "C": 40
+      },
+      "U": {
+        "Q": 47,
+        "R": 5,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 52
+        },
+        "upper": {
+          "numerator": 40,
+          "denominator": 47
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 575,
+          "samples": 81,
+          "mean": {
+            "numerator": 575,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 800,
+          "samples": 81,
+          "mean": {
+            "numerator": 800,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age30-A",
+      "state": "RV01",
+      "age": 30,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 43,
+        "R": 0,
+        "C": 43
+      },
+      "U": {
+        "Q": 43,
+        "R": 5,
+        "C": 48
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 43,
+          "denominator": 48
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 43,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 583,
+          "samples": 81,
+          "mean": {
+            "numerator": 583,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 651,
+          "samples": 81,
+          "mean": {
+            "numerator": 217,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age30-B",
+      "state": "RV01",
+      "age": 30,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 32,
+        "R": 0,
+        "C": 32
+      },
+      "U": {
+        "Q": 51,
+        "R": 0,
+        "C": 51
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 32,
+          "denominator": 51
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 51
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 32,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 408,
+          "samples": 81,
+          "mean": {
+            "numerator": 136,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 697,
+          "samples": 81,
+          "mean": {
+            "numerator": 697,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age30-E",
+      "state": "RV01",
+      "age": 30,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 38,
+        "R": 1,
+        "C": 39
+      },
+      "U": {
+        "Q": 50,
+        "R": 3,
+        "C": 53
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 38,
+          "denominator": 53
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 50
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 38,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 517,
+          "samples": 81,
+          "mean": {
+            "numerator": 517,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 712,
+          "samples": 81,
+          "mean": {
+            "numerator": 712,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age30-F",
+      "state": "RV01",
+      "age": 30,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 43,
+        "R": 3,
+        "C": 46
+      },
+      "U": {
+        "Q": 51,
+        "R": 5,
+        "C": 56
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 43,
+          "denominator": 56
+        },
+        "upper": {
+          "numerator": 46,
+          "denominator": 51
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 43,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 46,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 594,
+          "samples": 81,
+          "mean": {
+            "numerator": 22,
+            "denominator": 3
+          }
+        },
+        "U": {
+          "total": 812,
+          "samples": 81,
+          "mean": {
+            "numerator": 812,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age100-A",
+      "state": "RV01",
+      "age": 100,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 37,
+        "R": 7,
+        "C": 44
+      },
+      "U": {
+        "Q": 39,
+        "R": 11,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 50
+        },
+        "upper": {
+          "numerator": 44,
+          "denominator": 39
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 37,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 44,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 634,
+          "samples": 81,
+          "mean": {
+            "numerator": 634,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 688,
+          "samples": 81,
+          "mean": {
+            "numerator": 688,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age100-B",
+      "state": "RV01",
+      "age": 100,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 27,
+        "R": 5,
+        "C": 32
+      },
+      "U": {
+        "Q": 44,
+        "R": 8,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 52
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 11
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 449,
+          "samples": 81,
+          "mean": {
+            "numerator": 449,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 752,
+          "samples": 81,
+          "mean": {
+            "numerator": 752,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age100-E",
+      "state": "RV01",
+      "age": 100,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 34,
+        "R": 6,
+        "C": 40
+      },
+      "U": {
+        "Q": 44,
+        "R": 8,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 17,
+          "denominator": 26
+        },
+        "upper": {
+          "numerator": 10,
+          "denominator": 11
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 34,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 565,
+          "samples": 81,
+          "mean": {
+            "numerator": 565,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 762,
+          "samples": 81,
+          "mean": {
+            "numerator": 254,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age100-F",
+      "state": "RV01",
+      "age": 100,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 38,
+        "R": 9,
+        "C": 47
+      },
+      "U": {
+        "Q": 44,
+        "R": 12,
+        "C": 56
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 19,
+          "denominator": 28
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 44
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 38,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 652,
+          "samples": 81,
+          "mean": {
+            "numerator": 652,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 852,
+          "samples": 81,
+          "mean": {
+            "numerator": 284,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age120-A",
+      "state": "RV01",
+      "age": 120,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 36,
+        "R": 8,
+        "C": 44
+      },
+      "U": {
+        "Q": 36,
+        "R": 14,
+        "C": 50
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 18,
+          "denominator": 25
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 9
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 36,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 44,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 647,
+          "samples": 81,
+          "mean": {
+            "numerator": 647,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 697,
+          "samples": 81,
+          "mean": {
+            "numerator": 697,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age120-B",
+      "state": "RV01",
+      "age": 120,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 26,
+        "R": 6,
+        "C": 32
+      },
+      "U": {
+        "Q": 47,
+        "R": 5,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 47
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 26,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 459,
+          "samples": 81,
+          "mean": {
+            "numerator": 17,
+            "denominator": 3
+          }
+        },
+        "U": {
+          "total": 766,
+          "samples": 81,
+          "mean": {
+            "numerator": 766,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age120-E",
+      "state": "RV01",
+      "age": 120,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 34,
+        "R": 6,
+        "C": 40
+      },
+      "U": {
+        "Q": 46,
+        "R": 6,
+        "C": 52
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 17,
+          "denominator": 26
+        },
+        "upper": {
+          "numerator": 20,
+          "denominator": 23
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 34,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 577,
+          "samples": 81,
+          "mean": {
+            "numerator": 577,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 775,
+          "samples": 81,
+          "mean": {
+            "numerator": 775,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV01-age120-F",
+      "state": "RV01",
+      "age": 120,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 35,
+        "R": 12,
+        "C": 47
+      },
+      "U": {
+        "Q": 43,
+        "R": 12,
+        "C": 55
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 11
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 43
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 667,
+          "samples": 81,
+          "mean": {
+            "numerator": 667,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 861,
+          "samples": 81,
+          "mean": {
+            "numerator": 287,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age0-A",
+      "state": "RV02",
+      "age": 0,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 21,
+        "R": 3,
+        "C": 24
+      },
+      "U": {
+        "Q": 28,
+        "R": 3,
+        "C": 31
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 21,
+          "denominator": 31
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 7
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 21,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 24,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 443,
+          "samples": 81,
+          "mean": {
+            "numerator": 443,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 555,
+          "samples": 81,
+          "mean": {
+            "numerator": 185,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age0-B",
+      "state": "RV02",
+      "age": 0,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 19,
+        "R": 1,
+        "C": 20
+      },
+      "U": {
+        "Q": 33,
+        "R": 2,
+        "C": 35
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 19,
+          "denominator": 35
+        },
+        "upper": {
+          "numerator": 20,
+          "denominator": 33
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 19,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 334,
+          "samples": 81,
+          "mean": {
+            "numerator": 334,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 588,
+          "samples": 81,
+          "mean": {
+            "numerator": 196,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age0-E",
+      "state": "RV02",
+      "age": 0,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 26,
+        "R": 1,
+        "C": 27
+      },
+      "U": {
+        "Q": 32,
+        "R": 2,
+        "C": 34
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 13,
+          "denominator": 17
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 32
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 26,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 469,
+          "samples": 81,
+          "mean": {
+            "numerator": 469,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 611,
+          "samples": 81,
+          "mean": {
+            "numerator": 611,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age0-F",
+      "state": "RV02",
+      "age": 0,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 28,
+        "R": 1,
+        "C": 29
+      },
+      "U": {
+        "Q": 30,
+        "R": 4,
+        "C": 34
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 14,
+          "denominator": 17
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 30
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 28,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 495,
+          "samples": 81,
+          "mean": {
+            "numerator": 55,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 616,
+          "samples": 81,
+          "mean": {
+            "numerator": 616,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age30-A",
+      "state": "RV02",
+      "age": 30,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 22,
+        "R": 1,
+        "C": 23
+      },
+      "U": {
+        "Q": 28,
+        "R": 1,
+        "C": 29
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 22,
+          "denominator": 29
+        },
+        "upper": {
+          "numerator": 23,
+          "denominator": 28
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 22,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 23,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 447,
+          "samples": 81,
+          "mean": {
+            "numerator": 149,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 557,
+          "samples": 81,
+          "mean": {
+            "numerator": 557,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age30-B",
+      "state": "RV02",
+      "age": 30,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 20,
+        "R": 0,
+        "C": 20
+      },
+      "U": {
+        "Q": 34,
+        "R": 1,
+        "C": 35
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 7
+        },
+        "upper": {
+          "numerator": 10,
+          "denominator": 17
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 1
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 337,
+          "samples": 81,
+          "mean": {
+            "numerator": 337,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 597,
+          "samples": 81,
+          "mean": {
+            "numerator": 199,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age30-E",
+      "state": "RV02",
+      "age": 30,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 25,
+        "R": 2,
+        "C": 27
+      },
+      "U": {
+        "Q": 30,
+        "R": 4,
+        "C": 34
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 25,
+          "denominator": 34
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 10
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 477,
+          "samples": 81,
+          "mean": {
+            "numerator": 53,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 617,
+          "samples": 81,
+          "mean": {
+            "numerator": 617,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age30-F",
+      "state": "RV02",
+      "age": 30,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 27,
+        "R": 2,
+        "C": 29
+      },
+      "U": {
+        "Q": 30,
+        "R": 4,
+        "C": 34
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 34
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 30
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 29,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 504,
+          "samples": 81,
+          "mean": {
+            "numerator": 56,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 622,
+          "samples": 81,
+          "mean": {
+            "numerator": 622,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age100-A",
+      "state": "RV02",
+      "age": 100,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 23,
+        "R": 3,
+        "C": 26
+      },
+      "U": {
+        "Q": 27,
+        "R": 6,
+        "C": 33
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 23,
+          "denominator": 33
+        },
+        "upper": {
+          "numerator": 26,
+          "denominator": 27
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 23,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 26,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 476,
+          "samples": 81,
+          "mean": {
+            "numerator": 476,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 588,
+          "samples": 81,
+          "mean": {
+            "numerator": 196,
+            "denominator": 27
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age100-B",
+      "state": "RV02",
+      "age": 100,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 18,
+        "R": 5,
+        "C": 23
+      },
+      "U": {
+        "Q": 33,
+        "R": 7,
+        "C": 40
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 9,
+          "denominator": 20
+        },
+        "upper": {
+          "numerator": 23,
+          "denominator": 33
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 18,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 23,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 356,
+          "samples": 81,
+          "mean": {
+            "numerator": 356,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 640,
+          "samples": 81,
+          "mean": {
+            "numerator": 640,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age100-E",
+      "state": "RV02",
+      "age": 100,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 27,
+        "R": 4,
+        "C": 31
+      },
+      "U": {
+        "Q": 32,
+        "R": 8,
+        "C": 40
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 31,
+          "denominator": 32
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 31,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 519,
+          "samples": 81,
+          "mean": {
+            "numerator": 173,
+            "denominator": 27
+          }
+        },
+        "U": {
+          "total": 661,
+          "samples": 81,
+          "mean": {
+            "numerator": 661,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age100-F",
+      "state": "RV02",
+      "age": 100,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 29,
+        "R": 3,
+        "C": 32
+      },
+      "U": {
+        "Q": 33,
+        "R": 7,
+        "C": 40
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 33
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 29,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 32,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 549,
+          "samples": 81,
+          "mean": {
+            "numerator": 61,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 661,
+          "samples": 81,
+          "mean": {
+            "numerator": 661,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age120-A",
+      "state": "RV02",
+      "age": 120,
+      "geometry": "A",
+      "split": "development",
+      "D": {
+        "Q": 21,
+        "R": 7,
+        "C": 28
+      },
+      "U": {
+        "Q": 25,
+        "R": 10,
+        "C": 35
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 28,
+          "denominator": 25
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 21,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 28,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 482,
+          "samples": 81,
+          "mean": {
+            "numerator": 482,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 594,
+          "samples": 81,
+          "mean": {
+            "numerator": 22,
+            "denominator": 3
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age120-B",
+      "state": "RV02",
+      "age": 120,
+      "geometry": "B",
+      "split": "development",
+      "D": {
+        "Q": 20,
+        "R": 2,
+        "C": 22
+      },
+      "U": {
+        "Q": 34,
+        "R": 6,
+        "C": 40
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 17
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 22,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 360,
+          "samples": 81,
+          "mean": {
+            "numerator": 40,
+            "denominator": 9
+          }
+        },
+        "U": {
+          "total": 650,
+          "samples": 81,
+          "mean": {
+            "numerator": 650,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age120-E",
+      "state": "RV02",
+      "age": 120,
+      "geometry": "E",
+      "split": "confirmation",
+      "D": {
+        "Q": 25,
+        "R": 8,
+        "C": 33
+      },
+      "U": {
+        "Q": 30,
+        "R": 12,
+        "C": 42
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 25,
+          "denominator": 42
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 10
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 33,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 529,
+          "samples": 81,
+          "mean": {
+            "numerator": 529,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 671,
+          "samples": 81,
+          "mean": {
+            "numerator": 671,
+            "denominator": 81
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "RV02-age120-F",
+      "state": "RV02",
+      "age": 120,
+      "geometry": "F",
+      "split": "confirmation",
+      "D": {
+        "Q": 27,
+        "R": 7,
+        "C": 34
+      },
+      "U": {
+        "Q": 32,
+        "R": 8,
+        "C": 40
+      },
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 17,
+          "denominator": 16
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 27,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 34,
+          "denominator": 5
+        }
+      },
+      "registry_diagnostic": {
+        "D": {
+          "total": 559,
+          "samples": 81,
+          "mean": {
+            "numerator": 559,
+            "denominator": 81
+          }
+        },
+        "U": {
+          "total": 669,
+          "samples": 81,
+          "mean": {
+            "numerator": 223,
+            "denominator": 27
+          }
+        }
+      }
+    }
+  ],
+  "panels": [
+    {
+      "state": "V01",
+      "split": "development",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 15681143,
+          "denominator": 23337600
+        },
+        "upper": {
+          "numerator": 24752459,
+          "denominator": 27397020
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 261,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 291,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "split": "confirmation",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 270321643,
+          "denominator": 398958560
+        },
+        "upper": {
+          "numerator": 191002838539,
+          "denominator": 200871070400
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 287,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 333,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "split": "development",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 71743327,
+          "denominator": 98361984
+        },
+        "upper": {
+          "numerator": 250477,
+          "denominator": 235620
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 239,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 141,
+          "denominator": 20
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "split": "confirmation",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 9152995,
+          "denominator": 15456672
+        },
+        "upper": {
+          "numerator": 11227243205,
+          "denominator": 14255251296
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 193,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 221,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "split": "development",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7099144789,
+          "denominator": 10225275600
+        },
+        "upper": {
+          "numerator": 23021,
+          "denominator": 28860
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 57,
+          "denominator": 10
+        },
+        "upper": {
+          "numerator": 237,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "split": "confirmation",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 2482397899,
+          "denominator": 3213510300
+        },
+        "upper": {
+          "numerator": 3905321,
+          "denominator": 4404480
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 69,
+          "denominator": 10
+        },
+        "upper": {
+          "numerator": 287,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "split": "development",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 15919337,
+          "denominator": 23337600
+        },
+        "upper": {
+          "numerator": 155068619,
+          "denominator": 176869836
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 53,
+          "denominator": 8
+        },
+        "upper": {
+          "numerator": 291,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "split": "confirmation",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 54257131,
+          "denominator": 78094016
+        },
+        "upper": {
+          "numerator": 18806748089,
+          "denominator": 20861570400
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 293,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 333,
+          "denominator": 40
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "split": "development",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 19924991,
+          "denominator": 33227040
+        },
+        "upper": {
+          "numerator": 22265591,
+          "denominator": 28274400
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 41,
+          "denominator": 10
+        },
+        "upper": {
+          "numerator": 93,
+          "denominator": 20
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "split": "confirmation",
+      "conditions": 8,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 82651,
+          "denominator": 114240
+        },
+        "upper": {
+          "numerator": 10267,
+          "denominator": 10560
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 107,
+          "denominator": 20
+        },
+        "upper": {
+          "numerator": 121,
+          "denominator": 20
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -3,
+          "denominator": 10
+        },
+        "upper": {
+          "numerator": 151,
+          "denominator": 396
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -633,
+          "denominator": 2050
+        },
+        "upper": {
+          "numerator": 595,
+          "denominator": 1776
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 3,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 86
+        },
+        "upper": {
+          "numerator": 137,
+          "denominator": 924
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -5,
+          "denominator": 39
+        },
+        "upper": {
+          "numerator": 94,
+          "denominator": 765
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -165,
+          "denominator": 1219
+        },
+        "upper": {
+          "numerator": 294,
+          "denominator": 893
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -41,
+          "denominator": 325
+        },
+        "upper": {
+          "numerator": 123,
+          "denominator": 583
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 3,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -75,
+          "denominator": 392
+        },
+        "upper": {
+          "numerator": 77,
+          "denominator": 156
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -377,
+          "denominator": 1320
+        },
+        "upper": {
+          "numerator": 951,
+          "denominator": 2296
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -9,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -17,
+          "denominator": 44
+        },
+        "upper": {
+          "numerator": -403,
+          "denominator": 1892
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": -2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -321,
+          "denominator": 697
+        },
+        "upper": {
+          "numerator": -3,
+          "denominator": 16
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 18
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 210
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -18,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -3,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -313,
+          "denominator": 481
+        },
+        "upper": {
+          "numerator": -13,
+          "denominator": 450
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -16,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8671,
+          "denominator": 17028
+        },
+        "upper": {
+          "numerator": 2071,
+          "denominator": 4620
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -3565,
+          "denominator": 7696
+        },
+        "upper": {
+          "numerator": 135389,
+          "denominator": 313650
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -33,
+          "denominator": 1196
+        },
+        "upper": {
+          "numerator": 214,
+          "denominator": 2303
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -67,
+          "denominator": 1400
+        },
+        "upper": {
+          "numerator": 331,
+          "denominator": 1272
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -65,
+          "denominator": 152
+        },
+        "upper": {
+          "numerator": 1243,
+          "denominator": 2067
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 3,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 55
+        },
+        "upper": {
+          "numerator": 525,
+          "denominator": 1066
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -182223,
+          "denominator": 350056
+        },
+        "upper": {
+          "numerator": 119603,
+          "denominator": 190164
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 12,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V01",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -34741,
+          "denominator": 69960
+        },
+        "upper": {
+          "numerator": 403211,
+          "denominator": 746200
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -12,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -153,
+          "denominator": 602
+        },
+        "upper": {
+          "numerator": 5,
+          "denominator": 16
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 3,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -118,
+          "denominator": 731
+        },
+        "upper": {
+          "numerator": 397,
+          "denominator": 1332
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -177,
+          "denominator": 644
+        },
+        "upper": {
+          "numerator": 280,
+          "denominator": 407
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -153,
+          "denominator": 1610
+        },
+        "upper": {
+          "numerator": 209,
+          "denominator": 357
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 14,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -103,
+          "denominator": 546
+        },
+        "upper": {
+          "numerator": 10,
+          "denominator": 33
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 12,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -4,
+          "denominator": 33
+        },
+        "upper": {
+          "numerator": 5,
+          "denominator": 18
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -92,
+          "denominator": 527
+        },
+        "upper": {
+          "numerator": 67,
+          "denominator": 287
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -80,
+          "denominator": 969
+        },
+        "upper": {
+          "numerator": 321,
+          "denominator": 1763
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -131,
+          "denominator": 518
+        },
+        "upper": {
+          "numerator": 39,
+          "denominator": 112
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -103,
+          "denominator": 714
+        },
+        "upper": {
+          "numerator": 276,
+          "denominator": 1295
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 46
+        },
+        "upper": {
+          "numerator": 326,
+          "denominator": 473
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 16,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -149,
+          "denominator": 828
+        },
+        "upper": {
+          "numerator": 881,
+          "denominator": 1462
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 14,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1513,
+          "denominator": 2576
+        },
+        "upper": {
+          "numerator": 230831,
+          "denominator": 245014
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -9,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 17,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -421483,
+          "denominator": 1072260
+        },
+        "upper": {
+          "numerator": 11465,
+          "denominator": 15351
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -43,
+          "denominator": 182
+        },
+        "upper": {
+          "numerator": -2,
+          "denominator": 93
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -233,
+          "denominator": 1353
+        },
+        "upper": {
+          "numerator": -5,
+          "denominator": 684
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -280,
+          "denominator": 561
+        },
+        "upper": {
+          "numerator": 160,
+          "denominator": 861
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -25,
+          "denominator": 68
+        },
+        "upper": {
+          "numerator": 62,
+          "denominator": 473
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8306,
+          "denominator": 17391
+        },
+        "upper": {
+          "numerator": 9449,
+          "denominator": 22386
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V02",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2095,
+          "denominator": 5814
+        },
+        "upper": {
+          "numerator": 17645,
+          "denominator": 58179
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 15
+        },
+        "upper": {
+          "numerator": 16,
+          "denominator": 119
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 11,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 12,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -33,
+          "denominator": 1850
+        },
+        "upper": {
+          "numerator": 187,
+          "denominator": 798
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 2,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -16,
+          "denominator": 161
+        },
+        "upper": {
+          "numerator": 27,
+          "denominator": 434
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 7,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -51,
+          "denominator": 805
+        },
+        "upper": {
+          "numerator": 215,
+          "denominator": 1443
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -67,
+          "denominator": 864
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 112
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 13,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 14,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -101,
+          "denominator": 1073
+        },
+        "upper": {
+          "numerator": 371,
+          "denominator": 1968
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 11,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 14,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -26,
+          "denominator": 155
+        },
+        "upper": {
+          "numerator": 3,
+          "denominator": 55
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 2,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -73,
+          "denominator": 925
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 13
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 12,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -164,
+          "denominator": 465
+        },
+        "upper": {
+          "numerator": -18,
+          "denominator": 119
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": -9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -9,
+          "denominator": 37
+        },
+        "upper": {
+          "numerator": -107,
+          "denominator": 665
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -9,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -8,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -62,
+          "denominator": 161
+        },
+        "upper": {
+          "numerator": -47,
+          "denominator": 210
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -14,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -12,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -443,
+          "denominator": 966
+        },
+        "upper": {
+          "numerator": -149,
+          "denominator": 1950
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -17,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -12,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -640,
+          "denominator": 2737
+        },
+        "upper": {
+          "numerator": 839,
+          "denominator": 6510
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": -2,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -27319,
+          "denominator": 91770
+        },
+        "upper": {
+          "numerator": 12037,
+          "denominator": 72150
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -9,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -3,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 103,
+          "denominator": 1056
+        },
+        "upper": {
+          "numerator": 55,
+          "denominator": 217
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 30,
+          "denominator": 481
+        },
+        "upper": {
+          "numerator": 321,
+          "denominator": 1517
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 80
+        },
+        "upper": {
+          "numerator": 31,
+          "denominator": 135
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -67,
+          "denominator": 1200
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 29
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -4617,
+          "denominator": 17360
+        },
+        "upper": {
+          "numerator": 6277,
+          "denominator": 47520
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "V03",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -486839,
+          "denominator": 1820400
+        },
+        "upper": {
+          "numerator": 3459,
+          "denominator": 13949
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 50
+        },
+        "upper": {
+          "numerator": 493,
+          "denominator": 1716
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 25
+        },
+        "upper": {
+          "numerator": 47,
+          "denominator": 144
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -243,
+          "denominator": 2236
+        },
+        "upper": {
+          "numerator": 5,
+          "denominator": 44
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 102
+        },
+        "upper": {
+          "numerator": 128,
+          "denominator": 2397
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -51,
+          "denominator": 598
+        },
+        "upper": {
+          "numerator": 43,
+          "denominator": 253
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -41,
+          "denominator": 325
+        },
+        "upper": {
+          "numerator": 186,
+          "denominator": 1219
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -227,
+          "denominator": 1316
+        },
+        "upper": {
+          "numerator": 51,
+          "denominator": 143
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -149,
+          "denominator": 561
+        },
+        "upper": {
+          "numerator": 783,
+          "denominator": 2408
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -17,
+          "denominator": 44
+        },
+        "upper": {
+          "numerator": -403,
+          "denominator": 1892
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": -2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -19,
+          "denominator": 51
+        },
+        "upper": {
+          "numerator": -73,
+          "denominator": 272
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -11,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -95,
+          "denominator": 156
+        },
+        "upper": {
+          "numerator": -7,
+          "denominator": 550
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -17,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 18
+        },
+        "upper": {
+          "numerator": -46,
+          "denominator": 1175
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -18,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -14609,
+          "denominator": 36894
+        },
+        "upper": {
+          "numerator": 411,
+          "denominator": 1100
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1111,
+          "denominator": 2448
+        },
+        "upper": {
+          "numerator": 19979,
+          "denominator": 59925
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -33,
+          "denominator": 1196
+        },
+        "upper": {
+          "numerator": 121,
+          "denominator": 1081
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -17,
+          "denominator": 1400
+        },
+        "upper": {
+          "numerator": 500,
+          "denominator": 2703
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 4,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -71,
+          "denominator": 308
+        },
+        "upper": {
+          "numerator": 237,
+          "denominator": 572
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -59,
+          "denominator": 253
+        },
+        "upper": {
+          "numerator": 491,
+          "denominator": 1118
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 13,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -114019,
+          "denominator": 332948
+        },
+        "upper": {
+          "numerator": 2907,
+          "denominator": 6578
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV01",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -285977,
+          "denominator": 683859
+        },
+        "upper": {
+          "numerator": 353203,
+          "denominator": 782600
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -13,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -37,
+          "denominator": 231
+        },
+        "upper": {
+          "numerator": 239,
+          "denominator": 837
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "A",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -31,
+          "denominator": 140
+        },
+        "upper": {
+          "numerator": 262,
+          "denominator": 725
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 6,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -103,
+          "denominator": 660
+        },
+        "upper": {
+          "numerator": 178,
+          "denominator": 1155
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "B",
+      "split": "development",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -3,
+          "denominator": 34
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 119
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 2,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -27,
+          "denominator": 160
+        },
+        "upper": {
+          "numerator": 111,
+          "denominator": 544
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "E",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -32,
+          "denominator": 105
+        },
+        "upper": {
+          "numerator": 31,
+          "denominator": 85
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 8,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -29,
+          "denominator": 120
+        },
+        "upper": {
+          "numerator": 82,
+          "denominator": 561
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "age",
+      "geometry": "F",
+      "split": "confirmation",
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 24
+        },
+        "upper": {
+          "numerator": 73,
+          "denominator": 272
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 7,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 35
+        },
+        "upper": {
+          "numerator": -73,
+          "denominator": 1023
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": -1,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 4
+        },
+        "upper": {
+          "numerator": -84,
+          "denominator": 493
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -3,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": -2,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -277,
+          "denominator": 540
+        },
+        "upper": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 0,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -31,
+          "denominator": 50
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 85
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -8,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -81317,
+          "denominator": 184140
+        },
+        "upper": {
+          "numerator": 11,
+          "denominator": 35
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -7,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "interaction",
+      "split": "development",
+      "geometry_pair": [
+        "A",
+        "B"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11083,
+          "denominator": 24650
+        },
+        "upper": {
+          "numerator": 101,
+          "denominator": 340
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 0,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -11,
+          "denominator": 544
+        },
+        "upper": {
+          "numerator": 103,
+          "denominator": 510
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 1,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 3,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 30,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -9,
+          "denominator": 85
+        },
+        "upper": {
+          "numerator": 59,
+          "denominator": 255
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 100,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -39,
+          "denominator": 160
+        },
+        "upper": {
+          "numerator": 389,
+          "denominator": 1320
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "geometry",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age": 120,
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -17,
+          "denominator": 40
+        },
+        "upper": {
+          "numerator": 157,
+          "denominator": 336
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -6,
+          "denominator": 5
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        0,
+        100
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -3637,
+          "denominator": 8160
+        },
+        "upper": {
+          "numerator": 28267,
+          "denominator": 89760
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 4,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "state": "RV02",
+      "kind": "interaction",
+      "split": "confirmation",
+      "geometry_pair": [
+        "E",
+        "F"
+      ],
+      "age_pair": [
+        30,
+        120
+      ],
+      "retention": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -1339,
+          "denominator": 2040
+        },
+        "upper": {
+          "numerator": 16369,
+          "denominator": 28560
+        }
+      },
+      "disturbed_mean": {
+        "status": "bounded",
+        "lower": {
+          "numerator": -2,
+          "denominator": 1
+        },
+        "upper": {
+          "numerator": 9,
+          "denominator": 5
+        }
+      }
+    }
+  ],
+  "benefits": [
+    {
+      "candidate": "RV01",
+      "inputs": [
+        "V02",
+        "V03"
+      ],
+      "panels": [
+        {
+          "split": "development",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": false
+        },
+        {
+          "split": "confirmation",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": true
+        }
+      ],
+      "relative_robust_superiority": false,
+      "absolute_robust_superiority": false,
+      "joint_confirmed": false,
+      "originating_encounter": "near-main-V02-V03-p20-a-parallel",
+      "classification": "robust_criterion_not_met",
+      "biological_advantage": "unresolved"
+    },
+    {
+      "candidate": "RV02",
+      "inputs": [
+        "V01",
+        "V03"
+      ],
+      "panels": [
+        {
+          "split": "development",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": false
+        },
+        {
+          "split": "confirmation",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": false
+        }
+      ],
+      "relative_robust_superiority": false,
+      "absolute_robust_superiority": false,
+      "joint_confirmed": false,
+      "originating_encounter": "near-main-V01-V03-p20-a-parallel",
+      "classification": "robust_criterion_not_met",
+      "biological_advantage": "unresolved"
+    }
+  ],
+  "originating_encounter_denominators": {
+    "main": 36,
+    "held_out": 18,
+    "overall": 54
+  },
+  "joint_confirmed_encounters": 0,
+  "yield": [
+    {
+      "split": "main",
+      "confirmed": 0,
+      "denominator": 36,
+      "fraction": {
+        "numerator": 0,
+        "denominator": 1
+      }
+    },
+    {
+      "split": "held_out",
+      "confirmed": 0,
+      "denominator": 18,
+      "fraction": {
+        "numerator": 0,
+        "denominator": 1
+      }
+    },
+    {
+      "split": "overall",
+      "confirmed": 0,
+      "denominator": 54,
+      "fraction": {
+        "numerator": 0,
+        "denominator": 1
+      }
+    }
+  ],
+  "unresolved_other_candidate_encounters": 16,
+  "earlier_outcomes": "protocols007/009/010 unchanged",
+  "scope": "detected-source recovery/population envelopes; nested deterministic configurations, not total viable population, independent histories, H1/H3 or RSI"
+}

@@ -1,0 +1,192 @@
+{
+  "node": 5,
+  "parent_node": 4,
+  "incoming_child": 0,
+  "path": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "depth": 6,
+  "input_identity": "7x7:0111111111111701701701701701111117014014",
+  "input_snapshot_hash": "442f655044a1dbd54c2c99ace6964fe3dd9123f0c6a9fdca235a4152a7c6a60f",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "1920d9225c3201bfbcfe7e4f1fba2b922e7e63182a41e1e29c3d06091092a1f0",
+    "final_hash": "eb7ffd7dae68d4b16a50ac5a0560c1f725b31e11868676796f42ff8a26e7fbc5",
+    "completed_updates": 750,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 250,
+        "closure_first_seen_t": 240,
+        "core": [
+          109,
+          93,
+          4,
+          4
+        ],
+        "identity": "4x4:0111111111111701111117014014",
+        "snapshot_hash": "c05f29e50ad1eda4eb2350d1584a550d160ed069f16e44e17465918e8834ad5b",
+        "extraction_bbox": [
+          106,
+          90,
+          10,
+          10
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 500,
+        "closure_first_seen_t": 490,
+        "core": [
+          96,
+          109,
+          4,
+          4
+        ],
+        "identity": "4x4:0111111111111701111117014014",
+        "snapshot_hash": "5b3abb95656be952410330b9fb57ce256a508b91dc537c1cf53b0ef29363e0e4",
+        "extraction_bbox": [
+          93,
+          106,
+          10,
+          10
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 750,
+        "closure_first_seen_t": 740,
+        "core": [
+          80,
+          96,
+          4,
+          4
+        ],
+        "identity": "4x4:0111111111111701111117014014",
+        "snapshot_hash": "8146cfa71613559a2efc9896a9f033aa3d2b3fa72fbf4da607150aa76495e8e6",
+        "extraction_bbox": [
+          77,
+          93,
+          10,
+          10
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 108
+      },
+      {
+        "t": 100,
+        "closed_cores": 1,
+        "occupied_cells": 141
+      },
+      {
+        "t": 200,
+        "closed_cores": 1,
+        "occupied_cells": 179
+      },
+      {
+        "t": 300,
+        "closed_cores": 2,
+        "occupied_cells": 205
+      },
+      {
+        "t": 400,
+        "closed_cores": 1,
+        "occupied_cells": 160
+      },
+      {
+        "t": 500,
+        "closed_cores": 2,
+        "occupied_cells": 184
+      },
+      {
+        "t": 600,
+        "closed_cores": 2,
+        "occupied_cells": 238
+      },
+      {
+        "t": 700,
+        "closed_cores": 1,
+        "occupied_cells": 179
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          93,
+          93,
+          7,
+          7
+        ],
+        "identity": "7x7:0111111111111701701701701701111117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 240,
+        "core": [
+          109,
+          93,
+          4,
+          4
+        ],
+        "identity": "4x4:0111111111111701111117014014"
+      },
+      {
+        "type": "core_loss",
+        "t": 390,
+        "core": [
+          109,
+          93,
+          4,
+          4
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 490,
+        "core": [
+          96,
+          109,
+          4,
+          4
+        ],
+        "identity": "4x4:0111111111111701111117014014"
+      },
+      {
+        "type": "core_loss",
+        "t": 640,
+        "core": [
+          96,
+          109,
+          4,
+          4
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 740,
+        "core": [
+          80,
+          96,
+          4,
+          4
+        ],
+        "identity": "4x4:0111111111111701111117014014"
+      }
+    ]
+  }
+}

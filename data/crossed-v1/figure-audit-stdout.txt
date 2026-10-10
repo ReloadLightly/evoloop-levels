@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/roland/actir/evoloop-levels/scripts/verify_crossed_figures.py", line 103, in <module>
+    main()
+    ~~~~^^
+  File "/home/roland/actir/evoloop-levels/scripts/verify_crossed_figures.py", line 63, in main
+    png = png_pixels(FIG / 'crossed1-paired-states-dark.png', panels, geometry, viewbox, palette)
+  File "/home/roland/actir/evoloop-levels/scripts/verify_coverage_figures.py", line 180, in png_pixels
+    require(best is not None and best[0][0] >= .98 and best[0][1] >= .99,
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            f'{path.name}/panel{index}: PNG recorded-pixel alignment differs: {best}')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/evoloop-levels/scripts/verify_coverage_figures.py", line 34, in require
+    raise AssertionError(message)
+AssertionError: crossed1-paired-states-dark.png/panel3: PNG recorded-pixel alignment differs: ((1.0, 0.9896104600694444), 0, -1, 36864, 480)

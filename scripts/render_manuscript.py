@@ -94,7 +94,7 @@ def main():
                 ax.text(.085,.935-yp/842,text,ha='left',va='top',fontsize={'title':17,'heading':13,'subheading':11,'body':9,'table':8,'space':9}[style],
                         fontfamily='DejaVu Sans Mono' if style=='table' else 'DejaVu Serif',
                         weight='bold' if style in ('title','heading','subheading') else 'normal',color='#101421')
-            ax.text(.085,.04,'Evoloop Levels · Working manuscript · 10 October 2026',fontsize=8,color='#555555')
+            ax.text(.085,.04,'Evoloop Levels · Working manuscript · 11 October 2026',fontsize=8,color='#555555')
             ax.text(.915,.04,str(page_number),ha='right',fontsize=8,color='#555555');pdf.savefig(fig);plt.close(fig)
         # Render human-readable bibliography from the verified source review table.
         bib=(ROOT/'paper/references.bib').read_text();refs=[]
@@ -124,7 +124,8 @@ def main():
                      'impact1-exposure','impact1-calibration','impact1-score-matrices','impact1-contrasts',
                      'impact1-paired-curves','impact1-raw-states',
                      'coverage1-recovery','coverage1-state-unions','coverage1-native-targets','coverage1-inheritance',
-                     'developmental1-resolution','developmental1-paired-states']
+                     'developmental1-resolution','developmental1-paired-states',
+                     'crossed1-retention','crossed1-interactions','crossed1-disturbed-interactions','crossed1-paired-states']
     figure_pdfs=[ROOT/f'figures/{name}-dark.pdf' for name in names]
     missing=[str(p) for p in figure_pdfs if not p.exists()]
     if missing:

@@ -1,0 +1,181 @@
+{
+  "node": 0,
+  "parent_node": null,
+  "incoming_child": null,
+  "path": [],
+  "depth": 1,
+  "input_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+  "input_snapshot_hash": "d6bd8a9609644a432873a92fc0af9424d4e10bd2a55ba9075a599a49324806f6",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "89492d43fa54f5e3364913ba8b38ee6a959945aad45a87842b99edadbdad71f6",
+    "final_hash": "e812d5f670cd13bedce700485d80d27aabe7ca49da0a2d9d0989ccb547aec844",
+    "completed_updates": 890,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 270,
+        "closure_first_seen_t": 270,
+        "core": [
+          106,
+          97,
+          14,
+          14
+        ],
+        "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "snapshot_hash": "ddf6a8390a316bf810cde0583d066285868b9d1b9341b305dbd9319b34054b72",
+        "extraction_bbox": [
+          103,
+          94,
+          20,
+          20
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 590,
+        "closure_first_seen_t": 580,
+        "core": [
+          124,
+          86,
+          5,
+          14
+        ],
+        "identity": "5x14:01111111111117017017017017017017017017011117014014",
+        "snapshot_hash": "7d1a427d62db901c2b3a50e4ede3c4545dd6f1afa445a663a525202601b80975",
+        "extraction_bbox": [
+          121,
+          83,
+          11,
+          20
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 890,
+        "closure_first_seen_t": 890,
+        "core": [
+          142,
+          86,
+          8,
+          8
+        ],
+        "identity": "8x8:01111111111117017017017017017017011117014014",
+        "snapshot_hash": "1b6eaf0e5ca1804f8cd42f7adad042b9da15004bb5dd6cb97688166572f8e167",
+        "extraction_bbox": [
+          139,
+          83,
+          14,
+          14
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 337
+      },
+      {
+        "t": 100,
+        "closed_cores": 1,
+        "occupied_cells": 389
+      },
+      {
+        "t": 200,
+        "closed_cores": 1,
+        "occupied_cells": 440
+      },
+      {
+        "t": 300,
+        "closed_cores": 2,
+        "occupied_cells": 455
+      },
+      {
+        "t": 400,
+        "closed_cores": 2,
+        "occupied_cells": 559
+      },
+      {
+        "t": 500,
+        "closed_cores": 1,
+        "occupied_cells": 485
+      },
+      {
+        "t": 600,
+        "closed_cores": 2,
+        "occupied_cells": 349
+      },
+      {
+        "t": 700,
+        "closed_cores": 2,
+        "occupied_cells": 385
+      },
+      {
+        "t": 800,
+        "closed_cores": 2,
+        "occupied_cells": 481
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          73,
+          86,
+          14,
+          14
+        ],
+        "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 270,
+        "core": [
+          106,
+          97,
+          14,
+          14
+        ],
+        "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+      },
+      {
+        "type": "core_loss",
+        "t": 470,
+        "core": [
+          106,
+          97,
+          14,
+          14
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 580,
+        "core": [
+          124,
+          86,
+          5,
+          14
+        ],
+        "identity": "5x14:01111111111117017017017017017017017017011117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 890,
+        "core": [
+          142,
+          86,
+          8,
+          8
+        ],
+        "identity": "8x8:01111111111117017017017017017017011117014014"
+      }
+    ]
+  }
+}

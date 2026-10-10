@@ -1,0 +1,46 @@
+{
+  "status": "accepted",
+  "experiment_id": "EXP-age-geometry-cross-001",
+  "pdf": "paper/manuscript.pdf",
+  "pdf_sha256": "26ba721dd7defa3320fdc92b20e8827a1032122c698285bf772f70681246e58d",
+  "source": "paper/manuscript.md",
+  "source_sha256": "6898e5b9c954c0f8a23b175b720b05ac704279c3e7521276135e7fae270bb31d",
+  "renderer_sha256": "e35dce7f79369b29d15a3cbe4269dcf72b014049e24f34be2a02221232fe31ec",
+  "scientific_integrity_sha256": "0f2ca50fb599022d55c6f21dd28484db5b35a9f4024745c211facc616bd8b159",
+  "figure_integrity_sha256": "9f5c2422cbd88e877d97296105a5dac7d7198f73cc20616a0e9a87caf6264d93",
+  "figure_manifest_sha256": "fc49d6804a6dd4e2c211b17027732d2f428cfe324ba348d3a6722434561f0f97",
+  "pages": 67,
+  "appended_vector_figures": 41,
+  "full_decode": "final all67 pages pass Ghostscript PDFSTOPONERROR using nullpage and txtwrite; final decoded-file and PDF page-object counts agree at67",
+  "visual_review_pages": {
+    "21": "complete ten-panel and six-row contrast tables; calibration qualification, denominators and conditional RV01 positive result readable",
+    "64": "all80 retention envelopes, sequential blue scale and complete qualification footer",
+    "65": "all20 retention interactions span zero; contrast orientation and qualifications readable",
+    "66": "all20 absolute disturbed interactions; both negative V03 development intervals visible, count units and contrast directions labeled",
+    "67": "full paired192 grids and complete arms; borders outside recorded cells, scale, legend and source labels readable",
+    "23": "review clarification distinguishes age/layout confounding in protocol009 from crossing in protocol012; complete discussion and footer readable"
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.render_manuscript",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -sDEVICE=nullpage paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -sDEVICE=txtwrite -sOutputFile=/tmp/crossed-manuscript-page-%03d.txt paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -dFirstPage=20 -dLastPage=22 -sDEVICE=png16m -r90 -sOutputFile=/tmp/crossed-results-%02d.png paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -dFirstPage=64 -dLastPage=67 -sDEVICE=png16m -r90 -sOutputFile=/tmp/crossed-figures-%02d.png paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -sDEVICE=txtwrite -sOutputFile=/tmp/crossed-final-page-%03d.txt paper/manuscript.pdf",
+    "gs -q -dNOPAUSE -dBATCH -dPDFSTOPONERROR -dFirstPage=23 -dLastPage=23 -sDEVICE=png16m -r90 -sOutputFile=/tmp/crossed-final-discussion.png paper/manuscript.pdf"
+  ],
+  "execution_log": "data/crossed-v1/execution.jsonl",
+  "render_metrics": {
+    "file": "data/crossed-v1/render-manuscript-2.txt",
+    "seconds": 8.37,
+    "peak_rss_kib": 89292,
+    "exit": 0
+  },
+  "decode_metrics": {
+    "file": "data/crossed-v1/decode-manuscript-2.txt",
+    "seconds": 1.12,
+    "peak_rss_kib": 43976,
+    "exit": 0
+  },
+  "scope": "audited finite crossed assay and unchanged prior measurements/126 exports; visual review complements exact pixel/label/provenance checks; no H1/H3 or total-viability inference"
+}

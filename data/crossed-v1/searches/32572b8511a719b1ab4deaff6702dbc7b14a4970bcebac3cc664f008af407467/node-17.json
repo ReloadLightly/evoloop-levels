@@ -1,0 +1,160 @@
+{
+  "node": 17,
+  "parent_node": 2,
+  "incoming_child": 2,
+  "path": [
+    0,
+    0,
+    2
+  ],
+  "depth": 4,
+  "input_identity": "8x8:01111111111117017017017017017017011117014014",
+  "input_snapshot_hash": "7f2ee6c88e486703e246a3e66ad92a374fa9085938678d573eebdc30ef24b05d",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "f203ad861997295e36e994e9e4f1938039b6eb69576457241abea0d770287596",
+    "final_hash": "f909d6c25480ec4ca7f2b2acfc64042056235ca4726495cde815ffda803affab",
+    "completed_updates": 550,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 280,
+        "closure_first_seen_t": 270,
+        "core": [
+          75,
+          94,
+          6,
+          6
+        ],
+        "identity": "6x6:011111111111170170170170111117014014",
+        "snapshot_hash": "ff161fee83d383f0baf4145946701751b3e29917beef11c8c70e98daeee991c4",
+        "extraction_bbox": [
+          72,
+          91,
+          12,
+          12
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 500,
+        "closure_first_seen_t": 490,
+        "core": [
+          64,
+          97,
+          3,
+          3
+        ],
+        "identity": "3x3:011111111111170117014014",
+        "snapshot_hash": "51f34f557235d2190a965aeaf18b4f96dcf42ecf5495eb3f94a8e0b7ee8aac9b",
+        "extraction_bbox": [
+          61,
+          94,
+          9,
+          9
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 550,
+        "closure_first_seen_t": 550,
+        "core": [
+          92,
+          75,
+          6,
+          6
+        ],
+        "identity": "6x6:011111111111170170170170111117014014",
+        "snapshot_hash": "075d12dacfbc9a3e7b0a3cbe85ca690ef9b050edae24a35e3bfd471c6509c2c8",
+        "extraction_bbox": [
+          89,
+          72,
+          12,
+          12
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 118
+      },
+      {
+        "t": 100,
+        "closed_cores": 1,
+        "occupied_cells": 153
+      },
+      {
+        "t": 200,
+        "closed_cores": 1,
+        "occupied_cells": 195
+      },
+      {
+        "t": 300,
+        "closed_cores": 2,
+        "occupied_cells": 219
+      },
+      {
+        "t": 400,
+        "closed_cores": 2,
+        "occupied_cells": 305
+      },
+      {
+        "t": 500,
+        "closed_cores": 3,
+        "occupied_cells": 373
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          92,
+          92,
+          8,
+          8
+        ],
+        "identity": "8x8:01111111111117017017017017017017011117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 270,
+        "core": [
+          75,
+          94,
+          6,
+          6
+        ],
+        "identity": "6x6:011111111111170170170170111117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 490,
+        "core": [
+          64,
+          97,
+          3,
+          3
+        ],
+        "identity": null
+      },
+      {
+        "type": "core_appearance",
+        "t": 550,
+        "core": [
+          92,
+          75,
+          6,
+          6
+        ],
+        "identity": "6x6:011111111111170170170170111117014014"
+      }
+    ]
+  }
+}

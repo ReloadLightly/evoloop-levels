@@ -387,8 +387,8 @@ from a checkout with completed freezes uses verification, rather than re-freezin
 The acquisition command requires its original committed HEAD; reproduce in that
 checkout with a separate output workspace, retaining the frozen source bindings.
 Audits replay completed evidence in the current checkout; no physics is changed.
-The crossed design is only a 160-world input freeze. A separately hash-bound,
-tested runner/audit and one-worker benchmark are required before its responses.
+At that checkpoint, the crossed design was only a 160-world input freeze. The
+separate runner/audit readiness freeze and benchmark below preceded its responses.
 
 ### Crossed implementation and response acquisition
 
@@ -403,11 +403,12 @@ so equal flattened bytes in differently shaped inputs cannot alias.
 ```bash
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.crossed_assay verify
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 140 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.crossed_assay benchmark
-OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.crossed_assay run --freeze-commit FULL_READINESS_COMMIT
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.crossed_assay run --freeze-commit 169f9b56b9eb328d2b285f28e4e3b5df00b01f3b
 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 220 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.verify_crossed
 ```
 
-Replace `FULL_READINESS_COMMIT` with the recorded acquisition commit. Before
+The recorded readiness/acquisition commit is
+`169f9b56b9eb328d2b285f28e4e3b5df00b01f3b`. Before
 acquisition the benchmark and runner check that this commit contains the exact
 readiness, implementation, tests, validation, review and source-record bytes.
 Run acquisition, replay, rendering and Git packing sequentially. Resuming reuses
@@ -417,3 +418,34 @@ failed preflight attempts remain in the execution records. Native worlds keep
 five complete census grids and 81 compact structural samples, not exhaustive
 histories. Repeat verification checks the preserved design receipt; the original
 design-only auditor intentionally requires response evidence to be absent.
+
+After the independent scientific audit passes, generate the exact readable tables
+and four dark figure groups, then verify their pixels, labels and provenance:
+
+```bash
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 100 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.report_crossed
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 260 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.figures_crossed
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 220 --log data/crossed-v1/execution.jsonl .venv/bin/python -m scripts.verify_crossed_figures
+OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scripts.memory_guard --retry --reserve 180 --log data/crossed-v1/execution.jsonl /usr/bin/time -f 'seconds=%e peak_rss_kib=%M exit=%x' -o data/crossed-v1/render-manuscript.txt .venv/bin/python -m scripts.render_manuscript
+```
+
+The report and renderers require the passed audit and matching input hashes. The
+figure validator preserves all 126 prior exports, checks the 12 new exports and
+their source inventory, and compares all recorded raw cells and 80 retention
+labels with the saved evidence. Visual review additionally checks the two
+interaction plots and the assembled manuscript. Run each command sequentially;
+do not overlap rendering or Git packing with acquisition or replay.
+
+Recorded acquisition completed in 1856.009 s (runner work 1854.225 s), peak 166388
+KiB RSS, minimum available 762.59 MiB. Independent replay took 2643.313 s
+(guarded invocation 2645.052 s), peak 210292 KiB, minimum available 697.49 MiB.
+The latter checks 256000 native updates, 7223180 isolation updates and 3618420
+admission-schedule updates, all 950 searches and the exact assessment, with zero
+mismatches. Timing is descriptive of this machine; identical reruns are not new
+scientific samples. Invocation outcomes, including the first failed PNG-border
+alignment check, remain in execution.jsonl and the corresponding stdout files.
+The final 67-page manuscript includes 41 native vector figure pages and passes
+full Ghostscript decoding. Scientific/visual reviews and source/PDF hashes are
+recorded in [crossed scientific review](crossed-scientific-review.md),
+[crossed figure review](crossed-figure-review.md), and
+[manuscript validation](crossed_manuscript_validation.json).

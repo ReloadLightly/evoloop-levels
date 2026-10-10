@@ -6,3 +6,43 @@
 {"utc_epoch": 1791667087.826903, "status": "complete", "available_mib": 888.3515625, "exit_code": 0, "minimum_available_mib": 838.97265625, "seconds": 1.5022587776184082}
 {"utc_epoch": 1791667130.743407, "status": "start", "available_mib": 885.10546875, "command": [".venv/bin/python", "-m", "scripts.crossed_assay", "freeze-readiness"]}
 {"utc_epoch": 1791667131.7462835, "status": "complete", "available_mib": 888.05859375, "exit_code": 0, "minimum_available_mib": 850.0234375, "seconds": 1.0030739307403564}
+{"utc_epoch": 1791667136.1789489, "status": "start", "available_mib": 884.50390625, "command": ["git", "-c", "pack.threads=1", "commit", "-m", "Freeze tested crossed source assay and independent response audit before acquisition"]}
+{"utc_epoch": 1791667136.6803045, "status": "complete", "available_mib": 880.41796875, "exit_code": 128, "minimum_available_mib": 884.2578125, "seconds": 0.5016329288482666}
+{"utc_epoch": 1791667146.2534053, "status": "start", "available_mib": 894.02734375, "command": ["git", "-c", "pack.threads=1", "commit", "-m", "Freeze tested crossed source assay and independent response audit before acquisition"]}
+{"utc_epoch": 1791667146.7545953, "status": "complete", "available_mib": 894.97265625, "exit_code": 0, "minimum_available_mib": 894.02734375, "seconds": 0.5013837814331055}
+{"utc_epoch": 1791667152.8757663, "status": "start", "available_mib": 896.2890625, "command": ["git", "-c", "pack.threads=1", "push", "origin", "main"]}
+{"utc_epoch": 1791667154.8780103, "status": "complete", "available_mib": 903.5390625, "exit_code": 0, "minimum_available_mib": 891.38671875, "seconds": 2.0024681091308594}
+{"utc_epoch": 1791667159.5418649, "status": "start", "available_mib": 887.45703125, "command": [".venv/bin/python", "-m", "scripts.crossed_assay", "benchmark"]}
+{"utc_epoch": 1791667161.0433662, "status": "complete", "available_mib": 882.9453125, "exit_code": 0, "minimum_available_mib": 841.90234375, "seconds": 1.5016753673553467}
+{"utc_epoch": 1791667164.9475286, "status": "start", "available_mib": 885.63671875, "command": [".venv/bin/python", "-m", "scripts.crossed_assay", "run", "--freeze-commit", "169f9b56b9eb328d2b285f28e4e3b5df00b01f3b"]}
+{"utc_epoch": 1791669020.9574172, "status": "complete", "available_mib": 894.359375, "exit_code": 0, "minimum_available_mib": 762.58984375, "seconds": 1856.008840084076}
+{"utc_epoch": 1791669028.3401072, "status": "start", "available_mib": 891.81640625, "command": [".venv/bin/python", "-m", "scripts.verify_crossed"]}
+{"utc_epoch": 1791671673.3931196, "status": "complete", "available_mib": 885.6328125, "exit_code": 0, "minimum_available_mib": 697.48828125, "seconds": 2645.052028656006}
+{"utc_epoch": 1791671696.58938, "status": "start", "available_mib": 875.3515625, "command": [".venv/bin/python", "-m", "scripts.report_crossed"]}
+{"utc_epoch": 1791671699.0929859, "status": "complete", "available_mib": 878.015625, "exit_code": 0, "minimum_available_mib": 759.46484375, "seconds": 2.5039477348327637}
+{"utc_epoch": 1791671701.926558, "status": "start", "available_mib": 877.69140625, "command": [".venv/bin/python", "-m", "scripts.figures_crossed"]}
+{"utc_epoch": 1791671709.9336574, "status": "complete", "available_mib": 881.21875, "exit_code": 0, "minimum_available_mib": 730.92578125, "seconds": 8.007338285446167}
+{"utc_epoch": 1791671733.1348143, "status": "start", "available_mib": 877.609375, "command": [".venv/bin/python", "-m", "scripts.verify_crossed_figures"]}
+{"utc_epoch": 1791671736.6384106, "status": "complete", "available_mib": 876.0, "exit_code": 1, "minimum_available_mib": 796.7890625, "seconds": 3.503871202468872}
+{"utc_epoch": 1791671784.1963835, "status": "start", "available_mib": 879.33203125, "command": [".venv/bin/python", "-m", "scripts.figures_crossed"]}
+{"utc_epoch": 1791671791.20219, "status": "complete", "available_mib": 885.45703125, "exit_code": 0, "minimum_available_mib": 738.97265625, "seconds": 7.006000995635986}
+{"utc_epoch": 1791671799.6264327, "status": "start", "available_mib": 881.37890625, "command": [".venv/bin/python", "-m", "scripts.verify_crossed_figures"]}
+{"utc_epoch": 1791671803.1295793, "status": "complete", "available_mib": 879.515625, "exit_code": 0, "minimum_available_mib": 793.4921875, "seconds": 3.50331974029541}
+{"utc_epoch": 1791671826.5442562, "status": "start", "available_mib": 841.38671875, "command": ["/usr/bin/time", "-f", "seconds=%e peak_rss_kib=%M exit=%x", "-o", "data/crossed-v1/render-manuscript.txt", ".venv/bin/python", "-m", "scripts.render_manuscript"]}
+{"utc_epoch": 1791671835.0527833, "status": "complete", "available_mib": 850.59375, "exit_code": 0, "minimum_available_mib": 751.890625, "seconds": 8.509013891220093}
+{"utc_epoch": 1791671841.2505581, "status": "start", "available_mib": 852.3359375, "command": ["/usr/bin/time", "-f", "seconds=%e peak_rss_kib=%M exit=%x", "-o", "data/crossed-v1/decode-manuscript.txt", "gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-sDEVICE=nullpage", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791671842.7529533, "status": "complete", "available_mib": 858.08984375, "exit_code": 0, "minimum_available_mib": 825.0234375, "seconds": 1.502612829208374}
+{"utc_epoch": 1791671853.5927975, "status": "start", "available_mib": 854.36328125, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=txtwrite", "-sOutputFile=/tmp/crossed-manuscript-page-%03d.txt", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791671857.5977314, "status": "complete", "available_mib": 852.04296875, "exit_code": 0, "minimum_available_mib": 827.0859375, "seconds": 4.0052735805511475}
+{"utc_epoch": 1791671867.8911858, "status": "start", "available_mib": 856.43359375, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-dFirstPage=20", "-dLastPage=22", "-sDEVICE=png16m", "-r90", "-sOutputFile=/tmp/crossed-results-%02d.png", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791671868.3925996, "status": "complete", "available_mib": 860.42578125, "exit_code": 0, "minimum_available_mib": 856.43359375, "seconds": 0.5016419887542725}
+{"utc_epoch": 1791671875.6713216, "status": "start", "available_mib": 851.89453125, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-dFirstPage=64", "-dLastPage=67", "-sDEVICE=png16m", "-r90", "-sOutputFile=/tmp/crossed-figures-%02d.png", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791671876.172983, "status": "complete", "available_mib": 854.5859375, "exit_code": 0, "minimum_available_mib": 851.89453125, "seconds": 0.501884937286377}
+{"utc_epoch": 1791672041.038101, "status": "start", "available_mib": 822.578125, "command": ["/usr/bin/time", "-f", "seconds=%e peak_rss_kib=%M exit=%x", "-o", "data/crossed-v1/render-manuscript-2.txt", ".venv/bin/python", "-m", "scripts.render_manuscript"]}
+{"utc_epoch": 1791672049.545634, "status": "complete", "available_mib": 842.78125, "exit_code": 0, "minimum_available_mib": 742.89453125, "seconds": 8.507774829864502}
+{"utc_epoch": 1791672056.1925035, "status": "start", "available_mib": 835.59765625, "command": ["/usr/bin/time", "-f", "seconds=%e peak_rss_kib=%M exit=%x", "-o", "data/crossed-v1/decode-manuscript-2.txt", "gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-sDEVICE=nullpage", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791672057.6941485, "status": "complete", "available_mib": 832.16015625, "exit_code": 0, "minimum_available_mib": 808.8046875, "seconds": 1.501868486404419}
+{"utc_epoch": 1791672061.5050879, "status": "start", "available_mib": 831.10546875, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-sDEVICE=txtwrite", "-sOutputFile=/tmp/crossed-final-page-%03d.txt", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791672066.5130582, "status": "complete", "available_mib": 829.85546875, "exit_code": 0, "minimum_available_mib": 801.46875, "seconds": 5.008135557174683}
+{"utc_epoch": 1791672079.4369957, "status": "start", "available_mib": 832.97265625, "command": ["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dPDFSTOPONERROR", "-dFirstPage=23", "-dLastPage=23", "-sDEVICE=png16m", "-r90", "-sOutputFile=/tmp/crossed-final-discussion.png", "paper/manuscript.pdf"]}
+{"utc_epoch": 1791672079.9384408, "status": "complete", "available_mib": 833.046875, "exit_code": 0, "minimum_available_mib": 832.97265625, "seconds": 0.501713752746582}

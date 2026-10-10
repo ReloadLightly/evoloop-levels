@@ -1,8 +1,44 @@
-# Research state — crossed implementation validated; responses pending
+# Research state — crossed assessment completed and independently audited
 
-Date: 2026-10-10. Repository: ReloadLightly/evoloop-levels, main.
+Date: 2026-10-11. Repository: ReloadLightly/evoloop-levels, main.
 
-Latest assessment: EXP-developmental-calibration-001 prospectively freezes Q
+Latest result: EXP-age-geometry-cross-001 completes all 160 worlds, 800 source
+censuses and 80 D/U pairs: Q=5470, C=6250, R=780. Neither candidate meets joint
+both-input/both-panel superiority. RV01 passes absolute disturbed superiority
+only in confirmation; its relative comparison and development comparison remain
+unmet. Joint-confirmed originating-encounter fractions are 0/36 main, 0/18 held
+out and 0/54 overall under this assay; 16 other candidate-producing encounters
+retain unresolved inheritance. These are not estimates of zero biological yield.
+
+Sixteen of 40 absolute disturbed-count age contrasts exclude zero, and two of
+20 absolute interactions are negative (V03 development, −1 to −2/5 and −9/5 to
+−3/5). All 40 retention age and 20 retention interaction intervals include zero.
+Retention layout contrasts give 2 positive, 15 negative and 23 overlapping
+intervals. Absolute abundance and paired retention therefore require separate
+interpretations. A/B and E/F compare different complete spatial challenges,
+including removed-clone sites; elapsed ages are not homologous reproductive phases.
+These operational envelopes are not statistical confidence intervals or total
+viable-population bounds.
+
+All 33 repeated controls pass. Class-specific recovery is scored 5418/6048,
+valid-unregistered 4/124 and unknown-identity 48/78. Main-world registry recovery
+is below the numerical 90% threshold used in protocol011 calibration; the prior
+frozen calibration supplies the declared protocol012 gate and remains passed.
+That qualification is not a main-world coverage claim; protocol010 remains failed.
+The four valid-unregistered confirmations share two complete inputs and recover
+registered V03 from observed 13×14 source identities. Forty-eight unknown-source
+confirmations also share two inputs. Source genotype and native parentage stay
+unresolved. The R=780 observations retain 645 nonconfirming searches and 135
+shared-component exclusions; isolated-root extinction does not establish native death.
+
+The independent audit passes with zero mismatches across all 160 full native
+trajectories, 12960 structural samples, 6250 sources, 950 isolated searches,
+3347 generation states and 6236 child-selection states, plus exact cell/panel/
+contrast arithmetic and gates. Audit receipts and exact tables are in
+data/crossed-v1/integrity.json and analysis.md. Repeated deterministic complete
+inputs retain their observational multiplicity without becoming independent samples.
+
+Prior qualification: EXP-developmental-calibration-001 prospectively freezes Q
 confirmed recoverable sources, C every detected core and R=C−Q unresolved sources.
 All 20 new worlds/100 census snapshots complete: Q=736, C=820, R=84. All 30 original
 phase and 3 known omitted-input controls pass. Scored recovery 726/799 meets 90%
@@ -20,15 +56,33 @@ The assessed protocol 012 design freezes 160 complete starts/80 pairs: all five
 states × ages 0/30/100/120 × four layouts × D/U. All ages occur in all layouts.
 A/B develop, E/F reserve distinct complete spatial challenges; aliases are retained,
 including cross-state and already observed development starts. Each layout includes
-its removed-clone position, not a pure distance treatment. Exact one-third cells,
-occupied-state bins and 3→2 registered cores are verified, retaining whole arms.
-Responses remain unacquired at implementation readiness. The new crossed runner
+its removed-clone position, not a pure distance treatment. Exact one-third cell
+removal, one-third removal within each occupied-state count and 3→2 registered
+cores are verified, retaining whole arms.
+Responses were unacquired at implementation readiness. The new crossed runner
 and independent dense response auditor pass 63 consolidated tests. The cache
 binds complete array shape and data type as well as bytes, identity, endpoint,
 rules and configuration; earlier frozen implementations remain unchanged.
-Next: commit and remotely verify the hash-bound readiness receipt, benchmark
-the first control with one worker, then acquire and independently audit all
-160 worlds sequentially under the guard. H1/H3 remain untested; RSI is unestablished.
+Readiness is committed and remotely verified at
+169f9b56b9eb328d2b285f28e4e3b5df00b01f3b before the first-control benchmark
+(0.768 s, 73520 KiB peak RSS, one worker). Guarded acquisition completed with
+that frozen commit in 1856.009 s (runner work 1854.225 s), peak166388 KiB.
+Minimum sampled available memory was762.59 MiB. Independent audit work took
+2643.313 s (guarded invocation2645.052 s), peak210292 KiB, minimum available
+697.49 MiB. Resume commands are in docs/reproducing-results.md;
+completed world/search receipts are verified before reuse. Actual progress is
+in data/crossed-v1/acquisition-stdout.txt and execution.jsonl. Scientific text and
+four dark figure groups are updated. Figure validation preserves all 126 prior
+exports and verifies the 12 new exports, 221184 native cell centers and 80
+retention labels; all PNG centers match exactly. The rebuilt manuscript has 67
+pages and 41 appended vector figures; all pages decode and the new tables/figure
+pages are visually inspected. Independent scientific and visual review accepts
+the interpretation and publication after clarifying protocol009's age/layout
+confounding versus protocol012's crossing. Receipts are in
+docs/crossed-scientific-review.md, docs/crossed-figure-review.md and
+docs/crossed_manuscript_validation.json. The next causal
+programme is independent-population organism and history transplantation,
+described in docs/next-experiment.md. H1/H3 remain untested; RSI is unestablished.
 
 Prior completed evidence: all 40 paired response worlds and ten separate calibration
 worlds have completed. Each constructed three-clone colony loses one complete
@@ -175,7 +229,7 @@ docs/coverage_manuscript_validation.json, docs/coverage-scientific-review.md,
 and docs/coverage-figure-review.md. Earlier publication receipts remain records
 of their corresponding export versions.
 
-Latest reproducibility: protocol 011/config/input/code freeze remotely verified at
+Prior calibration reproducibility: protocol 011/config/input/code freeze remotely verified at
 1bae4a102737d72b725974ffdaa6535ec0d4907d before responses. Preflight 29 tests pass.
 One-worker benchmark 0.87 s, peak 65516 KiB; completed calibration invocation
 570.55 s, peak 67380 KiB, 240 distinct search keys/530 generation simulations.
@@ -185,14 +239,15 @@ proofs retain prior checks across interrupted audit invocations. Seven additiona
 crossed-design tests pass; independent design verification passes all 160 starts,
 80 preparations and 23,920 effective-state comparisons. All 12,000 reserved checks
 are non-equivalent, and 20 aliases to previously observed protocol 009 development
-states are retained. No crossed response is acquired. Host-memory guard stops,
+states are retained. Crossed responses were absent at that design-only checkpoint;
+their completed assessment and separate readiness freeze are described above. Host-memory guard stops,
 launch refusals and automatic resumptions remain in execution.jsonl; the successful
 calibration invocation retains at least 204.24 MiB sampled available memory.
 Independent replay, crossed-design audit, figure/pixel and PDF review receipts
 are retained with their execution logs in
 `data/developmental-v1` and `data/crossed-v1`; reproduction commands are in
 [reproducing-results](docs/reproducing-results.md). See the updated
-[programme](docs/next-experiment.md) for the crossed acquisition and independent
+[programme](docs/next-experiment.md) for independent
 population comparisons.
 
 ## Fresh input discovery and completed atlas

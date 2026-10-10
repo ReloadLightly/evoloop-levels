@@ -4,7 +4,7 @@
 
 ### Abstract
 
-Evolution depends on variation that survives reproduction. In evoloops, digital organisms reproduce within a cellular grid, and their encounters can change the structures they produce. We investigate how organisms, their partners, and ecological history contribute to useful heritable variation. An initial two-organism experiment produced candidate changes in six of 40 contacting configurations but no confirmed stable novelty, including after a delayed-extraction calibration. A fresh three-organism atlas now confirms pair-relative inherited novelty in **2/36 main configurations and 0/18 held-out configurations**, with no candidates in 90 controls. One successful configuration produces a word absent from all three inputs; the other recovers the third catalogue identity. Candidate rank reversals and inherited interaction contrasts do not transfer to held-out states. A first population-score comparison favors the known-word recovery, but its ineffective disturbances and duplicated confirmation limit interpretation. A subsequent assay removes exactly one third of cells and counted cores from standardized three-copy microcolonies and compares their futures with undisturbed controls. Calibration passes at 77/80 selected components and 30/30 preparation controls. Neither inherited state meets its joint relative-retention and absolute-population criterion; sixteen other candidate encounters remain unresolved. A coverage follow-up recovers stable registered descendants from six of eight selected unknown-identity sources, while failing a state-specific recovery gate. The score omits recoverable developmental states. A new prospective source measure confirms 736/820 detected source observations in 20 calibration worlds and passes all new gates, retaining 84 unresolved observations. The crossed age/layout design is frozen before responses; the measure concerns isolated recoverability, not total viable population.
+Evoloops reproduce within a cellular grid, where encounters can change the structures they produce. We investigate how organisms, their partners and ecological history contribute to useful heritable variation. An initial two-organism atlas produced candidates in 6/40 contacting configurations without confirmed stable novelty. A prospective three-identity atlas confirmed pair-relative inherited novelty in 2/36 main and 0/18 held-out encounters: one catalogue-novel word and one recovery of a known third identity. Candidate rank reversals did not transfer held out. A first population-score advantage had mostly no-op disturbances and symmetry-equivalent reserved challenges; a subsequent matched-removal assay found no joint superiority over both originating inputs. Coverage then demonstrated that this registry score omits recoverable source states, while failing a state-specific recovery gate. A new prospective source measure qualified in 20 calibration worlds and was applied to a fully crossed comparison of preparation age and spatial layout. All 160 worlds are complete, confirming 5,470 of 6,250 detected source observations while retaining 780 unresolved. Sixteen absolute disturbed-count age contrasts and two development interactions exclude zero within the declared envelopes; every relative retention age and interaction interval includes zero. Neither recovered state meets the joint criterion, although RV01 exceeds both inputs in absolute disturbed count in confirmation alone. These finite comparisons distinguish variation production, transmission, population abundance and paired retention. Isolated recoverability does not establish total viable population. Independent organism and ecological-history transplants remain necessary for H1 and H3; increased evolvability and recursive self-improvement are not established.
 
 ![Recorded evoloop world, with cell states shown in the project's Chromatic Fields palette](figures/world-overview-dark.png)
 
@@ -212,7 +212,51 @@ The ten unknown-source confirmations are five bodies in each twin of V01 calibra
 
 ![Developmental source qualification](figures/developmental1-resolution-dark.svg)
 
-*All detected sources remain in Q/C; unresolved R stays explicit. [Complete recorded paired states](figures/developmental1-paired-states-dark.svg) show the first declared illustration condition. [Analysis](data/developmental-v1/analysis.md), [protocol 011](protocols/011-developmental-source-measure.md), and [crossed protocol 012](protocols/012-crossed-age-geometry.md) preserve the definitions and exact gates. The crossed design freezes 160 starts/80 pairs after assessment; its response acquisition is pending.*
+*All detected sources remain in Q/C; unresolved R stays explicit. [Complete recorded paired states](figures/developmental1-paired-states-dark.svg) show the first declared illustration condition. [Analysis](data/developmental-v1/analysis.md), [protocol 011](protocols/011-developmental-source-measure.md), and [crossed protocol 012](protocols/012-crossed-age-geometry.md) preserve the definitions and exact gates. The completed crossed assessment below applies the frozen measure to all 160 worlds/80 pairs.*
+
+## Separating preparation age from the spatial challenge
+
+The matched-removal assay changed preparation age and layout together. A sign change could therefore arise from either change or their interaction. Protocol 012 crosses ages 0, 30, 100 and 120 at every layout for all five complete input states, with disturbed and undisturbed twins. All 160 worlds and 800 source censuses are complete. D removes one complete clone, deleting one third of occupied cells and one third of the count in each occupied-state bin, with registered cores 3→2; U retains all three clones. The reserved complete starts are distinct from development and previous assessment inputs under rotation and translation; 20 previously observed development starts retain their repeat labels.
+
+The census confirms Q=5,470 of C=6,250 source observations, retaining R=780 unresolved. Class-specific recovery is 5,418/6,048 registry-scored, 4/124 valid-unregistered and 48/78 unknown-identity. All 30 original-identity phase controls and three known omitted-input controls pass. The frozen new-context calibration remains passed; the earlier coverage gate remains failed. Main-world registry recovery is below the numerical 90% threshold used in that calibration. Protocol 012 uses the prior frozen calibration as its gate; passing it does not establish main-world coverage, and the threshold is not retroactively reapplied. The low valid-unregistered resolution contributes broad envelopes. These are source observations nested within deterministic worlds, not distinct organisms or independent populations.
+
+Each retention interval uses five-census sums [Q_D/C_U,C_D/Q_U]. The panel means below average eight condition intervals rather than pooling counts. Disturbed means average the corresponding five-census [Q,C] counts. Display values are rounded; [the analysis](data/crossed-v1/analysis.md) preserves exact fractions and all 80 conditions.
+
+| State | Panel | Retention envelope | Disturbed source-count mean [Q,C] |
+|---|---|---:|---:|
+| V01 | development | [0.6719, 0.9035] | [6.5250, 7.2750] |
+| V01 | confirmation | [0.6776, 0.9509] | [7.1750, 8.3250] |
+| V02 | development | [0.7294, 1.0631] | [5.9750, 7.0500] |
+| V02 | confirmation | [0.5922, 0.7876] | [4.8250, 5.5250] |
+| V03 | development | [0.6943, 0.7977] | [5.7000, 5.9250] |
+| V03 | confirmation | [0.7725, 0.8867] | [6.9000, 7.1750] |
+| RV01 | development | [0.6821, 0.8767] | [6.6250, 7.2750] |
+| RV01 | confirmation | [0.6948, 0.9015] | [7.3250, 8.3250] |
+| RV02 | development | [0.5997, 0.7875] | [4.1000, 4.6500] |
+| RV02 | confirmation | [0.7235, 0.9723] | [5.3500, 6.0500] |
+
+Neither RV01 nor RV02 meets relative superiority over both originating inputs in both panels. RV01 exceeds both inputs in absolute disturbed count in confirmation alone: its Q mean is 7.325, compared with input C means 5.525 and 7.175. Its development comparison and relative criteria remain unmet. RV02 meets neither robust criterion across panels. Joint-confirmed originating-encounter fractions are therefore 0/36 main, 0/18 held out and 0/54 overall under this assay. Sixteen other candidate-producing encounters retain unresolved inheritance. Overlapping bounds and unconfirmed pathways do not establish zero true benefit.
+
+| Measure | Contrast | Positive | Negative | Includes zero |
+|---|---|---:|---:|---:|
+| Relative retention | Age,40 | 0 | 0 | 40 |
+| Relative retention | Layout,40 | 2 | 15 | 23 |
+| Relative retention | Interaction,20 | 0 | 0 | 20 |
+| Absolute disturbed count | Age,40 | 16 | 0 | 24 |
+| Absolute disturbed count | Layout,40 | 10 | 14 | 16 |
+| Absolute disturbed count | Interaction,20 | 0 | 2 | 18 |
+
+Positive and negative entries count exact intervals wholly above or below zero, not statistical significance. Sixteen absolute disturbed-count age contrasts exclude zero; two negative V03 development interactions are [−1.0,−0.4] for age 100−0 and [−1.8,−0.6] for 120−30. Every retention age and interaction interval includes zero. Thirteen of 20 B−A retention layout contrasts are negative; F−E has two negative, two positive and sixteen overlapping contrasts. The positive F−E comparisons concern V03 at ages 0 and 30. Thus source abundance can depend on age and layout while a change in paired retention remains unresolved. A/B and E/F are different spatial challenges, not replication of one geometry treatment. Each layout includes the removed-clone site, and elapsed ages are not homologous reproductive phases.
+
+The four valid-unregistered confirmations occur at native update 1600 in RV02 layout B, ages 0 and 30, in both twins. Two distinct complete inputs with observed 13×14 identities recover the registered 13×13 V03 identity. Forty-eight unknown-source confirmations share two complete inputs and recover V01/RV01 or V03. These findings certify recoverable source states excluded by the fixed registry, without relabeling source genotype, assigning native parents or supplying independent recovery replicates. The remaining 780 observations include 645 nonconfirming searches and 135 shared-component exclusions. Nonconfirmation is unresolved recoverability; isolated extinction is not native lineage death.
+
+![All crossed retention envelopes](figures/crossed1-retention-dark.svg)
+
+*All 80 conditions are shown before panel aggregation. Labels give [Q_D/C_U,C_D/Q_U]; color encodes the lower endpoint. Source counts use five declared census times and retain every unresolved core. These operational envelopes are not total-viability bounds or confidence intervals.*
+
+![Absolute disturbed-count interactions](figures/crossed1-disturbed-interactions-dark.svg)
+
+*All 20 differences of age differences in disturbed source-count means. The two V03 development intervals exclude zero; [retention interactions](figures/crossed1-interactions-dark.svg) all span zero. [The first declared D/U pair](figures/crossed1-paired-states-dark.svg) shows complete recorded grids at updates 0, 800 and 1600. This previously observed preparation is a deterministic check. Independent replay verifies all native and isolated evidence with zero mismatches; the source envelope concerns isolated recoverability, not total viable population.*
 
 ## What these findings mean
 
@@ -220,7 +264,7 @@ The completed comparisons separate candidate production from stable transmission
 
 The atlases differ in organism inputs, arena extent, candidate screening, periodic measurement, and descendant search. Their different yields therefore cannot be attributed to enrichment of the organism panel alone. The same-size V02/V03 comparison holds core dimensions fixed, while words, arms, complete states, and developmental timing still vary. All three fresh identities are related selected descendants, not independent population histories.
 
-The calibrated source measure now admits recoverable unknown/transient states while preserving84 unresolved observations and all earlier classifications. Its passing gate is specific to the new census, contexts and isolation endpoint; it does not rescue the old failed coverage gate. The frozen crossed design separates elapsed-age effects from complete spatial-challenge effects using paired controls and exact fractional removal. Implementing its runner/audit and benchmarking one worker is the next step before response acquisition. Increasing a population score alone would not demonstrate recursive self-improvement. The [research programme](docs/next-experiment.md) retains independent organism and ecological-history transplants for H1 and H3, which remain untested.
+The calibrated source measure admits recoverable unknown and transient states while preserving unresolved observations and all earlier classifications. Its passing gate is specific to the calibration contexts and isolation endpoint; it does not rescue the old failed coverage gate. The crossed assessment separates nominal age and layout manipulations and shows why absolute abundance and paired retention need separate explanations: some count contrasts resolve while retention age/interactions remain unresolved. Neither inherited state establishes joint superiority. Increasing a population measure alone would not demonstrate increased evolvability or recursive self-improvement. The [research programme](docs/next-experiment.md) retains independent organism and ecological-history transplants for H1 and H3, which remain untested.
 
 The longer-term question is whether evolutionary change alters the capacity for further adaptive change. The route to answering it is to measure the production, transmission, and ecological consequences of variation together, then determine which differences transfer with organisms and which depend on their encounters.
 

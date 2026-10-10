@@ -1,0 +1,181 @@
+{
+  "node": 0,
+  "parent_node": null,
+  "incoming_child": null,
+  "path": [],
+  "depth": 1,
+  "input_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+  "input_snapshot_hash": "b8934d898706b15c78c428a676151c0855c2b2e518fd0033e321f249c53b91fa",
+  "incoming_streak": 0,
+  "outcome": {
+    "status": "offspring_observed",
+    "initial_hash": "5ab6dace113171ba13978548124bea9db054414ed71985d093e717852d0c5993",
+    "final_hash": "56e9dc3f346a9e85f27c7a8b35c984d8a16cc73be50df448493a4528c2500464",
+    "completed_updates": 810,
+    "horizon": 1600,
+    "sampling_interval": 10,
+    "boundary_first_t": null,
+    "children": [
+      {
+        "detached_t": 210,
+        "closure_first_seen_t": 200,
+        "core": [
+          84,
+          111,
+          12,
+          12
+        ],
+        "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "snapshot_hash": "e44e705a1c5125749116304d92fdf61ef6d84eaf88f1d66b3b206d91b5e9eaf6",
+        "extraction_bbox": [
+          81,
+          108,
+          18,
+          18
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 540,
+        "closure_first_seen_t": 540,
+        "core": [
+          97,
+          129,
+          12,
+          4
+        ],
+        "identity": "4x12:01111111111117017017017017017017011117014014",
+        "snapshot_hash": "8719af40aca4ec570559c8e0683802a3131f4d5b327fc249c727f8f3d88f2326",
+        "extraction_bbox": [
+          94,
+          126,
+          18,
+          10
+        ],
+        "size_eligible": true
+      },
+      {
+        "detached_t": 810,
+        "closure_first_seen_t": 810,
+        "core": [
+          103,
+          144,
+          6,
+          6
+        ],
+        "identity": "6x6:011111111111170170170170111117014014",
+        "snapshot_hash": "fdf12ab366ec732c1eb251689ae8f21a51a2da6031ec7368beb469f71123db0c",
+        "extraction_bbox": [
+          100,
+          141,
+          12,
+          12
+        ],
+        "size_eligible": true
+      }
+    ],
+    "samples": [
+      {
+        "t": 0,
+        "closed_cores": 1,
+        "occupied_cells": 349
+      },
+      {
+        "t": 100,
+        "closed_cores": 1,
+        "occupied_cells": 401
+      },
+      {
+        "t": 200,
+        "closed_cores": 2,
+        "occupied_cells": 461
+      },
+      {
+        "t": 300,
+        "closed_cores": 2,
+        "occupied_cells": 514
+      },
+      {
+        "t": 400,
+        "closed_cores": 1,
+        "occupied_cells": 555
+      },
+      {
+        "t": 500,
+        "closed_cores": 1,
+        "occupied_cells": 365
+      },
+      {
+        "t": 600,
+        "closed_cores": 2,
+        "occupied_cells": 299
+      },
+      {
+        "t": 700,
+        "closed_cores": 2,
+        "occupied_cells": 369
+      },
+      {
+        "t": 800,
+        "closed_cores": 2,
+        "occupied_cells": 468
+      }
+    ],
+    "events": [
+      {
+        "type": "core_appearance",
+        "t": 0,
+        "core": [
+          97,
+          70,
+          12,
+          12
+        ],
+        "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 200,
+        "core": [
+          84,
+          111,
+          12,
+          12
+        ],
+        "identity": null
+      },
+      {
+        "type": "core_loss",
+        "t": 400,
+        "core": [
+          84,
+          111,
+          12,
+          12
+        ]
+      },
+      {
+        "type": "core_appearance",
+        "t": 540,
+        "core": [
+          97,
+          129,
+          12,
+          4
+        ],
+        "identity": "4x12:01111111111117017017017017017017011117014014"
+      },
+      {
+        "type": "core_appearance",
+        "t": 810,
+        "core": [
+          103,
+          144,
+          6,
+          6
+        ],
+        "identity": "6x6:011111111111170170170170111117014014"
+      }
+    ]
+  }
+}

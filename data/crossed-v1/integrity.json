@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "counts": {
+    "phase_controls_verified": 30,
+    "omitted_controls_verified": 3,
+    "world_samples_verified": 12960,
+    "complete_components_verified": 12351,
+    "eligible_sources_verified": 6115,
+    "detected_sources_verified": 6250,
+    "census_grids_verified": 800,
+    "full_world_trajectories_verified": 160,
+    "dense_world_updates_replayed": 256000,
+    "world_proofs_created": 160,
+    "shared_components_verified": 135,
+    "ineligible_sources_verified": 135,
+    "isolated_generation_states_replayed": 3347,
+    "child_selection_states_replayed": 6236,
+    "dense_isolation_updates_replayed": 7223180,
+    "search_nodes_verified": 3347,
+    "search_roots_verified": 950,
+    "isolated_detection_samples_verified": 365189,
+    "dense_admission_schedule_updates_replayed": 3618420,
+    "search_proofs_created": 950,
+    "parent_child_edges_verified": 2397,
+    "confirmations_verified": 696,
+    "exact_analysis_verified": 1
+  },
+  "scope": "all160 complete native trajectories,800 complete censuses and12960 structural samples; every detected source, complete extraction, cached-key local128 admission,33 controls, all executed serial searches/children, exact per-cell/panel/contrast intervals and joint gates; frozen design proof linkage; no total viable population or genetic ancestry",
+  "mismatches": 0,
+  "experiment_id": "EXP-age-geometry-cross-001",
+  "manifest_sha256": "8ab856dddb95099ab0125498f5ef33bd5803efa435843c7e01dca5227bc8f264",
+  "readiness_sha256": "d6d62702d9a3f78c4aaaba1afdfe85497cb63d9f2241653a2787f45d9a49a34f",
+  "design_integrity_sha256": "af9e88e976f6394bff457dac71f78f8d5d16c22e2fc487f15da37a9553699d7b",
+  "auditor_sha256": "65ac8194a18aa593c1006ca26ba5bc9cb1964460b6033c9386e7761019534269",
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "freeze_commit": "169f9b56b9eb328d2b285f28e4e3b5df00b01f3b",
+  "calibration_gate_status": "passed",
+  "calibration_gate_checks": {
+    "phase_controls": true,
+    "omitted_controls": true,
+    "scored_overall": true,
+    "scored_per_state": true,
+    "resolved_share": true
+  },
+  "evidence_sha256": {
+    "results.json": "db9056dd17467d2dded19bbe0ffe1a1181644e04a462e822fc94b2b766a32cdf",
+    "analysis.json": "a9af4d9ee3aa8708b4c5d72ff3460cac660b4e34395b22e239ebb58e4c2b277b",
+    "acquisition.json": "cfbd8ddb6d517ff2ce218d6a6acd11a88ca0e4555e4763d76c8c464982f1d720",
+    "benchmark.json": "f880b3ddafcf9e79199c6d6c2af60796e7273889a3abb0c2db4bc0df42c37980"
+  },
+  "total": {
+    "Q": 5470,
+    "R": 780,
+    "C": 6250
+  },
+  "unique_searches": 950,
+  "ecological_search_keys": 919,
+  "generation_simulations": 3347,
+  "gate_checks": {
+    "frozen_calibration": true,
+    "repeated_phase_controls": true,
+    "repeated_omitted_controls": true,
+    "matched_exposure": true,
+    "distinct_confirmation": true
+  },
+  "benefits": [
+    {
+      "candidate": "RV01",
+      "inputs": [
+        "V02",
+        "V03"
+      ],
+      "originating_encounter": "near-main-V02-V03-p20-a-parallel",
+      "panels": [
+        {
+          "split": "development",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": false
+        },
+        {
+          "split": "confirmation",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": true
+        }
+      ],
+      "relative_robust_superiority": false,
+      "absolute_robust_superiority": false,
+      "joint_confirmed": false,
+      "classification": "robust_criterion_not_met",
+      "biological_advantage": "unresolved"
+    },
+    {
+      "candidate": "RV02",
+      "inputs": [
+        "V01",
+        "V03"
+      ],
+      "originating_encounter": "near-main-V01-V03-p20-a-parallel",
+      "panels": [
+        {
+          "split": "development",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": false
+        },
+        {
+          "split": "confirmation",
+          "relative_robust_superiority": false,
+          "absolute_robust_superiority": false
+        }
+      ],
+      "relative_robust_superiority": false,
+      "absolute_robust_superiority": false,
+      "joint_confirmed": false,
+      "classification": "robust_criterion_not_met",
+      "biological_advantage": "unresolved"
+    }
+  ],
+  "prior_coverage_gate": "failed; unchanged",
+  "seconds": 2643.312677889,
+  "peak_rss_kib": 210292
+}
