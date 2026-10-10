@@ -72,6 +72,39 @@ An independent author-file comparison is available as `python -m scripts.compare
 
 Operational continuity is recorded in [RESEARCH_STATE.md](../RESEARCH_STATE.md). The [next experiment](next-experiment.md) describes the scientific extension beyond the committed data.
 
+## Verify the prospective score-coverage freeze
+
+[Protocol 010](../protocols/010-paired-world-score-coverage.md) and
+[coverage-v1.json](../configs/coverage-v1.json) define EXP-score-coverage-001.
+Its [design receipt](../data/coverage-v1/manifest.json) references all 40 existing
+paired-world initial grids and all 30 complete phase controls, with file and
+original physical hashes. It also binds the unchanged registry, source physics,
+extraction/search implementation and earlier numerical outcomes.
+
+```sh
+python3 -m scripts.coverage_protocol verify
+python3 -m unittest tests.test_coverage_protocol -v
+```
+
+These checks use only the Python standard library; they perform no simulation,
+root selection, or recovery acquisition. `freeze` creates a new receipt only
+when none exists and refuses to replace one. Do not remove the committed receipt
+to change the design: a revised scientific design requires a new version.
+
+The recovery runner and independent replay audit are not yet implemented for
+protocol 010. Before main acquisition, bind their validated source hashes in a
+separate readiness receipt and remotely verify that receipt. Benchmark one
+declared phase control with one worker and record timing separately; then use
+the memory guard with at least 200 MiB headroom for resumable acquisition.
+Run acquisition, audits, rendering and Git packing sequentially. Keep source
+class separate from the delayed snapshot's measured identity; validate unknown
+roots and roots that become identifiable during maturation before readiness.
+The design ceiling is 1080 delayed roots plus 30 controls, at most 26,640
+generation simulations; empty source strata reduce actual work. Neither roots
+nor new coverage outcomes are present in the design receipt. Existing scientific
+figures and the manuscript describe completed results and are unchanged by this
+pre-acquisition freeze.
+
 ## Three-identity discovery and fresh atlas
 
 Protocol 005 reached three viable native-word identities in 79 selected trials,

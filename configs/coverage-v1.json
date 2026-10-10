@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-score-coverage-001",
+  "protocol": "protocols/010-paired-world-score-coverage.md",
+  "source_manifest": "data/impact-v1/manifest.json",
+  "source_commit": "c55daa343c78c95ceea929af88850ee7b2bcc4ef",
+  "output": "data/coverage-v1",
+  "states": ["V01", "V02", "V03", "RV01", "RV02"],
+  "conditions": ["development-0", "development-1", "confirmation-0", "confirmation-1"],
+  "treatments": ["D", "U"],
+  "shape": [192, 192],
+  "boundary": "periodic",
+  "interventions": "inherit protocol 009 complete starting grids; no further native interventions; declared serial isolation only",
+  "sampling": {
+    "source_times": [400, 800, 1200],
+    "classes": ["scored", "valid_unregistered", "unknown_identity"],
+    "selection": "first lexicographic (y,x,h,w) core in each run/time/class, before extraction eligibility filtering",
+    "per_stratum_cap": 1,
+    "empty_strata": "record available=0 and selected=0; no replacement",
+    "source_class": "immutable; record delayed class and confirmed descendant registry membership separately",
+    "unit": "selected run/time/class/core observation; delays nested within observation; worlds form finite deterministic conditions",
+    "split": "inherited development/confirmation labels are descriptive; both source panels already observed; no new held-out benefit confirmation"
+  },
+  "native": {
+    "maturation_delays": [0, 100, 400],
+    "continuation_horizon_from_source": 1600,
+    "sample_interval": 20,
+    "maximum_world_update": 2800,
+    "delayed_target": "exact original (y,x,h,w) core; any sampled loss at or before delay makes that delay ineligible even after recurrence",
+    "labels": ["sampled_first_loss", "sampled_first_recurrence", "endpoint_identity", "matching_source_word_elsewhere", "unknown_identity", "boundary_activity"],
+    "interpretation": "structural continuation; no native offspring or genetic ancestry assignment"
+  },
+  "extraction": {
+    "detector": "evoloop.periodic_tracking.detect",
+    "component": "complete contractible single-core occupied component including arms; periodic unwrapping only with empty row and column",
+    "unknown_identity_eligible": true,
+    "reject": ["shared_component", "noncontractible_component", "missing_complete_component", "component_too_large"],
+    "minimum_empty_margin_total": 20,
+    "core_loss": "retain sampled loss and recurrence as distinct fields; never select a replacement core"
+  },
+  "search": {
+    "isolation_shape": [192, 192],
+    "generation_horizon": 1600,
+    "detection_interval": 10,
+    "offspring_per_generation": 3,
+    "max_depth": 6,
+    "max_generation_simulations_per_root": 24,
+    "stable_transmissions": 2,
+    "ordering": "existing expanded_search depth-first ordering by detached_t, core and snapshot_hash",
+    "sampled_root_endpoint": "any valid composite identity transmitted unchanged on two consecutive isolated parent-child edges; identity may change before the stable streak",
+    "phase_control_endpoint": "original phase identity transmitted unchanged twice",
+    "unknown_root_initial_identity": null,
+    "unsearched_paths": "unresolved; retain offspring, depth, size and simulation truncations"
+  },
+  "controls": {
+    "matched_scored": "one scored core in every same run/time stratum when available; identical delays, extraction and any-stable-identity endpoint",
+    "phase_controls": "all 30 saved protocol 009 phase components: five states at ages 0,20,30,100,110,120",
+    "gate": {
+      "phase_original_identity_recoveries_required": 30,
+      "scored_selected_observation_recovery_fraction": "9/10",
+      "per_starting_state_scored_recovery_fraction": "4/5",
+      "observation_success": "delay 0 confirms a stable identity; denominator includes all selected scored observations, including ineligible delay-0 extractions",
+      "empty_scored_state": "gate unresolved, never vacuously passed",
+      "scope": "new diagnostic coverage gate; does not modify protocol 009 calibration"
+    }
+  },
+  "outcomes": {
+    "primary": "existence and counts of selected omitted observations with stable transmitted descendants at one or more declared delays",
+    "delay_statuses": ["confirmed_stable_descendant", "sampled_target_lost", "shared_component", "noncontractible_component", "missing_complete_component", "component_too_large", "unresolved_search", "pending", "interrupted"],
+    "separate_fields": ["source_identity_unknown", "source_class", "delayed_identity", "delayed_class", "root_reproduction_observed", "isolated_grid_extinction_nodes", "transmission_confirmed", "confirmed_identity", "confirmed_identity_in_registry", "same_as_source_identity", "ancestry_ambiguous", "search_censoring", "inheritance_unresolved", "benefit_pending"],
+    "root_reproduction_observed": "first generation admits at least one new detached complete known-identity single-core component outside its initial core coordinates; operational isolation evidence, not genetic parentage",
+    "denominators": "all selected observations and all three planned delays; report eligible-delay counts additionally, never instead",
+    "aggregation": "one success per source observation across delays; show per-world/state/treatment/class/time counts, available and empty strata; no independent-population CIs or p-values",
+    "negative": "no confirmed recoverability within declared sampling and search; no proof of nonviability or score completeness",
+    "disturbance_contrast": "descriptive selected-root composition contrast; not identified disturbance effect or estimated omitted population contribution"
+  },
+  "benefit": {
+    "assay": null,
+    "status": "not tested in this coverage calibration",
+    "current_registry_and_criteria": "immutable",
+    "next_gate": "recoverable omissions motivate a separately frozen revised score and new paired assay; no retrospective recoding"
+  },
+  "limits": {
+    "worlds": 40,
+    "strata": 360,
+    "maximum_selected_observations": 360,
+    "maximum_delayed_roots": 1080,
+    "phase_controls": 30,
+    "maximum_generation_simulations": 26640,
+    "interpretation": "hard upper bound including all 24 simulations per delayed root and phase control, not an expected workload"
+  },
+  "execution": {
+    "workers": 1,
+    "minimum_available_memory_mib": 200,
+    "benchmark_before_acquisition": true,
+    "benchmark_scope": "one declared phase control; timings only, retained separately and not an independent sample",
+    "schedule": "acquisition, independent replay audits, rendering and Git packing sequentially",
+    "resume": "retain interrupted invocation logs; resume only hash-verified completed cases"
+  }
+}

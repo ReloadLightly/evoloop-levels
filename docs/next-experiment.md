@@ -32,14 +32,19 @@ recovery thresholds does not establish that the fixed registry captures total
 viable population, or that omitted classes contribute equally to D and U.
 
 The single most informative next experiment is a prospective coverage calibration
-of these paired worlds. Freeze the run/time sampling panel, core-selection rule,
-maturation delays, continuation horizon, extraction budget, and recovery endpoint
-before selecting roots by replay or outcome. Retain all five prepared states and
-both disturbed and undisturbed treatments. Sample valid unregistered and unknown
-cores, with matched registry-scored structures and age-specific positive controls.
-Use complete components with arms; do not repair or crop a structure to make it
-extractable. Preserve all selected observations, including shared components,
-lost targets, unknown identities, extraction failures, and capped searches.
+of these paired worlds. [Protocol 010](../protocols/010-paired-world-score-coverage.md)
+and [coverage-v1.json](../configs/coverage-v1.json) now freeze its design before
+root selection or new recovery acquisition. The provenance receipt binds all 40
+native starting files and 30 saved phase controls. At times 400,800,1200, select
+one lexicographically first core per run/time/class: scored, valid unregistered,
+and unknown identity, before extraction filtering. Retain empty strata and class
+availability. Isolate at delays 0,100,400; observe native continuation for 1600
+updates after each source. Use complete components with arms; do not repair or
+crop a structure to make it extractable. Preserve all selected observations,
+including shared components, sampled target loss and recurrence, unknown
+identities, extraction failures, and capped searches. Source class stays fixed
+when later identity changes. This is a diagnostic sample, not a representative
+estimate of omitted viable population.
 
 Follow each declared native source through maturation and a fixed continuation,
 then test reproduction after isolation at the declared delays. A transient may
@@ -54,8 +59,12 @@ and unresolved classes, rather than assuming every omitted closed body is viable
 Keep the current registry and numerical criteria frozen. If coverage reveals
 recoverable omitted organisms, develop and freeze a revised score and new paired
 assay before its main acquisition. Any exploratory sensitivity calculation must
-remain separate from the existing primary outcomes. No coverage experiment has
-yet been completed.
+remain separate from the existing primary outcomes. The design is frozen; no
+coverage recovery acquisition has started. The immediate execution step is to
+implement and validate its runner and independent audit, record a hash-bound
+readiness receipt before main acquisition, and benchmark one declared control
+with one worker. The delay-zero scored recovery gate checks source-time assay
+performance; delayed searches describe maturation and sampled persistence.
 
 A subsequent experiment should fully cross declared elapsed ages with nonsymmetric
 site geometries. RV01 versus V02 changes retention sign between development-0 and

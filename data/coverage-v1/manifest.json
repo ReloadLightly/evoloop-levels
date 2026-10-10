@@ -1,0 +1,2825 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-score-coverage-001",
+  "freeze_scope": "design and input provenance only; no selected roots or acquired outcomes",
+  "acquisition_status": "not_started; implementation readiness receipt required",
+  "source_commit": "c55daa343c78c95ceea929af88850ee7b2bcc4ef",
+  "config": {
+    "schema_version": 1,
+    "experiment_id": "EXP-score-coverage-001",
+    "protocol": "protocols/010-paired-world-score-coverage.md",
+    "source_manifest": "data/impact-v1/manifest.json",
+    "source_commit": "c55daa343c78c95ceea929af88850ee7b2bcc4ef",
+    "output": "data/coverage-v1",
+    "states": [
+      "V01",
+      "V02",
+      "V03",
+      "RV01",
+      "RV02"
+    ],
+    "conditions": [
+      "development-0",
+      "development-1",
+      "confirmation-0",
+      "confirmation-1"
+    ],
+    "treatments": [
+      "D",
+      "U"
+    ],
+    "shape": [
+      192,
+      192
+    ],
+    "boundary": "periodic",
+    "interventions": "inherit protocol 009 complete starting grids; no further native interventions; declared serial isolation only",
+    "sampling": {
+      "source_times": [
+        400,
+        800,
+        1200
+      ],
+      "classes": [
+        "scored",
+        "valid_unregistered",
+        "unknown_identity"
+      ],
+      "selection": "first lexicographic (y,x,h,w) core in each run/time/class, before extraction eligibility filtering",
+      "per_stratum_cap": 1,
+      "empty_strata": "record available=0 and selected=0; no replacement",
+      "source_class": "immutable; record delayed class and confirmed descendant registry membership separately",
+      "unit": "selected run/time/class/core observation; delays nested within observation; worlds form finite deterministic conditions",
+      "split": "inherited development/confirmation labels are descriptive; both source panels already observed; no new held-out benefit confirmation"
+    },
+    "native": {
+      "maturation_delays": [
+        0,
+        100,
+        400
+      ],
+      "continuation_horizon_from_source": 1600,
+      "sample_interval": 20,
+      "maximum_world_update": 2800,
+      "delayed_target": "exact original (y,x,h,w) core; any sampled loss at or before delay makes that delay ineligible even after recurrence",
+      "labels": [
+        "sampled_first_loss",
+        "sampled_first_recurrence",
+        "endpoint_identity",
+        "matching_source_word_elsewhere",
+        "unknown_identity",
+        "boundary_activity"
+      ],
+      "interpretation": "structural continuation; no native offspring or genetic ancestry assignment"
+    },
+    "extraction": {
+      "detector": "evoloop.periodic_tracking.detect",
+      "component": "complete contractible single-core occupied component including arms; periodic unwrapping only with empty row and column",
+      "unknown_identity_eligible": true,
+      "reject": [
+        "shared_component",
+        "noncontractible_component",
+        "missing_complete_component",
+        "component_too_large"
+      ],
+      "minimum_empty_margin_total": 20,
+      "core_loss": "retain sampled loss and recurrence as distinct fields; never select a replacement core"
+    },
+    "search": {
+      "isolation_shape": [
+        192,
+        192
+      ],
+      "generation_horizon": 1600,
+      "detection_interval": 10,
+      "offspring_per_generation": 3,
+      "max_depth": 6,
+      "max_generation_simulations_per_root": 24,
+      "stable_transmissions": 2,
+      "ordering": "existing expanded_search depth-first ordering by detached_t, core and snapshot_hash",
+      "sampled_root_endpoint": "any valid composite identity transmitted unchanged on two consecutive isolated parent-child edges; identity may change before the stable streak",
+      "phase_control_endpoint": "original phase identity transmitted unchanged twice",
+      "unknown_root_initial_identity": null,
+      "unsearched_paths": "unresolved; retain offspring, depth, size and simulation truncations"
+    },
+    "controls": {
+      "matched_scored": "one scored core in every same run/time stratum when available; identical delays, extraction and any-stable-identity endpoint",
+      "phase_controls": "all 30 saved protocol 009 phase components: five states at ages 0,20,30,100,110,120",
+      "gate": {
+        "phase_original_identity_recoveries_required": 30,
+        "scored_selected_observation_recovery_fraction": "9/10",
+        "per_starting_state_scored_recovery_fraction": "4/5",
+        "observation_success": "delay 0 confirms a stable identity; denominator includes all selected scored observations, including ineligible delay-0 extractions",
+        "empty_scored_state": "gate unresolved, never vacuously passed",
+        "scope": "new diagnostic coverage gate; does not modify protocol 009 calibration"
+      }
+    },
+    "outcomes": {
+      "primary": "existence and counts of selected omitted observations with stable transmitted descendants at one or more declared delays",
+      "delay_statuses": [
+        "confirmed_stable_descendant",
+        "sampled_target_lost",
+        "shared_component",
+        "noncontractible_component",
+        "missing_complete_component",
+        "component_too_large",
+        "unresolved_search",
+        "pending",
+        "interrupted"
+      ],
+      "separate_fields": [
+        "source_identity_unknown",
+        "source_class",
+        "delayed_identity",
+        "delayed_class",
+        "root_reproduction_observed",
+        "isolated_grid_extinction_nodes",
+        "transmission_confirmed",
+        "confirmed_identity",
+        "confirmed_identity_in_registry",
+        "same_as_source_identity",
+        "ancestry_ambiguous",
+        "search_censoring",
+        "inheritance_unresolved",
+        "benefit_pending"
+      ],
+      "root_reproduction_observed": "first generation admits at least one new detached complete known-identity single-core component outside its initial core coordinates; operational isolation evidence, not genetic parentage",
+      "denominators": "all selected observations and all three planned delays; report eligible-delay counts additionally, never instead",
+      "aggregation": "one success per source observation across delays; show per-world/state/treatment/class/time counts, available and empty strata; no independent-population CIs or p-values",
+      "negative": "no confirmed recoverability within declared sampling and search; no proof of nonviability or score completeness",
+      "disturbance_contrast": "descriptive selected-root composition contrast; not identified disturbance effect or estimated omitted population contribution"
+    },
+    "benefit": {
+      "assay": null,
+      "status": "not tested in this coverage calibration",
+      "current_registry_and_criteria": "immutable",
+      "next_gate": "recoverable omissions motivate a separately frozen revised score and new paired assay; no retrospective recoding"
+    },
+    "limits": {
+      "worlds": 40,
+      "strata": 360,
+      "maximum_selected_observations": 360,
+      "maximum_delayed_roots": 1080,
+      "phase_controls": 30,
+      "maximum_generation_simulations": 26640,
+      "interpretation": "hard upper bound including all 24 simulations per delayed root and phase control, not an expected workload"
+    },
+    "execution": {
+      "workers": 1,
+      "minimum_available_memory_mib": 200,
+      "benchmark_before_acquisition": true,
+      "benchmark_scope": "one declared phase control; timings only, retained separately and not an independent sample",
+      "schedule": "acquisition, independent replay audits, rendering and Git packing sequentially",
+      "resume": "retain interrupted invocation logs; resume only hash-verified completed cases"
+    }
+  },
+  "rule_hash": "9d0652aaceb55dd3c7ff9814b45ae56c7782c8a20cab0fc88e11fc6d1cae37f3",
+  "registry": [
+    "12x12:011111111111170170170170170170170170170170170170170117014014",
+    "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+    "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+    "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+  ],
+  "states": {
+    "V01": {
+      "id": "V01",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+      "snapshot_file": "data/panel-v2/V01.npz",
+      "snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+      "shape": [
+        18,
+        18
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "history": "EXP-discovery-001",
+        "t": 2910,
+        "core": [
+          14,
+          48,
+          11,
+          13
+        ],
+        "source_hash": "692e22d7fcd752884db9b397ad69590bad7385be3fcb2912896b785baea821d6",
+        "note": "same native complete component originally observed at update2910"
+      }
+    },
+    "V02": {
+      "id": "V02",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+      "snapshot_file": "data/panel-v2/V02.npz",
+      "snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+      "shape": [
+        19,
+        19
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "history": "D03",
+        "t": 3440,
+        "core": [
+          138,
+          124,
+          14,
+          12
+        ],
+        "extraction_bbox": [
+          135,
+          121,
+          20,
+          18
+        ],
+        "source_hash": "b7f3daa3b40e8e475726e50f505964661d9852ef0a9dfa37b2f77e9d5d994118"
+      }
+    },
+    "V03": {
+      "id": "V03",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+      "snapshot_file": "data/panel-v2/V03.npz",
+      "snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+      "shape": [
+        19,
+        19
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "history": "D03",
+        "t": 5040,
+        "core": [
+          143,
+          7,
+          12,
+          14
+        ],
+        "extraction_bbox": [
+          140,
+          4,
+          18,
+          20
+        ],
+        "source_hash": "5ccffd96ad849d5ba0e640036f34e4ea496c08f80f7208021c68f80569b6a888"
+      }
+    },
+    "RV01": {
+      "id": "RV01",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+      "snapshot_file": "data/atlas-v2/confirmed/RV01.npz",
+      "snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+      "shape": [
+        18,
+        18
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "run_id": "near-main-V02-V03-p20-a-parallel",
+        "folder": "runs/near-main-V02-V03-p20-a-parallel/candidate-3f0449c11c21-0-search",
+        "encounter_identity": "12x13:01111111111117017017017017017017017017017017017011170117014014",
+        "native_capture_t": 460,
+        "source": {
+          "file": "candidate-3f0449c11c21-0.npz",
+          "t": 460,
+          "core": [
+            307,
+            105,
+            12,
+            13
+          ],
+          "extraction_bbox": [
+            304,
+            102,
+            18,
+            19
+          ],
+          "snapshot_hash": "1be793958482a135c3907927c06719cbbe99f385f30614a009717ea5f700ec22",
+          "provenance_mask": 3,
+          "ancestry_status": "ambiguous_pair",
+          "conservative_parent_set": [
+            "V02",
+            "V03"
+          ]
+        },
+        "confirmation": {
+          "identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+          "node": 2,
+          "child": 0,
+          "transmission_streak": 2,
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066"
+        },
+        "stable_word_observed_natively": true
+      }
+    },
+    "RV02": {
+      "id": "RV02",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+      "snapshot_file": "data/atlas-v2/confirmed/RV02.npz",
+      "snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+      "shape": [
+        20,
+        20
+      ],
+      "preparation": "complete third detached descendant; no added phase advancement",
+      "source": {
+        "run_id": "near-main-V01-V03-p20-a-parallel",
+        "folder": "runs/near-main-V01-V03-p20-a-parallel/candidate-656df4acc248-0-search",
+        "encounter_identity": "13x15:01111111111117017017017017017017017017017017017017011701170117014014",
+        "native_capture_t": 1110,
+        "source": {
+          "file": "candidate-656df4acc248-0.npz",
+          "t": 1110,
+          "core": [
+            307,
+            98,
+            13,
+            15
+          ],
+          "extraction_bbox": [
+            304,
+            95,
+            19,
+            21
+          ],
+          "snapshot_hash": "96448822fee06a9f4c9a58819c6955fae0fb8b9d23d62208ca45f86dfb6c866a",
+          "provenance_mask": 3,
+          "ancestry_status": "ambiguous_pair",
+          "conservative_parent_set": [
+            "V01",
+            "V03"
+          ]
+        },
+        "confirmation": {
+          "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+          "node": 2,
+          "child": 0,
+          "transmission_streak": 2,
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224"
+        },
+        "stable_word_observed_natively": true
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_id": "V01-development-0-D",
+      "state": "V01",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V01-development-0-D.npz",
+      "initial_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+      "phase": "V01-age0",
+      "pair_id": "V01-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+        "after_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+        "mask_hash": "c3f8a8fcf22bb62e2405705014653abe7fccfb980b9620eaab0f781216357842",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-development-0-U",
+      "state": "V01",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V01-development-0-U.npz",
+      "initial_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+      "phase": "V01-age0",
+      "pair_id": "V01-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca68341fe1dc9818a3349cd04c34441a80552abda6b58744aa631e367a9a6412",
+        "after_hash": "16e471f5bd4dd05b3e82b19ef924e015ae393cfde8d5704b9f89c64d34722430",
+        "mask_hash": "c3f8a8fcf22bb62e2405705014653abe7fccfb980b9620eaab0f781216357842",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-development-1-D",
+      "state": "V01",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V01-development-1-D.npz",
+      "initial_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+      "phase": "V01-age100",
+      "pair_id": "V01-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+        "after_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+        "mask_hash": "35d9b304361fc4c2abdefceca24aab41e0bfa0d321c63fb70c73f94c0e7d95fb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-development-1-U",
+      "state": "V01",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V01-development-1-U.npz",
+      "initial_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+      "phase": "V01-age100",
+      "pair_id": "V01-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+        "removed_occupied_cells": 202,
+        "occupied_before": 606,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3fa3c1b623f129e3bc1c2080301b2e236a787e05a90b2e471e83c2c0a6ecce40",
+        "after_hash": "fb44f636476f61e569e8e2177446007e67957712725397c74eab4ee15234b166",
+        "mask_hash": "35d9b304361fc4c2abdefceca24aab41e0bfa0d321c63fb70c73f94c0e7d95fb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-0-D",
+      "state": "V01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V01-confirmation-0-D.npz",
+      "initial_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+      "phase": "V01-age30",
+      "pair_id": "V01-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+        "after_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+        "mask_hash": "e011bf33a2446ca1b5956746b5e8356fe8bf25aedfb6b6395f0a62182965cda7",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-0-U",
+      "state": "V01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V01-confirmation-0-U.npz",
+      "initial_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+      "phase": "V01-age30",
+      "pair_id": "V01-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "9e6081e9a384b41035fa6b1000ea1c5265dac3616d96343c7d05fc1bedc68a68",
+        "after_hash": "e4ff7c8ed73f97dbf704fbcdda3097679633ce5f57ded66cdff90483d4c8d4a3",
+        "mask_hash": "e011bf33a2446ca1b5956746b5e8356fe8bf25aedfb6b6395f0a62182965cda7",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-1-D",
+      "state": "V01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V01-confirmation-1-D.npz",
+      "initial_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+      "phase": "V01-age120",
+      "pair_id": "V01-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+        "after_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+        "mask_hash": "a2afb73d7b857cb57189d12f50d8760f8dfb773eb2846835790f1f31058fba4d",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V01-confirmation-1-U",
+      "state": "V01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V01-confirmation-1-U.npz",
+      "initial_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+      "phase": "V01-age120",
+      "pair_id": "V01-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "14811aeaa440038aa69148a0e17091628cc63b8c2e9e29da80d8f21d7f3e3d03",
+        "after_hash": "a49a69494854fdbc5d08dd41b67ab8df33e184730a8773f662692e285ccfc567",
+        "mask_hash": "a2afb73d7b857cb57189d12f50d8760f8dfb773eb2846835790f1f31058fba4d",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-0-D",
+      "state": "V02",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V02-development-0-D.npz",
+      "initial_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+      "phase": "V02-age0",
+      "pair_id": "V02-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+        "after_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+        "mask_hash": "4ec205499a77bcbccd476405c085f273a5a093c2476dde7e82232cd5b76aaadb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-0-U",
+      "state": "V02",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V02-development-0-U.npz",
+      "initial_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+      "phase": "V02-age0",
+      "pair_id": "V02-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "1b7dbd11ea2f7d46e3e667e018e799af9702d4d6f75a5102ead206c58a2ed9c0",
+        "after_hash": "f09bf03e51efa91970b36af1774fcfea3147dd38f44626244b927d776a9f1cb1",
+        "mask_hash": "4ec205499a77bcbccd476405c085f273a5a093c2476dde7e82232cd5b76aaadb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-1-D",
+      "state": "V02",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V02-development-1-D.npz",
+      "initial_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+      "phase": "V02-age100",
+      "pair_id": "V02-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+        "removed_occupied_cells": 217,
+        "occupied_before": 651,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+        "after_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+        "mask_hash": "ecb53a54226fec1973034e3e98d7d69be626dde0b392d456c95e096f3d0da56e",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-development-1-U",
+      "state": "V02",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V02-development-1-U.npz",
+      "initial_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+      "phase": "V02-age100",
+      "pair_id": "V02-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+        "removed_occupied_cells": 217,
+        "occupied_before": 651,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ca83596474144778a6391f5807c66289809ae6d8d2a789358ea36a816f014e11",
+        "after_hash": "d9154010706946cd59aa66477b6d6e84ffdb89766ce605b0d4378c7234c0676d",
+        "mask_hash": "ecb53a54226fec1973034e3e98d7d69be626dde0b392d456c95e096f3d0da56e",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-0-D",
+      "state": "V02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V02-confirmation-0-D.npz",
+      "initial_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+      "phase": "V02-age30",
+      "pair_id": "V02-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+        "after_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+        "mask_hash": "f3fa857245afe60e09e97e1158fc24e2ed441ac8f996db5fd1bbd632d4e62c3b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-0-U",
+      "state": "V02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V02-confirmation-0-U.npz",
+      "initial_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+      "phase": "V02-age30",
+      "pair_id": "V02-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "65a4fa53e153015d61e56758f929b263905fdaa39ad955706fd92f1436c231a0",
+        "after_hash": "f1b1c072091701c61fd7d573add78752ba5e90a5d553810aa464ee48fbc4e9cd",
+        "mask_hash": "f3fa857245afe60e09e97e1158fc24e2ed441ac8f996db5fd1bbd632d4e62c3b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-1-D",
+      "state": "V02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V02-confirmation-1-D.npz",
+      "initial_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+      "phase": "V02-age120",
+      "pair_id": "V02-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+        "after_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+        "mask_hash": "bfa89b470c44d0a6880cf5aefaa1ba90000f6a6fa7a00721b6faa2865885e3ff",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V02-confirmation-1-U",
+      "state": "V02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V02-confirmation-1-U.npz",
+      "initial_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+      "phase": "V02-age120",
+      "pair_id": "V02-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014",
+        "removed_snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ae92ba350b0b52428dedfe5c3d84735eb34bd820717672a957ecc2765c1eee22",
+        "after_hash": "989552341409a1787e1f487e80f89c72f4092394ec445dcc3b1a0275ad762519",
+        "mask_hash": "bfa89b470c44d0a6880cf5aefaa1ba90000f6a6fa7a00721b6faa2865885e3ff",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-0-D",
+      "state": "V03",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V03-development-0-D.npz",
+      "initial_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+      "phase": "V03-age0",
+      "pair_id": "V03-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+        "after_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+        "mask_hash": "108886404e0fbe72fd86de8969e8d74683804929fa1cc26aed6a59d5cff3e72b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-0-U",
+      "state": "V03",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V03-development-0-U.npz",
+      "initial_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+      "phase": "V03-age0",
+      "pair_id": "V03-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+        "removed_occupied_cells": 171,
+        "occupied_before": 513,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "61bb5af7273f04f9f16a883ace2111c91f1fba34e2c504ecce85e98575cb3116",
+        "after_hash": "2427b2136c3612f4777f64495930ad97f7f3ea3ec27431bd4eb05015bc3b3bf8",
+        "mask_hash": "108886404e0fbe72fd86de8969e8d74683804929fa1cc26aed6a59d5cff3e72b",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-1-D",
+      "state": "V03",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V03-development-1-D.npz",
+      "initial_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+      "phase": "V03-age100",
+      "pair_id": "V03-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+        "after_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+        "mask_hash": "062cd81ade0a355fcac3f6f462a5689bda909bb0df2a10429889a49b2de4baa9",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-development-1-U",
+      "state": "V03",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V03-development-1-U.npz",
+      "initial_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+      "phase": "V03-age100",
+      "pair_id": "V03-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "49ac6fc2ea45d20c63a140a58537e83fb31a2f5cb8d4791cc3c4ab97adaf79cb",
+        "after_hash": "b726e38ac3256a32844c7827fd9859fc258c718e97cf22c04986f8339566412b",
+        "mask_hash": "062cd81ade0a355fcac3f6f462a5689bda909bb0df2a10429889a49b2de4baa9",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-0-D",
+      "state": "V03",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V03-confirmation-0-D.npz",
+      "initial_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+      "phase": "V03-age30",
+      "pair_id": "V03-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+        "after_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+        "mask_hash": "ef1e749ca3fe78f92f744af8dc6300963c9b4fa5fc922670cc5fce74fc8a1ceb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-0-U",
+      "state": "V03",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V03-confirmation-0-U.npz",
+      "initial_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+      "phase": "V03-age30",
+      "pair_id": "V03-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+        "removed_occupied_cells": 173,
+        "occupied_before": 519,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "c44da15190bcdfc9c5c859167011b8c05df97530695e7881408c53403c6b7db6",
+        "after_hash": "cfb02af8eb60ceca401b4963f4aac249924cc3a5928a1585304530734cba5597",
+        "mask_hash": "ef1e749ca3fe78f92f744af8dc6300963c9b4fa5fc922670cc5fce74fc8a1ceb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-1-D",
+      "state": "V03",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/V03-confirmation-1-D.npz",
+      "initial_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+      "phase": "V03-age120",
+      "pair_id": "V03-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+        "after_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+        "mask_hash": "d5587d057fc01f24ce9bb5998970ed2d38d348c21fb19e3a6b0fcb0ae8c1e4cb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "V03-confirmation-1-U",
+      "state": "V03",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/V03-confirmation-1-U.npz",
+      "initial_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+      "phase": "V03-age120",
+      "pair_id": "V03-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          13,
+          13
+        ],
+        "removed_identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014",
+        "removed_snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+        "removed_occupied_cells": 216,
+        "occupied_before": 648,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "494d6e53316d5838df19f0846dfa8af084867d1521fed188dea62d247def3515",
+        "after_hash": "3275eb1afdcc355ebed802e03bace2161950d41dad9ddabe50ccbf1397f0b220",
+        "mask_hash": "d5587d057fc01f24ce9bb5998970ed2d38d348c21fb19e3a6b0fcb0ae8c1e4cb",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-0-D",
+      "state": "RV01",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV01-development-0-D.npz",
+      "initial_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+      "phase": "RV01-age0",
+      "pair_id": "RV01-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+        "after_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+        "mask_hash": "5f066c83447de93f1234557fdbfc944537ea12afe1710b136a324458a77431e4",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-0-U",
+      "state": "RV01",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV01-development-0-U.npz",
+      "initial_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+      "phase": "RV01-age0",
+      "pair_id": "RV01-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+        "removed_occupied_cells": 160,
+        "occupied_before": 480,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "e87b66a558b689a3d83da2f82230e6855dcfd103a10cf0c9255be7df924c7553",
+        "after_hash": "fbf614971df44b5100bac93274067038b57a90c7a9710f69b524174950efe3f0",
+        "mask_hash": "5f066c83447de93f1234557fdbfc944537ea12afe1710b136a324458a77431e4",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-1-D",
+      "state": "RV01",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV01-development-1-D.npz",
+      "initial_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+      "phase": "RV01-age100",
+      "pair_id": "RV01-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+        "removed_occupied_cells": 201,
+        "occupied_before": 603,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+        "after_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+        "mask_hash": "d251342dce12265cccea5652faed591ad996bb09206c2f22ffe903b007ace682",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-development-1-U",
+      "state": "RV01",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV01-development-1-U.npz",
+      "initial_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+      "phase": "RV01-age100",
+      "pair_id": "RV01-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+        "removed_occupied_cells": 201,
+        "occupied_before": 603,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "a9acee1533eee952087741f13c30c72b47f21903610b6bb8e64704ddf474382d",
+        "after_hash": "cb6b2bccd848001e0b08fa7c1c3c0acf02dda3ee9db525244248d4973c74a758",
+        "mask_hash": "d251342dce12265cccea5652faed591ad996bb09206c2f22ffe903b007ace682",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-0-D",
+      "state": "RV01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV01-confirmation-0-D.npz",
+      "initial_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+      "phase": "RV01-age30",
+      "pair_id": "RV01-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+        "after_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+        "mask_hash": "665b4d9c81ed39e463d1d8c460a31d227aee698b3169be47b1799c50476b3814",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-0-U",
+      "state": "RV01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV01-confirmation-0-U.npz",
+      "initial_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+      "phase": "RV01-age30",
+      "pair_id": "RV01-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+        "removed_occupied_cells": 162,
+        "occupied_before": 486,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "25152ca614c496d68728afe1b0f5f3ad39c3bf12b60dc8a4d5878aa184f4f7ac",
+        "after_hash": "6e189fa5a8837a7d2bbce95663a429e79026f4ec2512127143c0d088de6b3589",
+        "mask_hash": "665b4d9c81ed39e463d1d8c460a31d227aee698b3169be47b1799c50476b3814",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-1-D",
+      "state": "RV01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV01-confirmation-1-D.npz",
+      "initial_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+      "phase": "RV01-age120",
+      "pair_id": "RV01-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+        "after_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+        "mask_hash": "7a10fbfc24d5da9d1a1a7550d2ab14e0d80bf91c98f7e9ed4505b1d209af137a",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV01-confirmation-1-U",
+      "state": "RV01",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV01-confirmation-1-U.npz",
+      "initial_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+      "phase": "RV01-age120",
+      "pair_id": "RV01-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          12,
+          12
+        ],
+        "removed_identity": "12x12:011111111111170170170170170170170170170170170170170117014014",
+        "removed_snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+        "removed_occupied_cells": 208,
+        "occupied_before": 624,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "ac2f1e6ef78db42ce4c1a5c19293d9c526bc345d9e30e290bd8892e62a3cafaa",
+        "after_hash": "a81d7f7fb2b93d592fcc84d71759a51e393b4011b25bc4f111d79fa60d40c4db",
+        "mask_hash": "7a10fbfc24d5da9d1a1a7550d2ab14e0d80bf91c98f7e9ed4505b1d209af137a",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-0-D",
+      "state": "RV02",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV02-development-0-D.npz",
+      "initial_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+      "phase": "RV02-age0",
+      "pair_id": "RV02-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+        "after_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+        "mask_hash": "31cb9fc6e460bd44cc6d92a35836e915277aaf1f3387d63f3d8e6d83012f52ac",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-0-U",
+      "state": "RV02",
+      "split": "development",
+      "condition": {
+        "id": "development-0",
+        "split": "development",
+        "age": 0,
+        "sites": [
+          [
+            55,
+            45
+          ],
+          [
+            83,
+            115
+          ],
+          [
+            140,
+            72
+          ]
+        ],
+        "remove_index": 1
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV02-development-0-U.npz",
+      "initial_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+      "phase": "RV02-age0",
+      "pair_id": "RV02-development-0",
+      "impact": {
+        "removed_core": [
+          83,
+          115,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+        "removed_occupied_cells": 182,
+        "occupied_before": 546,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "240464d7c396e94057a6fb47dc25f69796c4f399767d1a323d40457e336c23dc",
+        "after_hash": "f278fcf847a3186a7548cb54e1d907bae662c3d83aae771773e1ae6073df0a5a",
+        "mask_hash": "31cb9fc6e460bd44cc6d92a35836e915277aaf1f3387d63f3d8e6d83012f52ac",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-1-D",
+      "state": "RV02",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV02-development-1-D.npz",
+      "initial_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+      "phase": "RV02-age100",
+      "pair_id": "RV02-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+        "removed_occupied_cells": 222,
+        "occupied_before": 666,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+        "after_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+        "mask_hash": "add8d6ae001bd73d71438b0e212c4ca8dbd000e2cc2f31c2b9353a7d08352082",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-development-1-U",
+      "state": "RV02",
+      "split": "development",
+      "condition": {
+        "id": "development-1",
+        "split": "development",
+        "age": 100,
+        "sites": [
+          [
+            48,
+            70
+          ],
+          [
+            110,
+            44
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV02-development-1-U.npz",
+      "initial_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+      "phase": "RV02-age100",
+      "pair_id": "RV02-development-1",
+      "impact": {
+        "removed_core": [
+          48,
+          70,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+        "removed_occupied_cells": 222,
+        "occupied_before": 666,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "3dacffc6128535c3952ffe3f06b71ed20b8eab329e73407dfa54a4713579f7ff",
+        "after_hash": "1fbf1f7b9b174a3601236762bd77e9dc502da1499e724a6fae452589503b5f24",
+        "mask_hash": "add8d6ae001bd73d71438b0e212c4ca8dbd000e2cc2f31c2b9353a7d08352082",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-0-D",
+      "state": "RV02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV02-confirmation-0-D.npz",
+      "initial_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+      "phase": "RV02-age30",
+      "pair_id": "RV02-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+        "removed_occupied_cells": 184,
+        "occupied_before": 552,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+        "after_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+        "mask_hash": "5450d8257c2bb2d555c7fe79eccaaca3f31231329c3bb0b98c4450a1c3550a15",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-0-U",
+      "state": "RV02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-0",
+        "split": "confirmation",
+        "age": 30,
+        "sites": [
+          [
+            43,
+            48
+          ],
+          [
+            90,
+            132
+          ],
+          [
+            142,
+            86
+          ]
+        ],
+        "remove_index": 2
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV02-confirmation-0-U.npz",
+      "initial_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+      "phase": "RV02-age30",
+      "pair_id": "RV02-confirmation-0",
+      "impact": {
+        "removed_core": [
+          142,
+          86,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+        "removed_occupied_cells": 184,
+        "occupied_before": 552,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "aeea33623de0815c418391c86aecd43e9ae168a0ad586a5cda8de1edd30d8dba",
+        "after_hash": "5ba7e95219db64f7870978f03fa365e234135f7d5df4bf11d5d0d52b4f9f0cc0",
+        "mask_hash": "5450d8257c2bb2d555c7fe79eccaaca3f31231329c3bb0b98c4450a1c3550a15",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-1-D",
+      "state": "RV02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "D",
+      "initial_file": "data/impact-v1/initial/RV02-confirmation-1-D.npz",
+      "initial_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+      "phase": "RV02-age120",
+      "pair_id": "RV02-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+        "removed_occupied_cells": 228,
+        "occupied_before": 684,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+        "after_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+        "mask_hash": "0920f8afe3252bef31be48c5902a74dda7401fae67d0686fc49c0db1355dfe45",
+        "matched_impact": true
+      }
+    },
+    {
+      "run_id": "RV02-confirmation-1-U",
+      "state": "RV02",
+      "split": "confirmation",
+      "condition": {
+        "id": "confirmation-1",
+        "split": "confirmation",
+        "age": 120,
+        "sites": [
+          [
+            62,
+            135
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            143,
+            123
+          ]
+        ],
+        "remove_index": 0
+      },
+      "treatment": "U",
+      "initial_file": "data/impact-v1/initial/RV02-confirmation-1-U.npz",
+      "initial_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+      "phase": "RV02-age120",
+      "pair_id": "RV02-confirmation-1",
+      "impact": {
+        "removed_core": [
+          62,
+          135,
+          14,
+          14
+        ],
+        "removed_identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014",
+        "removed_snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+        "removed_occupied_cells": 228,
+        "occupied_before": 684,
+        "registered_before": 3,
+        "registered_after": 2,
+        "remaining_components_unchanged": true,
+        "before_hash": "d3929aed67f7ef5c7f2e863d7ad3355a6ded553aa960743a82d8ff528110c70f",
+        "after_hash": "844866272c24e8fdf86b8a21a48f59c8c0d0ef4d541fd0b05c0e96cb8ffb48ea",
+        "mask_hash": "0920f8afe3252bef31be48c5902a74dda7401fae67d0686fc49c0db1355dfe45",
+        "matched_impact": true
+      }
+    }
+  ],
+  "phase_controls": [
+    {
+      "state": "V01",
+      "age": 0,
+      "name": "V01-age0",
+      "grid_hash": "c883bb8f317ac455c0dfcc6076fd601e7b0e66dabdc14e5ca01701f6e2ef3111",
+      "snapshot_hash": "8c452b3f74856345fbcb7f80f46f8004b3a52f54f4445bb38385748a69910aae",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V01-age0.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "V01",
+      "age": 100,
+      "name": "V01-age100",
+      "grid_hash": "98527a72f291f82f7088704e522e74f7efbf7479f67c94640d4f74e5c0e91a6e",
+      "snapshot_hash": "94afa6d7ce1445655f3d398f3434fb040f74960f3d5918089eb1473cd9ccb59e",
+      "offset": [
+        3,
+        18
+      ],
+      "file": "data/impact-v1/phase/V01-age100.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "V01",
+      "age": 30,
+      "name": "V01-age30",
+      "grid_hash": "f1243a74d35ca77a72e4a7c62ca76ce01d4491678d4c194a0b472ba626798ebc",
+      "snapshot_hash": "827651be2e6815328cf4a56c7f0287aac41f48dd018109e56c833be89eba1b01",
+      "offset": [
+        3,
+        4
+      ],
+      "file": "data/impact-v1/phase/V01-age30.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "V01",
+      "age": 120,
+      "name": "V01-age120",
+      "grid_hash": "6c4ae394e4a8aecebd0d99c844a4bdd666797a8000306b17edf303632d441132",
+      "snapshot_hash": "878c6081af538f8223dda463fdc562eb242f7408cfbaaebbdbff91fde1e51bd5",
+      "offset": [
+        3,
+        21
+      ],
+      "file": "data/impact-v1/phase/V01-age120.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "V01",
+      "age": 20,
+      "name": "V01-age20",
+      "grid_hash": "096165a86bbabd45fe589ecb10fcb2c6f2dd332cf21fabb9a02e3fb499149a4b",
+      "snapshot_hash": "48de1b9b1f9312186eb59635643926558956d0e5a785dd9dd7fcfc1117c482b6",
+      "offset": [
+        3,
+        4
+      ],
+      "file": "data/impact-v1/phase/V01-age20.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "V01",
+      "age": 110,
+      "name": "V01-age110",
+      "grid_hash": "55117addb81085b0c6282625daf89827995ee3c555b59da955a19a68144611c5",
+      "snapshot_hash": "ac342b23cd037225f4df71ce6ffacac3311ace68f67d9c2308198806bd992999",
+      "offset": [
+        3,
+        18
+      ],
+      "file": "data/impact-v1/phase/V01-age110.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "V02",
+      "age": 0,
+      "name": "V02-age0",
+      "grid_hash": "ee7e42aeff38813bf8b4ab4a232387cb1b0323ecdff62ecf71d4135355a19c9b",
+      "snapshot_hash": "10aa9854a50cb6d763be8497f898c4f2789e6c8a751db41faee3a768d14076b2",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V02-age0.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014"
+    },
+    {
+      "state": "V02",
+      "age": 100,
+      "name": "V02-age100",
+      "grid_hash": "3181c7ac846098d2b6f1c0e25abcb9511c3af9b7f83dd23baba5a6cca138f25f",
+      "snapshot_hash": "19e53d26363f78033ef8ba89d938307f6994c71778f609e5861b84b7c12dc905",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V02-age100.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014"
+    },
+    {
+      "state": "V02",
+      "age": 30,
+      "name": "V02-age30",
+      "grid_hash": "4b81c51a8973a6f9f6efaf0c3593fe7e05c4225c3954d0157526bdc3cc6147da",
+      "snapshot_hash": "27a318620b55dcfe43a390c93a2890330f1d966427db049003bedc30d8715ec2",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V02-age30.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014"
+    },
+    {
+      "state": "V02",
+      "age": 120,
+      "name": "V02-age120",
+      "grid_hash": "c9163c07c2473a206bffaf3c3578867557e46c98a944f637d6eb82a8b9b06aee",
+      "snapshot_hash": "7b45a8e47d046fab60ad554ddb42941f8e48e5564082f40c299a5eaef44b56c6",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V02-age120.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014"
+    },
+    {
+      "state": "V02",
+      "age": 20,
+      "name": "V02-age20",
+      "grid_hash": "8fa9232cc4e844794e5651c6532817a67af4adaa6256b333d277d4af0a4e9fc5",
+      "snapshot_hash": "2fc301316cf87947385a338a50905d7b7298c8573032bfebce7880837dec1006",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V02-age20.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014"
+    },
+    {
+      "state": "V02",
+      "age": 110,
+      "name": "V02-age110",
+      "grid_hash": "9dd8d949460047cf6dc4d0fb60312ec8352eceab54534d5ef09525ac5563a292",
+      "snapshot_hash": "c17a06c68dd9163f0f2fd95dbb7d40f0c1ef819e19c07c5f1c06feee62231a3e",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V02-age110.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701170170170170170117014014"
+    },
+    {
+      "state": "V03",
+      "age": 0,
+      "name": "V03-age0",
+      "grid_hash": "f8ff9b0fc271b971f02f95af0223821ae0ba154b5d4dea39df0cdca559a940d8",
+      "snapshot_hash": "8701374f335e3fbb8f4534e03ab8a9615470b6d3b34d5e20162a12a9bcba73ce",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V03-age0.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014"
+    },
+    {
+      "state": "V03",
+      "age": 100,
+      "name": "V03-age100",
+      "grid_hash": "c94c0a8a244465918e8f080cc156fdba5fac7ab5cc098bf550eded9e002f71dd",
+      "snapshot_hash": "c52bc493993e4e09babf401fdab47b42187b96d02e56333611863629f3b6ee52",
+      "offset": [
+        3,
+        19
+      ],
+      "file": "data/impact-v1/phase/V03-age100.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014"
+    },
+    {
+      "state": "V03",
+      "age": 30,
+      "name": "V03-age30",
+      "grid_hash": "28b59f71326eefb4bf250510e8fe35e8812f067bd7f5f14343b9c776d18a88b1",
+      "snapshot_hash": "752f7c88896c6826831f0bb35dffbc420374ff9a52f6ffca3c83022248df3d54",
+      "offset": [
+        3,
+        4
+      ],
+      "file": "data/impact-v1/phase/V03-age30.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014"
+    },
+    {
+      "state": "V03",
+      "age": 120,
+      "name": "V03-age120",
+      "grid_hash": "b42faaeec1fe1b32153e55353e13297f412ac3e60cc07d2e64da2c35c138da81",
+      "snapshot_hash": "6e87e68eeba74a0678e7c9f9d626c5d3cd2780966808445cd02e5da41eaa650d",
+      "offset": [
+        3,
+        20
+      ],
+      "file": "data/impact-v1/phase/V03-age120.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014"
+    },
+    {
+      "state": "V03",
+      "age": 20,
+      "name": "V03-age20",
+      "grid_hash": "39b28df07cad104a2dba6d6e16ba82bd7ed11d09a9e81957d67697b610b3fe63",
+      "snapshot_hash": "41d262c1fee293b9ae5a0d708c5c4f0122676480952ed8037799b4f43a76f9cb",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/V03-age20.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014"
+    },
+    {
+      "state": "V03",
+      "age": 110,
+      "name": "V03-age110",
+      "grid_hash": "0560398467b75b930f75832009fc23d22c8f2495a473c12851ef3487ffbd3945",
+      "snapshot_hash": "99b0ba043114426c992edd8cdcc773b1b0d0c67d0c137dd49173005ac4eb7865",
+      "offset": [
+        3,
+        19
+      ],
+      "file": "data/impact-v1/phase/V03-age110.npz",
+      "identity": "13x13:0111111111111701701701701701701701701701701701701701170117014014"
+    },
+    {
+      "state": "RV01",
+      "age": 0,
+      "name": "RV01-age0",
+      "grid_hash": "877dbffb4b5b32564a31d3f5d04c48b715af049fc3ad64096c7128e9b40be31f",
+      "snapshot_hash": "429da371f08f5beafa6ea462773370a93e6a7bd63fbaa06793f33a0e13b63066",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/RV01-age0.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "RV01",
+      "age": 100,
+      "name": "RV01-age100",
+      "grid_hash": "3a1b784d168617610dd2dcf59d93de5544cd10b2202e110f0d021a873ccbbc17",
+      "snapshot_hash": "7050bad4480778200fa3f1d697e81daccb30a13883bb0a3aa886e54a35fa6fc0",
+      "offset": [
+        3,
+        18
+      ],
+      "file": "data/impact-v1/phase/RV01-age100.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "RV01",
+      "age": 30,
+      "name": "RV01-age30",
+      "grid_hash": "7a41b56abc892b48825b467a4643a32647ee6a69cdc54bcf4dd8d1c8452f1c29",
+      "snapshot_hash": "efc313a44f71101f786472a896187bdf2e2fe01d3afdeb13fbdcc36ae7143eb1",
+      "offset": [
+        3,
+        4
+      ],
+      "file": "data/impact-v1/phase/RV01-age30.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "RV01",
+      "age": 120,
+      "name": "RV01-age120",
+      "grid_hash": "8ce8ac2d511113e6455248c3d41f526597494ec0dcfe776e96f65cfaee9c4016",
+      "snapshot_hash": "bd74e496345677f5971f23c16d5c3693e81e668c6e859131ea7240beef902b8c",
+      "offset": [
+        3,
+        21
+      ],
+      "file": "data/impact-v1/phase/RV01-age120.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "RV01",
+      "age": 20,
+      "name": "RV01-age20",
+      "grid_hash": "1121eb58ec6d58ba63fdc76aa476cebecc069f94cb0d7e526bd3b5d808ff914c",
+      "snapshot_hash": "23c8a07d45c18d2a7e14fef6f94267f8ac70524d8d5c06aa4ab75d3f29a39ba5",
+      "offset": [
+        3,
+        4
+      ],
+      "file": "data/impact-v1/phase/RV01-age20.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "RV01",
+      "age": 110,
+      "name": "RV01-age110",
+      "grid_hash": "55f284dd53f18a2bca67aa9517abd828093339cc974af472545fd37a9bb2bc2e",
+      "snapshot_hash": "173b86c77a0a0a7d63daa6ef51a162e53b2c308aa8f667aa11e99102900c6b56",
+      "offset": [
+        3,
+        19
+      ],
+      "file": "data/impact-v1/phase/RV01-age110.npz",
+      "identity": "12x12:011111111111170170170170170170170170170170170170170117014014"
+    },
+    {
+      "state": "RV02",
+      "age": 0,
+      "name": "RV02-age0",
+      "grid_hash": "b57211b62d34195c3069ed83f0b37cb1aa19eb4ba400410c8aad2a1a796b145c",
+      "snapshot_hash": "e3e6a98dfac4d5fbf3ee6446273be24a81d40195a9855ba8d6813bdfa0fd4224",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/RV02-age0.npz",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+    },
+    {
+      "state": "RV02",
+      "age": 100,
+      "name": "RV02-age100",
+      "grid_hash": "0cfb4a4448806212320662620f1f2d777e4982f72c58de5d288dcc7b689f131b",
+      "snapshot_hash": "d3248f2c96b72c25683160b28bb29e281a6997d9bd42cc4fbd9d40d420f30925",
+      "offset": [
+        3,
+        18
+      ],
+      "file": "data/impact-v1/phase/RV02-age100.npz",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+    },
+    {
+      "state": "RV02",
+      "age": 30,
+      "name": "RV02-age30",
+      "grid_hash": "95c666d857bcda435c066a3734daf96a6d73112b1175967d4dcdd80f4cbe457e",
+      "snapshot_hash": "3fa7e4c2410e2bb073417773979578b678b05435824ecb83a45935afd47730b3",
+      "offset": [
+        3,
+        4
+      ],
+      "file": "data/impact-v1/phase/RV02-age30.npz",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+    },
+    {
+      "state": "RV02",
+      "age": 120,
+      "name": "RV02-age120",
+      "grid_hash": "7ad793d0615d59a70430064bb2e248401398ee38e69daa0dc0425bcef8ceccdf",
+      "snapshot_hash": "75c3b969de2e0763444bb83ee06a41dc2875ce1833e911f67d7106f9c7e7b187",
+      "offset": [
+        3,
+        20
+      ],
+      "file": "data/impact-v1/phase/RV02-age120.npz",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+    },
+    {
+      "state": "RV02",
+      "age": 20,
+      "name": "RV02-age20",
+      "grid_hash": "0e154cb1ffe790d135e69502c9f1cd3be4153eda49fa352dbecc657e392d8f46",
+      "snapshot_hash": "31343b01f4ef37c44ba7471627675d091a9dbdaaa9f86b63c72342e33e47537a",
+      "offset": [
+        3,
+        3
+      ],
+      "file": "data/impact-v1/phase/RV02-age20.npz",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+    },
+    {
+      "state": "RV02",
+      "age": 110,
+      "name": "RV02-age110",
+      "grid_hash": "725292c2f58709de79dce762360fec15fa66ed12f2fe3e653f0f63b35db405ea",
+      "snapshot_hash": "b891557bdfe46580e185c48c1170dc6a8721706a1feb982b464b684e47753fb0",
+      "offset": [
+        3,
+        20
+      ],
+      "file": "data/impact-v1/phase/RV02-age110.npz",
+      "identity": "14x14:01111111111117017017017017017017017017017017017017011701170117014014"
+    }
+  ],
+  "source_file_sha256": {
+    "configs/coverage-v1.json": "ad27c5a32e7525378ca39b134f1406e4f34f45951d33bbe389a62c1c9bb775b8",
+    "configs/impact-v1.json": "f6dd6da36b1b53b6111e73fc64a702c72dd86b0c9fd83b7d4b200f781346a907",
+    "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+    "data/impact-v1/benefit.json": "9ac59c8735830ed0cd0ca41527c77afcf20aaafc748125bcff2255b0bc99f26d",
+    "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+    "data/impact-v1/initial/RV01-confirmation-0-D.npz": "f155140a03200752b1d1c67581107bc9075ad9f32711a1ed1c22a49e6ceef27d",
+    "data/impact-v1/initial/RV01-confirmation-0-U.npz": "5fdedb761dc95755298ad17d5d709cc7ffcb0e160784b2599ff624ec54edc6d5",
+    "data/impact-v1/initial/RV01-confirmation-1-D.npz": "8e4b1f49aa57c6d57e1dc27c74c480e9b22692c9cb5d182ed09da91b86a03a3d",
+    "data/impact-v1/initial/RV01-confirmation-1-U.npz": "ed7f60efd111acd4c3c5e7cd250a6e6ce9d2da023c499e003adae7dfde6a7359",
+    "data/impact-v1/initial/RV01-development-0-D.npz": "41e1e166797259619386d3b0c4122434513bc59d2ede60e67a32d4f667b9173f",
+    "data/impact-v1/initial/RV01-development-0-U.npz": "568908533f8a67134698be27e6143a055bac4f5875d8401150f30e4c59d007a6",
+    "data/impact-v1/initial/RV01-development-1-D.npz": "295cfae822db29285d737bf57cf167e37c859c7b0cd7d0ffd25a6107830c7b0a",
+    "data/impact-v1/initial/RV01-development-1-U.npz": "57ce2f0913c834b6e290bb5b80c8798ee6bfbc59cc55177654c079689b1a4f32",
+    "data/impact-v1/initial/RV02-confirmation-0-D.npz": "99b8f7b5d93f8188e31d44cb8524a2624fd47a68ca6498aa332bf864940774e7",
+    "data/impact-v1/initial/RV02-confirmation-0-U.npz": "ef7d78a5683bda0169d7857ba3a7b89fcd94ed909f378da27acdf6d8d52eec75",
+    "data/impact-v1/initial/RV02-confirmation-1-D.npz": "77b9e9c2ea45f9ce78ff1ec2e6eaf7c233d7db2d9aa4a565c7a450a26234fee1",
+    "data/impact-v1/initial/RV02-confirmation-1-U.npz": "91a09151f1a4ef77619848b6a053bc2f6094847c2f6d9affabc21f2e661594f3",
+    "data/impact-v1/initial/RV02-development-0-D.npz": "dfbe5e6f77de05db68b59cc46118f71319a6cebd507b6307133a04d6359fb1e8",
+    "data/impact-v1/initial/RV02-development-0-U.npz": "6aadd1fdfdede04ecdd88cf1ef052d4da10bc5023d632af8488ea32ede79d845",
+    "data/impact-v1/initial/RV02-development-1-D.npz": "1cc7466360d521165af8a1706790f3aa4abb08034de219d5f1d83c7a90fa2c17",
+    "data/impact-v1/initial/RV02-development-1-U.npz": "2b3a017d39f225e430968e0e73128ac7dcf7727776549637385035dae4bc56c6",
+    "data/impact-v1/initial/V01-confirmation-0-D.npz": "bfa74e484afc96fbf1de3f64dd1bf01f6f6b1f6ac5fb6e68cca5125fa3279c27",
+    "data/impact-v1/initial/V01-confirmation-0-U.npz": "e831cc7946420601ef8cfda5d9cd239693535ed62b7c7c6f9318781e30b2b7b8",
+    "data/impact-v1/initial/V01-confirmation-1-D.npz": "6493fea0361d2c87500bbd5822cd8e6dd91c8c9b09d14cb1effb46e7e3319952",
+    "data/impact-v1/initial/V01-confirmation-1-U.npz": "779a8b66b40f3de479636d09dbf57b3a390b75c8779a38bd9a426467d73ae153",
+    "data/impact-v1/initial/V01-development-0-D.npz": "2e15793f3b8985fc11724f95dc1c7d0a21079be1a23fa39b50f6892bcb0e8d5e",
+    "data/impact-v1/initial/V01-development-0-U.npz": "bcbc017236c45ae6d6edf2abcf43cb50b24e5160fe74948e9f9ed80f672fbe7f",
+    "data/impact-v1/initial/V01-development-1-D.npz": "a748a7cf538996f50e3dcb49dd8f674bb7d057ba955c5bcd07e19f87ced2bae3",
+    "data/impact-v1/initial/V01-development-1-U.npz": "641aec5fc4829bd7f9716d68f89fb1b091f0c6b1b309d42880400828739012b2",
+    "data/impact-v1/initial/V02-confirmation-0-D.npz": "e967d61b0aa390e1fccb124d41688339a9e4cbf44321bb6c353f949f6397fae9",
+    "data/impact-v1/initial/V02-confirmation-0-U.npz": "ca2779070d5ef37be5d2dc390f0b64af83be43dc5b0fd763ed5c731f5c3a448b",
+    "data/impact-v1/initial/V02-confirmation-1-D.npz": "598129d64a877da7ed0dc04484cc1a6016e1767803fdd45c1c180107a941b238",
+    "data/impact-v1/initial/V02-confirmation-1-U.npz": "d7278964506f6ad65a79973a1ffd9b6ee49b8f92f7ba8417fae1e33bf2e67f55",
+    "data/impact-v1/initial/V02-development-0-D.npz": "b6aec2a86a7d53f6d28bbc414d31d32d783852d8849d74efe7e85d8cffec04a3",
+    "data/impact-v1/initial/V02-development-0-U.npz": "876734c5b3e941bfd797214fff8e8c7f0acb6ff0ac2c19e7de056538ddd23ccb",
+    "data/impact-v1/initial/V02-development-1-D.npz": "205444e81e6b3ca55ac12af6b70fa9a86095b986de1423e58dcef7e70fab9c58",
+    "data/impact-v1/initial/V02-development-1-U.npz": "d15271ed8545425bc3782d308729cf65107f108929915d4907cea493cce58933",
+    "data/impact-v1/initial/V03-confirmation-0-D.npz": "32f366935ab8ba58bc96889b8b75d99e396321f9962272953ba4f63d7dbf0861",
+    "data/impact-v1/initial/V03-confirmation-0-U.npz": "ecbcc4d9aa3eed62fceae918b58cc4bf94ffd152121b310da7493f63566766ca",
+    "data/impact-v1/initial/V03-confirmation-1-D.npz": "f0071601e2911920e6a689c310b69de2fc2e26332b8af83459633e0349e45fe0",
+    "data/impact-v1/initial/V03-confirmation-1-U.npz": "40113402b0354d447bc8d5f5393cff2de77b868193ff0b64610d6bfa77d96e4f",
+    "data/impact-v1/initial/V03-development-0-D.npz": "0bd59c8451fa47f007efdb10404afa48fbd5d980829e8f9b6ff88fe8007e1042",
+    "data/impact-v1/initial/V03-development-0-U.npz": "0930dc06709754354f32998f32b24e39f724bfcc86b4ca56b64ae04e8d356e39",
+    "data/impact-v1/initial/V03-development-1-D.npz": "4dbbac23d708b4ec379b75a1c3e761f56c9060cf035deb59075b5eb6e6e6ccbe",
+    "data/impact-v1/initial/V03-development-1-U.npz": "372eb70fcb50ae3d7234efb61dc7007ff7414573f0a35820b5f609e59d959178",
+    "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650",
+    "data/impact-v1/manifest.json": "1e9da846da2beeae109138b9e694c45661816bf38a68992a5281831da52e264a",
+    "data/impact-v1/phase/RV01-age0.npz": "a4899bd25fd4077038c89faa6e95c06f5d390bc7d49a26ec3c7e1512363898d1",
+    "data/impact-v1/phase/RV01-age100.npz": "f4e39deb78563c90e383b6583f17e9642502a9adc4e4e1cd76dce75acada8890",
+    "data/impact-v1/phase/RV01-age110.npz": "3c162c6aa1163656dac097a320ccb543cbeebbb4ad968527ded76604bfe9e565",
+    "data/impact-v1/phase/RV01-age120.npz": "305ecea2ceb1047bc5e0626646c5ac83fef64f1250a085114ca0b400b7471fd8",
+    "data/impact-v1/phase/RV01-age20.npz": "586943314bcc1a1851c0a2504a7ad355e4afe4bc8e479f4b9bf66520e45b068f",
+    "data/impact-v1/phase/RV01-age30.npz": "a881f33bb9324bf69d01637015c4c65bbca3d2c55a6e78cc5e00c5f7309abe51",
+    "data/impact-v1/phase/RV02-age0.npz": "5e369e7302793a60a412579b832b11441df6a3eb27137074503a0b711935e19b",
+    "data/impact-v1/phase/RV02-age100.npz": "ecbf348d46030ad4ed7bc10d2ce20a5563306f8448bbea89016cf93c3b0c2ed7",
+    "data/impact-v1/phase/RV02-age110.npz": "f3c94425150c1f0cc68456f83f437ce6987600f4d3e02c224dd25c3c3bd3fd14",
+    "data/impact-v1/phase/RV02-age120.npz": "ff734abf126f5a57ff0fa2d971b2c4a8e568b63d3bd9e7f0bdc74d8f8aee70dc",
+    "data/impact-v1/phase/RV02-age20.npz": "3e9545cd203f27d1fc325dc5975dd045ed59ff9d09187f203c7ca4bd6ac96e0c",
+    "data/impact-v1/phase/RV02-age30.npz": "1c0c9b55be0fc1c2777ed2370491a1617136220a4ef9800195c4988652db7968",
+    "data/impact-v1/phase/V01-age0.npz": "3a5d87972f9ed0eb2f5efefbb9d61935f18a355e959c4fd9e10308db63659f47",
+    "data/impact-v1/phase/V01-age100.npz": "04d5e3f8b6895965cd513712a53ab92023780f76e83946e10a82413a9c6266ff",
+    "data/impact-v1/phase/V01-age110.npz": "e157ddc6217e48fe2593bfbeb2e1d05220d01b16d7ea567fee1cb9c6fa073177",
+    "data/impact-v1/phase/V01-age120.npz": "8ae89705c750612374757cc784a40178ac59f6ac5296ff2694750414e7aeccd9",
+    "data/impact-v1/phase/V01-age20.npz": "23814612d24a434d004f41744b3c997b3a9b1c60804302e6a60f35fd5d5b49e0",
+    "data/impact-v1/phase/V01-age30.npz": "8461709ef2cceb5cd9db4d51491f67621bd2797da610b24dc43f46bfa09cb70c",
+    "data/impact-v1/phase/V02-age0.npz": "bef6ff3b5f4cf693f5b20d0e8b68025ce1b87c8499169143a27221f4d25df654",
+    "data/impact-v1/phase/V02-age100.npz": "114ddf80e15ef39eba992f31eacf43c6aff04fffaf543c3bec841dffc3304bee",
+    "data/impact-v1/phase/V02-age110.npz": "1ebae28e0967a09ab9da25ad8f8fa0f06971b07edc320fa5c3bb2e762fa1c8ff",
+    "data/impact-v1/phase/V02-age120.npz": "9863c4b7f6e104731e63578bc35f9c9de12cdaad840df407890b74bd82414b2f",
+    "data/impact-v1/phase/V02-age20.npz": "74b7944dd778b7f418429866175c540b846674f057ad408db892f75aac92048b",
+    "data/impact-v1/phase/V02-age30.npz": "7679373eb3ac8fb8148730a71e9ce564f0d1337f2de6ec4447c6f3c5d9ec4423",
+    "data/impact-v1/phase/V03-age0.npz": "76ee560adf6607705536a7b4fccc66f22d938dec55aeb66eb706bc7ea832e027",
+    "data/impact-v1/phase/V03-age100.npz": "17c92e7f0d7778c2647b0671227f98a98692382ba8f815f7b6fcbbc292784d9d",
+    "data/impact-v1/phase/V03-age110.npz": "2b527db2259a30174903d63b9b346119a74b771acc86ec72ffcb7b827de77211",
+    "data/impact-v1/phase/V03-age120.npz": "c553c82dc7c0dbf3b31892030b7b07b9016a32afee582aabd7eed9919a8c5132",
+    "data/impact-v1/phase/V03-age20.npz": "1c93f5773148192b8d13fc571196579918931baf87619d787a4bf5b7f859104b",
+    "data/impact-v1/phase/V03-age30.npz": "0eeb0402c692b220f18625352c1473456a90aede68ec695908d249f26f217381",
+    "evoloop/ecology.py": "6c028631af21713e44c518b6350e9eeeae4b4b9b6d8d24b6337a6122dadf134e",
+    "evoloop/engine.py": "8a151597c529794a7406af334a32df74363a0bb7f8245fe1d6c525bf9e9a6c10",
+    "evoloop/fate.py": "95f546a027f65bf96e10a714daae58b5ff42aab73f1e9fba7e245f9b2d930fe8",
+    "evoloop/impact.py": "92baa4a47f87e6416d365758954f4eca515648ffb19f7719e40509b44bb2dc77",
+    "evoloop/kernel.c": "6de57b310164c91617feb3ca191751db64e63028b850a8983eca10631accf969",
+    "evoloop/microcolony.py": "58401ba7565f3885439a17bbd66282ce915080ad11cc2eaa66b3584d8d5b9555",
+    "evoloop/periodic_assays.py": "2496d85177a178f2959bdc7e41f3789552359334d69ac8d9bb92826e16848195",
+    "evoloop/periodic_tracking.py": "9730485b7b6271a58428500dd1350d33d70239c71a628d1f08aafb10a9770523",
+    "evoloop/tracking.py": "870e35a08f824fb92a67330dca8a823587c582b1387c7d63c1bc46e571026358",
+    "protocols/000-scientific-contract.md": "fc763a16253cf04fa39f8e04aa740690265722d15595115b63b70370f9724dc2",
+    "protocols/009-impact-matched-paired-assay.md": "45e83c8012499117182af8604d9c8e05e87e8e13af0479eff094ed199f46bb78",
+    "protocols/010-paired-world-score-coverage.md": "e1c1baa304f05870c6ef0bcd4d047a0135aca7ebb78b141aea06319234dd2722",
+    "scripts/analyze_impact.py": "34fa4cb509468ea85aa9ea2605270ec0ec810e22d71ca1cabc6643486a885a5f",
+    "scripts/coverage_protocol.py": "39dc5642f4a55dd6d335adaafa29caa506b4d619890d338d7c93de7a0ea2e077",
+    "scripts/ecological_assay.py": "19a5630964bf7ac8195877cdaf2570277e24044f4a95f751157645c21d0e21bb",
+    "scripts/impact_assay.py": "4fdca6bfcbd0e91fbd0a68cf62086ff970105106f5dea657ddf3148f339a5534"
+  },
+  "preserved_outcomes": {
+    "data/impact-v1/analysis.json": "0172f83abd7086fdd3c17abeb8e5defa6fb9345a19a4a37b43c171d651bcd858",
+    "data/impact-v1/benefit.json": "9ac59c8735830ed0cd0ca41527c77afcf20aaafc748125bcff2255b0bc99f26d",
+    "data/impact-v1/calibration-analysis.json": "c67effeaa736341a27a6911d1867812d686d50a49df321911b3dede406c7823a",
+    "data/impact-v1/integrity.json": "8e5980f1f54d7411f84a380ea9eb87e2e8430064d1586df4fcd8c22236804650"
+  }
+}

@@ -100,13 +100,21 @@ integrity.json; figures/fate-{calibration-matrix,native-trajectories,raw-compari
 Protocols: 000 scientific contract; 001 frozen atlas; 002 postfreeze identity
 reporting audit; 003 exploratory lineage follow-up; 004 prospective calibration.
 
-Single next action: prospectively calibrate score coverage for valid/unknown
-cores omitted in the paired worlds, using native continuation, fixed maturation
-delays and isolation alongside scored-core/verified-phase controls. Retain all
-five representative D/U states, preserve unknown/shared/unextractable fates,
-and do not expand the frozen registry retrospectively. Afterwards, fully cross
-ages and nonsymmetric geometries to separate their condition effects. See
-[the plan](docs/next-experiment.md).
+Protocol 010 and configs/coverage-v1.json now freeze the coverage-calibration
+design and input provenance for EXP-score-coverage-001. The design receipt binds
+40 paired native starts, all 30 complete phase controls, the four-identity
+registry and earlier outcomes with 93 file hashes. No roots or recovery outcomes
+have been acquired. Source times are 400/800/1200, delays 0/100/400, native
+continuation 1600 updates per source, and the existing bounded isolation budgets
+are retained. Unknown source identities may enter complete-component isolation.
+The new scored recovery gate uses delay zero; the primary omission endpoint
+unions successful delays per source observation. Both retain ineligible selections.
+
+Single next action: implement and validate the protocol 010 runner and independent
+audit, freeze an implementation-readiness receipt, benchmark one declared control,
+then acquire coverage evidence sequentially under the memory guard. Do not expand
+the old registry retrospectively. Afterwards, fully cross ages and nonsymmetric
+geometries to separate their condition effects. See [the plan](docs/next-experiment.md).
 
 ## Fresh input discovery and completed atlas
 
@@ -294,10 +302,11 @@ docs/impact_manuscript_validation.json. The publication renderer now concatenate
 verified vector PDFs and replaces its output atomically; its corrected initial
 cross-filesystem move and earlier waiting-session exits remain in execution.jsonl.
 
-Single next scientific action: prospectively calibrate paired-world score coverage
-for omitted valid and unknown-identity structures, with matched scored roots,
-fixed maturation delays, native continuation, complete-component isolation, and
-age-specific positive controls across all five states and both treatments.
-Freeze selection before observing recovery; preserve ineligible and unresolved
-observations. A later fully crossed age×geometry design can explain condition
-reversals after addressing this measurement gap.
+The coverage-calibration design is now frozen in protocol 010, its JSON configuration
+and data/coverage-v1/manifest.json. No new scientific outcomes are acquired by this
+freeze. Its deterministic coordinate sample diagnoses selected omitted structures;
+it cannot estimate total viable population or establish registry completeness.
+The next acquisition requires a validated runner, independent audit, hash-bound
+implementation-readiness receipt and one-worker control benchmark. A later fully
+crossed age×geometry design can explain condition reversals after this measurement
+gap is assessed. Earlier benefits and publication figures remain unchanged.
